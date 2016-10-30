@@ -16,6 +16,14 @@
         "modeUuid": "5f9f8b94-773e-4845-986b-d99b32b70020"
       }
     ],
+    "Mehrwegeschalter": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "activationValue": 0.25,
+        "modeUuid": "c064ecdb-ccf2-4392-b15d-e16ee438b497"
+      }
+    ],
     "Taste 1": [
       {
         "toggle": false,
@@ -221,49 +229,6 @@
                 ],
                 "modifierCodes": []
               }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
-            "data": {
-              "wasUp": true,
-              "index": 0,
-              "longPress": false,
-              "activationValue": 0.25,
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "activationValue": 0.25,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        48
-                      ],
-                      "modifierCodes": [
-                        29
-                      ]
-                    }
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "activationValue": 0.25,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        48
-                      ],
-                      "modifierCodes": [
-                        42
-                      ]
-                    }
-                  }
-                }
-              ]
             }
           }
         ],
@@ -797,7 +762,7 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  44
+                  45
                 ],
                 "modifierCodes": [
                   157
@@ -815,7 +780,7 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  45
+                  44
                 ],
                 "modifierCodes": [
                   157
@@ -1108,7 +1073,7 @@
     },
     {
       "uuid": "5f9f8b94-773e-4845-986b-d99b32b70020",
-      "description": "Slew / Coolie Mode",
+      "description": "Slew / Coolie / Boat Mode",
       "componentToActionsMap": {
         "Y-Achse": [
           {
@@ -1184,6 +1149,60 @@
                   37
                 ],
                 "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "Taste 1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  208
+                ],
+                "modifierCodes": [
+                  184
+                ]
+              }
+            }
+          }
+        ],
+        "Taste 2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  205
+                ],
+                "modifierCodes": [
+                  184
+                ]
+              }
+            }
+          }
+        ],
+        "Taste 0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  203
+                ],
+                "modifierCodes": [
+                  184
+                ]
               }
             }
           }
@@ -1324,6 +1343,48 @@
                   16
                 ],
                 "modifierCodes": []
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "c064ecdb-ccf2-4392-b15d-e16ee438b497",
+      "description": "Air Brake Mode",
+      "componentToActionsMap": {
+        "Taste 1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  48
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ],
+        "Taste 3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  48
+                ],
+                "modifierCodes": [
+                  42
+                ]
               }
             }
           }
