@@ -40,14 +40,6 @@
         "modeUuid": "27a2002c-35b6-481d-9b99-ed7705dc0253"
       }
     ],
-    "Taste 13": [
-      {
-        "toggle": true,
-        "longPress": false,
-        "activationValue": 1.0,
-        "modeUuid": "350291dc-f69b-4507-8925-eb572e85db6f"
-      }
-    ],
     "Taste 4": [
       {
         "toggle": false,
@@ -388,92 +380,6 @@
               "virtualAxis": "RY",
               "deadZone": 0.0,
               "invert": false
-            }
-          }
-        ]
-      }
-    },
-    {
-      "uuid": "350291dc-f69b-4507-8925-eb572e85db6f",
-      "description": "Mouse Mode",
-      "componentToActionsMap": {
-        "Mehrwegeschalter": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 0.25,
-              "clicks": 1,
-              "invert": false
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 0.75,
-              "clicks": 1,
-              "invert": true
-            }
-          }
-        ],
-        "Y-Achse": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
-            "data": {
-              "deadZone": 0.15,
-              "exponent": 2.0,
-              "maxCursorSpeed": 2000.0,
-              "axis": "Y",
-              "invert": false
-            }
-          }
-        ],
-        "X-Achse": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
-            "data": {
-              "deadZone": 0.15,
-              "exponent": 2.0,
-              "maxCursorSpeed": 2000.0,
-              "axis": "X",
-              "invert": false
-            }
-          }
-        ],
-        "Taste 1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 1.0,
-              "downUp": false,
-              "wasUp": true,
-              "mouseButton": 1
-            }
-          }
-        ],
-        "Taste 2": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 1.0,
-              "downUp": false,
-              "wasUp": true,
-              "mouseButton": 2
-            }
-          }
-        ],
-        "Taste 3": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 1.0,
-              "downUp": false,
-              "wasUp": true,
-              "mouseButton": 3
             }
           }
         ]
