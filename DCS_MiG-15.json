@@ -8,14 +8,6 @@
         "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
       }
     ],
-    "Taste 8": [
-      {
-        "toggle": true,
-        "longPress": false,
-        "activationValue": 1.0,
-        "modeUuid": "476846d9-4945-4e8f-96d1-566b581d5232"
-      }
-    ],
     "Taste 4": [
       {
         "toggle": false,
@@ -30,6 +22,14 @@
         "longPress": false,
         "activationValue": 1.0,
         "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
+      }
+    ],
+    "Taste 9": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "activationValue": 1.0,
+        "modeUuid": "476846d9-4945-4e8f-96d1-566b581d5232"
       }
     ]
   },
@@ -107,7 +107,9 @@
                 "keyCodes": [
                   33
                 ],
-                "modifierCodes": []
+                "modifierCodes": [
+                  29
+                ]
               }
             }
           },
@@ -116,12 +118,30 @@
             "data": {
               "longPress": false,
               "activationValue": 0.25,
-              "downUp": false,
+              "downUp": true,
               "keystroke": {
                 "keyCodes": [
                   48
                 ],
-                "modifierCodes": []
+                "modifierCodes": [
+                  219
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.5,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  33
+                ],
+                "modifierCodes": [
+                  42
+                ]
               }
             }
           }
@@ -158,6 +178,24 @@
             }
           }
         ],
+        "Taste 12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  43
+                ],
+                "modifierCodes": [
+                  184
+                ]
+              }
+            }
+          }
+        ],
         "Taste 6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -178,17 +216,11 @@
         ],
         "Taste 7": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  57
-                ],
-                "modifierCodes": []
-              }
+              "longPress": false,
+              "buttonId": 0
             }
           }
         ],
@@ -214,7 +246,7 @@
             }
           }
         ],
-        "Taste 1": [
+        "Taste 8": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -232,6 +264,22 @@
             }
           }
         ],
+        "Taste 1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  36
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
         "Taste 2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -243,9 +291,7 @@
                 "keyCodes": [
                   17
                 ],
-                "modifierCodes": [
-                  42
-                ]
+                "modifierCodes": []
               }
             }
           }
@@ -791,5 +837,10 @@
     }
   ],
   "activeModeIndex": 0,
-  "virtualAxisToColorMap": {}
+  "virtualAxisToColorMap": {
+    "Z": {
+      "value": -2147483648,
+      "falpha": 0.0
+    }
+  }
 }
