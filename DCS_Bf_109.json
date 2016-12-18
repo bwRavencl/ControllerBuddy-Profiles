@@ -8,11 +8,11 @@
         "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
       }
     ],
-    "Mehrwegeschalter": [
+    "Taste 1": [
       {
         "toggle": true,
         "longPress": false,
-        "activationValue": 0.25,
+        "activationValue": 1.0,
         "modeUuid": "caf1d2bd-4b99-4e1d-97de-afb8a93adfdf"
       }
     ],
@@ -68,7 +68,7 @@
             "data": {
               "longPress": false,
               "activationValue": 0.75,
-              "downUp": false,
+              "downUp": true,
               "keystroke": {
                 "keyCodes": [
                   34
@@ -144,6 +144,24 @@
             }
           }
         ],
+        "Taste 9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  57
+                ],
+                "modifierCodes": [
+                  42
+                ]
+              }
+            }
+          }
+        ],
         "Taste 6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
@@ -207,24 +225,6 @@
               "virtualAxis": "Z",
               "deadZone": 0.25,
               "invert": false
-            }
-          }
-        ],
-        "Taste 1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 1.0,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  57
-                ],
-                "modifierCodes": [
-                  42
-                ]
-              }
             }
           }
         ],
