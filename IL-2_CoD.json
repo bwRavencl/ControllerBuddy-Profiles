@@ -148,6 +148,22 @@
             }
           }
         ],
+        "Taste 9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  14
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
         "Taste 5": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
@@ -273,8 +289,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
             "data": {
               "deadZone": 0.15,
-              "exponent": 2.0,
-              "maxCursorSpeed": 1750.0,
+              "exponent": 3.0,
+              "maxCursorSpeed": 2200.0,
               "axis": "Y",
               "invert": false
             }
@@ -285,8 +301,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
             "data": {
               "deadZone": 0.15,
-              "exponent": 2.0,
-              "maxCursorSpeed": 1750.0,
+              "exponent": 3.0,
+              "maxCursorSpeed": 2200.0,
               "axis": "X",
               "invert": false
             }
@@ -456,37 +472,21 @@
         ],
         "Taste 2": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  45
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
+              "longPress": false,
+              "buttonId": 10
             }
           }
         ],
         "Taste 0": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  44
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
+              "longPress": false,
+              "buttonId": 9
             }
           }
         ]
