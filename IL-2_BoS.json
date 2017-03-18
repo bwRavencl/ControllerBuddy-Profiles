@@ -72,37 +72,21 @@
       "componentToActionsMap": {
         "Taste 6": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  56
-                ],
-                "modifierCodes": [
-                  57
-                ]
-              }
+              "longPress": false,
+              "buttonId": 1
             }
           }
         ],
         "Taste 7": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  184
-                ],
-                "modifierCodes": [
-                  57
-                ]
-              }
+              "longPress": false,
+              "buttonId": 0
             }
           }
         ],
@@ -211,7 +195,7 @@
             "data": {
               "activationValue": 1.0,
               "longPress": false,
-              "buttonId": 2
+              "buttonId": 3
             }
           }
         ],
@@ -516,7 +500,7 @@
             "data": {
               "activationValue": 1.0,
               "longPress": false,
-              "buttonId": 1
+              "buttonId": 2
             }
           },
           {
@@ -918,7 +902,7 @@
             "data": {
               "activationValue": 1.0,
               "longPress": false,
-              "buttonId": 0
+              "buttonId": 4
             }
           }
         ],
@@ -1038,6 +1022,22 @@
                   49
                 ],
                 "modifierCodes": []
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  19
+                ],
+                "modifierCodes": [
+                  56
+                ]
               }
             }
           }
