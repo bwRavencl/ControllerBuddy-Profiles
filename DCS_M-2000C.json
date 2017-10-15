@@ -103,20 +103,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "activationValue": 0.5,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  31
-                ],
-                "modifierCodes": []
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
               "activationValue": 0.25,
               "downUp": true,
               "keystroke": {
@@ -125,6 +111,14 @@
                 ],
                 "modifierCodes": []
               }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "activationValue": 0.5,
+              "longPress": false,
+              "buttonId": 8
             }
           }
         ],
@@ -178,11 +172,17 @@
         ],
         "Taste 9": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activationValue": 1.0,
               "longPress": false,
-              "buttonId": 8
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  31
+                ],
+                "modifierCodes": []
+              }
             }
           }
         ],
@@ -844,17 +844,11 @@
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "activationValue": 0.5,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  31
-                ],
-                "modifierCodes": []
-              }
+              "longPress": false,
+              "buttonId": 8
             }
           }
         ],
