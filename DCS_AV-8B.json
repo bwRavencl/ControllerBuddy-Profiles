@@ -98,6 +98,22 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "longPress": true,
+              "activationValue": 0.25,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  46
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
               "longPress": false,
               "activationValue": 0.75,
               "downUp": true,
@@ -766,7 +782,7 @@
     },
     {
       "uuid": "974c3732-b2b6-4c29-b76a-cbecc5f0d313",
-      "description": "Sensor Mode",
+      "description": "TDC Mode",
       "componentToActionsMap": {
         "Y-Achse": [
           {
