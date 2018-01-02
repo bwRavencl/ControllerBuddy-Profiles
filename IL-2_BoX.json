@@ -676,24 +676,6 @@
       "uuid": "80e4ea4c-82a8-477e-89de-fd2fb37f4e8f",
       "description": "Cowl Mode",
       "componentToActionsMap": {
-        "Taste 8": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  19
-                ],
-                "modifierCodes": [
-                  54
-                ]
-              }
-            }
-          }
-        ],
         "Mehrwegeschalter": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -757,6 +739,16 @@
                   219
                 ]
               }
+            }
+          }
+        ],
+        "Taste 8": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "activationValue": 1.0,
+              "longPress": false,
+              "buttonId": 6
             }
           }
         ]
