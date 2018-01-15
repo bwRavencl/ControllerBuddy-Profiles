@@ -13,15 +13,15 @@
         "toggle": true,
         "longPress": false,
         "activationValue": 1.0,
-        "modeUuid": "c449dcf2-3e5c-4229-aed7-70bd3278ab0f"
+        "modeUuid": "55d70fdc-1125-4504-84ec-2b5bd5a34e5c"
       }
     ],
     "Taste 1": [
       {
-        "toggle": true,
+        "toggle": false,
         "longPress": false,
         "activationValue": 1.0,
-        "modeUuid": "aff8d14b-1884-4b4b-85a0-d2f62bf183b5"
+        "modeUuid": "8b0bad15-f42e-4cd6-a2b6-1e8a3bb14a58"
       }
     ],
     "Taste 2": [
@@ -29,7 +29,7 @@
         "toggle": false,
         "longPress": false,
         "activationValue": 1.0,
-        "modeUuid": "ba92eccb-5498-46e9-943d-c18b60c53429"
+        "modeUuid": "d7210220-7cab-45e1-9f1a-1f8a9768ec61"
       }
     ],
     "Taste 3": [
@@ -37,7 +37,7 @@
         "toggle": false,
         "longPress": false,
         "activationValue": 1.0,
-        "modeUuid": "b8c6b00e-d6cd-4f37-abcb-488c0690560f"
+        "modeUuid": "664959a8-f9c1-44b9-a318-7b48085f3aac"
       }
     ],
     "Taste 4": [
@@ -54,6 +54,14 @@
         "longPress": false,
         "activationValue": 1.0,
         "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
+      }
+    ],
+    "Taste 9": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "activationValue": 1.0,
+        "modeUuid": "974c3732-b2b6-4c29-b76a-cbecc5f0d313"
       }
     ]
   },
@@ -73,41 +81,26 @@
                 "keyCodes": [
                   57
                 ],
-                "modifierCodes": []
+                "modifierCodes": [
+                  184
+                ]
               }
             }
           }
         ],
         "Taste 7": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activationValue": 1.0,
               "longPress": false,
-              "buttonId": 0
-            }
-          }
-        ],
-        "X-Achse": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
-            "data": {
-              "virtualAxis": "RZ",
-              "deadZone": 0.0,
-              "invert": false
-            }
-          }
-        ],
-        "Y-Achse": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
-            "data": {
-              "exponent": 2.0,
-              "maxRelativeSpeed": 4.0,
-              "initialValue": 1.0,
-              "virtualAxis": "Z",
-              "deadZone": 0.25,
-              "invert": false
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  57
+                ],
+                "modifierCodes": []
+              }
             }
           }
         ],
@@ -116,13 +109,31 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": true,
-              "activationValue": 0.5,
+              "activationValue": 0.75,
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  33
+                  20
                 ],
-                "modifierCodes": []
+                "modifierCodes": [
+                  220
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": true,
+              "activationValue": 0.25,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  46
+                ],
+                "modifierCodes": [
+                  29
+                ]
               }
             }
           },
@@ -134,10 +145,10 @@
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  33
+                  17
                 ],
                 "modifierCodes": [
-                  42
+                  220
                 ]
               }
             }
@@ -161,14 +172,12 @@
             "data": {
               "longPress": false,
               "activationValue": 0.25,
-              "downUp": false,
+              "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  57
+                  48
                 ],
-                "modifierCodes": [
-                  184
-                ]
+                "modifierCodes": []
               }
             }
           },
@@ -180,12 +189,35 @@
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  33
+                  46
                 ],
                 "modifierCodes": [
-                  29
+                  219
                 ]
               }
+            }
+          }
+        ],
+        "X-Achse": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "virtualAxis": "RZ",
+              "deadZone": 0.0,
+              "invert": false
+            }
+          }
+        ],
+        "Y-Achse": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "exponent": 2.0,
+              "maxRelativeSpeed": 4.0,
+              "initialValue": 1.0,
+              "virtualAxis": "Z",
+              "deadZone": 0.25,
+              "invert": false
             }
           }
         ],
@@ -221,21 +253,23 @@
             }
           }
         ],
-        "Taste 12": [
+        "Taste 2": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  43
-                ],
-                "modifierCodes": [
-                  184
-                ]
-              }
+              "longPress": false,
+              "buttonId": 0
+            }
+          }
+        ],
+        "Taste 3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "activationValue": 1.0,
+              "longPress": false,
+              "buttonId": 1
             }
           }
         ],
@@ -288,22 +322,6 @@
             }
           }
         ],
-        "Taste 9": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 1.0,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  46
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
         "Z-Rotation": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
@@ -318,8 +336,44 @@
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look Mode",
+      "description": "Look / Comm Mode",
       "componentToActionsMap": {
+        "Taste 6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  74
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ],
+        "Taste 7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  78
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ],
         "Y-Achse": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
@@ -575,7 +629,7 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  52
+                  208
                 ],
                 "modifierCodes": [
                   157
@@ -591,7 +645,93 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  39
+                  200
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  203
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.5,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  205
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              }
+            }
+          }
+        ],
+        "Taste 1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  20
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ],
+        "Taste 2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  45
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              }
+            }
+          }
+        ],
+        "Taste 0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  44
                 ],
                 "modifierCodes": [
                   157
@@ -676,19 +816,125 @@
       }
     },
     {
-      "uuid": "c449dcf2-3e5c-4229-aed7-70bd3278ab0f",
-      "description": "Sight Mode",
+      "uuid": "974c3732-b2b6-4c29-b76a-cbecc5f0d313",
+      "description": "TDC Mode",
+      "componentToActionsMap": {
+        "Y-Achse": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "virtualAxis": "S1",
+              "deadZone": 0.0,
+              "invert": false
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.75,
+              "maxAxisValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  36
+                ],
+                "modifierCodes": []
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.75,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  22
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "X-Achse": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "virtualAxis": "S0",
+              "deadZone": 0.0,
+              "invert": false
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.75,
+              "maxAxisValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  23
+                ],
+                "modifierCodes": []
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.75,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  21
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "Mehrwegeschalter": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.75,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  49
+                ],
+                "modifierCodes": []
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "activationValue": 0.25,
+              "longPress": false,
+              "buttonId": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "8b0bad15-f42e-4cd6-a2b6-1e8a3bb14a58",
+      "description": "Countermeasure Mode",
       "componentToActionsMap": {
         "Mehrwegeschalter": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "activationValue": 0.25,
+              "activationValue": 0.75,
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  39
+                  9
                 ],
                 "modifierCodes": []
               }
@@ -698,11 +944,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "activationValue": 0.75,
+              "activationValue": 0.25,
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  52
+                  8
                 ],
                 "modifierCodes": []
               }
@@ -716,7 +962,7 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  51
+                  10
                 ],
                 "modifierCodes": []
               }
@@ -730,7 +976,7 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  53
+                  11
                 ],
                 "modifierCodes": []
               }
@@ -740,48 +986,22 @@
       }
     },
     {
-      "uuid": "aff8d14b-1884-4b4b-85a0-d2f62bf183b5",
-      "description": "Brake Mode",
-      "componentToActionsMap": {
-        "Taste 6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "activationValue": 1.0,
-              "longPress": false,
-              "buttonId": 1
-            }
-          }
-        ],
-        "Taste 7": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "activationValue": 1.0,
-              "longPress": false,
-              "buttonId": 2
-            }
-          }
-        ]
-      }
-    },
-    {
-      "uuid": "b8c6b00e-d6cd-4f37-abcb-488c0690560f",
-      "description": "Throttle Mode",
+      "uuid": "664959a8-f9c1-44b9-a318-7b48085f3aac",
+      "description": "Air-To-Air Mode",
       "componentToActionsMap": {
         "Mehrwegeschalter": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "activationValue": 0.25,
-              "downUp": true,
+              "activationValue": 0.75,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  199
+                  32
                 ],
                 "modifierCodes": [
-                  184
+                  42
                 ]
               }
             }
@@ -790,26 +1010,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "activationValue": 0.75,
-              "downUp": true,
+              "activationValue": 1.0,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  207
+                  46
                 ],
-                "modifierCodes": [
-                  184
-                ]
+                "modifierCodes": []
               }
             }
-          }
-        ]
-      }
-    },
-    {
-      "uuid": "ba92eccb-5498-46e9-943d-c18b60c53429",
-      "description": "Cowl Mode",
-      "componentToActionsMap": {
-        "Mehrwegeschalter": [
+          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -818,7 +1028,151 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  30
+                  32
+                ],
+                "modifierCodes": []
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.5,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  46
+                ],
+                "modifierCodes": [
+                  219
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "d7210220-7cab-45e1-9f1a-1f8a9768ec61",
+      "description": "Sensor Select Mode",
+      "componentToActionsMap": {
+        "Mehrwegeschalter": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.75,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  36
+                ],
+                "modifierCodes": [
+                  219
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.25,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  22
+                ],
+                "modifierCodes": [
+                  219
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  21
+                ],
+                "modifierCodes": [
+                  219
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.5,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  23
+                ],
+                "modifierCodes": [
+                  219
+                ]
+              }
+            }
+          }
+        ],
+        "Taste 8": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  49
+                ],
+                "modifierCodes": [
+                  219
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "55d70fdc-1125-4504-84ec-2b5bd5a34e5c",
+      "description": "Nozzle Mode",
+      "componentToActionsMap": {
+        "Mehrwegeschalter": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": true,
+              "activationValue": 0.75,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  20
+                ],
+                "modifierCodes": [
+                  220
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": true,
+              "activationValue": 0.25,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  46
                 ],
                 "modifierCodes": [
                   29
@@ -830,15 +1184,59 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "activationValue": 0.75,
+              "activationValue": 1.0,
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  30
+                  78
                 ],
                 "modifierCodes": [
-                  56
+                  42
                 ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.5,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  74
+                ],
+                "modifierCodes": [
+                  42
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.75,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  34
+                ],
+                "modifierCodes": []
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.25,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  48
+                ],
+                "modifierCodes": []
               }
             }
           }

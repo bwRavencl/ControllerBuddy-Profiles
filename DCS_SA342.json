@@ -190,22 +190,6 @@
             }
           }
         ],
-        "Taste 12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  43
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
         "Taste 6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -368,8 +352,24 @@
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look Mode",
+      "description": "Look / Comm Mode",
       "componentToActionsMap": {
+        "Taste 6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  43
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
         "Y-Achse": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
@@ -710,6 +710,15 @@
             }
           }
         ],
+        "Taste 8": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToOnScreenKeyboardAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0
+            }
+          }
+        ],
         "Taste 9": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -725,15 +734,6 @@
                   54
                 ]
               }
-            }
-          }
-        ],
-        "Taste 8": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToOnScreenKeyboardAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 1.0
             }
           }
         ]
