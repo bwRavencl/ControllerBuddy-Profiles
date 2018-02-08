@@ -56,6 +56,14 @@
         "modeUuid": "e4948829-9655-4fc1-8a3a-0ad466ece749"
       }
     ],
+    "Taste 12": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "activationValue": 1.0,
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+      }
+    ],
     "Taste 0": [
       {
         "toggle": false,
@@ -187,16 +195,6 @@
                 ],
                 "modifierCodes": []
               }
-            }
-          }
-        ],
-        "Taste 12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "activationValue": 1.0,
-              "longPress": false,
-              "buttonId": 3
             }
           }
         ],
@@ -481,10 +479,11 @@
         ],
         "Taste 8": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToOnScreenKeyboardAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
+              "activationValue": 1.0,
               "longPress": false,
-              "activationValue": 1.0
+              "buttonId": 3
             }
           }
         ]
@@ -1109,19 +1108,79 @@
           }
         ]
       }
+    },
+    {
+      "uuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+      "description": "Bildschirmtastatur Modus",
+      "componentToActionsMap": {
+        "Mehrwegeschalter": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.25,
+              "direction": "UP"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.75,
+              "direction": "DOWN"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "direction": "LEFT"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.5,
+              "direction": "RIGHT"
+            }
+          }
+        ],
+        "Taste 1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": false,
+              "longPress": false,
+              "activationValue": 1.0
+            }
+          }
+        ],
+        "Taste 2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": true,
+              "longPress": false,
+              "activationValue": 1.0
+            }
+          }
+        ]
+      }
     }
   ],
   "virtualAxisToColorMap": {
+    "Z": {
+      "value": -2147483648,
+      "falpha": 0.0
+    },
     "S1": {
       "value": -2130771968,
       "falpha": 0.0
     },
     "S0": {
       "value": -2147483393,
-      "falpha": 0.0
-    },
-    "Z": {
-      "value": -2147483648,
       "falpha": 0.0
     }
   }
