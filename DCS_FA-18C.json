@@ -16,6 +16,14 @@
         "modeUuid": "4255324a-bf36-44f0-8624-64a78c8797c7"
       }
     ],
+    "Mehrwegeschalter": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "activationValue": 0.75,
+        "modeUuid": "584e2328-79b6-42dc-900a-f063a7edbeca"
+      }
+    ],
     "Taste 1": [
       {
         "toggle": false,
@@ -76,34 +84,6 @@
                 "modifierCodes": [
                   42
                 ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": true,
-              "activationValue": 0.75,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  35
-                ],
-                "modifierCodes": []
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activationValue": 0.75,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  34
-                ],
-                "modifierCodes": []
               }
             }
           },
@@ -1047,17 +1027,11 @@
         ],
         "Taste 0": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "activationValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  28
-                ],
-                "modifierCodes": []
-              }
+              "longPress": false,
+              "buttonId": 1
             }
           }
         ],
@@ -1110,6 +1084,70 @@
                 ],
                 "modifierCodes": []
               }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "584e2328-79b6-42dc-900a-f063a7edbeca",
+      "description": "Gear / Flaps/ Hook / Recce Mode",
+      "componentToActionsMap": {
+        "Taste 1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  34
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "Taste 2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  19
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "Taste 3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 1.0,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  35
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "Taste 0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "activationValue": 1.0,
+              "longPress": false,
+              "buttonId": 2
             }
           }
         ]
