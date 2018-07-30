@@ -123,22 +123,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "activationValue": 0.25,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  48
-                ],
-                "modifierCodes": [
-                  219
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
               "activationValue": 0.5,
               "downUp": true,
               "keystroke": {
@@ -149,6 +133,47 @@
                   42
                 ]
               }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "activationValue": 0.25,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activationValue": 0.25,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        48
+                      ],
+                      "modifierCodes": [
+                        42
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activationValue": 0.25,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        48
+                      ],
+                      "modifierCodes": [
+                        29
+                      ]
+                    }
+                  }
+                }
+              ]
             }
           }
         ],
