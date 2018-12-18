@@ -267,52 +267,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": true,
-              "downUp": true,
+              "longPress": false,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  25
+                  6
                 ],
                 "modifierCodes": []
               }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
-            "data": {
-              "longPress": false,
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        48
-                      ],
-                      "modifierCodes": [
-                        42
-                      ]
-                    }
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        48
-                      ],
-                      "modifierCodes": [
-                        29
-                      ]
-                    }
-                  }
-                }
-              ]
             }
           }
         ],
@@ -330,10 +292,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  34
+                  7
                 ],
                 "modifierCodes": []
               }
@@ -342,54 +304,16 @@
         ],
         "14": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        33
-                      ],
-                      "modifierCodes": []
-                    }
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        33
-                      ],
-                      "modifierCodes": [
-                        42
-                      ]
-                    }
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        33
-                      ],
-                      "modifierCodes": [
-                        29
-                      ]
-                    }
-                  }
-                }
-              ]
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  19
+                ],
+                "modifierCodes": []
+              }
             }
           }
         ]
@@ -964,21 +888,68 @@
     },
     {
       "uuid": "a5a3f61f-249d-4a17-9bdd-b86934986191",
-      "description": "Radar Mode",
+      "description": "Gear / Flaps / Airbrake Mode",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
-              "downUp": false,
+              "longPress": true,
+              "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  6
+                  25
                 ],
                 "modifierCodes": []
               }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        48
+                      ],
+                      "modifierCodes": [
+                        42
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        48
+                      ],
+                      "modifierCodes": [
+                        29
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 2
             }
           }
         ],
@@ -987,10 +958,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "downUp": false,
+              "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  7
+                  34
                 ],
                 "modifierCodes": []
               }
@@ -999,16 +970,10 @@
         ],
         "14": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  19
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 1
             }
           }
         ]
