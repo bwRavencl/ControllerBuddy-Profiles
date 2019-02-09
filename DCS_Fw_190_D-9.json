@@ -368,7 +368,7 @@
     },
     {
       "uuid": "aff8d14b-1884-4b4b-85a0-d2f62bf183b5",
-      "description": "Brake",
+      "description": "Brake / Throttle",
       "axisToActionsMap": {
         "4": [
           {
@@ -391,7 +391,48 @@
           }
         ]
       },
-      "buttonToActionsMap": {}
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        199
+                      ],
+                      "modifierCodes": [
+                        184
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        207
+                      ],
+                      "modifierCodes": [
+                        184
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     },
     {
       "uuid": "ba92eccb-5498-46e9-943d-c18b60c53429",
