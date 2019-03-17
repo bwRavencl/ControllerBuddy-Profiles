@@ -114,6 +114,14 @@
               "maxAxisValue": 1.0,
               "buttonId": 3
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "virtualAxis": "S0",
+              "invert": false
+            }
           }
         ],
         "5": [
@@ -121,7 +129,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "virtualAxis": "S0",
+              "virtualAxis": "S1",
               "invert": false
             }
           },
@@ -414,7 +422,7 @@
     },
     {
       "uuid": "584e2328-79b6-42dc-900a-f063a7edbeca",
-      "description": "Gear / Flaps/ Hook / Recce",
+      "description": "Gear / Flaps / Hook / Recce / Lights",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -465,6 +473,21 @@
               "keystroke": {
                 "keyCodes": [
                   35
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  38
                 ],
                 "modifierCodes": []
               }
