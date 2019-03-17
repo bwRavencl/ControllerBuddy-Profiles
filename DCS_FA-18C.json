@@ -618,6 +618,24 @@
             }
           }
         ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 5
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 6
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -831,16 +849,10 @@
         ],
         "7": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  23
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 7
             }
           }
         ],
@@ -916,7 +928,7 @@
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim",
+      "description": "Trim / FOV",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -928,6 +940,21 @@
               "keystroke": {
                 "keyCodes": [
                   47
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  23
                 ],
                 "modifierCodes": []
               }
