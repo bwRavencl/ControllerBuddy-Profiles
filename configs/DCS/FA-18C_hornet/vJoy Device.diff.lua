@@ -116,6 +116,14 @@ local diff = {
 			},
 			["name"] = "Abzug für Bordkanone (2.Stufe)",
 		},
+		["d3002pnilu3002cd54vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Auswurfschalter",
+		},
 		["d3003pnilu3003cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -139,14 +147,6 @@ local diff = {
 				},
 			},
 			["name"] = "TDC-Steuerung - drücken",
-		},
-		["d3040pnilu3040cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Schubhebel nach oben (beide) - HOCH / RUNTER",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
