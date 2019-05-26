@@ -142,8 +142,7 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  76,
-                  207
+                  76
                 ],
                 "modifierCodes": []
               }
@@ -200,7 +199,7 @@
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  207
+                  209
                 ],
                 "modifierCodes": []
               }
@@ -209,16 +208,37 @@
         ],
         "10": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
               "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  211
-                ],
-                "modifierCodes": []
-              }
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        207
+                      ],
+                      "modifierCodes": []
+                    }
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        211
+                      ],
+                      "modifierCodes": []
+                    }
+                  }
+                }
+              ]
             }
           }
         ],
@@ -383,7 +403,7 @@
     },
     {
       "uuid": "d7a60395-4c58-4a9e-88a3-44c811b45d53",
-      "description": "Ground",
+      "description": "Ground / Eject",
       "axisToActionsMap": {
         "4": [
           {
@@ -492,7 +512,7 @@
             "data": {
               "deadZone": 0.15,
               "exponent": 3.0,
-              "maxCursorSpeed": 2200.0,
+              "maxCursorSpeed": 2300.0,
               "axis": "X",
               "invert": false
             }
@@ -504,7 +524,7 @@
             "data": {
               "deadZone": 0.15,
               "exponent": 3.0,
-              "maxCursorSpeed": 2200.0,
+              "maxCursorSpeed": 2300.0,
               "axis": "Y",
               "invert": false
             }
