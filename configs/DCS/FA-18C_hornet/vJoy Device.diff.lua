@@ -148,6 +148,22 @@ local diff = {
 			},
 			["name"] = "TDC-Steuerung - drücken",
 		},
+		["d3029pnilu3029cd13vd0.6vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "COMM Schalter - MIDS A",
+		},
+		["d3030pnilu3030cd13vd0.8vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "COMM Schalter - MIDS B",
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
 			["removed"] = {
