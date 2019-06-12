@@ -364,7 +364,7 @@
     },
     {
       "uuid": "aff8d14b-1884-4b4b-85a0-d2f62bf183b5",
-      "description": "Brake / Throttle",
+      "description": "Brake",
       "axisToActionsMap": {
         "4": [
           {
@@ -387,48 +387,7 @@
           }
         ]
       },
-      "buttonToActionsMap": {
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
-            "data": {
-              "longPress": false,
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        199
-                      ],
-                      "modifierCodes": [
-                        184
-                      ]
-                    }
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "longPress": false,
-                    "downUp": true,
-                    "keystroke": {
-                      "keyCodes": [
-                        207
-                      ],
-                      "modifierCodes": [
-                        184
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
+      "buttonToActionsMap": {}
     },
     {
       "uuid": "ba92eccb-5498-46e9-943d-c18b60c53429",
@@ -744,10 +703,65 @@
     },
     {
       "uuid": "b8c6b00e-d6cd-4f37-abcb-488c0690560f",
-      "description": "Throttle",
+      "description": "Prop / Throttle",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        199
+                      ],
+                      "modifierCodes": [
+                        184
+                      ]
+                    }
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "downUp": true,
+                    "keystroke": {
+                      "keyCodes": [
+                        207
+                      ],
+                      "modifierCodes": [
+                        184
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ],
         "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  201
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -755,10 +769,10 @@
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  199
+                  50
                 ],
                 "modifierCodes": [
-                  184
+                  157
                 ]
               }
             }
@@ -769,13 +783,28 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  209
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  207
+                  50
                 ],
                 "modifierCodes": [
-                  184
+                  54
                 ]
               }
             }
