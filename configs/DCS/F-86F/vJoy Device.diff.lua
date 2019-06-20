@@ -80,6 +80,14 @@ local diff = {
 				},
 			},
 		},
+		["d3017pnilunilcd22vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "A-4 Visier - manuelle Arretierung - AN / AUS",
+		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["name"] = "Waffe auslösen",
 			["removed"] = {
