@@ -180,22 +180,6 @@ local diff = {
 				},
 			},
 		},
-		["d68pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN14",
-				},
-			},
-			["name"] = "Landing Gear TOGGLE",
-		},
-		["d73pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN13",
-				},
-			},
-			["name"] = "Airbrake TOGGLE",
-		},
 		["d74pnilu75cdnilvdnilvpnilvunil"] = {
 			["name"] = "Wheel Brakes",
 			["removed"] = {
