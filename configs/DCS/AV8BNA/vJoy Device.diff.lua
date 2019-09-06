@@ -108,10 +108,18 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Bomb Pickle: Release Bombs/Launch Rockets, Mavericks",
+		},
 		["d562pnilu606cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "AG Target Undesignate / NWS / FOV Toggle",
@@ -124,13 +132,29 @@ local diff = {
 			},
 			["name"] = "TDC Action/No Action Toggle",
 		},
-		["d74pnilu75cdnilvdnilvpnilvunil"] = {
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Trigger: Fire Gun/Launch Sidewinder, Sidearm",
+		},
+		["d961pnilu962cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Wheel Brakes",
+			["name"] = "Wheel Brake LEFT",
+		},
+		["d963pnilu964cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "Wheel Brake RIGHT",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
