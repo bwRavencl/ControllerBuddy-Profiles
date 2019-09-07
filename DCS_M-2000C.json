@@ -114,21 +114,23 @@
                 "modifierCodes": []
               }
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 14
+            }
           }
         ],
         "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "minAxisValue": 0.75,
+              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  17
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 0
             }
           },
           {
@@ -136,7 +138,7 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 15
             }
           }
         ]
@@ -305,7 +307,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 9
+              "buttonId": 8
             }
           }
         ]
@@ -773,15 +775,6 @@
               }
             }
           }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 9
-            }
-          }
         ]
       }
     },
@@ -1028,6 +1021,15 @@
       "description": "Weapons System CMD",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 9
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",

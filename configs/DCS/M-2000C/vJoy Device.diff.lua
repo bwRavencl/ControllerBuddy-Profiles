@@ -116,29 +116,13 @@ local diff = {
 				},
 			},
 		},
-		["d107pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Special Modes FWD",
-		},
-		["d109pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "Special Modes AFT",
-		},
 		["d110pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "MAGIC SELECT",
+			["name"] = "CNM MAGIC",
 		},
 		["d1126pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
@@ -154,15 +138,7 @@ local diff = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "PCA SELECT",
-		},
-		["d143pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN10",
-				},
-			},
-			["name"] = "Target Unlock/Special Modes Deselect",
+			["name"] = "CNM neutral (PCA SELECT)",
 		},
 		["d276pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
@@ -172,6 +148,30 @@ local diff = {
 			},
 			["name"] = "Magic Slave/AG Designate/INS Position Update",
 		},
+		["d3955pnilu3955cd30vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "Weapons SystemCMD Depress",
+		},
+		["d3955pnilu3955cd30vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Weapons SystemCMD FWD",
+		},
+		["d3955pnilu3955cd30vd2vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Weapons SystemCMD AFT",
+		},
 		["d564pnilu563cdnilvdnilvpnilvunil"] = {
 			["name"] = "Nosewheel Steering/IFF Interrogate",
 			["removed"] = {
@@ -179,6 +179,22 @@ local diff = {
 					["key"] = "JOY_BTN3",
 				},
 			},
+		},
+		["d68pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN14",
+				},
+			},
+			["name"] = "Landing Gear TOGGLE",
+		},
+		["d73pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN13",
+				},
+			},
+			["name"] = "Airbrake TOGGLE",
 		},
 		["d74pnilu75cdnilvdnilvpnilvunil"] = {
 			["name"] = "Wheel Brakes",
@@ -195,6 +211,22 @@ local diff = {
 				},
 			},
 			["name"] = "TDC CENTER",
+		},
+		["d961pnilu962cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN15",
+				},
+			},
+			["name"] = "Wheel Brake LEFT",
+		},
+		["d963pnilu964cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN16",
+				},
+			},
+			["name"] = "Wheel Brake RIGHT",
 		},
 		["dnilp139u230cdnilvdnilvpnilvunil"] = {
 			["added"] = {
