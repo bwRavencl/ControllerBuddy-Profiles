@@ -50,6 +50,13 @@
         "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
       }
     ],
+    "11": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "81eaef4e-3a58-499b-95e1-0863b556296d"
+      }
+    ],
     "13": [
       {
         "toggle": false,
@@ -251,38 +258,6 @@
             }
           }
         ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": true,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  48
-                ],
-                "modifierCodes": [
-                  42
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  48
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
-            }
-          }
-        ],
         "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -370,6 +345,39 @@
             "data": {
               "longPress": false,
               "direction": "LEFT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "81eaef4e-3a58-499b-95e1-0863b556296d",
+      "description": "Air brake",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  48
+                ],
+                "modifierCodes": [
+                  42
+                ]
+              }
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 7
             }
           }
         ]

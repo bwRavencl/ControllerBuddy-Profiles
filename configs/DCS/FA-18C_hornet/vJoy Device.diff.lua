@@ -164,6 +164,14 @@ local diff = {
 			},
 			["name"] = "COMM Schalter - MIDS B",
 		},
+		["d3035pnilu3035cd13vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Schalter Luftbremse - REIN / AUS",
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
 			["removed"] = {

@@ -196,6 +196,14 @@ local diff = {
 			},
 			["name"] = "Transmit-Schalter - IFF IN",
 		},
+		["d3031pnilu3031cd16vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN17",
+				},
+			},
+			["name"] = "Luftbremse - Vorne/Einfahren / Aus",
+		},
 		["d3043pnilunilcd16vd0vpnilvunil"] = {
 			["added"] = {
 				[1] = {
