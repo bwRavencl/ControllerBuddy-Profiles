@@ -648,7 +648,7 @@
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View",
+      "description": "View / Position / NVG",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "11": [
@@ -682,6 +682,21 @@
           }
         ],
         "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": true,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  35
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              }
+            }
+          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
