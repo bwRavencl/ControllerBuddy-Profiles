@@ -172,6 +172,14 @@ local diff = {
 			},
 			["name"] = "Schalter Luftbremse - REIN / AUS",
 		},
+		["d3045pnilu3045cd13vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+			["name"] = "Sensor Steuerungsschalter - loslassen",
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
 			["removed"] = {
