@@ -103,7 +103,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.75,
+              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "downUp": false,
               "keystroke": {
@@ -119,7 +119,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.75,
+              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "downUp": false,
               "keystroke": {
@@ -440,7 +440,7 @@
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look",
+      "description": "Look / Comm",
       "axisToActionsMap": {
         "0": [
           {
@@ -467,6 +467,16 @@
               "deadZone": 0.15,
               "virtualAxis": "RY",
               "invert": true
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 11
             }
           }
         ]
@@ -899,16 +909,16 @@
       },
       "inverted": false
     },
-    "S0": {
+    "Z": {
       "color": {
-        "value": -16776961,
+        "value": -16777216,
         "falpha": 0.0
       },
       "inverted": false
     },
-    "Z": {
+    "S0": {
       "color": {
-        "value": -16777216,
+        "value": -16776961,
         "falpha": 0.0
       },
       "inverted": false
