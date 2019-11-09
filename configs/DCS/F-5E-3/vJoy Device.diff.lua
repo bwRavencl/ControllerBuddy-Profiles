@@ -70,20 +70,64 @@ local diff = {
 			},
 			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
 		},
+		["a2112cdnil"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_SLIDER1",
+				},
+			},
+			["name"] = "Radbremse links",
+		},
+		["a2113cdnil"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_SLIDER2",
+				},
+			},
+			["name"] = "Radbremse rechts",
+		},
 	},
 	["keyDiffs"] = {
 		["d3014pnilu3014cd15vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN1",
+					["key"] = "JOY_BTN6",
 				},
 			},
 			["name"] = "Raketensuchkopf freigeben",
 		},
+		["d3016pnilu3016cd15vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "Abzug für Bordkanone (1.Stufe)",
+		},
 		["d3019pnilunilcd2vd-1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "Landeklappenschalter -Schritt nach hinten",
@@ -91,10 +135,26 @@ local diff = {
 		["d3019pnilunilcd2vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN5",
 				},
 			},
 			["name"] = "Landeklappenschalter -Schritt nach vorne",
+		},
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "Waffenauslöseknopf",
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "Abzug für Bordkanone (2.Stufe)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",

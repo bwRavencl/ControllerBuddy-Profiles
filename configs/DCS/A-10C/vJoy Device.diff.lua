@@ -70,48 +70,48 @@ local diff = {
 			},
 			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
 		},
-		["a2033cdnil"] = {
+		["a2112cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
 						["deadzone"] = 0,
-						["invert"] = false,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "HOTAS Horizontal schwenken",
+			["name"] = "Radbremse links",
 		},
-		["a2034cdnil"] = {
+		["a2113cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
 						["deadzone"] = 0,
-						["invert"] = false,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "HOTAS Vertikal schwenken",
+			["name"] = "Radbremse rechts",
 		},
 	},
 	["keyDiffs"] = {
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN1",
+					["key"] = "JOY_BTN3",
 				},
 			},
 			["name"] = "Waffe auslösen",
@@ -122,12 +122,25 @@ local diff = {
 			},
 		},
 		["d554pnilu638cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
 			["name"] = "Abzug für Bordkanone",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
+		},
+		["d555pnilu639cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "Abzug für Bordkanone (1.Stufe)",
 		},
 		["d562pnilu606cdnilvdnilvpnilvunil"] = {
 			["name"] = "HOTAS Taste für Bugradsteuerung",
