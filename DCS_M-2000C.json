@@ -22,6 +22,13 @@
         "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
       }
     ],
+    "3": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "8b8352d3-c328-4a08-8811-93de79642207"
+      }
+    ],
     "4": [
       {
         "toggle": false,
@@ -184,21 +191,6 @@
               "keystroke": {
                 "keyCodes": [
                   156
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "3": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  46
                 ],
                 "modifierCodes": []
               }
@@ -368,6 +360,46 @@
             "data": {
               "longPress": false,
               "direction": "LEFT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "8b8352d3-c328-4a08-8811-93de79642207",
+      "description": "CNM",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 2
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  46
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 1
             }
           }
         ]
@@ -679,7 +711,7 @@
     },
     {
       "uuid": "6cbf8e2e-f706-40e3-a439-bd3a4203bc04",
-      "description": "Sensor",
+      "description": "Radar",
       "axisToActionsMap": {
         "0": [
           {
@@ -828,23 +860,6 @@
             }
           }
         ],
-        "3": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  30
-                ],
-                "modifierCodes": [
-                  42
-                ]
-              }
-            }
-          }
-        ],
         "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -857,6 +872,23 @@
                 ],
                 "modifierCodes": [
                   56
+                ]
+              }
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  30
+                ],
+                "modifierCodes": [
+                  42
                 ]
               }
             }
@@ -1041,30 +1073,12 @@
             }
           }
         ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 2
-            }
-          }
-        ],
         "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
               "buttonId": 3
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 1
             }
           }
         ]
