@@ -148,21 +148,21 @@ local diff = {
 			},
 			["name"] = "T2_Press: AG Manual Mode/DGFT Missile Designator Control",
 		},
-		["d10071pnilunilcdnilvdnilvpnilvunil"] = {
+		["d3034pnilu3034cd35vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN7",
 				},
 			},
-			["name"] = "T4_Forward: Radio Comm 1",
+			["name"] = "Yaw Trim Switch - Left",
 		},
-		["d10072pnilunilcdnilvdnilvpnilvunil"] = {
+		["d3034pnilu3034cd35vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN8",
 				},
 			},
-			["name"] = "T4_Backward: Radio Comm 2",
+			["name"] = "Yaw Trim Switch - Right",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
