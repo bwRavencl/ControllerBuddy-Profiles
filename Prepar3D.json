@@ -1,5 +1,5 @@
 {
-  "version": "0.12",
+  "version": "0.13",
   "buttonToModeActionsMap": {
     "0": [
       {
@@ -60,6 +60,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "initialValue": 0.0,
               "virtualAxis": "RZ",
               "invert": false
             }
@@ -71,9 +72,9 @@
             "data": {
               "exponent": 2.0,
               "maxRelativeSpeed": 4.0,
-              "initialValue": 1.0,
               "hapticFeedback": true,
               "deadZone": 0.25,
+              "initialValue": 1.0,
               "virtualAxis": "Z",
               "invert": false
             }
@@ -84,6 +85,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "initialValue": 0.0,
               "virtualAxis": "X",
               "invert": false
             }
@@ -94,6 +96,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "initialValue": 0.0,
               "virtualAxis": "Y",
               "invert": false
             }
@@ -448,9 +451,9 @@
             "data": {
               "exponent": 3.0,
               "maxRelativeSpeed": 1.3,
-              "initialValue": 0.0,
               "hapticFeedback": false,
               "deadZone": 0.15,
+              "initialValue": 0.0,
               "virtualAxis": "RX",
               "invert": false
             }
@@ -462,9 +465,9 @@
             "data": {
               "exponent": 3.0,
               "maxRelativeSpeed": 1.3,
-              "initialValue": 0.0,
               "hapticFeedback": false,
               "deadZone": 0.15,
+              "initialValue": 0.0,
               "virtualAxis": "RY",
               "invert": true
             }
@@ -644,9 +647,9 @@
             "data": {
               "exponent": 2.0,
               "maxRelativeSpeed": 4.0,
-              "initialValue": -1.0,
               "hapticFeedback": true,
               "deadZone": 0.25,
+              "initialValue": -1.0,
               "virtualAxis": "S1",
               "invert": false
             }
@@ -665,9 +668,9 @@
             "data": {
               "exponent": 2.0,
               "maxRelativeSpeed": 4.0,
-              "initialValue": -1.0,
               "hapticFeedback": true,
               "deadZone": 0.25,
+              "initialValue": -1.0,
               "virtualAxis": "S0",
               "invert": false
             }
@@ -909,16 +912,16 @@
       },
       "inverted": false
     },
-    "Z": {
+    "S0": {
       "color": {
-        "value": -16777216,
+        "value": -16776961,
         "falpha": 0.0
       },
       "inverted": false
     },
-    "S0": {
+    "Z": {
       "color": {
-        "value": -16776961,
+        "value": -16777216,
         "falpha": 0.0
       },
       "inverted": false
