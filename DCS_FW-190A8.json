@@ -1,13 +1,6 @@
 {
   "version": "0.13",
   "buttonToModeActionsMap": {
-    "0": [
-      {
-        "toggle": true,
-        "longPress": false,
-        "modeUuid": "aff8d14b-1884-4b4b-85a0-d2f62bf183b5"
-      }
-    ],
     "1": [
       {
         "toggle": false,
@@ -110,6 +103,15 @@
               "maxAxisValue": 1.0,
               "buttonId": 1
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false
+            }
           }
         ],
         "5": [
@@ -119,6 +121,15 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S1",
+              "invert": false
             }
           }
         ]
@@ -364,35 +375,6 @@
           }
         ]
       }
-    },
-    {
-      "uuid": "aff8d14b-1884-4b4b-85a0-d2f62bf183b5",
-      "description": "Brake",
-      "axisToActionsMap": {
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
-            "data": {
-              "deadZone": 0.0,
-              "initialValue": -1.0,
-              "virtualAxis": "S0",
-              "invert": false
-            }
-          }
-        ],
-        "5": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
-            "data": {
-              "deadZone": 0.0,
-              "initialValue": -1.0,
-              "virtualAxis": "S1",
-              "invert": false
-            }
-          }
-        ]
-      },
-      "buttonToActionsMap": {}
     },
     {
       "uuid": "ba92eccb-5498-46e9-943d-c18b60c53429",
