@@ -70,7 +70,7 @@ local diff = {
 			},
 			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
 		},
-		["a3060cd1"] = {
+		["a3017cd4"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
@@ -81,12 +81,30 @@ local diff = {
 						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Triebwerk Drehzahleneinstellung",
+			["name"] = "Radbremse links (analog)",
+		},
+		["a3020cd4"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = true,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_SLIDER2",
+				},
+			},
+			["name"] = "Radbremse rechts (analog)",
 		},
 	},
 	["keyDiffs"] = {
