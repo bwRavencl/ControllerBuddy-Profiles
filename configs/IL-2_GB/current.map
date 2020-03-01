@@ -67,6 +67,8 @@ action("chattoall","State","key_return");
 action("chattofriendly","State","key_rcontrol+key_return");
 action("hidehud","State","key_h");
 action("commandmenu","State","key_grave");
+action("ipdinc","State","key_lshift+key_add");
+action("ipddec","State","key_lshift+key_numpadenter");
 action("cam_reset","State","key_numpad5");
 action("cam_ext_free_reset","State","key_c");
 action("cam_free_slow_mode","State","key_numpad0");
@@ -178,24 +180,36 @@ action("rpc_yaw_p","State","key_x");
 action("rpc_yaw_n","State","key_z");
 action("rpc_yaw_p","State","joy0_axis_t");
 action("yaw_reset","State","key_d");
+action("rpc_yaw_trim_p","State","key_lcontrol+key_x");
+action("rpc_yaw_trim_n","State","key_lcontrol+key_z");
+action("rpc_yaw_trim_p","State","joy0_b30");
+action("rpc_yaw_trim_n","State","joy0_b29");
+action("yaw_trim_switch_left","State","key_lcontrol+key_z");
+action("yaw_trim_switch_left","State","joy0_b29");
+action("yaw_trim_switch_right","State","key_lcontrol+key_x");
+action("yaw_trim_switch_right","State","joy0_b30");
+action("rpc_pitch_trim_p","State","key_rcontrol+key_down");
+action("rpc_pitch_trim_n","State","key_rcontrol+key_up");
+action("rpc_pitch_trim_p","State","joy0_b26");
+action("rpc_pitch_trim_n","State","joy0_b25");
+action("pitch_trim_switch_up","State","key_rcontrol+key_down");
+action("pitch_trim_switch_up","State","joy0_b26");
+action("pitch_trim_switch_dn","State","key_rcontrol+key_up");
+action("pitch_trim_switch_dn","State","joy0_b25");
+action("rpc_roll_trim_p","State","key_rcontrol+key_right");
+action("rpc_roll_trim_n","State","key_rcontrol+key_left");
+action("rpc_roll_trim_p","State","joy0_b28");
+action("rpc_roll_trim_n","State","joy0_b27");
+action("roll_trim_switch_left","State","key_rcontrol+key_left");
+action("roll_trim_switch_left","State","joy0_b27");
+action("roll_trim_switch_right","State","key_rcontrol+key_right");
+action("roll_trim_switch_right","State","joy0_b28");
+action("trims_reset","State","key_lcontrol+key_t");
+action("trims_reset","State","joy0_b31");
 action("rpc_adjustable_stabilizer_p","State","key_rshift+key_down");
 action("rpc_adjustable_stabilizer_n","State","key_rshift+key_up");
 action("rpc_adjustable_stabilizer_p","State","joy0_b26");
 action("rpc_adjustable_stabilizer_n","State","joy0_b25");
-action("yaw_trim_left","State","key_lcontrol+key_z");
-action("yaw_trim_left","State","joy0_b29");
-action("yaw_trim_right","State","key_lcontrol+key_x");
-action("yaw_trim_right","State","joy0_b30");
-action("pitch_trim_up","State","key_rcontrol+key_down");
-action("pitch_trim_up","State","joy0_b26");
-action("pitch_trim_dn","State","key_rcontrol+key_up");
-action("pitch_trim_dn","State","joy0_b25");
-action("roll_trim_left","State","key_rcontrol+key_left");
-action("roll_trim_left","State","joy0_b27");
-action("roll_trim_right","State","key_rcontrol+key_right");
-action("roll_trim_right","State","joy0_b28");
-action("trims_reset","State","key_lcontrol+key_t");
-action("trims_reset","State","joy0_b31");
 action("adjustable_stabilizer_up","State","key_rshift+key_down");
 action("adjustable_stabilizer_up","State","joy0_b26");
 action("adjustable_stabilizer_dn","State","key_rshift+key_up");
@@ -206,12 +220,16 @@ action("flaps_dn","State","key_f");
 action("airbrakes","State","key_rmenu+key_b");
 action("airbrakes","State","joy0_b5");
 action("attacksiren","State","key_lmenu+key_s");
+action("divesystem","State","key_lcontrol+key_d");
 action("gear","State","key_g");
+action("gear_up","State","key_lmenu+key_g");
+action("gear_dn","State","key_lcontrol+key_g");
 action("tailwheel_lock","State","key_lshift+key_g");
 action("tailwheel_lock","State","joy0_b4");
 action("rpc_wheel_brakes_p","State","key_slash");
 action("rpc_wheel_brakes_left_p","State","key_comma");
 action("rpc_wheel_brakes_right_p","State","key_period");
+action("rpc_wheel_brakes_central_p","State","key_rwin+key_slash");
 action("parking_brakes","State","key_lshift+key_slash");
 action("parking_brakes","State","joy0_b16");
 action("canopy_open_close","State","key_rmenu+key_c");
@@ -222,12 +240,17 @@ action("navigation_lights","State","key_rcontrol+key_l");
 action("cockpit_lights","State","key_l");
 action("formation_lights","State","key_rmenu+key_l");
 action("set_altimeter_reference_pressure","State","key_lmenu+key_a");
+action("contact_altimeter_target_altitude_increase","State","key_rshift+key_k");
+action("contact_altimeter_target_altitude_decrease","State","key_rcontrol+key_k");
+action("radio_volume_decrease","State","key_lmenu+key_subtract");
+action("radio_volume_increase","State","key_lmenu+key_add");
 action("bc_eject","State","key_lcontrol+key_e");
 action("bc_eject","State","joy0_b3");
 action("autoaltitudinalcorrection","State","key_lshift+key_m");
 action("autoradiators","State","key_lshift+key_r");
 action("autorpmlimiter","State","key_lshift+key_n");
 action("all_engines_switch","State","key_e");
+action("all_engines_ignition","State","key_rshift+key_e");
 action("engine_blip_switch","State","key_lshift+key_e");
 action("engine_blip_switch","State","joy0_b7");
 action("rpc_all_engines_throttles_p","State","key_equals");
@@ -258,6 +281,7 @@ action("rpc_all_engines_oil_radiators_shutters_p","State","key_lwin+key_equals")
 action("rpc_all_engines_oil_radiators_shutters_n","State","key_lwin+key_minus");
 action("rpc_all_engines_oil_radiators_shutters_p","State","joy0_b13");
 action("rpc_all_engines_oil_radiators_shutters_n","State","joy0_b12");
+action("all_engines_oil_radiators_control_mode","State","key_rwin+key_r");
 action("all_engines_oil_radiators_open","State","key_lwin+key_equals");
 action("all_engines_oil_radiators_open","State","joy0_b13");
 action("all_engines_oil_radiators_close","State","key_lwin+key_minus");
@@ -285,53 +309,20 @@ action("select_engine_1","State","key_1");
 action("select_engine_2","State","key_2");
 action("select_engine_3","State","key_3");
 action("engine_1_switch","State","key_rcontrol+key_1");
+action("engine_1_ignition","State","key_rshift+key_numpad1");
 action("engine_2_switch","State","key_rcontrol+key_2");
+action("engine_2_ignition","State","key_rshift+key_numpad2");
 action("engine_3_switch","State","key_rcontrol+key_3");
 action("engine_interconnect_prop","State","key_lshift+key_i");
 action("engine_interconnect_turbo","State","key_lmenu+key_i");
-action("bc_signal_stay_here","State","key_lcontrol+key_0");
-action("bc_signal_attack_nearest_air_target","State","key_lmenu+key_1");
-action("bc_signal_attack_nearest_ground_target","State","key_lmenu+key_2");
-action("bc_signal_back_to_mission","State","key_lmenu+key_3");
-action("bc_signal_do_like_me","State","key_lmenu+key_4");
-action("bc_signal_formation_column","State","key_lcontrol+key_6");
-action("bc_signal_formation_left_arrow","State","key_lcontrol+key_7");
-action("bc_signal_formation_right_arrow","State","key_lcontrol+key_8");
-action("bc_signal_formation_v","State","key_lcontrol+key_9");
-action("bc_signal_hold_formation","State","key_lmenu+key_5");
-action("bc_signal_patrol","State","key_lmenu+key_6");
-action("bc_signal_patrol_air","State","key_lmenu+key_7");
-action("bc_signal_patrol_ground","State","key_lmenu+key_8");
-action("bc_signal_return_to_base","State","key_lmenu+key_0");
-action("bc_signal_attack","State","key_lshift+key_1");
-action("bc_signal_denote_enemy","State","key_lshift+key_2");
-action("bc_signal_flap_to_head","State","key_lshift+key_3");
-action("vc_gas_p","State","key_up");
-action("vc_gas_n","State","key_down");
-action("vc_turn_p","State","key_right");
-action("vc_turn_n","State","key_left");
-action("tc_aiming","State","key_t");
-action("cam_switch_turret","State","key_lshift+key_t");
-action("tc_fire","State","mouse_b0");
-action("tc_fire_secondary","State","mouse_b1");
-action("tc_reload","State","key_lmenu+key_r");
-action("tc_reload","State","mouse_b2");
-action("tc_switchgun","State","key_rmenu+key_g");
-action("gs_distance_p","State","key_rmenu+key_period");
-action("gs_distance_n","State","key_rmenu+key_semicolon");
-action("gs_yaw_p","State","key_rmenu+key_slash");
-action("gs_yaw_n","State","key_rmenu+key_comma");
-action("gs_reset","State","key_rmenu+key_apostrophe");
-action("tc_visor_pitch_p","State","key_rshift+key_period");
-action("tc_visor_pitch_n","State","key_rshift+key_semicolon");
-action("tc_visor_yaw_p","State","key_rshift+key_slash");
-action("tc_visor_yaw_n","State","key_rshift+key_comma");
-action("tc_visor_reset","State","key_rshift+key_apostrophe");
+action("toggle_refuel","State","key_rcontrol+key_f");
 action("all_guns_fire","State","key_space");
 action("machineguns_fire","State","key_rmenu+key_space");
 action("machineguns_fire","State","joy0_b0");
 action("cannons_fire","State","key_lmenu+key_space");
 action("cannons_fire","State","joy0_b1");
+action("weapon_group3_fire","State","key_rcontrol+key_space");
+action("weapon_group3_fire","State","key_rcontrol+mouse_b0");
 action("cam_switch_bombaim","State","key_v");
 action("throw_bombs_mode","State","key_lwin+key_b");
 action("throw_bombs_delay","State","key_lcontrol+key_b");
@@ -364,9 +355,26 @@ action("switchgunpos6","State","key_rshift+key_6");
 action("switchgunpos7","State","key_rshift+key_7");
 action("switchgunpos8","State","key_rshift+key_8");
 action("switchgunpos9","State","key_rshift+key_9");
+action("tc_aiming","State","key_t");
+action("cam_switch_turret","State","key_lshift+key_t");
+action("tc_fire","State","mouse_b0");
+action("tc_fire_secondary","State","mouse_b1");
+action("tc_reload","State","key_lmenu+key_r");
+action("tc_reload","State","mouse_b2");
 action("gunsight_filter","State","key_lmenu+key_f");
 action("gunsight_adjustment","State","key_rmenu+key_f");
 action("gunsight_mode","State","key_lmenu+key_m");
+action("gs_distance_p","State","key_rmenu+key_period");
+action("gs_distance_n","State","key_rmenu+key_semicolon");
+action("gs_yaw_p","State","key_rmenu+key_slash");
+action("gs_yaw_n","State","key_rmenu+key_comma");
+action("gs_reset","State","key_rmenu+key_apostrophe");
+action("tc_visor_pitch_p","State","key_rshift+key_period");
+action("tc_visor_pitch_n","State","key_rshift+key_semicolon");
+action("tc_visor_yaw_p","State","key_rshift+key_slash");
+action("tc_visor_yaw_n","State","key_rshift+key_comma");
+action("tc_visor_reset","State","key_rshift+key_apostrophe");
+action("tc_switchgun","State","key_rmenu+key_g");
 action("ai_turret_act_by_yourself","State","key_rmenu+key_1");
 action("ai_turret_back_fire","State","key_rmenu+key_2");
 action("ai_turret_cease_fire","State","key_rmenu+key_3");
@@ -376,6 +384,30 @@ action("ai_turret_attack_ground","State","key_rmenu+key_6");
 action("ai_turret_short_distance","State","key_rmenu+key_7");
 action("ai_turret_normal_distance","State","key_rmenu+key_8");
 action("ai_turret_medium_distance","State","key_rmenu+key_9");
+action("toggle_rearm","State","key_rcontrol+key_a");
+action("bc_signal_stay_here","State","key_lcontrol+key_0");
+action("bc_signal_attack_nearest_air_target","State","key_lmenu+key_1");
+action("bc_signal_attack_nearest_ground_target","State","key_lmenu+key_2");
+action("bc_signal_back_to_mission","State","key_lmenu+key_3");
+action("bc_signal_do_like_me","State","key_lmenu+key_4");
+action("bc_signal_formation_column","State","key_lcontrol+key_6");
+action("bc_signal_formation_left_arrow","State","key_lcontrol+key_7");
+action("bc_signal_formation_right_arrow","State","key_lcontrol+key_8");
+action("bc_signal_formation_v","State","key_lcontrol+key_9");
+action("bc_signal_hold_formation","State","key_lmenu+key_5");
+action("bc_signal_patrol","State","key_lmenu+key_6");
+action("bc_signal_patrol_air","State","key_lmenu+key_7");
+action("bc_signal_patrol_ground","State","key_lmenu+key_8");
+action("bc_signal_return_to_base","State","key_lmenu+key_0");
+action("bc_signal_attack","State","key_lshift+key_1");
+action("bc_signal_denote_enemy","State","key_lshift+key_2");
+action("bc_signal_flap_to_head","State","key_lshift+key_3");
+action("vc_gas_p","State","key_up");
+action("vc_gas_n","State","key_down");
+action("vc_turn_p","State","key_right");
+action("vc_turn_n","State","key_left");
+action("vc_gearup","State","key_x");
+action("vc_geardown","State","key_z");
 action("rb_pitch_p","Event","mouse_axis_y");
 action("rb_yaw_p","Event","mouse_axis_x");
 action("mc_pitch_p","Event","mouse_axis_y");
@@ -694,6 +726,63 @@ spline = 0;
 
 [end]
 
+[rpc_yaw_trim]
+
+data_row0 = -1.000000, -0.980000, -0.960000, -0.939999, -0.920000, -0.900000, -0.880000, -0.860000, -0.840000, -0.820000;
+data_row1 = -0.800000, -0.780000, -0.760000, -0.740000, -0.720000, -0.700000, -0.679999, -0.659999, -0.640000, -0.620000;
+data_row2 = -0.600000, -0.580000, -0.560000, -0.540000, -0.520000, -0.500000, -0.480000, -0.460000, -0.439999, -0.420000;
+data_row3 = -0.400000, -0.380000, -0.360000, -0.340000, -0.320000, -0.300000, -0.280000, -0.260000, -0.240000, -0.220000;
+data_row4 = -0.200000, -0.180000, -0.160000, -0.140000, -0.120000, -0.099999, -0.079999, -0.060000, -0.040000, -0.020000;
+data_row5 = 0.000000, 0.020000, 0.040000, 0.060000, 0.080000, 0.100000, 0.120000, 0.140000, 0.160000, 0.180000;
+data_row6 = 0.200000, 0.220000, 0.240000, 0.260000, 0.280000, 0.300000, 0.320000, 0.340000, 0.360000, 0.380000;
+data_row7 = 0.400000, 0.420000, 0.440000, 0.460000, 0.480000, 0.500000, 0.520000, 0.540000, 0.560000, 0.580000;
+data_row8 = 0.600000, 0.620000, 0.640000, 0.660000, 0.680000, 0.700000, 0.720000, 0.740000, 0.760000, 0.780000;
+data_row9 = 0.800000, 0.820000, 0.840000, 0.860000, 0.880000, 0.900000, 0.920000, 0.939999, 0.960000, 0.980000;
+data_endrow = 1.000000
+
+symmetry = 0;
+spline = 0;
+
+[end]
+
+[rpc_pitch_trim]
+
+data_row0 = -1.000000, -0.980000, -0.960000, -0.939999, -0.920000, -0.900000, -0.880000, -0.860000, -0.840000, -0.820000;
+data_row1 = -0.800000, -0.780000, -0.760000, -0.740000, -0.720000, -0.700000, -0.679999, -0.659999, -0.640000, -0.620000;
+data_row2 = -0.600000, -0.580000, -0.560000, -0.540000, -0.520000, -0.500000, -0.480000, -0.460000, -0.439999, -0.420000;
+data_row3 = -0.400000, -0.380000, -0.360000, -0.340000, -0.320000, -0.300000, -0.280000, -0.260000, -0.240000, -0.220000;
+data_row4 = -0.200000, -0.180000, -0.160000, -0.140000, -0.120000, -0.099999, -0.079999, -0.060000, -0.040000, -0.020000;
+data_row5 = 0.000000, 0.020000, 0.040000, 0.060000, 0.080000, 0.100000, 0.120000, 0.140000, 0.160000, 0.180000;
+data_row6 = 0.200000, 0.220000, 0.240000, 0.260000, 0.280000, 0.300000, 0.320000, 0.340000, 0.360000, 0.380000;
+data_row7 = 0.400000, 0.420000, 0.440000, 0.460000, 0.480000, 0.500000, 0.520000, 0.540000, 0.560000, 0.580000;
+data_row8 = 0.600000, 0.620000, 0.640000, 0.660000, 0.680000, 0.700000, 0.720000, 0.740000, 0.760000, 0.780000;
+data_row9 = 0.800000, 0.820000, 0.840000, 0.860000, 0.880000, 0.900000, 0.920000, 0.939999, 0.960000, 0.980000;
+data_endrow = 1.000000
+
+symmetry = 0;
+spline = 0;
+
+[end]
+
+[rpc_roll_trim]
+
+data_row0 = -1.000000, -0.980000, -0.960000, -0.939999, -0.920000, -0.900000, -0.880000, -0.860000, -0.840000, -0.820000;
+data_row1 = -0.800000, -0.780000, -0.760000, -0.740000, -0.720000, -0.700000, -0.679999, -0.659999, -0.640000, -0.620000;
+data_row2 = -0.600000, -0.580000, -0.560000, -0.540000, -0.520000, -0.500000, -0.480000, -0.460000, -0.439999, -0.420000;
+data_row3 = -0.400000, -0.380000, -0.360000, -0.340000, -0.320000, -0.300000, -0.280000, -0.260000, -0.240000, -0.220000;
+data_row4 = -0.200000, -0.180000, -0.160000, -0.140000, -0.120000, -0.099999, -0.079999, -0.060000, -0.040000, -0.020000;
+data_row5 = 0.000000, 0.020000, 0.040000, 0.060000, 0.080000, 0.100000, 0.120000, 0.140000, 0.160000, 0.180000;
+data_row6 = 0.200000, 0.220000, 0.240000, 0.260000, 0.280000, 0.300000, 0.320000, 0.340000, 0.360000, 0.380000;
+data_row7 = 0.400000, 0.420000, 0.440000, 0.460000, 0.480000, 0.500000, 0.520000, 0.540000, 0.560000, 0.580000;
+data_row8 = 0.600000, 0.620000, 0.640000, 0.660000, 0.680000, 0.700000, 0.720000, 0.740000, 0.760000, 0.780000;
+data_row9 = 0.800000, 0.820000, 0.840000, 0.860000, 0.880000, 0.900000, 0.920000, 0.939999, 0.960000, 0.980000;
+data_endrow = 1.000000
+
+symmetry = 0;
+spline = 0;
+
+[end]
+
 [rpc_adjustable_stabilizer]
 
 data_row0 = -1.000000, -0.980000, -0.960000, -0.939999, -0.920000, -0.900000, -0.880000, -0.860000, -0.840000, -0.820000;
@@ -752,6 +841,25 @@ spline = 0;
 [end]
 
 [rpc_wheel_brakes_right]
+
+data_row0 = -1.000000, -0.980000, -0.960000, -0.939999, -0.920000, -0.900000, -0.880000, -0.860000, -0.840000, -0.820000;
+data_row1 = -0.800000, -0.780000, -0.760000, -0.740000, -0.720000, -0.700000, -0.679999, -0.659999, -0.640000, -0.620000;
+data_row2 = -0.600000, -0.580000, -0.560000, -0.540000, -0.520000, -0.500000, -0.480000, -0.460000, -0.439999, -0.420000;
+data_row3 = -0.400000, -0.380000, -0.360000, -0.340000, -0.320000, -0.300000, -0.280000, -0.260000, -0.240000, -0.220000;
+data_row4 = -0.200000, -0.180000, -0.160000, -0.140000, -0.120000, -0.099999, -0.079999, -0.060000, -0.040000, -0.020000;
+data_row5 = 0.000000, 0.020000, 0.040000, 0.060000, 0.080000, 0.100000, 0.120000, 0.139999, 0.159999, 0.179999;
+data_row6 = 0.200000, 0.220000, 0.240000, 0.260000, 0.280000, 0.300000, 0.320000, 0.340000, 0.360000, 0.379999;
+data_row7 = 0.399999, 0.419999, 0.439999, 0.460000, 0.480000, 0.500000, 0.520000, 0.540000, 0.560000, 0.580000;
+data_row8 = 0.600000, 0.620000, 0.639999, 0.659999, 0.679999, 0.700000, 0.720000, 0.740000, 0.760000, 0.780000;
+data_row9 = 0.800000, 0.820000, 0.840000, 0.860000, 0.879999, 0.899999, 0.919999, 0.939999, 0.960000, 0.980000;
+data_endrow = 1.000000
+
+symmetry = 0;
+spline = 0;
+
+[end]
+
+[rpc_wheel_brakes_central]
 
 data_row0 = -1.000000, -0.980000, -0.960000, -0.939999, -0.920000, -0.900000, -0.880000, -0.860000, -0.840000, -0.820000;
 data_row1 = -0.800000, -0.780000, -0.760000, -0.740000, -0.720000, -0.700000, -0.679999, -0.659999, -0.640000, -0.620000;

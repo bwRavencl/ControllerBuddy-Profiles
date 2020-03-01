@@ -422,58 +422,6 @@
       }
     },
     {
-      "uuid": "80e4ea4c-82a8-477e-89de-fd2fb37f4e8f",
-      "description": "Cowl",
-      "axisToActionsMap": {},
-      "buttonToActionsMap": {
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 6
-            }
-          }
-        ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 10
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 13
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 11
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 12
-            }
-          }
-        ]
-      }
-    },
-    {
       "uuid": "f569525f-14ed-4ed5-930a-539c069b7e3f",
       "description": "Ground",
       "axisToActionsMap": {
@@ -892,6 +840,93 @@
       }
     },
     {
+      "uuid": "80e4ea4c-82a8-477e-89de-fd2fb37f4e8f",
+      "description": "Turbo / Cowl",
+      "axisToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.75,
+              "maxAxisValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  12
+                ],
+                "modifierCodes": [
+                  20
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.75,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  13
+                ],
+                "modifierCodes": [
+                  20
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 6
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 10
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 13
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 11
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 12
+            }
+          }
+        ]
+      }
+    },
+    {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
       "description": "View / Eject",
       "axisToActionsMap": {},
@@ -963,13 +998,6 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S1": {
-      "color": {
-        "value": -65536,
-        "falpha": 0.0
-      },
-      "inverted": false
-    },
     "S0": {
       "color": {
         "value": -16776961,
@@ -980,6 +1008,13 @@
     "Z": {
       "color": {
         "value": -16777216,
+        "falpha": 0.0
+      },
+      "inverted": false
+    },
+    "S1": {
+      "color": {
+        "value": -65536,
         "falpha": 0.0
       },
       "inverted": false
