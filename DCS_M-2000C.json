@@ -115,17 +115,11 @@
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  28
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 14
             }
           },
           {
@@ -133,7 +127,7 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 14
+              "buttonId": 11
             }
           }
         ],
@@ -465,7 +459,7 @@
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look / Comm",
+      "description": "Look / Comm / NAV Update / MAGIC unlock",
       "axisToActionsMap": {
         "0": [
           {
@@ -752,14 +746,22 @@
             }
           }
         ],
-        "2": [
+        "1": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "buttonId": 11
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  28
+                ],
+                "modifierCodes": []
+              }
             }
-          },
+          }
+        ],
+        "2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
