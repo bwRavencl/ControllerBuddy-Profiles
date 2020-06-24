@@ -1,5 +1,5 @@
 {
-  "version": "0.15",
+  "version": "0.17",
   "showOverlay": true,
   "showVrOverlay": false,
   "keyRepeatInterval": 30,
@@ -52,6 +52,20 @@
         "longPress": false,
         "modeUuid": "a6977cc6-4288-4dc8-abcb-0e10d4a95c4f"
       }
+    ],
+    "7": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "2418e261-453a-40fa-91cd-026fb5d3c6a5"
+      }
+    ],
+    "8": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+      }
     ]
   },
   "modes": [
@@ -65,7 +79,8 @@
               "deadZone": 0.25,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Yaw"
             }
           }
         ],
@@ -76,10 +91,12 @@
               "exponent": 2.0,
               "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
+              "detentValue": -0.5,
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle"
             }
           }
         ],
@@ -90,7 +107,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -101,7 +119,8 @@
               "deadZone": 0.25,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -117,21 +136,18 @@
                   57
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Weapon Release"
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  37
-                ],
-                "modifierCodes": []
-              }
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Left Brake"
             }
           }
         ],
@@ -149,7 +165,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Trigger"
             }
           },
           {
@@ -165,7 +182,18 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trigger"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S1",
+              "invert": false,
+              "description": "Right Brake"
             }
           }
         ]
@@ -176,13 +204,14 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
                   4
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Pan (3D) Cockpit"
             }
           },
           {
@@ -197,7 +226,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Default FOV"
             }
           }
         ],
@@ -208,36 +238,6 @@
               "longPress": false,
               "downUp": false,
               "mouseButton": 2
-            }
-          }
-        ],
-        "7": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  47
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "9": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  22
-                ],
-                "modifierCodes": []
-              }
             }
           }
         ],
@@ -252,11 +252,28 @@
                   38
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Look Closer"
             }
           }
         ],
         "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": true,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  32
+                ],
+                "modifierCodes": [
+                  42
+                ]
+              },
+              "description": "Drag Chute Deploy"
+            }
+          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -267,7 +284,8 @@
                   48
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Speed Brake"
             }
           }
         ],
@@ -275,29 +293,15 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": true,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  53
-                ],
-                "modifierCodes": [
-                  42
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  50
+                  22
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "UNCAGE"
             }
           }
         ],
@@ -305,27 +309,15 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": true,
+              "longPress": false,
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
                   34
                 ],
                 "modifierCodes": []
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  46
-                ],
-                "modifierCodes": []
-              }
+              },
+              "description": "Gear"
             }
           }
         ],
@@ -333,29 +325,77 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": true,
-              "downUp": true,
+              "longPress": false,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  36
+                  53
                 ],
                 "modifierCodes": [
-                  29
+                  42
                 ]
-              }
+              },
+              "description": "NWS/AR DISC MSL STEP SWITCH"
             }
-          },
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": false,
+              "longPress": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": true,
+              "longPress": false
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
               "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  32
-                ],
-                "modifierCodes": []
-              }
+              "direction": "UP"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "RIGHT"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "DOWN"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "LEFT"
             }
           }
         ]
@@ -379,7 +419,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "CMS Up"
             }
           }
         ],
@@ -396,7 +437,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "CMS Right"
             }
           }
         ],
@@ -413,7 +455,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "CMS Down"
             }
           }
         ],
@@ -430,7 +473,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "CMS Left"
             }
           }
         ]
@@ -454,7 +498,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "DMS Up"
             }
           }
         ],
@@ -471,7 +516,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "DMS Right"
             }
           }
         ],
@@ -488,7 +534,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "DMS Down"
             }
           }
         ],
@@ -505,7 +552,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "DMS Left"
             }
           }
         ]
@@ -513,7 +561,7 @@
     },
     {
       "uuid": "f83e2818-9b48-4243-bcfe-c788556f4e60",
-      "description": "Look",
+      "description": "Look / Comm",
       "axisToActionsMap": {
         "0": [
           {
@@ -521,9 +569,10 @@
             "data": {
               "deadZone": 0.15,
               "exponent": 3.0,
-              "maxCursorSpeed": 1750.0,
+              "maxCursorSpeed": 1500.0,
               "axis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Look Left/Right / Head Left/Right"
             }
           }
         ],
@@ -533,15 +582,61 @@
             "data": {
               "deadZone": 0.15,
               "exponent": 3.0,
-              "maxCursorSpeed": 1750.0,
+              "maxCursorSpeed": 1000.0,
               "axis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Look Up/Down / Head Forward/Back"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  199
+                ],
+                "modifierCodes": []
+              },
+              "description": "UHF"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  207
+                ],
+                "modifierCodes": []
+              },
+              "description": "VHF"
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "11": [
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "mouseButton": 3,
+              "description": "Translate Head"
+            }
+          }
+        ],
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -549,14 +644,15 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  199
+                  211
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "IFF OUT"
             }
           }
         ],
-        "12": [
+        "7": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -567,7 +663,53 @@
                   209
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "IFF IN"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": false,
+              "description": "Zoom In / Head Up"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": true,
+              "description": "Zoom Out / Head Down"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "2418e261-453a-40fa-91cd-026fb5d3c6a5",
+      "description": "Mode Override",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  50
+                ],
+                "modifierCodes": []
+              },
+              "description": "MRM Override"
             }
           }
         ],
@@ -579,10 +721,11 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  207
+                  46
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "MRM/DF Cancel"
             }
           }
         ],
@@ -594,10 +737,11 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  211
+                  32
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "DF Override"
             }
           }
         ]
@@ -605,7 +749,7 @@
     },
     {
       "uuid": "a6977cc6-4288-4dc8-abcb-0e10d4a95c4f",
-      "description": "Radar",
+      "description": "Sensor",
       "axisToActionsMap": {
         "0": [
           {
@@ -614,7 +758,8 @@
               "deadZone": 0.25,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Cursor X"
             }
           }
         ],
@@ -625,18 +770,51 @@
               "deadZone": 0.25,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": true
+              "invert": true,
+              "description": "Cursor Y"
             }
           }
         ]
       },
       "buttonToActionsMap": {
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  210
+                ],
+                "modifierCodes": []
+              },
+              "description": "Cursor Enable"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  47
+                ],
+                "modifierCodes": []
+              },
+              "description": "Pinky Switch"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
                   65
@@ -644,7 +822,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Antenna Elevation Up"
             }
           }
         ],
@@ -653,15 +832,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  60
+                  62
                 ],
                 "modifierCodes": [
-                  29
+                  56
                 ]
-              }
+              },
+              "description": "MAN RANGE Up"
             }
           }
         ],
@@ -670,7 +850,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
                   63
@@ -678,7 +858,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Antenna Elevation Down"
             }
           }
         ],
@@ -686,31 +867,17 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": true,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  64
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  59
+                  61
                 ],
                 "modifierCodes": [
-                  29
+                  56
                 ]
-              }
+              },
+              "description": "MAN RANGE Down"
             }
           }
         ]
@@ -734,7 +901,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "TMS Up"
             }
           }
         ],
@@ -751,7 +919,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "TMS  Right"
             }
           }
         ],
@@ -768,7 +937,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "TMS Down"
             }
           }
         ],
@@ -785,7 +955,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "TMS Left"
             }
           }
         ]
@@ -794,8 +965,66 @@
     {
       "uuid": "7be63c4a-ddbf-4466-be81-d1bad4c04e3a",
       "description": "Trim",
-      "axisToActionsMap": {},
+      "axisToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  30
+                ],
+                "modifierCodes": [
+                  56
+                ]
+              },
+              "description": "Paddle Switch"
+            }
+          }
+        ]
+      },
       "buttonToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  68
+                ],
+                "modifierCodes": [
+                  56,
+                  29
+                ]
+              },
+              "description": "Yaw Trim Right"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  67
+                ],
+                "modifierCodes": [
+                  56,
+                  29
+                ]
+              },
+              "description": "Yaw Trim Left"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -809,7 +1038,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trim Nose Down"
             }
           }
         ],
@@ -826,7 +1056,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trim Roll Right"
             }
           }
         ],
@@ -843,7 +1074,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trim Nose Down"
             }
           }
         ],
@@ -860,7 +1092,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trim Roll Left"
             }
           }
         ]
@@ -868,9 +1101,27 @@
     },
     {
       "uuid": "ce0eb7f7-31a1-4782-ba23-53822a7f708f",
-      "description": "View",
+      "description": "View / Eject",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  18
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              },
+              "description": "Eject"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -879,10 +1130,11 @@
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  4
+                  3
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Snap 3D Cockpit"
             }
           }
         ],
@@ -897,7 +1149,8 @@
                   10
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Chase Camera"
             }
           }
         ],
@@ -905,14 +1158,31 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "longPress": true,
+              "downUp": true,
+              "keystroke": {
+                "keyCodes": [
+                  49
+                ],
+                "modifierCodes": []
+              },
+              "description": "Nightvision"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
               "longPress": false,
               "downUp": true,
               "keystroke": {
                 "keyCodes": [
-                  2
+                  47
                 ],
-                "modifierCodes": []
-              }
+                "modifierCodes": [
+                  56
+                ]
+              },
+              "description": "Visor"
             }
           }
         ],
@@ -927,7 +1197,8 @@
                   11
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Orbit Camera"
             }
           }
         ]
