@@ -1,5 +1,5 @@
 {
-  "version": "0.15",
+  "version": "0.17",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -79,7 +79,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Yaw"
             }
           }
         ],
@@ -94,7 +95,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle"
             }
           }
         ],
@@ -105,7 +107,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -116,7 +119,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -127,7 +131,8 @@
               "deadZone": 0.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Left Brake"
             }
           },
           {
@@ -135,7 +140,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 2
+              "buttonId": 2,
+              "description": "WPN REL"
             }
           }
         ],
@@ -146,7 +152,8 @@
               "deadZone": 0.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Right Brake"
             }
           },
           {
@@ -154,7 +161,8 @@
             "data": {
               "minAxisValue": -0.25,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Trigger (1st detent)"
             }
           },
           {
@@ -162,7 +170,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 1
+              "buttonId": 1,
+              "description": "Trigger (2nd detent)"
             }
           }
         ]
@@ -175,7 +184,8 @@
               "virtualAxis": "RX",
               "resetValue": 0.0,
               "fluid": false,
-              "longPress": false
+              "longPress": false,
+              "description": "Reset View"
             }
           },
           {
@@ -184,7 +194,8 @@
               "virtualAxis": "RY",
               "resetValue": 0.0,
               "fluid": false,
-              "longPress": false
+              "longPress": false,
+              "description": "Reset View"
             }
           },
           {
@@ -197,7 +208,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -210,7 +222,8 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -219,7 +232,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 13
+              "buttonId": 13,
+              "description": "DOGFIGHT/Missile Override"
             }
           }
         ],
@@ -234,7 +248,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom In"
             }
           }
         ],
@@ -249,7 +264,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom Out"
             }
           }
         ],
@@ -264,7 +280,8 @@
                   46
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "UNCAGE"
             }
           }
         ],
@@ -279,7 +296,8 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Gear"
             }
           }
         ],
@@ -294,7 +312,8 @@
                   31
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "NWS A/R DISC MSL STEP"
             }
           }
         ]
@@ -849,7 +868,8 @@
                   28
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ENABLE"
             }
           }
         ],
@@ -882,7 +902,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 12
+              "buttonId": 11
             }
           }
         ],
@@ -906,7 +926,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 11
+              "buttonId": 12
             }
           }
         ]
