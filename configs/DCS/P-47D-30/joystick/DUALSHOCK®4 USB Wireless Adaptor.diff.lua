@@ -27,7 +27,7 @@ local diff = {
 	},
 	["keyDiffs"] = {
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["name"] = "Input.P47.trigger_b2",
+			["name"] = "Bombe auslösen (B2)",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
@@ -35,7 +35,7 @@ local diff = {
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Input.P47.trigger_a",
+			["name"] = "Maschinengewehre abfeuern (A)",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",

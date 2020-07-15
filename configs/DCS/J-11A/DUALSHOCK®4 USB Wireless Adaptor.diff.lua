@@ -59,7 +59,7 @@ local diff = {
 			},
 		},
 		["d957pnilu958cdnilvdnilvpnilvunil"] = {
-			["name"] = "Modus: Steuerknüppel zu Trimmer-Kontrolle",
+			["name"] = "Steuerknüppel zu Trimmer-Kontrolle",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",

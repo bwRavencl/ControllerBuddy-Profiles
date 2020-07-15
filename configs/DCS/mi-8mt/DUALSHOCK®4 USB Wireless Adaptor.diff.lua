@@ -42,14 +42,6 @@ local diff = {
 				},
 			},
 		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Waffe abfeuern",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
 			["removed"] = {

@@ -43,7 +43,7 @@ local diff = {
 			},
 		},
 		["d101pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Change",
+			["name"] = "Waffe wechseln",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
@@ -51,7 +51,7 @@ local diff = {
 			},
 		},
 		["d113pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Cannon",
+			["name"] = "Kanone",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",
@@ -59,7 +59,7 @@ local diff = {
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Fire",
+			["name"] = "Waffe abfeuern",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",

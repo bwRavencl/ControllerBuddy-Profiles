@@ -25,7 +25,7 @@ local diff = {
 			},
 		},
 		["a3025cd5"] = {
-			["name"] = "Fliegen: Schubhebel",
+			["name"] = "Schubhebel",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_Z",

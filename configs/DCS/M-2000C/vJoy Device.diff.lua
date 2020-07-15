@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -23,7 +23,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -109,7 +109,7 @@ local diff = {
 	},
 	["keyDiffs"] = {
 		["d100pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "STT/TWS Toggle (Target Lock)",
+			["name"] = "STT/TWS Toggle",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
@@ -210,7 +210,7 @@ local diff = {
 					["key"] = "JOY_BTN12",
 				},
 			},
-			["name"] = "TDC CENTER",
+			["name"] = "TDC DEPRESS (Lock Target)",
 		},
 		["d961pnilu962cdnilvdnilvpnilvunil"] = {
 			["added"] = {

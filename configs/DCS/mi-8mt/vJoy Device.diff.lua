@@ -5,11 +5,11 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
-						["saturationX"] = 0.76,
+						["saturationX"] = 1,
 						["saturationY"] = 1,
 						["slider"] = false,
 					},
@@ -23,7 +23,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -77,14 +77,6 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
-				},
-			},
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Waffe abfeuern",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
 				},
 			},
 		},

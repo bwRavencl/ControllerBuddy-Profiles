@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -23,7 +23,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -76,7 +76,7 @@ local diff = {
 					["key"] = "JOY_Z",
 				},
 			},
-			["name"] = "Throttle (analog)",
+			["name"] = "Gasgriff (analog)",
 		},
 		["a3008cd3"] = {
 			["added"] = {
@@ -84,7 +84,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Input.Generic.pitch_slider",
+			["name"] = "Triebwerkdrehzahl bewegen (analog)",
 		},
 		["a3011cd3"] = {
 			["added"] = {
@@ -92,7 +92,7 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Input.P47.boost_slider",
+			["name"] = "Ladedruckregler",
 		},
 	},
 	["keyDiffs"] = {

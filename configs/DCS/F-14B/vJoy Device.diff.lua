@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -23,7 +23,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -231,14 +231,6 @@ local diff = {
 				},
 			},
 			["name"] = "Target designate down / VSL LO",
-		},
-		["d3641pnilunilcd11vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN22",
-				},
-			},
-			["name"] = "Exterior Lights Master Switch Toggle",
 		},
 		["dnilp2019u2019cdnilvdnilvp-1vu0"] = {
 			["added"] = {

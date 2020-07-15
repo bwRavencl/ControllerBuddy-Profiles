@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -16,14 +16,14 @@ local diff = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Pitch",
+			["name"] = "Fliegen: Steuerknüppel, Höhenruder",
 		},
 		["a2002cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -34,7 +34,7 @@ local diff = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Roll",
+			["name"] = "Fliegen: Steuerknüppel, Querruder",
 		},
 		["a2003cdnil"] = {
 			["changed"] = {
@@ -52,7 +52,7 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Rudder",
+			["name"] = "Fliegen: Seitenruder",
 		},
 		["a2010cdnil"] = {
 			["added"] = {
@@ -60,7 +60,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Horizontal View",
+			["name"] = "Horizontale Sicht",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -68,7 +68,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Vertical View",
+			["name"] = "Vertikale Ansicht",
 		},
 		["a73cdnil"] = {
 			["name"] = "Wheel Brakes Lever",
@@ -86,7 +86,7 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Weapon Release",
+			["name"] = "Waffe auslösen",
 		},
 		["d357pnilu358cdnilvdnilvpnilvunil"] = {
 			["added"] = {
@@ -97,7 +97,7 @@ local diff = {
 			["name"] = "Drop Countermeasures (ASO and SPS-141)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Up Right slow",
+			["name"] = "Sicht nach oben rechts, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UR",
@@ -105,7 +105,7 @@ local diff = {
 			},
 		},
 		["dnilp211u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Down Right slow",
+			["name"] = "Sicht nach unten rechts, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DR",
@@ -113,7 +113,7 @@ local diff = {
 			},
 		},
 		["dnilp212u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Down Left slow",
+			["name"] = "Sicht nach unten links, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DL",
@@ -121,7 +121,7 @@ local diff = {
 			},
 		},
 		["dnilp213u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Up Left slow",
+			["name"] = "Sicht nach oben links, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UL",
@@ -129,7 +129,7 @@ local diff = {
 			},
 		},
 		["dnilp32u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Left slow",
+			["name"] = "Sicht nach links, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -137,7 +137,7 @@ local diff = {
 			},
 		},
 		["dnilp33u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Right slow",
+			["name"] = "Sicht nach rechts, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",
@@ -145,7 +145,7 @@ local diff = {
 			},
 		},
 		["dnilp34u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Up slow",
+			["name"] = "Sicht hoch (langsam)",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -153,7 +153,7 @@ local diff = {
 			},
 		},
 		["dnilp35u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Down slow",
+			["name"] = "Sicht nach unten, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
@@ -161,7 +161,7 @@ local diff = {
 			},
 		},
 		["dnilp36unilcdnilvdnilvpnilvunil"] = {
-			["name"] = "View Center",
+			["name"] = "Sichtzentrierung",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",

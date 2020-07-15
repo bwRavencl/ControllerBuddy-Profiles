@@ -34,30 +34,6 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d101pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Waffe wechseln",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-		},
-		["d113pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Kanone",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Waffe abfeuern",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
-		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
 			["removed"] = {

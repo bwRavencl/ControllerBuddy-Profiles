@@ -35,7 +35,7 @@ local diff = {
 	},
 	["keyDiffs"] = {
 		["d100pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "STT/TWS Toggle (Target Lock)",
+			["name"] = "STT/TWS Toggle",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",

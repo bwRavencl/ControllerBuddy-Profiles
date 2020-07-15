@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -23,7 +23,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -117,7 +117,7 @@ local diff = {
 			},
 		},
 		["d101pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Change",
+			["name"] = "Waffe wechseln",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
@@ -125,7 +125,7 @@ local diff = {
 			},
 		},
 		["d113pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Cannon",
+			["name"] = "Kanone",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",
@@ -149,7 +149,7 @@ local diff = {
 			["name"] = "Bugradsteuerung",
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Fire",
+			["name"] = "Waffe abfeuern",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",

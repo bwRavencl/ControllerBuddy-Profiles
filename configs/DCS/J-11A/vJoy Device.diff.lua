@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -23,7 +23,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -141,7 +141,7 @@ local diff = {
 			},
 		},
 		["d957pnilu958cdnilvdnilvpnilvunil"] = {
-			["name"] = "Modus: Steuerknüppel zu Trimmer-Kontrolle",
+			["name"] = "Steuerknüppel zu Trimmer-Kontrolle",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",

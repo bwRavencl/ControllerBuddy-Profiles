@@ -1,7 +1,7 @@
 local diff = {
 	["axisDiffs"] = {
 		["a2001cdnil"] = {
-			["name"] = "Pitch",
+			["name"] = "Fliegen: Steuerknüppel, Höhenruder",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_Y",
@@ -9,7 +9,7 @@ local diff = {
 			},
 		},
 		["a2002cdnil"] = {
-			["name"] = "Roll",
+			["name"] = "Fliegen: Steuerknüppel, Querruder",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_X",
@@ -17,7 +17,7 @@ local diff = {
 			},
 		},
 		["a2003cdnil"] = {
-			["name"] = "Rudder",
+			["name"] = "Fliegen: Seitenruder",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_RZ",
@@ -25,7 +25,7 @@ local diff = {
 			},
 		},
 		["a2004cdnil"] = {
-			["name"] = "Thrust",
+			["name"] = "Fliegen: Schub",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_Z",
@@ -51,7 +51,7 @@ local diff = {
 			},
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Up Right slow",
+			["name"] = "Sicht nach oben rechts, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UR",
@@ -59,7 +59,7 @@ local diff = {
 			},
 		},
 		["dnilp211u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Down Right slow",
+			["name"] = "Sicht nach unten rechts, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DR",
@@ -67,7 +67,7 @@ local diff = {
 			},
 		},
 		["dnilp212u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Down Left slow",
+			["name"] = "Sicht nach unten links, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DL",
@@ -75,7 +75,7 @@ local diff = {
 			},
 		},
 		["dnilp213u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Up Left slow",
+			["name"] = "Sicht nach oben links, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UL",
@@ -83,7 +83,7 @@ local diff = {
 			},
 		},
 		["dnilp32u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Left slow",
+			["name"] = "Sicht nach links, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -91,7 +91,7 @@ local diff = {
 			},
 		},
 		["dnilp33u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Right slow",
+			["name"] = "Sicht nach rechts, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",
@@ -99,7 +99,7 @@ local diff = {
 			},
 		},
 		["dnilp34u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Up slow",
+			["name"] = "Sicht hoch (langsam)",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -107,7 +107,7 @@ local diff = {
 			},
 		},
 		["dnilp35u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "View Down slow",
+			["name"] = "Sicht nach unten, langsam",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
@@ -115,7 +115,7 @@ local diff = {
 			},
 		},
 		["dnilp36unilcdnilvdnilvpnilvunil"] = {
-			["name"] = "View Center",
+			["name"] = "Sichtzentrierung",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",

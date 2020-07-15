@@ -35,7 +35,7 @@ local diff = {
 	},
 	["keyDiffs"] = {
 		["d3014pnilu3014cd20vd1vpnilvu0"] = {
-			["name"] = "Input.FW190A8.trigger_b2",
+			["name"] = "Bomben auslösen (B2)",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
@@ -43,7 +43,7 @@ local diff = {
 			},
 		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["name"] = "Input.FW190A8.trigger_b1",
+			["name"] = "Kanonen abfeuern (B1)",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
@@ -51,7 +51,7 @@ local diff = {
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Input.FW190A8.trigger_a",
+			["name"] = "Abzug A",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
