@@ -116,6 +116,30 @@ local diff = {
 			},
 			["name"] = "Bomb Pickle: Release Bombs/Launch Rockets, Mavericks",
 		},
+		["d427pnilu428cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Emergency SAAHS Disconnect",
+		},
+		["d556pnilu558cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+			["name"] = "Engine Air Start",
+		},
+		["d557pnilu560cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Emergency Flap Retraction",
+		},
 		["d562pnilu606cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {

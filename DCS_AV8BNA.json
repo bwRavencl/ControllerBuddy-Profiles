@@ -1,5 +1,5 @@
 {
-  "version": "0.16",
+  "version": "0.17",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -79,7 +79,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Yaw"
             }
           }
         ],
@@ -93,7 +94,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle"
             }
           }
         ],
@@ -104,7 +106,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -115,7 +118,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -125,7 +129,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Left Brake"
             }
           },
           {
@@ -133,7 +138,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 5
+              "buttonId": 5,
+              "description": "Bomb Pickle"
             }
           }
         ],
@@ -143,7 +149,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 1
+              "buttonId": 1,
+              "description": "Right Brake"
             }
           },
           {
@@ -151,7 +158,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 4
+              "buttonId": 4,
+              "description": "Trigger"
             }
           }
         ]
@@ -164,7 +172,8 @@
               "virtualAxis": "RX",
               "resetValue": 0.0,
               "fluid": false,
-              "longPress": false
+              "longPress": false,
+              "description": "Reset View"
             }
           },
           {
@@ -173,7 +182,8 @@
               "virtualAxis": "RY",
               "resetValue": 0.0,
               "fluid": false,
-              "longPress": false
+              "longPress": false,
+              "description": "Reset View"
             }
           },
           {
@@ -186,7 +196,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -199,7 +210,8 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -208,7 +220,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 3
+              "buttonId": 3,
+              "description": "AG Target Undesignate / NWS / FOV Toggle"
             }
           }
         ],
@@ -223,7 +236,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out"
             }
           }
         ],
@@ -238,7 +252,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in"
             }
           }
         ],
@@ -246,29 +261,15 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": true,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  46
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
                   48
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Airbrake"
             }
           }
         ],
@@ -285,7 +286,8 @@
                 "modifierCodes": [
                   219
                 ]
-              }
+              },
+              "description": "Uncage"
             }
           }
         ],
@@ -302,7 +304,8 @@
                 "modifierCodes": [
                   220
                 ]
-              }
+              },
+              "description": "Throttle Cutoff"
             }
           },
           {
@@ -315,7 +318,8 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Gear"
             }
           }
         ],
@@ -332,7 +336,8 @@
                 "modifierCodes": [
                   220
                 ]
-              }
+              },
+              "description": "WP Increment"
             }
           }
         ]
@@ -403,6 +408,22 @@
       "description": "Air-To-Air",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  46
+                ],
+                "modifierCodes": []
+              },
+              "description": "A/A Mode Down"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -414,24 +435,8 @@
                   32
                 ],
                 "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  46
-                ],
-                "modifierCodes": [
-                  219
-                ]
-              }
+              },
+              "description": "A/A Mode FWD"
             }
           }
         ],
@@ -448,22 +453,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  46
-                ],
-                "modifierCodes": []
-              }
+              },
+              "description": "A/A Mode AFT"
             }
           }
         ]
@@ -471,7 +462,7 @@
     },
     {
       "uuid": "8b0bad15-f42e-4cd6-a2b6-1e8a3bb14a58",
-      "description": "Countermeasure",
+      "description": "ECM Dispense",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "11": [
@@ -485,7 +476,8 @@
                   8
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ECM Dispense FWD"
             }
           }
         ],
@@ -500,7 +492,8 @@
                   11
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ECM Dispense RIGHT"
             }
           }
         ],
@@ -515,7 +508,8 @@
                   9
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ECM Dispense AFT"
             }
           }
         ],
@@ -530,7 +524,8 @@
                   10
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ECM Dispense LEFT"
             }
           }
         ]
@@ -550,7 +545,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Look left/right"
             }
           }
         ],
@@ -564,7 +560,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Look up/down"
             }
           }
         ],
@@ -582,7 +579,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "COMM FWD"
             }
           }
         ],
@@ -600,7 +598,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "COMM AFT"
             }
           }
         ]
@@ -620,7 +619,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpitcamera shift aft"
             }
           },
           {
@@ -646,7 +646,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpitcamera shift forward"
             }
           },
           {
@@ -654,39 +655,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  43
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "7": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  49
-                ],
-                "modifierCodes": [
-                  42
-                ]
-              }
+              "on": false,
+              "description": "Cockpitcamera shift forward"
             }
           }
         ],
@@ -704,7 +674,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpitcamera shift up"
             }
           },
           {
@@ -712,7 +683,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpitcamera shift up"
             }
           }
         ],
@@ -730,7 +702,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpitcamera shift right"
             }
           },
           {
@@ -738,7 +711,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpitcamera shift right"
             }
           }
         ],
@@ -756,7 +730,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpitcamera shift down"
             }
           },
           {
@@ -764,7 +739,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpitcamera shift down"
             }
           }
         ],
@@ -782,7 +758,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpitcamera shift left"
             }
           },
           {
@@ -790,7 +767,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpitcamera shift left"
             }
           }
         ]
@@ -801,36 +779,6 @@
       "description": "Nozzle",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": true,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  46
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  48
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
         "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -844,37 +792,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": true,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  20
-                ],
-                "modifierCodes": [
-                  220
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  34
-                ],
-                "modifierCodes": []
-              }
+              },
+              "description": "Nozzle Rotation DOWN"
             }
           }
         ],
@@ -891,7 +810,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Nozzle Rotation UP"
             }
           }
         ]
@@ -915,7 +835,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Sensor Select FWD"
             }
           }
         ],
@@ -932,7 +853,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Sensor Select RIGHT"
             }
           }
         ],
@@ -949,7 +871,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Sensor Select AFT"
             }
           }
         ],
@@ -966,7 +889,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Sensor Select LEFT"
             }
           }
         ]
@@ -983,7 +907,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "TDC left/right"
             }
           }
         ],
@@ -994,7 +919,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "TDC up/down"
             }
           }
         ]
@@ -1005,24 +931,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 2
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  46
-                ],
-                "modifierCodes": [
-                  219
-                ]
-              }
+              "buttonId": 2,
+              "description": "TDC Action/No Action Toggle"
             }
           }
         ],
@@ -1037,7 +947,8 @@
                   49
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "TDC Down"
             }
           }
         ],
@@ -1054,7 +965,8 @@
                 "modifierCodes": [
                   220
                 ]
-              }
+              },
+              "description": "TDC Left"
             }
           }
         ]
@@ -1062,26 +974,21 @@
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim",
-      "axisToActionsMap": {},
-      "buttonToActionsMap": {
-        "0": [
+      "description": "Trim / Emergency",
+      "axisToActionsMap": {
+        "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
-              "downUp": true,
-              "keystroke": {
-                "keyCodes": [
-                  20
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 6,
+              "description": "Emergency SAAHS Disconnect"
             }
           }
-        ],
+        ]
+      },
+      "buttonToActionsMap": {
         "1": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -1095,7 +1002,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Rudder RIGHT"
             }
           }
         ],
@@ -1112,7 +1020,28 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Rudder LEFT"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 7,
+              "description": "Emergency Flap Retraction"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 8,
+              "description": "Engine Air Start"
             }
           }
         ],
@@ -1129,7 +1058,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Pitch DOWN"
             }
           }
         ],
@@ -1146,7 +1076,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Bank RIGHT"
             }
           }
         ],
@@ -1163,7 +1094,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Pitch UP"
             }
           }
         ],
@@ -1180,7 +1112,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Bank LEFT"
             }
           }
         ]
@@ -1204,7 +1137,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Eject"
             }
           }
         ],
@@ -1219,7 +1153,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Cockpit View"
             }
           }
         ],
@@ -1234,7 +1169,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Flyby View"
             }
           }
         ],
@@ -1251,7 +1187,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Helmet Visor/NVG Toggle"
             }
           }
         ],
@@ -1266,7 +1203,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Aircraft View"
             }
           }
         ]
