@@ -1,5 +1,5 @@
 {
-  "version": "0.15",
+  "version": "0.17",
   "showOverlay": true,
   "showVrOverlay": false,
   "keyRepeatInterval": 30,
@@ -65,7 +65,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Yaw"
             }
           }
         ],
@@ -79,7 +80,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle"
             }
           }
         ],
@@ -90,7 +92,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -101,39 +104,30 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  55
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 2,
+              "description": "Left Brake"
             }
           }
         ],
         "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  74
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 3,
+              "description": "Right Brake"
             }
           }
         ]
@@ -150,7 +144,8 @@
                   33
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -158,32 +153,18 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
-            }
-          }
-        ],
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": 144,
-              "on": true
+              "on": false,
+              "description": "Reset View"
             }
           }
         ],
         "6": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  21
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 4,
+              "description": "Toggle Throttle Reverse Thrust"
             }
           }
         ],
@@ -195,10 +176,22 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  70
+                  83
                 ],
-                "modifierCodes": []
-              }
+                "modifierCodes": [
+                  29
+                ]
+              },
+              "description": "Toggle Parking Brakes"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": 144,
+              "on": true,
+              "description": "Toggle Parking Brakes"
             }
           }
         ],
@@ -207,7 +200,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Zoom Out"
             }
           }
         ],
@@ -216,7 +210,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 1
+              "buttonId": 1,
+              "description": "Zoom In"
             }
           }
         ],
@@ -231,7 +226,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Spoilers"
             }
           }
         ],
@@ -243,18 +239,11 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  81
+                  65
                 ],
                 "modifierCodes": []
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": 144,
-              "on": true
+              },
+              "description": "Increase Flaps"
             }
           }
         ],
@@ -269,7 +258,8 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Gear"
             }
           }
         ],
@@ -281,18 +271,11 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  73
+                  64
                 ],
                 "modifierCodes": []
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": 144,
-              "on": true
+              },
+              "description": "Decrease Flaps"
             }
           }
         ]
@@ -360,7 +343,7 @@
     },
     {
       "uuid": "890ece09-10d9-47a8-a3c6-c7cb8d749caa",
-      "description": "Cowl / Anti-Ice",
+      "description": "Cowl Flap / Anti Ice",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "6": [
@@ -374,7 +357,8 @@
                   35
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Anti Ice"
             }
           }
         ],
@@ -392,7 +376,8 @@
                   42,
                   29
                 ]
-              }
+              },
+              "description": "Decrease Cowl Flap"
             }
           }
         ],
@@ -410,7 +395,8 @@
                   42,
                   29
                 ]
-              }
+              },
+              "description": "Increase Cowl Flap"
             }
           }
         ]
@@ -452,58 +438,20 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  28
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
-            }
-          }
-        ],
-        "2": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  76
+                  208
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Translate Cockpit View Backward"
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
             "data": {
               "longPress": false,
-              "downUp": false,
-              "keystroke": {
-                "keyCodes": [
-                  156
-                ],
-                "modifierCodes": []
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
-            "data": {
-              "virtualAxis": "RX",
-              "resetValue": 0.0,
-              "fluid": false,
-              "longPress": false
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
-            "data": {
-              "virtualAxis": "RY",
-              "resetValue": 0.0,
-              "fluid": false,
-              "longPress": false
+              "virtualKeyCode": 144,
+              "on": false,
+              "description": "Translate Cockpit View Backward"
             }
           }
         ],
@@ -515,12 +463,20 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  14
+                  200
                 ],
-                "modifierCodes": [
-                  29
-                ]
-              }
+                "modifierCodes": []
+              },
+              "description": "Translate Cockpit View Forward"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": 144,
+              "on": false,
+              "description": "Translate Cockpit View Forward"
             }
           }
         ],
@@ -532,12 +488,22 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  28
+                  200
                 ],
                 "modifierCodes": [
-                  42
+                  56
                 ]
-              }
+              },
+              "description": "Increase Cockpit View Height"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": 144,
+              "on": false,
+              "description": "Increase Cockpit View Height"
             }
           }
         ],
@@ -549,13 +515,20 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  28
+                  205
                 ],
-                "modifierCodes": [
-                  42,
-                  29
-                ]
-              }
+                "modifierCodes": []
+              },
+              "description": "Translate Cockpit View Right"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": 144,
+              "on": false,
+              "description": "Translate Cockpit View Right"
             }
           }
         ],
@@ -567,12 +540,22 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  14
+                  208
                 ],
                 "modifierCodes": [
-                  42
+                  56
                 ]
-              }
+              },
+              "description": "Translate View Down"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": 144,
+              "on": false,
+              "description": "Decrease Cockpit View Height"
             }
           }
         ],
@@ -584,13 +567,20 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  14
+                  203
                 ],
-                "modifierCodes": [
-                  42,
-                  29
-                ]
-              }
+                "modifierCodes": []
+              },
+              "description": "Translate Cockpit View Left"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": 144,
+              "on": false,
+              "description": "Translate Cockpit View Left"
             }
           }
         ]
@@ -610,7 +600,8 @@
               "deadZone": 0.25,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Mixture"
             }
           }
         ]
@@ -631,12 +622,24 @@
               "deadZone": 0.25,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Prop Pitch"
             }
           }
         ]
       },
-      "buttonToActionsMap": {}
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 5,
+              "description": "Toggle Propeller Reverse Thrust"
+            }
+          }
+        ]
+      }
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
@@ -651,12 +654,13 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  81
+                  156
                 ],
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Rudder Trim Right"
             }
           },
           {
@@ -664,7 +668,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": true
+              "on": true,
+              "description": "Rudder Trim Right"
             }
           }
         ],
@@ -676,12 +681,13 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  79
+                  82
                 ],
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Rudder Trim Left"
             }
           },
           {
@@ -689,7 +695,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": true
+              "on": true,
+              "description": "Rudder Trim Left"
             }
           }
         ],
@@ -704,7 +711,8 @@
                   71
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Elevator Trim Down"
             }
           },
           {
@@ -712,7 +720,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": true
+              "on": true,
+              "description": "Elevator Trim Down"
             }
           }
         ],
@@ -729,7 +738,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Aileron Trim Right"
             }
           },
           {
@@ -737,7 +747,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": true
+              "on": true,
+              "description": "Aileron Trim Right"
             }
           }
         ],
@@ -752,7 +763,8 @@
                   79
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Elevator Trim Up"
             }
           },
           {
@@ -760,7 +772,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": true
+              "on": true,
+              "description": "Elevator Trim Up"
             }
           }
         ],
@@ -777,7 +790,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Aileron Trim Left"
             }
           },
           {
@@ -785,7 +799,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": true
+              "on": true,
+              "description": "Aileron Trim Left"
             }
           }
         ]
@@ -804,10 +819,27 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  57
+                  207
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Cockpit/External View Mode"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "downUp": false,
+              "keystroke": {
+                "keyCodes": [
+                  30
+                ],
+                "modifierCodes": []
+              },
+              "description": "Next Instrument View"
             }
           }
         ],
@@ -816,15 +848,14 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "downUp": true,
+              "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  30
+                  31
                 ],
-                "modifierCodes": [
-                  42
-                ]
-              }
+                "modifierCodes": []
+              },
+              "description": "Toggle Smart Camera"
             }
           }
         ],
@@ -836,10 +867,13 @@
               "downUp": false,
               "keystroke": {
                 "keyCodes": [
-                  207
+                  30
                 ],
-                "modifierCodes": []
-              }
+                "modifierCodes": [
+                  42
+                ]
+              },
+              "description": "Previous Instrument View"
             }
           }
         ]
@@ -847,6 +881,13 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
+    "Z": {
+      "color": {
+        "value": -16777216,
+        "falpha": 0.0
+      },
+      "inverted": false
+    },
     "S1": {
       "color": {
         "value": -65536,
@@ -857,13 +898,6 @@
     "S0": {
       "color": {
         "value": -16776961,
-        "falpha": 0.0
-      },
-      "inverted": false
-    },
-    "Z": {
-      "color": {
-        "value": -16777216,
         "falpha": 0.0
       },
       "inverted": false
