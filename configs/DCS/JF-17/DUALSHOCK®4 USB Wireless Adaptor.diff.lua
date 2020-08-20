@@ -24,7 +24,7 @@ local diff = {
 				},
 			},
 		},
-		["a2024cdnil"] = {
+		["a2004cdnil"] = {
 			["name"] = "Fliegen: Schub",
 			["removed"] = {
 				[1] = {
