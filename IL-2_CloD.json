@@ -392,7 +392,7 @@
     },
     {
       "uuid": "d7a60395-4c58-4a9e-88a3-44c811b45d53",
-      "description": "Ground / Eject",
+      "description": "Ground",
       "axisToActionsMap": {
         "4": [
           {
@@ -449,23 +449,6 @@
               "keystroke": {
                 "keyCodes": [
                   57
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
-                  18
                 ],
                 "modifierCodes": [
                   29
@@ -763,9 +746,26 @@
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View",
+      "description": "View / Eject",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  18
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -815,16 +815,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S1": {
+    "S0": {
       "color": {
-        "value": -65536,
+        "value": -16776961,
         "falpha": 0.0
       },
       "inverted": false
     },
-    "S0": {
+    "S1": {
       "color": {
-        "value": -16776961,
+        "value": -65536,
         "falpha": 0.0
       },
       "inverted": false
