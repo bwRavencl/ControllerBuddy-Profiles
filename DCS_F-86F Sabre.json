@@ -4,13 +4,6 @@
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
   "buttonToModeActionsMap": {
-    "1": [
-      {
-        "toggle": true,
-        "longPress": false,
-        "modeUuid": "e9c03d0a-721d-4dab-a06a-18c41e3b335b"
-      }
-    ],
     "2": [
       {
         "toggle": false,
@@ -112,6 +105,15 @@
                 "modifierCodes": []
               }
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false
+            }
           }
         ],
         "5": [
@@ -127,6 +129,15 @@
                 ],
                 "modifierCodes": []
               }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S1",
+              "invert": false
             }
           }
         ]
@@ -441,33 +452,6 @@
           }
         ]
       }
-    },
-    {
-      "uuid": "e9c03d0a-721d-4dab-a06a-18c41e3b335b",
-      "description": "Brake",
-      "axisToActionsMap": {
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 0
-            }
-          }
-        ],
-        "5": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 1
-            }
-          }
-        ]
-      },
-      "buttonToActionsMap": {}
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
