@@ -88,6 +88,22 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d3926pnilu3926cd1vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "Stores Release Button",
+		},
+		["d3930pnilu3930cd1vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "Fixed Weapons Trigger",
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
 			["removed"] = {
