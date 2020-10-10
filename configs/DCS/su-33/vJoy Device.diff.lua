@@ -70,41 +70,41 @@ local diff = {
 			},
 			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
 		},
-		["a2033cdnil"] = {
+		["a2112cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
-						["deadzone"] = 0.15,
-						["invert"] = false,
+						["deadzone"] = 0,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "TDC horizontal schwenken",
+			["name"] = "Radbremse links",
 		},
-		["a2034cdnil"] = {
+		["a2113cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
-						["deadzone"] = 0.15,
-						["invert"] = false,
+						["deadzone"] = 0,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "TDC vertikal bewegen",
+			["name"] = "Radbremse rechts",
 		},
 	},
 	["keyDiffs"] = {
