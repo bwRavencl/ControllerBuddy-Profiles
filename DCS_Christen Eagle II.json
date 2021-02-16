@@ -127,7 +127,8 @@
               "virtualAxis": "RX",
               "resetValue": 0.0,
               "fluid": false,
-              "longPress": false
+              "longPress": false,
+              "activation": "SINGLE_ON_RELEASE"
             }
           },
           {
@@ -136,7 +137,8 @@
               "virtualAxis": "RY",
               "resetValue": 0.0,
               "fluid": false,
-              "longPress": false
+              "longPress": false,
+              "activation": "SINGLE_ON_RELEASE"
             }
           },
           {
@@ -379,6 +381,12 @@
             }
           }
         ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ],
         "3": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -599,6 +607,12 @@
       "description": "View / Eject",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ],
         "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -680,13 +694,6 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S1": {
-      "color": {
-        "value": -65536,
-        "falpha": 0.0
-      },
-      "inverted": false
-    },
     "Z": {
       "color": {
         "value": -16777216,
@@ -697,6 +704,13 @@
     "S0": {
       "color": {
         "value": -16776961,
+        "falpha": 0.0
+      },
+      "inverted": false
+    },
+    "S1": {
+      "color": {
+        "value": -65536,
         "falpha": 0.0
       },
       "inverted": false
