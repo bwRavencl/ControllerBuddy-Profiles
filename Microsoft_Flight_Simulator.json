@@ -115,7 +115,7 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 2,
+              "buttonId": 0,
               "description": "Left Brake"
             }
           }
@@ -126,7 +126,7 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 3,
+              "buttonId": 1,
               "description": "Right Brake"
             }
           }
@@ -163,7 +163,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 4,
+              "buttonId": 2,
               "description": "Toggle Throttle Reverse Thrust"
             }
           }
@@ -197,20 +197,32 @@
         ],
         "9": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "buttonId": 0,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  53
+                ],
+                "modifierCodes": []
+              },
               "description": "Zoom Out"
             }
           }
         ],
         "10": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "buttonId": 1,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  27
+                ],
+                "modifierCodes": []
+              },
               "description": "Zoom In"
             }
           }
@@ -634,7 +646,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 5,
+              "buttonId": 3,
               "description": "Toggle Propeller Reverse Thrust"
             }
           }
@@ -881,25 +893,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S0": {
-      "color": {
-        "value": -16776961,
-        "falpha": 0.0
-      },
-      "inverted": false
-    },
     "S1": {
-      "color": {
-        "value": -65536,
-        "falpha": 0.0
-      },
+      "color": -65536,
       "inverted": false
     },
     "Z": {
-      "color": {
-        "value": -16777216,
-        "falpha": 0.0
-      },
+      "color": -16777216,
+      "inverted": false
+    },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     }
   }
