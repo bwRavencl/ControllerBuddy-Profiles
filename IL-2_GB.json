@@ -156,7 +156,8 @@
               "virtualAxis": "RX",
               "resetValue": 0.0,
               "fluid": false,
-              "longPress": false
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY"
             }
           },
           {
@@ -165,7 +166,8 @@
               "virtualAxis": "RY",
               "resetValue": 0.0,
               "fluid": false,
-              "longPress": false
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY"
             }
           },
           {
@@ -517,7 +519,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
               "exponent": 3.0,
-              "maxRelativeSpeed": 1.3,
+              "maxRelativeSpeed": 1.0,
               "hapticFeedback": false,
               "deadZone": 0.15,
               "initialValue": 0.0,
@@ -531,7 +533,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
               "exponent": 3.0,
-              "maxRelativeSpeed": 1.3,
+              "maxRelativeSpeed": 1.0,
               "hapticFeedback": false,
               "deadZone": 0.15,
               "initialValue": 0.0,
@@ -988,25 +990,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S1": {
-      "color": {
-        "value": -65536,
-        "falpha": 0.0
-      },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     },
-    "S0": {
-      "color": {
-        "value": -16776961,
-        "falpha": 0.0
-      },
+    "S1": {
+      "color": -65536,
       "inverted": false
     },
     "Z": {
-      "color": {
-        "value": -16777216,
-        "falpha": 0.0
-      },
+      "color": -16777216,
       "inverted": false
     }
   }
