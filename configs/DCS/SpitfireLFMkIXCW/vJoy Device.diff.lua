@@ -36,6 +36,24 @@ local diff = {
 			},
 			["name"] = "Fliegen: Steuerknüppel, Querruder",
 		},
+		["a2003cdnil"] = {
+			["changed"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0.25,
+						},
+						["deadzone"] = 0.15,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_RZ",
+				},
+			},
+			["name"] = "Fliegen: Seitenruder",
+		},
 		["a2010cdnil"] = {
 			["added"] = {
 				[1] = {
