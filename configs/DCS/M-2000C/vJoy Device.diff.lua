@@ -108,14 +108,6 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d100pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "STT/TWS Toggle",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-		},
 		["d110pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
@@ -139,6 +131,22 @@ local diff = {
 				},
 			},
 			["name"] = "CNM neutral (PCA SELECT)",
+		},
+		["d262pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN18",
+				},
+			},
+			["name"] = "Radar Range DECREASE",
+		},
+		["d263pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN17",
+				},
+			},
+			["name"] = "Radar Range INCREASE",
 		},
 		["d276pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
@@ -172,14 +180,6 @@ local diff = {
 			},
 			["name"] = "Weapons SystemCMD AFT",
 		},
-		["d564pnilu563cdnilvdnilvpnilvunil"] = {
-			["name"] = "Nosewheel Steering/IFF Interrogate",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN3",
-				},
-			},
-		},
 		["d68pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
@@ -196,13 +196,13 @@ local diff = {
 			},
 			["name"] = "Airbrake TOGGLE",
 		},
-		["d74pnilu75cdnilvdnilvpnilvunil"] = {
-			["name"] = "Wheel Brakes",
-			["removed"] = {
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN4",
+					["key"] = "JOY_BTN1",
 				},
 			},
+			["name"] = "Weapons FIRE/Bomb Release",
 		},
 		["d92pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
