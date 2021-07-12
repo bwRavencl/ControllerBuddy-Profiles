@@ -108,6 +108,30 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d101pnilunilcdnilvd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "Weapons SystemCMD Depress",
+		},
+		["d101pnilunilcdnilvd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Weapons SystemCMD FWD",
+		},
+		["d101pnilunilcdnilvd2vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Weapons SystemCMD AFT",
+		},
 		["d110pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
@@ -132,6 +156,30 @@ local diff = {
 			},
 			["name"] = "CNM neutral (PCA SELECT)",
 		},
+		["d139pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Radar Antenna CENTER",
+		},
+		["d141pnilu230cdnilvd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Radar Antenna UP",
+		},
+		["d142pnilu230cdnilvd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Radar Antenna DOWN",
+		},
 		["d262pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
@@ -155,30 +203,6 @@ local diff = {
 				},
 			},
 			["name"] = "Magic Slave/AG Designate/INS Position Update",
-		},
-		["d3955pnilu3955cd30vd0vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN10",
-				},
-			},
-			["name"] = "Weapons SystemCMD Depress",
-		},
-		["d3955pnilu3955cd30vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Weapons SystemCMD FWD",
-		},
-		["d3955pnilu3955cd30vd2vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "Weapons SystemCMD AFT",
 		},
 		["d68pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
@@ -227,30 +251,6 @@ local diff = {
 				},
 			},
 			["name"] = "Wheel Brake RIGHT",
-		},
-		["dnilp139u230cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN8",
-				},
-			},
-			["name"] = "Radar Antenna CENTER",
-		},
-		["dnilp141u230cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "Radar Antenna UP",
-		},
-		["dnilp142u230cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN7",
-				},
-			},
-			["name"] = "Radar Antenna DOWN",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "Sicht nach oben rechts, langsam",
