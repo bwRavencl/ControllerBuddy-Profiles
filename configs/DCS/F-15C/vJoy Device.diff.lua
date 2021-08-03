@@ -70,41 +70,41 @@ local diff = {
 			},
 			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
 		},
-		["a2033cdnil"] = {
+		["a2112cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
-						["deadzone"] = 0.15,
-						["invert"] = false,
+						["deadzone"] = 0,
+						["invert"] = true,
 						["saturationX"] = 1,
-						["saturationY"] = 0.5,
-						["slider"] = false,
+						["saturationY"] = 1,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "TDC horizontal schwenken",
+			["name"] = "Radbremse links",
 		},
-		["a2034cdnil"] = {
+		["a2113cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
-						["deadzone"] = 0.15,
-						["invert"] = false,
+						["deadzone"] = 0,
+						["invert"] = true,
 						["saturationX"] = 1,
-						["saturationY"] = 0.5,
-						["slider"] = false,
+						["saturationY"] = 1,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "TDC vertikal bewegen",
+			["name"] = "Radbremse rechts",
 		},
 	},
 	["keyDiffs"] = {
@@ -152,6 +152,14 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
+		},
+		["d562pnilu562cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "Bugrad Bewegungsreichweite",
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
 			["name"] = "Waffe abfeuern",

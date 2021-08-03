@@ -66,6 +66,27 @@
         "longPress": false,
         "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
       }
+    ],
+    "12": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "cc2066ba-388a-4af7-bc08-70f5dd1e54b7"
+      }
+    ],
+    "13": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "058fa3aa-7186-48bb-967c-2c5c4fe893c5"
+      }
+    ],
+    "14": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "b76dbb9c-6434-4f1b-a731-730a0a042dd3"
+      }
     ]
   },
   "modes": [
@@ -122,25 +143,21 @@
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  17
-                ],
-                "modifierCodes": []
-              }
-            }
-          },
-          {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Left Brake"
             }
           }
         ],
@@ -160,17 +177,13 @@
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  31
-                ],
-                "modifierCodes": []
-              }
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S1",
+              "invert": false,
+              "description": "Right Brake"
             }
           }
         ]
@@ -182,6 +195,13 @@
             "data": {
               "longPress": false,
               "buttonId": 1
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 2
             }
           }
         ],
@@ -277,68 +297,6 @@
               }
             }
           }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": true,
-              "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
-                  41
-                ],
-                "modifierCodes": [
-                  42
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activation": "SINGLE_ON_RELEASE",
-              "keystroke": {
-                "keyCodes": [
-                  41
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
-                  34
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
-                  33
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
         ]
       }
     },
@@ -407,7 +365,7 @@
       "description": "Countermeasure",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "11": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -422,7 +380,7 @@
             }
           }
         ],
-        "12": [
+        "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -430,14 +388,14 @@
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
-                  211
+                  210
                 ],
                 "modifierCodes": []
               }
             }
           }
         ],
-        "13": [
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -454,6 +412,21 @@
             }
           }
         ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  211
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
         "14": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -462,7 +435,7 @@
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
-                  210
+                  16
                 ],
                 "modifierCodes": []
               }
@@ -472,16 +445,120 @@
       }
     },
     {
-      "uuid": "5bffeef9-8754-430c-a7ec-2fa4d1f85b37",
-      "description": "Emergency",
+      "uuid": "058fa3aa-7186-48bb-967c-2c5c4fe893c5",
+      "description": "Gear / Flaps / Canopy / Refuel / Engines",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "12": [
+        "0": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "longPress": false,
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  34
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  19
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  33
+                ],
+                "modifierCodes": []
+              },
+              "description": "Flaps Up"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  46
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": true,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  207
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_ON_RELEASE",
+              "keystroke": {
+                "keyCodes": [
+                  199
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "5bffeef9-8754-430c-a7ec-2fa4d1f85b37",
+      "description": "Jettison / Fuel",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
                   19
@@ -491,7 +568,7 @@
             }
           }
         ],
-        "13": [
+        "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -508,7 +585,24 @@
             }
           }
         ],
-        "14": [
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  32
+                ],
+                "modifierCodes": [
+                  56
+                ]
+              }
+            }
+          }
+        ],
+        "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -524,12 +618,120 @@
               }
             }
           }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  32
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "cc2066ba-388a-4af7-bc08-70f5dd1e54b7",
+      "description": "Lights / Power",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  38
+                ],
+                "modifierCodes": [
+                  184
+                ]
+              }
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  38
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              }
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  38
+                ],
+                "modifierCodes": [
+                  184,
+                  157
+                ]
+              }
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  38
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  38
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              }
+            }
+          }
         ]
       }
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look / Comm",
+      "description": "Look / Comm / Reset Warning",
       "axisToActionsMap": {
         "0": [
           {
@@ -638,6 +840,40 @@
               "longPress": false,
               "virtualKeyCode": 144,
               "on": false
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  50
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              }
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  49
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              }
             }
           }
         ],
@@ -833,23 +1069,61 @@
       "axisToActionsMap": {
         "0": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "deadZone": 0.0,
-              "initialValue": 0.0,
-              "virtualAxis": "S0",
-              "invert": false
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  53
+                ],
+                "modifierCodes": []
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  51
+                ],
+                "modifierCodes": []
+              }
             }
           }
         ],
         "1": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "deadZone": 0.0,
-              "initialValue": 0.0,
-              "virtualAxis": "S1",
-              "invert": true
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  52
+                ],
+                "modifierCodes": []
+              }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  39
+                ],
+                "modifierCodes": []
+              }
             }
           }
         ]
@@ -1039,7 +1313,7 @@
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim",
+      "description": "Trim / Autopilot",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -1089,6 +1363,53 @@
                 "modifierCodes": [
                   157
                 ]
+              }
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  10
+                ],
+                "modifierCodes": [
+                  56
+                ]
+              }
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  35
+                ],
+                "modifierCodes": []
+              }
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  30
+                ],
+                "modifierCodes": []
               }
             }
           }
@@ -1254,6 +1575,98 @@
       }
     },
     {
+      "uuid": "b76dbb9c-6434-4f1b-a731-730a0a042dd3",
+      "description": "Waypoint / Altimeter / Fuel Gauge",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  41
+                ],
+                "modifierCodes": [
+                  42
+                ]
+              }
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  13
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              }
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  12
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              }
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  41
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              }
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  32
+                ],
+                "modifierCodes": [
+                  42
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
       "uuid": "5f8c89dc-882b-4d0d-815c-fc6ea45156cb",
       "description": "Weapon",
       "axisToActionsMap": {},
@@ -1327,10 +1740,7 @@
   ],
   "virtualAxisToOverlayAxisMap": {
     "Z": {
-      "color": {
-        "value": -16777216,
-        "falpha": 0.0
-      },
+      "color": -16777216,
       "inverted": false
     }
   }
