@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Version Num="1787"/>
+<FriendlyName>vJoy Device profile</FriendlyName>
+<Device DeviceName="vJoy Device" GUID="{DC899B70-5FB0-11EA-8003-444553540000}" ProductID="48813">
+	<Axes>
+		<Axis AxisName="X" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="Y" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="Z" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="rX" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="rY" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="rZ" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="SliderX" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="SliderY" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+	</Axes>
+	<Context ContextName="COCKPIT_GLOBAL_CAMERA">
+		<Action ActionName="KEY_COCKPIT_FREELOOK_HRZ_SET" Flag="4">
+			<Primary>
+				<KEY Information="Joystick R-Achse X ">770</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_COCKPIT_FREELOOK_VRTC_SET" Flag="132">
+			<Primary>
+				<KEY Information="Joystick R-Achse Y ">786</KEY>
+			</Primary>
+		</Action>
+	</Context>
+	<Context ContextName="EXTERNAL_CAMERA">
+		<Action ActionName="KEY_CHASE_FREELOOK_HRZ_SET" Flag="132">
+			<Primary>
+				<KEY Information="Joystick R-Achse X ">770</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_CHASE_FREELOOK_VRTC_SET" Flag="132">
+			<Primary>
+				<KEY Information="Joystick R-Achse Y ">786</KEY>
+			</Primary>
+		</Action>
+	</Context>
+	<Context ContextName="PLANE">
+		<Action ActionName="KEY_AXIS_RUDDER_SET" Flag="4">
+			<Primary>
+				<KEY Information="Joystick R-Achse Z ">802</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_BRAKES_LEFT" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Taste 1">0</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_BRAKES_RIGHT" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Taste 2">1</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_MIXTURE_SET" Flag="4">
+			<Primary>
+				<KEY Information="Joystick Schieberegler Y ">530</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_PROP_PITCH_AXIS_SET_EX1" Flag="4">
+			<Primary>
+				<KEY Information="Joystick Schieberegler X ">514</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_PROPELLER_REVERSE_THRUST_TOGGLE" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Taste 4">3</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_THROTTLE_AXIS_SET_EX1" Flag="4">
+			<Primary>
+				<KEY Information="Joystick L-Achse Z ">1058</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_THROTTLE_REVERSE_THRUST_TOGGLE" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Taste 3">2</KEY>
+			</Primary>
+		</Action>
+	</Context>
+	<Context ContextName="SLEW">
+		<Action ActionName="KEY_AXIS_SLEW_AHEAD_SET" Flag="4">
+			<Primary>
+				<KEY Information="Joystick L-Achse Y ">1042</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_AXIS_SLEW_ALT_SET" Flag="132">
+			<Primary>
+				<KEY Information="Joystick L-Achse Z ">1058</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_AXIS_SLEW_HEADING_SET" Flag="4">
+			<Primary>
+				<KEY Information="Joystick R-Achse Z ">802</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_AXIS_SLEW_SIDEWAYS_SET" Flag="4">
+			<Primary>
+				<KEY Information="Joystick L-Achse X ">1026</KEY>
+			</Primary>
+		</Action>
+	</Context>
+	<Context ContextName="SURFACES">
+		<Action ActionName="KEY_AXIS_AILERONS_SET" Flag="4">
+			<Primary>
+				<KEY Information="Joystick L-Achse X ">1026</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_AXIS_ELEVATOR_SET" Flag="4">
+			<Primary>
+				<KEY Information="Joystick L-Achse Y ">1042</KEY>
+			</Primary>
+		</Action>
+	</Context>
+</Device>
+
