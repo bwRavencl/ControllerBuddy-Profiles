@@ -83,6 +83,15 @@
               "invert": false,
               "description": "Throttle"
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 4,
+              "description": "Afterburner"
+            }
           }
         ],
         "2": [
@@ -893,16 +902,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S1": {
-      "color": -65536,
-      "inverted": false
-    },
     "Z": {
       "color": -16777216,
       "inverted": false
     },
     "S0": {
       "color": -16776961,
+      "inverted": false
+    },
+    "S1": {
+      "color": -65536,
       "inverted": false
     }
   }
