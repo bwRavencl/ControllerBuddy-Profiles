@@ -1,7 +1,8 @@
 ## ControllerBuddy-Profiles
 
 #### Description:
-This repository contains a collection of profiles for the [ControllerBuddy](https://github.com/bwRavencl/ControllerBuddy) gamepad mapping software.  
+This repository contains a collection of profiles for the [ControllerBuddy](https://controllerbuddy.org) gamepad mapping software.
+
 All profiles were created by the author of ControllerBuddy and target a variety of flight simulators.  
 Please note that these profiles are constantly updated and may change significantly over time.
 
