@@ -1,0 +1,58 @@
+name: Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout ControllerBuddy-Profiles
+        uses: actions/checkout@v2
+        with:
+          path: 'ControllerBuddy-Profiles'
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Checkout ControllerBuddy
+        uses: actions/checkout@v2
+        with:
+          repository: 'bwRavencl/ControllerBuddy'
+          path: 'ControllerBuddy'
+          fetch-depth: 0
+          persist-credentials: false
+          submodules: true
+      - name: Checkout ControllerBuddy-Pages
+        uses: actions/checkout@v2
+        with:
+          repository: 'bwRavencl/ControllerBuddy-Pages'
+          path: 'ControllerBuddy-Pages'
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install JDK
+        uses: actions/setup-java@v2
+        with:
+          distribution: zulu
+          java-version: 17.0.1
+      - name: Update Visualizations
+        run: |
+          rm -f ControllerBuddy-Pages/profiles/*.html
+          cd ControllerBuddy
+          for file in ../ControllerBuddy-Profiles/*.json
+          do
+            xvfb-run -a -s "-screen 0 1024x768x24" ./gradlew run --args="-skipMessageDialogs -quit -profile '$file' -export '../ControllerBuddy-Pages/profiles/`basename "$file" .json`.html'"
+          done
+      - name: Commit files
+        run: |
+          cd ControllerBuddy-Pages
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add profiles/*.html
+          git commit -m "Updated profile visualizations" || echo "Nothing to update"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          repository: bwRavencl/ControllerBuddy-Pages
+          directory: ControllerBuddy-Pages
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
