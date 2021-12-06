@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -16,7 +16,7 @@ local diff = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Höhenruder",
+			["name"] = "Flight Control Cyclic Pitch",
 		},
 		["a2002cdnil"] = {
 			["changed"] = {
@@ -34,7 +34,7 @@ local diff = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Querruder",
+			["name"] = "Flight Control Cyclic Roll",
 		},
 		["a2003cdnil"] = {
 			["changed"] = {
@@ -52,7 +52,7 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Fliegen: Seitenruder",
+			["name"] = "Flight Control Rudder",
 		},
 		["a2010cdnil"] = {
 			["added"] = {
@@ -60,7 +60,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach links/rechts drehen",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -68,49 +68,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
-		},
-		["a3028cd3"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_Z",
-				},
-			},
-			["name"] = "Input.Generic.throttle_slider",
-		},
-		["a3044cd3"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_SLIDER1",
-				},
-			},
-			["name"] = "Triebwerkdrehzahl bewegen (analog)",
-		},
-		["a3088cd3"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_SLIDER2",
-				},
-			},
-			["name"] = "Input.Generic.mix_slider",
-		},
-	},
-	["keyDiffs"] = {
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Kanonen abfeuern",
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
-			["name"] = "Maschinengewehre abfeuern",
+			["name"] = "Absolute Camera Vertical View",
 		},
 	},
 }

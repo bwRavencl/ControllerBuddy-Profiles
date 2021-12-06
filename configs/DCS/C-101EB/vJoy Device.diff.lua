@@ -1,6 +1,38 @@
 local diff = {
 	["axisDiffs"] = {
-		["a2001cdnil"] = {
+		["a2010cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_RX",
+				},
+			},
+			["name"] = "Absolute Camera Horizontal View",
+		},
+		["a2011cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_RY",
+				},
+			},
+			["name"] = "Absolute Camera Vertical View",
+		},
+		["a2112cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_SLIDER1",
+				},
+			},
+			["name"] = "Wheel Brake Left",
+		},
+		["a2113cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_SLIDER2",
+				},
+			},
+			["name"] = "Wheel Brake Right",
+		},
+		["a8034cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
@@ -16,9 +48,9 @@ local diff = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Höhenruder",
+			["name"] = "Pitch",
 		},
-		["a2002cdnil"] = {
+		["a8035cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
@@ -34,9 +66,9 @@ local diff = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Querruder",
+			["name"] = "Roll",
 		},
-		["a2003cdnil"] = {
+		["a8036cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
@@ -52,44 +84,12 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Fliegen: Seitenruder",
-		},
-		["a2010cdnil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_RX",
-				},
-			},
-			["name"] = "Absolute Kamera, Sicht nach links/rechts drehen",
-		},
-		["a2011cdnil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_RY",
-				},
-			},
-			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
-		},
-		["a2112cdnil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_SLIDER1",
-				},
-			},
-			["name"] = "Radbremse links",
-		},
-		["a2113cdnil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_SLIDER2",
-				},
-			},
-			["name"] = "Radbremse rechts",
+			["name"] = "Rudder",
 		},
 	},
 	["keyDiffs"] = {
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach oben rechts, langsam",
+			["name"] = "View Up Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UR",
@@ -97,7 +97,7 @@ local diff = {
 			},
 		},
 		["dnilp211u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten rechts, langsam",
+			["name"] = "View Down Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DR",
@@ -105,7 +105,7 @@ local diff = {
 			},
 		},
 		["dnilp212u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten links, langsam",
+			["name"] = "View Down Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DL",
@@ -113,7 +113,7 @@ local diff = {
 			},
 		},
 		["dnilp213u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach oben links, langsam",
+			["name"] = "View Up Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UL",
@@ -121,7 +121,7 @@ local diff = {
 			},
 		},
 		["dnilp32u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach links, langsam",
+			["name"] = "View Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -129,7 +129,7 @@ local diff = {
 			},
 		},
 		["dnilp33u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach rechts, langsam",
+			["name"] = "View Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",
@@ -137,7 +137,7 @@ local diff = {
 			},
 		},
 		["dnilp34u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht hoch (langsam)",
+			["name"] = "View Up slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -145,7 +145,7 @@ local diff = {
 			},
 		},
 		["dnilp35u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten, langsam",
+			["name"] = "View Down slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",

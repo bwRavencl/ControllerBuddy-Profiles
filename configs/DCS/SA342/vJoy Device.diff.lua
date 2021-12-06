@@ -6,7 +6,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach links/rechts drehen",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -14,7 +14,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
+			["name"] = "Absolute Camera Vertical View",
 		},
 		["a2013cdnil"] = {
 			["changed"] = {
@@ -26,13 +26,13 @@ local diff = {
 						["deadzone"] = 0.15,
 						["invert"] = false,
 						["saturationX"] = 1,
-						["saturationY"] = 1,
+						["saturationY"] = 0.6,
 						["slider"] = false,
 					},
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, zyklische Nicksteuerung",
+			["name"] = "Flight Control Cyclic Pitch",
 		},
 		["a2014cdnil"] = {
 			["changed"] = {
@@ -44,13 +44,13 @@ local diff = {
 						["deadzone"] = 0.15,
 						["invert"] = false,
 						["saturationX"] = 1,
-						["saturationY"] = 1,
+						["saturationY"] = 0.6,
 						["slider"] = false,
 					},
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, zyklische Rollsteuerung",
+			["name"] = "Flight Control Cyclic Roll",
 		},
 		["a2015cdnil"] = {
 			["changed"] = {
@@ -68,12 +68,12 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Fliegen: Seitenruder, Giersteuerung (Drehung um Hochachse)",
+			["name"] = "Flight Control Rudder",
 		},
 	},
 	["keyDiffs"] = {
 		["d3003pnilu3004cd8vd1vpnilvu0"] = {
-			["name"] = "Trimmung: Nase abwärts",
+			["name"] = "Trim: Nose Down",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -81,7 +81,7 @@ local diff = {
 			},
 		},
 		["d3005pnilu3006cd8vd1vpnilvu0"] = {
-			["name"] = "Trimmung: Nase hoch",
+			["name"] = "Trim: Nose Up",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
@@ -89,7 +89,7 @@ local diff = {
 			},
 		},
 		["d3009pnilu3010cd8vd1vpnilvu0"] = {
-			["name"] = "Trimmung: Linken Flügel senken",
+			["name"] = "Trim: Left Wing Down",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -97,7 +97,7 @@ local diff = {
 			},
 		},
 		["d3011pnilu3012cd8vd1vpnilvu0"] = {
-			["name"] = "Trimmung: Rechten Flügel senken",
+			["name"] = "Trim: Right Wing Down",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",

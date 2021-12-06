@@ -60,7 +60,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Horizontale Sicht",
+			["name"] = "Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -68,7 +68,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Vertikale Ansicht",
+			["name"] = "Vertical View",
 		},
 		["a2112cdnil"] = {
 			["added"] = {
@@ -76,7 +76,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Radbremse links",
+			["name"] = "Wheel Brake Left",
 		},
 		["a2113cdnil"] = {
 			["added"] = {
@@ -84,46 +84,38 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Radbremse rechts",
+			["name"] = "Wheel Brake Right",
 		},
 	},
 	["keyDiffs"] = {
-		["d3021pnilu3021cd17vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN21",
-				},
-			},
-			["name"] = "Hook Extend, else Retract",
-		},
-		["d3024pnilu3024cd16vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN17",
-				},
-			},
-			["name"] = "Wing Sweep Auto Mode",
-		},
-		["d3025pnilu3025cd16vd1vpnilvu0"] = {
+		["d3024pnilu3024cd17vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN15",
 				},
 			},
-			["name"] = "Wing Sweep Forward",
+			["name"] = "Wing Sweep Auto Mode",
 		},
-		["d3026pnilu3026cd16vd1vpnilvu0"] = {
+		["d3025pnilu3025cd17vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN16",
+					["key"] = "JOY_BTN17",
+				},
+			},
+			["name"] = "Wing Sweep Forward",
+		},
+		["d3026pnilu3026cd17vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN18",
 				},
 			},
 			["name"] = "Wing Sweep Aft",
 		},
-		["d3027pnilu3027cd16vd1vpnilvu0"] = {
+		["d3027pnilu3027cd17vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN18",
+					["key"] = "JOY_BTN16",
 				},
 			},
 			["name"] = "Wing Sweep Bomb Mode",
@@ -167,14 +159,6 @@ local diff = {
 				},
 			},
 			["name"] = "DLC Toggle / Countermeasure Dispense",
-		},
-		["d3086pnilu3086cd21vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN27",
-				},
-			},
-			["name"] = "Autopilot Emergency Disconnect Paddle",
 		},
 		["d3087pnilu3087cd57vd1vpnilvu0"] = {
 			["added"] = {
@@ -232,14 +216,6 @@ local diff = {
 			},
 			["name"] = "Target designate down / VSL LO",
 		},
-		["d3654pnilunilcd11vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN22",
-				},
-			},
-			["name"] = "Exterior Lights Master Switch Toggle",
-		},
 		["dnilp2019u2019cdnilvdnilvp-1vu0"] = {
 			["added"] = {
 				[1] = {
@@ -278,7 +254,7 @@ local diff = {
 					["key"] = "JOY_BTN8",
 				},
 			},
-			["name"] = "Trimmung: Seitenruder links",
+			["name"] = "Trim Rudder Left",
 		},
 		["dnilp2021u2021cdnilvdnilvp1vu0"] = {
 			["added"] = {
@@ -286,7 +262,7 @@ local diff = {
 					["key"] = "JOY_BTN9",
 				},
 			},
-			["name"] = "Trimmung: Seitenruder rechts",
+			["name"] = "Trim Rudder Right",
 		},
 		["dnilp3083u3083cd57vdnilvp-1vu0"] = {
 			["added"] = {

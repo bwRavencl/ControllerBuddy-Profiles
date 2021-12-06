@@ -16,7 +16,7 @@ local diff = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Höhenruder",
+			["name"] = "Pitch",
 		},
 		["a2002cdnil"] = {
 			["changed"] = {
@@ -34,7 +34,7 @@ local diff = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Querruder",
+			["name"] = "Roll",
 		},
 		["a2003cdnil"] = {
 			["changed"] = {
@@ -52,7 +52,7 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Fliegen: Seitenruder",
+			["name"] = "Rudder",
 		},
 		["a2010cdnil"] = {
 			["added"] = {
@@ -60,7 +60,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach links/rechts drehen",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -68,7 +68,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
+			["name"] = "Absolute Camera Vertical View",
 		},
 		["a2112cdnil"] = {
 			["added"] = {
@@ -86,7 +86,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Radbremse links",
+			["name"] = "Wheel Brake Left",
 		},
 		["a2113cdnil"] = {
 			["added"] = {
@@ -104,7 +104,7 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Radbremse rechts",
+			["name"] = "Wheel Brake Right",
 		},
 	},
 	["keyDiffs"] = {
@@ -114,7 +114,7 @@ local diff = {
 					["key"] = "JOY_BTN8",
 				},
 			},
-			["name"] = "Gegenmaßnahmenschalter - Vorne",
+			["name"] = "Countermeasures Management Switch - Fwd",
 		},
 		["d3015pnilu3015cd16vd-1vpnilvu0"] = {
 			["added"] = {
@@ -122,7 +122,7 @@ local diff = {
 					["key"] = "JOY_BTN5",
 				},
 			},
-			["name"] = "Gegenmaßnahmenschalter - Hinten",
+			["name"] = "Countermeasures Management Switch - Aft",
 		},
 		["d3016pnilu3016cd16vd-1vpnilvu0"] = {
 			["added"] = {
@@ -130,7 +130,7 @@ local diff = {
 					["key"] = "JOY_BTN6",
 				},
 			},
-			["name"] = "Gegenmaßnahmenschalter - Links",
+			["name"] = "Countermeasures Management Switch - Left",
 		},
 		["d3017pnilu3017cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -138,7 +138,7 @@ local diff = {
 					["key"] = "JOY_BTN7",
 				},
 			},
-			["name"] = "Gegenmaßnahmenschalter - Rechts",
+			["name"] = "Countermeasures Management Switch - Right",
 		},
 		["d3018pnilu3018cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -146,7 +146,7 @@ local diff = {
 					["key"] = "JOY_BTN4",
 				},
 			},
-			["name"] = "Expand- / FOV-Knopf - Drücken",
+			["name"] = "Expand/FOV Button - Depress",
 		},
 		["d3019pnilu3019cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -154,7 +154,7 @@ local diff = {
 					["key"] = "JOY_BTN9",
 				},
 			},
-			["name"] = "Paddle-Schalter - Drücken",
+			["name"] = "Paddle Switch - Depress",
 		},
 		["d3020pnilu3020cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -162,7 +162,7 @@ local diff = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Kamera- und Geschützabzug - Erste Drückstufe",
+			["name"] = "CAMERA/GUN Trigger - FIRST DETENT",
 		},
 		["d3021pnilu3021cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -170,7 +170,7 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Kamera- und Geschützabzug - Zweite Drückstufe",
+			["name"] = "CAMERA/GUN Trigger - SECOND DETENT",
 		},
 		["d3022pnilu3022cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -178,7 +178,7 @@ local diff = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "WPN REL Knopf - Drücken",
+			["name"] = "WPN REL Button - Depress",
 		},
 		["d3026pnilu3026cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -186,7 +186,7 @@ local diff = {
 					["key"] = "JOY_BTN16",
 				},
 			},
-			["name"] = "Transmit-Schalter - IFF OUT",
+			["name"] = "Transmit Switch - IFF OUT",
 		},
 		["d3027pnilu3027cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -194,7 +194,7 @@ local diff = {
 					["key"] = "JOY_BTN15",
 				},
 			},
-			["name"] = "Transmit-Schalter - IFF IN",
+			["name"] = "Transmit Switch - IFF IN",
 		},
 		["d3031pnilu3031cd16vd1vpnilvu0"] = {
 			["added"] = {
@@ -202,7 +202,7 @@ local diff = {
 					["key"] = "JOY_BTN17",
 				},
 			},
-			["name"] = "Luftbremse - Vorne/Einfahren / Aus",
+			["name"] = "SPD BRK Switch (special) - Fwd/RETRACT /OFF",
 		},
 		["d3043pnilunilcd16vd0vpnilvunil"] = {
 			["added"] = {
@@ -210,10 +210,10 @@ local diff = {
 					["key"] = "JOY_BTN14",
 				},
 			},
-			["name"] = "Luftkampf / Raketenüberbrückungsschalter - Drehen (Weiterschalten)",
+			["name"] = "DOGFIGHT/Missile Override Switch - Cycle",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach oben rechts, langsam",
+			["name"] = "View Up Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UR",
@@ -221,7 +221,7 @@ local diff = {
 			},
 		},
 		["dnilp211u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten rechts, langsam",
+			["name"] = "View Down Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DR",
@@ -229,7 +229,7 @@ local diff = {
 			},
 		},
 		["dnilp212u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten links, langsam",
+			["name"] = "View Down Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DL",
@@ -237,7 +237,7 @@ local diff = {
 			},
 		},
 		["dnilp213u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach oben links, langsam",
+			["name"] = "View Up Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UL",
@@ -250,7 +250,7 @@ local diff = {
 					["key"] = "JOY_BTN10",
 				},
 			},
-			["name"] = "YAW TRIM (Seitentrimmung) Regler - Gegen den Uhrzeigersinn / Links",
+			["name"] = "YAW TRIM Knob - L/CCW",
 		},
 		["dnilp3027unilcd2vdnilvp0.3vunil"] = {
 			["added"] = {
@@ -258,7 +258,7 @@ local diff = {
 					["key"] = "JOY_BTN11",
 				},
 			},
-			["name"] = "YAW TRIM (Seitentrimmung) Regler - Im Uhrzeigersinn / Rechts",
+			["name"] = "YAW TRIM Knob - R/CW",
 		},
 		["dnilp3040unilcd16vdnilvp1vunil"] = {
 			["added"] = {
@@ -266,7 +266,7 @@ local diff = {
 					["key"] = "JOY_BTN12",
 				},
 			},
-			["name"] = "MAN RNG Schalter - gegen den Uhrzeigersinn",
+			["name"] = "MAN RNG Knob - CW",
 		},
 		["dnilp3041unilcd16vdnilvp-1vunil"] = {
 			["added"] = {
@@ -274,10 +274,10 @@ local diff = {
 					["key"] = "JOY_BTN13",
 				},
 			},
-			["name"] = "MAN RNG Schalter - im Uhrzeigersinn",
+			["name"] = "MAN RNG Knob - CCW",
 		},
 		["dnilp32u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach links, langsam",
+			["name"] = "View Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -285,7 +285,7 @@ local diff = {
 			},
 		},
 		["dnilp33u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach rechts, langsam",
+			["name"] = "View Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",
@@ -293,7 +293,7 @@ local diff = {
 			},
 		},
 		["dnilp34u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht hoch (langsam)",
+			["name"] = "View Up slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -301,7 +301,7 @@ local diff = {
 			},
 		},
 		["dnilp35u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten, langsam",
+			["name"] = "View Down slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",

@@ -16,7 +16,7 @@ local diff = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, zyklische Nicksteuerung",
+			["name"] = "Flight Control Cyclic Pitch",
 		},
 		["a2002cdnil"] = {
 			["changed"] = {
@@ -34,7 +34,7 @@ local diff = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, zyklische Rollsteuerung",
+			["name"] = "Flight Control Cyclic Roll",
 		},
 		["a2003cdnil"] = {
 			["changed"] = {
@@ -52,7 +52,7 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Fliegen: Seitenruder, Giersteuerung (Drehung um Hochachse)",
+			["name"] = "Flight Control Rudder",
 		},
 		["a2010cdnil"] = {
 			["added"] = {
@@ -60,7 +60,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach links/rechts drehen",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -68,7 +68,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
+			["name"] = "Absolute Camera Vertical View",
 		},
 		["a2101cdnil"] = {
 			["added"] = {
@@ -86,7 +86,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Radbremsen",
+			["name"] = "Wheel Brake",
 		},
 	},
 	["keyDiffs"] = {
@@ -96,7 +96,7 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Knopf STÖRKÖRPERPROGRAMM STARTEN (DRÜCKEN)",
+			["name"] = "Pilot Launch Countermeasures",
 		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {
@@ -104,10 +104,10 @@ local diff = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Waffe abfeuern",
+			["name"] = "Release weapons",
 		},
 		["dnilp36unilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Sichtzentrierung",
+			["name"] = "View Center",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",

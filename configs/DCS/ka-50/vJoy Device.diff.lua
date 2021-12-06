@@ -16,7 +16,7 @@ local diff = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, zyklische Nicksteuerung",
+			["name"] = "Flight Control Cyclic Pitch",
 		},
 		["a2002cdnil"] = {
 			["changed"] = {
@@ -34,7 +34,7 @@ local diff = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, zyklische Rollsteuerung",
+			["name"] = "Flight Control Cyclic Roll",
 		},
 		["a2003cdnil"] = {
 			["changed"] = {
@@ -52,7 +52,7 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Fliegen: Seitenruder, Giersteuerung (Drehung um Hochachse)",
+			["name"] = "Flight Control Rudder",
 		},
 		["a2010cdnil"] = {
 			["added"] = {
@@ -60,7 +60,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach links/rechts drehen",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -68,7 +68,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
+			["name"] = "Absolute Camera Vertical View",
 		},
 		["a2033cdnil"] = {
 			["added"] = {
@@ -86,7 +86,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Shkval, horizontaler Sichtbereich",
+			["name"] = "Absolute SHKVAL Horizontal Slew",
 		},
 		["a2034cdnil"] = {
 			["added"] = {
@@ -104,12 +104,12 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Shkval, vertikaler Sichtbereich",
+			["name"] = "Absolute SHKVAL Vertical Slew",
 		},
 	},
 	["keyDiffs"] = {
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["name"] = "Waffe abfeuern",
+			["name"] = "Release weapons",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
@@ -117,7 +117,7 @@ local diff = {
 			},
 		},
 		["d509pnilu510cdnilvdnilvpnilvunil"] = {
-			["name"] = "Ziel aufschalten",
+			["name"] = "Lock target",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
@@ -125,7 +125,7 @@ local diff = {
 			},
 		},
 		["d537pnilu385cdnilvdnilvpnilvunil"] = {
-			["name"] = "Schwebeflug-Modus (AUTO HOVER) Ein/Aus",
+			["name"] = "Hover On/Off",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
@@ -136,7 +136,7 @@ local diff = {
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Bordkanone abfeuern",
+			["name"] = "Gun fire",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -144,7 +144,7 @@ local diff = {
 			},
 		},
 		["d957pnilu958cdnilvdnilvpnilvunil"] = {
-			["name"] = "Trimmung",
+			["name"] = "Trimmer",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
@@ -152,7 +152,7 @@ local diff = {
 			},
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach oben rechts, langsam",
+			["name"] = "View Up Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UR",
@@ -160,7 +160,7 @@ local diff = {
 			},
 		},
 		["dnilp211u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten rechts, langsam",
+			["name"] = "View Down Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DR",
@@ -168,7 +168,7 @@ local diff = {
 			},
 		},
 		["dnilp212u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten links, langsam",
+			["name"] = "View Down Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DL",
@@ -176,7 +176,7 @@ local diff = {
 			},
 		},
 		["dnilp213u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach oben links, langsam",
+			["name"] = "View Up Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UL",
@@ -184,7 +184,7 @@ local diff = {
 			},
 		},
 		["dnilp32u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach links, langsam",
+			["name"] = "View Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -192,7 +192,7 @@ local diff = {
 			},
 		},
 		["dnilp33u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach rechts, langsam",
+			["name"] = "View Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",
@@ -200,7 +200,7 @@ local diff = {
 			},
 		},
 		["dnilp34u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht hoch (langsam)",
+			["name"] = "View Up slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -208,7 +208,7 @@ local diff = {
 			},
 		},
 		["dnilp35u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten, langsam",
+			["name"] = "View Down slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
@@ -216,7 +216,7 @@ local diff = {
 			},
 		},
 		["dnilp36unilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Blick zentrieren",
+			["name"] = "Center View",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",
@@ -224,7 +224,7 @@ local diff = {
 			},
 		},
 		["dnilp88u235cdnilvdnilvpnilvunil"] = {
-			["name"] = "KU-31 Shkval nach links schwenken",
+			["name"] = "KU-31 Shkval slew left",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -235,7 +235,7 @@ local diff = {
 			},
 		},
 		["dnilp89u235cdnilvdnilvpnilvunil"] = {
-			["name"] = "KU-31 Shkval nach rechts schwenken",
+			["name"] = "KU-31 Shkval slew right",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",
@@ -246,7 +246,7 @@ local diff = {
 			},
 		},
 		["dnilp90u235cdnilvdnilvpnilvunil"] = {
-			["name"] = "KU-31 Shkval nach oben bewegen",
+			["name"] = "KU-31 Shkval slew up",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -257,7 +257,7 @@ local diff = {
 			},
 		},
 		["dnilp91u235cdnilvdnilvpnilvunil"] = {
-			["name"] = "KU-31 Shkval nach unten bewegen",
+			["name"] = "KU-31 Shkval slew down",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",

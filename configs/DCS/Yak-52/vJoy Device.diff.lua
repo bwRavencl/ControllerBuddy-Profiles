@@ -16,7 +16,7 @@ local diff = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Höhenruder",
+			["name"] = "Pitch",
 		},
 		["a2002cdnil"] = {
 			["changed"] = {
@@ -34,7 +34,7 @@ local diff = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Querruder",
+			["name"] = "Roll",
 		},
 		["a2003cdnil"] = {
 			["changed"] = {
@@ -52,7 +52,7 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Fliegen: Seitenruder",
+			["name"] = "Rudder",
 		},
 		["a2010cdnil"] = {
 			["added"] = {
@@ -60,7 +60,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach links/rechts drehen",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -68,7 +68,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
+			["name"] = "Absolute Camera Vertical View",
 		},
 		["a3018cd3"] = {
 			["added"] = {
@@ -86,7 +86,7 @@ local diff = {
 					["key"] = "JOY_Z",
 				},
 			},
-			["name"] = "Gasgriff bewegen (analog)",
+			["name"] = "Input.Yak52.throttle_slider",
 		},
 		["a3026cd3"] = {
 			["added"] = {
@@ -94,7 +94,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Triebwerkdrehzahl bewegen (analog)",
+			["name"] = "Input.Yak52.pitch_slider",
 		},
 		["a3027cd2"] = {
 			["added"] = {
@@ -112,7 +112,7 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Radbremsen (analog)",
+			["name"] = "Input.Yak52.wheel_brakes_slider",
 		},
 	},
 	["keyDiffs"] = {
@@ -122,7 +122,7 @@ local diff = {
 					["key"] = "JOY_BTN4",
 				},
 			},
-			["name"] = "Fahrwerk Neutralstellung",
+			["name"] = "Input.Yak52.uc_0",
 		},
 		["d3017pnilunilcd2vd0vpnilvunil"] = {
 			["added"] = {
@@ -130,7 +130,7 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Landeklappen einfahren",
+			["name"] = "Input.Yak52.flaps_retract",
 		},
 		["d3017pnilunilcd2vd1vpnilvunil"] = {
 			["added"] = {
@@ -138,7 +138,7 @@ local diff = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Landeklappen ausfahren",
+			["name"] = "Input.Yak52.flaps_extend",
 		},
 		["d3030pnilu3030cd2vd1vpnilvu0"] = {
 			["added"] = {
@@ -146,7 +146,7 @@ local diff = {
 					["key"] = "JOY_BTN5",
 				},
 			},
-			["name"] = "Radbremsen arretieren",
+			["name"] = "Input.Yak52.wheel_brakes_lock",
 		},
 		["d3040pnilunilcd6vd1vpnilvunil"] = {
 			["added"] = {
@@ -154,10 +154,10 @@ local diff = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Rauchgenerator ein- / ausschalten",
+			["name"] = "Input.Yak52.smoke_apparatus",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach oben rechts, langsam",
+			["name"] = "View Up Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UR",
@@ -165,7 +165,7 @@ local diff = {
 			},
 		},
 		["dnilp211u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten rechts, langsam",
+			["name"] = "View Down Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DR",
@@ -173,7 +173,7 @@ local diff = {
 			},
 		},
 		["dnilp212u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten links, langsam",
+			["name"] = "View Down Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_DL",
@@ -181,7 +181,7 @@ local diff = {
 			},
 		},
 		["dnilp213u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach oben links, langsam",
+			["name"] = "View Up Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_UL",
@@ -189,7 +189,7 @@ local diff = {
 			},
 		},
 		["dnilp32u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach links, langsam",
+			["name"] = "View Left slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -197,7 +197,7 @@ local diff = {
 			},
 		},
 		["dnilp33u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach rechts, langsam",
+			["name"] = "View Right slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",
@@ -205,7 +205,7 @@ local diff = {
 			},
 		},
 		["dnilp34u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht hoch (langsam)",
+			["name"] = "View Up slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -213,7 +213,7 @@ local diff = {
 			},
 		},
 		["dnilp35u214cdnilvdnilvpnilvunil"] = {
-			["name"] = "Sicht nach unten, langsam",
+			["name"] = "View Down slow",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
@@ -221,7 +221,7 @@ local diff = {
 			},
 		},
 		["dnilp36unilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Sichtzentrierung",
+			["name"] = "View Center",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",

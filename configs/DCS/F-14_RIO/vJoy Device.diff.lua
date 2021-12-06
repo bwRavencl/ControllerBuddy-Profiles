@@ -6,7 +6,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Horizontale Sicht",
+			["name"] = "Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -14,7 +14,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Vertikale Ansicht",
+			["name"] = "Vertical View",
 		},
 	},
 }
