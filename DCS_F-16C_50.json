@@ -251,7 +251,7 @@
                 ],
                 "modifierCodes": []
               },
-              "description": "Zoom In"
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -267,7 +267,7 @@
                 ],
                 "modifierCodes": []
               },
-              "description": "Zoom Out"
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -399,7 +399,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "SPD BRK Switch - Aft/EXTEND (Momentary)"
             }
           }
         ],
@@ -408,7 +409,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 16
+              "buttonId": 16,
+              "description": "SPD BRK Switch (special) - Fwd/RETRACT /OFF"
             }
           }
         ]
@@ -424,7 +426,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 7
+              "buttonId": 7,
+              "description": "Countermeasures Management Switch - Fwd"
             }
           }
         ],
@@ -433,7 +436,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 6
+              "buttonId": 6,
+              "description": "Countermeasures Management Switch - Right"
             }
           }
         ],
@@ -442,7 +446,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 4
+              "buttonId": 4,
+              "description": "Countermeasures Management Switch - Aft"
             }
           }
         ],
@@ -451,7 +456,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 5
+              "buttonId": 5,
+              "description": "Countermeasures Management Switch - Left"
             }
           }
         ]
@@ -475,7 +481,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Display Management Switch - Up"
             }
           }
         ],
@@ -492,7 +499,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Display Management Switch - Right"
             }
           }
         ],
@@ -509,7 +517,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Display Management Switch - Down"
             }
           }
         ],
@@ -526,7 +535,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Display Management Switch - Left"
             }
           }
         ]
@@ -546,7 +556,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -560,7 +571,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -578,7 +590,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Transmit Switch - VHF (call radio menu)"
             }
           }
         ],
@@ -596,7 +609,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Transmit Switch - UHF (call radio menu)"
             }
           }
         ]
@@ -616,7 +630,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back "
             }
           },
           {
@@ -624,7 +639,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back "
             }
           }
         ],
@@ -648,7 +664,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward "
             }
           },
           {
@@ -656,7 +673,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward "
             }
           }
         ],
@@ -665,7 +683,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 14
+              "buttonId": 14,
+              "description": "Transmit Switch - IFF IN"
             }
           }
         ],
@@ -674,7 +693,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 15
+              "buttonId": 15,
+              "description": "Transmit Switch - IFF OUT"
             }
           }
         ],
@@ -692,7 +712,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -700,7 +721,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -718,7 +740,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right "
             }
           },
           {
@@ -726,7 +749,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right "
             }
           }
         ],
@@ -744,7 +768,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down "
             }
           },
           {
@@ -752,7 +777,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down "
             }
           }
         ],
@@ -770,7 +796,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left "
             }
           },
           {
@@ -778,7 +805,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left "
             }
           }
         ]
@@ -800,7 +828,8 @@
                   53
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "RDR CURSOR Switch - Right"
             }
           },
           {
@@ -814,7 +843,8 @@
                   51
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "RDR CURSOR Switch - Left"
             }
           }
         ],
@@ -830,7 +860,8 @@
                   52
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "RDR CURSOR Switch - Down"
             }
           },
           {
@@ -844,7 +875,8 @@
                   39
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "RDR CURSOR Switch - Up"
             }
           }
         ]
@@ -862,7 +894,7 @@
                 ],
                 "modifierCodes": []
               },
-              "description": "ENABLE"
+              "description": "ENABLE Switch - Depress"
             }
           }
         ],
@@ -871,7 +903,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 3
+              "buttonId": 3,
+              "description": "Expand/FOV Button - Depress"
             }
           }
         ],
@@ -886,7 +919,8 @@
                   13
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ANT ELEV Knob - CW"
             }
           }
         ],
@@ -895,7 +929,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 11
+              "buttonId": 11,
+              "description": "MAN RNG Knob - CCW"
             }
           }
         ],
@@ -910,7 +945,8 @@
                   12
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ANT ELEV Knob - CCW"
             }
           }
         ],
@@ -919,7 +955,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 12
+              "buttonId": 12,
+              "description": "MAN RNG Knob - CW"
             }
           }
         ]
@@ -943,7 +980,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Target Management Switch - Up"
             }
           }
         ],
@@ -960,7 +998,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Target Management Switch - Right"
             }
           }
         ],
@@ -977,7 +1016,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Target Management Switch - Down"
             }
           }
         ],
@@ -994,7 +1034,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Target Management Switch - Left"
             }
           }
         ]
@@ -1010,7 +1051,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 8
+              "buttonId": 8,
+              "description": "Paddle Switch - Depress"
             }
           }
         ]
@@ -1021,7 +1063,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 10
+              "buttonId": 10,
+              "description": "YAW TRIM Knob - R/CW"
             }
           }
         ],
@@ -1030,7 +1073,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 9
+              "buttonId": 9,
+              "description": "YAW TRIM Knob - L/CCW"
             }
           }
         ],
@@ -1047,7 +1091,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "TRIM Button - NOSE DOWN"
             }
           }
         ],
@@ -1064,7 +1109,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "TRIM Button - RIGHT WING DOWN"
             }
           }
         ],
@@ -1081,7 +1127,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "TRIM Button - NOSE UP"
             }
           }
         ],
@@ -1098,7 +1145,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "TRIM Button - LEFT WING DOWN"
             }
           }
         ]
@@ -1128,7 +1176,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -1143,7 +1192,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1158,7 +1208,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1175,7 +1226,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Toggle goggles"
             }
           }
         ],
@@ -1190,7 +1242,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
@@ -1199,10 +1252,7 @@
   ],
   "virtualAxisToOverlayAxisMap": {
     "Z": {
-      "color": {
-        "value": -16777216,
-        "falpha": 0.0
-      },
+      "color": -16777216,
       "inverted": false
     }
   }
