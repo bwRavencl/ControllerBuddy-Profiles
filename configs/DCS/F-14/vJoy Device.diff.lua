@@ -216,6 +216,14 @@ local diff = {
 			},
 			["name"] = "Target designate down / VSL LO",
 		},
+		["d3654pnilunilcd12vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN22",
+				},
+			},
+			["name"] = "Exterior Lights Master Switch Toggle",
+		},
 		["dnilp2019u2019cdnilvdnilvp-1vu0"] = {
 			["added"] = {
 				[1] = {
