@@ -79,7 +79,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -94,7 +95,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -105,7 +107,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -116,7 +119,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -126,7 +130,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 3
+              "buttonId": 3,
+              "description": "Weapon Release Button"
             }
           },
           {
@@ -135,7 +140,8 @@
               "deadZone": 0.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Left"
             }
           }
         ],
@@ -146,7 +152,8 @@
               "deadZone": 0.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Right"
             }
           },
           {
@@ -154,7 +161,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Gun Trigger - SECOND DETENT (Press to shoot)"
             }
           }
         ]
@@ -171,7 +179,8 @@
                   31
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Undesignate/Nose Wheel Steer Switch"
             }
           }
         ],
@@ -183,7 +192,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -193,7 +203,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -206,7 +217,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -219,7 +231,8 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -234,7 +247,8 @@
                   20
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ATC Engage/Disengage Switch"
             }
           }
         ],
@@ -249,7 +263,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -264,7 +279,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -279,7 +295,8 @@
                   46
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Cage/Uncage Button"
             }
           }
         ],
@@ -294,7 +311,8 @@
                   30
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Autopilot/Nosewheel Steering Disengage (Paddle) Switch"
             }
           }
         ]
@@ -378,7 +396,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Speed Brake Switch - EXTEND"
             }
           }
         ],
@@ -387,7 +406,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 7
+              "buttonId": 7,
+              "description": "Speed Brake Switch - RETRACT/OFF"
             }
           }
         ]
@@ -409,7 +429,8 @@
                   18
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Dispense Switch - Forward(CHAFF)/Center(OFF)"
             }
           }
         ],
@@ -424,7 +445,8 @@
                   32
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Dispense Switch - Aft(FLARE)/Center(OFF)"
             }
           }
         ],
@@ -433,7 +455,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 4
+              "buttonId": 4,
+              "description": "Dispense Button"
             }
           }
         ]
@@ -441,8 +464,26 @@
     },
     {
       "uuid": "584e2328-79b6-42dc-900a-f063a7edbeca",
-      "description": "Gear / Flaps / Hook / Recce / Lights",
-      "axisToActionsMap": {},
+      "description": "Gear / Flaps / Hook / Salute / Lights / Recce",
+      "axisToActionsMap": {
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  19
+                ],
+                "modifierCodes": []
+              },
+              "description": "RECCE Event Mark Switch"
+            }
+          }
+        ]
+      },
       "buttonToActionsMap": {
         "0": [
           {
@@ -455,7 +496,8 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Landing Gear Control Handle - UP/DOWN"
             }
           }
         ],
@@ -466,11 +508,13 @@
               "longPress": false,
               "activation": "REPEAT",
               "keystroke": {
-                "keyCodes": [
-                  19
-                ],
-                "modifierCodes": []
-              }
+                "keyCodes": [],
+                "modifierCodes": [
+                  42,
+                  29
+                ]
+              },
+              "description": "Pilot Salute"
             }
           }
         ],
@@ -479,7 +523,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 2
+              "buttonId": 2,
+              "description": "FLAP Switch - Cycle"
             }
           }
         ],
@@ -494,7 +539,8 @@
                   35
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Arresting Hook Handle - Cycle"
             }
           }
         ],
@@ -509,7 +555,8 @@
                   38
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Exterior Lights Switch - ON/OFF"
             }
           }
         ]
@@ -529,7 +576,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -543,7 +591,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -561,7 +610,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "COMM Switch - COMM 1 (call radio menu)"
             }
           }
         ],
@@ -579,7 +629,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "COMM Switch - COMM 2 (call radio menu)"
             }
           }
         ]
@@ -599,7 +650,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -607,7 +659,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -631,7 +684,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -639,7 +693,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -648,7 +703,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 5
+              "buttonId": 5,
+              "description": "COMM Switch - MIDS A"
             }
           }
         ],
@@ -657,7 +713,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 6
+              "buttonId": 6,
+              "description": "COMM Switch - MIDS B"
             }
           }
         ],
@@ -675,7 +732,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -683,7 +741,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -701,7 +760,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right"
             }
           },
           {
@@ -709,7 +769,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -727,7 +788,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down"
             }
           },
           {
@@ -735,7 +797,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -753,7 +816,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left"
             }
           },
           {
@@ -761,7 +825,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -783,7 +848,8 @@
                   53
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle Designator Controller - Right"
             }
           },
           {
@@ -797,7 +863,8 @@
                   51
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle Designator Controller - Left"
             }
           }
         ],
@@ -813,7 +880,8 @@
                   52
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle Designator Controller - Down"
             }
           },
           {
@@ -827,7 +895,8 @@
                   39
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle Designator Controller - Up"
             }
           }
         ]
@@ -844,7 +913,8 @@
                   12
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Radar Elevation Control - Down"
             }
           }
         ],
@@ -853,7 +923,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 1
+              "buttonId": 1,
+              "description": "Throttle Designator Controller - Depress"
             }
           }
         ],
@@ -868,7 +939,8 @@
                   13
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Radar Elevation Control - Up"
             }
           }
         ],
@@ -877,7 +949,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 8
+              "buttonId": 8,
+              "description": "Sensor Control Switch - Depress"
             }
           }
         ],
@@ -894,7 +967,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Sensor Control Switch - Fwd"
             }
           }
         ],
@@ -911,7 +985,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Sensor Control Switch - Right"
             }
           }
         ],
@@ -928,7 +1003,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Sensor Control Switch - Aft"
             }
           }
         ],
@@ -945,7 +1021,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Sensor Control Switch - Left"
             }
           }
         ]
@@ -967,7 +1044,8 @@
                   47
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "T/O TRIM Button"
             }
           }
         ],
@@ -982,7 +1060,8 @@
                   23
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "RAID/FLIR FOV Select Button"
             }
           }
         ],
@@ -999,7 +1078,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trimmer Switch - PUSH(DESCEND)"
             }
           }
         ],
@@ -1016,7 +1096,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trimmer Switch - RIGHT WING DOWN"
             }
           }
         ],
@@ -1033,7 +1114,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trimmer Switch - PULL(CLIMB)"
             }
           }
         ],
@@ -1050,7 +1132,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trimmer Switch - LEFT WING DOWN"
             }
           }
         ]
@@ -1080,7 +1163,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -1095,7 +1179,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1110,7 +1195,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1127,7 +1213,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Toggle goggles"
             }
           }
         ],
@@ -1142,7 +1229,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
@@ -1166,7 +1254,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Select Sidewinder"
             }
           }
         ],
@@ -1183,7 +1272,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Select Sparrow"
             }
           }
         ],
@@ -1200,7 +1290,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Select AMRAAM"
             }
           }
         ],
@@ -1217,7 +1308,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Select Gun"
             }
           }
         ]
@@ -1226,10 +1318,7 @@
   ],
   "virtualAxisToOverlayAxisMap": {
     "Z": {
-      "color": {
-        "value": -16777216,
-        "falpha": 0.0
-      },
+      "color": -16777216,
       "inverted": false
     }
   }
