@@ -70,48 +70,48 @@ local diff = {
 			},
 			["name"] = "Absolute Camera Vertical View",
 		},
-		["a2033cdnil"] = {
+		["a2112cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
-						["deadzone"] = 0.15,
+						["deadzone"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "TDC Slew Horizontal",
+			["name"] = "Wheel Brake Left",
 		},
-		["a2034cdnil"] = {
+		["a2113cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
-						["deadzone"] = 0.15,
+						["deadzone"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "TDC Slew Vertical",
+			["name"] = "Wheel Brake Right",
 		},
 	},
 	["keyDiffs"] = {
 		["d101pnilunilcdnilvd0vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN10",
+					["key"] = "JOY_BTN17",
 				},
 			},
 			["name"] = "Weapons SystemCMD Depress",
@@ -119,7 +119,7 @@ local diff = {
 		["d101pnilunilcdnilvd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN5",
+					["key"] = "JOY_BTN15",
 				},
 			},
 			["name"] = "Weapons SystemCMD FWD",
@@ -127,7 +127,7 @@ local diff = {
 		["d101pnilunilcdnilvd2vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN4",
+					["key"] = "JOY_BTN16",
 				},
 			},
 			["name"] = "Weapons SystemCMD AFT",
@@ -135,7 +135,7 @@ local diff = {
 		["d110pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "CNM MAGIC",
@@ -143,7 +143,7 @@ local diff = {
 		["d1126pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN11",
+					["key"] = "JOY_BTN6",
 				},
 			},
 			["name"] = "NAV Update/MAGIC unlock",
@@ -159,10 +159,82 @@ local diff = {
 		["d276pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN9",
+					["key"] = "JOY_BTN5",
 				},
 			},
 			["name"] = "Magic Slave/AG Designate/INS Position Update",
+		},
+		["d516pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN18",
+				},
+			},
+			["name"] = "Police Light Toggle",
+		},
+		["d6032pnilu6032cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "MiCRoB/Trigger 1st Stage",
+		},
+		["d6033pnilu6033cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "MiCRoB/Trigger 2nd Stage",
+		},
+		["d6039pnilunilcdnilvd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN13",
+				},
+			},
+			["name"] = "Radar Range DECREASE",
+		},
+		["d6039pnilunilcdnilvd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN12",
+				},
+			},
+			["name"] = "Radar Range INCREASE",
+		},
+		["d6040pnilu6040cdnilvd-1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "Radar Antenna DOWN",
+		},
+		["d6040pnilu6040cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+			["name"] = "Radar Antenna UP",
+		},
+		["d6044pnilu6044cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "V/UHF GREEN Radio PTT",
+		},
+		["d6045pnilu6045cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "UHF RED Radio PTT",
 		},
 		["d68pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
@@ -172,37 +244,13 @@ local diff = {
 			},
 			["name"] = "Landing Gear TOGGLE",
 		},
-		["d73pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN13",
-				},
-			},
-			["name"] = "Airbrake TOGGLE",
-		},
 		["d92pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN12",
+					["key"] = "JOY_BTN11",
 				},
 			},
 			["name"] = "TDC DEPRESS (Lock Target)",
-		},
-		["d961pnilu962cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN15",
-				},
-			},
-			["name"] = "Wheel Brake LEFT",
-		},
-		["d963pnilu964cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN16",
-				},
-			},
-			["name"] = "Wheel Brake RIGHT",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
