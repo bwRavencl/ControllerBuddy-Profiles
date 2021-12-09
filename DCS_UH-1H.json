@@ -65,7 +65,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Rudder"
             }
           }
         ],
@@ -79,7 +80,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Collective"
             }
           }
         ],
@@ -90,7 +92,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Roll"
             }
           }
         ],
@@ -101,7 +104,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Pitch"
             }
           }
         ],
@@ -119,23 +123,19 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Copilot weapon release"
             }
           }
         ],
         "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  57
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 1,
+              "description": "Pilot weapon release/Machinegun fire"
             }
           }
         ]
@@ -154,7 +154,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Flare Dispense Button"
             }
           }
         ],
@@ -169,7 +170,8 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Governor Auto/Emer"
             }
           }
         ],
@@ -181,7 +183,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -191,7 +194,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -204,7 +208,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -217,22 +222,18 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  20
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 2,
+              "description": "Pilot Trimmer"
             }
           }
         ],
@@ -249,7 +250,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trimmer reset"
             }
           }
         ],
@@ -264,7 +266,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -279,7 +282,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -297,7 +301,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "External Cargo Autounhook"
             }
           },
           {
@@ -313,7 +318,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "External Cargo Hook"
             }
           }
         ],
@@ -331,7 +337,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "External Cargo Unhook"
             }
           }
         ]
@@ -415,7 +422,8 @@
                 "modifierCodes": [
                   219
                 ]
-              }
+              },
+              "description": "AI Panel Show/Hide"
             }
           }
         ],
@@ -432,7 +440,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Open/Close Right Gunner Door"
             }
           },
           {
@@ -447,7 +456,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "AI Right Burst Switch"
             }
           }
         ],
@@ -464,7 +474,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Open/Close Left Gunner Door"
             }
           },
           {
@@ -479,7 +490,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "AI Left Burst Switch"
             }
           }
         ],
@@ -496,7 +508,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "AI Operator Burst Switch"
             }
           }
         ]
@@ -520,7 +533,8 @@
                 "modifierCodes": [
                   219
                 ]
-              }
+              },
+              "description": "AI Panel Show/Hide"
             }
           }
         ],
@@ -537,7 +551,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Open/Close Right Gunner Door"
             }
           },
           {
@@ -552,7 +567,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "AI Right ROE Iterate"
             }
           }
         ],
@@ -569,7 +585,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Open/Close Left Gunner Door"
             }
           },
           {
@@ -584,7 +601,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "AI Left ROE Iterate"
             }
           }
         ],
@@ -601,7 +619,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "AI Operator ROE Iterate"
             }
           }
         ]
@@ -609,9 +628,177 @@
     },
     {
       "uuid": "a5e50cba-de0f-43e9-a2a8-12ccb49214e2",
-      "description": "Light",
+      "description": "Lights",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        53
+                      ],
+                      "modifierCodes": [
+                        157
+                      ]
+                    },
+                    "description": "Landing light Extend"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        53
+                      ],
+                      "modifierCodes": [
+                        184
+                      ]
+                    },
+                    "description": "Landing light Stop"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        53
+                      ],
+                      "modifierCodes": [
+                        220
+                      ]
+                    },
+                    "description": "Landing light Retract"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        53
+                      ],
+                      "modifierCodes": [
+                        184
+                      ]
+                    },
+                    "description": "Landing light Stop"
+                  }
+                }
+              ],
+              "activation": "SINGLE_IMMEDIATELY"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  51
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              },
+              "description": "Landing Light Switch"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        39
+                      ],
+                      "modifierCodes": [
+                        157
+                      ]
+                    },
+                    "description": "Search light On"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        39
+                      ],
+                      "modifierCodes": [
+                        184
+                      ]
+                    },
+                    "description": "Search light Off"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        39
+                      ],
+                      "modifierCodes": [
+                        220
+                      ]
+                    },
+                    "description": "Search light Stow"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "longPress": false,
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        39
+                      ],
+                      "modifierCodes": [
+                        184
+                      ]
+                    },
+                    "description": "Search light Off"
+                  }
+                }
+              ],
+              "activation": "SINGLE_IMMEDIATELY"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -623,7 +810,8 @@
                   9
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Search light Extend"
             }
           }
         ],
@@ -638,7 +826,8 @@
                   11
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Search light Right"
             }
           }
         ],
@@ -653,7 +842,8 @@
                   8
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Search light Retract"
             }
           }
         ],
@@ -668,7 +858,8 @@
                   10
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Search light Left"
             }
           }
         ]
@@ -688,7 +879,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -702,25 +894,19 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  43
-                ],
-                "modifierCodes": [
-                  184
-                ]
-              }
+              "buttonId": 0,
+              "description": "Pilot\u0027s radio trigger RADIO"
             }
           }
         ],
@@ -736,9 +922,10 @@
                   57
                 ],
                 "modifierCodes": [
-                  29
+                  54
                 ]
-              }
+              },
+              "description": "Pilot\u0027s radio trigger ICS"
             }
           }
         ]
@@ -758,7 +945,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -766,7 +954,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -790,7 +979,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -798,7 +988,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -810,27 +1001,11 @@
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
-                  35
-                ],
-                "modifierCodes": [
-                  54
-                ]
-              }
-            }
-          }
-        ],
-        "7": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
                   43
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Communication menu"
             }
           }
         ],
@@ -848,7 +1023,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -856,7 +1032,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -874,7 +1051,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right"
             }
           },
           {
@@ -882,7 +1060,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -900,7 +1079,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down"
             }
           },
           {
@@ -908,7 +1088,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -926,7 +1107,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left"
             }
           },
           {
@@ -934,7 +1116,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -942,7 +1125,7 @@
     },
     {
       "uuid": "17424f78-d0f7-4d9a-9bc5-da04f5cd6487",
-      "description": "Throttle",
+      "description": "Throttle / Engine",
       "axisToActionsMap": {
         "1": [
           {
@@ -956,7 +1139,8 @@
                   209
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle Down"
             }
           },
           {
@@ -970,13 +1154,32 @@
                   201
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle Up"
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "6": [
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  201
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              },
+              "description": "Increase Turbine RPM"
+            }
+          }
+        ],
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -987,7 +1190,44 @@
                   199
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Start-up engine"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  209
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              },
+              "description": "Decrease Turbine RPM"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  20
+                ],
+                "modifierCodes": [
+                  220
+                ]
+              },
+              "description": "Throttle Stop Switch"
             }
           }
         ]
@@ -1015,7 +1255,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1030,7 +1271,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1047,7 +1289,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Night Vision Goggles"
             }
           },
           {
@@ -1065,7 +1308,8 @@
                         3
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Set Operator Seat"
                   }
                 },
                 {
@@ -1078,7 +1322,8 @@
                         4
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Set Left Gunner Seat"
                   }
                 },
                 {
@@ -1091,7 +1336,8 @@
                         5
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Set Right Gunner Seat"
                   }
                 },
                 {
@@ -1104,7 +1350,8 @@
                         2
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Set Pilot Seat"
                   }
                 }
               ],
@@ -1123,7 +1370,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
