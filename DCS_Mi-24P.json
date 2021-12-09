@@ -72,7 +72,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Rudder"
             }
           }
         ],
@@ -86,7 +87,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Collective"
             }
           }
         ],
@@ -97,7 +99,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Roll"
             }
           }
         ],
@@ -108,7 +111,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Pitch"
             }
           }
         ],
@@ -119,7 +123,8 @@
               "deadZone": 0.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake"
             }
           }
         ],
@@ -129,7 +134,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Release Weapons"
             }
           }
         ]
@@ -140,7 +146,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 1
+              "buttonId": 1,
+              "description": "Pilot Launch Countermeasures"
             }
           }
         ],
@@ -152,7 +159,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -162,7 +170,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -175,7 +184,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -188,7 +198,8 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -203,7 +214,8 @@
                   20
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Trimmer Button"
             }
           }
         ],
@@ -220,7 +232,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trimmer - Reset"
             }
           }
         ],
@@ -235,7 +248,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -250,7 +264,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -267,7 +282,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Wheel Parking Brake"
             }
           }
         ],
@@ -282,7 +298,8 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Gear Lever - UP/DOWN"
             }
           }
         ]
@@ -366,7 +383,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Hide Menu"
             }
           }
         ],
@@ -381,7 +399,8 @@
                   17
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Menu Up"
             }
           }
         ],
@@ -396,7 +415,8 @@
                   32
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Menu Right"
             }
           }
         ],
@@ -411,7 +431,8 @@
                   31
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Menu Down"
             }
           }
         ],
@@ -426,7 +447,8 @@
                   30
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Menu Left"
             }
           }
         ]
@@ -452,7 +474,8 @@
                   184,
                   157
                 ]
-              }
+              },
+              "description": "External Cargo Emergency Unhook"
             }
           }
         ],
@@ -472,16 +495,37 @@
                   184,
                   157
                 ]
-              }
+              },
+              "description": "External Cargo Tactical Unhook"
             }
           }
         ]
       },
-      "buttonToActionsMap": {}
+      "buttonToActionsMap": {
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "longPress": false,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  38
+                ],
+                "modifierCodes": [
+                  54,
+                  157
+                ]
+              },
+              "description": "External Cargo Hook"
+            }
+          }
+        ]
+      }
     },
     {
       "uuid": "be06e2b5-3ede-4d7a-9c4d-9a02ac8ca202",
-      "description": "Light",
+      "description": "Headlight",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "11": [
@@ -497,7 +541,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Headlight Up"
             }
           }
         ],
@@ -514,7 +559,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Headlight Right"
             }
           }
         ],
@@ -531,7 +577,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Headlight Down"
             }
           }
         ],
@@ -548,7 +595,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Headlight Left"
             }
           }
         ]
@@ -568,7 +616,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -582,7 +631,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -600,7 +650,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Radio trigger - RADIO (call radio menu)"
             }
           }
         ],
@@ -618,7 +669,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Radio trigger - ICS (call radio menu)"
             }
           }
         ]
@@ -638,7 +690,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -646,7 +699,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -670,7 +724,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -678,7 +733,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -693,7 +749,8 @@
                   43
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Communication menu"
             }
           }
         ],
@@ -711,7 +768,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -719,7 +777,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -737,7 +796,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right"
             }
           },
           {
@@ -745,7 +805,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -763,7 +824,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down"
             }
           },
           {
@@ -771,7 +833,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -789,7 +852,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left"
             }
           },
           {
@@ -797,7 +861,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -821,7 +886,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Readjust Free Turbine RPM Switch - Decrease"
             }
           }
         ],
@@ -838,7 +904,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Readjust Free Turbine RPM Switch - Increase"
             }
           }
         ]
@@ -852,7 +919,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.75,
+              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "activation": "REPEAT",
               "keystroke": {
@@ -860,21 +927,23 @@
                   209
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Correction Lever - Decrease"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
               "minAxisValue": -1.0,
-              "maxAxisValue": -0.75,
+              "maxAxisValue": -0.5,
               "activation": "REPEAT",
               "keystroke": {
                 "keyCodes": [
                   201
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Correction Lever - Increase"
             }
           }
         ]
@@ -894,7 +963,8 @@
                   42,
                   29
                 ]
-              }
+              },
+              "description": "Autopilot OFF"
             }
           }
         ],
@@ -909,7 +979,8 @@
                   33
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Collective brake - Assign altitude lever"
             }
           }
         ],
@@ -926,7 +997,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim: Nose Down"
             }
           }
         ],
@@ -943,7 +1015,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim: Right Wing Down "
             }
           }
         ],
@@ -960,7 +1033,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim: Nose Up"
             }
           }
         ],
@@ -977,7 +1051,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim: Left Wing Down "
             }
           }
         ]
@@ -1005,7 +1080,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1020,7 +1096,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1037,7 +1114,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Night Vision Goggles"
             }
           },
           {
@@ -1055,7 +1133,8 @@
                         3
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Set Operator Seat"
                   }
                 },
                 {
@@ -1068,7 +1147,8 @@
                         2
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Set Pilot Seat"
                   }
                 }
               ],
@@ -1087,7 +1167,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
