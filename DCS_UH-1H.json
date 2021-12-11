@@ -118,13 +118,14 @@
               "activation": "REPEAT",
               "keystroke": {
                 "keyCodes": [
-                  57
+                  39
                 ],
                 "modifierCodes": [
-                  184
+                  54,
+                  157
                 ]
               },
-              "description": "Copilot weapon release"
+              "description": "External Cargo Unhook"
             }
           }
         ],
@@ -291,7 +292,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": true,
+              "longPress": false,
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
@@ -304,23 +305,6 @@
               },
               "description": "External Cargo Autounhook"
             }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "longPress": false,
-              "activation": "SINGLE_ON_RELEASE",
-              "keystroke": {
-                "keyCodes": [
-                  38
-                ],
-                "modifierCodes": [
-                  54,
-                  157
-                ]
-              },
-              "description": "External Cargo Hook"
-            }
           }
         ],
         "13": [
@@ -331,14 +315,14 @@
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
-                  39
+                  38
                 ],
                 "modifierCodes": [
                   54,
                   157
                 ]
               },
-              "description": "External Cargo Unhook"
+              "description": "External Cargo Hook"
             }
           }
         ]
