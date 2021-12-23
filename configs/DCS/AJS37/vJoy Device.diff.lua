@@ -116,15 +116,15 @@ local diff = {
 			},
 			["name"] = "Fast countermeasure dispense",
 		},
-		["d3002pnilunilcd23vd1vpnilvunil"] = {
+		["d3002pnilunilcd23vd-1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN10",
+					["key"] = "JOY_BTN12",
 				},
 			},
-			["name"] = "A0 Mode",
+			["name"] = "A2 Mode",
 		},
-		["d3003pnilunilcd23vd1vpnilvunil"] = {
+		["d3002pnilunilcd23vd0vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN11",
@@ -132,13 +132,13 @@ local diff = {
 			},
 			["name"] = "A1 Mode",
 		},
-		["d3004pnilunilcd23vd1vpnilvunil"] = {
+		["d3002pnilunilcd23vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN12",
+					["key"] = "JOY_BTN10",
 				},
 			},
-			["name"] = "A2 Mode",
+			["name"] = "A0 Mode",
 		},
 		["d3005pnilu3006cd23vd1vpnilvu1"] = {
 			["added"] = {
@@ -212,21 +212,21 @@ local diff = {
 			},
 			["name"] = "Rb05 switch input with flight stick (hold)",
 		},
-		["d3323pnilunilcd5vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN16",
-				},
-			},
-			["name"] = "Radar Range Increase",
-		},
-		["d3324pnilunilcd5vd1vpnilvunil"] = {
+		["d3323pnilu3323cd5vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN15",
 				},
 			},
 			["name"] = "Radar Range Decrease",
+		},
+		["d3323pnilu3323cd5vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN16",
+				},
+			},
+			["name"] = "Radar Range Increase",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
