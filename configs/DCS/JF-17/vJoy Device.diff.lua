@@ -140,6 +140,22 @@ local diff = {
 			},
 			["name"] = "T2_Press: AG Manual Mode/DGFT Missile Designator Control",
 		},
+		["d10128pnilu10129cd24vdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+			["name"] = "T4_Forward: Radio Comm 1 (w/ VOIP)",
+		},
+		["d10130pnilu10131cd24vdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "T4_Backward: Radio Comm 2 (w/ VOIP)",
+		},
 		["d3034pnilu3034cd35vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {

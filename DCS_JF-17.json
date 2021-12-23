@@ -409,37 +409,23 @@
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  43
-                ],
-                "modifierCodes": [
-                  184
-                ]
-              }
+              "buttonId": 8,
+              "description": "T4_Forward: Radio Comm 1 (w/ VOIP)"
             }
           }
         ],
         "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  43
-                ],
-                "modifierCodes": [
-                  157
-                ]
-              }
+              "buttonId": 9,
+              "description": "T4_Backward: Radio Comm 2 (w/ VOIP)"
             }
           }
         ]
@@ -1307,10 +1293,7 @@
   ],
   "virtualAxisToOverlayAxisMap": {
     "Z": {
-      "color": {
-        "value": -16777216,
-        "falpha": 0.0
-      },
+      "color": -16777216,
       "inverted": false
     }
   }
