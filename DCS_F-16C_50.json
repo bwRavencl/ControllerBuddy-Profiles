@@ -1,5 +1,5 @@
 {
-  "version": "0.19",
+  "version": "0.20",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -138,6 +138,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 2,
@@ -159,6 +160,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "minAxisValue": -0.25,
               "maxAxisValue": 1.0,
               "buttonId": 0,
@@ -168,6 +170,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 1,
@@ -203,8 +206,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   76
@@ -217,8 +220,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   156
@@ -243,8 +246,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   181
@@ -259,8 +262,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   55
@@ -275,8 +278,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   46
@@ -291,8 +294,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   34
@@ -307,8 +310,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   31
@@ -390,8 +393,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   48
@@ -472,8 +475,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   39
@@ -490,8 +493,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   53
@@ -508,8 +511,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   52
@@ -526,8 +529,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   51
@@ -582,7 +585,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   43
@@ -593,6 +597,16 @@
               },
               "description": "Transmit Switch - VHF (call radio menu)"
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 99,
+              "description": "cockpit r.1 VoIP PTT"
+            }
           }
         ],
         "5": [
@@ -601,7 +615,8 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   43
@@ -612,6 +627,16 @@
               },
               "description": "Transmit Switch - UHF (call radio menu)"
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 100,
+              "description": "cockpit r.2 VoIP PTT"
+            }
           }
         ]
       },
@@ -620,8 +645,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   181
@@ -654,8 +679,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   55
@@ -702,8 +727,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   72
@@ -730,8 +755,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   77
@@ -758,8 +783,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   80
@@ -786,8 +811,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   75
@@ -823,6 +848,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   53
@@ -838,6 +864,7 @@
               "minAxisValue": -1.0,
               "maxAxisValue": -0.5,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   51
@@ -855,6 +882,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   52
@@ -870,6 +898,7 @@
               "minAxisValue": -1.0,
               "maxAxisValue": -0.5,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   39
@@ -886,8 +915,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   28
@@ -912,8 +941,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   13
@@ -938,8 +967,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   12
@@ -971,8 +1000,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   200
@@ -989,8 +1018,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   205
@@ -1007,8 +1036,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   208
@@ -1025,8 +1054,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   203
@@ -1049,6 +1078,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 8,
@@ -1082,8 +1112,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   39
@@ -1100,8 +1130,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   53
@@ -1118,8 +1148,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   52
@@ -1136,8 +1166,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "REPEAT",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   51
@@ -1167,8 +1197,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   18
@@ -1185,8 +1215,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   59
@@ -1201,8 +1231,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   68
@@ -1217,8 +1247,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   35
@@ -1235,8 +1265,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "longPress": false,
               "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   60
