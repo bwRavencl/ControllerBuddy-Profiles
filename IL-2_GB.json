@@ -1,5 +1,5 @@
 {
-  "version": "0.20",
+  "version": "0.21",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -286,6 +286,14 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
             "data": {
               "lockKey": true,
+              "longPress": false
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToReleaseAllOnScreenKeyboardKeysAction",
+            "data": {
               "longPress": false
             }
           }
@@ -999,12 +1007,12 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S0": {
-      "color": -16776961,
-      "inverted": false
-    },
     "S1": {
       "color": -65536,
+      "inverted": false
+    },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     },
     "Z": {
