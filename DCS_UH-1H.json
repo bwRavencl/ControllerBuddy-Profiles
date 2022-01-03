@@ -897,21 +897,29 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 0,
-              "description": "Pilot\u0027s radio trigger RADIO"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 99,
               "description": "cockpit r.1 VoIP PTT"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  43
+                ],
+                "modifierCodes": [
+                  184
+                ]
+              },
+              "description": "Pilot\u0027s radio trigger RADIO (call radio menu)"
             }
           }
         ],
@@ -931,7 +939,7 @@
                   54
                 ]
               },
-              "description": "Pilot\u0027s radio trigger ICS"
+              "description": "Pilot\u0027s radio trigger ICS (call radio menu)"
             }
           },
           {
@@ -940,8 +948,8 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 100,
-              "description": "cockpit r.2 VoIP PTT"
+              "buttonId": 102,
+              "description": "cockpit int.1 VoIP PTT"
             }
           }
         ]
@@ -1006,16 +1014,6 @@
               "virtualKeyCode": 144,
               "on": false,
               "description": "Cockpit Camera Move Forward"
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 101,
-              "description": "cockpit r.3 VoIP PTT"
             }
           }
         ],

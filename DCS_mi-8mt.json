@@ -450,7 +450,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Radio trigger - 2nd STAGE (RADIO)"
             }
           },
           {
@@ -466,13 +467,31 @@
         ],
         "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 100,
-              "description": "cockpit r.2 VoIP PTT"
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  57
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              },
+              "description": "Radio trigger - 1st STAGE (ICS)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 102,
+              "description": "cockpit int.1 VoIP PTT"
             }
           }
         ]
@@ -533,16 +552,6 @@
               "longPress": false,
               "virtualKeyCode": 144,
               "on": false
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 101,
-              "description": "cockpit r.3 VoIP PTT"
             }
           }
         ],

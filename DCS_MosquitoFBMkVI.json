@@ -534,7 +534,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "COMM Push to talk (call radio menu)"
             }
           },
           {
@@ -545,18 +546,6 @@
               "maxAxisValue": 1.0,
               "buttonId": 99,
               "description": "cockpit r.1 VoIP PTT"
-            }
-          }
-        ],
-        "5": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 100,
-              "description": "cockpit r.2 VoIP PTT"
             }
           }
         ]
@@ -906,7 +895,7 @@
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View / Eject",
+      "description": "View / Position / Eject",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "5": [
@@ -964,16 +953,40 @@
         ],
         "13": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  62
-                ],
-                "modifierCodes": []
-              }
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        3
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Occupy Seat 2"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        2
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Occupy Seat 1"
+                  }
+                }
+              ],
+              "activation": "SINGLE_IMMEDIATELY"
             }
           }
         ],

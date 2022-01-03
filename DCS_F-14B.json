@@ -604,7 +604,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Mic Button UHF1 (ARC-159)"
             }
           },
           {
@@ -633,7 +634,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Mic Button UHF2 (ARC-182)"
             }
           },
           {
@@ -704,6 +706,32 @@
               "longPress": false,
               "virtualKeyCode": 144,
               "on": false
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": true,
+              "buttonId": 102,
+              "description": "cockpit int.1 VoIP PTT"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  43
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              },
+              "description": "Mic Button ICS"
             }
           }
         ],

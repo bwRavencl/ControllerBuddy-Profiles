@@ -48,13 +48,13 @@ local diff = {
 			},
 			["name"] = "cockpit r.3 VoIP PTT",
 		},
-		["d1756pnilu1756cdnilvd1vpnilvu0"] = {
+		["d1757pnilu1757cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN103",
 				},
 			},
-			["name"] = "cockpit r.4 VoIP PTT",
+			["name"] = "cockpit int.1 VoIP PTT",
 		},
 	},
 }

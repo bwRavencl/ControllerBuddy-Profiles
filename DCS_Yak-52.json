@@ -426,7 +426,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "CPMM Push to talk (call radio menu)"
             }
           },
           {
@@ -437,6 +438,18 @@
               "maxAxisValue": 1.0,
               "buttonId": 99,
               "description": "cockpit r.1 VoIP PTT"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 102,
+              "description": "cockpit int.1 VoIP PTT"
             }
           }
         ]
