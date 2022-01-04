@@ -16,14 +16,14 @@ local diff = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Höhenruder",
+			["name"] = "Pitch",
 		},
 		["a2002cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.1,
+							[1] = 0.25,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -34,7 +34,7 @@ local diff = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Fliegen: Steuerknüppel, Querruder",
+			["name"] = "Roll",
 		},
 		["a2003cdnil"] = {
 			["changed"] = {
@@ -52,7 +52,7 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Fliegen: Seitenruder",
+			["name"] = "Rudder",
 		},
 		["a2010cdnil"] = {
 			["added"] = {
@@ -60,7 +60,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach links/rechts drehen",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -68,7 +68,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Absolute Kamera, Sicht nach vorne/hinten nicken",
+			["name"] = "Absolute Camera Vertical View",
 		},
 		["a3162cdnil"] = {
 			["added"] = {
@@ -86,7 +86,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Radbremse links",
+			["name"] = "Wheel Brake Left",
 		},
 		["a3163cdnil"] = {
 			["added"] = {
@@ -104,7 +104,7 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Radbremse rechts",
+			["name"] = "Wheel Brake Right",
 		},
 	},
 	["keyDiffs"] = {
@@ -114,7 +114,7 @@ local diff = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "ALE-29A AUTO Pushbutton",
+			["name"] = "Chaff AUTO Pushbutton (ALE-29A Salvo)",
 		},
 	},
 }
