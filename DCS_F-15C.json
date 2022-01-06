@@ -100,7 +100,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Yaw"
             }
           }
         ],
@@ -115,7 +116,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -126,7 +128,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -137,7 +140,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -148,7 +152,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Weapon Release"
             }
           },
           {
@@ -158,7 +163,7 @@
               "initialValue": -1.0,
               "virtualAxis": "S0",
               "invert": false,
-              "description": "Left Brake"
+              "description": "Wheel Brake Left"
             }
           }
         ],
@@ -175,7 +180,8 @@
                   57
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Weapon Fire"
             }
           },
           {
@@ -185,7 +191,7 @@
               "initialValue": -1.0,
               "virtualAxis": "S1",
               "invert": false,
-              "description": "Right Brake"
+              "description": "Wheel Brake Right"
             }
           }
         ]
@@ -196,14 +202,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 1
+              "buttonId": 1,
+              "description": "Unlock TWS Target"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 2
+              "buttonId": 2,
+              "description": "Nose Gear Maneuvering Range"
             }
           }
         ],
@@ -215,7 +223,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -225,7 +234,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -238,7 +248,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -251,7 +262,8 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -266,7 +278,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -281,7 +294,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -296,7 +310,8 @@
                   48
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Airbrake"
             }
           }
         ]
@@ -386,7 +401,8 @@
                   18
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ECM"
             }
           }
         ],
@@ -401,7 +417,8 @@
                   210
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Countermeasures Chaff Dispense"
             }
           }
         ],
@@ -418,7 +435,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Countermeasures Continuously Dispense"
             }
           }
         ],
@@ -433,7 +451,8 @@
                   211
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Countermeasures  Flares Dispense"
             }
           }
         ],
@@ -448,7 +467,8 @@
                   16
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Countermeasures Release"
             }
           }
         ]
@@ -470,7 +490,8 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Landing Gear Up/Down"
             }
           }
         ],
@@ -487,7 +508,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Refuelling Boom"
             }
           }
         ],
@@ -503,7 +525,7 @@
                 ],
                 "modifierCodes": []
               },
-              "description": "Flaps Up"
+              "description": "Flaps Up/Down"
             }
           }
         ],
@@ -520,7 +542,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Canopy Open/Close"
             }
           }
         ],
@@ -537,7 +560,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Engines Stop"
             }
           },
           {
@@ -552,7 +576,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Engines Start"
             }
           }
         ]
@@ -574,7 +599,8 @@
                   19
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Fuel Dump"
             }
           }
         ],
@@ -591,7 +617,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Weapons Jettison"
             }
           }
         ],
@@ -608,7 +635,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Bingo Fuel Index, CW"
             }
           }
         ],
@@ -625,7 +653,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Jettison Fuel Tanks"
             }
           }
         ],
@@ -642,7 +671,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Bingo Fuel Index, CCW"
             }
           }
         ]
@@ -666,7 +696,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Gear Light Near/Far/Off"
             }
           }
         ],
@@ -683,7 +714,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Navigation lights"
             }
           }
         ],
@@ -701,7 +733,8 @@
                   184,
                   157
                 ]
-              }
+              },
+              "description": "Anti-collision lights"
             }
           }
         ],
@@ -716,7 +749,8 @@
                   38
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Illumination Cockpit"
             }
           }
         ],
@@ -733,7 +767,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Electric Power Switch"
             }
           }
         ]
@@ -753,7 +788,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -767,7 +803,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -784,7 +821,8 @@
                   43
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Communication menu"
             }
           },
           {
@@ -826,7 +864,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -834,7 +873,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -858,7 +898,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -866,7 +907,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -891,7 +933,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Receive Mode"
             }
           }
         ],
@@ -908,7 +951,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Audible Warning Reset"
             }
           }
         ],
@@ -926,7 +970,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -934,7 +979,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -952,7 +998,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right"
             }
           },
           {
@@ -960,7 +1007,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -978,7 +1026,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down"
             }
           },
           {
@@ -986,7 +1035,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -1004,7 +1054,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left"
             }
           },
           {
@@ -1012,7 +1063,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -1034,7 +1086,8 @@
                   7
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(6) Longitudinal Missile Aiming Mode/FLOOD mode"
             }
           },
           {
@@ -1047,7 +1100,8 @@
                   5
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(4) Close Air Combat Bore Mode"
             }
           }
         ],
@@ -1062,7 +1116,8 @@
                   4
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(3) Close Air Combat Vertical Scan Mode"
             }
           }
         ],
@@ -1077,7 +1132,8 @@
                   3
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(2) Beyond Visual Range Mode"
             }
           }
         ],
@@ -1092,7 +1148,8 @@
                   2
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(1) Navigation Modes"
             }
           }
         ]
@@ -1115,7 +1172,8 @@
                   53
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Designator Right"
             }
           },
           {
@@ -1130,7 +1188,8 @@
                   51
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Designator Left"
             }
           }
         ],
@@ -1147,7 +1206,8 @@
                   52
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Designator Down"
             }
           },
           {
@@ -1162,7 +1222,8 @@
                   39
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Designator Up"
             }
           }
         ]
@@ -1179,16 +1240,8 @@
                   28
                 ],
                 "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 1
+              },
+              "description": "Target Lock"
             }
           }
         ],
@@ -1205,7 +1258,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Radar Pulse Repeat Frequency Select"
             }
           },
           {
@@ -1220,7 +1274,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Target Designator To Center"
             }
           }
         ],
@@ -1237,7 +1292,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Radar RWS/TWS Select"
             }
           },
           {
@@ -1250,7 +1306,8 @@
                   23
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Radar On/Off"
             }
           }
         ],
@@ -1267,7 +1324,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Scan Zone Up"
             }
           },
           {
@@ -1280,7 +1338,8 @@
                   12
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Display Zoom Out"
             }
           }
         ],
@@ -1297,7 +1356,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Predicted Target Range Increase"
             }
           }
         ],
@@ -1314,7 +1374,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Scan Zone Down"
             }
           },
           {
@@ -1327,7 +1388,8 @@
                   13
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Display Zoom In"
             }
           }
         ],
@@ -1344,7 +1406,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Predicted Target Range Decrease"
             }
           }
         ]
@@ -1368,7 +1431,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "T/O Trim"
             }
           }
         ],
@@ -1385,7 +1449,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim: Rudder Right"
             }
           }
         ],
@@ -1402,7 +1467,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim: Rudder Left"
             }
           }
         ],
@@ -1419,7 +1485,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Autopilot Disengage"
             }
           }
         ],
@@ -1434,7 +1501,8 @@
                   35
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Autopilot - Altitude Hold"
             }
           }
         ],
@@ -1449,7 +1517,8 @@
                   30
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Autopilot - Attitude Hold"
             }
           }
         ],
@@ -1466,7 +1535,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Hat - NOSE DOWN"
             }
           }
         ],
@@ -1483,7 +1553,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Hat - ROLL RIGHT"
             }
           }
         ],
@@ -1500,7 +1571,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Hat - NOSE UP "
             }
           }
         ],
@@ -1517,7 +1589,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Hat - ROLL LEFT"
             }
           }
         ]
@@ -1547,7 +1620,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -1562,7 +1636,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1577,7 +1652,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1592,7 +1668,8 @@
                   62
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F4 Look back view"
             }
           }
         ],
@@ -1607,7 +1684,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
@@ -1631,7 +1709,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Previous Waypoint, Airfield or Target"
             }
           }
         ],
@@ -1648,7 +1727,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Altimeter Pressure Increase"
             }
           }
         ],
@@ -1665,7 +1745,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Altimeter Pressure Decrease"
             }
           }
         ],
@@ -1682,7 +1763,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Next Waypoint, Airfield Or Target"
             }
           }
         ],
@@ -1699,7 +1781,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Fuel Quantity Selector"
             }
           }
         ]
@@ -1723,7 +1806,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Launch Permission Override"
             }
           }
         ],
@@ -1738,7 +1822,8 @@
                   46
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Cannon"
             }
           }
         ],
@@ -1755,7 +1840,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Salvo Mode"
             }
           }
         ],
@@ -1770,7 +1856,8 @@
                   32
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Weapon Change"
             }
           }
         ]
