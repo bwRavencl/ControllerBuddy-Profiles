@@ -58,7 +58,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Rudder"
             }
           }
         ],
@@ -72,7 +73,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Collective"
             }
           }
         ],
@@ -83,7 +85,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Cyclic Roll"
             }
           }
         ],
@@ -94,7 +97,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Cyclic Pitch"
             }
           }
         ],
@@ -108,44 +112,33 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  57
+                  17
                 ],
-                "modifierCodes": [
-                  184
-                ]
-              }
+                "modifierCodes": []
+              },
+              "description": "Wheel brake (press and hold)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 1,
+              "description": "Release weapons"
             }
           }
         ],
         "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  57
-                ],
-                "modifierCodes": []
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  17
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 0,
+              "description": "Gun fire"
             }
           }
         ]
@@ -162,7 +155,8 @@
                   33
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Collective CLutch Lock/Release Button"
             }
           }
         ],
@@ -174,7 +168,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -184,7 +179,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -197,7 +193,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -210,11 +207,22 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
         "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 2,
+              "description": "Trim Control"
+            }
+          }
+        ],
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -224,40 +232,11 @@
                 "keyCodes": [
                   20
                 ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  30
-                ],
                 "modifierCodes": [
                   29
                 ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  20
-                ],
-                "modifierCodes": [
-                  29
-                ]
-              }
+              },
+              "description": "Trimmer reset"
             }
           }
         ],
@@ -272,7 +251,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -287,7 +267,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -304,7 +285,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Hover On/Off"
             }
           },
           {
@@ -317,7 +299,8 @@
                   210
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "UV-26 Start dispensing"
             }
           }
         ],
@@ -332,7 +315,8 @@
                   32
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Engage Descent Mode"
             }
           }
         ],
@@ -349,7 +333,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Wheel brake parking"
             }
           },
           {
@@ -362,7 +347,8 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Gear lever"
             }
           }
         ],
@@ -377,7 +363,8 @@
                   19
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Engage/Disengage Route Mode"
             }
           },
           {
@@ -390,7 +377,8 @@
                   16
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Button Automatic turn on target mode"
             }
           }
         ]
@@ -478,7 +466,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -492,7 +481,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -511,7 +501,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "SPU-9 PTT (call radio menu)"
             }
           },
           {
@@ -522,18 +513,6 @@
               "maxAxisValue": 1.0,
               "buttonId": 99,
               "description": "cockpit r.1 VoIP PTT"
-            }
-          }
-        ],
-        "5": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 100,
-              "description": "cockpit r.2 VoIP PTT"
             }
           }
         ]
@@ -553,7 +532,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -561,7 +541,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -585,7 +566,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -593,7 +575,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -611,7 +594,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -619,7 +603,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -637,7 +622,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right"
             }
           },
           {
@@ -645,7 +631,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -663,7 +650,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down"
             }
           },
           {
@@ -671,7 +659,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -689,7 +678,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left"
             }
           },
           {
@@ -697,7 +687,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -714,7 +705,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Absolute SHKVAL Horizontal Slew"
             }
           }
         ],
@@ -725,7 +717,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Absolute SHKVAL Vertical Slew"
             }
           }
         ]
@@ -733,16 +726,11 @@
       "buttonToActionsMap": {
         "0": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "REPEAT",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  28
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 3,
+              "description": "Lock target"
             }
           }
         ],
@@ -757,7 +745,8 @@
                   35
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Helmet-mounter system On/Off"
             }
           }
         ],
@@ -772,7 +761,8 @@
                   24
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Uncage SHKVAL, designate target"
             }
           }
         ],
@@ -789,7 +779,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "KU-31 Shkval center"
             }
           }
         ],
@@ -804,7 +795,8 @@
                   13
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Shkval Narrow View 23x"
             }
           }
         ],
@@ -819,7 +811,8 @@
                   27
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "TV Target frame Increase size"
             }
           }
         ],
@@ -834,7 +827,8 @@
                   12
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Shkval Wide View 7x"
             }
           }
         ],
@@ -849,7 +843,8 @@
                   26
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "TV Target frame Decrease size"
             }
           }
         ]
@@ -872,7 +867,8 @@
                   209
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle down (Idle-Medium-Auto-Full)"
             }
           },
           {
@@ -887,7 +883,8 @@
                   201
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle up (Idle-Medium-Auto-Full)"
             }
           }
         ]
@@ -906,7 +903,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Autopilot Emergency Off"
             }
           }
         ],
@@ -914,7 +912,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "REPEAT",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -923,7 +921,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Readjust Free Turbine RPM to Nominal"
             }
           }
         ],
@@ -931,7 +930,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "REPEAT",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -940,7 +939,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Readjust Free Turbine RPM to Low"
             }
           }
         ]
@@ -970,7 +970,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -985,7 +986,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1000,7 +1002,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1015,7 +1018,8 @@
                   62
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F4 Look back view"
             }
           }
         ],
@@ -1030,7 +1034,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
@@ -1052,7 +1057,8 @@
                   46
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Gun Select"
             }
           }
         ],
@@ -1069,7 +1075,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Weapon selection A-A mode"
             }
           }
         ],
@@ -1084,7 +1091,8 @@
                   21
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Weapon selection outward stations"
             }
           }
         ],
@@ -1099,7 +1107,8 @@
                   22
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Weapon selection all stations"
             }
           }
         ],
@@ -1114,7 +1123,8 @@
                   23
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Weapon selection inward stations"
             }
           }
         ]
