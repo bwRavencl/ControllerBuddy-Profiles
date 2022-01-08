@@ -51,7 +51,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Rudder"
             }
           }
         ],
@@ -65,7 +66,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Collective"
             }
           }
         ],
@@ -76,7 +78,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Cyclic Roll"
             }
           }
         ],
@@ -87,7 +90,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Cyclic Pitch"
             }
           }
         ],
@@ -104,7 +108,8 @@
                   57
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Missile Launch Button"
             }
           }
         ],
@@ -115,7 +120,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Fire Gun or Rockets"
             }
           }
         ]
@@ -132,7 +138,26 @@
                   210
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Start dispensing"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  23
+                ],
+                "modifierCodes": [
+                  157
+                ]
+              },
+              "description": "Camera Centering"
             }
           }
         ],
@@ -144,7 +169,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -154,7 +180,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -167,7 +194,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -180,7 +208,8 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -195,7 +224,8 @@
                   20
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Trimmer"
             }
           }
         ],
@@ -212,7 +242,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trimmer reset"
             }
           }
         ],
@@ -227,7 +258,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -242,7 +274,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -257,7 +290,8 @@
                   16
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Auto-Hover Toggle"
             }
           }
         ],
@@ -274,7 +308,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Cockpit door open/close"
             }
           }
         ],
@@ -289,44 +324,24 @@
                   18
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Auto-Slaved Toggle"
             }
           }
         ],
         "14": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
-                    "keystroke": {
-                      "keyCodes": [
-                        3
-                      ],
-                      "modifierCodes": []
-                    }
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
-                    "keystroke": {
-                      "keyCodes": [
-                        2
-                      ],
-                      "modifierCodes": []
-                    }
-                  }
-                }
-              ],
-              "activation": "SINGLE_IMMEDIATELY"
+              "keystroke": {
+                "keyCodes": [
+                  32
+                ],
+                "modifierCodes": []
+              },
+              "description": "Cycle Station"
             }
           }
         ]
@@ -405,6 +420,24 @@
       "description": "Landing Light",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  38
+                ],
+                "modifierCodes": [
+                  184
+                ]
+              },
+              "description": "Landing Light On/Off"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -416,7 +449,8 @@
                   24
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Landing Light Retract"
             }
           }
         ],
@@ -431,24 +465,8 @@
                   25
                 ],
                 "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  38
-                ],
-                "modifierCodes": [
-                  184
-                ]
-              }
+              },
+              "description": "Landing Light Extend"
             }
           }
         ]
@@ -468,7 +486,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -482,7 +501,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -499,7 +519,8 @@
                   43
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Radio Communication Menu Toggle"
             }
           },
           {
@@ -529,7 +550,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -537,7 +559,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -561,7 +584,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -569,7 +593,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -587,7 +612,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -595,7 +621,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -613,7 +640,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right"
             }
           },
           {
@@ -621,7 +649,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -639,7 +668,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down"
             }
           },
           {
@@ -647,7 +677,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -665,7 +696,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left"
             }
           },
           {
@@ -673,7 +705,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -696,7 +729,8 @@
                   209
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Fuel Flow lever Backward"
             }
           },
           {
@@ -711,7 +745,8 @@
                   201
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Fuel Flow lever Forward"
             }
           }
         ]
@@ -740,7 +775,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -755,7 +791,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -772,7 +809,8 @@
                 "modifierCodes": [
                   54
                 ]
-              }
+              },
+              "description": "Night Vision Google On/Off"
             }
           },
           {
@@ -790,7 +828,8 @@
                         3
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Set CoPilot Seat"
                   }
                 },
                 {
@@ -803,7 +842,8 @@
                         2
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Set Pilot Seat"
                   }
                 }
               ],
@@ -822,7 +862,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
