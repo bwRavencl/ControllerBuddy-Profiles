@@ -51,7 +51,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -66,7 +67,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -77,7 +79,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -88,7 +91,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -99,7 +103,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 1
+              "buttonId": 1,
+              "description": "Weapons Release"
             }
           }
         ],
@@ -110,7 +115,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Fire Gun"
             }
           }
         ]
@@ -121,7 +127,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 2
+              "buttonId": 2,
+              "description": "Drop Countermeasures (ASO and SPS-141)"
             }
           }
         ],
@@ -136,7 +143,8 @@
                   17
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Wheel Brakes"
             }
           }
         ],
@@ -148,7 +156,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -158,7 +167,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -171,7 +181,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -184,7 +195,8 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -199,7 +211,8 @@
                   30
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "SAU - Recovery"
             }
           },
           {
@@ -215,7 +228,8 @@
                   56,
                   29
                 ]
-              }
+              },
+              "description": "SAU cancel current mode"
             }
           }
         ],
@@ -230,7 +244,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -245,7 +260,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -260,7 +276,8 @@
                   25
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Drag Chute - Activate"
             }
           },
           {
@@ -273,7 +290,8 @@
                   46
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Airbrakes On/Off"
             }
           }
         ],
@@ -288,50 +306,12 @@
                   33
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Flaps Down"
             }
           }
         ],
         "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
-            "data": {
-              "longPress": true,
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
-                    "keystroke": {
-                      "keyCodes": [
-                        34
-                      ],
-                      "modifierCodes": [
-                        54
-                      ]
-                    }
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
-                    "keystroke": {
-                      "keyCodes": [
-                        34
-                      ],
-                      "modifierCodes": [
-                        157
-                      ]
-                    }
-                  }
-                }
-              ],
-              "activation": "SINGLE_IMMEDIATELY"
-            }
-          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
@@ -347,7 +327,8 @@
                         34
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "Gears Down"
                   }
                 },
                 {
@@ -362,7 +343,8 @@
                       "modifierCodes": [
                         29
                       ]
-                    }
+                    },
+                    "description": "Gears Handle Neutral"
                   }
                 },
                 {
@@ -377,7 +359,8 @@
                       "modifierCodes": [
                         42
                       ]
-                    }
+                    },
+                    "description": "Gears Down"
                   }
                 },
                 {
@@ -392,11 +375,12 @@
                       "modifierCodes": [
                         29
                       ]
-                    }
+                    },
+                    "description": "Gears Handle Neutral"
                   }
                 }
               ],
-              "activation": "SINGLE_ON_RELEASE"
+              "activation": "SINGLE_IMMEDIATELY"
             }
           }
         ],
@@ -413,7 +397,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Drop Center Fuel Pod"
             }
           },
           {
@@ -428,7 +413,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Flaps Up"
             }
           }
         ]
@@ -516,7 +502,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Horizontal View"
             }
           }
         ],
@@ -530,7 +517,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Vertical View"
             }
           }
         ],
@@ -547,7 +535,8 @@
                   43
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Intercomm menu"
             }
           },
           {
@@ -577,7 +566,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -585,7 +575,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -609,7 +600,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -617,7 +609,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -635,7 +628,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -643,7 +637,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -661,7 +656,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right"
             }
           },
           {
@@ -669,7 +665,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -687,7 +684,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down"
             }
           },
           {
@@ -695,7 +693,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -713,7 +712,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left"
             }
           },
           {
@@ -721,7 +721,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -743,7 +744,8 @@
                   28
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Lock On"
             }
           }
         ],
@@ -758,7 +760,8 @@
                   24
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "TDC Range / Pipper Span +"
             }
           }
         ],
@@ -773,7 +776,8 @@
                   38
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "TDC Range / Pipper Span -"
             }
           }
         ]
@@ -797,7 +801,8 @@
                 "modifierCodes": [
                   42
                 ]
-              }
+              },
+              "description": "Trim Pitch Down"
             }
           }
         ],
@@ -814,7 +819,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trim Pitch Up"
             }
           }
         ]
@@ -844,7 +850,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -859,7 +866,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -874,7 +882,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -891,7 +900,8 @@
                 "modifierCodes": [
                   56
                 ]
-              }
+              },
+              "description": "Helmet visor On/Off"
             }
           }
         ],
@@ -906,7 +916,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
