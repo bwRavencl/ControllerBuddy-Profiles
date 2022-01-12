@@ -44,7 +44,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Yaw"
             }
           }
         ],
@@ -58,7 +59,8 @@
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle"
             }
           }
         ],
@@ -69,7 +71,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -80,7 +83,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -91,7 +95,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 1
+              "buttonId": 1,
+              "description": "Bomb Release Button"
             }
           },
           {
@@ -100,7 +105,8 @@
               "deadZone": 0.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Left"
             }
           }
         ],
@@ -111,7 +117,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Gun-Rocket Trigger"
             }
           },
           {
@@ -120,7 +127,8 @@
               "deadZone": 0.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Right"
             }
           }
         ]
@@ -131,7 +139,26 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 2
+              "buttonId": 2,
+              "description": "Chaff AUTO Pushbutton (ALE-29A Salvo)"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  34
+                ],
+                "modifierCodes": [
+                  56
+                ]
+              },
+              "description": "Arresting Hook Handle - UP/DOWN"
             }
           }
         ],
@@ -143,7 +170,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -153,7 +181,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -166,7 +195,8 @@
                   76
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -179,7 +209,54 @@
                   156
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [],
+                "modifierCodes": []
+              },
+              "description": "Autopilot Override (AFCS Emergency Disconnect)"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  31
+                ],
+                "modifierCodes": []
+              },
+              "description": "Spoiler Arm Switch ARM/OFF"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  38
+                ],
+                "modifierCodes": []
+              },
+              "description": "Master Exterior Lights Switch - ON/OFF"
             }
           }
         ],
@@ -194,7 +271,8 @@
                   181
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom out slow"
             }
           }
         ],
@@ -209,7 +287,8 @@
                   55
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -224,24 +303,18 @@
                   48
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Speedbrake Switch - OPEN/CLOSE"
             }
           }
         ],
         "12": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  34
-                ],
-                "modifierCodes": [
-                  56
-                ]
-              }
+              "buttonId": 5,
+              "description": "Flap handle DOWN else STOP"
             }
           }
         ],
@@ -256,22 +329,18 @@
                   34
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Landing Gear Handle UP/DOWN"
             }
           }
         ],
         "14": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  33
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 4,
+              "description": "Flap handle UP else STOP"
             }
           }
         ]
@@ -359,7 +428,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -373,7 +443,8 @@
               "deadZone": 0.15,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -392,7 +463,8 @@
                 "modifierCodes": [
                   184
                 ]
-              }
+              },
+              "description": "Radio Microphone Push to Talk (PTT)"
             }
           },
           {
@@ -401,8 +473,8 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 99,
-              "description": "cockpit r.1 VoIP PTT"
+              "buttonId": 3,
+              "description": "Radio Microphone Push to Talk VOIP (PTT)"
             }
           }
         ]
@@ -422,7 +494,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -430,7 +503,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -454,7 +528,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -462,7 +537,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -495,7 +571,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Up"
             }
           },
           {
@@ -503,7 +580,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -521,7 +599,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Right"
             }
           },
           {
@@ -529,7 +608,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -547,7 +627,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Down"
             }
           },
           {
@@ -555,7 +636,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -573,7 +655,8 @@
                   54,
                   157
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Left"
             }
           },
           {
@@ -581,7 +664,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": 144,
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -605,7 +689,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Trim Reset (Hold)"
             }
           }
         ],
@@ -622,7 +707,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Rudder Trim Switch - Rudder Right"
             }
           }
         ],
@@ -639,7 +725,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Rudder Trim Switch - Rudder Left"
             }
           }
         ],
@@ -656,7 +743,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Switch - NOSE DOWN"
             }
           }
         ],
@@ -673,7 +761,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Switch - RIGHT WING DOWN"
             }
           }
         ],
@@ -690,7 +779,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Switch - NOSE UP"
             }
           }
         ],
@@ -707,7 +797,8 @@
                 "modifierCodes": [
                   157
                 ]
-              }
+              },
+              "description": "Trim Switch - LEFT WING DOWN"
             }
           }
         ]
@@ -737,7 +828,8 @@
                 "modifierCodes": [
                   29
                 ]
-              }
+              },
+              "description": "Alternate Ejection Handle (3 times)"
             }
           }
         ],
@@ -752,7 +844,8 @@
                   59
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -767,7 +860,8 @@
                   68
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -782,7 +876,8 @@
                   62
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F4 Look back view"
             }
           }
         ],
@@ -797,7 +892,8 @@
                   60
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]

@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.1,
+							[1] = 0.25,
 						},
 						["deadzone"] = 0.15,
 						["invert"] = false,
@@ -108,6 +108,30 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d10011pnilu10010cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Flap Handle - UP else STOP",
+		},
+		["d10012pnilu10010cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Flap Handle - DOWN else STOP",
+		},
+		["d10281pnilu10281cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Radio Microphone Push to Talk VOIP (PTT)",
+		},
 		["d3107pnilu3107cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
