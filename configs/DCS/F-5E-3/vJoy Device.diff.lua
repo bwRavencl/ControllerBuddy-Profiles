@@ -108,6 +108,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d3001pnilu3001cd24vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "UHF Radio Microphone Button (call radio menu)",
+		},
 		["d3014pnilu3014cd15vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {

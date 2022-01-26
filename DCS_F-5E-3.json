@@ -510,23 +510,6 @@
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  43
-                ],
-                "modifierCodes": [
-                  184
-                ]
-              }
-            }
-          },
-          {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": true,
@@ -534,6 +517,15 @@
               "maxAxisValue": 1.0,
               "buttonId": 99,
               "description": "cockpit r.1 VoIP PTT"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 6
             }
           }
         ]
