@@ -46,6 +46,13 @@
         "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
       }
     ],
+    "11": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "623ca319-5124-4c91-b614-0e29bb17a49c"
+      }
+    ],
     "13": [
       {
         "toggle": false,
@@ -253,23 +260,6 @@
                   55
                 ],
                 "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  57
-                ],
-                "modifierCodes": [
-                  54
-                ]
               }
             }
           }
@@ -761,6 +751,53 @@
               "initialValue": -1.0,
               "virtualAxis": "S0",
               "invert": false
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {}
+    },
+    {
+      "uuid": "623ca319-5124-4c91-b614-0e29bb17a49c",
+      "description": "Rockets / Bombs",
+      "axisToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  57
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              },
+              "description": "Trigger button (release bomb/guncam on) - press"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  57
+                ],
+                "modifierCodes": [
+                  56
+                ]
+              },
+              "description": "Fire Rockets, trigger button"
             }
           }
         ]
