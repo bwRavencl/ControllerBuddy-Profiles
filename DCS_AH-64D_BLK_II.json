@@ -701,36 +701,6 @@
               "description": "cockpit r.1 VoIP PTT"
             }
           }
-        ],
-        "5": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  57
-                ],
-                "modifierCodes": [
-                  54
-                ]
-              },
-              "description": "PTT/RTS Switch - RADIO/Right (call radio menu)"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": true,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 100,
-              "description": "cockpit r.2 VoIP PTT"
-            }
-          }
         ]
       },
       "buttonToActionsMap": {
@@ -803,6 +773,32 @@
               "longPress": false,
               "buttonId": 8,
               "description": "PTT/RTS Switch - RTS/Depress"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": true,
+              "buttonId": 100,
+              "description": "cockpit r.2 VoIP PTT"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  57
+                ],
+                "modifierCodes": [
+                  54
+                ]
+              },
+              "description": "PTT/RTS Switch - RADIO/Right (call radio menu)"
             }
           }
         ],
@@ -1049,6 +1045,20 @@
         ],
         "13": [
           {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  23
+                ],
+                "modifierCodes": []
+              },
+              "description": "IHADSS show"
+            }
+          },
+          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
               "longPress": false,
@@ -1082,7 +1092,7 @@
                   }
                 }
               ],
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_ON_RELEASE"
             }
           }
         ],
