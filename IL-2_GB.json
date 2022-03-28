@@ -1,5 +1,5 @@
 {
-  "version": "0.21",
+  "version": "0.22",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -185,6 +185,14 @@
                 ],
                 "modifierCodes": []
               }
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToVrResetZeroPoseAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "vrCoordinateSystem": "SEATED"
             }
           }
         ],
@@ -1011,12 +1019,12 @@
       "color": -65536,
       "inverted": false
     },
-    "S0": {
-      "color": -16776961,
-      "inverted": false
-    },
     "Z": {
       "color": -16777216,
+      "inverted": false
+    },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     }
   }
