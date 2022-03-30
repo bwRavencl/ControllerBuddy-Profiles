@@ -263,6 +263,24 @@
             }
           }
         ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  20
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              },
+              "description": "Trimmer - Reset"
+            }
+          }
+        ],
         "9": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -479,6 +497,16 @@
             }
           }
         ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 9,
+              "description": "FMC Release Button - Depress"
+            }
+          }
+        ],
         "3": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
@@ -491,11 +519,19 @@
         ],
         "6": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "buttonId": 9,
-              "description": "FMC Release Button - Depress"
+              "keystroke": {
+                "keyCodes": [
+                  20
+                ],
+                "modifierCodes": [
+                  29
+                ]
+              },
+              "description": "Trimmer - Reset"
             }
           }
         ],
