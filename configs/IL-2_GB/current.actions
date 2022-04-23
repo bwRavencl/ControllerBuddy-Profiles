@@ -70,11 +70,15 @@ bc_head_zoom,                                     mouse_axis_z,                 
 bc_head_cfovi,                                    key_add,                                          0| // Kopf des Piloten: hineinzoomen
 bc_head_cfovo,                                    key_subtract,                                     0| // Kopf des Piloten: herauszoomen
 bc_head_cfovr,                                    key_multiply,                                     0| // Kopf des Piloten: Zoom zurücksetzen
+bc_head_fov0,                                     key_rcontrol+key_decimal,                         0| // Schnellzoom: Minimum
+bc_head_fov1,                                     key_rcontrol+key_numpad1,                         0| // Schnellzoom: Stufe 3
+bc_head_fov2,                                     key_rcontrol+key_numpad2,                         0| // Quick zoom: level 2
+bc_head_fov3,                                     key_rcontrol+key_numpad3,                         0| // Quick zoom: level 3
+bc_head_fov4,                                     key_rcontrol+key_numpad0,                         0| // Schnellzoom: Maximum
 rb_zoom,                                          key_lshift+mouse_axis_z,                          0| // Fahrzeuggeschützzoom ändern
 rb_zoom,                                          mouse_axis_z,                                     0|
 mc_zoom,                                          key_lshift+mouse_axis_z,                          0| // Fahrzeuggeschützzoom ändern
 mc_zoom,                                          key_rmenu+mouse_axis_z,                           0|
-vrzoomin,                                         key_add,                                          0| // VR Zoomfunktion
 bc_head_pitch,                                    mouse_axis_y,                                     0| // Kopf des Piloten vertikal bewegen
 bc_head_pitch,                                    joy0_axis_s,                                      0|
 bc_head_pitch,                                    mouse_axis_y+mouse_b1,                            0|
@@ -158,6 +162,7 @@ flaps_dn,                                         key_f,                        
 airbrakes,                                        key_rmenu+key_b,                                  0| // Luftbremse ein/aus
 airbrakes,                                        joy0_b5,                                          0|
 attacksiren,                                      key_lmenu+key_s,                                  0| // Angriffssirene ein/aus
+windscreenwipers,                                 key_lmenu+key_w,                                  0| // Scheibenwischer ein/aus
 divesystem,                                       key_lcontrol+key_d,                               0| // Dive recovery system: on/off
 gear,                                             key_g,                                            0| // Fahrgestell einfahren/ausfahren
 gear_up,                                          key_lmenu+key_g,                                  0| // Fahrwerk einziehen
@@ -177,6 +182,17 @@ landing_lights,                                   key_rshift+key_l,             
 navigation_lights,                                key_rcontrol+key_l,                               0| // Navigationslichter an/aus
 cockpit_lights,                                   key_l,                                            0| // Cockpitlicht an/aus
 formation_lights,                                 key_rmenu+key_l,                                  0| // Positionslichter an/aus
+autopilot_device,                                 key_rmenu+key_a,                                  0| // Autopilot on/off
+autopilot_yaw,                                    key_rmenu+key_y,                                  0| // Autopilot yaw channel on/off
+autopilot_pitch,                                  key_rmenu+key_p,                                  0| // Autopilot pitch channel on/off
+autopilot_roll,                                   key_rmenu+key_r,                                  0| // Autopilot roll channel on/off
+rpc_autopilot_yaw_trim,                           key_rmenu+key_right/key_rmenu+key_left,           0| // Autopilot yaw channel trimm axis
+autopilot_yaw_trim_switch_left,                   key_rmenu+key_left,                               0| // Autopilot yaw channel trimm switch: left
+autopilot_yaw_trim_switch_right,                  key_rmenu+key_right,                              0| // Autopilot yaw channel trimm switch: right
+rpc_autopilot_pitch_trim,                         key_rmenu+key_down/key_rmenu+key_up,              0| // Autopilot pitch channel trimm axis
+autopilot_pitch_trim_switch_up,                   key_rmenu+key_up,                                 0| // Autopilot pitch channel trimm switch: up
+autopilot_pitch_trim_switch_dn,                   key_rmenu+key_down,                               0| // Autopilot pitch channel trimm switch: down
+autopilot_trims_reset,                            key_rshift+key_a,                                 0| // Autopilot trimm reset
 set_altimeter_reference_pressure,                 key_lmenu+key_a,                                  0| // Höhenmesser: Referenzdruck umschalten
 contact_altimeter_target_altitude_increase,       key_rshift+key_k,                                 0| // Contact altimeter: target altitude increase
 contact_altimeter_target_altitude_decrease,       key_rcontrol+key_k,                               0| // Contact altimeter: target altitude decrease
@@ -228,8 +244,8 @@ all_engines_water_radiators_close,                key_rcontrol+key_minus,       
 all_engines_water_radiators_close,                joy0_b10,                                         0|
 rpc_all_engines_in_cowls_shutters,                key_lcontrol+key_equals/key_lcontrol+key_minus,   0| // Motor Einlassklappensteuerung (A-20, I-16, La-5, Ju 52), P-47 intercooler shutter.
 rpc_all_engines_in_cowls_shutters,                joy0_b22/joy0_b21,                                0|
-rpc_all_engines_cowls_shutters,                   key_lmenu+key_equals/key_lmenu+key_minus,         0| // Motor Auslassklappensteuerung (A-20, Fw 190 A-5 und A-8, La-5, Ju 88, P-40, P-47)
-rpc_all_engines_cowls_shutters,                   joy0_b20/joy0_b19,                                0|
+rpc_all_engines_out_cowls_shutters,               key_lmenu+key_equals/key_lmenu+key_minus,         0| // Motor Auslassklappensteuerung (A-20, Fw 190 A-5 und A-8, La-5, Ju 88, P-40, P-47)
+rpc_all_engines_out_cowls_shutters,               joy0_b20/joy0_b19,                                0|
 select_all_engines,                               key_0,                                            0| // Gemeinsame Motorensteuerung ein-/ausschalten
 select_engine_1,                                  key_1,                                            0| // Steuerung von Motor 1 ein-/ausschalten
 select_engine_2,                                  key_2,                                            0| // Steuerung von Motor 2 ein-/ausschalten
@@ -249,7 +265,7 @@ engine_1_prop_pitch_decrease,                     ,                             
 rpc_engine_1_oil_radiator_shutter,                ,                                                 0| // Steuerung der Ölkühlerklappen von Motor 1
 rpc_engine_1_water_radiator_shutter,              ,                                                 0| // Steuerung der Wasserkühlerklappen von Motor 1
 rpc_engine_1_in_cowl_shutter,                     ,                                                 0| // Motor 1 Einlassklappensteuerung
-rpc_engine_1_cowl_shutter,                        ,                                                 0| // Motor 1 Auslassklappensteuerung
+rpc_engine_1_out_cowl_shutter,                    ,                                                 0| // Motor 1 Auslassklappensteuerung
 engine_2_switch,                                  key_rcontrol+key_2,                               0| // Startvorbereitungen von Motor 2 beginnen/ Motor stoppen
 engine_2_ignition,                                key_rshift+key_numpad2,                           0| // Zündknopf für Motor 2 (Me 262)
 rpc_engine_2_throttle,                            ,                                                 0| // Drosselsteuerung Motor 2
@@ -264,7 +280,7 @@ engine_2_prop_pitch_decrease,                     ,                             
 rpc_engine_2_oil_radiator_shutter,                ,                                                 0| // Steuerung der Ölkühlerklappen von Motor 2
 rpc_engine_2_water_radiator_shutter,              ,                                                 0| // Steuerung der Wasserkühlerklappen von Motor 2
 rpc_engine_2_in_cowl_shutter,                     ,                                                 0| // Motor 2 Einlassklappensteuerung
-rpc_engine_2_cowl_shutter,                        ,                                                 0| // Motor 2 Auslassklappensteuerung
+rpc_engine_2_out_cowl_shutter,                    ,                                                 0| // Motor 2 Auslassklappensteuerung
 engine_3_switch,                                  key_rcontrol+key_3,                               0| // Startvorbereitungen von Motor 3 beginnen/ Motor stoppen
 rpc_engine_3_throttle,                            ,                                                 0| // Drosselsteuerung Motor 3
 rpc_engine_3_mixture,                             ,                                                 0| // Gemischregelung Motor 3
@@ -272,14 +288,24 @@ rpc_engine_3_oil_radiator_shutter,                ,                             
 rpc_engine_3_in_cowl_shutter,                     ,                                                 0| // Motor 3 Einlassklappensteuerung
 engine_interconnect_prop,                         key_lshift+key_i,                                 0| // Koppelung von Drossel- und Propellersteuerung an/aus
 engine_interconnect_turbo,                        key_lmenu+key_i,                                  0| // Koppelung von Drossel- und Turbosteuerung an/aus
+select_fuel_selector,                             key_rshift+key_s,                                 0| // Switch to the next fuel selector
+turn_fuel_selector,                               key_lcontrol+key_s,                               0| // Turn chosen fuel selector
+select_fuel_pump,                                 key_lshift+key_p,                                 0| // Switch to the next fuel pump
+switch_fuel_pump,                                 key_lcontrol+key_p,                               0| // Switch chosen fuel pump
+fuel_dumping,                                     key_rshift+key_d,                                 0| // Fuel dumping
+jettison_fueltank,                                key_rshift+key_f,                                 0| // Auxiliary fuel tank jettison
+switch_fuel_indicator,                            key_rshift+key_i,                                 0| // Switch fuel indicator
 toggle_refuel,                                    key_rcontrol+key_f,                               0| // Betankung beginnen/beenden (im Wartungsbereich)
 all_guns_fire,                                    key_space,                                        0| // Alle Schusswaffen abfeuern
-machineguns_fire,                                 key_rmenu+key_space,                              0| // Nur Waffengruppe 1 abfeuern
-machineguns_fire,                                 joy0_b0,                                          0|
-cannons_fire,                                     key_lmenu+key_space,                              0| // Nur Waffengruppe 2 abfeuern
-cannons_fire,                                     joy0_b1,                                          0|
-weapon_group3_fire,                               key_rcontrol+key_space,                           0| // Nur Waffengruppe 3 abfeuern
-weapon_group3_fire,                               key_rcontrol+mouse_b0,                            0|
+weapon_group_1_fire,                              key_rmenu+key_space,                              0| // Nur Waffengruppe 1 abfeuern
+weapon_group_1_fire,                              key_rmenu+mouse_b0,                               0|
+weapon_group_1_fire,                              joy0_b0,                                          0|
+weapon_group_2_fire,                              key_lmenu+key_space,                              0| // Nur Waffengruppe 2 abfeuern
+weapon_group_2_fire,                              key_lmenu+mouse_b0,                               0|
+weapon_group_2_fire,                              joy0_b1,                                          0|
+weapon_group_3_fire,                              key_rcontrol+key_space,                           0| // Nur Waffengruppe 3 abfeuern
+weapon_group_3_fire,                              key_rcontrol+mouse_b0,                            0|
+weapon_group_3_fire,                              joy0_b7,                                          0|
 cam_switch_bombaim,                               key_v,                                            0| // Bombenvisier
 throw_bombs_mode,                                 key_lwin+key_b,                                   0| // Bombenabwurfmodus umschalten
 throw_bombs_delay,                                key_lcontrol+key_b,                               0| // Bombenabwurf Verzögerung Modus
@@ -297,6 +323,7 @@ bc_gun1,                                          key_lcontrol+key_1,           
 bc_gun2,                                          key_lcontrol+key_2,                               0| // Grünes Leuchtsignal
 bc_gun3,                                          key_lcontrol+key_3,                               0| // Weißes Leuchtsignal
 bc_gun4,                                          key_lcontrol+key_4,                               0| // Persönliche Pistole
+bc_gun5,                                          key_lcontrol+key_5,                               0| // Fernglas
 bc_gunfire,                                       key_lcontrol+key_space,                           0| // Persönliche Waffe/Leuchtpistole abfeuern
 bc_gunfire,                                       mouse_b0,                                         0|
 switchpilot,                                      key_lcontrol+key_c,                               0| // Zum nächsten freien Gefechtsposten wechseln
@@ -321,12 +348,14 @@ tc_reload,                                        mouse_b2,                     
 gunsight_filter,                                  key_lmenu+key_f,                                  0| // Reflexvisierfilter
 gunsight_adjustment,                              key_rmenu+key_f,                                  0| // Reflexvisier Position
 gunsight_mode,                                    key_lmenu+key_m,                                  0| // Schalter für Visiermodus
-gs_distance,                                      key_rmenu+key_period/key_rmenu+key_semicolon,     0| // Visier Weitenregulierung
+gs_distance,                                      key_rmenu+key_period/key_rmenu+key_semicolon,     0| // Visier Weitenregulierung / Bombenvisier: Windgeschwindigkeit
 gs_yaw,                                           key_rmenu+key_slash/key_rmenu+key_comma,          0| // Visier Horizontalverstellung
 gs_reset,                                         key_rmenu+key_apostrophe,                         0| // Visier zurücksetzen
-tc_visor_pitch,                                   key_rshift+key_period/key_rshift+key_semicolon,   0| // Periskop neigen
-tc_visor_yaw,                                     key_rshift+key_slash/key_rshift+key_comma,        0| // Periskop schwenken
-tc_visor_reset,                                   key_rshift+key_apostrophe,                        0| // Periskop zurücksetzen
+bs_wind_direction_left,                           key_rmenu+key_comma,                              0| // Bombenvisier: Windrichtung - links
+bs_wind_direction_right,                          key_rmenu+key_slash,                              0| // Bombenvisier: Windrichtung - rechts
+tc_visor_pitch,                                   key_rshift+key_period/key_rshift+key_semicolon,   0| // Visier neigen / Bombenvisier: Zielhöhe
+tc_visor_yaw,                                     key_rshift+key_slash/key_rshift+key_comma,        0| // Visier schwenken / Bombsight: wahre Fluggeschwindigkeit des Flugzeugs
+tc_visor_reset,                                   key_rshift+key_apostrophe,                        0| // Visier zurücksetzen
 tc_switchgun,                                     key_rmenu+key_g,                                  0| // Munition wählen
 ai_turret_act_by_yourself,                        key_rmenu+key_1,                                  0| // Bordschützen: Feuer nach eigenem Ermessen
 ai_turret_back_fire,                              key_rmenu+key_2,                                  0| // Bordschützen: Feuer erwidern
@@ -359,6 +388,12 @@ vc_gas,                                           key_up/key_down,              
 vc_turn,                                          key_right/key_left,                               0| // Fahrzeug drehen
 vc_gearup,                                        key_x,                                            0| // Gangbegrenzer hochschalten
 vc_geardown,                                      key_z,                                            0| // Gangbegrenzer runterschalten
+tc_aim_x,                                         joy0_axis_x,                                      0| // Turret control: horizontal (direct mode)
+tc_aim_x,                                         key_d/key_a,                                      0|
+tc_aim_y,                                         joy0_axis_y,                                      0| // Turret control: vertical (direct mode)
+tc_aim_y,                                         key_w/key_s,                                      0|
+gunsight_power,                                   key_lmenu+key_l,                                  0| // Gunsight power toggle
+cam_switch_visor,                                 key_lshift+key_v,                                 0| // In die Anzeigegerät wechseln
 rb_pitch,                                         mouse_axis_y,                                     0| // inprb_pitch
 rb_yaw,                                           mouse_axis_x,                                     0| // inprb_yaw
 mc_pitch,                                         mouse_axis_y,                                     0| // inpmc_pitch
@@ -394,3 +429,6 @@ cam_rotate_gopro_yaw_center,                      key_numpad5,                  
 gui_mouse_x,                                      mouse_axis_x,                                     0| // GUI-Aktionen: Mausachse X
 gui_mouse_y,                                      mouse_axis_y,                                     0| // GUI-Aktionen: Mausachse Y
 gui_mouse_z,                                      mouse_axis_z,                                     0| // GUI-Aktionen: Mausradscrollen
+gui_mouse_lb,                                     mouse_b0,                                         0| // GUI-Aktionen der linken Maustaste
+gui_mouse_rb,                                     mouse_b1,                                         0| // GUI-Aktionen der rechten Maustaste
+gui_mouse_mb,                                     mouse_b2,                                         0| // GUI-Aktionen der mittlere Maustaste
