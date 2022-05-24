@@ -1,5 +1,5 @@
 {
-  "version": "0.22",
+  "version": "0.23",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -199,7 +199,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  76
+                  "Num5"
                 ],
                 "modifierCodes": []
               },
@@ -213,7 +213,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  156
+                  "NumEnter"
                 ],
                 "modifierCodes": []
               },
@@ -239,7 +239,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  181
+                  "Num/"
                 ],
                 "modifierCodes": []
               },
@@ -255,7 +255,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  55
+                  "Num*"
                 ],
                 "modifierCodes": []
               },
@@ -271,7 +271,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  48
+                  "B"
                 ],
                 "modifierCodes": []
               },
@@ -287,10 +287,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  46
+                  "C"
                 ],
                 "modifierCodes": [
-                  219
+                  "L Win"
                 ]
               },
               "description": "Uncage"
@@ -305,10 +305,10 @@
               "longPress": true,
               "keystroke": {
                 "keyCodes": [
-                  20
+                  "T"
                 ],
                 "modifierCodes": [
-                  220
+                  "R Win"
                 ]
               },
               "description": "Throttle Cutoff"
@@ -321,7 +321,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  34
+                  "G"
                 ],
                 "modifierCodes": []
               },
@@ -337,10 +337,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  17
+                  "W"
                 ],
                 "modifierCodes": [
-                  220
+                  "R Win"
                 ]
               },
               "description": "WP Increment"
@@ -430,7 +430,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  46
+                  "C"
                 ],
                 "modifierCodes": []
               },
@@ -446,7 +446,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  32
+                  "D"
                 ],
                 "modifierCodes": []
               },
@@ -462,10 +462,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  32
+                  "D"
                 ],
                 "modifierCodes": [
-                  42
+                  "L Shift"
                 ]
               },
               "description": "A/A Mode AFT"
@@ -487,7 +487,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  8
+                  "7"
                 ],
                 "modifierCodes": []
               },
@@ -503,7 +503,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  11
+                  "0"
                 ],
                 "modifierCodes": []
               },
@@ -519,7 +519,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  9
+                  "8"
                 ],
                 "modifierCodes": []
               },
@@ -535,7 +535,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  10
+                  "9"
                 ],
                 "modifierCodes": []
               },
@@ -589,10 +589,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  74
+                  "Num-"
                 ],
                 "modifierCodes": [
-                  29
+                  "L Ctrl"
                 ]
               },
               "description": "COMM FWD"
@@ -619,10 +619,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  78
+                  "Num+"
                 ],
                 "modifierCodes": [
-                  29
+                  "L Ctrl"
                 ]
               },
               "description": "COMM AFT"
@@ -649,11 +649,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  181
+                  "Num/"
                 ],
                 "modifierCodes": [
-                  54,
-                  157
+                  "R Shift",
+                  "R Ctrl"
                 ]
               },
               "description": "Cockpitcamera shift aft"
@@ -663,7 +663,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
             "data": {
               "longPress": false,
-              "virtualKeyCode": 144,
+              "virtualKeyCode": "Num Lock",
               "on": false
             }
           }
@@ -682,11 +682,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  55
+                  "Num*"
                 ],
                 "modifierCodes": [
-                  54,
-                  157
+                  "R Shift",
+                  "R Ctrl"
                 ]
               },
               "description": "Cockpitcamera shift forward"
@@ -696,7 +696,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
             "data": {
               "longPress": false,
-              "virtualKeyCode": 144,
+              "virtualKeyCode": "Num Lock",
               "on": false,
               "description": "Cockpitcamera shift forward"
             }
@@ -710,11 +710,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  72
+                  "Num8"
                 ],
                 "modifierCodes": [
-                  54,
-                  157
+                  "R Shift",
+                  "R Ctrl"
                 ]
               },
               "description": "Cockpitcamera shift up"
@@ -724,7 +724,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
             "data": {
               "longPress": false,
-              "virtualKeyCode": 144,
+              "virtualKeyCode": "Num Lock",
               "on": false,
               "description": "Cockpitcamera shift up"
             }
@@ -738,11 +738,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  77
+                  "Num6"
                 ],
                 "modifierCodes": [
-                  54,
-                  157
+                  "R Shift",
+                  "R Ctrl"
                 ]
               },
               "description": "Cockpitcamera shift right"
@@ -752,7 +752,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
             "data": {
               "longPress": false,
-              "virtualKeyCode": 144,
+              "virtualKeyCode": "Num Lock",
               "on": false,
               "description": "Cockpitcamera shift right"
             }
@@ -766,11 +766,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  80
+                  "Num2"
                 ],
                 "modifierCodes": [
-                  54,
-                  157
+                  "R Shift",
+                  "R Ctrl"
                 ]
               },
               "description": "Cockpitcamera shift down"
@@ -780,7 +780,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
             "data": {
               "longPress": false,
-              "virtualKeyCode": 144,
+              "virtualKeyCode": "Num Lock",
               "on": false,
               "description": "Cockpitcamera shift down"
             }
@@ -794,11 +794,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  75
+                  "Num4"
                 ],
                 "modifierCodes": [
-                  54,
-                  157
+                  "R Shift",
+                  "R Ctrl"
                 ]
               },
               "description": "Cockpitcamera shift left"
@@ -808,7 +808,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
             "data": {
               "longPress": false,
-              "virtualKeyCode": 144,
+              "virtualKeyCode": "Num Lock",
               "on": false,
               "description": "Cockpitcamera shift left"
             }
@@ -829,10 +829,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  74
+                  "Num-"
                 ],
                 "modifierCodes": [
-                  42
+                  "L Shift"
                 ]
               },
               "description": "Nozzle Rotation DOWN"
@@ -847,10 +847,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  78
+                  "Num+"
                 ],
                 "modifierCodes": [
-                  42
+                  "L Shift"
                 ]
               },
               "description": "Nozzle Rotation UP"
@@ -872,10 +872,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  22
+                  "U"
                 ],
                 "modifierCodes": [
-                  56
+                  "L Alt"
                 ]
               },
               "description": "Sensor Select FWD"
@@ -890,10 +890,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  23
+                  "I"
                 ],
                 "modifierCodes": [
-                  56
+                  "L Alt"
                 ]
               },
               "description": "Sensor Select RIGHT"
@@ -908,10 +908,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  36
+                  "J"
                 ],
                 "modifierCodes": [
-                  56
+                  "L Alt"
                 ]
               },
               "description": "Sensor Select AFT"
@@ -926,10 +926,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  21
+                  "Y"
                 ],
                 "modifierCodes": [
-                  42
+                  "L Shift"
                 ]
               },
               "description": "Sensor Select LEFT"
@@ -986,7 +986,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  49
+                  "N"
                 ],
                 "modifierCodes": []
               },
@@ -1002,10 +1002,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  17
+                  "W"
                 ],
                 "modifierCodes": [
-                  220
+                  "R Win"
                 ]
               },
               "description": "TDC Left"
@@ -1040,10 +1040,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  45
+                  "X"
                 ],
                 "modifierCodes": [
-                  157
+                  "R Ctrl"
                 ]
               },
               "description": "Trim Rudder RIGHT"
@@ -1058,10 +1058,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  44
+                  "Z"
                 ],
                 "modifierCodes": [
-                  157
+                  "R Ctrl"
                 ]
               },
               "description": "Trim Rudder LEFT"
@@ -1096,10 +1096,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  200
+                  "Up Arrow"
                 ],
                 "modifierCodes": [
-                  157
+                  "R Ctrl"
                 ]
               },
               "description": "Trim Pitch DOWN"
@@ -1114,10 +1114,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  205
+                  "Right Arrow"
                 ],
                 "modifierCodes": [
-                  157
+                  "R Ctrl"
                 ]
               },
               "description": "Trim Bank RIGHT"
@@ -1132,10 +1132,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  208
+                  "Down Arrow"
                 ],
                 "modifierCodes": [
-                  157
+                  "R Ctrl"
                 ]
               },
               "description": "Trim Pitch UP"
@@ -1150,10 +1150,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  203
+                  "Left Arrow"
                 ],
                 "modifierCodes": [
-                  157
+                  "R Ctrl"
                 ]
               },
               "description": "Trim Bank LEFT"
@@ -1181,10 +1181,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  18
+                  "E"
                 ],
                 "modifierCodes": [
-                  29
+                  "L Ctrl"
                 ]
               },
               "description": "Eject"
@@ -1199,7 +1199,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  59
+                  "F1"
                 ],
                 "modifierCodes": []
               },
@@ -1215,7 +1215,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  68
+                  "F10"
                 ],
                 "modifierCodes": []
               },
@@ -1231,10 +1231,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  49
+                  "N"
                 ],
                 "modifierCodes": [
-                  42
+                  "L Shift"
                 ]
               },
               "description": "Helmet Visor/NVG Toggle"
@@ -1249,7 +1249,7 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  60
+                  "F2"
                 ],
                 "modifierCodes": []
               },
