@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Version Num="2120"/>
+<Version Num="2142"/>
 <FriendlyName PlatformAvailability="1">vJoy Device Profil</FriendlyName>
 <Device DeviceName="vJoy Device" GUID="{DC899B70-5FB0-11EA-8003-444553540000}" ProductID="0" CompositeID="0">
 	<Axes>
-		<Axis AxisName="X" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="5"/>
-		<Axis AxisName="Y" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="5"/>
-		<Axis AxisName="Z" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0"/>
-		<Axis AxisName="rX" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="5"/>
-		<Axis AxisName="rY" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="5"/>
-		<Axis AxisName="rZ" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="25"/>
-		<Axis AxisName="SliderX" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0"/>
-		<Axis AxisName="SliderY" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0"/>
+		<Axis AxisName="X" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="Y" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="Z" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="rX" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="rY" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="rZ" AxisSensitivy="-35" AxisSensitivyMinus="-35" AxisNeutral="0" AxisDeadZone="25" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="SliderX" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="SliderY" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 	</Axes>
 	<Context ContextName="COCKPIT_GLOBAL_CAMERA">
 		<Action ActionName="KEY_COCKPIT_FREELOOK_HRZ_SET" Flag="4">
@@ -52,9 +52,19 @@
 				<KEY Information="Joystick Button 2">1</KEY>
 			</Primary>
 		</Action>
+		<Action ActionName="KEY_G_LIMITER_SET" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 7">6</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_MIXTURE_SET" Flag="4">
 			<Primary>
 				<KEY Information="Joystick Slider Y ">530</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_NOSE_WHEEL_STEERING_LIMIT_SET" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 6">5</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_PROP_PITCH_AXIS_SET_EX1" Flag="4">
