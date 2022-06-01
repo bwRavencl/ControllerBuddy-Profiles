@@ -41,15 +41,15 @@ jobs:
           cd ControllerBuddy
           for file in ../ControllerBuddy-Profiles/*.json
           do
-            xvfb-run -a -s "-screen 0 1024x768x24" ./gradlew run --args="-skipMessageDialogs -quit -profile '$file' -export '../ControllerBuddy-Pages/profiles/`basename "$file" .json`.html'"
+            xvfb-run -a -s '-screen 0 1024x768x24' ./gradlew run --args="-skipMessageDialogs -quit -profile '$file' -export '../ControllerBuddy-Pages/profiles/`basename "$file" .json`.html'"
           done
       - name: Commit files
         run: |
           cd ControllerBuddy-Pages
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config --local user.name 'github-actions[bot]'
           git add profiles/*.html
-          git commit -m "Updated profile visualizations" || echo "Nothing to update"
+          git commit -m 'Updated profile visualizations' || echo 'Nothing to update'
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
