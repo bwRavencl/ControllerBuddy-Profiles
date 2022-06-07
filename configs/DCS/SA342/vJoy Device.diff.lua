@@ -23,7 +23,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.05,
+						["deadzone"] = 0.10,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 0.6,
@@ -41,7 +41,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.05,
+						["deadzone"] = 0.10,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 0.6,

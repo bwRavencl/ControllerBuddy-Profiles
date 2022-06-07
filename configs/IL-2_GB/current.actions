@@ -175,6 +175,7 @@ rpc_wheel_brakes_right,                           key_period,                   
 rpc_wheel_brakes_central,                         key_rwin+key_slash,                               0| // Bremsen Bugrad/Heckrad
 parking_brakes,                                   key_lshift+key_slash,                             0| // Parkbremsen der Räder ein/aus
 parking_brakes,                                   joy0_b16,                                         0|
+drogue_chute,                                     key_lmenu+key_d,                                  0| // Drogue chute: release/drop
 canopy_open_close,                                key_rmenu+key_c,                                  0| // Haube öffnen/schließen
 canopy_open_close,                                joy0_b15,                                         0|
 window_open_close,                                key_lwin+key_c,                                   0| // Fenster oder Visier öffnen/schließen
@@ -186,13 +187,13 @@ autopilot_device,                                 key_rmenu+key_a,              
 autopilot_yaw,                                    key_rmenu+key_y,                                  0| // Autopilot yaw channel on/off
 autopilot_pitch,                                  key_rmenu+key_p,                                  0| // Autopilot pitch channel on/off
 autopilot_roll,                                   key_rmenu+key_r,                                  0| // Autopilot roll channel on/off
-rpc_autopilot_yaw_trim,                           key_rmenu+key_right/key_rmenu+key_left,           0| // Autopilot yaw channel trimm axis
-autopilot_yaw_trim_switch_left,                   key_rmenu+key_left,                               0| // Autopilot yaw channel trimm switch: left
-autopilot_yaw_trim_switch_right,                  key_rmenu+key_right,                              0| // Autopilot yaw channel trimm switch: right
-rpc_autopilot_pitch_trim,                         key_rmenu+key_down/key_rmenu+key_up,              0| // Autopilot pitch channel trimm axis
-autopilot_pitch_trim_switch_up,                   key_rmenu+key_up,                                 0| // Autopilot pitch channel trimm switch: up
-autopilot_pitch_trim_switch_dn,                   key_rmenu+key_down,                               0| // Autopilot pitch channel trimm switch: down
-autopilot_trims_reset,                            key_rshift+key_a,                                 0| // Autopilot trimm reset
+rpc_autopilot_yaw_trim,                           key_rmenu+key_right/key_rmenu+key_left,           0| // Autopilot yaw channel trim axis
+autopilot_yaw_trim_switch_left,                   key_rmenu+key_left,                               0| // Autopilot yaw channel trim switch: left
+autopilot_yaw_trim_switch_right,                  key_rmenu+key_right,                              0| // Autopilot yaw channel trim switch: right
+rpc_autopilot_pitch_trim,                         key_rmenu+key_down/key_rmenu+key_up,              0| // Autopilot pitch channel trim axis
+autopilot_pitch_trim_switch_up,                   key_rmenu+key_up,                                 0| // Autopilot pitch channel trim switch: up
+autopilot_pitch_trim_switch_dn,                   key_rmenu+key_down,                               0| // Autopilot pitch channel trim switch: down
+autopilot_trims_reset,                            key_rshift+key_a,                                 0| // Autopilot trim reset
 set_altimeter_reference_pressure,                 key_lmenu+key_a,                                  0| // Höhenmesser: Referenzdruck umschalten
 contact_altimeter_target_altitude_increase,       key_rshift+key_k,                                 0| // Contact altimeter: target altitude increase
 contact_altimeter_target_altitude_decrease,       key_rcontrol+key_k,                               0| // Contact altimeter: target altitude decrease
@@ -238,9 +239,9 @@ rpc_all_engines_water_radiators_shutters,         key_rcontrol+key_equals/key_rc
 rpc_all_engines_water_radiators_shutters,         joy0_b11/joy0_b10,                                0|
 all_engines_water_radiators_control_mode,         key_rshift+key_r,                                 0| // Steuerungsmodus des Wasserkühlers ändern: manuell/automatisch
 all_engines_water_radiators_control_mode,         joy0_b6,                                          0|
-all_engines_water_radiators_open,                 key_rcontrol+key_equals,                          0| // Bf-109/110, Spitfire Wasserkühler: öffnen
+all_engines_water_radiators_open,                 key_rcontrol+key_equals,                          0| // Bf-109/110 und britische Flugzeuge Wasserkühler: öffnen
 all_engines_water_radiators_open,                 joy0_b11,                                         0|
-all_engines_water_radiators_close,                key_rcontrol+key_minus,                           0| // Bf-109/110, Spitfire Wasserkühler: schließen
+all_engines_water_radiators_close,                key_rcontrol+key_minus,                           0| // Bf-109/110 und britische Flugzeuge Wasserkühler: schließen
 all_engines_water_radiators_close,                joy0_b10,                                         0|
 rpc_all_engines_in_cowls_shutters,                key_lcontrol+key_equals/key_lcontrol+key_minus,   0| // Motor Einlassklappensteuerung (A-20, I-16, La-5, Ju 52), P-47 intercooler shutter.
 rpc_all_engines_in_cowls_shutters,                joy0_b22/joy0_b21,                                0|
