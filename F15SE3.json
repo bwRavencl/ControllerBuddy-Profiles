@@ -1,49 +1,35 @@
 {
   "version": "0.23",
   "showOverlay": true,
-  "showVrOverlay": false,
+  "showVrOverlay": true,
   "keyRepeatInterval": 30,
   "buttonToModeActionsMap": {
     "0": [
       {
         "toggle": false,
         "longPress": false,
-        "modeUuid": "890ece09-10d9-47a8-a3c6-c7cb8d749caa"
-      }
-    ],
-    "1": [
-      {
-        "toggle": false,
-        "longPress": false,
-        "modeUuid": "8e0b32ec-c484-4d27-a761-21cbec457373"
+        "modeUuid": "b6aaa5f4-22ea-41f4-a0b6-cf341813782b"
       }
     ],
     "2": [
       {
         "toggle": false,
         "longPress": false,
-        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
-      }
-    ],
-    "3": [
-      {
-        "toggle": false,
-        "longPress": false,
-        "modeUuid": "27a2002c-35b6-481d-9b99-ed7705dc0253"
-      }
-    ],
-    "4": [
-      {
-        "toggle": false,
-        "longPress": false,
-        "modeUuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9"
+        "modeUuid": "478fc1b8-7a31-4c51-af06-d44673155ff3"
       }
     ],
     "5": [
       {
         "toggle": false,
         "longPress": false,
-        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
+        "modeUuid": "16885ead-76de-42d4-a1f8-8c7285a35d50"
+      }
+    ],
+    "6": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "cb29406a-8dba-4e3b-95b9-40548fc9976e"
       }
     ],
     "8": [
@@ -51,6 +37,20 @@
         "toggle": true,
         "longPress": false,
         "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+      }
+    ],
+    "12": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "ec1e339f-f541-454d-85ed-8c5d230bc31c"
+      }
+    ],
+    "14": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "05ee3762-724b-491e-9117-ae0b7212bb79"
       }
     ]
   },
@@ -64,9 +64,9 @@
             "data": {
               "deadZone": 0.0,
               "initialValue": 0.0,
-              "virtualAxis": "RZ",
+              "virtualAxis": "Z",
               "invert": false,
-              "description": "Yaw"
+              "description": "Rudder"
             }
           }
         ],
@@ -77,21 +77,12 @@
               "exponent": 2.0,
               "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
+              "detentValue": -0.85,
               "deadZone": 0.25,
               "initialValue": 1.0,
-              "virtualAxis": "Z",
+              "virtualAxis": "RZ",
               "invert": false,
               "description": "Throttle"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": false,
-              "minAxisValue": -1.0,
-              "maxAxisValue": -0.5,
-              "buttonId": 4,
-              "description": "Afterburner"
             }
           }
         ],
@@ -126,8 +117,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0,
-              "description": "Left Brake"
+              "buttonId": 1,
+              "description": "Pickle Button"
             }
           }
         ],
@@ -138,82 +129,26 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 1,
-              "description": "Right Brake"
+              "buttonId": 0,
+              "description": "Fire Guns"
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 5,
-              "description": "Set Nose Wheel Steering To Limit"
-            }
-          }
-        ],
         "2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "F"
+                  "F1"
                 ],
                 "modifierCodes": []
               },
-              "description": "Reset View"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Reset View"
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 2,
-              "description": "Toggle Throttle Reverse Thrust"
-            }
-          }
-        ],
-        "7": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num."
-                ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
-              },
-              "description": "Toggle Parking Brakes"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": true,
-              "description": "Toggle Parking Brakes"
+              "description": "Normal Front View"
             }
           }
         ],
@@ -225,11 +160,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "/"
+                  "X"
                 ],
                 "modifierCodes": []
               },
-              "description": "Zoom Out"
+              "description": "Zoom Out View"
             }
           }
         ],
@@ -241,11 +176,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "]"
+                  "Z"
                 ],
                 "modifierCodes": []
               },
-              "description": "Zoom In"
+              "description": "Zoom In View"
             }
           }
         ],
@@ -257,27 +192,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Num/"
+                  "B"
                 ],
                 "modifierCodes": []
               },
-              "description": "Spoilers"
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "F7"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Increase Flaps"
+              "description": "Brake"
             }
           }
         ],
@@ -293,23 +212,7 @@
                 ],
                 "modifierCodes": []
               },
-              "description": "Gear"
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "F6"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Decrease Flaps"
+              "description": "Landing Gear"
             }
           }
         ]
@@ -384,8 +287,102 @@
       }
     },
     {
-      "uuid": "890ece09-10d9-47a8-a3c6-c7cb8d749caa",
-      "description": "Cowl Flap / Anti Ice",
+      "uuid": "ec1e339f-f541-454d-85ed-8c5d230bc31c",
+      "description": "Avionics",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "S"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Next Sequence Point -"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "P"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Picture (AWACS)"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "U"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Upfront Controller Toggle"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "S"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Next Sequence Point +"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "L",
+                  "U"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Running Lights"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "b6aaa5f4-22ea-41f4-a0b6-cf341813782b",
+      "description": "Countermeasures",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "6": [
@@ -396,11 +393,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "H"
+                  "J"
                 ],
                 "modifierCodes": []
               },
-              "description": "Anti Ice"
+              "description": "Jammer Activate Toggle"
             }
           }
         ],
@@ -414,12 +411,9 @@
                 "keyCodes": [
                   "C"
                 ],
-                "modifierCodes": [
-                  "L Shift",
-                  "L Ctrl"
-                ]
+                "modifierCodes": []
               },
-              "description": "Decrease Cowl Flap"
+              "description": "Release Chaff"
             }
           }
         ],
@@ -431,291 +425,19 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "V"
+                  "F"
                 ],
-                "modifierCodes": [
-                  "L Shift",
-                  "L Ctrl"
-                ]
+                "modifierCodes": []
               },
-              "description": "Increase Cowl Flap"
+              "description": "Deploy Flare"
             }
           }
         ]
       }
     },
     {
-      "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look / Set G Limit",
-      "axisToActionsMap": {
-        "0": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
-            "data": {
-              "deadZone": 0.1,
-              "initialValue": 0.0,
-              "virtualAxis": "RX",
-              "invert": false,
-              "description": "View Yaw Axis"
-            }
-          }
-        ],
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
-            "data": {
-              "deadZone": 0.1,
-              "initialValue": 0.0,
-              "virtualAxis": "RY",
-              "invert": false,
-              "description": "View Pitch Axis"
-            }
-          }
-        ],
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 6,
-              "description": "Set G Limit"
-            }
-          }
-        ]
-      },
-      "buttonToActionsMap": {
-        "0": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Down Arrow"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              },
-              "description": "Translate Cockpit View Backward"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Translate Cockpit View Backward"
-            }
-          }
-        ],
-        "3": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Up Arrow"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              },
-              "description": "Translate Cockpit View Forward"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Translate Cockpit View Forward"
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Cockpit View Upper / VR - Camera Reset"
-            }
-          }
-        ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Up Arrow"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Increase Cockpit View Height"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Increase Cockpit View Height"
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Right Arrow"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Translate Cockpit View Right"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Translate Cockpit View Right"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Down Arrow"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Translate View Down"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Decrease Cockpit View Height"
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Left Arrow"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Translate Cockpit View Left"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Translate Cockpit View Left"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "uuid": "8e0b32ec-c484-4d27-a761-21cbec457373",
-      "description": "Mixture",
-      "axisToActionsMap": {
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
-            "data": {
-              "exponent": 2.0,
-              "maxRelativeSpeed": 4.0,
-              "hapticFeedback": true,
-              "deadZone": 0.25,
-              "initialValue": -1.0,
-              "virtualAxis": "S1",
-              "invert": false,
-              "description": "Mixture"
-            }
-          }
-        ]
-      },
-      "buttonToActionsMap": {}
-    },
-    {
-      "uuid": "27a2002c-35b6-481d-9b99-ed7705dc0253",
-      "description": "Prop",
-      "axisToActionsMap": {
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
-            "data": {
-              "exponent": 2.0,
-              "maxRelativeSpeed": 4.0,
-              "hapticFeedback": true,
-              "deadZone": 0.25,
-              "initialValue": -1.0,
-              "virtualAxis": "S0",
-              "invert": false,
-              "description": "Prop Pitch"
-            }
-          }
-        ]
-      },
-      "buttonToActionsMap": {
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 3,
-              "description": "Toggle Propeller Reverse Thrust"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim",
+      "uuid": "16885ead-76de-42d4-a1f8-8c7285a35d50",
+      "description": "Look Mode",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "1": [
@@ -726,22 +448,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "NumEnter"
+                  "."
                 ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
+                "modifierCodes": []
               },
-              "description": "Rudder Trim Right"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": true,
-              "description": "Rudder Trim Right"
+              "description": "Look Right"
             }
           }
         ],
@@ -753,22 +464,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Num0"
+                  ","
                 ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
+                "modifierCodes": []
               },
-              "description": "Rudder Trim Left"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": true,
-              "description": "Rudder Trim Left"
+              "description": "Look Left"
             }
           }
         ],
@@ -780,11 +480,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Num7"
+                  "Num8"
                 ],
                 "modifierCodes": []
-              },
-              "description": "Elevator Trim Down"
+              }
             }
           },
           {
@@ -792,8 +491,7 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": true,
-              "description": "Elevator Trim Down"
+              "on": true
             }
           }
         ],
@@ -807,11 +505,8 @@
                 "keyCodes": [
                   "Num6"
                 ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
-              },
-              "description": "Aileron Trim Right"
+                "modifierCodes": []
+              }
             }
           },
           {
@@ -819,8 +514,7 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": true,
-              "description": "Aileron Trim Right"
+              "on": true
             }
           }
         ],
@@ -832,11 +526,10 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Num1"
+                  "Num2"
                 ],
                 "modifierCodes": []
-              },
-              "description": "Elevator Trim Up"
+              }
             }
           },
           {
@@ -844,8 +537,7 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": true,
-              "description": "Elevator Trim Up"
+              "on": true
             }
           }
         ],
@@ -859,11 +551,8 @@
                 "keyCodes": [
                   "Num4"
                 ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
-              },
-              "description": "Aileron Trim Left"
+                "modifierCodes": []
+              }
             }
           },
           {
@@ -871,19 +560,100 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": true,
-              "description": "Aileron Trim Left"
+              "on": true
             }
           }
         ]
       }
     },
     {
-      "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View",
+      "uuid": "05ee3762-724b-491e-9117-ae0b7212bb79",
+      "description": "Master Modes",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "6": [
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "4"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Left Wing Station"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "5"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Left Conformal Station"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "6"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Centerline Station"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "7"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Right Conformal Station"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "8"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Right Wing Station"
+                  }
+                }
+              ],
+              "activation": "SINGLE_IMMEDIATELY",
+              "description": "Air-to-Ground Stations"
+            }
+          }
+        ],
+        "2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -891,11 +661,154 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Tab"
+                  "1"
                 ],
                 "modifierCodes": []
               },
-              "description": "VR - Toolbar Toggle"
+              "description": "Guns"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "2"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Short Range Missile"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "3"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Medium Range Missile"
+                  }
+                }
+              ],
+              "activation": "SINGLE_IMMEDIATELY",
+              "description": "Air-to-Air Weapons"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "M"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Master Mode Toggle"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "cb29406a-8dba-4e3b-95b9-40548fc9976e",
+      "description": "Radar",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Back"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Designate Target"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "K"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Break Target"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Lock-Up Target"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "R"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Radar Activate Toggle"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "I"
+                ],
+                "modifierCodes": []
+              },
+              "description": "IFF"
             }
           }
         ],
@@ -904,6 +817,20 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "PgUp"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Antenna-Up 5 Degrees"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -911,7 +838,7 @@
                 ],
                 "modifierCodes": []
               },
-              "description": "Cockpit/External View Mode"
+              "description": "Auto-Aquisition/Boresight"
             }
           }
         ],
@@ -923,11 +850,11 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "A"
+                  "Home"
                 ],
                 "modifierCodes": []
               },
-              "description": "Next Instrument View"
+              "description": "Radar Range Selection"
             }
           }
         ],
@@ -936,14 +863,28 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
+              "longPress": true,
               "keystroke": {
                 "keyCodes": [
-                  "S"
+                  "PgDn"
                 ],
                 "modifierCodes": []
               },
-              "description": "Toggle Smart Camera"
+              "description": "Antenna-Down 5 Degrees"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Del"
+                ],
+                "modifierCodes": []
+              },
+              "description": "TWS"
             }
           }
         ],
@@ -955,13 +896,50 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "A"
+                  "Ins"
                 ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
+                "modifierCodes": []
               },
-              "description": "Previous Instrument View"
+              "description": "Long/Short Range Scan"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "478fc1b8-7a31-4c51-af06-d44673155ff3",
+      "description": "View",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "/"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Look Up/Down"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\u0027"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Front/Back Seat"
             }
           }
         ]
@@ -969,15 +947,7 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S0": {
-      "color": -16776961,
-      "inverted": false
-    },
-    "S1": {
-      "color": -65536,
-      "inverted": false
-    },
-    "Z": {
+    "RZ": {
       "color": -16777216,
       "inverted": false
     }
