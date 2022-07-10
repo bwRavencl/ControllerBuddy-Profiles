@@ -145,16 +145,6 @@
         ]
       },
       "buttonToActionsMap": {
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 5,
-              "description": "Set Nose Wheel Steering To Limit"
-            }
-          }
-        ],
         "2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -446,7 +436,7 @@
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look / Set G Limit",
+      "description": "Look",
       "axisToActionsMap": {
         "0": [
           {
@@ -469,18 +459,6 @@
               "virtualAxis": "RY",
               "invert": false,
               "description": "View Pitch Axis"
-            }
-          }
-        ],
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 6,
-              "description": "Set G Limit"
             }
           }
         ]
@@ -969,16 +947,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
+    "Z": {
+      "color": -16777216,
+      "inverted": false
+    },
     "S0": {
       "color": -16776961,
       "inverted": false
     },
     "S1": {
       "color": -65536,
-      "inverted": false
-    },
-    "Z": {
-      "color": -16777216,
       "inverted": false
     }
   }
