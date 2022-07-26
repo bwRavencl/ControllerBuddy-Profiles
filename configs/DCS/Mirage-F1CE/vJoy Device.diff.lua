@@ -116,7 +116,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick elevation/altitude difference button",
 		},
-		["d3104pnilu3104cd1vd1vpnilvu0"] = {
+		["d3106pnilu3106cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN9",
@@ -124,7 +124,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick bearing control - right",
 		},
-		["d3105pnilu3105cd1vd1vpnilvu0"] = {
+		["d3107pnilu3107cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN8",
@@ -132,7 +132,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick bearing control - left",
 		},
-		["d3107pnilu3107cd1vd1vpnilvu0"] = {
+		["d3109pnilu3109cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN11",
@@ -140,7 +140,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick range/velocity control - increase",
 		},
-		["d3108pnilu3108cd1vd1vpnilvu0"] = {
+		["d3110pnilu3110cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN10",
@@ -148,23 +148,23 @@ local diff = {
 			},
 			["name"] = "Radar control stick range/velocity control - decrease",
 		},
-		["d3109pnilu3109cd1vd1vpnilvu0"] = {
+		["d3111pnilu3111cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN13",
 				},
 			},
-			["name"] = "Radar control stick increase elevation button",
+			["name"] = "Radar control stick elevation increase button",
 		},
-		["d3110pnilu3110cd1vd1vpnilvu0"] = {
+		["d3112pnilu3112cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN12",
 				},
 			},
-			["name"] = "Radar control stick decrease elevation button",
+			["name"] = "Radar control stick elevation decrease button",
 		},
-		["d3112pnilu3112cd1vd1vpnilvu0"] = {
+		["d3114pnilu3114cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN15",
@@ -172,7 +172,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick gain control wheel - increase",
 		},
-		["d3113pnilu3113cd1vd1vpnilvu0"] = {
+		["d3115pnilu3115cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN14",
@@ -180,7 +180,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick gain control wheel - decrease",
 		},
-		["d3114pnilu3114cd1vd1vpnilvu0"] = {
+		["d3116pnilu3116cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN16",
@@ -188,7 +188,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick fast gain reset button",
 		},
-		["d3115pnilu3115cd1vd-1vpnilvu0"] = {
+		["d3117pnilu3117cd1vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
@@ -196,7 +196,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick APS/APC lever - Lock-On",
 		},
-		["d3115pnilu3115cd1vd1vpnilvu0"] = {
+		["d3117pnilu3117cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
@@ -204,7 +204,7 @@ local diff = {
 			},
 			["name"] = "Radar control stick APS/APC lever - TWS",
 		},
-		["d3116pnilu3116cd1vd1vpnilvu0"] = {
+		["d3118pnilu3118cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN7",
@@ -219,6 +219,22 @@ local diff = {
 				},
 			},
 			["name"] = "Telemeter/zone scanning switch - BPZ",
+		},
+		["d3476pnilunilcd1vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN18",
+				},
+			},
+			["name"] = "Telemeter/zone scanning switch - CENTER",
+		},
+		["d3476pnilunilcd1vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN17",
+				},
+			},
+			["name"] = "Telemeter/zone scanning switch - TEL",
 		},
 		["d3634pnilu3634cd1vd1vpnilvu0"] = {
 			["added"] = {
