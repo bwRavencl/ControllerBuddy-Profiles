@@ -34,7 +34,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: zulu
-          java-version: 18.0.2
+          java-version: 18.0.2+1
       - name: Update Visualizations
         run: |
           rm -f ControllerBuddy-Pages/profiles/*.html
