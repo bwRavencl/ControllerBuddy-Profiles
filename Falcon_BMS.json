@@ -60,7 +60,14 @@
         "modeUuid": "2418e261-453a-40fa-91cd-026fb5d3c6a5"
       }
     ],
-    "8": [
+    "9": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3"
+      }
+    ],
+    "10": [
       {
         "toggle": true,
         "longPress": false,
@@ -104,7 +111,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "deadZone": 0.10,
+              "deadZone": 0.1,
               "initialValue": 0.0,
               "virtualAxis": "X",
               "invert": false,
@@ -116,7 +123,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "deadZone": 0.10,
+              "deadZone": 0.1,
               "initialValue": 0.0,
               "virtualAxis": "Y",
               "invert": false,
@@ -265,22 +272,6 @@
                 ]
               },
               "description": "Disable Mouselook"
-            }
-          }
-        ],
-        "10": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "L"
-                ],
-                "modifierCodes": []
-              },
-              "description": "VIEWGEN: Look Closer - Toggle"
             }
           }
         ],
@@ -602,7 +593,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
             "data": {
-              "deadZone": 0.10,
+              "deadZone": 0.1,
               "exponent": 3.0,
               "maxCursorSpeed": 1300.0,
               "axis": "X",
@@ -615,7 +606,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
             "data": {
-              "deadZone": 0.10,
+              "deadZone": 0.1,
               "exponent": 3.0,
               "maxCursorSpeed": 800.0,
               "axis": "Y",
@@ -705,6 +696,22 @@
             }
           }
         ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": []
+              },
+              "description": "VIEWGEN: Look Closer - Toggle"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
@@ -785,6 +792,88 @@
       }
     },
     {
+      "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+      "description": "Mouse",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.1,
+              "exponent": 2.0,
+              "maxCursorSpeed": 1500.0,
+              "axis": "X",
+              "invert": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.1,
+              "exponent": 2.0,
+              "maxCursorSpeed": 1500.0,
+              "axis": "Y",
+              "invert": false
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 1
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 2
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 3
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": false
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": true
+            }
+          }
+        ]
+      }
+    },
+    {
       "uuid": "a6977cc6-4288-4dc8-abcb-0e10d4a95c4f",
       "description": "Sensor",
       "axisToActionsMap": {
@@ -792,7 +881,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "deadZone": 0.10,
+              "deadZone": 0.1,
               "initialValue": 0.0,
               "virtualAxis": "RX",
               "invert": false,
@@ -804,7 +893,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "deadZone": 0.10,
+              "deadZone": 0.1,
               "initialValue": 0.0,
               "virtualAxis": "RY",
               "invert": true,
