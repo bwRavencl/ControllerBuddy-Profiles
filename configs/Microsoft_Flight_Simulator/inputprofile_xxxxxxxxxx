@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Version Num="2142"/>
+<Version Num="2440"/>
 <FriendlyName PlatformAvailability="1">vJoy Device Profil</FriendlyName>
 <Device DeviceName="vJoy Device" GUID="{DC899B70-5FB0-11EA-8003-444553540000}" ProductID="0" CompositeID="0">
 	<Axes>
-		<Axis AxisName="X" AxisSensitivy="-10" AxisSensitivyMinus="-10" AxisNeutral="0" AxisDeadZone="9" AxisOutDeadZone="0" AxisResponseRate="-1"/>
-		<Axis AxisName="Y" AxisSensitivy="-10" AxisSensitivyMinus="-10" AxisNeutral="0" AxisDeadZone="9" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="X" AxisSensitivy="-9" AxisSensitivyMinus="-9" AxisNeutral="0" AxisDeadZone="9" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+		<Axis AxisName="Y" AxisSensitivy="-9" AxisSensitivyMinus="-9" AxisNeutral="0" AxisDeadZone="9" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 		<Axis AxisName="Z" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 		<Axis AxisName="rX" AxisSensitivy="-25" AxisSensitivyMinus="-25" AxisNeutral="0" AxisDeadZone="9" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 		<Axis AxisName="rY" AxisSensitivy="-25" AxisSensitivyMinus="-25" AxisNeutral="0" AxisDeadZone="9" AxisOutDeadZone="0" AxisResponseRate="-1"/>
@@ -67,6 +67,31 @@
 				<KEY Information="Joystick Button 4">3</KEY>
 			</Primary>
 		</Action>
+		<Action ActionName="KEY_ROTOR_LATERAL_TRIM_DEC" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 9">8</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_ROTOR_LATERAL_TRIM_INC" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 10">9</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_ROTOR_LONGITUDINAL_TRIM_DEC" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 8">7</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_ROTOR_LONGITUDINAL_TRIM_INC" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 7">6</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_ROTOR_TRIM_RESET" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 6">5</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_THROTTLE_AXIS_SET_EX1" Flag="4">
 			<Primary>
 				<KEY Information="Joystick L-Axis Z ">1058</KEY>
@@ -89,24 +114,44 @@
 		</Action>
 	</Context>
 	<Context ContextName="SLEW">
-		<Action ActionName="KEY_AXIS_SLEW_AHEAD_SET" Flag="4">
+		<Action ActionName="KEY_SLEW_AHEAD_MINUS" Flag="1">
 			<Primary>
-				<KEY Information="Joystick L-Axis Y ">1042</KEY>
+				<KEY Information="Joystick L-Axis Y+">1041</KEY>
 			</Primary>
 		</Action>
-		<Action ActionName="KEY_AXIS_SLEW_ALT_SET" Flag="132">
+		<Action ActionName="KEY_SLEW_AHEAD_PLUS" Flag="1">
 			<Primary>
-				<KEY Information="Joystick L-Axis Z ">1058</KEY>
+				<KEY Information="Joystick L-Axis Y-">1040</KEY>
 			</Primary>
 		</Action>
-		<Action ActionName="KEY_AXIS_SLEW_HEADING_SET" Flag="4">
+		<Action ActionName="KEY_SLEW_ALTIT_MINUS" Flag="1">
 			<Primary>
-				<KEY Information="Joystick R-Axis Z ">802</KEY>
+				<KEY Information="Joystick L-Axis Z+">1057</KEY>
 			</Primary>
 		</Action>
-		<Action ActionName="KEY_AXIS_SLEW_SIDEWAYS_SET" Flag="4">
+		<Action ActionName="KEY_SLEW_ALTIT_PLUS" Flag="1">
 			<Primary>
-				<KEY Information="Joystick L-Axis X ">1026</KEY>
+				<KEY Information="Joystick L-Axis Z-">1056</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_SLEW_HEADING_MINUS" Flag="1">
+			<Primary>
+				<KEY Information="Joystick R-Axis Z-">800</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_SLEW_HEADING_PLUS" Flag="1">
+			<Primary>
+				<KEY Information="Joystick R-Axis Z+">801</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_SLEW_LEFT" Flag="1">
+			<Primary>
+				<KEY Information="Joystick L-Axis X-">1024</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_SLEW_RIGHT" Flag="1">
+			<Primary>
+				<KEY Information="Joystick L-Axis X+">1025</KEY>
 			</Primary>
 		</Action>
 	</Context>

@@ -675,8 +675,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "cursorSensitivity": 1500.0,
               "axis": "X",
+              "cursorSensitivity": 1500,
               "invert": false
             }
           }
@@ -687,8 +687,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "cursorSensitivity": 1500.0,
               "axis": "Y",
+              "cursorSensitivity": 1500,
               "invert": false
             }
           }
@@ -839,6 +839,16 @@
             }
           }
         ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 5,
+              "description": "Rotor Trim Reset"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -861,6 +871,14 @@
               "virtualKeyCode": "Num Lock",
               "on": true,
               "description": "Elevator Trim Down"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 7,
+              "description": "Decrease Rotor Longitudinal Trim"
             }
           }
         ],
@@ -889,6 +907,14 @@
               "on": true,
               "description": "Aileron Trim Right"
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 9,
+              "description": "Increase Rotor Lateral Trim"
+            }
           }
         ],
         "13": [
@@ -913,6 +939,14 @@
               "virtualKeyCode": "Num Lock",
               "on": true,
               "description": "Elevator Trim Up"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 6,
+              "description": "Increase Rotor Longitudinal Trim"
             }
           }
         ],
@@ -940,6 +974,14 @@
               "virtualKeyCode": "Num Lock",
               "on": true,
               "description": "Aileron Trim Left"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 8,
+              "description": "Decrease Rotor Lateral Trim"
             }
           }
         ]
@@ -1036,12 +1078,12 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S0": {
-      "color": -16776961,
-      "inverted": false
-    },
     "S1": {
       "color": -65536,
+      "inverted": false
+    },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     },
     "Z": {
