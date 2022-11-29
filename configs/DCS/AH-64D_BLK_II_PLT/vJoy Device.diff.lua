@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -196,7 +196,7 @@ local diff = {
 			},
 			["name"] = "Weapons Action Switch - M/Right",
 		},
-		["d3012pnilunilcd25vd1vpnilvunil"] = {
+		["d3012pnilu3012cd25vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN18",
@@ -204,7 +204,7 @@ local diff = {
 			},
 			["name"] = "Symbology Select Switch - Up",
 		},
-		["d3013pnilunilcd25vd-1vpnilvunil"] = {
+		["d3013pnilu3013cd25vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN19",
