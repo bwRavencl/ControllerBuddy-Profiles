@@ -29,7 +29,7 @@
       {
         "toggle": false,
         "longPress": false,
-        "modeUuid": "63eb1052-e5ae-4b1d-bb08-4ef65c6ae992"
+        "modeUuid": "5f8c89dc-882b-4d0d-815c-fc6ea45156cb"
       }
     ],
     "4": [
@@ -73,6 +73,27 @@
         "longPress": false,
         "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
       }
+    ],
+    "12": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "cc2066ba-388a-4af7-bc08-70f5dd1e54b7"
+      }
+    ],
+    "13": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "058fa3aa-7186-48bb-967c-2c5c4fe893c5"
+      }
+    ],
+    "14": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "b76dbb9c-6434-4f1b-a731-730a0a042dd3"
+      }
     ]
   },
   "modes": [
@@ -86,7 +107,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Yaw"
             }
           }
         ],
@@ -97,11 +119,12 @@
               "exponent": 2.0,
               "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
-              "detentValue": -0.5,
+              "detentValue": -0.2,
               "deadZone": 0.25,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -112,7 +135,8 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -123,11 +147,22 @@
               "deadZone": 0.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
         "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Wheel Brake Left"
+            }
+          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
@@ -140,16 +175,8 @@
                   "Y"
                 ],
                 "modifierCodes": []
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
-            "data": {
-              "deadZone": 0.0,
-              "initialValue": -1.0,
-              "virtualAxis": "S0",
-              "invert": false
+              },
+              "description": "Stick Deflection Limiter Override"
             }
           }
         ],
@@ -166,7 +193,8 @@
                   "Space"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Weapon Fire"
             }
           },
           {
@@ -175,7 +203,8 @@
               "deadZone": 0.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Right"
             }
           }
         ]
@@ -186,7 +215,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Return To Search"
             }
           }
         ],
@@ -198,7 +228,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -208,7 +239,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -221,7 +253,8 @@
                   "Num5"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -234,7 +267,8 @@
                   "NumEnter"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -249,7 +283,8 @@
                   "Return"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Lock"
             }
           }
         ],
@@ -264,7 +299,8 @@
                   "P"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Dragging Chute"
             }
           },
           {
@@ -277,84 +313,8 @@
                   "B"
                 ],
                 "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "`"
-                ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "`"
-                ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
-              }
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "G"
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "Q"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "F"
-                ],
-                "modifierCodes": []
-              }
+              },
+              "description": "Airbrake"
             }
           }
         ]
@@ -433,7 +393,7 @@
       "description": "Countermeasure",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "11": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -444,11 +404,12 @@
                   "E"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "ECM"
             }
           }
         ],
-        "12": [
+        "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -456,14 +417,15 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Del"
+                  "Ins"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Countermeasures Chaff Dispense"
             }
           }
         ],
-        "13": [
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -476,7 +438,24 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Countermeasures Continuously Dispense"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Del"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Countermeasures  Flares Dispense"
             }
           }
         ],
@@ -488,10 +467,120 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Ins"
+                  "Q"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Countermeasures Release"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "058fa3aa-7186-48bb-967c-2c5c4fe893c5",
+      "description": "Gear / Flaps / NWS / Canopy / Engines",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Landing Gear Up/Down"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Q"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "description": "Nose Wheel Steering"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Flaps Up/Down"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "C"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "description": "Canopy Open/Close"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Engines Stop"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Engines Start"
             }
           }
         ]
@@ -499,25 +588,26 @@
     },
     {
       "uuid": "5bffeef9-8754-430c-a7ec-2fa4d1f85b37",
-      "description": "Emergency",
+      "description": "Jettison / Fuel",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "12": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "R"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Fuel Dump"
             }
           }
         ],
-        "13": [
+        "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -530,7 +620,85 @@
                 "modifierCodes": [
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Weapons Jettison"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "cc2066ba-388a-4af7-bc08-70f5dd1e54b7",
+      "description": "Lights / Power",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": [
+                  "R Alt"
+                ]
+              },
+              "description": "Gear Light Near/Far/Off"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
+              "description": "Navigation lights"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Illumination Cockpit"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Electric Power Switch"
             }
           }
         ]
@@ -538,7 +706,7 @@
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look / Comm",
+      "description": "Look / Comm / Reset Warning",
       "axisToActionsMap": {
         "0": [
           {
@@ -550,7 +718,8 @@
               "deadZone": 0.1,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -564,7 +733,8 @@
               "deadZone": 0.1,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -581,7 +751,8 @@
                   "\\"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Communication menu"
             }
           },
           {
@@ -623,7 +794,8 @@
                   "R Shift",
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Cockpit Camera Move Back"
             }
           },
           {
@@ -631,7 +803,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": false
+              "on": false,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -655,112 +828,8 @@
                   "R Shift",
                   "R Ctrl"
                 ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num8"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num6"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num2"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num4"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
               },
-              "description": "Cockpit Camera Move Left"
+              "description": "Cockpit Camera Move Forward"
             }
           },
           {
@@ -769,7 +838,51 @@
               "longPress": false,
               "virtualKeyCode": "Num Lock",
               "on": false,
-              "description": "Cockpit Camera Move Left"
+              "description": "Cockpit Camera Move Forward"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": true,
+              "buttonId": 105,
+              "description": "r.3 VoIP PTT"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "M"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Receive Mode"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Audible Warning Reset"
             }
           }
         ],
@@ -804,6 +917,118 @@
               "description": "Zoom in slow"
             }
           }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num8"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Up"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": "Num Lock",
+              "on": false,
+              "description": "Cockpit Camera Move Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num6"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Right"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": "Num Lock",
+              "on": false,
+              "description": "Cockpit Camera Move Right"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num2"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Down"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": "Num Lock",
+              "on": false,
+              "description": "Cockpit Camera Move Down"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num4"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Left"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "virtualKeyCode": "Num Lock",
+              "on": false,
+              "description": "Cockpit Camera Move Left"
+            }
+          }
         ]
       }
     },
@@ -823,7 +1048,8 @@
                   "8"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(8) Gunsight Reticle Switch"
             }
           },
           {
@@ -836,7 +1062,8 @@
                   "7"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(7) Air-To-Ground Mode"
             }
           }
         ],
@@ -856,7 +1083,8 @@
                         "3"
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "(3) Close Air Combat Vertical Scan Mode"
                   }
                 },
                 {
@@ -869,7 +1097,8 @@
                         "4"
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "(4) Close Air Combat Bore Mode"
                   }
                 },
                 {
@@ -882,7 +1111,8 @@
                         "5"
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "(5) Close Air Combat HMD Helmet Mode"
                   }
                 },
                 {
@@ -895,7 +1125,8 @@
                         "6"
                       ],
                       "modifierCodes": []
-                    }
+                    },
+                    "description": "(6) Longitudinal Missile Aiming Mode"
                   }
                 }
               ],
@@ -914,7 +1145,8 @@
                   "2"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(2) Beyond Visual Range Mode"
             }
           }
         ],
@@ -929,7 +1161,8 @@
                   "1"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "(1) Navigation Modes"
             }
           }
         ]
@@ -945,8 +1178,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "cursorSensitivity": 1500.0,
               "axis": "X",
+              "cursorSensitivity": 1500,
               "invert": false
             }
           }
@@ -957,8 +1190,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "cursorSensitivity": 1500.0,
               "axis": "Y",
+              "cursorSensitivity": 1500,
               "invert": false
             }
           }
@@ -1034,7 +1267,8 @@
                   "/"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Designator Right"
             }
           },
           {
@@ -1049,7 +1283,8 @@
                   ","
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Designator Left"
             }
           }
         ],
@@ -1066,7 +1301,8 @@
                   "."
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Designator Down"
             }
           },
           {
@@ -1081,7 +1317,8 @@
                   ";"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Target Designator Up"
             }
           }
         ]
@@ -1100,7 +1337,8 @@
                 "modifierCodes": [
                   "R Alt"
                 ]
-              }
+              },
+              "description": "Predicted Target Range Decrease"
             }
           },
           {
@@ -1113,16 +1351,8 @@
                   "O"
                 ],
                 "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 0
+              },
+              "description": "Electro-Optical Systen On/Off"
             }
           }
         ],
@@ -1139,7 +1369,8 @@
                 "modifierCodes": [
                   "R Shift"
                 ]
-              }
+              },
+              "description": "Radar Pulse Repeat Frequency Select"
             }
           },
           {
@@ -1154,7 +1385,8 @@
                 "modifierCodes": [
                   "R Alt"
                 ]
-              }
+              },
+              "description": "Radar RWS/TWS Select"
             }
           }
         ],
@@ -1171,7 +1403,8 @@
                 "modifierCodes": [
                   "R Alt"
                 ]
-              }
+              },
+              "description": "Predicted Target Range Increase"
             }
           },
           {
@@ -1184,7 +1417,8 @@
                   "I"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Radar On/Off"
             }
           }
         ],
@@ -1201,7 +1435,8 @@
                 "modifierCodes": [
                   "R Shift"
                 ]
-              }
+              },
+              "description": "Scan Zone Up"
             }
           },
           {
@@ -1214,7 +1449,8 @@
                   "-"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Display Zoom Out"
             }
           }
         ],
@@ -1231,7 +1467,8 @@
                 "modifierCodes": [
                   "R Shift"
                 ]
-              }
+              },
+              "description": "Scan Zone Right"
             }
           }
         ],
@@ -1248,7 +1485,8 @@
                 "modifierCodes": [
                   "R Shift"
                 ]
-              }
+              },
+              "description": "Scan Zone Down"
             }
           },
           {
@@ -1261,7 +1499,8 @@
                   "\u003d"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Display Zoom In"
             }
           }
         ],
@@ -1278,7 +1517,8 @@
                 "modifierCodes": [
                   "R Shift"
                 ]
-              }
+              },
+              "description": "Scan Zone Left"
             }
           }
         ]
@@ -1286,7 +1526,7 @@
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim / Takeoff Wheelbrake",
+      "description": "Trim / Autopilot / Wheel Brake Start",
       "axisToActionsMap": {
         "4": [
           {
@@ -1303,7 +1543,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Wheel Brake Start"
             }
           }
         ]
@@ -1322,7 +1563,8 @@
                 "modifierCodes": [
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Reset"
             }
           }
         ],
@@ -1339,7 +1581,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim: Rudder Right"
             }
           }
         ],
@@ -1356,7 +1599,62 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim: Rudder Left"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "9"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "description": "Autopilot Reset (Stick Button)"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "3"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "description": "Autopilot - Altitude Hold"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "4"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "description": "Autopilot - Attitude Hold"
             }
           }
         ],
@@ -1373,7 +1671,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Hat - NOSE DOWN"
             }
           }
         ],
@@ -1390,7 +1689,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Hat - ROLL RIGHT"
             }
           }
         ],
@@ -1407,7 +1707,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Hat - NOSE UP"
             }
           }
         ],
@@ -1424,7 +1725,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Hat - ROLL LEFT"
             }
           }
         ]
@@ -1432,7 +1734,7 @@
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View / Eject",
+      "description": "View / HUD Filter / Eject",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "5": [
@@ -1454,7 +1756,8 @@
                 "modifierCodes": [
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -1469,7 +1772,8 @@
                   "F1"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1484,7 +1788,8 @@
                   "F10"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1496,10 +1801,13 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "F4"
+                  "H"
                 ],
-                "modifierCodes": []
-              }
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "HUD Filter On Off"
             }
           }
         ],
@@ -1514,14 +1822,94 @@
                   "F2"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
       }
     },
     {
-      "uuid": "63eb1052-e5ae-4b1d-bb08-4ef65c6ae992",
+      "uuid": "b76dbb9c-6434-4f1b-a731-730a0a042dd3",
+      "description": "Waypoint / Altimeter",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "`"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Previous Waypoint, Airfield or Target"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\u003d"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Altimeter Pressure Increase"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "-"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Altimeter Pressure Decrease"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "`"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "description": "Next Waypoint, Airfield Or Target"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "5f8c89dc-882b-4d0d-815c-fc6ea45156cb",
       "description": "Weapon",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
@@ -1538,7 +1926,8 @@
                 "modifierCodes": [
                   "L Alt"
                 ]
-              }
+              },
+              "description": "Launch Permission Override"
             }
           }
         ],
@@ -1553,7 +1942,8 @@
                   "C"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Cannon"
             }
           }
         ],
@@ -1570,7 +1960,8 @@
                 "modifierCodes": [
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Salvo Mode"
             }
           }
         ],
@@ -1585,7 +1976,8 @@
                   "D"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Weapon Change"
             }
           }
         ],
@@ -1602,7 +1994,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Cut Of Burst select"
             }
           }
         ]
