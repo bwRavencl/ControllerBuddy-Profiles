@@ -365,9 +365,77 @@
     },
     {
       "uuid": "81eaef4e-3a58-499b-95e1-0863b556296d",
-      "description": "Air brake",
+      "description": "Air brake / Throttle",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Throttle (Right) - OFF"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Throttle (Right) - IDLE"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "R Alt"
+                ]
+              },
+              "description": "Throttle (Left) - OFF"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "R Alt"
+                ]
+              },
+              "description": "Throttle (Left) - IDLE"
+            }
+          }
+        ],
         "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -728,6 +796,38 @@
             }
           }
         ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Zoom out slow"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Zoom in slow"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -839,38 +939,6 @@
               "description": "Cockpit Camera Move Left"
             }
           }
-        ],
-        "9": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num/"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Zoom out slow"
-            }
-          }
-        ],
-        "10": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num*"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Zoom in slow"
-            }
-          }
         ]
       }
     },
@@ -884,8 +952,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "cursorSensitivity": 1500.0,
               "axis": "X",
+              "cursorSensitivity": 1500,
               "invert": false
             }
           }
@@ -896,8 +964,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "cursorSensitivity": 1500.0,
               "axis": "Y",
+              "cursorSensitivity": 1500,
               "invert": false
             }
           }
