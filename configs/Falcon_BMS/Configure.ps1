@@ -6966,7 +6966,7 @@ Set-Variable GamepadSetupFileContent -Option Constant -Value @'
 </JoyAssgn>
 '@
 
-$bmsDir = Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore
+$bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore).TrimEnd('\')
 
 if ($bmsDir -eq $null) {
     Write-Host "Error: $BmsFullName registry value '$BmsRegistryKey\$BmsBaseDirRegistryValue' does not exist"

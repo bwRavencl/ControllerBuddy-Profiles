@@ -125,7 +125,7 @@ return disabled
     }
 }
 
-$simpleRadioDir = Get-ItemPropertyValue -Path HKCU:\SOFTWARE\DCS-SR-Standalone -Name SRPathStandalone -ErrorAction Ignore
+$simpleRadioDir = (Get-ItemPropertyValue -Path HKCU:\SOFTWARE\DCS-SR-Standalone -Name SRPathStandalone -ErrorAction Ignore).TrimEnd('\')
 
 if ($simpleRadioDir -ne $null) {
     if (-not (Test-Path $simpleRadioDir -PathType Container)) {
