@@ -6980,7 +6980,7 @@ if (-not (Test-Path $bmsConfigDir -PathType Container)) {
     Exit 1
 }
 
-Import-Module -Name "$PSScriptRoot\..\_common\DirectInput"
+Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
 
 $vJoyDevice = Get-VJoyDevice
 

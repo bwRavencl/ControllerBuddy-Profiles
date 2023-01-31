@@ -117,7 +117,7 @@ if ($pilotDirs.Count -eq 0) {
     Exit 1
 }
 
-Import-Module -Name "$PSScriptRoot\..\_common\DirectInput"
+Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
 
 $keyboardDevice = Get-KeyboardDevice
 
