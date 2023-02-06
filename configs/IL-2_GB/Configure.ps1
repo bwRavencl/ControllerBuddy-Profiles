@@ -66,13 +66,34 @@ if ($currenFiles.count -eq 0) {
 }
 
 foreach ($currenFile in $currenFiles) {
+    $destinationFile = "$il2InputDir\$($currenFile.Name)"
+
     try {
         Copy-Item $currenFile.FullName $il2InputDir -errorAction stop
-        Write-Host "Copied '$($currenFile.Name)' input config to: $il2InputDir\$($currenFile.Name)"
+        Write-Host "Copied '$($currenFile.Name)' to: $destinationFile"
     } catch {
-        Write-Host "Error: Could not copy '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
+        Write-Host "Error: Could not copy '$($currenFile.Name)' to: $destinationFile"
         Exit 1
     }
+}
+
+$snapsCfgFilename = 'snaps.cfg'
+$snapsCfg = "$PSScriptRoot\$snapsCfgFilename"
+
+if (-not (Test-Path $snapsCfg -PathType Leaf)) {
+    Write-Host "Error: $snapsCfgFilename file is missing"
+    Exit 1
+}
+
+$snapviewsDir = "$il2Dir\data\LuaScripts\snapviews"
+$destinationFile = "$snapviewsDir\$snapsCfgFilename"
+
+try {
+    Copy-Item $snapsCfg $snapviewsDir -errorAction stop
+    Write-Host "Copied '$snapsCfg' to: $destinationFile"
+} catch {
+    Write-Host "Error: Could not copy '$snapsCfgFilename' to: $destinationFile"
+    Exit 1
 }
 
 Write-Host `nIL-2 Sturmovik Great Battles is now fully configured!
