@@ -1,5 +1,5 @@
 {
-  "version": "0.24",
+  "version": "0.25",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -84,6 +84,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
               "invert": false,
@@ -95,11 +96,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "exponent": 2.0,
               "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
               "detentValue": -0.5,
               "deadZone": 0.25,
+              "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
               "invert": false,
@@ -112,6 +113,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
               "invert": false,
@@ -124,6 +126,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
               "invert": false,
@@ -146,6 +149,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
               "invert": false,
@@ -158,6 +162,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
               "invert": false,
@@ -626,10 +631,10 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "exponent": 3.0,
               "maxRelativeSpeed": 0.45,
               "hapticFeedback": false,
               "deadZone": 0.1,
+              "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
               "invert": false,
@@ -641,10 +646,10 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "exponent": 3.0,
               "maxRelativeSpeed": 0.45,
               "hapticFeedback": false,
               "deadZone": 0.1,
+              "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
               "invert": false,
