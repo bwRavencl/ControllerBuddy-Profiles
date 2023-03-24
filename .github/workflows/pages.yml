@@ -35,13 +35,17 @@ jobs:
         with:
           distribution: zulu
           java-version: 20
+      - name: Install ControllerBuddy
+        run: |
+          pushd ControllerBuddy
+          ./gradlew installDist
+          popd
       - name: Update Visualizations
         run: |
           rm -f ControllerBuddy-Pages/profiles/*.html
-          cd ControllerBuddy
-          for file in ../ControllerBuddy-Profiles/*.json
+          for file in ControllerBuddy-Profiles/*.json
           do
-            xvfb-run -a -s '-screen 0 1024x768x24' ./gradlew clean run --args="-skipMessageDialogs -quit -profile '$file' -export '../ControllerBuddy-Pages/profiles/`basename "$file" .json`.html'"
+            xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs -quit -profile "$file" -export "ControllerBuddy-Pages/profiles/`basename $file .json`.html"
           done
       - name: Commit files
         run: |
