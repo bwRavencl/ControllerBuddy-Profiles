@@ -116,6 +116,38 @@ local diff = {
 			},
 			["name"] = "Radar control stick elevation/altitude difference button",
 		},
+		["d3102pnilunilcd1vd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN20",
+				},
+			},
+			["name"] = "Radar control stick scale selection - RIGHT",
+		},
+		["d3102pnilunilcd1vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN19",
+				},
+			},
+			["name"] = "Radar control stick scale selection - LEFT",
+		},
+		["d3104pnilunilcd1vd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN22",
+				},
+			},
+			["name"] = "Radar control stick scan selection - RIGHT",
+		},
+		["d3104pnilunilcd1vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN21",
+				},
+			},
+			["name"] = "Radar control stick scan selection - LEFT",
+		},
 		["d3106pnilu3106cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
