@@ -5,6 +5,11 @@ on:
     branches:
       - master
 
+env:
+   JAVA_DISTRIBUTION: zulu
+   JAVA_VERSION: 20
+   GRADLE_OPTS: -Dorg.gradle.daemon=false
+
 jobs:
   pages:
     runs-on: ubuntu-latest
@@ -12,34 +17,34 @@ jobs:
       - name: Checkout ControllerBuddy-Profiles
         uses: actions/checkout@v3
         with:
-          path: 'ControllerBuddy-Profiles'
+          path: ControllerBuddy-Profiles
           fetch-depth: 0
           persist-credentials: false
       - name: Checkout ControllerBuddy
         uses: actions/checkout@v3
         with:
-          repository: 'bwRavencl/ControllerBuddy'
-          path: 'ControllerBuddy'
+          repository: bwRavencl/ControllerBuddy
+          path: ControllerBuddy
           fetch-depth: 0
           persist-credentials: false
           submodules: true
       - name: Checkout ControllerBuddy-Pages
         uses: actions/checkout@v3
         with:
-          repository: 'bwRavencl/ControllerBuddy-Pages'
-          path: 'ControllerBuddy-Pages'
+          repository: bwRavencl/ControllerBuddy-Pages
+          path: ControllerBuddy-Pages
           fetch-depth: 0
           persist-credentials: false
       - name: Install JDK
         uses: actions/setup-java@v3
         with:
-          distribution: zulu
-          java-version: 20
+          distribution: ${{ env.JAVA_DISTRIBUTION }}
+          java-version: ${{ env.JAVA_VERSION }}
       - name: Install ControllerBuddy
-        run: |
-          pushd ControllerBuddy
-          ./gradlew installDist
-          popd
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: installDist
+          build-root-directory: ControllerBuddy
       - name: Update Visualizations
         run: |
           rm -f ControllerBuddy-Pages/profiles/*.html
