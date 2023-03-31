@@ -424,7 +424,7 @@
     },
     {
       "uuid": "81fdc7b8-77bf-4453-8e53-0ecc0684c082",
-      "description": "Gear / Flaps / Brake Chute",
+      "description": "Gear / Flaps / Brake Chute / NWS",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -521,6 +521,24 @@
               "activation": "SINGLE_IMMEDIATELY"
             }
           }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "description": "Nose wheel steering high sensitivity button"
+            }
+          }
         ]
       }
     },
@@ -605,15 +623,6 @@
               },
               "description": "Cockpit Camera Move Back"
             }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Cockpit Camera Move Back"
-            }
           }
         ],
         "2": [
@@ -639,14 +648,21 @@
               },
               "description": "Cockpit Camera Move Forward"
             }
-          },
+          }
+        ],
+        "6": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Cockpit Camera Move Forward"
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Communication menu"
             }
           }
         ],
@@ -699,15 +715,6 @@
               },
               "description": "Cockpit Camera Move Up"
             }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Cockpit Camera Move Up"
-            }
           }
         ],
         "12": [
@@ -725,15 +732,6 @@
                   "R Ctrl"
                 ]
               },
-              "description": "Cockpit Camera Move Right"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
               "description": "Cockpit Camera Move Right"
             }
           }
@@ -755,15 +753,6 @@
               },
               "description": "Cockpit Camera Move Down"
             }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Cockpit Camera Move Down"
-            }
           }
         ],
         "14": [
@@ -781,15 +770,6 @@
                   "R Ctrl"
                 ]
               },
-              "description": "Cockpit Camera Move Left"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
               "description": "Cockpit Camera Move Left"
             }
           }

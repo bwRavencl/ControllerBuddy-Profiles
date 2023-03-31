@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -164,6 +164,22 @@ local diff = {
 			},
 			["name"] = "TV Fix (Three position switch)",
 		},
+		["d3013pnilu3013cd29vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN19",
+				},
+			},
+			["name"] = "FR22 Push-to-talk (Short- Menu, Long- VOIP)",
+		},
+		["d3014pnilu3014cd29vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN20",
+				},
+			},
+			["name"] = "FR24 Push-to-talk (Short- Menu, Long- VOIP)",
+		},
 		["d3090pnilu3090cd22vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -171,22 +187,6 @@ local diff = {
 				},
 			},
 			["name"] = "Reference button",
-		},
-		["d3300pnilunilcd2vd0vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN8",
-				},
-			},
-			["name"] = "Trigger safety bracket SAFE",
-		},
-		["d3300pnilunilcd2vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN7",
-				},
-			},
-			["name"] = "Trigger safety bracket ARM",
 		},
 		["d3311pnilunilcd2vd1vpnilvunil"] = {
 			["added"] = {
@@ -199,7 +199,7 @@ local diff = {
 		["d3314pnilunilcd2vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN19",
+					["key"] = "JOY_BTN8",
 				},
 			},
 			["name"] = "IR-missile uncage",
@@ -227,6 +227,14 @@ local diff = {
 				},
 			},
 			["name"] = "Radar Range Increase",
+		},
+		["d3926pnilunilcd2vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Trigger safety bracket TOGGLE",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

@@ -160,6 +160,14 @@ local diff = {
 			},
 			["name"] = "DLC Toggle / Countermeasure Dispense",
 		},
+		["d3086pnilu3086cd22vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN27",
+				},
+			},
+			["name"] = "Autopilot Emergency Disconnect Paddle",
+		},
 		["d3087pnilu3087cd57vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {

@@ -59,7 +59,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -73,7 +74,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -85,7 +87,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -97,26 +100,12 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
         "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "`"
-                ],
-                "modifierCodes": []
-              }
-            }
-          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
@@ -124,26 +113,22 @@
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Left"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 3,
+              "description": "A-4 Sight Electrical Caging Button (On Throttle)"
             }
           }
         ],
         "5": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": []
-              }
-            }
-          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
@@ -151,7 +136,18 @@
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Right"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 0,
+              "description": "Trigger - SECOND DETENT(Gun Fire)"
             }
           }
         ]
@@ -168,7 +164,18 @@
                   "S"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Nosewheel Steering Button"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 2,
+              "description": "A-4 Sight Radar Target Selector Button"
             }
           }
         ],
@@ -180,7 +187,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -190,7 +198,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -203,7 +212,8 @@
                   "Num5"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
@@ -216,7 +226,8 @@
                   "NumEnter"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           }
         ],
@@ -225,24 +236,18 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 2
+              "buttonId": 4,
+              "description": "A-4 Sight Mechanical Caging Lever - ON/OFF"
             }
           }
         ],
         "6": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "REPEAT",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": [
-                  "R Alt"
-                ]
-              }
+              "buttonId": 1,
+              "description": "Weapon Release"
             }
           }
         ],
@@ -257,7 +262,8 @@
                   "Home"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle - Start Engine"
             }
           },
           {
@@ -277,7 +283,8 @@
                       "modifierCodes": [
                         "L Shift"
                       ]
-                    }
+                    },
+                    "description": "Speed Brake Switch - OUT"
                   }
                 },
                 {
@@ -292,7 +299,8 @@
                       "modifierCodes": [
                         "L Ctrl"
                       ]
-                    }
+                    },
+                    "description": "Speed Brake Switch - IN"
                   }
                 }
               ],
@@ -313,7 +321,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Flaps Down"
             }
           }
         ],
@@ -325,25 +334,11 @@
               "longPress": true,
               "keystroke": {
                 "keyCodes": [
-                  "G"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
                   "End"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Throttle - Stop Engine"
             }
           },
           {
@@ -356,7 +351,8 @@
                   "G"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Landing Gear Up/Down"
             }
           }
         ],
@@ -373,7 +369,8 @@
                 "modifierCodes": [
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Flaps Up"
             }
           }
         ]
@@ -461,7 +458,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -475,7 +473,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -494,7 +493,8 @@
                 "modifierCodes": [
                   "R Alt"
                 ]
-              }
+              },
+              "description": "Microphone Button (call radio menu)"
             }
           },
           {
@@ -524,15 +524,8 @@
                   "R Shift",
                   "R Ctrl"
                 ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
+              },
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -556,121 +549,8 @@
                   "R Shift",
                   "R Ctrl"
                 ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num8"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num6"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num2"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              }
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num4"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
               },
-              "description": "Cockpit Camera Move Left"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false,
-              "description": "Cockpit Camera Move Left"
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -703,6 +583,82 @@
                 "modifierCodes": []
               },
               "description": "Zoom in slow"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num8"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num6"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Right"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num2"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Down"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num4"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -795,21 +751,6 @@
       "description": "Sight",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "0": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Return"
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -821,7 +762,8 @@
                   ";"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "A-4 Sight Manual Ranging Control (Throttle Twist Grip) - CCW/Increase"
             }
           }
         ],
@@ -836,7 +778,8 @@
                   "/"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "A-4 Sight Wing Span Adjustment Knob - Wing Span Increase"
             }
           }
         ],
@@ -851,7 +794,8 @@
                   "."
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "A-4 Sight Manual Ranging Control (Throttle Twist Grip) - CW/Decrease"
             }
           }
         ],
@@ -866,7 +810,8 @@
                   ","
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "A-4 Sight Wing Span Adjustment Knob - Wing Span Decrease"
             }
           }
         ]
@@ -891,7 +836,8 @@
                   "L Alt",
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Rudder Trim Switch - RIGHT"
             }
           }
         ],
@@ -909,7 +855,8 @@
                   "L Alt",
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Rudder Trim Switch - LEFT"
             }
           }
         ],
@@ -926,7 +873,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Down"
             }
           }
         ],
@@ -943,7 +891,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Right"
             }
           }
         ],
@@ -960,7 +909,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Up"
             }
           }
         ],
@@ -977,7 +927,8 @@
                 "modifierCodes": [
                   "R Ctrl"
                 ]
-              }
+              },
+              "description": "Trim Left"
             }
           }
         ]
@@ -1007,7 +958,8 @@
                 "modifierCodes": [
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -1022,7 +974,8 @@
                   "F1"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1037,7 +990,8 @@
                   "F10"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1052,7 +1006,8 @@
                   "F4"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F4 Camera mounted on airframe"
             }
           }
         ],
@@ -1067,7 +1022,8 @@
                   "F2"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "F2 Aircraft view"
             }
           }
         ]
