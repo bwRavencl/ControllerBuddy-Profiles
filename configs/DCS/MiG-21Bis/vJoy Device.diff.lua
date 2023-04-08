@@ -99,6 +99,14 @@ local diff = {
 			},
 			["name"] = "Drop Countermeasures (ASO and SPS-141)",
 		},
+		["d824pnilunilcd42vdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Select next weapon",
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
 			["removed"] = {
