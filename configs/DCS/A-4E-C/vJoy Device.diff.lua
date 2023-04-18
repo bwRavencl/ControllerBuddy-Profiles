@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.25,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.25,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -70,7 +70,7 @@ local diff = {
 			},
 			["name"] = "Absolute Camera Vertical View",
 		},
-		["a3162cdnil"] = {
+		["a3163cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
@@ -78,6 +78,9 @@ local diff = {
 							[1] = 0,
 						},
 						["deadzone"] = 0,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
 						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -88,7 +91,7 @@ local diff = {
 			},
 			["name"] = "Wheel Brake Left",
 		},
-		["a3163cdnil"] = {
+		["a3164cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
@@ -96,6 +99,9 @@ local diff = {
 							[1] = 0,
 						},
 						["deadzone"] = 0,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
 						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
