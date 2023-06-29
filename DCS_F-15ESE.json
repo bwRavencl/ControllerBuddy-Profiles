@@ -1,0 +1,1256 @@
+{
+  "version": "0.25",
+  "showOverlay": true,
+  "showVrOverlay": true,
+  "keyRepeatInterval": 30,
+  "buttonToModeActionsMap": {
+    "0": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "78507e0d-dee5-486c-97b0-1ddd264bde04"
+      }
+    ],
+    "1": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "45c10374-b8a9-45a8-95c2-4be9a88b0fa2"
+      }
+    ],
+    "2": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
+      }
+    ],
+    "3": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "5d1dfbf4-79f0-4aca-83c9-1dbcfbc699e2"
+      }
+    ],
+    "4": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9"
+      }
+    ],
+    "5": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
+      }
+    ],
+    "6": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "2b5768b5-34aa-49f3-9948-f3090f9add7f"
+      }
+    ],
+    "7": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "bbdec6bb-19b2-4ae6-b24a-346fdfb45a06"
+      }
+    ],
+    "9": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3"
+      }
+    ],
+    "10": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+      }
+    ],
+    "13": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "9aeb93c3-3e98-458c-b502-f3cd5b193cd5"
+      }
+    ]
+  },
+  "modes": [
+    {
+      "uuid": "067e6162-3b6f-4ae2-a171-2470b63dff00",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "RZ",
+              "invert": false,
+              "description": "Rudder"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "maxRelativeSpeed": 4.0,
+              "hapticFeedback": true,
+              "detentValue": -0.5,
+              "deadZone": 0.25,
+              "exponent": 2.0,
+              "initialValue": 1.0,
+              "virtualAxis": "Z",
+              "invert": false,
+              "description": "Thrust"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "X",
+              "invert": false,
+              "description": "Roll"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "Y",
+              "invert": false,
+              "description": "Pitch"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 1,
+              "description": "Weapon Release (Pickle)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Wheel Brake Left"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S1",
+              "invert": false,
+              "description": "Wheel Brake Right"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 0,
+              "description": "Trigger"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "virtualAxis": "RX",
+              "resetValue": 0.0,
+              "fluid": false,
+              "longPress": false,
+              "activation": "REPEAT",
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "virtualAxis": "RY",
+              "resetValue": 0.0,
+              "fluid": false,
+              "longPress": false,
+              "activation": "REPEAT",
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num5"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "NumEnter"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Reset View"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "B"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Speed Brake Switch - Toggle On/Off"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 15,
+              "description": "Weapons/Mode Switch Cycle Loop (GUN-SRM-MRM-GUN)"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 9,
+              "description": "NWS/Weapons Button"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": false,
+              "longPress": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": true,
+              "longPress": false
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToReleaseAllOnScreenKeyboardKeysAction",
+            "data": {
+              "longPress": false
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "UP"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "RIGHT"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "DOWN"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "LEFT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "5d1dfbf4-79f0-4aca-83c9-1dbcfbc699e2",
+      "description": "Auto Acquisition / Boat",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 37,
+              "description": "Auto Acquisition Switch PRESS"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 35,
+              "description": "Auto Acquisition Switch FWD"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 39,
+              "description": "Boat Switch FWD"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 36,
+              "description": "Auto Acquisition Switch AFT"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 38,
+              "description": "Boat Switch AFT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "78507e0d-dee5-486c-97b0-1ddd264bde04",
+      "description": "CMD",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 16,
+              "description": "CMD Switch UP (Manual 2 Dispense)"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 17,
+              "description": "CMD Switch DOWN (Manual 1 Dispense)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "45c10374-b8a9-45a8-95c2-4be9a88b0fa2",
+      "description": "Castle",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 34,
+              "description": "Castle Switch PRESS"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 30,
+              "description": "Castle Switch FWD"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 33,
+              "description": "Castle Switch RIGHT"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 31,
+              "description": "Castle Switch AFT"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 32,
+              "description": "Castle Switch LEFT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "bbdec6bb-19b2-4ae6-b24a-346fdfb45a06",
+      "description": "Coolie",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 27,
+              "description": "Coolie Switch Left"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 28,
+              "description": "Coolie Switch Right"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 26,
+              "description": "Coolie Switch Down"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 25,
+              "description": "Coolie Switch Up"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {}
+    },
+    {
+      "uuid": "9aeb93c3-3e98-458c-b502-f3cd5b193cd5",
+      "description": "Gear / Flaps / Hook",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Landing Gear Lever Toggle: LG UP/LG DOWN"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Flaps Toggle Up/Down"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "H"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Arresting Hook Handle Toggle"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
+      "description": "Look / Comm",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "maxRelativeSpeed": 0.45,
+              "hapticFeedback": false,
+              "deadZone": 0.1,
+              "exponent": 3.0,
+              "initialValue": 0.0,
+              "virtualAxis": "RX",
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "maxRelativeSpeed": 0.45,
+              "hapticFeedback": false,
+              "deadZone": 0.1,
+              "exponent": 3.0,
+              "initialValue": 0.0,
+              "virtualAxis": "RY",
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 12,
+              "description": "MIC Switch FWD (Radio 1 VOIP)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 11,
+              "description": "MIC Switch FWD (Call Radio 1 Menu)"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 14,
+              "description": "MIC Switch FWD (Radio 2 VOIP)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 13,
+              "description": "MIC Switch FWD (Call Radio 2 Menu)"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Back"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Forward"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 5,
+              "description": "COMM Switch - MIDS A"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 6,
+              "description": "COMM Switch - MIDS B"
+            }
+          }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Zoom out slow"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Zoom in slow"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num8"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num6"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Right"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num2"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Down"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num4"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "description": "Cockpit Camera Move Left"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+      "description": "Mouse",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.1,
+              "exponent": 2.0,
+              "axis": "X",
+              "cursorSensitivity": 1500,
+              "invert": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.1,
+              "exponent": 2.0,
+              "axis": "Y",
+              "cursorSensitivity": 1500,
+              "invert": false
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 1
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 2
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 3
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": false
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "2b5768b5-34aa-49f3-9948-f3090f9add7f",
+      "description": "TDC / Radar Antenna Elevation",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 20,
+              "description": "TDC Switch LEFT"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 21,
+              "description": "TDC Switch RIGHT"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 18,
+              "description": "TDC Switch UP"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 19,
+              "description": "TDC Switch DOWN"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 22,
+              "description": "TDC Switch Press"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 23,
+              "description": "Radar Antenna Elevation Up"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 24,
+              "description": "Radar Antenna Elevation Down"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
+      "description": "Trim / Paddle / Left MF Switch",
+      "axisToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 10,
+              "description": "Paddle Switch"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 8,
+              "description": "T/O Trim Button"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 7,
+              "description": "Trim Rudder Right"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 6,
+              "description": "Trim Rudder Left"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 29,
+              "description": "Left Multifunction Switch"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 2,
+              "description": "Trim Nose Down"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 5,
+              "description": "Trim Right Wing Down"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 3,
+              "description": "Trim Nose Up"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 4,
+              "description": "Trim Left Wing Down"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
+      "description": "View / Position / Helmet / Eject",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "E"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "description": "Eject (3 times)"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F1"
+                ],
+                "modifierCodes": []
+              },
+              "description": "F1 Cockpit view"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F10"
+                ],
+                "modifierCodes": []
+              },
+              "description": "F10 Theater map view"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Helmet Visor/NVG Toggle"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "2"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Occupy WSO Seat"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "1"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Occupy Pilot Seat"
+                  }
+                }
+              ],
+              "activation": "SINGLE_ON_RELEASE"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F2"
+                ],
+                "modifierCodes": []
+              },
+              "description": "F2 Aircraft view"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "virtualAxisToOverlayAxisMap": {
+    "Z": {
+      "color": -16777216,
+      "inverted": false
+    }
+  }
+}
