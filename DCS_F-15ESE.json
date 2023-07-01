@@ -272,8 +272,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 9,
-              "description": "NWS/Weapons Button"
+              "buttonId": 29,
+              "description": "Left Multifunction Switch"
             }
           }
         ]
@@ -1014,7 +1014,7 @@
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim / Paddle / Left MF Switch",
+      "description": "Trim / Paddle / NWS/Weapons",
       "axisToActionsMap": {
         "4": [
           {
@@ -1025,6 +1025,18 @@
               "maxAxisValue": 1.0,
               "buttonId": 10,
               "description": "Paddle Switch"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 9,
+              "description": "NWS/Weapons Button"
             }
           }
         ]
@@ -1057,16 +1069,6 @@
               "longPress": false,
               "buttonId": 6,
               "description": "Trim Rudder Left"
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 29,
-              "description": "Left Multifunction Switch"
             }
           }
         ],
