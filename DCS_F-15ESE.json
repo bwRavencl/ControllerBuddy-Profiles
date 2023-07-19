@@ -434,18 +434,21 @@
     {
       "uuid": "45c10374-b8a9-45a8-95c2-4be9a88b0fa2",
       "description": "Castle",
-      "axisToActionsMap": {},
-      "buttonToActionsMap": {
-        "6": [
+      "axisToActionsMap": {
+        "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
               "buttonId": 34,
               "description": "Castle Switch PRESS"
             }
           }
-        ],
+        ]
+      },
+      "buttonToActionsMap": {
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
