@@ -55,7 +55,7 @@
     ],
     "7": [
       {
-        "toggle": true,
+        "toggle": false,
         "longPress": false,
         "modeUuid": "bbdec6bb-19b2-4ae6-b24a-346fdfb45a06"
       }
@@ -494,53 +494,49 @@
     {
       "uuid": "bbdec6bb-19b2-4ae6-b24a-346fdfb45a06",
       "description": "Coolie",
-      "axisToActionsMap": {
-        "0": [
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": -1.0,
-              "maxAxisValue": -0.5,
-              "buttonId": 27,
-              "description": "Coolie Switch Left"
+              "buttonId": 25,
+              "description": "Coolie Switch Up"
             }
-          },
+          }
+        ],
+        "12": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
               "buttonId": 28,
               "description": "Coolie Switch Right"
             }
           }
         ],
-        "1": [
+        "13": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
               "buttonId": 26,
               "description": "Coolie Switch Down"
             }
-          },
+          }
+        ],
+        "14": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": -1.0,
-              "maxAxisValue": -0.5,
-              "buttonId": 25,
-              "description": "Coolie Switch Up"
+              "buttonId": 27,
+              "description": "Coolie Switch Left"
             }
           }
         ]
-      },
-      "buttonToActionsMap": {}
+      }
     },
     {
       "uuid": "9aeb93c3-3e98-458c-b502-f3cd5b193cd5",
