@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -196,21 +196,37 @@ local diff = {
 			},
 			["name"] = "Transmit Switch - IFF IN",
 		},
-		["d3031pnilu3031cd16vd1vpnilvu0"] = {
+		["d3030pnilunilcd16vd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN19",
+				},
+			},
+			["name"] = "DOGFIGHT/Missile Override Switch - MISSILE OVERRIDE",
+		},
+		["d3030pnilunilcd16vd0vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN17",
 				},
 			},
-			["name"] = "SPD BRK Switch (special) - Fwd/RETRACT /OFF",
+			["name"] = "DOGFIGHT/Missile Override Switch - CENTER",
 		},
-		["d3043pnilunilcd16vd0vpnilvunil"] = {
+		["d3030pnilunilcd16vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN18",
+				},
+			},
+			["name"] = "DOGFIGHT/Missile Override Switch - DOGFIGHT",
+		},
+		["d3031pnilu3031cd16vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN14",
 				},
 			},
-			["name"] = "DOGFIGHT/Missile Override Switch - Cycle",
+			["name"] = "SPD BRK Switch: Fwd/RETRACT <>OFF",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

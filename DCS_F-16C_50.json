@@ -53,6 +53,13 @@
         "modeUuid": "73c4ffdf-2616-42e7-a4d2-cbfe8006752c"
       }
     ],
+    "7": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "8548f050-0faa-4f54-9d46-262899312b1e"
+      }
+    ],
     "9": [
       {
         "toggle": true,
@@ -244,16 +251,6 @@
             }
           }
         ],
-        "7": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 13,
-              "description": "DOGFIGHT/Missile Override"
-            }
-          }
-        ],
         "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -436,7 +433,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 16,
+              "buttonId": 13,
               "description": "SPD BRK Switch (special) - Fwd/RETRACT /OFF"
             }
           }
@@ -834,6 +831,43 @@
                 ]
               },
               "description": "Cockpit Camera Move Left"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "8548f050-0faa-4f54-9d46-262899312b1e",
+      "description": "Mode Override",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 18,
+              "description": "DOGFIGHT/Missile Override Switch - MISSILE OVERRIDE"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 16,
+              "description": "DOGFIGHT/Missile Override Switch - CENTER"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 17,
+              "description": "DOGFIGHT/Missile Override Switch - DOGFIGHT"
             }
           }
         ]
