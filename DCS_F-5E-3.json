@@ -52,6 +52,20 @@
         "longPress": false,
         "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
       }
+    ],
+    "13": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "022ee4d7-eba5-4b3d-909e-44ab212b4659"
+      }
+    ],
+    "14": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "c5a81d37-f045-4720-9ef3-5b002c5f25d9"
+      }
     ]
   },
   "modes": [
@@ -273,20 +287,6 @@
         ],
         "11": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "P"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Drag Chute T-Handle - PULL/PUSH"
-            }
-          },
-          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
               "longPress": false,
@@ -324,7 +324,7 @@
                   }
                 }
               ],
-              "activation": "SINGLE_ON_RELEASE"
+              "activation": "SINGLE_IMMEDIATELY"
             }
           }
         ],
@@ -333,34 +333,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 4,
-              "description": "Flap Switch - Step Fwd"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "G"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Landing Gear Lever - LG UP/LG DOWN"
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 3,
-              "description": "Flap Switch - Step Aft"
+              "buttonId": 5,
+              "description": "Missile Uncage Switch"
             }
           }
         ]
@@ -436,7 +410,7 @@
     },
     {
       "uuid": "a5a3f61f-249d-4a17-9bdd-b86934986191",
-      "description": "Dogfight / Uncage",
+      "description": "Dogfight/Resume Search",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "11": [
@@ -452,16 +426,6 @@
                 "modifierCodes": []
               },
               "description": "Dogfight/Resume Search Switch - FORWARD (DM)"
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 5,
-              "description": "Missile Uncage Switch"
             }
           }
         ],
@@ -494,6 +458,122 @@
                 "modifierCodes": []
               },
               "description": "Dogfight/Resume Search Switch - CENTER-PRESS (RESUME SEARCH)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "022ee4d7-eba5-4b3d-909e-44ab212b4659",
+      "description": "Gear / Flaps / Drag Chute",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Landing Gear Lever - LG UP/LG DOWN"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 4,
+              "description": "Flap Lever - Step Down"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 3,
+              "description": "Flap Lever - Step Up"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "P"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Drag Chute T-Handle - PULL/PUSH"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "F"
+                      ],
+                      "modifierCodes": [
+                        "L Ctrl"
+                      ]
+                    },
+                    "description": "Flap Switch - FIXED"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "F"
+                      ],
+                      "modifierCodes": [
+                        "L Shift"
+                      ]
+                    },
+                    "description": "Flap Switch - UP"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "F"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "description": "Flap Switch - AUTO"
+                  }
+                }
+              ],
+              "activation": "SINGLE_IMMEDIATELY"
             }
           }
         ]
@@ -721,8 +801,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -733,8 +813,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -867,7 +947,7 @@
         ]
       },
       "buttonToActionsMap": {
-        "0": [
+        "2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -948,6 +1028,81 @@
                 "modifierCodes": []
               },
               "description": "AN/APQ-159 Radar Range Selector - CCW/Decrease"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "c5a81d37-f045-4720-9ef3-5b002c5f25d9",
+      "description": "Throttle",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Throttle (Right) - OFF"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "description": "Throttle (Right) - IDLE"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "R Alt"
+                ]
+              },
+              "description": "Throttle (Left) - OFF"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "R Alt"
+                ]
+              },
+              "description": "Throttle (Left) - IDLE"
             }
           }
         ]

@@ -111,6 +111,22 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d145pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Flap Lever - Step Down",
+		},
+		["d146pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Flap Lever - Step Up",
+		},
 		["d3001pnilu3001cd24vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -134,22 +150,6 @@ local diff = {
 				},
 			},
 			["name"] = "Gun Trigger - FIRST DETENT",
-		},
-		["d3019pnilunilcd2vd-1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "Flap Switch - Step Aft",
-		},
-		["d3019pnilunilcd2vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Flap Switch - Step Fwd",
 		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {
