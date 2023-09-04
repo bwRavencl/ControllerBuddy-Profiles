@@ -53,6 +53,13 @@
         "modeUuid": "73929311-94ce-46fc-a48d-05d226b9dea9"
       }
     ],
+    "7": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "11f7eeb9-2b65-4709-9aed-d37b86000e18"
+      }
+    ],
     "9": [
       {
         "toggle": true,
@@ -341,6 +348,12 @@
             }
           }
         ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ],
         "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -354,6 +367,97 @@
                 "modifierCodes": []
               },
               "description": "Release flare"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "11f7eeb9-2b65-4709-9aed-d37b86000e18",
+      "description": "HUD / Cockpit / Damage",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "D"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Damage report"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Change HUD mode"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "]"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Brighten HUD"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Back"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Cockpit toggle"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "["
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Dim HUD"
             }
           }
         ]
@@ -940,6 +1044,20 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "F4"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Track target view"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -959,11 +1077,13 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "F4"
+                  "M"
                 ],
-                "modifierCodes": []
+                "modifierCodes": [
+                  "L Shift"
+                ]
               },
-              "description": "Track target view"
+              "description": "In-flight nav map"
             }
           }
         ],
@@ -1003,7 +1123,7 @@
     },
     {
       "uuid": "c860521d-0c83-4abd-8c78-e19d071b6fad",
-      "description": "Waypoint",
+      "description": "Waypoint / Autopilot",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -1039,12 +1159,28 @@
               "description": "Next waypoint"
             }
           }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "A"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Autopilot"
+            }
+          }
         ]
       }
     },
     {
       "uuid": "97321b94-571b-49f5-a12e-76fcf3009607",
-      "description": "Weapon",
+      "description": "Weapon / Jettison",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "6": [
@@ -1079,6 +1215,24 @@
             }
           }
         ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "K"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Jettison ground ordonance"
+            }
+          }
+        ],
         "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -1092,6 +1246,24 @@
                 "modifierCodes": []
               },
               "description": "Prev. weapon"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "J"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Jettison ext. fuel"
             }
           }
         ]
