@@ -46,6 +46,7 @@ jobs:
           arguments: installDist
           build-root-directory: ControllerBuddy
       - name: Update Visualizations
+        timeout-minutes: 7
         run: |
           rm -f ControllerBuddy-Pages/profiles/*.html
           xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs &
