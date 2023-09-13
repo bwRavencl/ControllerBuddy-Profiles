@@ -142,12 +142,23 @@ local diff = {
 			},
 			["name"] = "Push To Talk Radio 2",
 		},
-		["d101pnilunilcdnilvdnilvpnilvunil"] = {
+		["d10088pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN18",
+				},
+			},
+			["name"] = "DogBone Master Arm Nuc./Conv. Toggle",
+		},
+		["d10111pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN15",
 				},
 			},
+			["name"] = "Missile Selector Rotational cw",
+		},
+		["d101pnilunilcdnilvdnilvpnilvunil"] = {
 			["name"] = "Weapon Change",
 			["removed"] = {
 				[1] = {

@@ -161,6 +161,24 @@
         ]
       },
       "buttonToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "description": "Tail Hook"
+            }
+          }
+        ],
         "2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
@@ -231,6 +249,16 @@
             }
           }
         ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 17,
+              "description": "DogBone Master Arm. Nuc./Conv. Toggle"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -267,7 +295,7 @@
             "data": {
               "longPress": false,
               "buttonId": 14,
-              "description": "Weapon Change"
+              "description": "Missile Selector Rotational cw"
             }
           }
         ],
@@ -276,22 +304,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "G"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              },
-              "description": "Tail Hook"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_ON_RELEASE",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
