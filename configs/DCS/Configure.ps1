@@ -1,10 +1,10 @@
-Write-Host Configuring DCS World for use with ControllerBuddy-Profiles...`n
+Write-Output "Configuring DCS World for use with ControllerBuddy-Profiles...`n"
 
 $savedGamesDir = "$env:USERPROFILE\Saved Games"
 $dcsUserDirs = @("$savedGamesDir\DCS", "$savedGamesDir\DCS.openbeta") | Where-Object -FilterScript { Test-Path $_ -PathType Container }
 
 if ($dcsUserDirs.count -eq 0) {
-    Write-Host "Error: No DCS user directory exists, neither '$($dcsUserDirs -join ''' nor ''')'"
+    Write-Output "Error: No DCS user directory exists, neither '$($dcsUserDirs -join ''' nor ''')'"
     Exit 1
 }
 
@@ -12,12 +12,12 @@ Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
 
 $vJoyDevice = Get-VJoyDevice
 
-if ($vJoyDevice -eq $null) {
-    Write-Host Error: Could not find vJoy device
+if ($null -eq $vJoyDevice) {
+    Write-Output 'Error: Could not find vJoy device'
     Exit 1
 }
 
-$gamepadDevices = Get-GamepadDevices
+$gamepadDevices = Get-GamepadDeviceList
 
 function Get-DcsInstanceGuid {
     param (
@@ -46,7 +46,7 @@ foreach ($dcsUserDir in $dcsUserDirs) {
     $diffLuaFiles = Get-ChildItem -Path $PSScriptRoot -File -Depth 1 -Filter $diffLuaFilename
 
     if ($diffLuaFiles.count -eq 0) {
-        Write-Host "Error: $diffLuaFilename files are missing"
+        Write-Output "Error: $diffLuaFilename files are missing"
         Exit 1
     }
 
@@ -57,14 +57,14 @@ foreach ($dcsUserDir in $dcsUserDirs) {
         try {
             New-Item $destinationDir -ItemType 'directory' -Force | Out-Null
             Copy-Item $diffLuaFile.FullName $destinationFile -errorAction stop
-            Write-Host "Copied '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
+            Write-Output "Copied '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
         } catch {
-            Write-Host "Error: Could not copy '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
+            Write-Output "Error: Could not copy '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
             Exit 1
         }
     }
 
-    Write-Host
+    Write-Output ''
 
     $disabledDevicesLuaFile = "$inputDir\disabled.lua"
 
@@ -74,7 +74,7 @@ local disabled = {
 	["devices"] = {
 
 '@
-        $gamepadDevices | foreach {
+        $gamepadDevices | ForEach-Object {
             $fileContent += "`t`t[`"$($_.InstanceName) {$(Get-DcsInstanceGuid $_)}`"] = true,`n"
         }
         $fileContent += @'
@@ -85,41 +85,41 @@ return disabled
 '@
 
         Set-Content -Path $disabledDevicesLuaFile -Value $fileContent -NoNewline
-        Write-Host Wrote file: $disabledDevicesLuaFile
+        Write-Output "Wrote file: $disabledDevicesLuaFile"
     } catch {
-        Write-Host Error: Could not write file: $disabledDevicesLuaFile
+        Write-Output "Error: Could not write file: $disabledDevicesLuaFile"
         Exit 1
     }
 
     $optionsLuaFile = "$configDir\options.lua"
     if (-not (Test-Path $optionsLuaFile -PathType Leaf)) {
-        Write-Host "Error: file '$optionsLuaFile' does not exist"
+        Write-Output "Error: file '$optionsLuaFile' does not exist"
         Exit 1
     }
 
     $synchronizeControlsLine = Select-String -Path $optionsLuaFile -Pattern '["synchronize_controls"]' -SimpleMatch
-    if ($synchronizeControlsLine -eq $null)
+    if ($null -eq $synchronizeControlsLine)
     {
-        Write-Host "Error: file '$optionsLuaFile' is missing the 'synchronize_controls' line"
+        Write-Output "Error: file '$optionsLuaFile' is missing the 'synchronize_controls' line"
         Exit 1
     }
 
     $synchronizeControlsLineParts = $synchronizeControlsLine.Line -split '=', 2
     if ($synchronizeControlsLineParts.Count -ne 2) {
-        Write-Host "Error: file '$optionsLuaFile' contains a malformed 'synchronize_controls' line"
+        Write-Output "Error: file '$optionsLuaFile' contains a malformed 'synchronize_controls' line"
         Exit 1
     }
 
     if (($synchronizeControlsLineParts[1].Trim() -replace ',') -ne 'true') {
         try {
-            Write-Host
+            Write-Output ''
             $optionsLuaContent = Get-Content $optionsLuaFile
             $optionsLuaContent[$synchronizeControlsLine.LineNumber - 1] = "`t`t[`"synchronize_controls`"] = true,"
-            
+
             Set-Content -Path $optionsLuaFile -Value $optionsLuaContent
-            Write-Host Updated file: $optionsLuaFile
+            Write-Output "Updated file: $optionsLuaFile"
         } catch {
-            Write-Host Error: Could not update file: $optionsLuaFile
+            Write-Output "Error: Could not update file: $optionsLuaFile"
             Exit 1
         }
     }
@@ -127,9 +127,9 @@ return disabled
 
 $simpleRadioDir = (Get-ItemPropertyValue -Path HKCU:\SOFTWARE\DCS-SR-Standalone -Name SRPathStandalone -ErrorAction Ignore).TrimEnd('\')
 
-if ($simpleRadioDir -ne $null) {
+if ($null -ne $simpleRadioDir) {
     if (-not (Test-Path $simpleRadioDir -PathType Container)) {
-        Write-Host "Error: DCS-SimpleRadio-Standalone directory '$simpleRadioDir' does not exist"
+        Write-Output "Error: DCS-SimpleRadio-Standalone directory '$simpleRadioDir' does not exist"
         Exit 1
     }
 
@@ -183,12 +183,12 @@ guid=$($vJoyDevice.InstanceGuid)
 "@
 
         Add-Content -Path $defaultCfgFile -Value $simpleRadioSwitchSections
-        Write-Host Updated file: $defaultCfgFile
+        Write-Output "Updated file: $defaultCfgFile"
     } catch {
-        Write-Host Error: Could not update file: $defaultCfgFile
+        Write-Output "Error: Could not update file: $defaultCfgFile"
         Exit 1
     }
 }
 
-Write-Host `nDCS World is now fully configured!
+Write-Output "`nDCS World is now fully configured!"
 Exit 0

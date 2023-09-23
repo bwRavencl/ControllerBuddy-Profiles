@@ -1,7 +1,7 @@
 Set-Variable BmsVersion -Option Constant -Value '4.37'
 Set-Variable BmsFullName -Option Constant -Value "Falcon BMS $BmsVersion"
 
-Write-Host "Configuring $BmsFullName for use with ControllerBuddy-Profiles...`n"
+Write-Output "Configuring $BmsFullName for use with ControllerBuddy-Profiles...`n"
 
 Set-Variable BmsRegistryKey -Option Constant -Value "HKLM:\SOFTWARE\WOW6432Node\Benchmark Sims\$BmsFullName"
 Set-Variable BmsBaseDirRegistryValue -Option Constant -Value baseDir
@@ -6968,15 +6968,15 @@ Set-Variable GamepadSetupFileContent -Option Constant -Value @'
 
 $bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore).TrimEnd('\')
 
-if ($bmsDir -eq $null) {
-    Write-Host "Error: $BmsFullName registry value '$BmsRegistryKey\$BmsBaseDirRegistryValue' does not exist"
+if ($null -eq $bmsDir) {
+    Write-Output "Error: $BmsFullName registry value '$BmsRegistryKey\$BmsBaseDirRegistryValue' does not exist"
     Exit 1
 }
 
 $bmsConfigDir = "$bmsDir\User\Config"
 
 if (-not (Test-Path $bmsConfigDir -PathType Container)) {
-    Write-Host "Error: $BmsFullName config directory '$bmsConfigDir' does not exist"
+    Write-Output "Error: $BmsFullName config directory '$bmsConfigDir' does not exist"
     Exit 1
 }
 
@@ -6984,8 +6984,8 @@ Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
 
 $vJoyDevice = Get-VJoyDevice
 
-if ($vJoyDevice -eq $null) {
-    Write-Host Error: Could not find vJoy device
+if ($null -eq $vJoyDevice) {
+    Write-Output 'Error: Could not find vJoy device'
     Exit 1
 }
 
@@ -7001,20 +7001,20 @@ function Write-SetupFile {
 
     try {
         Set-Content -Path $setupFile -Value $FileContent -NoNewline
-        Write-Host Wrote file: $setupFile
+        Write-Output "Wrote file: $setupFile"
     } catch {
-        Write-Host Error: Could not write file: $setupFile
+        Write-Output "Error: Could not write file: $setupFile"
         Exit 1
     }
 }
 
 Write-SetupFile $vJoyDevice $VjoySetupFileContent
 
-Get-GamepadDevices | foreach {
+Get-GamepadDeviceList | ForEach-Object {
     Write-SetupFile $_ $GamepadSetupFileContent
 }
 
-Write-Host @"
+Write-Output @"
 
 $BmsFullName is now almost fully configured!
 

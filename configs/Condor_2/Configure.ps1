@@ -1,4 +1,4 @@
-Write-Host Configuring Condor 2 for use with ControllerBuddy-Profiles...`n
+Write-Output "Configuring Condor 2 for use with ControllerBuddy-Profiles...`n"
 
 Set-Variable ControlsIniKeyboardAssignments -Option Constant -Value @'
 3008=203
@@ -107,13 +107,13 @@ VerticalViewCenter=0
 $pilotsDir = "$([Environment]::GetFolderPath("MyDocuments"))\Condor\Pilots"
 
 if (-not (Test-Path $pilotsDir -PathType Container)) {
-    Write-Host "Error: Condor 2 'Pilots' directory '$pilotsDir' does not exist"
+    Write-Output "Error: Condor 2 'Pilots' directory '$pilotsDir' does not exist"
     Exit 1
 }
 
 $pilotDirs = Get-ChildItem -Path $pilotsDir -Directory
 if ($pilotDirs.Count -eq 0) {
-    Write-Host "Error: Condor 2 'Pilots' directory is empty"
+    Write-Output "Error: Condor 2 'Pilots' directory is empty"
     Exit 1
 }
 
@@ -121,15 +121,15 @@ Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
 
 $keyboardDevice = Get-KeyboardDevice
 
-if ($keyboardDevice -eq $null) {
-    Write-Host Error: Could not find keyboard device
+if ($null -eq $keyboardDevice) {
+    Write-Output 'Error: Could not find keyboard device'
     Exit 1
 }
 
 $vJoyDevice = Get-VJoyDevice
 
-if ($vJoyDevice -eq $null) {
-    Write-Host Error: Could not find vJoy device
+if ($null -eq $vJoyDevice) {
+    Write-Output 'Error: Could not find vJoy device'
     Exit 1
 }
 
@@ -142,14 +142,14 @@ function Get-DeviceHeader {
     "[{$($Device.InstanceGuid.ToString().ToUpper())}]`n"
 }
 
-$pilotDirs | foreach {
+$pilotDirs | ForEach-Object {
     $controlsFile = "$($_.FullName)\controls.ini"
 
     try {
         Set-Content -Path $controlsFile -Value "$(Get-DeviceHeader $keyboardDevice)$ControlsIniKeyboardAssignments`n$(Get-DeviceHeader $vJoyDevice)$ControlsIniVjoyAssignments"
-        Write-Host Wrote file: $controlsFile
+        Write-Output "Wrote file: $controlsFile"
     } catch {
-        Write-Host Error: Could not write file: $controlsFile
+        Write-Output "Error: Could not write file: $controlsFile"
         Exit 1
     }
 
@@ -161,12 +161,12 @@ $pilotDirs | foreach {
         }
 
         Add-Content -Path $setupFile -Value $SetupIniInputSection
-        Write-Host Updated file: $setupFile
+        Write-Output "Updated file: $setupFile"
     } catch {
-        Write-Host Error: Could not update file: $setupFile
+        Write-Output "Error: Could not update file: $setupFile"
         Exit 1
     }
 }
 
-Write-Host `nCondor 2 is now fully configured!
+Write-Output "`nCondor 2 is now fully configured!"
 Exit 0

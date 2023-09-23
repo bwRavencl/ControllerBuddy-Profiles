@@ -1,19 +1,19 @@
-Write-Host Configuring IL-2 Sturmovik Great Battles for use with ControllerBuddy-Profiles...`n
+Write-Output "Configuring IL-2 Sturmovik Great Battles for use with ControllerBuddy-Profiles...`n"
 
 Set-Variable UninstallRegistryKey -Option Constant -Value "HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{66F649A9-0FA2-487E-BC0D-894BD7E89D5E}_is1"
 Set-Variable InstallLocationRegistryValue -Option Constant -Value InstallLocation
 
 $il2Dir = (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore).TrimEnd('\')
 
-if ($il2Dir -eq $null) {
-    Write-Host "Error: IL-2 Sturmovik Great Battles registry value '$UninstallRegistryKey\$InstallLocationRegistryValue' does not exist"
+if ($null -eq $il2Dir) {
+    Write-Output "Error: IL-2 Sturmovik Great Battles registry value '$UninstallRegistryKey\$InstallLocationRegistryValue' does not exist"
     Exit 1
 }
 
 $il2InputDir = "$il2Dir\data\input"
 
 if (-not (Test-Path $il2InputDir -PathType Container)) {
-    Write-Host "Error: IL-2 Sturmovik Great Battles input directory '$il2InputDir' does not exist"
+    Write-Output "Error: IL-2 Sturmovik Great Battles input directory '$il2InputDir' does not exist"
     Exit 1
 }
 
@@ -21,8 +21,8 @@ Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
 
 $vJoyDevice = Get-VJoyDevice
 
-if ($vJoyDevice -eq $null) {
-    Write-Host Error: Could not find vJoy device
+if ($null -eq $vJoyDevice) {
+    Write-Output 'Error: Could not find vJoy device'
     Exit 1
 }
 
@@ -30,7 +30,7 @@ $devicesTxt = "$il2InputDir\devices.txt"
 
 if (Test-Path $devicesTxt -PathType Leaf) {
     $devicesTxtContent = (Get-Content $devicesTxt -Raw)
-} 
+}
 
 if ([string]::IsNullOrEmpty($devicesTxtContent)) {
     $devicesTxtContent = 'configId,guid,model|'
@@ -49,19 +49,19 @@ if ($devicesTxtContent -notmatch $([Regex]::Escape($vJoyDeviceLineWithIndexZero)
 
 try {
     Set-Content -Path $devicesTxt -Value $devicesTxtContent -NoNewline
-    Write-Host Wrote file: $devicesTxt
+    Write-Output "Wrote file: $devicesTxt"
 } catch {
-    Write-Host Error: Could not write file: $devicesTxt
+    Write-Output "Error: Could not write file: $devicesTxt"
     Exit 1
 }
 
-Write-Host
+Write-Output ''
 
 $currentFilesFilename = 'current.*'
 $currenFiles = Get-ChildItem -Path $PSScriptRoot -File -Depth 0 -Filter $currentFilesFilename
 
 if ($currenFiles.count -eq 0) {
-    Write-Host "Error: $currentFilesFilename files are missing"
+    Write-Output "Error: $currentFilesFilename files are missing"
     Exit 1
 }
 
@@ -70,9 +70,9 @@ foreach ($currenFile in $currenFiles) {
 
     try {
         Copy-Item $currenFile.FullName $il2InputDir -errorAction stop
-        Write-Host "Copied '$($currenFile.Name)' to: $destinationFile"
+        Write-Output "Copied '$($currenFile.Name)' to: $destinationFile"
     } catch {
-        Write-Host "Error: Could not copy '$($currenFile.Name)' to: $destinationFile"
+        Write-Output "Error: Could not copy '$($currenFile.Name)' to: $destinationFile"
         Exit 1
     }
 }
@@ -81,7 +81,7 @@ $snapsCfgFilename = 'snaps.cfg'
 $snapsCfg = "$PSScriptRoot\$snapsCfgFilename"
 
 if (-not (Test-Path $snapsCfg -PathType Leaf)) {
-    Write-Host "Error: $snapsCfgFilename file is missing"
+    Write-Output "Error: $snapsCfgFilename file is missing"
     Exit 1
 }
 
@@ -90,11 +90,11 @@ $destinationFile = "$snapviewsDir\$snapsCfgFilename"
 
 try {
     Copy-Item $snapsCfg $snapviewsDir -errorAction stop
-    Write-Host "Copied '$snapsCfg' to: $destinationFile"
+    Write-Output "Copied '$snapsCfg' to: $destinationFile"
 } catch {
-    Write-Host "Error: Could not copy '$snapsCfgFilename' to: $destinationFile"
+    Write-Output "Error: Could not copy '$snapsCfgFilename' to: $destinationFile"
     Exit 1
 }
 
-Write-Host `nIL-2 Sturmovik Great Battles is now fully configured!
+Write-Output "`nIL-2 Sturmovik Great Battles is now fully configured!"
 Exit 0
