@@ -6966,6 +6966,9 @@ Set-Variable GamepadSetupFileContent -Option Constant -Value @'
 </JoyAssgn>
 '@
 
+Set-Variable BMSFullKeyFilename -Option Constant -Value 'BMS - Full.key'
+Set-Variable BMSAutoKeyFilename -Option Constant -Value 'BMS - Auto.key'
+
 $bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore).TrimEnd('\')
 
 if ($null -eq $bmsDir) {
@@ -7012,6 +7015,15 @@ Write-SetupFile $vJoyDevice $VjoySetupFileContent
 
 Get-GamepadDeviceList | ForEach-Object {
     Write-SetupFile $_ $GamepadSetupFileContent
+}
+
+try {
+    $destinationFile = "$bmsConfigDir\$BMSAutoKeyFilename"
+    Copy-Item "$bmsConfigDir\$BMSFullKeyFilename" $destinationFile -errorAction stop
+    Write-Output "Copied '$BMSFullKeyFilename' to: $destinationFile"
+} catch {
+    Write-Output "Error: Could not copy '$BMSFullKeyFilename' to: $destinationFile"
+    Exit 1
 }
 
 Write-Output @"
