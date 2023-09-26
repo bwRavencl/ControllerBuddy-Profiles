@@ -6966,8 +6966,12 @@ Set-Variable GamepadSetupFileContent -Option Constant -Value @'
 </JoyAssgn>
 '@
 
-Set-Variable BMSFullKeyFilename -Option Constant -Value 'BMS - Full.key'
-Set-Variable BMSAutoKeyFilename -Option Constant -Value 'BMS - Auto.key'
+Set-Variable KeyFileExtension -Option Constant -Value '.key'
+Set-Variable BMSFullKeyFilename -Option Constant -Value "BMS - Full$KeyFileExtension"
+Set-Variable BMSAutoKeyBasename -Option Constant -Value 'BMS - Auto'
+Set-Variable BMSAutoKeyFilename -Option Constant -Value "$BMSAutoKeyBasename$KeyFileExtension"
+
+Set-Variable UserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\2.3.0.5\user.config"
 
 $bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore).TrimEnd('\')
 
@@ -7024,6 +7028,41 @@ try {
 } catch {
     Write-Output "Error: Could not copy '$BMSFullKeyFilename' to: $destinationFile"
     Exit 1
+}
+
+if (Test-Path $UserConfigFile -PathType Leaf) {
+    try {
+        $userConfigXml = [xml]::new()
+        $userConfigXml.PreserveWhitespace = $true
+        $userConfigXml.Load($UserConfigFile)
+
+        function Set-UserConfigSetting {
+            [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '', Justification = 'False positive as function itself does not change system state')]
+            [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSReviewUnusedParameter', 'Name', Justification = 'False positive as rule does not scan child scopes')]
+            [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSReviewUnusedParameter', 'Value', Justification = 'False positive as rule does not scan child scopes')]
+            param (
+                [Parameter(Mandatory = $true, Position = 0)]
+                [string]$Name,
+                [Parameter(Mandatory = $true, Position = 1)]
+                [string]$Value
+            )
+
+            $userConfigXml.configuration.userSettings.'FalconBMS.Launcher.Properties.Settings'.setting | Where-Object { ($_.name -eq $Name) -and ($_.value -ne $Value) } | ForEach-Object { $_.value = $Value ; return $true }
+        }
+
+        if ((Set-UserConfigSetting -Name 'NoOverride' -Value 'False') -bor (Set-UserConfigSetting -Name 'SelectedKeyFileName' -Value $BMSAutoKeyBasename)) {
+            try {
+              $userConfigXml.Save($UserConfigFile)
+              Write-Output "Wrote file: $UserConfigFile"
+            } catch {
+              Write-Output "Error: Could not write file: $UserConfigFile"
+              Exit 1
+            }
+        }
+    } catch {
+        Write-Output "Error: Could not process file: $UserConfigFile"
+        Exit 1
+  }
 }
 
 Write-Output @"
