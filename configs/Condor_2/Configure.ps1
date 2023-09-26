@@ -135,7 +135,7 @@ if ($null -eq $vJoyDevice) {
 
 function Get-DeviceHeader {
     param (
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory = $true)]
         [SharpDX.DirectInput.DeviceInstance]$Device
     )
 

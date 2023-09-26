@@ -21,7 +21,7 @@ $gamepadDevices = Get-GamepadDeviceList
 
 function Get-DcsInstanceGuid {
     param (
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory = $true)]
         [SharpDX.DirectInput.DeviceInstance]$Device
     )
 

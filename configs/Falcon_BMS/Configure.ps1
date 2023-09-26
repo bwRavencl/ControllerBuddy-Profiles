@@ -6991,9 +6991,9 @@ if ($null -eq $vJoyDevice) {
 
 function Write-SetupFile {
     param (
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory = $true)]
         [SharpDX.DirectInput.DeviceInstance]$Device,
-        [Parameter(Mandatory=$true)]
+        [Parameter(Mandatory = $true)]
         [string]$FileContent
     )
 
