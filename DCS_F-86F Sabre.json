@@ -45,6 +45,13 @@
         "longPress": false,
         "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
       }
+    ],
+    "13": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "ab92c688-3e2c-45b3-ab5b-0778179dca67"
+      }
     ]
   },
   "modes": [
@@ -253,20 +260,6 @@
         ],
         "11": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "Home"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Throttle - Start Engine"
-            }
-          },
-          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
               "longPress": false,
@@ -304,7 +297,7 @@
                   }
                 }
               ],
-              "activation": "SINGLE_ON_RELEASE"
+              "activation": "SINGLE_IMMEDIATELY"
             }
           }
         ],
@@ -312,47 +305,17 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "F"
+                  "W"
                 ],
                 "modifierCodes": [
-                  "L Shift"
+                  "R Ctrl"
                 ]
               },
-              "description": "Flaps Down"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "End"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Throttle - Stop Engine"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "G"
-                ],
-                "modifierCodes": []
-              },
-              "description": "Landing Gear Up/Down"
+              "description": "Gun-Missile Selector-Switch CCW"
             }
           }
         ],
@@ -360,17 +323,17 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "F"
+                  "W"
                 ],
                 "modifierCodes": [
-                  "L Ctrl"
+                  "R Alt"
                 ]
               },
-              "description": "Flaps Up"
+              "description": "Gun-Missile Selector-Switch CCW"
             }
           }
         ]
@@ -439,6 +402,95 @@
             "data": {
               "longPress": false,
               "direction": "LEFT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "ab92c688-3e2c-45b3-ab5b-0778179dca67",
+      "description": "Gear / Flaps / Throttle",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Landing Gear Up/Down"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Flaps Down"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "description": "Flaps Up"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Throttle - Stop Engine"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Throttle - Start Engine"
             }
           }
         ]
