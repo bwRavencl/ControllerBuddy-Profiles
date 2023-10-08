@@ -46,6 +46,13 @@
         "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
       }
     ],
+    "7": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "814484a0-615c-4834-9d15-6e88d4975a65"
+      }
+    ],
     "9": [
       {
         "toggle": true,
@@ -80,7 +87,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -94,7 +102,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle"
             }
           }
         ],
@@ -106,7 +115,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Aileron"
             }
           }
         ],
@@ -118,7 +128,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Elevator"
             }
           }
         ],
@@ -129,7 +140,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0
+              "buttonId": 0,
+              "description": "Fire Guns (Cannon)"
             }
           }
         ],
@@ -146,7 +158,8 @@
                   "Space"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Fire Guns (Machine Guns)"
             }
           }
         ]
@@ -156,27 +169,23 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "REPEAT",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num/"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Reset View"
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "PgDn"
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 3,
+              "description": "Zoom 90°"
             }
           }
         ],
@@ -186,39 +195,18 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "description": "Camera Control in Independent Mode"
             }
           }
         ],
         "6": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "F1"
-                ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
-              }
-            }
-          }
-        ],
-        "7": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Back"
-                ],
-                "modifierCodes": []
-              }
+              "buttonId": 12,
+              "description": "Drop Ordonance (Bombs)"
             }
           }
         ],
@@ -233,7 +221,8 @@
                   "V"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Lower Landing Flaps Position"
             }
           }
         ],
@@ -248,7 +237,8 @@
                   "G"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Toggle Undercarriage"
             }
           }
         ],
@@ -263,7 +253,8 @@
                   "F"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Raise Landing Flaps Position"
             }
           }
         ]
@@ -338,61 +329,6 @@
       }
     },
     {
-      "uuid": "83dbec06-651a-4c50-8c4c-93c1983c93c5",
-      "description": "Cowl",
-      "axisToActionsMap": {},
-      "buttonToActionsMap": {
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "5"
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 14
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "6"
-                ],
-                "modifierCodes": []
-              }
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 13
-            }
-          }
-        ]
-      }
-    },
-    {
       "uuid": "d7a60395-4c58-4a9e-88a3-44c811b45d53",
       "description": "Ground",
       "axisToActionsMap": {
@@ -403,7 +339,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 7
+              "buttonId": 7,
+              "description": "Full Left Wheel Brake"
             }
           }
         ],
@@ -414,7 +351,8 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 8
+              "buttonId": 8,
+              "description": "Full Right Wheel Brake"
             }
           }
         ]
@@ -425,7 +363,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 6
+              "buttonId": 9,
+              "description": "Lock Tail Skid"
             }
           }
         ],
@@ -440,7 +379,8 @@
                   "B"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Full Wheel Brakes"
             }
           }
         ],
@@ -457,7 +397,8 @@
                 "modifierCodes": [
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Toggle Canopy / Hatch / Door"
             }
           }
         ],
@@ -472,7 +413,8 @@
                   "I"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Start Selected Engine"
             }
           }
         ]
@@ -488,9 +430,10 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 3.0,
-              "axis": "X",
               "cursorSensitivity": 2000,
-              "invert": false
+              "axis": "X",
+              "invert": false,
+              "description": "Look Left/Right / Head Left/Right"
             }
           }
         ],
@@ -500,20 +443,10 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 3.0,
-              "axis": "Y",
               "cursorSensitivity": 2000,
-              "invert": false
-            }
-          }
-        ],
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 1
+              "axis": "Y",
+              "invert": false,
+              "description": "Look Up/Down / Head Forward/Back"
             }
           }
         ]
@@ -525,7 +458,26 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "description": "Translate Head"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F1"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Lean to Gunsight"
             }
           }
         ],
@@ -534,7 +486,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 12
+              "buttonId": 2,
+              "description": "Zoom out"
             }
           }
         ],
@@ -543,7 +496,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 11
+              "buttonId": 1,
+              "description": "Zoom in"
             }
           }
         ],
@@ -553,7 +507,8 @@
             "data": {
               "longPress": false,
               "clicks": 10,
-              "invert": false
+              "invert": false,
+              "description": "Head Up"
             }
           }
         ],
@@ -563,7 +518,45 @@
             "data": {
               "longPress": false,
               "clicks": 10,
-              "invert": true
+              "invert": true,
+              "description": "Head Down"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "814484a0-615c-4834-9d15-6e88d4975a65",
+      "description": "Manual Prop",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 4,
+              "description": "Propellor Pitch Mode - Toggle"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 10,
+              "description": "Decrease Propelor Pitch"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 11,
+              "description": "Increase Propelor Pitch"
             }
           }
         ]
@@ -571,7 +564,7 @@
     },
     {
       "uuid": "dcf2e226-6a80-49c8-9464-5a1c6cd4f873",
-      "description": "Mixture",
+      "description": "Mixture / Engine",
       "axisToActionsMap": {
         "1": [
           {
@@ -583,12 +576,31 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Mixture"
             }
           }
         ]
       },
       "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "`"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "description": "Select All Engines"
+            }
+          }
+        ],
         "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -602,7 +614,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Select #2 Engine"
             }
           }
         ],
@@ -619,7 +632,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Select #1 Engine"
             }
           }
         ]
@@ -635,8 +649,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -647,8 +661,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -709,7 +723,7 @@
     },
     {
       "uuid": "27a2002c-35b6-481d-9b99-ed7705dc0253",
-      "description": "Prop",
+      "description": "Prop / WEP",
       "axisToActionsMap": {
         "1": [
           {
@@ -721,7 +735,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Propellor Pitch"
             }
           }
         ]
@@ -729,19 +744,66 @@
       "buttonToActionsMap": {
         "6": [
           {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Back"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Toggle War Emergency Power"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "83dbec06-651a-4c50-8c4c-93c1983c93c5",
+      "description": "Radiator",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "5"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Close Radiator"
+            }
+          }
+        ],
+        "12": [
+          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 2
+              "buttonId": 6,
+              "description": "Open Oil Radiator"
             }
           }
         ],
         "13": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "REPEAT",
               "longPress": false,
-              "buttonId": 3
+              "keystroke": {
+                "keyCodes": [
+                  "6"
+                ],
+                "modifierCodes": []
+              },
+              "description": "Open Radiator"
             }
           }
         ],
@@ -750,7 +812,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 5
+              "buttonId": 5,
+              "description": "Close Oil Radiator"
             }
           }
         ]
@@ -763,19 +826,37 @@
       "buttonToActionsMap": {
         "1": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "REPEAT",
               "longPress": false,
-              "buttonId": 10
+              "keystroke": {
+                "keyCodes": [
+                  "X"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "description": "Trim Rudder Right"
             }
           }
         ],
         "2": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "REPEAT",
               "longPress": false,
-              "buttonId": 9
+              "keystroke": {
+                "keyCodes": [
+                  "Z"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "description": "Trim Rudder Left"
             }
           }
         ],
@@ -792,7 +873,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Trim Elevator Nose-Down"
             }
           }
         ],
@@ -809,7 +891,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Trim Aileron Right"
             }
           }
         ],
@@ -826,7 +909,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Trim Elevator Nose-Up"
             }
           }
         ],
@@ -843,7 +927,8 @@
                 "modifierCodes": [
                   "L Shift"
                 ]
-              }
+              },
+              "description": "Trim Aileron Left"
             }
           }
         ]
@@ -851,7 +936,7 @@
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View / Eject",
+      "description": "View / Bail Out",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "6": [
@@ -867,7 +952,8 @@
                 "modifierCodes": [
                   "L Ctrl"
                 ]
-              }
+              },
+              "description": "Bail Out"
             }
           }
         ],
@@ -882,7 +968,8 @@
                   "F1"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "Inside View"
             }
           }
         ],
@@ -897,7 +984,8 @@
                   "F3"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "External Flyby"
             }
           }
         ],
@@ -912,7 +1000,8 @@
                   "F2"
                 ],
                 "modifierCodes": []
-              }
+              },
+              "description": "External View"
             }
           }
         ]
@@ -920,12 +1009,12 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S0": {
-      "color": -16776961,
-      "inverted": false
-    },
     "S1": {
       "color": -65536,
+      "inverted": false
+    },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     },
     "Z": {
