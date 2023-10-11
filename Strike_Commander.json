@@ -1,5 +1,5 @@
 {
-  "version": "0.25",
+  "version": "0.26",
   "showOverlay": false,
   "showVrOverlay": false,
   "keyRepeatInterval": 30,
@@ -92,6 +92,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Step down engine power"
             }
           },
@@ -108,6 +109,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Step up engine power"
             }
           }
@@ -152,6 +154,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Track select target"
             }
           }
@@ -164,6 +167,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
+              "minActivationInterval": 0,
               "description": "Fire selected weapon"
             }
           }
@@ -182,6 +186,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Center view"
             }
           },
@@ -207,6 +212,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Select next weapon"
             }
           }
@@ -223,6 +229,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Dogfight mode"
             }
           }
@@ -239,6 +246,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Brakes on / off"
             }
           }
@@ -255,6 +263,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Calibrated / True airspeed"
             }
           }
@@ -271,6 +280,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Landing gear up / down"
             }
           }
@@ -287,6 +297,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Flaps up / down"
             }
           }
@@ -378,6 +389,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Chaff"
             }
           }
@@ -394,6 +406,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Flare"
             }
           }
@@ -419,6 +432,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Jettison selected weapon"
             }
           }
@@ -437,6 +451,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Jettison all air-to-ground weapons"
             }
           }
@@ -461,6 +476,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Pan right"
             }
           },
@@ -477,6 +493,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Pan left"
             }
           }
@@ -495,6 +512,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Pan down"
             }
           },
@@ -511,6 +529,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Pan up"
             }
           }
@@ -529,6 +548,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom out"
             }
           }
@@ -545,6 +565,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom in"
             }
           }
@@ -568,6 +589,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Communication systems"
             }
           }
@@ -584,6 +606,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Radar"
             }
           }
@@ -600,6 +623,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Damage control and fuel"
             }
           }
@@ -616,6 +640,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "AA radar single target track"
             }
           }
@@ -632,6 +657,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Gun camera MFD"
             }
           }
@@ -648,8 +674,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -660,8 +686,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -674,7 +700,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 1
+              "mouseButton": 1,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -684,7 +711,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -694,7 +722,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -739,6 +768,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Select no target"
             }
           }
@@ -755,6 +785,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Select next farther target"
             }
           }
@@ -773,6 +804,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Select next closer target"
             }
           }
@@ -798,6 +830,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Eject"
             }
           }
@@ -814,6 +847,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Front View"
             }
           }
@@ -830,6 +864,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Outside View"
             }
           }
@@ -846,6 +881,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Navigation"
             }
           }
@@ -862,6 +898,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Chase View"
             }
           }

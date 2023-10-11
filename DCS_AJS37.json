@@ -1,5 +1,5 @@
 {
-  "version": "0.25",
+  "version": "0.26",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -114,6 +114,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 1,
+              "minActivationInterval": 0,
               "description": "Reference button"
             }
           }
@@ -126,6 +127,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
+              "minActivationInterval": 0,
               "description": "Weapon Release"
             }
           }
@@ -138,6 +140,7 @@
             "data": {
               "longPress": false,
               "buttonId": 2,
+              "minActivationInterval": 0,
               "description": "Fast countermeasure dispense"
             }
           }
@@ -154,6 +157,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Wheelbrake"
             }
           }
@@ -192,6 +196,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           },
@@ -206,6 +211,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           }
@@ -216,6 +222,7 @@
             "data": {
               "longPress": false,
               "buttonId": 8,
+              "minActivationInterval": 0,
               "description": "Autothrottle disconnect / IR-missile fast select"
             }
           }
@@ -226,6 +233,7 @@
             "data": {
               "longPress": false,
               "buttonId": 6,
+              "minActivationInterval": 0,
               "description": "Trigger safety bracket TOGGLE"
             }
           }
@@ -242,6 +250,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Airbrake out/in/force out"
             }
           }
@@ -252,6 +261,7 @@
             "data": {
               "longPress": false,
               "buttonId": 7,
+              "minActivationInterval": 0,
               "description": "IR-missile uncage"
             }
           }
@@ -268,6 +278,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Landing Gear Up/Down (toggle)"
             }
           }
@@ -278,6 +289,7 @@
             "data": {
               "longPress": false,
               "buttonId": 17,
+              "minActivationInterval": 0,
               "description": "Rb05 switch input with flight stick (hold)"
             }
           }
@@ -394,6 +406,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 18,
+              "minActivationInterval": 0,
               "description": "FR22 Push-totalk (Short- Menu, Long- VOIP)"
             }
           }
@@ -406,6 +419,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 19,
+              "minActivationInterval": 0,
               "description": "FR24 Push-totalk (Short- Menu, Long- VOIP)"
             }
           }
@@ -427,6 +441,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
             }
           }
@@ -452,6 +467,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
             }
           }
@@ -468,6 +484,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom out slow"
             }
           }
@@ -484,6 +501,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom in slow"
             }
           }
@@ -503,6 +521,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Up"
             }
           }
@@ -522,6 +541,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Right"
             }
           }
@@ -541,6 +561,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Down"
             }
           }
@@ -560,6 +581,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
             }
           }
@@ -576,8 +598,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -588,8 +610,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -602,7 +624,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 1
+              "mouseButton": 1,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -612,7 +635,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -622,7 +646,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -686,6 +711,7 @@
               "minAxisValue": -0.25,
               "maxAxisValue": 0.9,
               "buttonId": 4,
+              "minActivationInterval": 0,
               "description": "T1 Fix (Two-stage trigger middle position)"
             }
           },
@@ -696,6 +722,7 @@
               "minAxisValue": 0.9,
               "maxAxisValue": 1.0,
               "buttonId": 5,
+              "minActivationInterval": 0,
               "description": "TV Fix (Three position switch)"
             }
           }
@@ -708,6 +735,7 @@
             "data": {
               "longPress": false,
               "buttonId": 11,
+              "minActivationInterval": 0,
               "description": "A2 Mode"
             }
           }
@@ -718,6 +746,7 @@
             "data": {
               "longPress": false,
               "buttonId": 10,
+              "minActivationInterval": 0,
               "description": "A1 Mode"
             }
           }
@@ -728,6 +757,7 @@
             "data": {
               "longPress": false,
               "buttonId": 3,
+              "minActivationInterval": 0,
               "description": "T0 Fix (three position switch)"
             }
           }
@@ -738,6 +768,7 @@
             "data": {
               "longPress": false,
               "buttonId": 9,
+              "minActivationInterval": 0,
               "description": "A0 Mode"
             }
           }
@@ -748,6 +779,7 @@
             "data": {
               "longPress": false,
               "buttonId": 12,
+              "minActivationInterval": 0,
               "description": "Radar eleveation up"
             }
           }
@@ -758,6 +790,7 @@
             "data": {
               "longPress": false,
               "buttonId": 15,
+              "minActivationInterval": 0,
               "description": "Radar Range Increase"
             }
           }
@@ -768,6 +801,7 @@
             "data": {
               "longPress": false,
               "buttonId": 13,
+              "minActivationInterval": 0,
               "description": "Radar eleveation down"
             }
           }
@@ -778,6 +812,7 @@
             "data": {
               "longPress": false,
               "buttonId": 14,
+              "minActivationInterval": 0,
               "description": "Radar Range Decrease"
             }
           }
@@ -801,6 +836,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Roll centering (Roll trim reset)"
             }
           }
@@ -819,6 +855,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Rudder: Right"
             }
           }
@@ -837,6 +874,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Rudder: Left"
             }
           }
@@ -855,6 +893,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Hat - NOSE DOWN"
             }
           }
@@ -873,6 +912,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Hat - ROLL RIGHT"
             }
           }
@@ -891,6 +931,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Hat - NOSE UP"
             }
           }
@@ -909,6 +950,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Hat - ROLL LEFT"
             }
           }
@@ -940,6 +982,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Eject (3 times)"
             }
           }
@@ -956,6 +999,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F1 Cockpit view"
             }
           }
@@ -972,6 +1016,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F10 Theater map view"
             }
           }
@@ -988,6 +1033,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F4 Camera mounted on airframe"
             }
           }
@@ -1004,6 +1050,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F2 Aircraft view"
             }
           }

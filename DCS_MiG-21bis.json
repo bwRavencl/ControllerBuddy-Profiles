@@ -1,5 +1,5 @@
 {
-  "version": "0.25",
+  "version": "0.26",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -114,6 +114,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 1,
+              "minActivationInterval": 0,
               "description": "Weapons Release"
             }
           }
@@ -126,6 +127,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
+              "minActivationInterval": 0,
               "description": "Fire Gun"
             }
           }
@@ -138,6 +140,7 @@
             "data": {
               "longPress": false,
               "buttonId": 2,
+              "minActivationInterval": 0,
               "description": "Drop Countermeasures (ASO and SPS-141)"
             }
           }
@@ -154,6 +157,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Wheel Brakes"
             }
           }
@@ -192,6 +196,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           },
@@ -206,6 +211,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           }
@@ -222,6 +228,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "SAU - Recovery"
             }
           },
@@ -239,6 +246,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "SAU cancel current mode"
             }
           }
@@ -249,6 +257,7 @@
             "data": {
               "longPress": false,
               "buttonId": 3,
+              "minActivationInterval": 0,
               "description": "Select next weapon"
             }
           }
@@ -265,6 +274,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Drag Chute - Activate"
             }
           },
@@ -279,6 +289,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Airbrakes On/Off"
             }
           }
@@ -295,6 +306,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Flaps Down"
             }
           }
@@ -316,6 +328,7 @@
                       ],
                       "modifierCodes": []
                     },
+                    "minActivationInterval": 0,
                     "description": "Gears Down"
                   }
                 },
@@ -332,6 +345,7 @@
                         "L Ctrl"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Gears Handle Neutral"
                   }
                 },
@@ -348,6 +362,7 @@
                         "L Shift"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Gears Down"
                   }
                 },
@@ -364,6 +379,7 @@
                         "L Ctrl"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Gears Handle Neutral"
                   }
                 }
@@ -386,6 +402,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Drop Center Fuel Pod"
             }
           },
@@ -402,6 +419,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Flaps Up"
             }
           }
@@ -524,6 +542,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Intercomm menu"
             }
           },
@@ -534,6 +553,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 99,
+              "minActivationInterval": 0,
               "description": "cockpit r.1 VoIP PTT"
             }
           }
@@ -555,6 +575,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
             }
           }
@@ -580,6 +601,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
             }
           }
@@ -596,6 +618,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom out slow"
             }
           }
@@ -612,6 +635,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom in slow"
             }
           }
@@ -631,6 +655,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Up"
             }
           }
@@ -650,6 +675,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Right"
             }
           }
@@ -669,6 +695,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Down"
             }
           }
@@ -688,6 +715,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
             }
           }
@@ -704,8 +732,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -716,8 +744,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -730,7 +758,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 1
+              "mouseButton": 1,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -740,7 +769,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -750,7 +780,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -800,6 +831,7 @@
                         "L Alt"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Locked Beam On"
                   }
                 },
@@ -817,6 +849,7 @@
                         "L Shift"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Locked Beam Off"
                   }
                 }
@@ -840,6 +873,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Radar ECM protection panel - Reset"
             }
           }
@@ -856,6 +890,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Target Lock On"
             }
           }
@@ -875,6 +910,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Radar Off"
             }
           },
@@ -896,6 +932,7 @@
                         "L Alt"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Radar Standby"
                   }
                 },
@@ -913,6 +950,7 @@
                         "L Alt"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Radar On"
                   }
                 }
@@ -935,6 +973,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Radar ECM protection panel - IFF"
             }
           }
@@ -951,6 +990,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "TDC Range / Pipper Span +"
             }
           }
@@ -967,6 +1007,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Target Size +"
             }
           }
@@ -983,6 +1024,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "TDC Range / Pipper Span -"
             }
           }
@@ -1001,6 +1043,7 @@
                   "L Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Target Size -"
             }
           }
@@ -1026,6 +1069,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Pitch Down"
             }
           }
@@ -1044,6 +1088,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Pitch Up"
             }
           }
@@ -1075,6 +1120,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Eject (3 times)"
             }
           }
@@ -1091,6 +1137,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F1 Cockpit view"
             }
           }
@@ -1107,6 +1154,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F10 Theater map view"
             }
           }
@@ -1125,6 +1173,7 @@
                   "L Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Helmet visor On/Off"
             }
           }
@@ -1141,6 +1190,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F2 Aircraft view"
             }
           }

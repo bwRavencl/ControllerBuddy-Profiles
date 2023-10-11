@@ -1,5 +1,5 @@
 {
-  "version": "0.25",
+  "version": "0.26",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -142,6 +142,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 1,
+              "minActivationInterval": 0,
               "description": "S3: Weapon Launch"
             }
           },
@@ -165,6 +166,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
+              "minActivationInterval": 0,
               "description": "S4: Fire Main Gun"
             }
           },
@@ -216,6 +218,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           },
@@ -230,6 +233,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           }
@@ -246,6 +250,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Dragging Chute"
             }
           },
@@ -260,6 +265,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Speedbrake Toggle"
             }
           }
@@ -276,6 +282,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "S8: Change Weapons"
             }
           }
@@ -292,6 +299,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Landing Gear Up/Down"
             }
           }
@@ -310,6 +318,7 @@
                   "L Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S5: Change/Unselect Weapon Station / NWS"
             }
           }
@@ -426,6 +435,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 8,
+              "minActivationInterval": 0,
               "description": "T4_Forward: Radio Comm 1 (w/ VOIP)"
             }
           }
@@ -438,6 +448,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 9,
+              "minActivationInterval": 0,
               "description": "T4_Backward: Radio Comm 2 (w/ VOIP)"
             }
           }
@@ -459,6 +470,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
             }
           }
@@ -484,6 +496,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
             }
           }
@@ -500,6 +513,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T4_Press: IFF Interrogation Start/Stop "
             }
           }
@@ -516,6 +530,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom out slow"
             }
           }
@@ -532,6 +547,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom in slow"
             }
           }
@@ -551,6 +567,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Up"
             }
           }
@@ -570,6 +587,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Right"
             }
           }
@@ -589,6 +607,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Down"
             }
           }
@@ -608,6 +627,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
             }
           }
@@ -624,8 +644,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -636,8 +656,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -650,7 +670,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 1
+              "mouseButton": 1,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -660,7 +681,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -670,7 +692,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -713,6 +736,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "S1_Press: DGFT Returns to Prev Master Mode/MFCDs Restore to Default Pages"
             }
           }
@@ -729,6 +753,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "S1_Forward: DGFT - Dogfight Mode"
             }
           }
@@ -747,6 +772,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S1_Right: Cycle MFCD Select - Right Direction"
             }
           }
@@ -765,6 +791,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S1_Backward: Cycle MFCD Select - Left-Center-Right"
             }
           }
@@ -783,6 +810,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S1_Left: Cycle MFCD Select - Left Direction"
             }
           }
@@ -806,6 +834,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "S2_Press: Unlock Target/DGFT BS Wide Narrow Switch"
             }
           }
@@ -822,6 +851,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "S2_Forward: INTC Increase Range/DGFT BS Submode"
             }
           }
@@ -840,6 +870,7 @@
                   "R Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S2_Right: INTC Change Azimth Range/DGFT HA"
             }
           }
@@ -856,6 +887,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "S2_Backward: INTC Decrease Range/DGFT VERT Submode"
             }
           }
@@ -874,6 +906,7 @@
                   "R Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S2_Left: INTC RWS/TWS/VS Switch/DGFT SA"
             }
           }
@@ -897,6 +930,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T1_Center: NAV - Navigation Mode"
             }
           }
@@ -913,6 +947,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T1_Forward: NVR - INTC Mode"
             }
           }
@@ -923,6 +958,7 @@
             "data": {
               "longPress": false,
               "buttonId": 2,
+              "minActivationInterval": 0,
               "description": "Master Mode Switch - Next Mode"
             }
           }
@@ -939,6 +975,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T1_Backward: AG - Air-To-Ground Mode"
             }
           }
@@ -949,6 +986,7 @@
             "data": {
               "longPress": false,
               "buttonId": 3,
+              "minActivationInterval": 0,
               "description": "Master Mode Switch - Prev Mode"
             }
           }
@@ -966,6 +1004,7 @@
             "data": {
               "longPress": false,
               "buttonId": 4,
+              "minActivationInterval": 0,
               "description": "T2_Press: AG Manual Mode/DGFT Missile Designator Control"
             }
           }
@@ -982,6 +1021,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T2_Forward: SPJ Standby/Jam"
             }
           }
@@ -998,6 +1038,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T2_Backward: Countermeasures Dispense"
             }
           }
@@ -1022,6 +1063,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T5_Right: TDC Right"
             }
           },
@@ -1038,6 +1080,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T5_Left: TDC Left"
             }
           }
@@ -1056,6 +1099,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T5_Down: TDC Down"
             }
           },
@@ -1072,6 +1116,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T5_Up: TDC Up"
             }
           }
@@ -1092,6 +1137,7 @@
                   "R Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "FOV Decrease"
             }
           }
@@ -1108,6 +1154,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "T5_Press: Lock Target"
             }
           }
@@ -1126,6 +1173,7 @@
                   "R Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "FOV Increase"
             }
           }
@@ -1144,6 +1192,7 @@
                   "R Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Sensor (WMD7/TV) Up / T6: Radar Ant Elev Up"
             }
           }
@@ -1162,6 +1211,7 @@
                   "R Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Sensor (WMD7/TV) Left / Gain Inc"
             }
           }
@@ -1180,6 +1230,7 @@
                   "R Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Sensor (WMD7/TV) Down / T6: Radar Ant Elev Down"
             }
           }
@@ -1198,6 +1249,7 @@
                   "R Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Sensor (WMD7/TV) Left / Gain Dec"
             }
           }
@@ -1216,6 +1268,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 5,
+              "minActivationInterval": 0,
               "description": "S7: AutoPilot Off"
             }
           }
@@ -1228,6 +1281,7 @@
             "data": {
               "longPress": false,
               "buttonId": 7,
+              "minActivationInterval": 0,
               "description": "Yaw Trim Switch - Right"
             }
           }
@@ -1238,6 +1292,7 @@
             "data": {
               "longPress": false,
               "buttonId": 6,
+              "minActivationInterval": 0,
               "description": "Yaw Trim Switch - Left"
             }
           }
@@ -1256,6 +1311,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S6_Up: Trim Nose Down"
             }
           }
@@ -1274,6 +1330,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S6_Right: Trim Roll Right"
             }
           }
@@ -1292,6 +1349,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S6_Down: Trim Nose Up"
             }
           }
@@ -1310,6 +1368,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "S6_Left: Trim Roll Left"
             }
           }
@@ -1341,6 +1400,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Eject (3 times)"
             }
           }
@@ -1357,6 +1417,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F1 Cockpit view"
             }
           }
@@ -1373,6 +1434,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F10 Theater map view"
             }
           }
@@ -1391,6 +1453,7 @@
                   "R Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Night Vision Goggle - Toggle"
             }
           }
@@ -1407,6 +1470,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F2 Aircraft view"
             }
           }

@@ -1,5 +1,5 @@
 {
-  "version": "0.25",
+  "version": "0.26",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -126,6 +126,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Wheel brake (press and hold)"
             }
           },
@@ -136,6 +137,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 1,
+              "minActivationInterval": 0,
               "description": "Release weapons"
             }
           }
@@ -148,6 +150,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
+              "minActivationInterval": 0,
               "description": "Gun fire"
             }
           }
@@ -166,6 +169,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Collective CLutch Lock/Release Button"
             }
           }
@@ -204,6 +208,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           },
@@ -218,6 +223,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           }
@@ -228,6 +234,7 @@
             "data": {
               "longPress": false,
               "buttonId": 2,
+              "minActivationInterval": 0,
               "description": "Trim Control"
             }
           }
@@ -246,6 +253,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trimmer reset"
             }
           }
@@ -264,6 +272,7 @@
                   "L Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Hover On/Off"
             }
           },
@@ -278,6 +287,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "UV-26 Start dispensing"
             }
           }
@@ -294,6 +304,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Engage Descent Mode"
             }
           }
@@ -312,6 +323,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Wheel brake parking"
             }
           },
@@ -326,6 +338,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Gear lever"
             }
           }
@@ -342,6 +355,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Engage/Disengage Route Mode"
             }
           },
@@ -356,6 +370,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Button Automatic turn on target mode"
             }
           }
@@ -480,6 +495,7 @@
                   "R Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "SPU-9 PTT (call radio menu)"
             }
           },
@@ -490,6 +506,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 99,
+              "minActivationInterval": 0,
               "description": "cockpit r.1 VoIP PTT"
             }
           }
@@ -511,6 +528,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
             }
           }
@@ -536,6 +554,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
             }
           }
@@ -555,6 +574,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Up"
             }
           }
@@ -574,6 +594,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Right"
             }
           }
@@ -593,6 +614,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Down"
             }
           }
@@ -612,6 +634,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
             }
           }
@@ -628,6 +651,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom out slow"
             }
           }
@@ -644,6 +668,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom in slow"
             }
           }
@@ -660,8 +685,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -672,8 +697,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -686,7 +711,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 1
+              "mouseButton": 1,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -696,7 +722,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -706,7 +733,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -770,6 +798,7 @@
             "data": {
               "longPress": false,
               "buttonId": 3,
+              "minActivationInterval": 0,
               "description": "Lock target"
             }
           }
@@ -786,6 +815,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Helmet-mounter system On/Off"
             }
           }
@@ -802,6 +832,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Uncage SHKVAL, designate target"
             }
           }
@@ -820,6 +851,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "KU-31 Shkval center"
             }
           }
@@ -836,6 +868,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Shkval Narrow View 23x"
             }
           }
@@ -852,6 +885,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "TV Target frame Increase size"
             }
           }
@@ -868,6 +902,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Shkval Wide View 7x"
             }
           }
@@ -884,6 +919,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "TV Target frame Decrease size"
             }
           }
@@ -908,6 +944,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Throttle down (Idle-Medium-Auto-Full)"
             }
           },
@@ -924,6 +961,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Throttle up (Idle-Medium-Auto-Full)"
             }
           }
@@ -944,6 +982,7 @@
                   "L Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Autopilot Emergency Off"
             }
           }
@@ -962,6 +1001,7 @@
                   "R Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Readjust Free Turbine RPM to Nominal"
             }
           }
@@ -980,6 +1020,7 @@
                   "R Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Readjust Free Turbine RPM to Low"
             }
           }
@@ -1011,6 +1052,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Eject (3 times)"
             }
           }
@@ -1027,6 +1069,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F1 Cockpit view"
             }
           }
@@ -1043,6 +1086,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F10 Theater map view"
             }
           }
@@ -1059,6 +1103,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F4 Look back view"
             }
           }
@@ -1075,6 +1120,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F2 Aircraft view"
             }
           }
@@ -1098,6 +1144,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Gun Select"
             }
           }
@@ -1116,6 +1163,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Weapon selection A-A mode"
             }
           }
@@ -1132,6 +1180,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Weapon selection outward stations"
             }
           }
@@ -1148,6 +1197,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Weapon selection all stations"
             }
           }
@@ -1164,6 +1214,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Weapon selection inward stations"
             }
           }

@@ -1,5 +1,5 @@
 {
-  "version": "0.25",
+  "version": "0.26",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -114,6 +114,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 1,
+              "minActivationInterval": 0,
               "description": "Bomb Pickle"
             }
           }
@@ -126,6 +127,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
+              "minActivationInterval": 0,
               "description": "Trigger"
             }
           }
@@ -138,6 +140,7 @@
             "data": {
               "longPress": false,
               "buttonId": 9,
+              "minActivationInterval": 0,
               "description": "Mil-power Limit/Afterburner Disable"
             }
           }
@@ -154,6 +157,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Wheel Brake - ON/OFF"
             }
           }
@@ -192,6 +196,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           },
@@ -206,6 +211,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           }
@@ -216,6 +222,7 @@
             "data": {
               "longPress": false,
               "buttonId": 8,
+              "minActivationInterval": 0,
               "description": "Afterburner Enable"
             }
           }
@@ -232,6 +239,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "TP-19 Braking Parachute DEPLOY"
             }
           },
@@ -246,6 +254,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Speeb Brake Switch - Cycle"
             }
           }
@@ -264,6 +273,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Flaps Landing Position"
             }
           },
@@ -280,6 +290,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Flaps Take Off Position"
             }
           }
@@ -296,6 +307,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Landing Gear Sequence Toggle - UP/DOWN"
             }
           }
@@ -314,6 +326,7 @@
                   "L Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Flaps Off"
             }
           }
@@ -436,6 +449,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Communication menu"
             }
           },
@@ -446,6 +460,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 99,
+              "minActivationInterval": 0,
               "description": "cockpit r.1 VoIP PTT"
             }
           }
@@ -467,6 +482,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
             }
           }
@@ -492,6 +508,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
             }
           }
@@ -508,6 +525,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom out slow"
             }
           }
@@ -524,6 +542,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom in slow"
             }
           }
@@ -543,6 +562,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Up"
             }
           }
@@ -562,6 +582,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Right"
             }
           }
@@ -581,6 +602,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Down"
             }
           }
@@ -600,6 +622,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
             }
           }
@@ -616,8 +639,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -628,8 +651,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -642,7 +665,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 1
+              "mouseButton": 1,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -652,7 +676,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -662,7 +687,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -699,6 +725,7 @@
             "data": {
               "longPress": false,
               "buttonId": 6,
+              "minActivationInterval": 0,
               "description": "ASP-5 Sight Cage - Toggle"
             }
           }
@@ -709,6 +736,7 @@
             "data": {
               "longPress": false,
               "buttonId": 7,
+              "minActivationInterval": 0,
               "description": "ASP-5 Reticle Temporary Cage"
             }
           }
@@ -719,6 +747,7 @@
             "data": {
               "longPress": false,
               "buttonId": 2,
+              "minActivationInterval": 0,
               "description": "Optical Target Range Increase"
             }
           }
@@ -729,6 +758,7 @@
             "data": {
               "longPress": false,
               "buttonId": 5,
+              "minActivationInterval": 0,
               "description": "ASP-5 Target Wingspan Increase"
             }
           }
@@ -739,6 +769,7 @@
             "data": {
               "longPress": false,
               "buttonId": 3,
+              "minActivationInterval": 0,
               "description": "Optical Target Range Decrease"
             }
           }
@@ -749,6 +780,7 @@
             "data": {
               "longPress": false,
               "buttonId": 4,
+              "minActivationInterval": 0,
               "description": "ASP-5 Target Wingspan Decrease"
             }
           }
@@ -774,6 +806,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim DOWN"
             }
           }
@@ -792,6 +825,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim RIGHT"
             }
           }
@@ -810,6 +844,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim UP"
             }
           }
@@ -828,6 +863,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim LEFT"
             }
           }
@@ -859,6 +895,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Eject (3 times)"
             }
           }
@@ -875,6 +912,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F1 Cockpit view"
             }
           }
@@ -891,6 +929,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F10 Theater map view"
             }
           }
@@ -907,6 +946,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F4 Camera mounted on airframe"
             }
           }
@@ -923,6 +963,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F2 Aircraft view"
             }
           }

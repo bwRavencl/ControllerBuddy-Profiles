@@ -1,5 +1,5 @@
 {
-  "version": "0.25",
+  "version": "0.26",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -131,6 +131,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 3,
+              "minActivationInterval": 0,
               "description": "A-4 Sight Electrical Caging Button (On Throttle)"
             }
           }
@@ -154,6 +155,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
+              "minActivationInterval": 0,
               "description": "Trigger - SECOND DETENT(Gun Fire)"
             }
           }
@@ -172,6 +174,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Nosewheel Steering Button"
             }
           }
@@ -182,6 +185,7 @@
             "data": {
               "longPress": false,
               "buttonId": 2,
+              "minActivationInterval": 0,
               "description": "A-4 Sight Radar Target Selector Button"
             }
           }
@@ -220,6 +224,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           },
@@ -234,6 +239,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           }
@@ -244,6 +250,7 @@
             "data": {
               "longPress": false,
               "buttonId": 4,
+              "minActivationInterval": 0,
               "description": "A-4 Sight Mechanical Caging Lever - ON/OFF"
             }
           }
@@ -254,6 +261,7 @@
             "data": {
               "longPress": false,
               "buttonId": 1,
+              "minActivationInterval": 0,
               "description": "Weapon Release"
             }
           }
@@ -277,6 +285,7 @@
                         "L Shift"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Speed Brake Switch - OUT"
                   }
                 },
@@ -293,6 +302,7 @@
                         "L Ctrl"
                       ]
                     },
+                    "minActivationInterval": 0,
                     "description": "Speed Brake Switch - IN"
                   }
                 }
@@ -315,6 +325,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Gun-Missile Selector-Switch CCW"
             }
           }
@@ -333,6 +344,7 @@
                   "R Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Gun-Missile Selector-Switch CCW"
             }
           }
@@ -424,6 +436,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Landing Gear Up/Down"
             }
           }
@@ -442,6 +455,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Flaps Down"
             }
           }
@@ -460,6 +474,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Flaps Up"
             }
           }
@@ -476,6 +491,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Throttle - Stop Engine"
             }
           },
@@ -490,6 +506,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Throttle - Start Engine"
             }
           }
@@ -546,6 +563,7 @@
                   "R Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Microphone Button (call radio menu)"
             }
           },
@@ -556,6 +574,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 99,
+              "minActivationInterval": 0,
               "description": "cockpit r.1 VoIP PTT"
             }
           }
@@ -577,6 +596,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
             }
           }
@@ -602,6 +622,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
             }
           }
@@ -618,6 +639,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Communication menu"
             }
           }
@@ -634,6 +656,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom out slow"
             }
           }
@@ -650,6 +673,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom in slow"
             }
           }
@@ -669,6 +693,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Up"
             }
           }
@@ -688,6 +713,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Right"
             }
           }
@@ -707,6 +733,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Down"
             }
           }
@@ -726,6 +753,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
             }
           }
@@ -768,7 +796,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 1
+              "mouseButton": 1,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -778,7 +807,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -788,7 +818,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -831,6 +862,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "A-4 Sight Manual Ranging Control (Throttle Twist Grip) - CCW/Increase"
             }
           }
@@ -847,6 +879,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "A-4 Sight Wing Span Adjustment Knob - Wing Span Increase"
             }
           }
@@ -863,6 +896,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "A-4 Sight Manual Ranging Control (Throttle Twist Grip) - CW/Decrease"
             }
           }
@@ -879,6 +913,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "A-4 Sight Wing Span Adjustment Knob - Wing Span Decrease"
             }
           }
@@ -905,6 +940,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Rudder Trim Switch - RIGHT"
             }
           }
@@ -924,6 +960,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Rudder Trim Switch - LEFT"
             }
           }
@@ -942,6 +979,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Down"
             }
           }
@@ -960,6 +998,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Right"
             }
           }
@@ -978,6 +1017,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Up"
             }
           }
@@ -996,6 +1036,7 @@
                   "R Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Trim Left"
             }
           }
@@ -1027,6 +1068,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Eject (3 times)"
             }
           }
@@ -1043,6 +1085,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F1 Cockpit view"
             }
           }
@@ -1059,6 +1102,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F10 Theater map view"
             }
           }
@@ -1075,6 +1119,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F4 Camera mounted on airframe"
             }
           }
@@ -1091,6 +1136,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "F2 Aircraft view"
             }
           }

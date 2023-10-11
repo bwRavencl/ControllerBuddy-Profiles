@@ -1,5 +1,5 @@
 {
-  "version": "0.25",
+  "version": "0.26",
   "showOverlay": true,
   "showVrOverlay": false,
   "keyRepeatInterval": 30,
@@ -99,6 +99,7 @@
               "minAxisValue": -1.0,
               "maxAxisValue": 0.0,
               "buttonId": 4,
+              "minActivationInterval": 0,
               "description": "Afterburner"
             }
           }
@@ -137,6 +138,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
+              "minActivationInterval": 0,
               "description": "Left Brake"
             }
           }
@@ -149,6 +151,7 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 1,
+              "minActivationInterval": 0,
               "description": "Right Brake"
             }
           }
@@ -167,6 +170,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Reset View"
             }
           },
@@ -186,6 +190,7 @@
             "data": {
               "longPress": false,
               "buttonId": 2,
+              "minActivationInterval": 0,
               "description": "Toggle Throttle Reverse Thrust"
             }
           }
@@ -204,6 +209,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Toggle Parking Brakes"
             }
           },
@@ -229,6 +235,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Spoilers"
             }
           }
@@ -245,6 +252,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Increase Flaps"
             }
           }
@@ -261,6 +269,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Gear"
             }
           }
@@ -277,6 +286,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Decrease Flaps"
             }
           }
@@ -368,6 +378,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Anti Ice"
             }
           }
@@ -387,6 +398,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Decrease Cowl Flap"
             }
           }
@@ -406,6 +418,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Increase Cowl Flap"
             }
           }
@@ -458,6 +471,7 @@
                   "L Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Translate Cockpit View Backward"
             }
           },
@@ -485,6 +499,7 @@
                   "L Alt"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Translate Cockpit View Forward"
             }
           },
@@ -510,6 +525,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Cockpit View Upper / VR - Camera Reset"
             }
           }
@@ -526,6 +542,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom Out"
             }
           }
@@ -542,6 +559,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Zoom In"
             }
           }
@@ -558,6 +576,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Increase Cockpit View Height"
             }
           },
@@ -583,6 +602,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Translate Cockpit View Right"
             }
           },
@@ -608,6 +628,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Translate View Down"
             }
           },
@@ -633,6 +654,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Translate Cockpit View Left"
             }
           },
@@ -680,8 +702,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "X",
               "cursorSensitivity": 1500,
+              "axis": "X",
               "invert": false
             }
           }
@@ -692,8 +714,8 @@
             "data": {
               "deadZone": 0.1,
               "exponent": 2.0,
-              "axis": "Y",
               "cursorSensitivity": 1500,
+              "axis": "Y",
               "invert": false
             }
           }
@@ -706,7 +728,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 1
+              "mouseButton": 1,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -716,7 +739,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 2
+              "mouseButton": 2,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -726,7 +750,8 @@
             "data": {
               "activation": "REPEAT",
               "longPress": false,
-              "mouseButton": 3
+              "mouseButton": 3,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -779,6 +804,7 @@
             "data": {
               "longPress": false,
               "buttonId": 3,
+              "minActivationInterval": 0,
               "description": "Toggle Propeller Reverse Thrust"
             }
           }
@@ -804,6 +830,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Rudder Trim Right"
             }
           },
@@ -831,6 +858,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Rudder Trim Left"
             }
           },
@@ -850,6 +878,7 @@
             "data": {
               "longPress": false,
               "buttonId": 5,
+              "minActivationInterval": 0,
               "description": "Rotor Trim Reset"
             }
           }
@@ -866,6 +895,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Elevator Trim Down"
             }
           },
@@ -883,6 +913,7 @@
             "data": {
               "longPress": false,
               "buttonId": 7,
+              "minActivationInterval": 0,
               "description": "Decrease Rotor Longitudinal Trim"
             }
           }
@@ -901,6 +932,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Aileron Trim Right"
             }
           },
@@ -918,6 +950,7 @@
             "data": {
               "longPress": false,
               "buttonId": 9,
+              "minActivationInterval": 0,
               "description": "Increase Rotor Lateral Trim"
             }
           }
@@ -934,6 +967,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Elevator Trim Up"
             }
           },
@@ -951,6 +985,7 @@
             "data": {
               "longPress": false,
               "buttonId": 6,
+              "minActivationInterval": 0,
               "description": "Increase Rotor Longitudinal Trim"
             }
           }
@@ -969,6 +1004,7 @@
                   "L Ctrl"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Aileron Trim Left"
             }
           },
@@ -986,6 +1022,7 @@
             "data": {
               "longPress": false,
               "buttonId": 8,
+              "minActivationInterval": 0,
               "description": "Decrease Rotor Lateral Trim"
             }
           }
@@ -1009,6 +1046,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "VR - Toolbar Toggle"
             }
           }
@@ -1025,6 +1063,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Cockpit/External View Mode"
             }
           }
@@ -1041,6 +1080,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Next Instrument View"
             }
           }
@@ -1057,6 +1097,7 @@
                 ],
                 "modifierCodes": []
               },
+              "minActivationInterval": 0,
               "description": "Toggle Smart Camera"
             }
           }
@@ -1075,6 +1116,7 @@
                   "L Shift"
                 ]
               },
+              "minActivationInterval": 0,
               "description": "Previous Instrument View"
             }
           }
