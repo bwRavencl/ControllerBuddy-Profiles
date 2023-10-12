@@ -4,6 +4,13 @@
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
   "buttonToModeActionsMap": {
+    "1": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "45f4c1c8-95c6-4695-85b5-9bb9db823336"
+      }
+    ],
     "2": [
       {
         "toggle": false,
@@ -59,7 +66,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -73,7 +81,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -85,7 +94,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -97,29 +107,12 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
         "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": [
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0
-            }
-          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
@@ -127,7 +120,19 @@
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 1,
+              "minActivationInterval": 0,
+              "description": "N-37D Cannon Fire Button"
             }
           }
         ],
@@ -139,7 +144,8 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "NR-23 Cannon Fire Button"
             }
           }
         ]
@@ -157,7 +163,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "ASP-3N Gunsight Mode"
             }
           }
         ],
@@ -169,7 +176,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -179,7 +187,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -193,7 +202,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Reset View"
             }
           },
           {
@@ -207,7 +217,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Reset View"
             }
           }
         ],
@@ -225,7 +236,8 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Guns Safety Cover"
             }
           }
         ],
@@ -243,50 +255,27 @@
                   "R Alt"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Weapon Release Button"
             }
           }
         ],
         "11": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
-                    "keystroke": {
-                      "keyCodes": [
-                        "B"
-                      ],
-                      "modifierCodes": [
-                        "L Shift"
-                      ]
-                    },
-                    "minActivationInterval": 0
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
-                    "keystroke": {
-                      "keyCodes": [
-                        "B"
-                      ],
-                      "modifierCodes": [
-                        "L Ctrl"
-                      ]
-                    },
-                    "minActivationInterval": 0
-                  }
-                }
-              ],
-              "activation": "SINGLE_IMMEDIATELY"
+              "keystroke": {
+                "keyCodes": [
+                  "B"
+                ],
+                "modifierCodes": [
+                  "R Alt"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "Airbrake Switch, Toggle"
             }
           }
         ],
@@ -304,7 +293,8 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Wing Flaps Handle, Down"
             }
           }
         ],
@@ -322,7 +312,8 @@
                   "L Alt"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Landing Gear Handle Lock"
             }
           },
           {
@@ -341,7 +332,8 @@
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "description": "Landing Gear Handle"
                   }
                 },
                 {
@@ -358,7 +350,8 @@
                         "L Ctrl"
                       ]
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "description": "Landing Gear Handle, Neutral"
                   }
                 }
               ],
@@ -380,7 +373,8 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Wing Flaps Handle, Up"
             }
           }
         ]
@@ -455,6 +449,70 @@
       }
     },
     {
+      "uuid": "45f4c1c8-95c6-4695-85b5-9bb9db823336",
+      "description": "Cannon Reload",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "3"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "N-37D Cannon Reload Button"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "1"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "NR-23 (Top) Cannon Reload Button"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "2"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "NR-23 (Bottom) Cannon Reload Button"
+            }
+          }
+        ]
+      }
+    },
+    {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
       "description": "Look / Comm",
       "axisToActionsMap": {
@@ -468,7 +526,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -482,7 +541,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -502,7 +562,8 @@
                   "R Alt"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Microphone Button (call radio menu)"
             }
           },
           {
@@ -534,7 +595,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -559,84 +621,25 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
-        "11": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Num8"
+                  "\\"
                 ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num6"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num2"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num4"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
+                "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "description": "Cockpit Camera Move Left"
+              "description": "Communication menu"
             }
           }
         ],
@@ -671,6 +674,86 @@
               },
               "minActivationInterval": 0,
               "description": "Zoom in slow"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num8"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num6"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num2"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Down"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num4"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Left"
             }
           }
         ]
@@ -778,7 +861,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "ASP-3N Gunsight Target Distance, Increase"
             }
           }
         ],
@@ -794,7 +878,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "ASP-3N Gunsight Target Wingspan Adjustment Dial, Increase"
             }
           }
         ],
@@ -810,7 +895,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "ASP-3N Gunsight Target Distance, Decrease"
             }
           }
         ],
@@ -826,7 +912,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "ASP-3N Gunsight Target Wingspan Adjustment Dial, Decrease"
             }
           }
         ]
@@ -851,7 +938,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Elevator Trimmer Switch, PUSH(DESCEND)"
             }
           }
         ],
@@ -869,7 +957,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Aileron Trimmer Switch, RIGHT"
             }
           }
         ],
@@ -887,7 +976,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Elevator Trimmer Switch, PULL(CLIMB)"
             }
           }
         ],
@@ -905,7 +995,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Aileron Trimmer Switch, LEFT"
             }
           }
         ]
@@ -936,7 +1027,8 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -952,7 +1044,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -968,7 +1061,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -984,7 +1078,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "F4 Camera mounted on airframe"
             }
           }
         ],
@@ -1000,7 +1095,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "F2 Aircraft view"
             }
           }
         ]
