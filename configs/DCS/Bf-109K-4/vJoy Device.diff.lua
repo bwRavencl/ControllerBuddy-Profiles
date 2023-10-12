@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -86,7 +86,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Input.Bf109K4.wheel_brake_lh_slider",
+			["name"] = "Wheel Brake Left (analog)",
 		},
 		["a3020cd4"] = {
 			["added"] = {
@@ -104,33 +104,33 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Input.Bf109K4.wheel_brake_rh_slider",
+			["name"] = "Wheel Brake Right (analog)",
 		},
 	},
 	["keyDiffs"] = {
-		["d3016pnilu3016cd4vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Input.Bf109K4.wheel_brake_lh",
-		},
-		["d3019pnilu3019cd4vd1vpnilvu0"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Input.Bf109K4.wheel_brake_rh",
+			["name"] = "COMM Push to talk (VOIP)",
 		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "Fire Cannon / Rockets (B1)",
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Input.Bf109K4.trigger_b1",
+			["name"] = "Fire Machineguns (A)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

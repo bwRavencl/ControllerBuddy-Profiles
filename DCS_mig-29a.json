@@ -768,7 +768,7 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 103,
+              "buttonId": 99,
               "minActivationInterval": 0,
               "description": "r.1 VoIP PTT"
             }
@@ -824,18 +824,9 @@
         ],
         "6": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": true,
-              "buttonId": 105,
-              "minActivationInterval": 0,
-              "description": "r.3 VoIP PTT"
-            }
-          },
-          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_ON_RELEASE",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [

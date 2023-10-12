@@ -108,6 +108,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Microphone Button (VOIP)",
+		},
 		["d3017pnilunilcd22vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {

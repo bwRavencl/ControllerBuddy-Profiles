@@ -127,6 +127,14 @@ local diff = {
 			},
 			["name"] = "Flap Lever - Step Up",
 		},
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "UHF Radio Microphone Button (VOIP)",
+		},
 		["d3001pnilu3001cd24vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {

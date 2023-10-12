@@ -23,7 +23,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 0.6,
@@ -41,7 +41,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 0.6,
@@ -68,12 +68,28 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Flight Control Rudder",
+			["name"] = "Flight Control Yaw (pedals)",
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "SA342 Main PTT (VOIP)",
+		},
+		["d1757pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "SA342 Intercom1 PTT (VOIP Intercom)",
+		},
 		["d3003pnilu3004cd8vd1vpnilvu0"] = {
-			["name"] = "Trim: Nose Down",
+			["name"] = "Trim Hat - NOSE DOWN",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
@@ -81,7 +97,7 @@ local diff = {
 			},
 		},
 		["d3005pnilu3006cd8vd1vpnilvu0"] = {
-			["name"] = "Trim: Nose Up",
+			["name"] = "Trim Hat - NOSE UP",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
@@ -89,7 +105,7 @@ local diff = {
 			},
 		},
 		["d3009pnilu3010cd8vd1vpnilvu0"] = {
-			["name"] = "Trim: Left Wing Down",
+			["name"] = "Trim Hat - ROLL LEFT",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
@@ -97,7 +113,7 @@ local diff = {
 			},
 		},
 		["d3011pnilu3012cd8vd1vpnilvu0"] = {
-			["name"] = "Trim: Right Wing Down",
+			["name"] = "Trim Hat - ROLL RIGHT",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",

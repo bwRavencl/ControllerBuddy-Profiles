@@ -594,17 +594,6 @@
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": true,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 99,
-              "minActivationInterval": 0,
-              "description": "cockpit r.1 VoIP PTT"
-            }
-          },
-          {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
               "minAxisValue": 0.5,
@@ -619,6 +608,17 @@
               },
               "minActivationInterval": 0,
               "description": "PTT button"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 22,
+              "minActivationInterval": 0,
+              "description": "VoIP PTT button (custom)"
             }
           }
         ]
@@ -670,7 +670,7 @@
             }
           }
         ],
-        "6": [
+        "1": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {

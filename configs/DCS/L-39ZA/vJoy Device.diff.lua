@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -70,7 +70,7 @@ local diff = {
 			},
 			["name"] = "Absolute Camera Vertical View",
 		},
-		["a3078cd3"] = {
+		["a2101cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
@@ -86,10 +86,34 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Missile Seeker Tone Volume Knob",
+			["name"] = "Wheel Brake",
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "Radio Button (VOIP)",
+		},
+		["d1757pnilu1757cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "INT Button (VOIP)",
+		},
+		["d1758pnilu1758cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "INT Button On Stick (VOIP)",
+		},
 		["d3022pnilunilcd3vd1vpnilvunil"] = {
 			["name"] = "Weapon Fire Button Safety",
 			["removed"] = {

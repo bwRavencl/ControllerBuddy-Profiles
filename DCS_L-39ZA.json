@@ -457,11 +457,12 @@
                   "I"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Alt"
+                  "R Alt",
+                  "R Shift"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Radio Button (call radio menu)"
             }
           },
           {
@@ -470,9 +471,43 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 99,
+              "buttonId": 0,
               "minActivationInterval": 0,
-              "description": "cockpit r.1 VoIP PTT"
+              "description": "Radio Button (VOIP)"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "I"
+                ],
+                "modifierCodes": [
+                  "R Alt",
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "INT Button On Stick (call radio menu)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 1,
+              "minActivationInterval": 0,
+              "description": "INT Button On Stick (VOIP)"
             }
           }
         ]
@@ -494,6 +529,23 @@
                 ]
               },
               "minActivationInterval": 0
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Communication menu"
             }
           }
         ],
@@ -519,6 +571,69 @@
                 ]
               },
               "minActivationInterval": 0
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": true,
+              "buttonId": 2,
+              "minActivationInterval": 0,
+              "description": "INT Button (VOIP)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "I"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "INT Button (call radio menu)"
+            }
+          }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Zoom out slow"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -596,40 +711,6 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
-            }
-          }
-        ],
-        "9": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num/"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Zoom out slow"
-            }
-          }
-        ],
-        "10": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num*"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Zoom in slow"
             }
           }
         ]

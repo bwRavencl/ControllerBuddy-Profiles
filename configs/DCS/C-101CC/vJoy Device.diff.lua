@@ -39,7 +39,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -57,7 +57,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -88,6 +88,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d3100pnilu3100cd6vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "VoIP PTT button (custom)",
+		},
 		["d3926pnilu3926cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {

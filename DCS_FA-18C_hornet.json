@@ -706,9 +706,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 99,
+              "buttonId": 9,
               "minActivationInterval": 0,
-              "description": "cockpit r.1 VoIP PTT"
+              "description": "COMM Switch - COMM 1 (VOIP)"
             }
           }
         ],
@@ -738,9 +738,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 100,
+              "buttonId": 10,
               "minActivationInterval": 0,
-              "description": "cockpit r.2 VoIP PTT"
+              "description": "COMM Switch - COMM 2 (VOIP)"
             }
           }
         ]
@@ -763,6 +763,23 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Communication menu"
             }
           }
         ],

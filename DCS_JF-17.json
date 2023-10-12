@@ -395,7 +395,7 @@
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look / T4",
+      "description": "Look / T4 / Comm",
       "axisToActionsMap": {
         "0": [
           {
@@ -472,6 +472,23 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Communication menu"
             }
           }
         ],

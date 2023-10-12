@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -52,7 +52,7 @@ local diff = {
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Flight Control Rudder",
+			["name"] = "Flight Control Yaw (pedals)",
 		},
 		["a2010cdnil"] = {
 			["added"] = {
@@ -90,13 +90,29 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "Radio trigger - RADIO (VOIP)",
+		},
+		["d1757pnilu1757cdnilvd0.5vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Radio trigger - ICS (VOIP)",
+		},
 		["d3014pnilu3014cd9vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Pilot Launch Countermeasures",
+			["name"] = "Launch Countermeasures",
 		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {

@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -108,6 +108,30 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "HOTAS MIC Switch Down (VOIP)",
+		},
+		["d1732pnilu1732cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "HOTAS MIC Switch Forward (VOIP)",
+		},
+		["d1755pnilu1755cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "HOTAS MIC Switch Aft (VOIP)",
+		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
@@ -133,14 +157,6 @@ local diff = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-		},
-		["d555pnilu639cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
-			["name"] = "Gun Trigger (first stage)",
 		},
 		["d562pnilu606cdnilvdnilvpnilvunil"] = {
 			["name"] = "HOTAS Nosewheel Steering Button",

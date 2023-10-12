@@ -250,6 +250,14 @@ local diff = {
 			},
 			["name"] = "Radar control stick unlocking control",
 		},
+		["d3099pnilu3099cd1vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN23",
+				},
+			},
+			["name"] = "VoIP PTT button (custom)",
+		},
 		["d3398pnilunilcd1vd-1vpnilvunil"] = {
 			["added"] = {
 				[1] = {

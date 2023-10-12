@@ -726,7 +726,7 @@
                 ]
               },
               "minActivationInterval": 0,
-              "description": "COMM FWD"
+              "description": "COMM FWD: Select COMM 1"
             }
           },
           {
@@ -735,9 +735,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 99,
+              "buttonId": 9,
               "minActivationInterval": 0,
-              "description": "cockpit r.1 VoIP PTT"
+              "description": "COMM FWD: Select COMM 1 (VOIP)"
             }
           }
         ],
@@ -758,7 +758,7 @@
                 ]
               },
               "minActivationInterval": 0,
-              "description": "COMM AFT"
+              "description": "COMM AFT: Select COMM 2"
             }
           },
           {
@@ -767,9 +767,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 100,
+              "buttonId": 10,
               "minActivationInterval": 0,
-              "description": "cockpit r.3 VoIP PTT"
+              "description": "COMM AFT: Select COMM 2 (VOIP)"
             }
           }
         ]
@@ -818,6 +818,23 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpitcamera shift forward"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Communication menu"
             }
           }
         ],

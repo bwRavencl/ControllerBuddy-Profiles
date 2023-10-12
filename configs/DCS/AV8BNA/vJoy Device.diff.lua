@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -108,6 +108,22 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "COMM FWD: Select COMM 1 (VOIP)",
+		},
+		["d1732pnilu1732cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN11",
+				},
+			},
+			["name"] = "COMM AFT: Select COMM 2 (VOIP)",
+		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {

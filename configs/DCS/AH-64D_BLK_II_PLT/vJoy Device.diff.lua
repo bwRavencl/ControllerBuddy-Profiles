@@ -108,6 +108,22 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN36",
+				},
+			},
+			["name"] = "PTT/RTS Switch - RADIO (VOIP)",
+		},
+		["d1757pnilu1757cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN37",
+				},
+			},
+			["name"] = "PTT/RTS Switch - ICS (VOIP)",
+		},
 		["d3002pnilu3002cd25vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -331,14 +347,6 @@ local diff = {
 				},
 			},
 			["name"] = "NVS Select Switch - PNVS",
-		},
-		["d3053pnilu3053cd25vd-1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN34",
-				},
-			},
-			["name"] = "Boresight/Polarity Switch - B/S",
 		},
 		["d3054pnilu3054cd25vd1vpnilvu0"] = {
 			["added"] = {

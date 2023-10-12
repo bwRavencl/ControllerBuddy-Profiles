@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -108,6 +108,22 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "COMM Switch - COMM 1 (VOIP)",
+		},
+		["d1732pnilu1732cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN11",
+				},
+			},
+			["name"] = "COMM Switch - COMM 2 (VOIP)",
+		},
 		["d3002pnilu3002cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -146,7 +162,7 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Throttle Designator Controller - Depress",
+			["name"] = "Throttle Designator Controller - DEPRESS",
 		},
 		["d3029pnilu3029cd13vd0.6vpnilvu0"] = {
 			["added"] = {
@@ -170,7 +186,7 @@ local diff = {
 					["key"] = "JOY_BTN8",
 				},
 			},
-			["name"] = "Speed Brake Switch - RETRACT/OFF",
+			["name"] = "Speed Brake Switch: RETRACT<>OFF",
 		},
 		["d3045pnilu3045cd13vd1vpnilvu0"] = {
 			["added"] = {

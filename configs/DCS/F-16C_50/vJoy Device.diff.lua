@@ -108,6 +108,22 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN21",
+				},
+			},
+			["name"] = "Transmit Switch - UHF (VOIP)",
+		},
+		["d1732pnilu1732cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN20",
+				},
+			},
+			["name"] = "Transmit Switch - VHF (VOIP)",
+		},
 		["d3014pnilu3014cd16vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {

@@ -638,23 +638,23 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": true,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 99,
-              "minActivationInterval": 0,
-              "description": "cockpit r.1 VoIP PTT"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 6,
               "minActivationInterval": 0,
               "description": "UHF Radio Microphone Button (call radio menu)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 7,
+              "minActivationInterval": 0,
+              "description": "UHF Radio Microphone Button (VOIP)"
             }
           }
         ]
@@ -703,6 +703,23 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Communication menu"
             }
           }
         ],

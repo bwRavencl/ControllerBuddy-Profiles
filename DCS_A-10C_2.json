@@ -730,7 +730,8 @@
                   "L Alt"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "HOTAS MIC Switch Forward (call radio menu)"
             }
           },
           {
@@ -739,9 +740,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 99,
+              "buttonId": 3,
               "minActivationInterval": 0,
-              "description": "cockpit r.1 VoIP PTT"
+              "description": "HOTAS MIC Switch Forward (VOIP)"
             }
           }
         ],
@@ -761,7 +762,8 @@
                   "L Alt"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "HOTAS MIC Switch Down (call radio menu)"
             }
           },
           {
@@ -770,9 +772,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 100,
+              "buttonId": 4,
               "minActivationInterval": 0,
-              "description": "cockpit r.2 VoIP PTT"
+              "description": "HOTAS MIC Switch Down (VOIP)"
             }
           }
         ]
@@ -827,9 +829,9 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": true,
-              "buttonId": 101,
+              "buttonId": 5,
               "minActivationInterval": 0,
-              "description": "cockpit r.3 VoIP PTT"
+              "description": "HOTAS MIC Switch Aft (VOIP)"
             }
           },
           {
@@ -845,15 +847,16 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "HOTAS MIC Switch Aft (call radio menu)"
             }
           }
         ],
-        "7": [
+        "1": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_ON_RELEASE",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -861,7 +864,42 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Communication menu"
+            }
+          }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Zoom out slow"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -939,40 +977,6 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
-            }
-          }
-        ],
-        "9": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num/"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Zoom out slow"
-            }
-          }
-        ],
-        "10": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num*"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Zoom in slow"
             }
           }
         ]

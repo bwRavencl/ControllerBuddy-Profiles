@@ -90,6 +90,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "Microphone Button (VOIP)",
+		},
 		["d3001pnilu3001cd4vd1vpnilvu0"] = {
 			["name"] = "N-37D Cannon Fire Button",
 			["removed"] = {

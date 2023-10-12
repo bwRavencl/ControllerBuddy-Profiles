@@ -421,7 +421,7 @@
                 ]
               },
               "minActivationInterval": 0,
-              "description": "CPMM Push to talk (call radio menu)"
+              "description": "COMM Push to talk (call radio menu)"
             }
           },
           {
@@ -430,9 +430,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 99,
+              "buttonId": 5,
               "minActivationInterval": 0,
-              "description": "cockpit r.1 VoIP PTT"
+              "description": "Radio Button (VOIP)"
             }
           }
         ],
@@ -443,9 +443,9 @@
               "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 102,
+              "buttonId": 6,
               "minActivationInterval": 0,
-              "description": "cockpit int.1 VoIP PTT"
+              "description": "INT Button (VOIP)"
             }
           }
         ]
@@ -492,6 +492,40 @@
                 ]
               },
               "minActivationInterval": 0
+            }
+          }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Zoom out slow"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -569,40 +603,6 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
-            }
-          }
-        ],
-        "9": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num/"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Zoom out slow"
-            }
-          }
-        ],
-        "10": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num*"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Zoom in slow"
             }
           }
         ]
@@ -854,12 +854,12 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "S0": {
-      "color": -16776961,
-      "inverted": false
-    },
     "Z": {
       "color": -16777216,
+      "inverted": false
+    },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     }
   }

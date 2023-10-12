@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -25,7 +25,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.1,
 						},
-						["deadzone"] = 0.10,
+						["deadzone"] = 0.1,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -76,7 +76,7 @@ local diff = {
 					["key"] = "JOY_Z",
 				},
 			},
-			["name"] = "Input.Yak52.throttle_slider",
+			["name"] = "Throttle Lever, analog",
 		},
 		["a3026cd3"] = {
 			["added"] = {
@@ -84,7 +84,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Input.Yak52.pitch_slider",
+			["name"] = "Engine RPM / Propeller Pitch Control Lever, analog",
 		},
 		["a3027cd2"] = {
 			["added"] = {
@@ -102,17 +102,25 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Input.Yak52.wheel_brakes_slider",
+			["name"] = "Wheel Brakes - axis",
 		},
 	},
 	["keyDiffs"] = {
+		["d1757pnilu1757cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "INT Button (VOIP)",
+		},
 		["d3009pnilunilcd2vd0vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
 				},
 			},
-			["name"] = "Input.Yak52.uc_0",
+			["name"] = "Landing Gear Lever, NEUTRAL",
 		},
 		["d3017pnilunilcd2vd0vpnilvunil"] = {
 			["added"] = {
@@ -120,7 +128,7 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Input.Yak52.flaps_retract",
+			["name"] = "Landing Flaps Lever, UP (retract)",
 		},
 		["d3017pnilunilcd2vd1vpnilvunil"] = {
 			["added"] = {
@@ -128,7 +136,7 @@ local diff = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Input.Yak52.flaps_extend",
+			["name"] = "Landing Flaps Lever, DOWN (extend)",
 		},
 		["d3030pnilu3030cd2vd1vpnilvu0"] = {
 			["added"] = {
@@ -136,7 +144,7 @@ local diff = {
 					["key"] = "JOY_BTN5",
 				},
 			},
-			["name"] = "Input.Yak52.wheel_brakes_lock",
+			["name"] = "Wheel Brake Lock",
 		},
 		["d3040pnilunilcd6vd1vpnilvunil"] = {
 			["added"] = {
@@ -144,7 +152,15 @@ local diff = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Input.Yak52.smoke_apparatus",
+			["name"] = "Smoke Apparatus, toggle",
+		},
+		["d3054pnilu3054cd27vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "INT Button (call radio menu)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

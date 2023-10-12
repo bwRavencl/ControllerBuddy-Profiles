@@ -123,6 +123,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "SPU-9 PTT (VOIP)",
+		},
 		["d537pnilu385cdnilvdnilvpnilvunil"] = {
 			["name"] = "Hover On/Off",
 			["removed"] = {

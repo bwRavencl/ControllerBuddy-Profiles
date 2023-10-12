@@ -112,37 +112,27 @@
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "B"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0
+              "buttonId": 1,
+              "minActivationInterval": 0,
+              "description": "Release Bomb"
             }
           }
         ],
         "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0
+              "buttonId": 0,
+              "minActivationInterval": 0,
+              "description": "Release weapons"
             }
           }
         ]
@@ -453,9 +443,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 99,
+              "buttonId": 2,
               "minActivationInterval": 0,
-              "description": "cockpit r.1 VoIP PTT"
+              "description": "Radio trigger - RADIO (VOIP)"
             }
           }
         ],
@@ -485,9 +475,9 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 102,
+              "buttonId": 3,
               "minActivationInterval": 0,
-              "description": "cockpit int.1 VoIP PTT"
+              "description": "Radio trigger - ICS (VOIP)"
             }
           }
         ]
@@ -509,6 +499,23 @@
                 ]
               },
               "minActivationInterval": 0
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Communication menu"
             }
           }
         ],
@@ -534,6 +541,40 @@
                 ]
               },
               "minActivationInterval": 0
+            }
+          }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Zoom out slow"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Zoom in slow"
             }
           }
         ],
@@ -611,40 +652,6 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
-            }
-          }
-        ],
-        "9": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num/"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Zoom out slow"
-            }
-          }
-        ],
-        "10": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num*"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Zoom in slow"
             }
           }
         ]

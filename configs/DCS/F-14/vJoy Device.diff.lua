@@ -232,6 +232,30 @@ local diff = {
 			},
 			["name"] = "Exterior Lights Master Switch Toggle",
 		},
+		["d3718pnilu3718cd2vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN30",
+				},
+			},
+			["name"] = "Mic Button ICS - SRS or VoIP Only / No Menu",
+		},
+		["d3719pnilu3719cd2vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN28",
+				},
+			},
+			["name"] = "Mic Button UHF1 (ARC-159) - SRS or VoIP Only / No Menu",
+		},
+		["d3720pnilu3720cd2vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN29",
+				},
+			},
+			["name"] = "Mic Button UHF2 (ARC-182) - SRS or VoIP Only / No Menu",
+		},
 		["dnilp2019u2019cdnilvdnilvp-1vu0"] = {
 			["added"] = {
 				[1] = {
