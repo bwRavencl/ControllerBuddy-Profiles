@@ -73,7 +73,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -87,7 +88,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "AirBrakes"
             }
           }
         ],
@@ -99,7 +101,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Bank"
             }
           }
         ],
@@ -111,7 +114,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -129,7 +133,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Release"
             }
           }
         ],
@@ -147,7 +152,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Wheel brake"
             }
           }
         ]
@@ -165,7 +171,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "View reset"
             }
           }
         ],
@@ -181,7 +188,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Game menu"
             }
           }
         ],
@@ -197,7 +205,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Pause"
             }
           }
         ],
@@ -213,7 +222,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Water"
             }
           }
         ],
@@ -229,7 +239,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Flaps down"
             }
           }
         ],
@@ -245,7 +256,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Gear"
             }
           }
         ],
@@ -261,7 +273,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Flaps up"
             }
           }
         ]
@@ -352,7 +365,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Lift/Cruise toggle"
             }
           }
         ],
@@ -368,7 +382,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Altimeter up"
             }
           }
         ],
@@ -384,7 +399,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Vario volume up"
             }
           }
         ],
@@ -400,7 +416,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Altimeter down"
             }
           }
         ],
@@ -416,7 +433,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Vario volume down"
             }
           }
         ]
@@ -439,7 +457,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Handheld next screen"
             }
           }
         ],
@@ -455,7 +474,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Handheld zoom in"
             }
           }
         ],
@@ -471,7 +491,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "MC up"
             }
           }
         ],
@@ -487,7 +508,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Handheld zoom out"
             }
           }
         ],
@@ -503,7 +525,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "MC down"
             }
           }
         ]
@@ -521,7 +544,8 @@
               "exponent": 3.0,
               "cursorSensitivity": 800,
               "axis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Lock left/right"
             }
           }
         ],
@@ -533,66 +557,13 @@
               "exponent": 3.0,
               "cursorSensitivity": 800,
               "axis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Lock up/down"
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "0": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num/"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "3": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num*"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
         "9": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -605,7 +576,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Zoom out"
             }
           }
         ],
@@ -621,7 +593,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Zoom in"
             }
           }
         ]
@@ -729,7 +702,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Radio frequency up"
             }
           }
         ],
@@ -745,7 +719,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Radio frequency down"
             }
           }
         ]
@@ -753,7 +728,7 @@
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim",
+      "description": "Trimmer",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -768,7 +743,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Trimmer center"
             }
           }
         ],
@@ -784,7 +760,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Trimmer down"
             }
           }
         ],
@@ -800,7 +777,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Trimmer up"
             }
           }
         ]
@@ -808,7 +786,7 @@
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View",
+      "description": "View / Time",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "6": [
@@ -823,7 +801,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Check time"
             }
           }
         ],
@@ -839,7 +818,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Cockpit view"
             }
           }
         ],
@@ -855,7 +835,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Fly-by view"
             }
           }
         ],
@@ -871,7 +852,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Padlock view"
             }
           }
         ],
@@ -887,7 +869,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "External view"
             }
           }
         ]
