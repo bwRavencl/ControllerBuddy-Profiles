@@ -52,7 +52,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -66,7 +67,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -78,7 +80,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -90,7 +93,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -102,7 +106,8 @@
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Left"
             }
           }
         ],
@@ -114,7 +119,8 @@
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Right"
             }
           }
         ]
@@ -140,7 +146,8 @@
                         "L Ctrl"
                       ]
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "description": "Stores Release Guard - OPEN"
                   }
                 },
                 {
@@ -157,7 +164,8 @@
                         "L Ctrl"
                       ]
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "description": "Stores Release Guard - CLOSE"
                   }
                 }
               ],
@@ -173,7 +181,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -183,7 +192,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -197,7 +207,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Reset View"
             }
           },
           {
@@ -211,7 +222,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Reset View"
             }
           }
         ],
@@ -235,7 +247,8 @@
                         "R Ctrl"
                       ]
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "description": "Trigger Safety Catch - UNLOCK"
                   }
                 },
                 {
@@ -248,11 +261,12 @@
                         "Space"
                       ],
                       "modifierCodes": [
-                        "R Alt",
-                        "R Ctrl"
+                        "R Ctrl",
+                        "R Alt"
                       ]
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "description": "Trigger Safety Catch - LOCK"
                   }
                 }
               ],
@@ -260,7 +274,7 @@
             }
           }
         ],
-        "6": [
+        "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -268,29 +282,12 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "G"
+                  "B"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
-            }
-          }
-        ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "B"
-                ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
-              },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Air brake - Extend/Retract"
             }
           }
         ],
@@ -308,7 +305,8 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Next Flap Detent"
             }
           }
         ],
@@ -316,17 +314,16 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "B"
+                  "G"
                 ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
+                "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Landing Gear Toggle"
             }
           }
         ],
@@ -344,7 +341,8 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Prev Flap Detent"
             }
           }
         ]
@@ -432,7 +430,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -446,7 +445,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -471,7 +471,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
+              "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
@@ -497,7 +497,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -522,7 +523,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -575,7 +577,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -594,7 +597,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -613,7 +617,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -729,6 +734,44 @@
       "description": "Trim",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "X"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "Rudder Trim Right"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Z"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "Rudder Trim Left"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -743,7 +786,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Trim Hat - NOSE DOWN"
             }
           }
         ],
@@ -761,7 +805,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Trim Hat - ROLL RIGHT"
             }
           }
         ],
@@ -779,7 +824,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Trim Hat - NOSE UP"
             }
           }
         ],
@@ -797,7 +843,8 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Trim Hat - ROLL LEFT"
             }
           }
         ]
@@ -828,7 +875,8 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -844,7 +892,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -860,7 +909,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -881,7 +931,8 @@
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "description": "Occupy Seat 2"
                   }
                 },
                 {
@@ -895,7 +946,8 @@
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "description": "Occupy Seat 1"
                   }
                 }
               ],
@@ -915,7 +967,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "F2 Aircraft view"
             }
           }
         ]
