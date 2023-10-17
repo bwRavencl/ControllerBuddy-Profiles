@@ -87,7 +87,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Plane control: yaw"
             }
           }
         ],
@@ -101,7 +102,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Engines throttle control"
             }
           }
         ],
@@ -113,7 +115,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Plane control: roll"
             }
           }
         ],
@@ -125,7 +128,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Plane control: pitch"
             }
           }
         ],
@@ -137,7 +141,8 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 1,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Fire weapon group 2"
             }
           },
           {
@@ -147,7 +152,8 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 7,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Fire weapon group 3 / Engine blip switch (ignition interruption)"
             }
           }
         ],
@@ -159,7 +165,8 @@
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
               "buttonId": 0,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Fire weapon group 1"
             }
           }
         ]
@@ -173,7 +180,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_IMMEDIATELY",
+              "description": "Reset camera"
             }
           },
           {
@@ -183,7 +191,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_IMMEDIATELY",
+              "description": "Reset camera"
             }
           },
           {
@@ -193,12 +202,12 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Num*",
                   "Num5"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Reset camera"
             }
           },
           {
@@ -208,6 +217,21 @@
               "longPress": false,
               "vrCoordinateSystem": "SEATED"
             }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Pilot head: reset zoom"
+            }
           }
         ],
         "11": [
@@ -216,7 +240,8 @@
             "data": {
               "longPress": false,
               "buttonId": 9,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "AI-autopilot for level flight: on/off"
             }
           }
         ],
@@ -232,7 +257,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Flaps down"
             }
           }
         ],
@@ -248,7 +274,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Gear up/down"
             }
           }
         ],
@@ -258,7 +285,8 @@
             "data": {
               "longPress": false,
               "buttonId": 14,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Flaps up"
             }
           }
         ]
@@ -350,7 +378,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Drop bombs, containers, paratroopers, emit smoke"
             }
           }
         ],
@@ -368,7 +397,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Launch rockets / Jet boosters"
             }
           }
         ]
@@ -386,7 +416,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Bomb sight"
             }
           }
         ],
@@ -396,7 +427,8 @@
             "data": {
               "longPress": false,
               "buttonId": 5,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "AirBrakes on/off"
             }
           }
         ],
@@ -412,7 +444,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Bomb bay doors toggle"
             }
           }
         ],
@@ -422,7 +455,8 @@
             "data": {
               "longPress": false,
               "buttonId": 8,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Reload all guns"
             }
           }
         ]
@@ -446,7 +480,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Left wheel brakes"
             }
           }
         ],
@@ -464,7 +499,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Right wheel brakes"
             }
           }
         ]
@@ -476,7 +512,8 @@
             "data": {
               "longPress": false,
               "buttonId": 4,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Tail wheel lock/unlock"
             }
           }
         ],
@@ -492,7 +529,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Wheel brakes"
             }
           }
         ],
@@ -502,7 +540,8 @@
             "data": {
               "longPress": false,
               "buttonId": 15,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Canopy open/close"
             }
           }
         ],
@@ -512,7 +551,8 @@
             "data": {
               "longPress": false,
               "buttonId": 16,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Wheels parking brakes on/off"
             }
           }
         ],
@@ -528,7 +568,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Engage engines start procedure / Stop engine"
             }
           }
         ]
@@ -548,7 +589,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Rotate camera left/right"
             }
           }
         ],
@@ -562,7 +604,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Rotate camera up/down"
             }
           }
         ]
@@ -580,7 +623,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Move pilot head backward"
             }
           }
         ],
@@ -596,7 +640,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Move pilot head forward"
             }
           }
         ],
@@ -612,7 +657,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Pilot head: zoom out"
             }
           }
         ],
@@ -628,7 +674,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Pilot head: zoom in"
             }
           }
         ],
@@ -644,7 +691,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Move pilot head up"
             }
           }
         ],
@@ -660,7 +708,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Move pilot head right"
             }
           }
         ],
@@ -676,7 +725,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Move pilot head down"
             }
           }
         ],
@@ -692,7 +742,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Move pilot head left"
             }
           }
         ]
@@ -712,7 +763,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Engines mixture control"
             }
           }
         ]
@@ -724,7 +776,8 @@
             "data": {
               "longPress": false,
               "buttonId": 18,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Engine superchargers mode switch"
             }
           }
         ],
@@ -734,7 +787,8 @@
             "data": {
               "longPress": false,
               "buttonId": 19,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Engines outlet cowl shutters control (A-20, Fw 190 A-5 and A-8, La-5, Ju 88, P-40, P-47, C-47)"
             }
           }
         ],
@@ -744,7 +798,8 @@
             "data": {
               "longPress": false,
               "buttonId": 22,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Engines inlet cowl shutters control (I-16, La-5, Ju 52), Engines upper cowl flaps (A-20), Engines intercooler shutter (P-47)"
             }
           }
         ],
@@ -754,7 +809,8 @@
             "data": {
               "longPress": false,
               "buttonId": 20,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Engines outlet cowl shutters control (A-20, Fw 190 A-5 and A-8, La-5, Ju 88, P-40, P-47, C-47)"
             }
           }
         ],
@@ -764,7 +820,8 @@
             "data": {
               "longPress": false,
               "buttonId": 21,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Engines inlet cowl shutters control (I-16, La-5, Ju 52), Engines upper cowl flaps (A-20), Engines intercooler shutter (P-47)"
             }
           }
         ]
@@ -869,7 +926,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Propeller RPM control"
             }
           }
         ]
@@ -881,7 +939,8 @@
             "data": {
               "longPress": false,
               "buttonId": 17,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Switch engines boost: on/off"
             }
           }
         ],
@@ -891,7 +950,8 @@
             "data": {
               "longPress": false,
               "buttonId": 23,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Propeller RPM control / Propellers: low pitch"
             }
           }
         ],
@@ -901,7 +961,8 @@
             "data": {
               "longPress": false,
               "buttonId": 24,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Propeller RPM control / Propellers: high pitch"
             }
           }
         ],
@@ -911,7 +972,8 @@
             "data": {
               "longPress": false,
               "buttonId": 2,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Switch propellers pitch control mode: manual/auto"
             }
           }
         ]
@@ -928,7 +990,8 @@
             "data": {
               "longPress": false,
               "buttonId": 31,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Reset trimmers"
             }
           }
         ],
@@ -938,7 +1001,8 @@
             "data": {
               "longPress": false,
               "buttonId": 30,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Rudder trim axis / Rudder trim switch: left"
             }
           }
         ],
@@ -948,7 +1012,8 @@
             "data": {
               "longPress": false,
               "buttonId": 29,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Rudder trim axis / Rudder trim switch: right"
             }
           }
         ],
@@ -958,7 +1023,8 @@
             "data": {
               "longPress": false,
               "buttonId": 25,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Adjustable stabilizer axis / Elevator trim switch: down / Adjustable stabilizer switch: pitch down"
             }
           }
         ],
@@ -968,7 +1034,8 @@
             "data": {
               "longPress": false,
               "buttonId": 28,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Aileron trim axis / Aileron trim switch: right"
             }
           }
         ],
@@ -978,7 +1045,8 @@
             "data": {
               "longPress": false,
               "buttonId": 26,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Adjustable stabilizer axis / Elevator trim switch: up / Adjustable stabilizer switch: pitch up"
             }
           }
         ],
@@ -988,7 +1056,8 @@
             "data": {
               "longPress": false,
               "buttonId": 27,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Aileron trim axis / Aileron trim switch: left"
             }
           }
         ]
@@ -1000,39 +1069,25 @@
       "axisToActionsMap": {
         "1": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "minAxisValue": 0.75,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "-"
-                ],
-                "modifierCodes": [
-                  "T"
-                ]
-              },
-              "minActivationInterval": 0
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 34,
+              "minActivationInterval": 0,
+              "description": "Engines turbosupercharger control"
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "minAxisValue": -1.0,
-              "maxAxisValue": -0.75,
-              "activation": "REPEAT",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "\u003d"
-                ],
-                "modifierCodes": [
-                  "T"
-                ]
-              },
-              "minActivationInterval": 0
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 33,
+              "minActivationInterval": 0,
+              "description": "Engines turbosupercharger control"
             }
           }
         ]
@@ -1044,7 +1099,8 @@
             "data": {
               "longPress": false,
               "buttonId": 6,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Switch water radiators control mode: manual/auto"
             }
           }
         ],
@@ -1054,7 +1110,8 @@
             "data": {
               "longPress": false,
               "buttonId": 10,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Water radiators shutters control axis / Bf-109/110 and British aircraft water radiator: close"
             }
           }
         ],
@@ -1064,7 +1121,8 @@
             "data": {
               "longPress": false,
               "buttonId": 13,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "He-111, Bf-110 oil radiators: open one step"
             }
           }
         ],
@@ -1074,7 +1132,8 @@
             "data": {
               "longPress": false,
               "buttonId": 11,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Water radiators shutters control axis / Bf-109/110 and British aircraft water radiator: open"
             }
           }
         ],
@@ -1084,7 +1143,8 @@
             "data": {
               "longPress": false,
               "buttonId": 12,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "He-111, Bf-110 oil radiators: close one step"
             }
           }
         ]
@@ -1101,7 +1161,8 @@
             "data": {
               "longPress": false,
               "buttonId": 3,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Eject"
             }
           }
         ],
@@ -1117,7 +1178,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Camera: player cockpit"
             }
           }
         ],
@@ -1127,7 +1189,8 @@
             "data": {
               "longPress": false,
               "buttonId": 32,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Switch to a next free combat post"
             }
           }
         ],
@@ -1143,7 +1206,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "Show/hide mission briefing"
             }
           }
         ],
@@ -1159,7 +1223,8 @@
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "description": "External free camera at player plane"
             }
           }
         ]
@@ -1167,16 +1232,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
+    "S1": {
+      "color": -65536,
+      "inverted": false
+    },
     "S0": {
       "color": -16776961,
       "inverted": false
     },
     "Z": {
       "color": -16777216,
-      "inverted": false
-    },
-    "S1": {
-      "color": -65536,
       "inverted": false
     }
   }

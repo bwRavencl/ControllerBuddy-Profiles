@@ -48,6 +48,16 @@ if ($devicesTxtContent -notmatch $([Regex]::Escape($vJoyDeviceLineWithIndexZero)
 }
 
 try {
+    Get-ChildItem -Path $il2InputDir -File -Depth 0 | Remove-Item
+    Write-Output "Cleared IL-2 Sturmovik Great Battles input directory '$il2InputDir'"
+} catch {
+    Write-Output "Error: Could not clear IL-2 Sturmovik Great Battles input directory '$il2InputDir'"
+    Exit 1
+}
+
+Write-Output ''
+
+try {
     Set-Content -Path $devicesTxt -Value $devicesTxtContent -NoNewline
     Write-Output "Wrote file: $devicesTxt"
 } catch {
@@ -57,25 +67,26 @@ try {
 
 Write-Output ''
 
-$currentFilesFilename = 'current.*'
-$currenFiles = Get-ChildItem -Path $PSScriptRoot -File -Depth 0 -Filter $currentFilesFilename
+$inputFiles = Get-ChildItem -Path $PSScriptRoot -File -Depth 0 -Include ('current.*', 'global.*')
 
-if ($currenFiles.count -eq 0) {
-    Write-Output "Error: $currentFilesFilename files are missing"
+if ($inputFiles.count -eq 0) {
+    Write-Output "Error: Input config files in '$PSScriptRoot' are missing"
     Exit 1
 }
 
-foreach ($currenFile in $currenFiles) {
-    $destinationFile = "$il2InputDir\$($currenFile.Name)"
+foreach ($inputFile in $inputFiles) {
+    $destinationFile = "$il2InputDir\$($inputFile.Name)"
 
     try {
-        Copy-Item $currenFile.FullName $il2InputDir -errorAction stop
-        Write-Output "Copied '$($currenFile.Name)' to: $destinationFile"
+        Copy-Item $inputFile.FullName $il2InputDir -errorAction stop
+        Write-Output "Copied '$($inputFile.Name)' to: $destinationFile"
     } catch {
-        Write-Output "Error: Could not copy '$($currenFile.Name)' to: $destinationFile"
+        Write-Output "Error: Could not copy '$($inputFile.Name)' to: $destinationFile"
         Exit 1
     }
 }
+
+Write-Output ''
 
 $snapsCfgFilename = 'snaps.cfg'
 $snapsCfg = "$PSScriptRoot\$snapsCfgFilename"
