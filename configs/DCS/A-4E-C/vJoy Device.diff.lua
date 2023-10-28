@@ -128,18 +128,26 @@ local diff = {
 		["d10012pnilu10010cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN6",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "Flap Handle - DOWN else STOP",
 		},
-		["d10281pnilu10281cdnilvd1vpnilvu0"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN4",
+					["key"] = "JOY_BTN6",
 				},
 			},
-			["name"] = "Radio Microphone Push to Talk VOIP (PTT)",
+			["name"] = "Radio Microphone Push to Talk VOIP (PTT) - Transmit",
+		},
+		["d1732pnilu1732cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Radio Microphone Push to Talk VOIP (PTT) - Guard",
 		},
 		["d3107pnilu3107cd32vd1vpnilvu0"] = {
 			["added"] = {

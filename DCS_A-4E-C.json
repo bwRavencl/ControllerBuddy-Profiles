@@ -303,7 +303,7 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 5,
+              "buttonId": 3,
               "minActivationInterval": 0,
               "description": "Flap handle DOWN else STOP"
             }
@@ -467,9 +467,22 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 3,
+              "buttonId": 5,
               "minActivationInterval": 0,
-              "description": "Radio Microphone Push to Talk VOIP (PTT)"
+              "description": "Radio Microphone Push to Talk VOIP (PTT) - Transmit"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 6,
+              "minActivationInterval": 0,
+              "description": "Radio Microphone Push to Talk VOIP (PTT) - Guard"
             }
           }
         ]
@@ -492,6 +505,23 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Communication menu"
             }
           }
         ],
@@ -518,23 +548,6 @@
               },
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
-            }
-          }
-        ],
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "\\"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Communication menu"
             }
           }
         ],
