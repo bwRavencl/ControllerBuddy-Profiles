@@ -20721,7 +20721,7 @@ if (Test-Path $UserConfigFile -PathType Leaf) {
             $userConfigXml.configuration.userSettings.'FalconBMS.Launcher.Properties.Settings'.setting | Where-Object { ($_.name -eq $Name) -and ($_.value -ne $Value) } | ForEach-Object { $_.value = $Value ; return $true }
         }
 
-        if (Set-UserConfigSetting -Name 'NoOverride' -Value 'False') {
+        if ((Set-UserConfigSetting -Name 'NoOverride' -Value 'False') -bor (Set-UserConfigSetting -Name 'Misc_ExMouseLook' -Value 'True')) {
             try {
                 $userConfigXml.Save($UserConfigFile)
                 Write-Output "Wrote file: $UserConfigFile"
