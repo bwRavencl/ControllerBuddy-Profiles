@@ -20660,7 +20660,9 @@ function Write-SetupFile {
         [string]$FileContent
     )
 
-    $setupFile = "$bmsConfigDir\Setup.v100.$($Device.InstanceName) {$($Device.InstanceGuid.ToString().ToUpper())}.xml"
+    $productName = $Device.InstanceName -replace '[^A-Z|a-z|0-9|~|`|\[|\]|\{|\}|\-|_|\=|\''|\s]', ''
+    $productFileName = $productName -replace '/', '-'
+    $setupFile = "$bmsConfigDir\Setup.v100.$productFileName {$($Device.InstanceGuid.ToString().ToUpper())}.xml"
 
     try {
         Set-Content -Path $setupFile -Value $FileContent -NoNewline
