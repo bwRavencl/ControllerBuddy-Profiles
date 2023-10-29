@@ -97,7 +97,7 @@ return disabled
         Exit 1
     }
 
-    $synchronizeControlsLine = Select-String -Path $optionsLuaFile -Pattern '["synchronize_controls"]' -SimpleMatch
+    $synchronizeControlsLine = Select-String -Path $optionsLuaFile -Pattern '^\s*\["synchronize_controls"\]'
     if ($null -eq $synchronizeControlsLine)
     {
         Write-Output "Error: file '$optionsLuaFile' is missing the 'synchronize_controls' line"
