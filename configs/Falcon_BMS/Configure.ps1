@@ -20627,7 +20627,7 @@ Set-Variable KeyFileExtension -Option Constant -Value '.key'
 Set-Variable BMSFullKeyBasename -Option Constant -Value "${KeyFilePrefix}Full"
 Set-Variable BMSAutoKeyBasename -Option Constant -Value "${KeyFilePrefix}Auto"
 
-Set-Variable UserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\2.4.0.6\user.config"
+Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\2.4.0.6\user.config"
 
 $bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore).TrimEnd('\')
 
@@ -20703,11 +20703,11 @@ function Copy-FullKeyFile {
 Copy-FullKeyFile
 Copy-FullKeyFile 'F15ABCD'
 
-if (Test-Path $UserConfigFile -PathType Leaf) {
+if (Test-Path $AlternativeLauncherUserConfigFile -PathType Leaf) {
     try {
         $userConfigXml = [xml]::new()
         $userConfigXml.PreserveWhitespace = $true
-        $userConfigXml.Load($UserConfigFile)
+        $userConfigXml.Load($AlternativeLauncherUserConfigFile)
 
         function Set-UserConfigSetting {
             [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '', Justification = 'False positive as function itself does not change system state')]
@@ -20725,17 +20725,29 @@ if (Test-Path $UserConfigFile -PathType Leaf) {
 
         if ((Set-UserConfigSetting -Name 'NoOverride' -Value 'False') -bor (Set-UserConfigSetting -Name 'Misc_ExMouseLook' -Value 'True')) {
             try {
-                $userConfigXml.Save($UserConfigFile)
-                Write-Output "Wrote file: $UserConfigFile"
+                $userConfigXml.Save($AlternativeLauncherUserConfigFile)
+                Write-Output "Wrote file: $AlternativeLauncherUserConfigFile"
             } catch {
-                Write-Output "Error: Could not write file: $UserConfigFile"
+                Write-Output "Error: Could not write file: $AlternativeLauncherUserConfigFile"
                 Exit 1
             }
         }
     } catch {
-        Write-Output "Error: Could not process file: $UserConfigFile"
+        Write-Output "Error: Could not process file: $AlternativeLauncherUserConfigFile"
         Exit 1
     }
+}
+
+$bmsUserConfigFile = "$bmsConfigDir\Falcon BMS User.cfg"
+try {
+    if (Test-Path $bmsUserConfigFile -PathType Leaf) {
+        (Get-Content -Path $bmsUserConfigFile | Where-Object { $_ -notmatch '^\s*set g_bUseXInput ' }) | Set-Content -Path $bmsUserConfigFile
+    }
+
+    Add-Content -Path $bmsUserConfigFile -Value 'set g_bUseXInput 0'
+} catch {
+    Write-Output "Error: Could not process file: $bmsUserConfigFile"
+    Exit 1
 }
 
 Write-Output @"
