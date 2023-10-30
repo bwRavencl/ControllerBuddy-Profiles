@@ -84,7 +84,7 @@ local disabled = {
 return disabled
 '@
 
-        Set-Content -Path $disabledDevicesLuaFile -Value $fileContent -NoNewline
+        New-Item -Path $disabledDevicesLuaFile -Value ($fileContent | Out-String) -Force | Out-Null
         Write-Output "Wrote file: $disabledDevicesLuaFile"
     } catch {
         Write-Output "Error: Could not write file: $disabledDevicesLuaFile"
@@ -116,7 +116,7 @@ return disabled
             $optionsLuaContent = Get-Content $optionsLuaFile
             $optionsLuaContent[$synchronizeControlsLine.LineNumber - 1] = "`t`t[`"synchronize_controls`"] = true,"
 
-            Set-Content -Path $optionsLuaFile -Value $optionsLuaContent
+            New-Item -Path $optionsLuaFile -Value ($optionsLuaContent | Out-String) -Force | Out-Null
             Write-Output "Updated file: $optionsLuaFile"
         } catch {
             Write-Output "Error: Could not update file: $optionsLuaFile"
