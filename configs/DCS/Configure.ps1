@@ -69,7 +69,7 @@ foreach ($dcsUserDir in $dcsUserDirs) {
     $disabledDevicesLuaFile = "$inputDir\disabled.lua"
 
     try {
-        $fileContent =@'
+        $fileContent = @'
 local disabled = {
 	["devices"] = {
 
