@@ -27,25 +27,7 @@ if ($null -eq $vJoyDevice) {
 }
 
 $devicesTxt = "$il2InputDir\devices.txt"
-
-if (Test-Path $devicesTxt -PathType Leaf) {
-    $devicesTxtContent = (Get-Content $devicesTxt -Raw)
-}
-
-if ([string]::IsNullOrEmpty($devicesTxtContent)) {
-    $devicesTxtContent = 'configId,guid,model|'
-}
-
-$vJoyDeviceLineWithoutIndex = $([uri]::EscapeUriString("`"$(($vJoyDevice.InstanceGuid.ToString().ToLower() -split '-', 5)[0..2] -join '-')-0000545345440380`",$($vJoyDevice.InstanceName.ToString())"))
-$vJoyDeviceLineWithIndexZero = "0,$vJoyDeviceLineWithoutIndex"
-$escapedVJoyDeviceLineWithoutIndex = $([Regex]::Escape($vJoyDeviceLineWithoutIndex))
-
-$devicesTxtContent = $devicesTxtContent -replace "(?m)^[1-9][0-9]*(,$escapedVJoyDeviceLineWithoutIndex)", '0$1'
-$devicesTxtContent = $devicesTxtContent -replace "(?m)^0(,(?!$escapedVJoyDeviceLineWithoutIndex))", '1$1'
-
-if ($devicesTxtContent -notmatch $([Regex]::Escape($vJoyDeviceLineWithIndexZero))) {
-    $devicesTxtContent += "`n`n$vJoyDeviceLineWithIndexZero"
-}
+$devicesTxtContent = "configId,guid,model|`n`n0," + $([uri]::EscapeUriString("`"$(($vJoyDevice.InstanceGuid.ToString().ToLower() -split '-', 5)[0..2] -join '-')-0000545345440380`",$($vJoyDevice.InstanceName.ToString())"))
 
 try {
     Get-ChildItem -Path $il2InputDir -File -Depth 0 | Remove-Item
