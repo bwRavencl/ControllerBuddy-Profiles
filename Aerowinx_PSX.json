@@ -476,24 +476,13 @@
               "invert": false
             }
           }
-        ]
-      },
-      "buttonToActionsMap": {
-        "0": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "mouseButton": 1,
-              "minActivationInterval": 0
-            }
-          }
         ],
-        "1": [
+        "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
             "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 2,
@@ -501,7 +490,22 @@
             }
           }
         ],
-        "3": [
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 1,
+              "minActivationInterval": 0
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "7": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
