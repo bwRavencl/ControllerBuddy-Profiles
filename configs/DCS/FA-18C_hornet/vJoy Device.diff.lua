@@ -148,6 +148,14 @@ local diff = {
 			},
 			["name"] = "Weapon Release Button",
 		},
+		["d3003pnilunilcd57vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN12",
+				},
+			},
+			["name"] = "Toggle helmet visor",
+		},
 		["d3017pnilunilcd2vd0vpnilvunil"] = {
 			["added"] = {
 				[1] = {

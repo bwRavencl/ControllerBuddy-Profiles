@@ -1365,7 +1365,7 @@
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View / NVG / Eject",
+      "description": "View / NVG / Visor / Eject",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "5": [
@@ -1429,9 +1429,18 @@
         ],
         "13": [
           {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": true,
+              "buttonId": 11,
+              "minActivationInterval": 0,
+              "description": "Toggle helmet visor"
+            }
+          },
+          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "SINGLE_ON_RELEASE",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
