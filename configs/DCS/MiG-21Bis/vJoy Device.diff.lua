@@ -13,7 +13,7 @@ local diff = {
 						["hardwareDetentMax"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
-						["saturationY"] = 1,
+						["saturationY"] = 0.85,
 						["slider"] = false,
 					},
 					["key"] = "JOY_Y",
