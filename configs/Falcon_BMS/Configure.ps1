@@ -20627,7 +20627,7 @@ Set-Variable KeyFileExtension -Option Constant -Value '.key'
 Set-Variable BMSFullKeyBasename -Option Constant -Value "${KeyFilePrefix}Full"
 Set-Variable BMSAutoKeyBasename -Option Constant -Value "${KeyFilePrefix}Auto"
 
-Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\2.4.0.6\user.config"
+Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\2.4.1.5\user.config"
 
 $bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore).TrimEnd('\')
 
