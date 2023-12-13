@@ -20652,6 +20652,16 @@ if ($null -eq $vJoyDevice) {
     Exit 1
 }
 
+$gamepadDevices = Get-GamepadDeviceList
+
+while ($gamepadDevices.Count -lt 1) {
+    if ((Read-Host "Error: No gamepad present`nPlease make sure your gamepad is connected. Retry? [Yes/no]") -like 'n*') {
+        Exit 1
+    }
+
+    $gamepadDevices = Get-GamepadDeviceList
+}
+
 function Write-SetupFile {
     param (
         [Parameter(Mandatory = $true)]
@@ -20675,7 +20685,7 @@ function Write-SetupFile {
 
 Write-SetupFile $vJoyDevice $VjoySetupFileContent
 
-Get-GamepadDeviceList | ForEach-Object {
+$gamepadDevices | ForEach-Object {
     Write-SetupFile $_ $GamepadSetupFileContent
 }
 

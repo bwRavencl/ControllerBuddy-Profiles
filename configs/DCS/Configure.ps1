@@ -19,6 +19,14 @@ if ($null -eq $vJoyDevice) {
 
 $gamepadDevices = Get-GamepadDeviceList
 
+while ($gamepadDevices.Count -lt 1) {
+    if ((Read-Host "Error: No gamepad present`nPlease make sure your gamepad is connected. Retry? [Yes/no]") -like 'n*') {
+        Exit 1
+    }
+
+    $gamepadDevices = Get-GamepadDeviceList
+}
+
 function Get-DcsInstanceGuid {
     param (
         [Parameter(Mandatory = $true)]
