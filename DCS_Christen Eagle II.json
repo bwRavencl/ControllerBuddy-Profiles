@@ -340,7 +340,7 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "SINGLE_ON_RELEASE",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -350,6 +350,30 @@
               },
               "minActivationInterval": 0,
               "description": "Communication menu"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 2,
+              "minActivationInterval": 0,
+              "description": "VOIP Talk"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 3,
+              "minActivationInterval": 0,
+              "description": "VOIP Cockpit Talk"
             }
           }
         ]
@@ -780,16 +804,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
-    "Z": {
-      "color": -16777216,
-      "inverted": false
-    },
     "S1": {
       "color": -65536,
       "inverted": false
     },
     "S0": {
       "color": -16776961,
+      "inverted": false
+    },
+    "Z": {
+      "color": -16777216,
       "inverted": false
     }
   }

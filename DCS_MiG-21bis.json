@@ -534,7 +534,7 @@
             "data": {
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "SINGLE_ON_RELEASE",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -544,6 +544,17 @@
               },
               "minActivationInterval": 0,
               "description": "Intercomm menu"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 4,
+              "minActivationInterval": 0,
+              "description": "VOIP Talk"
             }
           }
         ]
