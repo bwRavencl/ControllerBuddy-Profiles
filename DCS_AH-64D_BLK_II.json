@@ -202,6 +202,23 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "V"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "George AI Helper Interface - Show/Hide"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -803,6 +820,23 @@
             }
           }
         ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Communication menu"
+            }
+          }
+        ],
         "3": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -831,23 +865,6 @@
               "buttonId": 8,
               "minActivationInterval": 0,
               "description": "PTT/RTS Switch - RTS/Depress"
-            }
-          }
-        ],
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "\\"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "description": "Communication menu"
             }
           }
         ],
