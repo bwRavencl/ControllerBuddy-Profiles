@@ -125,6 +125,11 @@ local diff = {
 			["name"] = "Microphone Button (VOIP)",
 		},
 		["d3001pnilu3001cd4vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
 			["name"] = "N-37D Cannon Fire Button",
 			["removed"] = {
 				[1] = {
