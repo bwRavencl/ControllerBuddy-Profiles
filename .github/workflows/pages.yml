@@ -39,10 +39,8 @@ jobs:
           distribution: ${{ env.JAVA_DISTRIBUTION }}
           java-version: ${{ env.JAVA_VERSION }}
       - name: Install ControllerBuddy
-        uses: gradle/gradle-build-action@v2
-        with:
-          arguments: installDist
-          build-root-directory: ControllerBuddy
+        working-directory: ControllerBuddy
+        run: ./gradlew installDist
       - name: Update Visualizations
         timeout-minutes: 7
         run: |
