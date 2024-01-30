@@ -863,18 +863,10 @@
       "buttonToActionsMap": {
         "1": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "REPEAT",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "X"
-                ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
-              },
+              "buttonId": 14,
               "minActivationInterval": 0,
               "description": "Trim Rudder Right"
             }
@@ -882,18 +874,10 @@
         ],
         "2": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "REPEAT",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Z"
-                ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
-              },
+              "buttonId": 13,
               "minActivationInterval": 0,
               "description": "Trim Rudder Left"
             }
@@ -1060,12 +1044,12 @@
       "color": -65536,
       "inverted": false
     },
-    "S0": {
-      "color": -16776961,
-      "inverted": false
-    },
     "Z": {
       "color": -16777216,
+      "inverted": false
+    },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     }
   }
