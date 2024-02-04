@@ -76,8 +76,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "deadZone": 0.0,
-              "exponent": 1.0,
+              "deadZone": 0.25,
+              "exponent": 2.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
               "invert": false,
@@ -104,8 +104,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "deadZone": 0.0,
-              "exponent": 1.0,
+              "deadZone": 0.1,
+              "exponent": 1.5,
               "initialValue": 0.0,
               "virtualAxis": "X",
               "invert": false,
@@ -117,8 +117,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
-              "deadZone": 0.0,
-              "exponent": 1.0,
+              "deadZone": 0.1,
+              "exponent": 1.5,
               "initialValue": 0.0,
               "virtualAxis": "Y",
               "invert": false,
@@ -409,18 +409,12 @@
         ],
         "1": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "REPEAT",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "B"
-                ],
-                "modifierCodes": []
-              },
+              "buttonId": 7,
               "minActivationInterval": 0,
-              "description": "Wheel Brakes"
+              "description": "Lock Tail Wheel"
             }
           }
         ],
@@ -432,17 +426,6 @@
               "buttonId": 5,
               "minActivationInterval": 0,
               "description": "Toggle Arresting Hook"
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 7,
-              "minActivationInterval": 0,
-              "description": "Lock Tail Wheel"
             }
           }
         ],
@@ -480,6 +463,28 @@
               "buttonId": 8,
               "minActivationInterval": 0,
               "description": "Toggle Wing Fold"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 19,
+              "minActivationInterval": 0,
+              "description": "Lower Gear manually"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 18,
+              "minActivationInterval": 0,
+              "description": "Rise Gear manually"
             }
           }
         ]
@@ -750,7 +755,7 @@
     },
     {
       "uuid": "ca236e7e-a577-4159-9b4d-14be96a0e21a",
-      "description": "Prop / WEP",
+      "description": "Prop / WEP / Supercharger",
       "axisToActionsMap": {
         "1": [
           {
@@ -804,12 +809,34 @@
               "description": "Boost (WEP) On/Off"
             }
           }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 21,
+              "minActivationInterval": 0,
+              "description": "Supercharger Next Stage"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 20,
+              "minActivationInterval": 0,
+              "description": "Supercharger Prev. Stage"
+            }
+          }
         ]
       }
     },
     {
       "uuid": "5f9a7aee-0b35-4cfa-985b-7ae55ce208c6",
-      "description": "Rockets / Bombs / Droptanks",
+      "description": "Rockets / Bombs / Jettison",
       "axisToActionsMap": {
         "4": [
           {
@@ -1156,16 +1183,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
+    "S0": {
+      "color": -16776961,
+      "inverted": false
+    },
     "S1": {
       "color": -65536,
       "inverted": false
     },
     "Z": {
       "color": -16777216,
-      "inverted": false
-    },
-    "S0": {
-      "color": -16776961,
       "inverted": false
     }
   }
