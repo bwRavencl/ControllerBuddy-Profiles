@@ -46,6 +46,13 @@
         "modeUuid": "5f9a7aee-0b35-4cfa-985b-7ae55ce208c6"
       }
     ],
+    "7": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "31bdeed6-9ed2-4e45-ba36-aa71e826cae7"
+      }
+    ],
     "9": [
       {
         "toggle": true,
@@ -156,28 +163,6 @@
       "buttonToActionsMap": {
         "2": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
-            "data": {
-              "virtualAxis": "RX",
-              "resetValue": 0.0,
-              "fluid": false,
-              "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY",
-              "description": "Center View"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
-            "data": {
-              "virtualAxis": "RY",
-              "resetValue": 0.0,
-              "fluid": false,
-              "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY",
-              "description": "Center View"
-            }
-          },
-          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
@@ -225,12 +210,44 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "A"
+                  "F1"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "description": "Toggle Gunsight"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num5"
                 ],
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "description": "Toggle Autopilot"
+              "description": "Center View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "PgDn"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Wide View"
             }
           }
         ],
@@ -485,6 +502,45 @@
               "buttonId": 18,
               "minActivationInterval": 0,
               "description": "Rise Gear manually"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "31bdeed6-9ed2-4e45-ba36-aa71e826cae7",
+      "description": "Gunsight",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num5"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Center View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "PgDn"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "description": "Wide View"
             }
           }
         ]
@@ -1099,23 +1155,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "F1"
-                ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
-              },
-              "minActivationInterval": 0,
-              "description": "Toggle Gunsight"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_ON_RELEASE",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -1183,16 +1222,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
+    "Z": {
+      "color": -16777216,
+      "inverted": false
+    },
     "S0": {
       "color": -16776961,
       "inverted": false
     },
     "S1": {
       "color": -65536,
-      "inverted": false
-    },
-    "Z": {
-      "color": -16777216,
       "inverted": false
     }
   }
