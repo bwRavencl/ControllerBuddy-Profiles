@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "showOverlay": true,
   "showVrOverlay": false,
   "keyRepeatInterval": 30,
@@ -91,6 +91,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.25,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Z",
@@ -106,6 +108,8 @@
               "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
               "deadZone": 0.25,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "RX",
@@ -119,6 +123,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
@@ -132,6 +138,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
@@ -258,7 +266,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "Afterburner on"
                   }
                 },
@@ -274,7 +282,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "Afterburner off"
                   }
                 }
@@ -1134,7 +1142,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 2,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ],
@@ -1147,7 +1156,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 1,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ]
@@ -1160,7 +1170,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 3,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ],
@@ -1324,7 +1335,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "MFD 1"
                   }
                 },
@@ -1340,7 +1351,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "MFD 2"
                   }
                 },
@@ -1356,7 +1367,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "MFD 3"
                   }
                 },
@@ -1372,7 +1383,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "Warning panel"
                   }
                 },
@@ -1388,7 +1399,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "IRST"
                   }
                 },
@@ -1404,7 +1415,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "Horizon \u0026 compass"
                   }
                 }

@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "showOverlay": true,
   "showVrOverlay": false,
   "keyRepeatInterval": 30,
@@ -91,6 +91,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Z",
@@ -107,6 +109,8 @@
               "hapticFeedback": true,
               "detentValue": -0.85,
               "deadZone": 0.25,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "RX",
@@ -120,6 +124,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
@@ -133,6 +139,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
@@ -1047,7 +1055,8 @@
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0
                   }
                 },
                 {
@@ -1061,7 +1070,8 @@
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0
                   }
                 },
                 {
@@ -1075,7 +1085,8 @@
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0
                   }
                 },
                 {
@@ -1089,7 +1100,8 @@
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0
                   }
                 },
                 {
@@ -1103,7 +1115,8 @@
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0
                   }
                 }
               ],
@@ -1150,7 +1163,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "Short Range Missile"
                   }
                 },
@@ -1166,7 +1179,7 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-              "maxActivationInterval": 0,
+                    "maxActivationInterval": 0,
                     "description": "Medium Range Missile"
                   }
                 }
@@ -1214,7 +1227,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 2,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ],
@@ -1227,7 +1241,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 1,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ]
@@ -1240,7 +1255,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 3,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ],

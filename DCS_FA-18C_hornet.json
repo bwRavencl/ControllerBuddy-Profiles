@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "showOverlay": true,
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
@@ -84,6 +84,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
@@ -100,6 +102,8 @@
               "hapticFeedback": true,
               "detentValue": -0.5,
               "deadZone": 0.25,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
@@ -113,6 +117,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
@@ -126,6 +132,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
@@ -151,6 +159,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
@@ -164,6 +174,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
@@ -678,6 +690,8 @@
               "maxRelativeSpeed": 0.91,
               "hapticFeedback": false,
               "deadZone": 0.12,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
@@ -693,6 +707,8 @@
               "maxRelativeSpeed": 1.0,
               "hapticFeedback": false,
               "deadZone": 0.12,
+              "minValue": -1.0,
+              "maxValue": 1.0,
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
@@ -1014,7 +1030,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 2,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ],
@@ -1027,7 +1044,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 1,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ]
@@ -1040,7 +1058,8 @@
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 3,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ],
