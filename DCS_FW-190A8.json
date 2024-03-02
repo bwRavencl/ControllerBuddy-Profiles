@@ -68,7 +68,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -84,7 +85,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle"
             }
           }
         ],
@@ -98,7 +100,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -112,7 +115,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -125,7 +129,8 @@
               "maxAxisValue": 1.0,
               "buttonId": 1,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Fire Cannons - Outer Wing (B)"
             }
           },
           {
@@ -137,7 +142,8 @@
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Left"
             }
           }
         ],
@@ -150,7 +156,8 @@
               "maxAxisValue": 1.0,
               "buttonId": 0,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Fire Cannons and Machine Guns - Nose \u0026 Wing (A)"
             }
           },
           {
@@ -162,7 +169,8 @@
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake Right"
             }
           }
         ]
@@ -176,7 +184,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -186,7 +195,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -201,7 +211,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Reset View"
             }
           },
           {
@@ -216,7 +227,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Reset View"
             }
           }
         ],
@@ -233,7 +245,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Master Arm ON/OFF"
             }
           }
         ],
@@ -252,7 +265,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Guns Safety Lever (toggle)"
             }
           }
         ],
@@ -263,7 +277,8 @@
               "longPress": false,
               "buttonId": 2,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Bom Release (B2)"
             }
           }
         ],
@@ -280,7 +295,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Flaps Landing"
             }
           },
           {
@@ -297,7 +313,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Flaps Take Off"
             }
           }
         ],
@@ -314,7 +331,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Landing Gear Up/Down"
             }
           }
         ],
@@ -333,7 +351,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Flaps Up"
             }
           }
         ]
@@ -408,51 +427,6 @@
       }
     },
     {
-      "uuid": "ba92eccb-5498-46e9-943d-c18b60c53429",
-      "description": "Cowl",
-      "axisToActionsMap": {},
-      "buttonToActionsMap": {
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "A"
-                ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "A"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
-            }
-          }
-        ]
-      }
-    },
-    {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
       "description": "Look / Comm",
       "axisToActionsMap": {
@@ -468,7 +442,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -484,7 +459,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -540,7 +516,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -578,7 +555,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -634,7 +612,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -654,7 +633,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -674,7 +654,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -818,7 +799,8 @@
                       ]
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Throttle to START"
                   }
                 },
                 {
@@ -835,7 +817,8 @@
                       ]
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Throttle to STOP"
                   }
                 }
               ],
@@ -856,7 +839,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Engine RPM Increase"
             }
           }
         ],
@@ -875,7 +859,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Governor Automation ON"
             }
           }
         ],
@@ -892,7 +877,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Engine RPM Decrease"
             }
           }
         ],
@@ -911,7 +897,55 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Governor Automation OFF"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "ba92eccb-5498-46e9-943d-c18b60c53429",
+      "description": "Radiator",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "A"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Radiator Flaps Close"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "A"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Radiator Flaps Open"
             }
           }
         ]
@@ -937,7 +971,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Trim Elevator Down"
             }
           }
         ],
@@ -956,7 +991,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Trim Elevator Up"
             }
           }
         ]
@@ -988,7 +1024,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -1005,7 +1042,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1022,7 +1060,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1059,7 +1098,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F2 Aircraft view"
             }
           }
         ]
