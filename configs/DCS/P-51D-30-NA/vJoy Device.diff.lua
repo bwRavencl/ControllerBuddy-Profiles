@@ -109,7 +109,7 @@ local diff = {
 		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "COMM Push to talk (VOIP)",
@@ -122,18 +122,10 @@ local diff = {
 				},
 			},
 		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Gun fire",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
-		},
 		["d961pnilu962cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN1",
+					["key"] = "JOY_BTN2",
 				},
 			},
 			["name"] = "Wheel brake Left",
@@ -141,7 +133,7 @@ local diff = {
 		["d963pnilu964cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN3",
 				},
 			},
 			["name"] = "Wheel brake Right",
