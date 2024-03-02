@@ -131,10 +131,26 @@ local diff = {
 		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN5",
+					["key"] = "JOY_BTN7",
 				},
 			},
 			["name"] = "COMM Push to talk (VOIP)",
+		},
+		["d3031pnilu3031cd2vd0vpnilvu0.5"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Landing Flaps RETRACT (hold) / NEUTRAL (release)",
+		},
+		["d3031pnilu3031cd2vd1vpnilvu0.5"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Landing Flaps EXTEND (hold) / NEUTRAL (release)",
 		},
 		["d961pnilu962cdnilvdnilvpnilvunil"] = {
 			["added"] = {
