@@ -5,9 +5,12 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.1,
+							[1] = 0.25,
 						},
 						["deadzone"] = 0.12,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -23,9 +26,12 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.1,
+							[1] = 0.2,
 						},
 						["deadzone"] = 0.12,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -137,7 +143,7 @@ local diff = {
 		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN3",
 				},
 			},
 			["name"] = "COMM Push to talk (VOIP)",
@@ -164,6 +170,11 @@ local diff = {
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
 			["name"] = "MG131/151 fire",
 			["removed"] = {
 				[1] = {
