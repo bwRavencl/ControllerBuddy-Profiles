@@ -4,6 +4,13 @@
   "showVrOverlay": true,
   "keyRepeatInterval": 30,
   "buttonToModeActionsMap": {
+    "0": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "65895465-24e2-4ac7-9075-b4fec20e0786"
+      }
+    ],
     "1": [
       {
         "toggle": false,
@@ -132,19 +139,6 @@
               "maxActivationInterval": 0,
               "description": "Fire Cannons - Outer Wing (B)"
             }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
-            "data": {
-              "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
-              "exponent": 1.0,
-              "initialValue": -1.0,
-              "virtualAxis": "S0",
-              "invert": false,
-              "description": "Wheel Brake Left"
-            }
           }
         ],
         "5": [
@@ -158,19 +152,6 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Fire Cannons and Machine Guns - Nose \u0026 Wing (A)"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
-            "data": {
-              "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
-              "exponent": 1.0,
-              "initialValue": -1.0,
-              "virtualAxis": "S1",
-              "invert": false,
-              "description": "Wheel Brake Right"
             }
           }
         ]
@@ -425,6 +406,43 @@
           }
         ]
       }
+    },
+    {
+      "uuid": "65895465-24e2-4ac7-9075-b4fec20e0786",
+      "description": "Brake",
+      "axisToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 1.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Wheel Brake Left"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 1.0,
+              "initialValue": -1.0,
+              "virtualAxis": "S1",
+              "invert": false,
+              "description": "Wheel Brake Right"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {}
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
