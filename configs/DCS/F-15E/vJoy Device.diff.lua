@@ -149,7 +149,7 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d1731pnilu1731cdnilvdnilvpnilvunil"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN13",
@@ -157,7 +157,7 @@ local diff = {
 			},
 			["name"] = "MIC Switch FWD (Radio 1 VOIP)",
 		},
-		["d1732pnilu1732cdnilvdnilvpnilvunil"] = {
+		["d1732pnilu1732cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN15",
