@@ -124,7 +124,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0.35,
 						},
-						["deadzone"] = 0.12,
+						["deadzone"] = 0.25,
 						["hardwareDetent"] = false,
 						["hardwareDetentAB"] = 0,
 						["hardwareDetentMax"] = 0,
@@ -140,6 +140,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN23",
+				},
+			},
+			["name"] = "Push-to-talk button (VOIP)",
+		},
 		["d3078pnilu3078cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -275,14 +283,6 @@ local diff = {
 				},
 			},
 			["name"] = "Radar control stick unlocking control",
-		},
-		["d3099pnilu3099cd1vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN23",
-				},
-			},
-			["name"] = "VoIP PTT button (custom)",
 		},
 		["d3398pnilunilcd1vd-1vpnilvunil"] = {
 			["added"] = {
