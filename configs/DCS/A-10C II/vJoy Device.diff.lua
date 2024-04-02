@@ -137,7 +137,7 @@ local diff = {
 		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN1",
+					["key"] = "JOY_BTN5",
 				},
 			},
 			["name"] = "HOTAS MIC Switch Down (VOIP)",
@@ -183,6 +183,14 @@ local diff = {
 					["key"] = "JOY_BTN1",
 				},
 			},
+		},
+		["d555pnilu639cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "Gun Trigger (first stage)",
 		},
 		["d562pnilu606cdnilvdnilvpnilvunil"] = {
 			["name"] = "HOTAS Nosewheel Steering Button",
