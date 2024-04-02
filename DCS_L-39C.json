@@ -11,6 +11,13 @@
         "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
       }
     ],
+    "3": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "7f01fdcd-0746-4753-ba65-11ae4fb834e4"
+      }
+    ],
     "4": [
       {
         "toggle": false,
@@ -23,13 +30,6 @@
         "toggle": false,
         "longPress": false,
         "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
-      }
-    ],
-    "6": [
-      {
-        "toggle": true,
-        "longPress": false,
-        "modeUuid": "7f01fdcd-0746-4753-ba65-11ae4fb834e4"
       }
     ],
     "9": [
@@ -61,7 +61,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -77,7 +78,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -91,7 +93,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -105,7 +108,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -119,31 +123,47 @@
               "exponent": 1.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brake"
             }
           }
         ],
         "5": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": []
-              },
+              "buttonId": 0,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Weapon Fire Button"
             }
           }
         ]
       },
       "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "W"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Jettison Weapons"
+            }
+          }
+        ],
         "2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
@@ -152,7 +172,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -162,7 +183,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -177,7 +199,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Reset View"
             }
           },
           {
@@ -192,7 +215,26 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Reset View"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "B"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Airbrake Button"
             }
           }
         ],
@@ -211,28 +253,12 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Weapon Fire Button Safety"
             }
           }
         ],
         "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "Home"
-                ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
-            }
-          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
@@ -252,7 +278,8 @@
                       ]
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Airbrake Switch - OPEN"
                   }
                 },
                 {
@@ -269,7 +296,8 @@
                       ]
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Airbrake Switch - CLOSE"
                   }
                 }
               ],
@@ -287,12 +315,11 @@
                 "keyCodes": [
                   "F"
                 ],
-                "modifierCodes": [
-                  "L Ctrl"
-                ]
+                "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Flaps Landing Position"
             }
           },
           {
@@ -309,28 +336,12 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Flaps TakeOff Position"
             }
           }
         ],
         "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
-              "keystroke": {
-                "keyCodes": [
-                  "End"
-                ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
-            }
-          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -343,7 +354,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Landing Gear Handle, Up/Down"
             }
           }
         ],
@@ -357,10 +369,13 @@
                 "keyCodes": [
                   "F"
                 ],
-                "modifierCodes": []
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Flaps Flight Position"
             }
           }
         ]
@@ -450,7 +465,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -466,7 +482,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -498,7 +515,7 @@
               "longPress": true,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 0,
+              "buttonId": 3,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Radio Button (VOIP)"
@@ -559,7 +576,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -597,7 +615,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -684,7 +703,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -704,7 +724,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -724,7 +745,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -848,7 +870,7 @@
       "description": "Sight",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "0": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
@@ -863,7 +885,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "ASP-3NMU Gunsight Mode, GYRO/FIXED"
             }
           }
         ],
@@ -880,7 +903,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "ASP-3NMU Gunsight Target Distance, Increase"
             }
           }
         ],
@@ -897,7 +921,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "ASP-3NMU Gunsight Target Wingspan Adjustment Dial, Increase"
             }
           }
         ],
@@ -914,7 +939,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "ASP-3NMU Gunsight Target Distance, Decrease"
             }
           }
         ],
@@ -931,7 +957,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "ASP-3NMU Gunsight Target Wingspan Adjustment Dial, Decrease"
             }
           }
         ]
@@ -957,7 +984,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Trimmer - Reset Position"
             }
           }
         ],
@@ -976,7 +1004,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Elevator Trimmer Switch, PUSH(DESCEND)"
             }
           }
         ],
@@ -995,7 +1024,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Aileron Trimmer Switch, RIGHT"
             }
           }
         ],
@@ -1014,7 +1044,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Elevator Trimmer Switch, PULL(CLIMB)"
             }
           }
         ],
@@ -1033,7 +1064,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Aileron Trimmer Switch, LEFT"
             }
           }
         ]
@@ -1065,7 +1097,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -1082,7 +1115,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -1099,7 +1133,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -1121,7 +1156,8 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 2"
                   }
                 },
                 {
@@ -1136,7 +1172,8 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 1"
                   }
                 }
               ],
@@ -1157,7 +1194,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F2 Aircraft view"
             }
           }
         ]
