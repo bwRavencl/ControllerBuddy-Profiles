@@ -122,7 +122,7 @@ local diff = {
 		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN1",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "Radio Button (VOIP)",
@@ -148,14 +148,6 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
-				},
-			},
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Fire Button",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
 				},
 			},
 		},
