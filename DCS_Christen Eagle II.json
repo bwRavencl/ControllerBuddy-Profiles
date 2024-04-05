@@ -68,7 +68,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -84,7 +85,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -98,7 +100,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -112,7 +115,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -125,7 +129,8 @@
               "maxAxisValue": 1.0,
               "buttonId": 0,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Brake, left"
             }
           }
         ],
@@ -138,7 +143,8 @@
               "maxAxisValue": 1.0,
               "buttonId": 1,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Brake, right"
             }
           }
         ]
@@ -152,7 +158,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -162,7 +169,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -211,7 +219,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Smoke"
             }
           }
         ],
@@ -228,7 +237,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Occupy Seat 2"
             }
           }
         ],
@@ -245,7 +255,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Occupy Seat 1"
             }
           }
         ]
@@ -335,7 +346,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -351,7 +363,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -414,12 +427,13 @@
                   "Num/"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -434,12 +448,13 @@
                   "Num*"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -490,12 +505,13 @@
                   "Num8"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -510,12 +526,13 @@
                   "Num6"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -530,12 +547,13 @@
                   "Num2"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -550,8 +568,8 @@
                   "Num4"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
@@ -578,7 +596,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Mixture"
             }
           }
         ]
@@ -693,7 +712,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Propeller"
             }
           }
         ]
@@ -720,7 +740,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Trim Hat - NOSE DOWN"
             }
           }
         ],
@@ -739,7 +760,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Trim Hat - NOSE UP"
             }
           }
         ]
@@ -771,7 +793,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -788,7 +811,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -805,7 +829,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -842,7 +867,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F2 Aircraft view"
             }
           }
         ]
@@ -850,16 +876,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
+    "Z": {
+      "color": -16777216,
+      "inverted": false
+    },
     "S1": {
       "color": -65536,
       "inverted": false
     },
     "S0": {
       "color": -16776961,
-      "inverted": false
-    },
-    "Z": {
-      "color": -16777216,
       "inverted": false
     }
   }
