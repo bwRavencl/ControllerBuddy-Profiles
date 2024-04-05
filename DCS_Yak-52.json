@@ -61,7 +61,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -77,7 +78,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle Lever, analog"
             }
           }
         ],
@@ -91,7 +93,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -105,7 +108,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -118,7 +122,8 @@
               "maxAxisValue": 1.0,
               "buttonId": 0,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Smoke Apparatus, toggle"
             }
           }
         ],
@@ -132,53 +137,13 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Wheel Brakes - axis"
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "0": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
-            "data": {
-              "longPress": false,
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
-                    "keystroke": {
-                      "keyCodes": [
-                        "2"
-                      ],
-                      "modifierCodes": []
-                    },
-                    "minActivationInterval": 0,
-                    "maxActivationInterval": 0
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
-                    "keystroke": {
-                      "keyCodes": [
-                        "1"
-                      ],
-                      "modifierCodes": []
-                    },
-                    "minActivationInterval": 0,
-                    "maxActivationInterval": 0
-                  }
-                }
-              ],
-              "activation": "SINGLE_IMMEDIATELY"
-            }
-          }
-        ],
         "1": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -192,7 +157,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Main Fuel Cock, toggle"
             }
           }
         ],
@@ -204,7 +170,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -214,7 +181,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -257,7 +225,8 @@
               "longPress": false,
               "buttonId": 4,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Wheel Brake Lock"
             }
           }
         ],
@@ -274,7 +243,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Engine Start Button"
             }
           }
         ],
@@ -285,7 +255,8 @@
               "longPress": false,
               "buttonId": 2,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Landing Flaps Lever, DOWN (extend)"
             }
           }
         ],
@@ -296,7 +267,8 @@
               "longPress": true,
               "buttonId": 3,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Landing Gear Lever, NEUTRAL"
             }
           },
           {
@@ -311,7 +283,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Landing Gear Lever, toggle"
             }
           }
         ],
@@ -322,7 +295,8 @@
               "longPress": false,
               "buttonId": 1,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Landing Flaps Lever, UP (retract)"
             }
           }
         ]
@@ -412,7 +386,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -428,7 +403,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -493,12 +469,13 @@
                   "Num/"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -513,12 +490,13 @@
                   "Num*"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -569,12 +547,13 @@
                   "Num8"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -589,12 +568,13 @@
                   "Num6"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -609,12 +589,13 @@
                   "Num2"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -749,7 +730,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Engine RPM / Propeller Pitch Control Lever, analog"
             }
           }
         ]
@@ -776,7 +758,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Elevator Trim Tab Control Wheel, NOSE DOWN"
             }
           }
         ],
@@ -795,7 +778,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Elevator Trim Tab Control Wheel, NOSE UP"
             }
           }
         ]
@@ -803,7 +787,7 @@
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View / Eject",
+      "description": "View / Position / Eject",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "5": [
@@ -827,7 +811,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eject (3 times)"
             }
           }
         ],
@@ -844,7 +829,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -861,27 +847,51 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F10 Theater map view"
             }
           }
         ],
         "13": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "F4"
-                ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "F4 Arcade Chase view"
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "2"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 2"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "1"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 1"
+                  }
+                }
+              ],
+              "activation": "SINGLE_IMMEDIATELY"
             }
           }
         ],
@@ -898,7 +908,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F2 Aircraft view"
             }
           }
         ]
