@@ -25,6 +25,13 @@
         "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
       }
     ],
+    "7": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "a5e50cba-de0f-43e9-a2a8-12ccb49214e2"
+      }
+    ],
     "9": [
       {
         "toggle": true,
@@ -54,7 +61,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Rudder"
             }
           }
         ],
@@ -70,7 +78,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Collective"
             }
           }
         ],
@@ -84,7 +93,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Roll"
             }
           }
         ],
@@ -98,28 +108,12 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Flight Control Pitch"
             }
           }
         ],
         "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "W"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
-            }
-          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
@@ -130,6 +124,19 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Release Bomb"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Wheel brake"
             }
           }
         ],
@@ -160,12 +167,13 @@
                   "Ins"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "UV-26 Launch Button"
             }
           }
         ],
@@ -184,7 +192,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Wheel Parking Brake"
             }
           }
         ],
@@ -196,7 +205,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -206,7 +216,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT"
+              "activation": "REPEAT",
+              "description": "Reset View"
             }
           },
           {
@@ -255,7 +266,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Trim Button - press"
             }
           }
         ],
@@ -274,7 +286,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Trim - RESET to default"
             }
           }
         ],
@@ -289,12 +302,13 @@
                   "K"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "External Cargo Autounhook Switch - ON/OFF"
             }
           },
           {
@@ -307,12 +321,34 @@
                   "L"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "External Cargo Hook"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "A"
+                ],
+                "modifierCodes": [
+                  "L Win",
+                  "L Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Turn Off Autopilot Button"
             }
           }
         ],
@@ -327,13 +363,14 @@
                   "P"
                 ],
                 "modifierCodes": [
-                  "R Shift",
                   "R Alt",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "External Cargo Emergency Unhook"
             }
           }
         ]
@@ -408,6 +445,173 @@
       }
     },
     {
+      "uuid": "a5e50cba-de0f-43e9-a2a8-12ccb49214e2",
+      "description": "Lights",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "7"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Right Headlight - Down"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "0"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Right Headlight - Right"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "9"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Right Headlight - Left"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "8"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Right Headlight - Up"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "8"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Left Headlight - Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "0"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Left Headlight - Right"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "7"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Left Headlight - Down"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "9"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Left Headlight - Left"
+            }
+          }
+        ]
+      }
+    },
+    {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
       "description": "Look / Comm",
       "axisToActionsMap": {
@@ -423,7 +627,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -439,7 +644,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -524,12 +730,13 @@
                   "Num/"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Back"
             }
           }
         ],
@@ -562,12 +769,13 @@
                   "Num*"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Forward"
             }
           }
         ],
@@ -618,12 +826,13 @@
                   "Num8"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Up"
             }
           }
         ],
@@ -638,12 +847,13 @@
                   "Num6"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
             }
           }
         ],
@@ -658,12 +868,13 @@
                   "Num2"
                 ],
                 "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
+                  "R Ctrl",
+                  "R Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Down"
             }
           }
         ],
@@ -801,7 +1012,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "GAS handle - DEC (left roatation)"
             }
           },
           {
@@ -818,7 +1030,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "GAS handle - INC (right roatation)"
             }
           }
         ]
@@ -849,7 +1062,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F1 Cockpit view"
             }
           }
         ],
@@ -866,7 +1080,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F10 Theater map view"
             }
           }
         ],
@@ -885,7 +1100,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Night Vision Goggles"
             }
           },
           {
@@ -905,7 +1121,8 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Set Copilot Seat"
                   }
                 },
                 {
@@ -920,7 +1137,8 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Set Technican Seat"
                   }
                 },
                 {
@@ -935,7 +1153,8 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Set Left Gunner Sea"
                   }
                 },
                 {
@@ -950,7 +1169,8 @@
                       "modifierCodes": []
                     },
                     "minActivationInterval": 0,
-                    "maxActivationInterval": 0
+                    "maxActivationInterval": 0,
+                    "description": "Set Pilot Seat"
                   }
                 }
               ],
@@ -971,7 +1191,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "F2 Aircraft view"
             }
           }
         ]
