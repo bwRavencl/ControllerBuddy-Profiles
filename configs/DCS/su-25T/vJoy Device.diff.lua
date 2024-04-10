@@ -112,7 +112,7 @@ local diff = {
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "I-251 Slew Horizontal",
+			["name"] = "IT-23 targeting display - slew right/left",
 		},
 		["a2034cdnil"] = {
 			["added"] = {
@@ -130,7 +130,7 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "I-251 Slew Vertical",
+			["name"] = "IT-23 targeting display - slew up/down",
 		},
 	},
 	["keyDiffs"] = {
@@ -157,6 +157,22 @@ local diff = {
 				},
 			},
 			["name"] = "Target Unlock",
+		},
+		["d1737pnilu1738cdnilvd0.1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "r.1 VoIP PTT",
+		},
+		["d1737pnilu1738cdnilvd0.2vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "r.2 VoIP PTT",
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
 			["name"] = "Weapon Fire",

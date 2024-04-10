@@ -158,6 +158,22 @@ local diff = {
 			},
 			["name"] = "Return To Search",
 		},
+		["d1737pnilu1738cdnilvd0.1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "r.1 VoIP PTT",
+		},
+		["d1737pnilu1738cdnilvd0.2vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "r.2 VoIP PTT",
+		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
 			["name"] = "Weapon Fire",
 			["removed"] = {

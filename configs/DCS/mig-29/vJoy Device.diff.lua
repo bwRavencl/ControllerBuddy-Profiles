@@ -148,6 +148,14 @@ local diff = {
 			},
 			["name"] = "Return To Search",
 		},
+		["d1737pnilu1738cdnilvd0.1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "r.1 VoIP PTT",
+		},
 		["d562pnilu562cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
