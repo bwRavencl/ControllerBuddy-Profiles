@@ -20760,13 +20760,34 @@ try {
     Exit 1
 }
 
-Write-Output @"
+Get-ChildItem "$bmsConfigDir" -Filter *.pop | Foreach-Object {
+  $popFile = $_.FullName
 
-$BmsFullName is now almost fully configured!
+  try {
+    $oldPopFileBytes = [System.IO.File]::ReadAllBytes($popFile)
+    $newPopFileBytes = $oldPopFileBytes.Clone()
 
-Please make the following manual adjustments within the $BmsFullName 'Setup' screen:
-- Disable 'User Messages'
-- Set the 'Mouselook Sensitivity' to the lowest possible value
-For further information consult the screenshots located under: $PSScriptRoot\
-"@
+    $newPopFileBytes[0x1A0] = 0x00
+    $newPopFileBytes[0x188] = 0xCD
+    $newPopFileBytes[0x189] = 0xCC
+    $newPopFileBytes[0x18A] = 0x4C
+    $newPopFileBytes[0x18B] = 0x3E
+
+    if (@(Compare-Object $oldPopFileBytes $newPopFileBytes -sync 0).Count -gt 0) {
+      try {
+        [System.IO.File]::WriteAllBytes($popFile, $newPopFileBytes)
+        Write-Output "Wrote file: $popFile"
+      }
+      catch {
+        Write-Output "Error: Could not write file: $popFile"
+      }
+    }
+  }
+  catch {
+    Write-Output "Error: Could not process file: $popFile"
+    Exit 1
+  }
+}
+
+Write-Output "`n$BmsFullName is now fully configured!"
 Exit 0
