@@ -54,7 +54,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Yaw"
             }
           }
         ],
@@ -70,7 +71,8 @@
               "exponent": 2.0,
               "initialValue": 0.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Thrust"
             }
           }
         ],
@@ -84,7 +86,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Roll"
             }
           }
         ],
@@ -98,7 +101,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -112,7 +116,8 @@
               "longPress": false,
               "mouseButton": 1,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Primary Fire"
             }
           }
         ],
@@ -126,7 +131,8 @@
               "longPress": false,
               "mouseButton": 2,
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Secondary Fire"
             }
           }
         ]
@@ -145,7 +151,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "UI Select"
             }
           }
         ],
@@ -162,7 +169,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Next Fire Group"
             }
           }
         ],
@@ -174,7 +182,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_IMMEDIATELY",
+              "description": "Reset View"
             }
           },
           {
@@ -184,7 +193,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_IMMEDIATELY",
+              "description": "Reset View"
             }
           }
         ],
@@ -201,7 +211,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Hardpoints"
             }
           }
         ],
@@ -218,7 +229,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Boost"
             }
           }
         ],
@@ -235,7 +247,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Thrust Up"
             }
           }
         ],
@@ -252,7 +265,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Thrust Right"
             }
           }
         ],
@@ -269,7 +283,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Thrust Down"
             }
           }
         ],
@@ -286,7 +301,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Thrust Left"
             }
           }
         ]
@@ -378,7 +394,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "ENG"
             }
           }
         ],
@@ -395,7 +412,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "WEP"
             }
           }
         ],
@@ -412,7 +430,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "RST"
             }
           }
         ],
@@ -429,7 +448,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "SYS"
             }
           }
         ]
@@ -451,7 +471,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Head Look Yaw"
             }
           }
         ],
@@ -467,68 +488,13 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": false
+              "invert": false,
+              "description": "Head Look Pitch"
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "0": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num/"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
-        "3": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num*"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
-            "data": {
-              "longPress": false,
-              "virtualKeyCode": "Num Lock",
-              "on": false
-            }
-          }
-        ],
         "9": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -542,7 +508,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Hyperspace/Supercruise"
             }
           }
         ],
@@ -559,7 +526,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Landing Gear"
             }
           }
         ]
@@ -675,7 +643,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Next Panel"
             }
           }
         ],
@@ -692,7 +661,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Prev Panel"
             }
           }
         ],
@@ -709,7 +679,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Target Ahead"
             }
           }
         ],
@@ -726,7 +697,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Next Contact"
             }
           }
         ],
@@ -743,7 +715,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Wingman Navlock"
             }
           }
         ],
@@ -760,7 +733,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Highest Threat"
             }
           }
         ]
