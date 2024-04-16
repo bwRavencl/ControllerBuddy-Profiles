@@ -75,7 +75,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "RZ",
-              "invert": false
+              "invert": false,
+              "description": "Rudder"
             }
           }
         ],
@@ -91,7 +92,8 @@
               "exponent": 2.0,
               "initialValue": 1.0,
               "virtualAxis": "Z",
-              "invert": false
+              "invert": false,
+              "description": "Throttle"
             }
           }
         ],
@@ -105,7 +107,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "X",
-              "invert": false
+              "invert": false,
+              "description": "Bank"
             }
           }
         ],
@@ -119,7 +122,8 @@
               "exponent": 1.0,
               "initialValue": 0.0,
               "virtualAxis": "Y",
-              "invert": false
+              "invert": false,
+              "description": "Pitch"
             }
           }
         ],
@@ -138,7 +142,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Brakes (apply left brake)"
             }
           }
         ],
@@ -157,7 +162,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Brakes (apply right brake)"
             }
           }
         ]
@@ -171,7 +177,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_IMMEDIATELY",
+              "description": "Reset View"
             }
           },
           {
@@ -181,7 +188,8 @@
               "resetValue": 0.0,
               "fluid": false,
               "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_IMMEDIATELY",
+              "description": "Reset View"
             }
           },
           {
@@ -198,7 +206,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Reset View"
             }
           }
         ],
@@ -210,12 +219,13 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Y"
+                  "Z"
                 ],
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Autopilot Master (on/off)"
             }
           }
         ],
@@ -227,12 +237,13 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  ";"
+                  "\u0027"
                 ],
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "ATC Window (display/hide)"
             }
           }
         ],
@@ -244,14 +255,15 @@
               "longPress": true,
               "keystroke": {
                 "keyCodes": [
-                  "\\"
+                  "/"
                 ],
                 "modifierCodes": [
                   "L Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Arm Spoilers  "
             }
           },
           {
@@ -261,12 +273,13 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "\\"
+                  "/"
                 ],
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Extend/Retract Spoilers/Airbrakes"
             }
           }
         ],
@@ -283,7 +296,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Flaps Increase"
             }
           }
         ],
@@ -302,7 +316,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Brake (set parking)"
             }
           },
           {
@@ -317,7 +332,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Landing Gear (extend/retract)"
             }
           }
         ],
@@ -334,7 +350,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Flaps Decrease"
             }
           }
         ]
@@ -413,6 +430,24 @@
       "description": "Engine",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "H"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Carb Heat/Engine Anti-ice (on/off)"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -424,12 +459,13 @@
                   "C"
                 ],
                 "modifierCodes": [
-                  "L Shift",
-                  "L Ctrl"
+                  "L Ctrl",
+                  "L Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cowl Flaps (close incrementally)"
             }
           }
         ],
@@ -444,29 +480,13 @@
                   "V"
                 ],
                 "modifierCodes": [
-                  "L Shift",
-                  "L Ctrl"
+                  "L Ctrl",
+                  "L Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "H"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Cowl Flaps (open incrementally)"
             }
           }
         ]
@@ -474,7 +494,7 @@
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look / Comm",
+      "description": "Look",
       "axisToActionsMap": {
         "0": [
           {
@@ -488,7 +508,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RX",
-              "invert": false
+              "invert": false,
+              "description": "Look (left/right)"
             }
           }
         ],
@@ -504,20 +525,8 @@
               "exponent": 3.0,
               "initialValue": 0.0,
               "virtualAxis": "RY",
-              "invert": true
-            }
-          }
-        ],
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": false,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 11,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "invert": true,
+              "description": "Look (up/down)"
             }
           }
         ]
@@ -538,7 +547,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eyepoint (move back)"
             }
           }
         ],
@@ -557,7 +567,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eyepoint (move forward)"
             }
           }
         ],
@@ -568,13 +579,12 @@
               "activation": "REPEAT",
               "longPress": false,
               "keystroke": {
-                "keyCodes": [
-                  "/"
-                ],
+                "keyCodes": [],
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Zoom Out"
             }
           }
         ],
@@ -586,12 +596,13 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "]"
+                  "\u003d"
                 ],
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Zoom In"
             }
           }
         ],
@@ -610,7 +621,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eyepoint (move up)"
             }
           }
         ],
@@ -625,12 +637,13 @@
                   "Return"
                 ],
                 "modifierCodes": [
-                  "L Shift",
-                  "L Ctrl"
+                  "L Ctrl",
+                  "L Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eyepoint (move right)"
             }
           }
         ],
@@ -649,7 +662,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eyepoint (move down)"
             }
           }
         ],
@@ -664,12 +678,13 @@
                   "Back"
                 ],
                 "modifierCodes": [
-                  "L Shift",
-                  "L Ctrl"
+                  "L Ctrl",
+                  "L Shift"
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Eyepoint (move left)"
             }
           }
         ]
@@ -691,7 +706,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S1",
-              "invert": false
+              "invert": false,
+              "description": "Mixture"
             }
           }
         ]
@@ -806,7 +822,8 @@
               "exponent": 2.0,
               "initialValue": -1.0,
               "virtualAxis": "S0",
-              "invert": false
+              "invert": false,
+              "description": "Propeller"
             }
           }
         ]
@@ -833,7 +850,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Rudder Trim (right)"
             }
           },
           {
@@ -841,7 +859,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": false
+              "on": false,
+              "description": "Rudder Trim (right)"
             }
           }
         ],
@@ -860,7 +879,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Rudder Trim (left)"
             }
           },
           {
@@ -868,7 +888,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": false
+              "on": false,
+              "description": "Rudder Trim (left)"
             }
           }
         ],
@@ -885,7 +906,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Elevator Trim Down"
             }
           },
           {
@@ -893,7 +915,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": false
+              "on": false,
+              "description": "Elevator Trim Down"
             }
           }
         ],
@@ -912,7 +935,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Aileron Trim (right)"
             }
           },
           {
@@ -920,7 +944,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": false
+              "on": false,
+              "description": "Aileron Trim (right)"
             }
           }
         ],
@@ -937,7 +962,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Elevator Trim Up"
             }
           },
           {
@@ -945,7 +971,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": false
+              "on": false,
+              "description": "Elevator Trim Up"
             }
           }
         ],
@@ -964,7 +991,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "Aileron Trim (left)"
             }
           },
           {
@@ -972,7 +1000,8 @@
             "data": {
               "longPress": false,
               "virtualKeyCode": "Num Lock",
-              "on": false
+              "on": false,
+              "description": "Aileron Trim (left)"
             }
           }
         ]
@@ -996,7 +1025,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "View (next view in category)"
             }
           }
         ],
@@ -1015,7 +1045,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "View (previous category)"
             }
           }
         ],
@@ -1034,7 +1065,8 @@
                 ]
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "View (previous view in category)"
             }
           }
         ],
@@ -1051,7 +1083,8 @@
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "description": "View (next category)"
             }
           }
         ]
