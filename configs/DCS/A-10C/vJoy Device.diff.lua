@@ -200,6 +200,30 @@ local diff = {
 				},
 			},
 		},
+		["d563pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+			["name"] = "HOTAS Boat Switch Forward",
+		},
+		["d564pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "HOTAS Boat Switch Aft",
+		},
+		["d565pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "HOTAS Boat Switch Center",
+		},
 		["d957pnilu958cdnilvdnilvpnilvunil"] = {
 			["name"] = "Stick to trimmer control mode",
 			["removed"] = {
