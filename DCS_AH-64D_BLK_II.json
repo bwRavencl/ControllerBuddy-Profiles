@@ -813,40 +813,6 @@
               "description": "PTT/RTS Switch - RADIO/Left (VOIP)"
             }
           }
-        ],
-        "5": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": [
-                  "R Shift"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "PTT/RTS Switch - ICS/Right (call radio menu)"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "longPress": true,
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "buttonId": 36,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "PTT/RTS Switch - ICS/Right (VOIP)"
-            }
-          }
         ]
       },
       "buttonToActionsMap": {
@@ -919,6 +885,36 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "PTT/RTS Switch - RTS/Depress"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": true,
+              "buttonId": 36,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "PTT/RTS Switch - ICS/Right (VOIP)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Space"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "PTT/RTS Switch - ICS/Right (call radio menu)"
             }
           }
         ],
