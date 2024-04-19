@@ -96,6 +96,27 @@ local diff = {
 			},
 			["name"] = "Absolute Camera Vertical View",
 		},
+		["a2087cdnil"] = {
+			["changed"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0.2,
+						},
+						["deadzone"] = 0,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_Z",
+				},
+			},
+			["name"] = "Flight Control Collective",
+		},
 	},
 	["keyDiffs"] = {
 		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
