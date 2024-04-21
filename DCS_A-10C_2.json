@@ -287,15 +287,13 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "E"
+                  "Q"
                 ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
+                "modifierCodes": []
               },
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Emergency Disconnect Lever"
+              "description": "HOTAS Left Throttle Button"
             }
           }
         ],
@@ -389,9 +387,85 @@
     },
     {
       "uuid": "c064ecdb-ccf2-4392-b15d-e16ee438b497",
-      "description": "Air brake",
+      "description": "Air brake / Engine",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Engine Stop Right"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Engine Start Right"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "R Alt"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Engine Stop Left"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "R Alt"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Engine Start Left"
+            }
+          }
+        ],
         "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -691,7 +765,7 @@
     },
     {
       "uuid": "e3e6a54e-7105-4267-a56a-b0574d23e070",
-      "description": "Gear / Flaps",
+      "description": "Gear / Flaps / Pinky",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -749,6 +823,71 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Flaps Up"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "P"
+                      ],
+                      "modifierCodes": [
+                        "L Ctrl"
+                      ]
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "HOTAS Pinky Switch Aft"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "P"
+                      ],
+                      "modifierCodes": [
+                        "L Shift"
+                      ]
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "HOTAS Pinky Switch Center"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "P"
+                      ],
+                      "modifierCodes": [
+                        "L Alt"
+                      ]
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "HOTAS Pinky Switch Forward"
+                  }
+                }
+              ],
+              "activation": "SINGLE_IMMEDIATELY"
             }
           }
         ]
@@ -1447,7 +1586,7 @@
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim",
+      "description": "Trim / Paddle",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -1507,6 +1646,26 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Yaw Trim Left"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "E"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Emergency Disconnect Lever"
             }
           }
         ],
