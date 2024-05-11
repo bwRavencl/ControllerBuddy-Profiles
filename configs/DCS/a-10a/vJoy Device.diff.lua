@@ -96,41 +96,47 @@ local diff = {
 			},
 			["name"] = "Absolute Camera Vertical View",
 		},
-		["a2033cdnil"] = {
+		["a2112cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
-						["deadzone"] = 0.12,
-						["invert"] = false,
+						["deadzone"] = 0,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "TDC Slew Horizontal",
+			["name"] = "Wheel Brake Left",
 		},
-		["a2034cdnil"] = {
+		["a2113cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0,
 						},
-						["deadzone"] = 0.12,
-						["invert"] = false,
+						["deadzone"] = 0,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "TDC Slew Vertical",
+			["name"] = "Wheel Brake Right",
 		},
 	},
 	["keyDiffs"] = {
@@ -161,7 +167,7 @@ local diff = {
 		["d1635pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN3",
 				},
 			},
 			["name"] = "Target Unlock",
@@ -169,7 +175,7 @@ local diff = {
 		["d1737pnilu1738cdnilvd0.1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "r.1 VoIP PTT",
@@ -177,7 +183,7 @@ local diff = {
 		["d1737pnilu1738cdnilvd0.2vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN4",
+					["key"] = "JOY_BTN5",
 				},
 			},
 			["name"] = "r.2 VoIP PTT",
@@ -185,31 +191,10 @@ local diff = {
 		["d1737pnilu1738cdnilvd0.3vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN5",
+					["key"] = "JOY_BTN6",
 				},
 			},
 			["name"] = "r.3 VoIP PTT",
-		},
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
-			["name"] = "Weapon Release",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Fire",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
