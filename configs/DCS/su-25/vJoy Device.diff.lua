@@ -99,42 +99,6 @@ local diff = {
 			},
 			["name"] = "Absolute Camera Vertical View",
 		},
-		["a2033cdnil"] = {
-			["added"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.25,
-						},
-						["deadzone"] = 0.12,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
-					["key"] = "JOY_SLIDER1",
-				},
-			},
-			["name"] = "TDC Slew Horizontal",
-		},
-		["a2034cdnil"] = {
-			["added"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.25,
-						},
-						["deadzone"] = 0.12,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
-					["key"] = "JOY_SLIDER2",
-				},
-			},
-			["name"] = "TDC Slew Vertical",
-		},
 	},
 	["keyDiffs"] = {
 		["d100pnilu1627cdnilvdnilvpnilvunil"] = {
@@ -164,7 +128,7 @@ local diff = {
 		["d1635pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN1",
+					["key"] = "JOY_BTN2",
 				},
 			},
 			["name"] = "Target Unlock",
@@ -172,7 +136,7 @@ local diff = {
 		["d1737pnilu1738cdnilvd0.1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN3",
 				},
 			},
 			["name"] = "r.1 VoIP PTT",
@@ -180,18 +144,10 @@ local diff = {
 		["d1737pnilu1738cdnilvd0.2vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "r.2 VoIP PTT",
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Fire",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
