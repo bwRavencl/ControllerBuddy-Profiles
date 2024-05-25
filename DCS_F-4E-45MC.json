@@ -36,6 +36,13 @@
       {
         "toggle": true,
         "longPress": false,
+        "modeUuid": "a6ce9f05-f4cd-44d8-8b27-1e66d4b23826"
+      }
+    ],
+    "7": [
+      {
+        "toggle": true,
+        "longPress": false,
         "modeUuid": "1362c5ac-6bf9-401f-a39f-f3ec8ec8bc95"
       }
     ],
@@ -211,13 +218,13 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "A"
+                  "N"
                 ],
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Jester UI Action (short, hold)"
+              "description": "Nose Gear Steering / Auto Acquisition Button"
             }
           }
         ],
@@ -277,21 +284,21 @@
             }
           }
         ],
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
+              "longPress": true,
               "keystroke": {
                 "keyCodes": [
-                  "N"
+                  "A"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "minActivationInterval": 1000,
               "maxActivationInterval": 0,
-              "description": "Nose Gear Steering / Auto Acquisition Button"
+              "description": "Jester UI Action (short, hold)"
             }
           }
         ],
@@ -540,6 +547,126 @@
                 }
               ],
               "activation": "SINGLE_IMMEDIATELY"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "a6ce9f05-f4cd-44d8-8b27-1e66d4b23826",
+      "description": "Jester",
+      "axisToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "V"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Jester Context Action (short, hold, double click)"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "A"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 1000,
+              "maxActivationInterval": 0,
+              "description": "Jester UI Action (short, hold)"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "W"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Jester UI Middle/Select"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "E"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Jester UI Right/CC"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "1"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Jester UI Back"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Q"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Jester UI Left/CCW"
             }
           }
         ]
