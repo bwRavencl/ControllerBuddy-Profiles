@@ -173,22 +173,6 @@ local diff = {
 			},
 			["name"] = "Trigger",
 		},
-		["d3001pnilu3001cd2vd-1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN11",
-				},
-			},
-			["name"] = "Microphone Switch - ICS (Hold)",
-		},
-		["d3001pnilu3001cd2vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN10",
-				},
-			},
-			["name"] = "Microphone Switch - UHF (Hold)",
-		},
 		["d3002pnilu3002cd27vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -204,6 +188,22 @@ local diff = {
 				},
 			},
 			["name"] = "Dispense Countermeasures",
+		},
+		["d3019pnilu3019cd2vd-1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN11",
+				},
+			},
+			["name"] = "Microphone Switch - SRS/VOIP only - ICS (Hold)",
+		},
+		["d3019pnilu3019cd2vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "Microphone Switch - SRS/VOIP only - UHF (Hold)",
 		},
 		["d3020pnilu3020cd9vd1vpnilvu0"] = {
 			["added"] = {
