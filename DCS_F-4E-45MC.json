@@ -157,15 +157,21 @@
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "longPress": false,
               "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
-              "buttonId": 1,
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "S"
+                ],
+                "modifierCodes": []
+              },
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Bomb Button"
+              "description": "Air Refuel (AAR) Release Button"
             }
           }
         ],
@@ -1194,8 +1200,23 @@
     },
     {
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
-      "description": "Trim / Quick Release",
-      "axisToActionsMap": {},
+      "description": "Trim / Bomb / Quick Release",
+      "axisToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 1,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Bomb Button"
+            }
+          }
+        ]
+      },
       "buttonToActionsMap": {
         "1": [
           {
@@ -1415,7 +1436,7 @@
     },
     {
       "uuid": "1362c5ac-6bf9-401f-a39f-f3ec8ec8bc95",
-      "description": "Weapon Slew / AAR",
+      "description": "Weapon Slew",
       "axisToActionsMap": {
         "0": [
           {
@@ -1490,26 +1511,6 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Weapon Slew (Forward Hand Control) - Up"
-            }
-          }
-        ],
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "minAxisValue": 0.5,
-              "maxAxisValue": 1.0,
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "S"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Air Refuel (AAR) Release Button"
             }
           }
         ]
