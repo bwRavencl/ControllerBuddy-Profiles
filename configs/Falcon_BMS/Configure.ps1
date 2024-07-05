@@ -20629,11 +20629,13 @@ Set-Variable BMSAutoKeyBasename -Option Constant -Value "${KeyFilePrefix}Auto"
 
 Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\2.4.1.8\user.config"
 
-$bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore).TrimEnd('\')
+$bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore)
 
 if ($null -eq $bmsDir) {
     Write-Output "Error: $BmsFullName registry value '$BmsRegistryKey\$BmsBaseDirRegistryValue' does not exist"
     Exit 1
+} else {
+    $bmsDir = $bmsDir.TrimEnd('\')
 }
 
 $bmsConfigDir = "$bmsDir\User\Config"

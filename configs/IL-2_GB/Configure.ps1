@@ -3,11 +3,13 @@ Write-Output "Configuring IL-2 Sturmovik Great Battles for use with ControllerBu
 Set-Variable UninstallRegistryKey -Option Constant -Value "HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{66F649A9-0FA2-487E-BC0D-894BD7E89D5E}_is1"
 Set-Variable InstallLocationRegistryValue -Option Constant -Value InstallLocation
 
-$il2Dir = (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore).TrimEnd('\')
+$il2Dir = (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore)
 
 if ($null -eq $il2Dir) {
     Write-Output "Error: IL-2 Sturmovik Great Battles registry value '$UninstallRegistryKey\$InstallLocationRegistryValue' does not exist"
     Exit 1
+} else {
+    $il2Dir = $il2Dir.TrimEnd('\')
 }
 
 $il2InputDir = "$il2Dir\data\input"
