@@ -20,7 +20,9 @@ if ($null -eq $vJoyDevice) {
 $gamepadDevices = Get-GamepadDeviceList
 
 while ($gamepadDevices.Count -lt 1) {
-    if ((Read-Host "Error: No gamepad present`nPlease make sure your gamepad is connected. Retry? [Yes/no]") -like 'n*') {
+    Add-Type -AssemblyName PresentationCore, PresentationFramework
+
+    if ([System.Windows.MessageBox]::Show("There is currently no controller connected.`nTo retry, please connect your controller now.`n`nRetry?", 'No controller connected', [System.Windows.MessageBoxButton]::YesNo, [System.Windows.MessageBoxImage]::Warning) -ne [System.Windows.MessageBoxResult]::Yes) {
         Exit 1
     }
 
