@@ -4,7 +4,7 @@ $savedGamesDir = "$env:USERPROFILE\Saved Games"
 $dcsUserDirs = @("$savedGamesDir\DCS", "$savedGamesDir\DCS.openbeta") | Where-Object -FilterScript { Test-Path $_ -PathType Container }
 
 if ($dcsUserDirs.count -eq 0) {
-    Write-Output "Error: No DCS user directory exists, neither '$($dcsUserDirs -join ''' nor ''')'"
+    Write-Output "Error: No DCS user directory found in: ${$savedGamesDir}"
     Exit 1
 }
 
