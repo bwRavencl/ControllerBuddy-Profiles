@@ -1,0 +1,1373 @@
+{
+  "version": "1.2",
+  "showOverlay": true,
+  "showVrOverlay": true,
+  "keyRepeatInterval": 30,
+  "buttonToModeActionsMap": {
+    "0": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "2eb772d9-327d-476a-9414-7219b2b8677f"
+      }
+    ],
+    "1": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "f8e43e9b-7823-4f40-aae4-858db26d0130"
+      }
+    ],
+    "2": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
+      }
+    ],
+    "3": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "ac51fde9-2708-4c46-ad1f-d1dffade8be1"
+      }
+    ],
+    "5": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
+      }
+    ],
+    "7": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "9bb0f2b8-9ca0-4135-9639-7767a7bef728"
+      }
+    ],
+    "9": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3"
+      }
+    ],
+    "10": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+      }
+    ],
+    "11": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "aab98429-7aeb-4aae-aaa5-f5a97db02e57"
+      }
+    ],
+    "12": [
+      {
+        "toggle": true,
+        "longPress": false,
+        "modeUuid": "8c686da4-5b19-42e5-b78b-6482eadb556c"
+      }
+    ]
+  },
+  "modes": [
+    {
+      "uuid": "067e6162-3b6f-4ae2-a171-2470b63dff00",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "RZ",
+              "invert": false,
+              "description": "Flight Control Yaw (pedals)"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "maxRelativeSpeed": 4.0,
+              "hapticFeedback": true,
+              "deadZone": 0.25,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 2.0,
+              "initialValue": 1.0,
+              "virtualAxis": "Z",
+              "invert": false,
+              "description": "Flight Control Collective"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "X",
+              "invert": false,
+              "description": "Flight Control Cyclic Roll"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "Y",
+              "invert": false,
+              "description": "Flight Control Cyclic Pitch"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Wheel brake Left (analog)"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "virtualAxis": "S1",
+              "invert": false,
+              "description": "Wheel brake Right (analog)"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "virtualAxis": "RX",
+              "resetValue": 0.0,
+              "fluid": false,
+              "longPress": false,
+              "activation": "REPEAT",
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "virtualAxis": "RY",
+              "resetValue": 0.0,
+              "fluid": false,
+              "longPress": false,
+              "activation": "REPEAT",
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num5"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "NumEnter"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Reset View"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "T"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Trim Button - press"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "T"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Trimmer reset"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 12,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, CD REL Button"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 7,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, ACK Button"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": false,
+              "longPress": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": true,
+              "longPress": false
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToReleaseAllOnScreenKeyboardKeysAction",
+            "data": {
+              "longPress": false
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "UP"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "RIGHT"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "DOWN"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "longPress": false,
+              "direction": "LEFT"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "9bb0f2b8-9ca0-4135-9639-7767a7bef728",
+      "description": "AFCS / FD",
+      "axisToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 26,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, UP/DN Switch - depress DOWN ↓"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 27,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, UP/DN Switch - depress UP ↑"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 14,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, AFCS TRIM Hat - depress DOWN ↓"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 16,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, AFCS TRIM Hat - depress RIGHT →"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 15,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, AFCS TRIM Hat - depress LEFT ←"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 13,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, AFCS TRIM Hat - depress UP ↑"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 38,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, GO AROUND Pushbutton"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 17,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, FD CPLR REL Button"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 18,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, AFCS Mode Hat - depress UP ↑ (ALT)"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 21,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, AFCS Mode Hat - depress RIGHT → (IN/RA)"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 19,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, AFCS Mode Hat - depress DOWN ↓ (TRC)"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 20,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, AFCS Mode Hat - depress LEFT ← (PH)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "2eb772d9-327d-476a-9414-7219b2b8677f",
+      "description": "Countermeasure",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 0,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, CHAFF/FLARE Dispensing - depress UP ↑ (FLARE)"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 1,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, CHAFF/FLARE Dispensing - depress DOWN ↓ (CHAFF)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "ac51fde9-2708-4c46-ad1f-d1dffade8be1",
+      "description": "HUD",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 22,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, HUD Hat - depress FORWARD/UP ↑ (BRT)"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 25,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, HUD Hat - depress RIGHT → (DCLT)"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 23,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, HUD Hat - depress BACK/DOWN ↓ (DIM)"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 24,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, HUD Hat - depress LEFT ← (MODE)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
+      "description": "Look / Comm",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "maxRelativeSpeed": 0.91,
+              "hapticFeedback": false,
+              "deadZone": 0.12,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 3.0,
+              "initialValue": 0.0,
+              "virtualAxis": "RX",
+              "invert": false,
+              "description": "Absolute Camera Horizontal View"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "maxRelativeSpeed": 1.0,
+              "hapticFeedback": false,
+              "deadZone": 0.12,
+              "minValue": -1.0,
+              "maxValue": 1.0,
+              "exponent": 3.0,
+              "initialValue": 0.0,
+              "virtualAxis": "RY",
+              "invert": false,
+              "description": "Absolute Camera Vertical View"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 8,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Radio Button (VOIP)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 10,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, XMIT/ICS Trigger - depress XMIT (FULL)"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": true,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 9,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "INT Button (VOIP)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 11,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, XMIT/ICS Trigger - depress ICS (HALF)"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": [
+                  "R Ctrl",
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Back"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Communication menu"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": [
+                  "R Ctrl",
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Forward"
+            }
+          }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num/"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Zoom out slow"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Zoom in slow"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num8"
+                ],
+                "modifierCodes": [
+                  "R Ctrl",
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num6"
+                ],
+                "modifierCodes": [
+                  "R Ctrl",
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num2"
+                ],
+                "modifierCodes": [
+                  "R Ctrl",
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Down"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Num4"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cockpit Camera Move Left"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "f8e43e9b-7823-4f40-aae4-858db26d0130",
+      "description": "MFD CRSR",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 6,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, CRSR ACT Button"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 2,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, MFD CRSR Hat - depress UP ↑"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 5,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, MFD CRSR Hat - depress RIGHT →"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 3,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, MFD CRSR Hat - depress DOWN ↓"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 4,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, MFD CRSR Hat - depress LEFT ←"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+      "description": "Mouse",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.5,
+              "cursorSensitivity": 1500,
+              "axis": "X",
+              "invert": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.5,
+              "cursorSensitivity": 1500,
+              "axis": "Y",
+              "invert": false
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 1,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 2,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 3,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": false
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "aab98429-7aeb-4aae-aaa5-f5a97db02e57",
+      "description": "Radio Frq.",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 35,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, Radio Frq. Hat - depress DOWN ↓ (F-DN)"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 37,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, Radio Frq. Hat - depress RIGHT → (R-UP)"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 36,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, Radio Frq. Hat - depress LEFT ← (R-DN)"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 34,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, Radio Frq. Hat - depress UP ↑ (F-UP)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "8c686da4-5b19-42e5-b78b-6482eadb556c",
+      "description": "Searchlight",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 31,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, SRCH POSITION Hat - depress RIGHT → (RT)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 30,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, SRCH POSITION Hat - depress LEFT ← (LT)"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": -1.0,
+              "maxAxisValue": -0.5,
+              "buttonId": 28,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, SRCH POSITION Hat - depress UP ↑ (EXTEND)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": 0.5,
+              "maxAxisValue": 1.0,
+              "buttonId": 29,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, SRCH POSITION Hat - depress DOWN ↓ (RETRACT)"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 33,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, SRCH ON/OFF Pushbutton"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 32,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Grip, SRCH Switch - WHT/IR"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
+      "description": "View / Position / NVG",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F1"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "F1 Cockpit view"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F10"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "F10 Theater map view"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "H"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Night Vision Goggles"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "longPress": false,
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "2"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 2 (Co-Pilot)"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "3"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 3 (Engineer)"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "4"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 4 (Port Gunner)"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "5"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 5 (Stbd. Gunner)"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [],
+                      "modifierCodes": []
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 6 (Aft Gunner)"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "longPress": false,
+                    "keystroke": {
+                      "keyCodes": [
+                        "1"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "Occupy Seat 1 (Pilot)"
+                  }
+                }
+              ],
+              "activation": "SINGLE_ON_RELEASE"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "F2"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "F2 Aircraft view"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "virtualAxisToOverlayAxisMap": {
+    "Z": {
+      "color": -16777216,
+      "inverted": false
+    }
+  }
+}
