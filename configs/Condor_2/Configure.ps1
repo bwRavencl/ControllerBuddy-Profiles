@@ -157,7 +157,7 @@ $pilotDirs | ForEach-Object {
 
     try {
         if (Test-Path $setupFile -PathType Leaf) {
-            (Get-Content $setupFile -Raw) -replace '(?m)^\[Input][\s\S]*?(\[|\z)', '$1' | Out-File $setupFile -NoNewline
+            New-Item $setupFile -Value ((Get-Content -Raw $setupFile) -replace '(?m)^\[Input][\s\S]*?(\[|\z)', '$1') -Force | Out-Null
         }
 
         Add-Content -Path $setupFile -Value $SetupIniInputSection
