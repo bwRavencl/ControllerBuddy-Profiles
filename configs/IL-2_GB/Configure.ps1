@@ -12,7 +12,8 @@ if ($null -eq $il2Dir) {
     $il2Dir = $il2Dir.TrimEnd('\')
 }
 
-$il2InputDir = "$il2Dir\data\input"
+$il2DataDir = "$il2Dir\data"
+$il2InputDir = "$il2DataDir\input"
 
 if (-not (Test-Path $il2InputDir -PathType Container)) {
     Write-Output "Error: IL-2 Sturmovik Great Battles input directory '$il2InputDir' does not exist"
@@ -80,7 +81,7 @@ if (-not (Test-Path $snapsCfg -PathType Leaf)) {
     Exit 1
 }
 
-$snapviewsDir = "$il2Dir\data\LuaScripts\snapviews"
+$snapviewsDir = "$il2DataDir\LuaScripts\snapviews"
 $destinationFile = "$snapviewsDir\$snapsCfgFilename"
 
 try {
@@ -88,6 +89,23 @@ try {
     Write-Output "Copied '$snapsCfg' to: $destinationFile"
 } catch {
     Write-Output "Error: Could not copy '$snapsCfgFilename' to: $destinationFile"
+    Exit 1
+}
+
+Write-Output ''
+
+$startupCfg = "$il2DataDir\startup.cfg"
+
+if (-not (Test-Path $startupCfg -PathType Leaf)) {
+    Write-Output "Error: file '$startupCfg' does not exist"
+    Exit 1
+}
+
+try {
+    New-Item $startupCfg -Value ((Get-Content -Raw $startupCfg) -replace 'fullscreen\s*=\s*1', 'fullscreen = 0') -Force | Out-Null
+    Write-Output "Updated file: $startupCfg"
+} catch {
+    Write-Output "Error: Could not update file: $startupCfg"
     Exit 1
 }
 
