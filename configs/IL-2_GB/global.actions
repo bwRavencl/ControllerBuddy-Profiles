@@ -3,7 +3,7 @@
 // but it is still possible on your own risk.
  
 &actions=action,command,invert|
-screenshot,                                       key_sysrq,                                        0| // Make a screenshot of the game
+screenshot,                                       key_sysrq,                                        0| // Make a screenshot
 timepause,                                        key_p,                                            0| // Game pause on/off
 timefaster,                                       key_rbracket,                                     0| // Accelerate time in mission
 timeslower,                                       key_lbracket,                                     0| // Decelerate time in mission
@@ -161,7 +161,11 @@ flaps_up,                                         joy0_b14,                     
 flaps_dn,                                         key_f,                                            0| // Flaps down
 airbrakes,                                        key_rmenu+key_b,                                  0| // AirBrakes on/off
 airbrakes,                                        joy0_b5,                                          0|
+airbrakes_on,                                     ,                                                 0| // AirBrakes on
+airbrakes_off,                                    ,                                                 0| // AirBrakes off
 attacksiren,                                      key_lmenu+key_s,                                  0| // Attack Siren on/off
+attacksiren_on,                                   ,                                                 0| // Attack Siren on
+attacksiren_off,                                  ,                                                 0| // Attack Siren off
 windscreenwipers,                                 key_lmenu+key_w,                                  0| // Windscreen Wipers on/off
 divesystem,                                       key_lcontrol+key_d,                               0| // Dive recovery system: on/off
 gear,                                             key_g,                                            0| // Gear up/down
@@ -169,15 +173,21 @@ gear_up,                                          key_lmenu+key_g,              
 gear_dn,                                          key_lcontrol+key_g,                               0| // Gear down
 tailwheel_lock,                                   key_lshift+key_g,                                 0| // Tail wheel lock/unlock
 tailwheel_lock,                                   joy0_b4,                                          0|
+tailwheel_lock_on,                                ,                                                 0| // Tail wheel lock
+tailwheel_lock_off,                               ,                                                 0| // Tail wheel unlock
 rpc_wheel_brakes,                                 key_slash,                                        0| // Wheel brakes
 rpc_wheel_brakes_left,                            key_comma,                                        0| // Left wheel brakes
 rpc_wheel_brakes_right,                           key_period,                                       0| // Right wheel brakes
 rpc_wheel_brakes_central,                         key_rwin+key_slash,                               0| // Nose/tail wheel brakes
 parking_brakes,                                   key_lshift+key_slash,                             0| // Wheels parking brakes on/off
 parking_brakes,                                   joy0_b16,                                         0|
+parking_brakes_on,                                ,                                                 0| // Wheels parking brakes on
+parking_brakes_off,                               ,                                                 0| // Wheels parking brakes off
 drogue_chute,                                     key_lmenu+key_d,                                  0| // Drogue chute: release/drop
 canopy_open_close,                                key_rmenu+key_c,                                  0| // Canopy open/close
 canopy_open_close,                                joy0_b15,                                         0|
+canopy_open,                                      ,                                                 0| // Canopy open
+canopy_close,                                     ,                                                 0| // Canopy close
 window_open_close,                                key_lwin+key_c,                                   0| // Window open/close (Ar 234 B-2: mirrors fold/unfold)
 landing_lights,                                   key_rshift+key_l,                                 0| // Landing lights on/off
 navigation_lights,                                key_rcontrol+key_l,                               0| // Navigation lights on/off
@@ -217,10 +227,14 @@ rpc_all_engines_mixtures,                         key_rmenu+key_equals/key_rmenu
 rpc_all_engines_mixtures,                         joy0_axis_q,                                      1|
 all_engines_superchargers,                        key_lshift+key_s,                                 0| // Engine superchargers mode switch
 all_engines_superchargers,                        joy0_b18,                                         0|
+all_engines_superchargers_higher,                 ,                                                 0| // Engine superchargers higher gear switch
+all_engines_superchargers_lower,                  ,                                                 0| // Engine superchargers lower gear switch
 rpc_all_engines_turbosuperchargers,               key_t+key_equals/key_t+key_minus,                 0| // Engines turbosupercharger control
 rpc_all_engines_turbosuperchargers,               joy0_b33/joy0_b34,                                0|
 all_engines_boost,                                key_lshift+key_b,                                 0| // Switch engines boost: on/off
 all_engines_boost,                                joy0_b17,                                         0|
+all_engines_boost_on,                             ,                                                 0| // Switch engines boost: on
+all_engines_boost_off,                            ,                                                 0| // Switch engines boost: off
 rpc_all_engines_props_pitch,                      key_rshift+key_equals/key_rshift+key_minus,       0| // Propeller RPM control
 rpc_all_engines_props_pitch,                      joy0_axis_p,                                      1|
 rpc_all_engines_props_pitch,                      joy0_b23/joy0_b24,                                0|
@@ -231,6 +245,8 @@ all_engines_props_pitch_increase,                 joy0_b24,                     
 all_engines_props_pitch_decrease,                 key_rshift+key_minus,                             0| // Propellers: low pitch
 all_engines_props_pitch_decrease,                 joy0_b23,                                         0|
 all_engines_props_feathering,                     key_lcontrol+key_f,                               0| // Propellers feathering: on/off
+all_engines_props_feathering_on,                  ,                                                 0| // Propellers feathering: on
+all_engines_props_feathering_off,                 ,                                                 0| // Propellers feathering: off
 rpc_all_engines_oil_radiators_shutters,           key_lwin+key_equals/key_lwin+key_minus,           0| // Oil radiators shutters control axis
 rpc_all_engines_oil_radiators_shutters,           joy0_b13/joy0_b12,                                0|
 all_engines_oil_radiators_control_mode,           key_rwin+key_r,                                   0| // Switch oil radiators control mode: manual/auto
@@ -248,7 +264,7 @@ all_engines_water_radiators_close,                key_rcontrol+key_minus,       
 all_engines_water_radiators_close,                joy0_b10,                                         0|
 rpc_all_engines_in_cowls_shutters,                key_lcontrol+key_equals/key_lcontrol+key_minus,   0| // Engines inlet cowl shutters control (I-16, La-5, Ju 52), Engines upper cowl flaps (A-20), Engines intercooler shutter (P-47)
 rpc_all_engines_in_cowls_shutters,                joy0_b22/joy0_b21,                                0|
-rpc_all_engines_out_cowls_shutters,               key_lmenu+key_equals/key_lmenu+key_minus,         0| // Engines outlet cowl shutters control (A-20, Fw 190 A-5 and A-8, La-5, Ju 88, P-40, P-47, C-47)
+rpc_all_engines_out_cowls_shutters,               key_lmenu+key_equals/key_lmenu+key_minus,         0| // Engines outlet cowl shutters control (A-20, Fw 190 A-5, A-6, A-8, La-5, Ju 88, P-40, P-47, C-47, IAR80)
 rpc_all_engines_out_cowls_shutters,               joy0_b20/joy0_b19,                                0|
 all_engines_out_cowl_shutters_control_mode,       key_lmenu+key_o,                                  0| // Switch outlet cowl shutters control mode: manual/auto
 select_all_engines,                               key_0,                                            0| // Switch common control of engines on/off
@@ -257,12 +273,17 @@ select_engine_2,                                  key_2,                        
 select_engine_3,                                  key_3,                                            0| // Switch engine 3 control on/off
 engine_1_switch,                                  key_rcontrol+key_1,                               0| // Engage engine 1 start procedure / Stop engine
 engine_1_ignition,                                key_rshift+key_numpad1,                           0| // Engine 1 ignition (Me 262)
+engine_1_prop_feathering,                         ,                                                 0| // Engine 1 propeller: feathering: on/off
+engine_1_prop_feathering_on,                      ,                                                 0| // Engine 1 propeller: feathering: on
+engine_1_prop_feathering_off,                     ,                                                 0| // Engine 1 propeller: feathering: off
 rpc_engine_1_throttle,                            ,                                                 0| // Engine 1 throttle control
 rpc_engine_1_altitude_throttle,                   ,                                                 0| // Fokker D.VIIF engine: altitude throttle control
 rpc_engine_1_mixture,                             ,                                                 0| // Engine 1 mixture control
 engine_1_supercharger,                            ,                                                 0| // Engine 1 supercharger mode switch
 rpc_engine_1_turbosupercharger,                   ,                                                 0| // Engine 1 turbosupercharger control
 engine_1_boost,                                   ,                                                 0| // Engine 1 boost switch: on/off
+engine_1_boost_on,                                ,                                                 0| // Engine 1 boost switch: on
+engine_1_boost_off,                               ,                                                 0| // Engine 1 boost switch: off
 rpc_engine_1_prop_pitch,                          ,                                                 0| // Engine 1 propeller RPM control
 engine_1_prop_pitch_control_mode,                 ,                                                 0| // Engine 1 propeller pitch control mode switch: manual/auto
 engine_1_prop_pitch_increase,                     ,                                                 0| // Engine 1 propeller: manual high pitch
@@ -273,11 +294,16 @@ rpc_engine_1_in_cowl_shutter,                     ,                             
 rpc_engine_1_out_cowl_shutter,                    ,                                                 0| // Engine 1 outlet cowl shutters control
 engine_2_switch,                                  key_rcontrol+key_2,                               0| // Engage engine 2 start procedure / Stop engine
 engine_2_ignition,                                key_rshift+key_numpad2,                           0| // Engine 2 ignition (Me 262)
+engine_2_prop_feathering,                         ,                                                 0| // Engine 2 propeller: feathering: on/off
+engine_2_prop_feathering_on,                      ,                                                 0| // Engine 2 propeller: feathering: on
+engine_2_prop_feathering_off,                     ,                                                 0| // Engine 2 propeller: feathering: off
 rpc_engine_2_throttle,                            ,                                                 0| // Engine 2 throttle control
 rpc_engine_2_mixture,                             ,                                                 0| // Engine 2 mixture control
 engine_2_supercharger,                            ,                                                 0| // Engine 2 supercharger mode switch
 rpc_engine_2_turbosupercharger,                   ,                                                 0| // Engine 2 turbosupercharger control
 engine_2_boost,                                   ,                                                 0| // Engine 2 boost switch: on/off
+engine_2_boost_on,                                ,                                                 0| // Engine 2 boost switch: on
+engine_2_boost_off,                               ,                                                 0| // Engine 2 boost switch: off
 rpc_engine_2_prop_pitch,                          ,                                                 0| // Engine 2 propeller RPM control
 engine_2_prop_pitch_control_mode,                 ,                                                 0| // Engine 2 propeller pitch control mode switch: manual/auto
 engine_2_prop_pitch_increase,                     ,                                                 0| // Engine 2 propeller: manual high pitch
@@ -320,9 +346,13 @@ throw_bombs_delay,                                key_lcontrol+key_b,           
 throw_bombs_command,                              key_b,                                            0| // Drop bombs, containers, paratroopers, emit smoke
 launch_rockets_mode,                              key_lwin+key_r,                                   0| // Launch rockets mode toggle
 launch_rockets_command,                           key_r,                                            0| // Launch rockets
-jettison_stores_command,                          key_lshift+key_d,                                 0| // Jettison stores
-bombdoors_toggle,                                 key_n,                                            0| // Bomb bay doors toggle
+jettison_stores_command,                          key_lshift+key_d,                                 0| // Jettison stores (CG-4A hook/unhook tow rope, C-47 unhook tow rope)
+bombdoors_toggle,                                 key_n,                                            0| // Bomb bay doors toggle (IAR80 bomb release system switch, Li-2 side door)
+bombdoors_open,                                   ,                                                 0| // Open bomb bay doors
+bombdoors_close,                                  ,                                                 0| // Close bomb bay doors
 bombsafety_toggle,                                key_lwin+key_s,                                   0| // Bombs safety switch
+bombsafety_on,                                    ,                                                 0| // Bombs safety on
+bombsafety_off,                                   ,                                                 0| // Bombs safety off
 all_guns_reload,                                  key_lmenu+key_r,                                  0| // Reload all guns
 all_guns_reload,                                  mouse_b2,                                         0|
 all_guns_reload,                                  joy0_b8,                                          0|
