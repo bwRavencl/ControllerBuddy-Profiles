@@ -30,7 +30,13 @@ if ($null -eq $vJoyDevice) {
 }
 
 $devicesTxt = "$il2InputDir\devices.txt"
-$devicesTxtContent = "configId,guid,model|`n`n0," + $([uri]::EscapeUriString("`"$(($vJoyDevice.InstanceGuid.ToString().ToLower() -split '-', 5)[0..2] -join '-')-0000545345440380`",$($vJoyDevice.InstanceName.ToString())"))
+$guidParts = ($vJoyDevice.InstanceGuid.ToString().ToLower() -split '-', 4)
+$lastPart = $guidParts[3] -replace '-' -split '(..)' -ne ''
+[array]::Reverse($lastPart)
+$guidParts[3] = -join $lastPart
+$modifiedGuid = $guidParts -join '-'
+
+$devicesTxtContent = "configId,guid,model|`r`r`n0," + $([uri]::EscapeUriString("`"$modifiedGuid`",$($vJoyDevice.InstanceName.ToString())"))
 
 try {
     Get-ChildItem -Path $il2InputDir -File -Depth 0 | Remove-Item
