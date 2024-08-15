@@ -198,7 +198,19 @@
               "buttonId": 0,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Trigger"
+              "description": "Trigger - Full Action (2-stage trigger)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "minAxisValue": -0.25,
+              "maxAxisValue": 1.0,
+              "buttonId": 14,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Trigger - Half Action (2-stage trigger)"
             }
           }
         ]
@@ -212,7 +224,7 @@
               "buttonId": 8,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Dispense Countermeasures"
+              "description": "Dispense Countermeasures (Chaff/Flare)"
             }
           }
         ],
@@ -1194,7 +1206,7 @@
               "buttonId": 1,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Bomb Button"
+              "description": "Bomb Release Button"
             }
           }
         ]

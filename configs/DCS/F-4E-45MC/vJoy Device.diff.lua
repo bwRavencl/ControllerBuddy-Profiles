@@ -165,13 +165,21 @@ local diff = {
 			},
 			["name"] = "Speed Brake - In/Stop (3-way up)",
 		},
-		["d3001pnilu3001cd27vd1vpnilvu0"] = {
+		["d3001pnilu3001cd27vd0.5vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN15",
+				},
+			},
+			["name"] = "Trigger - Half Action (2-stage trigger)",
+		},
+		["d3001pnilu3001cd27vd1vpnilvu0.5"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Trigger",
+			["name"] = "Trigger - Full Action (2-stage trigger)",
 		},
 		["d3002pnilu3002cd27vd1vpnilvu0"] = {
 			["added"] = {
@@ -179,7 +187,7 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Bomb Button",
+			["name"] = "Bomb Release Button",
 		},
 		["d3012pnilu3012cd5vd1vpnilvu0"] = {
 			["added"] = {
@@ -187,7 +195,7 @@ local diff = {
 					["key"] = "JOY_BTN9",
 				},
 			},
-			["name"] = "Dispense Countermeasures",
+			["name"] = "Dispense Countermeasures (Chaff/Flare)",
 		},
 		["d3019pnilu3019cd2vd-1vpnilvu0"] = {
 			["added"] = {
