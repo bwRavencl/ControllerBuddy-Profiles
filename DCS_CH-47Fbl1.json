@@ -73,6 +73,13 @@
         "longPress": false,
         "modeUuid": "8c686da4-5b19-42e5-b78b-6482eadb556c"
       }
+    ],
+    "13": [
+      {
+        "toggle": false,
+        "longPress": false,
+        "modeUuid": "a8a23ec5-1d4b-49ec-acdd-349621aab62e"
+      }
     ]
   },
   "modes": [
@@ -283,18 +290,6 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Trimmer reset"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 12,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Cyclic Grip, CD REL Button"
             }
           }
         ],
@@ -529,6 +524,65 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, AFCS Mode Hat - depress LEFT ← (PH)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "a8a23ec5-1d4b-49ec-acdd-349621aab62e",
+      "description": "Cargo",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Command Engineer to Lower Ramp to Next Stage"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Command Engineer to Raise Ramp to Next Stage"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 12,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cyclic Grip, CD REL Button"
             }
           }
         ]
