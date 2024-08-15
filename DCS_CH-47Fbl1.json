@@ -251,7 +251,26 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "REPEAT",
+              "longPress": true,
+              "keystroke": {
+                "keyCodes": [
+                  "W"
+                ],
+                "modifierCodes": [
+                  "L Ctrl",
+                  "L Alt"
+                ]
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Wheel brake Parking"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [

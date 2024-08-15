@@ -137,7 +137,7 @@ local diff = {
 						["hardwareDetent"] = false,
 						["hardwareDetentAB"] = 0,
 						["hardwareDetentMax"] = 0,
-						["invert"] = false,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
 						["slider"] = true,
@@ -158,7 +158,7 @@ local diff = {
 						["hardwareDetent"] = false,
 						["hardwareDetentAB"] = 0,
 						["hardwareDetentMax"] = 0,
-						["invert"] = false,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
 						["slider"] = true,
@@ -186,7 +186,7 @@ local diff = {
 			},
 			["name"] = "INT Button (VOIP)",
 		},
-		["d3162pnilunilcd29vd1vpnilvunil"] = {
+		["d3163pnilunilcd29vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN33",
