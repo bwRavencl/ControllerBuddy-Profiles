@@ -1,6 +1,6 @@
 Write-Output "Configuring IL-2 Sturmovik Great Battles for use with ControllerBuddy-Profiles...`n"
 
-Set-Variable CurrentResponsesFileContent -Option Constant -Value 'type4Devices=actionId%2ChighValuesDeadZone%2ClowValuesDeadZone&type2Devices=actionId%2ChighValuesDeadZone%2ClowValuesDeadZone%7C%0D%0Arpc_all_engines_throttles%2C0%2C0&type3Devices=actionId%2CcenterDeadZone%2CpitchShift%2CsensitivityBallance%2CsideDeadZone%7C%0D%0Arpc_pitch%2C0.05%2C0%2C0.4%2C0&type1Devices=actionId%2CcenterDeadZone%2CsensitivityBallance%2CsideDeadZone%7C%0D%0Arpc_yaw%2C0.06%2C0.45%2C0%7C%0D%0Arpc_pitch%2C0.03%2C0.3%2C0%7C%0D%0Arpc_roll%2C0.05%2C0.3%2C0%7C%0D%0Abc_head_pitch%2C0%2C0%2C0%7C%0D%0Acam_rotate_pitch%2C0%2C0%2C0%7C%0D%0Acam_rotate_yaw%2C0%2C0%2C0'
+Set-Variable CurrentResponsesFileContent -Option Constant -Value 'type4Devices=actionId%2ChighValuesDeadZone%2ClowValuesDeadZone&type2Devices=actionId%2ChighValuesDeadZone%2ClowValuesDeadZone%7C%0D%0Arpc_all_engines_throttles%2C0%2C0&type3Devices=actionId%2CcenterDeadZone%2CpitchShift%2CsensitivityBallance%2CsideDeadZone%7C%0D%0Arpc_pitch%2C0.05%2C0%2C0.5%2C0&type1Devices=actionId%2CcenterDeadZone%2CsensitivityBallance%2CsideDeadZone%7C%0D%0Arpc_yaw%2C0.06%2C0.45%2C0%7C%0D%0Arpc_pitch%2C0.03%2C0.3%2C0%7C%0D%0Arpc_roll%2C0.05%2C0.3%2C0%7C%0D%0Abc_head_pitch%2C0%2C0%2C0%7C%0D%0Acam_rotate_pitch%2C0%2C0%2C0%7C%0D%0Acam_rotate_yaw%2C0%2C0%2C0a'
 
 Set-Variable GlobalActionsFileContent -Option Constant -Value @'
 // Input map preset.
@@ -476,7 +476,7 @@ gui_mouse_rb,                                     mouse_b1,                     
 gui_mouse_mb,                                     mouse_b2,                                         0| // GUI action mouse middle button
 '@
 
-Set-Variable GlobalPitchFileContent -Option Constant -Value 'type3Devices=actionId%2CcenterDeadZone%2CpitchShift%2CsensitivityBallance%2CsideDeadZone%7C%0D%0Arpc_pitch%2C0.05%2C0%2C0.4%2C0'
+Set-Variable GlobalPitchFileContent -Option Constant -Value 'type3Devices=actionId%2CcenterDeadZone%2CpitchShift%2CsensitivityBallance%2CsideDeadZone%7C%0D%0Arpc_pitch%2C0.05%2C0%2C0.5%2C0'
 
 Set-Variable SnapsCfgFileContent -Option Constant -Value @'
 DefaultSnapMode = "PV"
