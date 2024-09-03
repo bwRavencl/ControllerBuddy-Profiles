@@ -181,7 +181,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -199,7 +199,7 @@
             "data": {
               "longPress": false,
               "buttonId": 3,
-              "minActivationInterval": 100,
+              "minActivationInterval": 200,
               "maxActivationInterval": 0,
               "description": "Zoom 90°"
             }
@@ -224,7 +224,7 @@
             "data": {
               "longPress": false,
               "buttonId": 12,
-              "minActivationInterval": 100,
+              "minActivationInterval": 200,
               "maxActivationInterval": 0,
               "description": "Drop Ordonance (Bombs)"
             }
@@ -394,7 +394,7 @@
             "data": {
               "longPress": false,
               "buttonId": 9,
-              "minActivationInterval": 100,
+              "minActivationInterval": 200,
               "maxActivationInterval": 0,
               "description": "Lock Tail Skid"
             }
@@ -435,6 +435,18 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Toggle Canopy / Hatch / Door"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 15,
+              "minActivationInterval": 200,
+              "maxActivationInterval": 0,
+              "description": "Signal Ground Crew to Insert or Remove Chocks"
             }
           }
         ],
@@ -582,7 +594,7 @@
             "data": {
               "longPress": false,
               "buttonId": 4,
-              "minActivationInterval": 100,
+              "minActivationInterval": 200,
               "maxActivationInterval": 0,
               "description": "Propellor Pitch Mode - Toggle"
             }
@@ -1095,16 +1107,16 @@
     }
   ],
   "virtualAxisToOverlayAxisMap": {
+    "S0": {
+      "color": -16776961,
+      "inverted": false
+    },
     "S1": {
       "color": -65536,
       "inverted": false
     },
     "Z": {
       "color": -16777216,
-      "inverted": false
-    },
-    "S0": {
-      "color": -16776961,
       "inverted": false
     }
   }
