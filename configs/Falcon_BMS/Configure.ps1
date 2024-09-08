@@ -20629,6 +20629,9 @@ Set-Variable BMSAutoKeyBasename -Option Constant -Value "${KeyFilePrefix}Auto"
 
 Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\2.4.1.16\user.config"
 
+Set-Variable BMSUserConfigFileLauncherSectionHeadline -Option Constant -Value '// LAUNCHER OVERRIDES BEGIN HERE - DO NOT EDIT OR ADD BELOW THIS LINE'
+Set-Variable BMSUserConfigFileLauncherDisableXInputLine -Option Constant -Value 'set g_bUseXInput 0'
+
 $bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore)
 
 if ($null -eq $bmsDir) {
@@ -20754,11 +20757,19 @@ if (Test-Path $AlternativeLauncherUserConfigFile -PathType Leaf) {
 
 $bmsUserConfigFile = "$bmsConfigDir\Falcon BMS User.cfg"
 try {
+    $done = $false
+
     if (Test-Path $bmsUserConfigFile -PathType Leaf) {
-        (Get-Content -Path $bmsUserConfigFile | Where-Object { $_ -notmatch '^\s*set g_bUseXInput ' }) | Set-Content -Path $bmsUserConfigFile
+        $bmsUserConfigFileContent = (Get-Content -Path $bmsUserConfigFile | Where-Object { $_ -notmatch '^\s*set g_bUseXInput ' })
+        if ($bmsUserConfigFileContent -match $BMSUserConfigFileLauncherSectionHeadline) {
+            $bmsUserConfigFileContent -replace $BMSUserConfigFileLauncherSectionHeadline, "$BMSUserConfigFileLauncherDisableXInputLine`n$BMSUserConfigFileLauncherSectionHeadline" | Set-Content -Path $bmsUserConfigFile
+            $done = $true
+        }
     }
 
-    Add-Content -Path $bmsUserConfigFile -Value 'set g_bUseXInput 0'
+    if (-not $done) {
+        Add-Content -Path $bmsUserConfigFile -Value $BMSUserConfigFileLauncherDisableXInputLine
+    }
 } catch {
     Write-Output "Error: Could not process file: $bmsUserConfigFile"
     Exit 1
