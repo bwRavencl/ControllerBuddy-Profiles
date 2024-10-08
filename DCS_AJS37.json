@@ -310,7 +310,7 @@
               "buttonId": 17,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Rb05 switch input with flight stick (hold)"
+              "description": "RB-05 switch input with flight stick (hold)"
             }
           }
         ]
@@ -473,6 +473,24 @@
             }
           }
         ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Communication menu"
+            }
+          }
+        ],
         "3": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -491,24 +509,6 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
-            }
-          }
-        ],
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "\\"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Communication menu"
             }
           }
         ],
