@@ -5,9 +5,12 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.1,
+							[1] = 0.25,
 						},
 						["deadzone"] = 0.12,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -236,7 +239,7 @@ local diff = {
 					["key"] = "JOY_BTN18",
 				},
 			},
-			["name"] = "Rb05 switch input with flight stick (hold)",
+			["name"] = "RB-05 switch input with flight stick (hold)",
 		},
 		["d3323pnilu3323cd5vd-1vpnilvu0"] = {
 			["added"] = {
