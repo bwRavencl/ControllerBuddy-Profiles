@@ -571,103 +571,6 @@
       }
     },
     {
-      "uuid": "2de791f9-8dce-45a0-a4bd-deea14d05454",
-      "description": "Target",
-      "axisToActionsMap": {},
-      "buttonToActionsMap": {
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Y"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Rivers and roads on/off (GM radar)"
-            }
-          }
-        ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Z"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Radar lock"
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "T"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Target select"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "X"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Clear radar lock"
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "N"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "IFF check"
-            }
-          }
-        ]
-      }
-    },
-    {
       "uuid": "59d047da-09ae-44df-88cf-55999752b8b6",
       "description": "Look",
       "axisToActionsMap": {
@@ -793,7 +696,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -811,7 +714,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
@@ -1000,15 +903,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "V"
                 ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
+                "modifierCodes": []
               },
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
@@ -1020,15 +921,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "B"
                 ],
-                "modifierCodes": [
-                  "L Shift"
-                ]
+                "modifierCodes": []
               },
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
@@ -1040,19 +939,35 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "N"
                 ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Ask AWACS for navigation information"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [],
                 "modifierCodes": [
                   "L Shift"
                 ]
               },
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Ask AWACS for navigation information"
+              "description": "Navigation command modifier"
             }
           }
         ]
@@ -1271,6 +1186,103 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Jettison external fuel tanks"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "2de791f9-8dce-45a0-a4bd-deea14d05454",
+      "description": "Target",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Y"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Rivers and roads on/off (GM radar)"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "Z"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Radar lock"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "T"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Target select"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "X"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Clear radar lock"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "IFF check"
             }
           }
         ]
