@@ -20677,7 +20677,8 @@ function Write-SetupFile {
         [string]$FileContent
     )
 
-    $productName = $Device.InstanceName -replace '[^A-Z|a-z|0-9|~|`|\[|\]|\{|\}|\-|_|\=|\''|\s]', ''
+    $productName = $Device.InstanceName -replace '[^A-Za-z0-9\~\`\[\]\{\}\-_\=\''\x20]', ''
+
     $productFileName = $productName -replace '/', '-'
     $setupFile = "$bmsConfigDir\Setup.v100.$productFileName {$($Device.InstanceGuid.ToString().ToUpper())}.xml"
 
