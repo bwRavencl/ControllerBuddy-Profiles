@@ -214,22 +214,6 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "3"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "VIEWINT: Pan (3D) Cockpit"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
               "activation": "SINGLE_IMMEDIATELY",
               "longPress": false,
               "keystroke": {
@@ -252,13 +236,15 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "3"
+                  "Num5"
                 ],
-                "modifierCodes": []
+                "modifierCodes": [
+                  "L Shift"
+                ]
               },
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "VIEWINT: Pan (3D) Cockpit"
+              "description": "VIEWEXT: Reset View"
             }
           }
         ],
@@ -1378,13 +1364,29 @@
               "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "2"
+                  "3"
                 ],
                 "modifierCodes": []
               },
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "VIEWINT: Snap (3D) Cockpit"
+              "description": "VIEWINT: Pan (3D) Cockpit"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "keystroke": {
+                "keyCodes": [
+                  "3"
+                ],
+                "modifierCodes": []
+              },
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "VIEWINT: Pan (3D) Cockpit"
             }
           }
         ],
