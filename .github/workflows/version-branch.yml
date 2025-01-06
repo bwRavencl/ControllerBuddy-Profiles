@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  version-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Force push changes to latest version branch
+        run: |
+          branch=$(jq -r '.["version"]' *.json | sort -Vu | tail -n 1 | tr -d '\r,\n')
+          git checkout -b "$branch"
+          git push -f origin "$branch"
