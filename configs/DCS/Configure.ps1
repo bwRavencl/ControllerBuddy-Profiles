@@ -47,32 +47,46 @@ function Get-DcsInstanceGuid {
     $guidParts -join '-'
 }
 
+
 $configDir = "$dcsUserDir\Config"
 $inputDir = "$configDir\Input"
 
-$diffLuaFilename = 'vJoy Device.diff.lua'
-$diffLuaFiles = Get-ChildItem -Path $PSScriptRoot -File -Depth 1 -Filter $diffLuaFilename
+function Copy-DiffLuaFiles {
+    param (
+        [Parameter(Mandatory = $true, Position = 0)]
+        [string]$SourceDiffLuaFilename,
+        [Parameter(Mandatory = $true, Position = 1)]
+        [string]$TargetDiffLuaFilename,
+        [Parameter(Mandatory = $true, Position = 2)]
+        [string]$DeviceCategory
+    )
 
-if ($diffLuaFiles.count -eq 0) {
-    Write-Output "Error: $diffLuaFilename files are missing"
-    Exit 1
-}
+    $diffLuaFiles = Get-ChildItem -Path $PSScriptRoot -File -Depth 1 -Filter $SourceDiffLuaFilename
 
-foreach ($diffLuaFile in $diffLuaFiles) {
-    $destinationDir = "$inputDir\$($diffLuaFile.Directory.Name)\joystick"
-    $destinationFile = "$destinationDir\$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice)}.diff.lua"
-
-    try {
-        New-Item $destinationDir -ItemType 'directory' -Force | Out-Null
-        Copy-Item $diffLuaFile.FullName $destinationFile -errorAction stop
-        Write-Output "Copied '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
-    } catch {
-        Write-Output "Error: Could not copy '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
+    if ($diffLuaFiles.count -eq 0) {
+        Write-Output "Error: $SourceDiffLuaFilename file(s) are missing"
         Exit 1
     }
+
+    foreach ($diffLuaFile in $diffLuaFiles) {
+        $destinationDir = "$inputDir\$($diffLuaFile.Directory.Name)\$DeviceCategory"
+        $destinationFile = "$destinationDir\$TargetDiffLuaFilename"
+
+        try {
+            New-Item $destinationDir -ItemType 'directory' -Force | Out-Null
+            Copy-Item $diffLuaFile.FullName $destinationFile -errorAction stop
+            Write-Output "Copied '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
+        } catch {
+            Write-Output "Error: Could not copy '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
+            Exit 1
+        }
+    }
+
+    Write-Output ''
 }
 
-Write-Output ''
+Copy-DiffLuaFiles 'vJoy Device.diff.lua' "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice)}.diff.lua" 'joystick'
+Copy-DiffLuaFiles 'Keyboard.diff.lua' 'Keyboard.diff.lua' 'keyboard'
 
 $disabledDevicesLuaFile = "$inputDir\disabled.lua"
 
