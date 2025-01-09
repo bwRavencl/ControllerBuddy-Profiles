@@ -13,7 +13,7 @@ $directInput = New-Object -TypeName SharpDX.DirectInput.directinput;
 Get-GamepadDeviceList returns a list of DirectInput devices of type Gamepad.
 #>
 function Get-GamepadDeviceList {
-    $directInput.GetDevices() | Where-Object { $_.Type -eq [SharpDX.DirectInput.DeviceType]::Gamepad }
+    $directInput.GetDevices() | Where-Object { ($_.Type -eq @([SharpDX.DirectInput.DeviceType]::Gamepad) -or ($_.Usage -eq [SharpDX.Multimedia.UsageId]::GenericGamepad )) }
 }
 
 <#
