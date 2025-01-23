@@ -2,8 +2,8 @@ Set-Variable VjoyProductGuid -Option Constant -Value 'bead1234-0000-0000-0000-50
 
 Unblock-File "$PSScriptRoot\*"
 
-[void][system.reflection.assembly]::LoadFile("$PSScriptRoot\SharpDX.dll")
-[void][system.reflection.assembly]::LoadFile("$PSScriptRoot\SharpDX.DirectInput.dll")
+Add-Type -LiteralPath "$PSScriptRoot\SharpDX.dll"
+Add-Type -LiteralPath "$PSScriptRoot\SharpDX.DirectInput.dll"
 
 $directInput = New-Object -TypeName SharpDX.DirectInput.directinput
 
