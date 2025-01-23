@@ -32,7 +32,7 @@ while ($gamepadDevices.Count -lt 1) {
 function Get-DcsInstanceGuid {
     param (
         [Parameter(Mandatory = $true)]
-        [SharpDX.DirectInput.DeviceInstance]$Device
+        [object]$Device
     )
 
     $guidParts = $Device.InstanceGuid.ToString() -split '-', 5

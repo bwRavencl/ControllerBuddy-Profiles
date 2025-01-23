@@ -2,10 +2,26 @@ Set-Variable VjoyProductGuid -Option Constant -Value 'bead1234-0000-0000-0000-50
 
 Unblock-File "$PSScriptRoot\*"
 
-Add-Type -LiteralPath "$PSScriptRoot\SharpDX.dll"
-Add-Type -LiteralPath "$PSScriptRoot\SharpDX.DirectInput.dll"
+if ($PSVersionTable.PSEdition -eq 'Core') {
+    Add-Type -LiteralPath "$PSScriptRoot\SharpGen.Runtime.dll"
+    Add-Type -LiteralPath "$PSScriptRoot\Vortice.DirectX.dll"
+    Add-Type -LiteralPath "$PSScriptRoot\Vortice.DirectInput.dll"
 
-$directInput = New-Object -TypeName SharpDX.DirectInput.directinput
+    Set-Variable DirectInput -Option Constant -Value $([Vortice.DirectInput.DInput]::DirectInput8Create())
+
+    Set-Variable GamepadDeviceType -Option Constant -Value $([Vortice.DirectInput.DeviceType]::Gamepad)
+    Set-Variable KeyboardDeviceType -Option Constant -Value $([Vortice.DirectInput.DeviceType]::Keyboard)
+    Set-Variable GenericGamepadUsageId -Option Constant -Value $([Vortice.Multimedia.UsageId]::GenericGamepad)
+} else {
+    Add-Type -LiteralPath "$PSScriptRoot\SharpDX.dll"
+    Add-Type -LiteralPath "$PSScriptRoot\SharpDX.DirectInput.dll"
+
+    Set-Variable DirectInput -Option Constant -Value New-Object -TypeName SharpDX.DirectInput.directinput
+
+    Set-Variable GamepadDeviceType -Option Constant -Value $([SharpDX.DirectInput.DeviceType]::Gamepad)
+    Set-Variable KeyboardDeviceType -Option Constant -Value $([SharpDX.DirectInput.DeviceType]::Keyboard)
+    Set-Variable GenericGamepadUsageId -Option Constant -Value $([SharpDX.Multimedia.UsageId]::GenericGamepad)
+}
 
 <#
 .SYNOPSIS
@@ -13,7 +29,7 @@ $directInput = New-Object -TypeName SharpDX.DirectInput.directinput
 Get-GamepadDeviceList returns a list of DirectInput devices of type Gamepad.
 #>
 function Get-GamepadDeviceList {
-    $directInput.GetDevices() | Where-Object { ($_.Type -eq @([SharpDX.DirectInput.DeviceType]::Gamepad) -or ($_.Usage -eq [SharpDX.Multimedia.UsageId]::GenericGamepad)) }
+    $DirectInput.GetDevices() | Where-Object { ($_.Type -eq @($GamepadDeviceType) -or ($_.Usage -eq $GenericGamepadUsageId)) }
 }
 
 <#
@@ -22,7 +38,7 @@ function Get-GamepadDeviceList {
 Get-KeyboardDevice returns the first DirectInput devices of type Keyboard.
 #>
 function Get-KeyboardDevice {
-    $directInput.GetDevices() | Where-Object { $_.Type -eq [SharpDX.DirectInput.DeviceType]::Keyboard } | Select-Object -first 1
+    $DirectInput.GetDevices() | Where-Object { $_.Type -eq $KeyboardDeviceType } | Select-Object -first 1
 }
 
 <#
@@ -31,7 +47,7 @@ function Get-KeyboardDevice {
 Get-VJoyDevice returns the first vJoy DirectInput device.
 #>
 function Get-VJoyDevice {
-    $directInput.GetDevices() | Where-Object { $_.ProductGuid -eq $VjoyProductGuid } | Select-Object -first 1
+    $DirectInput.GetDevices() | Where-Object { $_.ProductGuid -eq $VjoyProductGuid } | Select-Object -first 1
 }
 
 Export-ModuleMember -Function Get-GamepadDeviceList, Get-KeyboardDevice, Get-VJoyDevice

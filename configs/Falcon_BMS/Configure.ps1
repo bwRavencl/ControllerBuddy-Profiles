@@ -20673,7 +20673,7 @@ while ($gamepadDevices.Count -lt 1) {
 function Write-SetupFile {
     param (
         [Parameter(Mandatory = $true)]
-        [SharpDX.DirectInput.DeviceInstance]$Device,
+        [object]$Device,
         [Parameter(Mandatory = $true)]
         [string]$FileContent
     )
