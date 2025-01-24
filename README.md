@@ -27,3 +27,16 @@ Please note that these profiles are constantly being updated and may change sign
   - Since the uinput devices created by ControllerBuddy are not persistent, it is necessary to start Local or Client mode before running a script.
 - If there is no `Configure.ps1` script for the application, you will have to make the necessary settings changes manually.
 - If you are using a controller that is not a DualShock 4 or Dual Sense, you will also need to manually configure the application to ignore all input from your physical controller to prevent possible interference with the input coming from ControllerBuddy and vJoy.
+
+## Attribution
+
+ControllerBuddy-Profiles makes use of these awesome software technologies and libraries:
+
+- [PowerShell](https://microsoft.com/PowerShell)
+- [SharpDX](https://github.com/sharpdx/SharpDX)
+- [SharpGenTools](https://github.com/SharpGenTools/SharpGenTools)
+- [Vortice.Windows](https://github.com/amerkoleci/Vortice.Windows)
+
+## License
+
+[CC0 1.0 Universal](LICENSE)
