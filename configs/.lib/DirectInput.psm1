@@ -1,4 +1,8 @@
-Set-Variable VjoyProductGuid -Option Constant -Value 'bead1234-0000-0000-0000-504944564944'
+if (Test-Path -Path 'HKCU:\Software\Wine') {
+    Set-Variable VjoyProductGuid -Option Constant -Value '56781234-0000-0000-0000-504944564944'
+} else {
+    Set-Variable VjoyProductGuid -Option Constant -Value 'bead1234-0000-0000-0000-504944564944'
+}
 
 Unblock-File "$PSScriptRoot\*"
 
@@ -16,7 +20,7 @@ if ($PSVersionTable.PSEdition -eq 'Core') {
     Add-Type -LiteralPath "$PSScriptRoot\SharpDX.dll"
     Add-Type -LiteralPath "$PSScriptRoot\SharpDX.DirectInput.dll"
 
-    Set-Variable DirectInput -Option Constant -Value New-Object -TypeName SharpDX.DirectInput.directinput
+    Set-Variable DirectInput -Option Constant -Value $(New-Object -TypeName SharpDX.DirectInput.directinput)
 
     Set-Variable GamepadDeviceType -Option Constant -Value $([SharpDX.DirectInput.DeviceType]::Gamepad)
     Set-Variable KeyboardDeviceType -Option Constant -Value $([SharpDX.DirectInput.DeviceType]::Keyboard)
