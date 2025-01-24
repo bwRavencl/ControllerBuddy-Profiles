@@ -11,7 +11,7 @@ Please note that these profiles are constantly being updated and may change sign
 
 - The `.json` files are ControllerBuddy profile files and can be loaded with the above mentioned application.
 - The `configs` subdirectory contains game configuration files for use with the above profiles.
-- For some applications the `configs` subdirectory contains a PowerShell script called `Configure.ps1` that will automatically modify the settings of the application in order to work with the corresponding ControllerBuddy profile.
+- For some applications, the `configs` subdirectory contains a PowerShell script called `Configure.ps1` that will automatically modify the application's settings to work with the corresponding ControllerBuddy profile.
 
 
   **Warning:** Use these scripts at your own risk!  
