@@ -94,15 +94,15 @@ $disabledDevicesLuaFile = "$inputDir\disabled.lua"
 try {
     $fileContent = @'
 local disabled = {
-["devices"] = {
+	["devices"] = {
 
 '@
     $gamepadDevices | ForEach-Object {
         $fileContent += "`t`t[`"$($_.InstanceName) {$(Get-DcsInstanceGuid $_)}`"] = true,`n"
     }
     $fileContent += @'
-},
-["pnp"] = false,
+	},
+	["pnp"] = false,
 }
 return disabled
 '@
