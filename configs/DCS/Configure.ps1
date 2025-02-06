@@ -29,26 +29,6 @@ while ($gamepadDevices.Count -lt 1) {
     $gamepadDevices = Get-GamepadDeviceList
 }
 
-function Get-DcsInstanceGuid {
-    param (
-        [Parameter(Mandatory = $true)]
-        [object]$Device
-    )
-
-    $guidParts = $Device.InstanceGuid.ToString() -split '-', 5
-
-    for ($i=0; $i -lt $guidParts.Count; $i++) {
-        if ( $i -lt 2) {
-            $guidParts[$i] = $guidParts[$i].ToUpper()
-        } else {
-            $guidParts[$i] = $guidParts[$i].ToLower()
-        }
-    }
-
-    $guidParts -join '-'
-}
-
-
 $configDir = "$dcsUserDir\Config"
 $inputDir = "$configDir\Input"
 
@@ -84,6 +64,24 @@ function Copy-DiffLuaFiles {
     }
 
     Write-Output ''
+}
+function Get-DcsInstanceGuid {
+    param (
+        [Parameter(Mandatory = $true)]
+        [object]$Device
+    )
+
+    $guidParts = $Device.InstanceGuid.ToString() -split '-', 5
+
+    for ($i=0; $i -lt $guidParts.Count; $i++) {
+        if ( $i -lt 2) {
+            $guidParts[$i] = $guidParts[$i].ToUpper()
+        } else {
+            $guidParts[$i] = $guidParts[$i].ToLower()
+        }
+    }
+
+    $guidParts -join '-'
 }
 
 Copy-DiffLuaFiles 'vJoy Device.diff.lua' "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice)}.diff.lua" 'joystick'
