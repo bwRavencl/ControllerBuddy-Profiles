@@ -1,87 +1,84 @@
 {
-  "version": "1.3",
-  "showOverlay": true,
-  "showVrOverlay": false,
-  "keyRepeatInterval": 30,
   "buttonToModeActionsMap": {
     "0": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "9e471f06-d7aa-496b-b7da-fb7d6e7a2931"
+        "modeUuid": "9e471f06-d7aa-496b-b7da-fb7d6e7a2931",
+        "toggle": false
       }
     ],
     "2": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
+        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
+        "toggle": false
       }
     ],
     "3": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "d8ac19e4-cfb0-49b6-9a16-e5fb58e4744c"
+        "modeUuid": "d8ac19e4-cfb0-49b6-9a16-e5fb58e4744c",
+        "toggle": false
       }
     ],
     "4": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "b4a30b14-1cdb-42fa-aee4-8f27d055d577"
+        "modeUuid": "458e6d14-0362-49c0-b641-e6c31050c38c",
+        "toggle": true
       }
     ],
-    "5": [
+    "7": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+        "toggle": true
       }
     ],
-    "6": [
+    "8": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "458e6d14-0362-49c0-b641-e6c31050c38c"
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+        "toggle": true
       }
     ],
     "9": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3"
+        "modeUuid": "b4a30b14-1cdb-42fa-aee4-8f27d055d577",
+        "toggle": false
       }
     ],
     "10": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
+        "toggle": false
       }
     ],
     "12": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "6c605975-05ea-4e6e-a244-0bab20fe5e0b"
+        "modeUuid": "fc7e2c09-a535-419c-a291-33a3f5d89035",
+        "toggle": false
       }
     ],
     "13": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "fc7e2c09-a535-419c-a291-33a3f5d89035"
+        "modeUuid": "8d3a39e9-bab4-452a-bcdc-6f7e949f8ea3",
+        "toggle": false
       }
     ],
     "14": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "8d3a39e9-bab4-452a-bcdc-6f7e949f8ea3"
+        "modeUuid": "6c605975-05ea-4e6e-a244-0bab20fe5e0b",
+        "toggle": false
       }
     ]
   },
+  "keyRepeatInterval": 30,
   "modes": [
     {
       "uuid": "067e6162-3b6f-4ae2-a171-2470b63dff00",
@@ -91,10 +88,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "RZ",
               "invert": false,
               "description": "Yaw"
@@ -105,14 +102,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 4.0,
-              "hapticFeedback": true,
               "detentValue": -0.4,
+              "hapticFeedback": true,
+              "maxRelativeSpeed": 4.0,
               "deadZone": 0.25,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 2.0,
               "initialValue": 1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "Z",
               "invert": false,
               "description": "Throttle"
@@ -124,10 +121,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "X",
               "invert": false,
               "description": "Roll"
@@ -139,10 +136,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "Y",
               "invert": false,
               "description": "Pitch"
@@ -154,11 +151,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 1,
-              "minActivationInterval": 0,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Fire selected weapon"
             }
           }
@@ -168,11 +165,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 0,
-              "minActivationInterval": 0,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Fire primary gun"
             }
           }
@@ -184,15 +181,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Del"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Deselect current target"
             }
           }
@@ -202,33 +199,33 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "F1"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Front cockpit view"
             }
           }
         ],
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "B"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Wheelbrakes toggle"
             }
           }
@@ -238,15 +235,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "S"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Speedbrakes toggle"
             }
           }
@@ -287,8 +284,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "UP"
+              "direction": "UP",
+              "longPress": false
             }
           }
         ],
@@ -296,8 +293,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "RIGHT"
+              "direction": "DOWN",
+              "longPress": false
             }
           }
         ],
@@ -305,8 +302,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "DOWN"
+              "direction": "LEFT",
+              "longPress": false
             }
           }
         ],
@@ -314,8 +311,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "LEFT"
+              "direction": "RIGHT",
+              "longPress": false
             }
           }
         ]
@@ -323,23 +320,22 @@
     },
     {
       "uuid": "9e471f06-d7aa-496b-b7da-fb7d6e7a2931",
-      "description": "Countermeasure",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "6": [
+        "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Z"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "ECM toggle"
             }
           }
@@ -349,42 +345,42 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "C"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Release chaff"
             }
           }
         ],
-        "13": [
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "X"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Release flare"
             }
           }
         ]
-      }
+      },
+      "description": "Countermeasure"
     },
     {
       "uuid": "fc7e2c09-a535-419c-a291-33a3f5d89035",
-      "description": "Gear / Flaps / Hook / Chute",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -392,15 +388,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "G"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Landing gears toggle"
             }
           }
@@ -410,15 +406,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "F"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Flaps down"
             }
           }
@@ -428,15 +424,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "V"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Flaps up"
             }
           }
@@ -446,25 +442,24 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "H"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Arrester hook toggle"
             }
           }
         ],
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "B"
@@ -473,17 +468,18 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Drag chute deploy"
             }
           }
         ]
-      }
+      },
+      "description": "Gear / Flaps / Hook / Chute"
     },
     {
       "uuid": "6c605975-05ea-4e6e-a244-0bab20fe5e0b",
-      "description": "Lights / Engine",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "1": [
@@ -491,7 +487,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "L"
@@ -500,8 +495,9 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Navigation light setting cycle"
             }
           }
@@ -512,12 +508,11 @@
             "data": {}
           }
         ],
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "I"
@@ -526,17 +521,18 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Engine toggle"
             }
           }
         ]
-      }
+      },
+      "description": "Lights / Engine"
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look",
       "axisToActionsMap": {
         "0": [
           {
@@ -566,37 +562,37 @@
         ]
       },
       "buttonToActionsMap": {
-        "9": [
+        "7": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 2,
-              "minActivationInterval": 0,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Zoom out"
             }
           }
         ],
-        "10": [
+        "8": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 1,
-              "minActivationInterval": 0,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Zoom in"
             }
           }
         ]
-      }
+      },
+      "description": "Look"
     },
     {
       "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
-      "description": "Mouse",
       "axisToActionsMap": {
         "0": [
           {
@@ -626,13 +622,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 1,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -640,27 +636,27 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 2,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 3,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -674,7 +670,7 @@
             }
           }
         ],
-        "13": [
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
             "data": {
@@ -684,11 +680,11 @@
             }
           }
         ]
-      }
+      },
+      "description": "Mouse"
     },
     {
       "uuid": "458e6d14-0362-49c0-b641-e6c31050c38c",
-      "description": "Radar",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -696,7 +692,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgUp"
@@ -705,8 +700,9 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Previous radar mode"
             }
           }
@@ -716,15 +712,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Ins"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Acquire selected target"
             }
           }
@@ -734,25 +730,24 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgUp"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next radar mode"
             }
           }
         ],
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgUp"
@@ -761,8 +756,9 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Radar toggle"
             }
           }
@@ -772,15 +768,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgDn"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next radar range setting"
             }
           }
@@ -790,25 +786,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Home"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Next radar target"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgDn"
@@ -817,18 +794,18 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Previous radar range setting"
             }
           }
         ],
-        "14": [
+        "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Home"
@@ -837,25 +814,43 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Previous radar target"
             }
           }
-        ]
-      }
-    },
-    {
-      "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View / Eject",
-      "axisToActionsMap": {},
-      "buttonToActionsMap": {
-        "6": [
+        ],
+        "14": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": []
+              },
               "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Next radar target"
+            }
+          }
+        ]
+      },
+      "description": "Radar"
+    },
+    {
+      "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
                   "Esc"
@@ -864,8 +859,9 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Eject"
             }
           }
@@ -875,15 +871,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "F3"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Gunsight cockpit view"
             }
           }
@@ -893,16 +889,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "M"
+                  "F2"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "In-flight map"
+              "minActivationInterval": 0,
+              "description": "Wide cockpit view"
             }
           }
         ],
@@ -911,16 +907,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "F2"
+                  "F6"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Wide cockpit view"
+              "minActivationInterval": 0,
+              "description": "Object view, next aircraft"
             }
           }
         ],
@@ -929,24 +925,24 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "F6"
+                  "M"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Object view, next aircraft"
+              "minActivationInterval": 0,
+              "description": "In-flight map"
             }
           }
         ]
-      }
+      },
+      "description": "View / Eject"
     },
     {
       "uuid": "b4a30b14-1cdb-42fa-aee4-8f27d055d577",
-      "description": "Visual Targeting",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -954,15 +950,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "R"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Last radio target"
             }
           }
@@ -972,15 +968,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "E"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next visual ground target"
             }
           }
@@ -990,15 +986,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "T"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next visual enemy target"
             }
           }
@@ -1008,16 +1004,34 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Y"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next visual friendly target"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  "Num*"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Target closest to center of view"
             }
           }
         ],
@@ -1026,25 +1040,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num*"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Target closest to center of view"
-            }
-          }
-        ],
-        "7": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "R"
@@ -1053,17 +1048,18 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Current radar target"
             }
           }
         ]
-      }
+      },
+      "description": "Visual Targeting"
     },
     {
       "uuid": "8d3a39e9-bab4-452a-bcdc-6f7e949f8ea3",
-      "description": "Waypoint / Autopilot",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -1071,7 +1067,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "W"
@@ -1080,8 +1075,9 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Previous waypoint"
             }
           }
@@ -1097,50 +1093,49 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "W"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next waypoint"
             }
           }
         ],
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "A"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Autopilot toggle"
             }
           }
         ]
-      }
+      },
+      "description": "Waypoint / Autopilot"
     },
     {
       "uuid": "d8ac19e4-cfb0-49b6-9a16-e5fb58e4744c",
-      "description": "Weapon",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "6": [
+        "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
               "keystroke": {
                 "keyCodes": [
                   "J"
@@ -1149,8 +1144,9 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": true,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Jettison external weapons"
             }
           },
@@ -1158,7 +1154,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "D"
@@ -1167,26 +1162,27 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Drop external fuel tanks"
             }
           }
         ],
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "\u0027"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next gunsight mode"
             }
           }
@@ -1196,15 +1192,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Back"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next air-to-air weapon"
             }
           }
@@ -1214,25 +1210,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "["
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Next ripple interval"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
               "keystroke": {
                 "keyCodes": [
                   "O"
@@ -1241,8 +1218,9 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": true,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Open bomb-bay doors"
             }
           },
@@ -1250,16 +1228,34 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "\\"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Next air-to-ground weapon"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  "]"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Next ripple quantity"
             }
           }
         ],
@@ -1268,22 +1264,25 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "]"
+                  "["
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Next ripple quantity"
+              "minActivationInterval": 0,
+              "description": "Next ripple interval"
             }
           }
         ]
-      }
+      },
+      "description": "Weapon"
     }
   ],
+  "showOverlay": true,
+  "version": "1.4",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,

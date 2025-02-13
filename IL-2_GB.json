@@ -1,80 +1,77 @@
 {
-  "version": "1.3",
-  "showOverlay": true,
-  "showVrOverlay": true,
-  "keyRepeatInterval": 30,
   "buttonToModeActionsMap": {
     "0": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "80e4ea4c-82a8-477e-89de-fd2fb37f4e8f"
+        "modeUuid": "80e4ea4c-82a8-477e-89de-fd2fb37f4e8f",
+        "toggle": false
       }
     ],
     "1": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "e305d7e5-5dcb-4efb-aa32-afaa574bc503"
+        "modeUuid": "e305d7e5-5dcb-4efb-aa32-afaa574bc503",
+        "toggle": false
       }
     ],
     "2": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
+        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
+        "toggle": false
       }
     ],
     "3": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "ca236e7e-a577-4159-9b4d-14be96a0e21a"
+        "modeUuid": "ca236e7e-a577-4159-9b4d-14be96a0e21a",
+        "toggle": false
       }
     ],
     "4": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "e4948829-9655-4fc1-8a3a-0ad466ece749"
-      }
-    ],
-    "5": [
-      {
-        "toggle": false,
-        "longPress": false,
-        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
+        "modeUuid": "f569525f-14ed-4ed5-930a-539c069b7e3f",
+        "toggle": true
       }
     ],
     "6": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "f569525f-14ed-4ed5-930a-539c069b7e3f"
+        "modeUuid": "6488968d-4833-46ab-b924-3cf5aa90d636",
+        "toggle": true
       }
     ],
     "7": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "6488968d-4833-46ab-b924-3cf5aa90d636"
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+        "toggle": true
+      }
+    ],
+    "8": [
+      {
+        "longPress": false,
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+        "toggle": true
       }
     ],
     "9": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3"
+        "modeUuid": "e4948829-9655-4fc1-8a3a-0ad466ece749",
+        "toggle": false
       }
     ],
     "10": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
+        "toggle": false
       }
     ]
   },
+  "keyRepeatInterval": 30,
   "modes": [
     {
       "uuid": "067e6162-3b6f-4ae2-a171-2470b63dff00",
@@ -84,10 +81,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "RZ",
               "invert": false,
               "description": "Plane control: yaw"
@@ -98,13 +95,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
+              "maxRelativeSpeed": 4.0,
               "deadZone": 0.25,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 2.0,
               "initialValue": 1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "Z",
               "invert": false,
               "description": "Engines throttle control"
@@ -116,10 +113,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "X",
               "invert": false,
               "description": "Plane control: roll"
@@ -131,10 +128,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "Y",
               "invert": false,
               "description": "Plane control: pitch"
@@ -146,11 +143,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 1,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Fire weapon group 2"
             }
           },
@@ -158,11 +155,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 7,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Fire weapon group 3 / Engine blip switch (ignition interruption)"
             }
           }
@@ -172,11 +169,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 0,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Fire weapon group 1"
             }
           }
@@ -187,22 +184,22 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
             "data": {
-              "virtualAxis": "RX",
-              "resetValue": 0.0,
+              "activation": "SINGLE_IMMEDIATELY",
               "fluid": false,
               "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY",
+              "resetValue": 0.0,
+              "virtualAxis": "RX",
               "description": "Reset camera"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
             "data": {
-              "virtualAxis": "RY",
-              "resetValue": 0.0,
+              "activation": "SINGLE_IMMEDIATELY",
               "fluid": false,
               "longPress": false,
-              "activation": "SINGLE_IMMEDIATELY",
+              "resetValue": 0.0,
+              "virtualAxis": "RY",
               "description": "Reset camera"
             }
           },
@@ -210,39 +207,35 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num5"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Reset camera"
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToVrResetZeroPoseAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "vrCoordinateSystem": "SEATED"
-            }
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num*"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Pilot head: reset zoom"
             }
           }
@@ -253,8 +246,8 @@
             "data": {
               "longPress": false,
               "buttonId": 9,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "AI-autopilot for level flight: on/off"
             }
           }
@@ -264,46 +257,46 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "F"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Flaps down"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "G"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Gear up/down"
             }
           }
         ],
-        "14": [
+        "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
               "buttonId": 14,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Flaps up"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "F"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 50,
+              "description": "Flaps down"
             }
           }
         ]
@@ -343,8 +336,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "UP"
+              "direction": "UP",
+              "longPress": false
             }
           }
         ],
@@ -352,8 +345,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "RIGHT"
+              "direction": "DOWN",
+              "longPress": false
             }
           }
         ],
@@ -361,8 +354,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "DOWN"
+              "direction": "LEFT",
+              "longPress": false
             }
           }
         ],
@@ -370,8 +363,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "LEFT"
+              "direction": "RIGHT",
+              "longPress": false
             }
           }
         ]
@@ -379,24 +372,23 @@
     },
     {
       "uuid": "6488968d-4833-46ab-b924-3cf5aa90d636",
-      "description": "Attack",
       "axisToActionsMap": {
         "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "B"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Drop bombs, containers, paratroopers, emit smoke"
             }
           }
@@ -405,38 +397,38 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "R"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Launch rockets / Jet boosters"
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "6": [
+        "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "V"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Bomb sight"
             }
           }
@@ -447,64 +439,64 @@
             "data": {
               "longPress": false,
               "buttonId": 5,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "AirBrakes on/off"
             }
           }
         ],
-        "13": [
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "N"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Bomb bay doors toggle"
             }
           }
         ],
-        "14": [
+        "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
               "buttonId": 8,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Reload all guns"
             }
           }
         ]
-      }
+      },
+      "description": "Attack"
     },
     {
       "uuid": "f569525f-14ed-4ed5-930a-539c069b7e3f",
-      "description": "Ground",
       "axisToActionsMap": {
         "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   ","
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Left wheel brakes"
             }
           }
@@ -513,18 +505,18 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "."
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Right wheel brakes"
             }
           }
@@ -537,8 +529,8 @@
             "data": {
               "longPress": false,
               "buttonId": 4,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Tail wheel lock/unlock"
             }
           }
@@ -548,15 +540,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "/"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Wheel brakes"
             }
           }
@@ -567,20 +559,20 @@
             "data": {
               "longPress": false,
               "buttonId": 15,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Canopy open/close"
             }
           }
         ],
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
               "buttonId": 16,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Wheels parking brakes on/off"
             }
           }
@@ -590,36 +582,36 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "E"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Engage engines start procedure / Stop engine"
             }
           }
         ]
-      }
+      },
+      "description": "Ground"
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look",
       "axisToActionsMap": {
         "0": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 1.0,
               "hapticFeedback": false,
+              "maxRelativeSpeed": 1.0,
               "deadZone": 0.12,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 3.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "RX",
               "invert": false,
               "description": "Rotate camera left/right"
@@ -630,13 +622,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 1.0,
               "hapticFeedback": false,
+              "maxRelativeSpeed": 1.0,
               "deadZone": 0.12,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 3.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "RY",
               "invert": false,
               "description": "Rotate camera up/down"
@@ -650,15 +642,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Home"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Move pilot head backward"
             }
           }
@@ -668,51 +660,51 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Ins"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Move pilot head forward"
             }
           }
         ],
-        "9": [
+        "7": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num-"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Pilot head: zoom out"
             }
           }
         ],
-        "10": [
+        "8": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num+"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Pilot head: zoom in"
             }
           }
@@ -722,15 +714,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgUp"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Move pilot head up"
             }
           }
@@ -740,16 +732,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "End"
+                  "PgDn"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Move pilot head right"
+              "minActivationInterval": 50,
+              "description": "Move pilot head down"
             }
           }
         ],
@@ -758,16 +750,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "PgDn"
+                  "Del"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Move pilot head down"
+              "minActivationInterval": 50,
+              "description": "Move pilot head left"
             }
           }
         ],
@@ -776,36 +768,36 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "Del"
+                  "End"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Move pilot head left"
+              "minActivationInterval": 50,
+              "description": "Move pilot head right"
             }
           }
         ]
-      }
+      },
+      "description": "Look"
     },
     {
       "uuid": "e305d7e5-5dcb-4efb-aa32-afaa574bc503",
-      "description": "Mixture / Engine",
       "axisToActionsMap": {
         "1": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
+              "maxRelativeSpeed": 4.0,
               "deadZone": 0.25,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 2.0,
               "initialValue": -1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "S1",
               "invert": false,
               "description": "Engines mixture control"
@@ -814,14 +806,14 @@
         ]
       },
       "buttonToActionsMap": {
-        "6": [
+        "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
               "buttonId": 18,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Engine superchargers mode switch"
             }
           }
@@ -832,8 +824,8 @@
             "data": {
               "longPress": false,
               "buttonId": 19,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Engines outlet cowl shutters control (A-20, Fw 190 A-5 and A-8, La-5, Ju 88, P-40, P-47, C-47)"
             }
           }
@@ -843,10 +835,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 22,
-              "minActivationInterval": 50,
+              "buttonId": 20,
               "maxActivationInterval": 0,
-              "description": "Engines inlet cowl shutters control (I-16, La-5, Ju 52), Engines upper cowl flaps (A-20), Engines intercooler shutter (P-47)"
+              "minActivationInterval": 50,
+              "description": "Engines outlet cowl shutters control (A-20, Fw 190 A-5 and A-8, La-5, Ju 88, P-40, P-47, C-47)"
             }
           }
         ],
@@ -855,10 +847,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 20,
-              "minActivationInterval": 50,
+              "buttonId": 21,
               "maxActivationInterval": 0,
-              "description": "Engines outlet cowl shutters control (A-20, Fw 190 A-5 and A-8, La-5, Ju 88, P-40, P-47, C-47)"
+              "minActivationInterval": 50,
+              "description": "Engines inlet cowl shutters control (I-16, La-5, Ju 52), Engines upper cowl flaps (A-20), Engines intercooler shutter (P-47)"
             }
           }
         ],
@@ -867,18 +859,18 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 21,
-              "minActivationInterval": 50,
+              "buttonId": 22,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Engines inlet cowl shutters control (I-16, La-5, Ju 52), Engines upper cowl flaps (A-20), Engines intercooler shutter (P-47)"
             }
           }
         ]
-      }
+      },
+      "description": "Mixture / Engine"
     },
     {
       "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
-      "description": "Mouse",
       "axisToActionsMap": {
         "0": [
           {
@@ -908,13 +900,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 1,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -922,27 +914,27 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 2,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 3,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -956,7 +948,7 @@
             }
           }
         ],
-        "13": [
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
             "data": {
@@ -966,23 +958,23 @@
             }
           }
         ]
-      }
+      },
+      "description": "Mouse"
     },
     {
       "uuid": "ca236e7e-a577-4159-9b4d-14be96a0e21a",
-      "description": "Prop / Engine",
       "axisToActionsMap": {
         "1": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
+              "maxRelativeSpeed": 4.0,
               "deadZone": 0.25,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 2.0,
               "initialValue": -1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "S0",
               "invert": false,
               "description": "Propeller RPM control"
@@ -991,14 +983,14 @@
         ]
       },
       "buttonToActionsMap": {
-        "6": [
+        "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
               "buttonId": 17,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Switch engines boost: on/off"
             }
           }
@@ -1009,9 +1001,21 @@
             "data": {
               "longPress": false,
               "buttonId": 23,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Propeller RPM control / Propellers: low pitch"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 24,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 50,
+              "description": "Propeller RPM control / Propellers: high pitch"
             }
           }
         ],
@@ -1020,30 +1024,18 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 24,
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Propeller RPM control / Propellers: high pitch"
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
               "buttonId": 2,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Switch propellers pitch control mode: manual/auto"
             }
           }
         ]
-      }
+      },
+      "description": "Prop / Engine"
     },
     {
       "uuid": "e4948829-9655-4fc1-8a3a-0ad466ece749",
-      "description": "Trim",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -1052,8 +1044,8 @@
             "data": {
               "longPress": false,
               "buttonId": 31,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Reset trimmers"
             }
           }
@@ -1064,8 +1056,8 @@
             "data": {
               "longPress": false,
               "buttonId": 30,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Rudder trim axis / Rudder trim switch: left"
             }
           }
@@ -1076,8 +1068,8 @@
             "data": {
               "longPress": false,
               "buttonId": 29,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Rudder trim axis / Rudder trim switch: right"
             }
           }
@@ -1088,8 +1080,8 @@
             "data": {
               "longPress": false,
               "buttonId": 25,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Adjustable stabilizer axis / Elevator trim switch: down / Adjustable stabilizer switch: pitch down"
             }
           }
@@ -1099,10 +1091,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 28,
-              "minActivationInterval": 50,
+              "buttonId": 26,
               "maxActivationInterval": 0,
-              "description": "Aileron trim axis / Aileron trim switch: right"
+              "minActivationInterval": 50,
+              "description": "Adjustable stabilizer axis / Elevator trim switch: up / Adjustable stabilizer switch: pitch up"
             }
           }
         ],
@@ -1111,10 +1103,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 26,
-              "minActivationInterval": 50,
+              "buttonId": 27,
               "maxActivationInterval": 0,
-              "description": "Adjustable stabilizer axis / Elevator trim switch: up / Adjustable stabilizer switch: pitch up"
+              "minActivationInterval": 50,
+              "description": "Aileron trim axis / Aileron trim switch: left"
             }
           }
         ],
@@ -1123,29 +1115,29 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 27,
-              "minActivationInterval": 50,
+              "buttonId": 28,
               "maxActivationInterval": 0,
-              "description": "Aileron trim axis / Aileron trim switch: left"
+              "minActivationInterval": 50,
+              "description": "Aileron trim axis / Aileron trim switch: right"
             }
           }
         ]
-      }
+      },
+      "description": "Trim"
     },
     {
       "uuid": "80e4ea4c-82a8-477e-89de-fd2fb37f4e8f",
-      "description": "Turbo / Cowl",
       "axisToActionsMap": {
         "1": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 34,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Engines turbosupercharger control"
             }
           },
@@ -1153,25 +1145,25 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": -1.0,
               "maxAxisValue": -0.5,
+              "minAxisValue": -1.0,
               "buttonId": 33,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Engines turbosupercharger control"
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "6": [
+        "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
               "buttonId": 6,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Switch water radiators control mode: manual/auto"
             }
           }
@@ -1182,8 +1174,8 @@
             "data": {
               "longPress": false,
               "buttonId": 10,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Water radiators shutters control axis / Bf-109/110 and British aircraft water radiator: close"
             }
           }
@@ -1193,10 +1185,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 13,
-              "minActivationInterval": 50,
+              "buttonId": 11,
               "maxActivationInterval": 0,
-              "description": "He-111, Bf-110 oil radiators: open one step"
+              "minActivationInterval": 50,
+              "description": "Water radiators shutters control axis / Bf-109/110 and British aircraft water radiator: open"
             }
           }
         ],
@@ -1205,10 +1197,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 11,
-              "minActivationInterval": 50,
+              "buttonId": 12,
               "maxActivationInterval": 0,
-              "description": "Water radiators shutters control axis / Bf-109/110 and British aircraft water radiator: open"
+              "minActivationInterval": 50,
+              "description": "He-111, Bf-110 oil radiators: close one step"
             }
           }
         ],
@@ -1217,28 +1209,28 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
-              "buttonId": 12,
-              "minActivationInterval": 50,
+              "buttonId": 13,
               "maxActivationInterval": 0,
-              "description": "He-111, Bf-110 oil radiators: close one step"
+              "minActivationInterval": 50,
+              "description": "He-111, Bf-110 oil radiators: open one step"
             }
           }
         ]
-      }
+      },
+      "description": "Turbo / Cowl"
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View / Eject",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "6": [
+        "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "longPress": false,
               "buttonId": 3,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Eject"
             }
           }
@@ -1248,28 +1240,34 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "F1"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Camera: player cockpit"
             }
           }
         ],
         "12": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "O"
+                ],
+                "modifierCodes": []
+              },
               "longPress": false,
-              "buttonId": 32,
-              "minActivationInterval": 50,
               "maxActivationInterval": 0,
-              "description": "Switch to a next free combat post"
+              "minActivationInterval": 50,
+              "description": "Show/hide mission briefing"
             }
           }
         ],
@@ -1278,40 +1276,37 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "O"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Show/hide mission briefing"
-            }
-          }
-        ],
-        "14": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "F2"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "External free camera at player plane"
             }
           }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 32,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 50,
+              "description": "Switch to a next free combat post"
+            }
+          }
         ]
-      }
+      },
+      "description": "View / Eject"
     }
   ],
+  "showOverlay": true,
+  "version": "1.4",
   "virtualAxisToOverlayAxisMap": {
     "S1": {
       "color": -65536,

@@ -1,66 +1,63 @@
 {
-  "version": "1.3",
-  "showOverlay": true,
-  "showVrOverlay": true,
-  "keyRepeatInterval": 30,
   "buttonToModeActionsMap": {
     "2": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a"
+        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
+        "toggle": false
       }
     ],
     "3": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "17424f78-d0f7-4d9a-9bc5-da04f5cd6487"
+        "modeUuid": "17424f78-d0f7-4d9a-9bc5-da04f5cd6487",
+        "toggle": false
       }
     ],
-    "5": [
+    "6": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
+        "modeUuid": "a5e50cba-de0f-43e9-a2a8-12ccb49214e2",
+        "toggle": true
       }
     ],
     "7": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "a5e50cba-de0f-43e9-a2a8-12ccb49214e2"
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+        "toggle": true
       }
     ],
-    "9": [
+    "8": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3"
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+        "toggle": true
       }
     ],
     "10": [
       {
-        "toggle": true,
         "longPress": false,
-        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
+        "toggle": false
       }
     ],
-    "12": [
+    "13": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "2c354134-f9e1-4a48-a4dc-99025a9ea58c"
+        "modeUuid": "64c5afb8-8af4-4b26-beeb-7bf7bb7c1a25",
+        "toggle": false
       }
     ],
     "14": [
       {
-        "toggle": false,
         "longPress": false,
-        "modeUuid": "64c5afb8-8af4-4b26-beeb-7bf7bb7c1a25"
+        "modeUuid": "2c354134-f9e1-4a48-a4dc-99025a9ea58c",
+        "toggle": false
       }
     ]
   },
+  "keyRepeatInterval": 30,
   "modes": [
     {
       "uuid": "067e6162-3b6f-4ae2-a171-2470b63dff00",
@@ -70,10 +67,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "RZ",
               "invert": false,
               "description": "Flight Control Rudder"
@@ -84,13 +81,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 4.0,
               "hapticFeedback": true,
+              "maxRelativeSpeed": 4.0,
               "deadZone": 0.25,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 2.0,
               "initialValue": 1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "Z",
               "invert": false,
               "description": "Flight Control Collective"
@@ -102,10 +99,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "X",
               "invert": false,
               "description": "Flight Control Roll"
@@ -117,10 +114,10 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
             "data": {
               "deadZone": 0.0,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 1.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "Y",
               "invert": false,
               "description": "Flight Control Pitch"
@@ -131,10 +128,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   ";"
@@ -144,8 +140,9 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "External Cargo Unhook"
             }
           }
@@ -155,11 +152,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": false,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 0,
-              "minActivationInterval": 0,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Pilot weapon release/Machinegun fire"
             }
           }
@@ -171,7 +168,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "C"
@@ -180,8 +176,9 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Flare Dispense Button"
             }
           }
@@ -191,15 +188,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "G"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Governor Auto/Emer"
             }
           }
@@ -208,22 +205,22 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
             "data": {
-              "virtualAxis": "RX",
-              "resetValue": 0.0,
+              "activation": "REPEAT",
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT",
+              "resetValue": 0.0,
+              "virtualAxis": "RX",
               "description": "Reset View"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
             "data": {
-              "virtualAxis": "RY",
-              "resetValue": 0.0,
+              "activation": "REPEAT",
               "fluid": false,
               "longPress": false,
-              "activation": "REPEAT",
+              "resetValue": 0.0,
+              "virtualAxis": "RY",
               "description": "Reset View"
             }
           },
@@ -231,15 +228,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num5"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Reset View"
             }
           },
@@ -247,37 +244,24 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "NumEnter"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 50,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 50,
               "description": "Reset View"
             }
           }
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "longPress": false,
-              "buttonId": 1,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Pilot Trimmer"
-            }
-          }
-        ],
-        "6": [
-          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "T"
@@ -286,9 +270,22 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Trimmer reset"
+            }
+          }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 1,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Pilot Trimmer"
             }
           }
         ],
@@ -297,7 +294,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "K"
@@ -307,18 +303,18 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "External Cargo Autounhook"
             }
           }
         ],
-        "13": [
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "L"
@@ -328,8 +324,9 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "External Cargo Hook"
             }
           }
@@ -370,8 +367,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "UP"
+              "direction": "UP",
+              "longPress": false
             }
           }
         ],
@@ -379,8 +376,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "RIGHT"
+              "direction": "DOWN",
+              "longPress": false
             }
           }
         ],
@@ -388,8 +385,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "DOWN"
+              "direction": "LEFT",
+              "longPress": false
             }
           }
         ],
@@ -397,8 +394,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "longPress": false,
-              "direction": "LEFT"
+              "direction": "RIGHT",
+              "longPress": false
             }
           }
         ]
@@ -406,7 +403,6 @@
     },
     {
       "uuid": "2c354134-f9e1-4a48-a4dc-99025a9ea58c",
-      "description": "AI Burst",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -414,7 +410,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "H"
@@ -423,8 +418,9 @@
                   "L Win"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "AI Panel Show/Hide"
             }
           }
@@ -434,7 +430,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
               "keystroke": {
                 "keyCodes": [
                   "4"
@@ -443,8 +438,9 @@
                   "L Alt"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": true,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Open/Close Right Gunner Door"
             }
           },
@@ -452,7 +448,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "4"
@@ -461,8 +456,9 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "AI Right Burst Switch"
             }
           }
@@ -472,7 +468,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
               "keystroke": {
                 "keyCodes": [
                   "3"
@@ -481,8 +476,9 @@
                   "L Alt"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": true,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Open/Close Left Gunner Door"
             }
           },
@@ -490,7 +486,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "3"
@@ -499,8 +494,9 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "AI Left Burst Switch"
             }
           }
@@ -510,7 +506,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "2"
@@ -519,17 +514,18 @@
                   "L Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "AI Operator Burst Switch"
             }
           }
         ]
-      }
+      },
+      "description": "AI Burst"
     },
     {
       "uuid": "64c5afb8-8af4-4b26-beeb-7bf7bb7c1a25",
-      "description": "AI ROE",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
@@ -537,7 +533,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "H"
@@ -546,8 +541,9 @@
                   "L Win"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "AI Panel Show/Hide"
             }
           }
@@ -557,7 +553,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
               "keystroke": {
                 "keyCodes": [
                   "4"
@@ -566,8 +561,9 @@
                   "L Alt"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": true,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Open/Close Right Gunner Door"
             }
           },
@@ -575,7 +571,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "4"
@@ -584,8 +579,9 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "AI Right ROE Iterate"
             }
           }
@@ -595,7 +591,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
               "keystroke": {
                 "keyCodes": [
                   "3"
@@ -604,8 +599,9 @@
                   "L Alt"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": true,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Open/Close Left Gunner Door"
             }
           },
@@ -613,7 +609,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "3"
@@ -622,8 +617,9 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "AI Left ROE Iterate"
             }
           }
@@ -633,7 +629,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "2"
@@ -642,30 +637,29 @@
                   "L Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "AI Operator ROE Iterate"
             }
           }
         ]
-      }
+      },
+      "description": "AI ROE"
     },
     {
       "uuid": "a5e50cba-de0f-43e9-a2a8-12ccb49214e2",
-      "description": "Lights",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
         "0": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
-              "longPress": false,
               "actions": [
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         "/"
@@ -674,8 +668,9 @@
                         "R Ctrl"
                       ]
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Landing light Extend"
                   }
                 },
@@ -683,7 +678,6 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         "/"
@@ -692,8 +686,9 @@
                         "R Alt"
                       ]
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Landing light Stop"
                   }
                 },
@@ -701,7 +696,6 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         "/"
@@ -710,8 +704,9 @@
                         "R Win"
                       ]
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Landing light Retract"
                   }
                 },
@@ -719,7 +714,6 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         "/"
@@ -728,13 +722,15 @@
                         "R Alt"
                       ]
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Landing light Stop"
                   }
                 }
               ],
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false
             }
           }
         ],
@@ -743,7 +739,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   ","
@@ -752,23 +747,22 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Landing Light Switch"
             }
           }
         ],
-        "6": [
+        "4": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
-              "longPress": false,
               "actions": [
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         ";"
@@ -777,8 +771,9 @@
                         "R Ctrl"
                       ]
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Search light On"
                   }
                 },
@@ -786,7 +781,6 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         ";"
@@ -795,8 +789,9 @@
                         "R Alt"
                       ]
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Search light Off"
                   }
                 },
@@ -804,7 +799,6 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         ";"
@@ -813,8 +807,9 @@
                         "R Win"
                       ]
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Search light Stow"
                   }
                 },
@@ -822,7 +817,6 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         ";"
@@ -831,13 +825,15 @@
                         "R Alt"
                       ]
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Search light Off"
                   }
                 }
               ],
-              "activation": "SINGLE_IMMEDIATELY"
+              "activation": "SINGLE_IMMEDIATELY",
+              "longPress": false
             }
           }
         ],
@@ -846,15 +842,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "8"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Search light Extend"
             }
           }
@@ -864,16 +860,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "0"
+                  "7"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Search light Right"
+              "minActivationInterval": 0,
+              "description": "Search light Retract"
             }
           }
         ],
@@ -882,16 +878,16 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "7"
+                  "9"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Search light Retract"
+              "minActivationInterval": 0,
+              "description": "Search light Left"
             }
           }
         ],
@@ -900,36 +896,36 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "9"
+                  "0"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "Search light Left"
+              "minActivationInterval": 0,
+              "description": "Search light Right"
             }
           }
         ]
-      }
+      },
+      "description": "Lights"
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
-      "description": "Look / Comm",
       "axisToActionsMap": {
         "0": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 0.91,
               "hapticFeedback": false,
+              "maxRelativeSpeed": 0.91,
               "deadZone": 0.12,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 3.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "RX",
               "invert": false,
               "description": "Absolute Camera Horizontal View"
@@ -940,13 +936,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
-              "maxRelativeSpeed": 1.0,
               "hapticFeedback": false,
+              "maxRelativeSpeed": 1.0,
               "deadZone": 0.12,
-              "minValue": -1.0,
-              "maxValue": 1.0,
               "exponent": 3.0,
               "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
               "virtualAxis": "RY",
               "invert": false,
               "description": "Absolute Camera Vertical View"
@@ -957,10 +953,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "\\"
@@ -969,8 +964,9 @@
                   "R Alt"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Pilot\u0027s radio trigger RADIO (call radio menu)"
             }
           },
@@ -978,11 +974,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": true,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 2,
-              "minActivationInterval": 0,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Pilot\u0027s radio trigger RADIO (VOIP)"
             }
           }
@@ -991,10 +987,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "SINGLE_ON_RELEASE",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Space"
@@ -1003,8 +998,9 @@
                   "R Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Pilot\u0027s radio trigger ICS (call radio menu)"
             }
           },
@@ -1012,11 +1008,11 @@
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
               "longPress": true,
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "buttonId": 3,
-              "minActivationInterval": 0,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Pilot\u0027s radio trigger ICS (VOIP)"
             }
           }
@@ -1028,7 +1024,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num/"
@@ -1038,8 +1033,9 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
             }
           }
@@ -1049,15 +1045,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "\\"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Communication menu"
             }
           }
@@ -1067,7 +1063,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num*"
@@ -1077,44 +1072,45 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
             }
           }
         ],
-        "9": [
+        "7": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num/"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Zoom out slow"
             }
           }
         ],
-        "10": [
+        "8": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num*"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Zoom in slow"
             }
           }
@@ -1124,7 +1120,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num8"
@@ -1134,8 +1129,9 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Up"
             }
           }
@@ -1145,28 +1141,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Num6"
-                ],
-                "modifierCodes": [
-                  "R Shift",
-                  "R Ctrl"
-                ]
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Cockpit Camera Move Right"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num2"
@@ -1176,18 +1150,18 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Down"
             }
           }
         ],
-        "14": [
+        "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "Num4"
@@ -1197,17 +1171,39 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
             }
           }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "Num6"
+                ],
+                "modifierCodes": [
+                  "R Shift",
+                  "R Ctrl"
+                ]
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Cockpit Camera Move Right"
+            }
+          }
         ]
-      }
+      },
+      "description": "Look / Comm"
     },
     {
       "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
-      "description": "Mouse",
       "axisToActionsMap": {
         "0": [
           {
@@ -1237,13 +1233,13 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 1,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -1251,27 +1247,27 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 2,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ]
       },
       "buttonToActionsMap": {
-        "7": [
+        "6": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
               "activation": "REPEAT",
               "longPress": false,
               "mouseButton": 3,
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
             }
           }
         ],
@@ -1285,7 +1281,7 @@
             }
           }
         ],
-        "13": [
+        "12": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
             "data": {
@@ -1295,46 +1291,46 @@
             }
           }
         ]
-      }
+      },
+      "description": "Mouse"
     },
     {
       "uuid": "17424f78-d0f7-4d9a-9bc5-da04f5cd6487",
-      "description": "Throttle / Engine",
       "axisToActionsMap": {
         "1": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": 0.5,
               "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgDn"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Throttle Down"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "minAxisValue": -1.0,
               "maxAxisValue": -0.5,
+              "minAxisValue": -1.0,
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgUp"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Throttle Up"
             }
           }
@@ -1346,7 +1342,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgUp"
@@ -1355,8 +1350,9 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Increase Turbine RPM"
             }
           }
@@ -1366,25 +1362,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "Home"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Start-up engine"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "PgDn"
@@ -1393,18 +1370,18 @@
                   "R Ctrl"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Decrease Turbine RPM"
             }
           }
         ],
-        "14": [
+        "13": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "REPEAT",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "T"
@@ -1413,20 +1390,39 @@
                   "R Win"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Throttle Stop Switch"
             }
           }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Start-up engine"
+            }
+          }
         ]
-      }
+      },
+      "description": "Throttle / Engine"
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
-      "description": "View / Position / NVG",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
-        "5": [
+        "10": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
             "data": {}
@@ -1437,15 +1433,15 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
                   "F1"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "F1 Cockpit view"
             }
           }
@@ -1455,25 +1451,6 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
-              "keystroke": {
-                "keyCodes": [
-                  "F10"
-                ],
-                "modifierCodes": []
-              },
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "F10 Theater map view"
-            }
-          }
-        ],
-        "13": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "longPress": true,
               "keystroke": {
                 "keyCodes": [
                   "H"
@@ -1482,29 +1459,29 @@
                   "R Shift"
                 ]
               },
-              "minActivationInterval": 0,
+              "longPress": true,
               "maxActivationInterval": 0,
+              "minActivationInterval": 0,
               "description": "Night Vision Goggles"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
-              "longPress": false,
               "actions": [
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         "2"
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Set Operator Seat"
                   }
                 },
@@ -1512,15 +1489,15 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         "3"
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Set Left Gunner Seat"
                   }
                 },
@@ -1528,15 +1505,15 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         "4"
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Set Right Gunner Seat"
                   }
                 },
@@ -1544,20 +1521,39 @@
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
                     "activation": "SINGLE_IMMEDIATELY",
-                    "longPress": false,
                     "keystroke": {
                       "keyCodes": [
                         "1"
                       ],
                       "modifierCodes": []
                     },
-                    "minActivationInterval": 0,
+                    "longPress": false,
                     "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
                     "description": "Set Pilot Seat"
                   }
                 }
               ],
-              "activation": "SINGLE_ON_RELEASE"
+              "activation": "SINGLE_ON_RELEASE",
+              "longPress": false
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  "F2"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "F2 Aircraft view"
             }
           }
         ],
@@ -1566,22 +1562,25 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
               "activation": "SINGLE_IMMEDIATELY",
-              "longPress": false,
               "keystroke": {
                 "keyCodes": [
-                  "F2"
+                  "F10"
                 ],
                 "modifierCodes": []
               },
-              "minActivationInterval": 0,
+              "longPress": false,
               "maxActivationInterval": 0,
-              "description": "F2 Aircraft view"
+              "minActivationInterval": 0,
+              "description": "F10 Theater map view"
             }
           }
         ]
-      }
+      },
+      "description": "View / Position / NVG"
     }
   ],
+  "showOverlay": true,
+  "version": "1.4",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,
