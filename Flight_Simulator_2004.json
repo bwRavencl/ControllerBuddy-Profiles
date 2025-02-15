@@ -476,6 +476,30 @@
       "axisToActionsMap": {
         "0": [
           {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.95,
+              "buttonId": 2,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Look (left/right)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "maxAxisValue": -0.95,
+              "minAxisValue": -1.0,
+              "buttonId": 3,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Look (left/right)"
+            }
+          },
+          {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
               "hapticFeedback": false,
@@ -492,6 +516,30 @@
           }
         ],
         "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.95,
+              "buttonId": 0,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Look (up/down)"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "maxAxisValue": -0.95,
+              "minAxisValue": -1.0,
+              "buttonId": 1,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Look (up/down)"
+            }
+          },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
             "data": {
@@ -1102,16 +1150,16 @@
   "showOverlay": true,
   "version": "1.4",
   "virtualAxisToOverlayAxisMap": {
+    "S1": {
+      "color": -65536,
+      "inverted": false
+    },
     "Z": {
       "color": -16777216,
       "inverted": false
     },
     "S0": {
       "color": -16776961,
-      "inverted": false
-    },
-    "S1": {
-      "color": -65536,
       "inverted": false
     }
   }
