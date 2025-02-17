@@ -210,17 +210,44 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "F2"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": true,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Thrust Reverser increase"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "fluid": false,
+              "longPress": false,
+              "resetValue": 1.0,
+              "virtualAxis": "Z",
+              "description": "Thrust Reverser off"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
-                  "Z"
+                  "F1"
                 ],
                 "modifierCodes": []
               },
               "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Autopilot master switch on/off"
+              "description": "Thrust Reverser off"
             }
           }
         ],
