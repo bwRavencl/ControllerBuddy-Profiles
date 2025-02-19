@@ -1389,6 +1389,16 @@ try {
             <AxEvent>AXIS_MIXTURE_SET</AxEvent>
             <AxScale>127</AxScale>
         </Axis>
+        <Entry>
+            <Index>0</Index>
+            <Down>BRAKES_LEFT</Down>
+            <DownRpt>1</DownRpt>
+        </Entry>
+        <Entry>
+            <Index>1</Index>
+            <Down>BRAKES_RIGHT</Down>
+            <DownRpt>1</DownRpt>
+        </Entry>
     </SimControls.Map>
     <SimControls.Map>
         <Name>vJoy Device SLEW {$vJoyDeviceGuid}</Name>
