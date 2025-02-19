@@ -117,23 +117,31 @@
             }
           }
         ],
-        "5": [
+        "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  "."
-                ],
-                "modifierCodes": []
-              },
-              "longPress": false,
+              "buttonId": 0,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Brakes"
+              "description": "Brakes (left)"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 1,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Brakes (right)"
             }
           }
         ]
@@ -244,7 +252,23 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "."
+                ],
+                "modifierCodes": []
+              },
+              "longPress": true,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Brakes"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
               "keystroke": {
                 "keyCodes": [
                   "."
