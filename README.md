@@ -1,13 +1,13 @@
 # ControllerBuddy-Profiles
 
-## Description
+## 📖 Description
 
 This repository contains a collection of profiles for the gamepad mapping software [ControllerBuddy](https://controllerbuddy.org).
 
 All profiles have been created by the author of ControllerBuddy and target a variety of flight simulators.  
 Please note that these profiles are constantly being updated and may change significantly over time.
 
-## Instructions
+## 🗣️ Instructions
 
 - The `.json` files are ControllerBuddy profile files and can be loaded with the above mentioned application.
 - The `configs` subdirectory contains game configuration files for use with the above profiles.
@@ -28,7 +28,7 @@ Please note that these profiles are constantly being updated and may change sign
 - If there is no `Configure.ps1` script for the application, you will have to make the necessary settings changes manually.
 - If you are using a controller that is not a DualShock 4 or Dual Sense, you will also need to manually configure the application to ignore all input from your physical controller to prevent possible interference with the input coming from ControllerBuddy and vJoy.
 
-## Attribution
+## 🙏 Attribution
 
 ControllerBuddy-Profiles makes use of these awesome software technologies and libraries:
 
@@ -37,6 +37,6 @@ ControllerBuddy-Profiles makes use of these awesome software technologies and li
 - [SharpGenTools](https://github.com/SharpGenTools/SharpGenTools)
 - [Vortice.Windows](https://github.com/amerkoleci/Vortice.Windows)
 
-## License
+## ⚖️ License
 
 [CC0 1.0 Universal](LICENSE)
