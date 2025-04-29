@@ -205,7 +205,7 @@
               "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Normal View"
+              "description": "Wide View"
             }
           },
           {
@@ -698,22 +698,6 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
-                  "End"
-                ],
-                "modifierCodes": []
-              },
-              "longPress": true,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0,
-              "description": "Wide View"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
               "activation": "SINGLE_ON_RELEASE",
               "keystroke": {
                 "keyCodes": [
@@ -724,7 +708,7 @@
               "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Normal View"
+              "description": "Wide View"
             }
           }
         ],
@@ -1371,12 +1355,12 @@
   "showOverlay": true,
   "version": "1.4",
   "virtualAxisToOverlayAxisMap": {
-    "S0": {
-      "color": -16776961,
-      "inverted": false
-    },
     "Z": {
       "color": -16777216,
+      "inverted": false
+    },
+    "S0": {
+      "color": -16776961,
       "inverted": false
     },
     "S1": {
