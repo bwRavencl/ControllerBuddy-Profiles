@@ -9,53 +9,75 @@ Please note that these profiles are constantly being updated and may change sign
 
 ## 🗣️ Instructions
 
-- The `.json` files are ControllerBuddy profile files and can be loaded with the above mentioned application.
-- The `configs` subdirectory contains game configuration files for use with the above profiles.
-- For some applications, the `configs` subdirectory contains a PowerShell script called `Configure.ps1` that will automatically modify the application's settings to work with the corresponding ControllerBuddy profile.
+The `.json` files in this repository represent profiles that ControllerBuddy can load directly.
 
+Before a profile can be used, it is necessary to configure the application's input settings to ensure compatibility with the profile.
 
-  **Warning:** Use these scripts at your own risk!  
-  They will change the input settings of the application. Backup your settings if necessary.
+### ⚙️ Configuring Applications
 
-  **Notes:**
-  - Make sure that your gamepad is connected before running the scripts!
-  - The scripts are compatible with both Windows PowerShell 5.1 and [PowerShell 7+](https://github.com/PowerShell/PowerShell).
+Each supported application has its own subdirectory within the `configs` directory. Inside each subdirectory, you will find the necessary files to configure the application for use with ControllerBuddy.
 
-  **Usage with Wine on Linux:**
-  - A working installation of PowerShell within the corresponding Wine prefix is required.
-  - To start a script, run:
-    ```sh
-    WINEDEBUG='-all' wine pwsh Configure.ps1
-    ```
-  - Since the uinput devices created by ControllerBuddy are not persistent, it is necessary to start Local or Client mode before running a script.
-- If there is **no** `Configure.ps1` script for the application, you will need to apply the required configuration changes manually.  
-Typically, this involves editing the application's configuration files based on the provided reference files.
-- For applications running inside **DOSBox**, configure the `[joystick]` section of your `dosbox.conf` follows:
-  ```
-  [joystick]
+Each subdirectory can contain one of the following:
+- A PowerShell script (`Configure.ps1`)
+- Configuration files (e.g., `.ini`, `.cfg`, etc.)
+- Screenshots
 
-  joysticktype                = 4axis_2
-  timed                       = false
-  autofire                    = false
-  swap34                      = false
-  buttonwrap                  = false
+#### 📜 PowerShell Script
 
-  # For DOSBox Staging additionally set:
-  circularinput               = false
-  deadzone                    = 0
-  use_joy_calibration_hotkeys = false
-  joy_x_calibration           = auto
-  joy_y_calibration           = auto
+A `Configure.ps1` file is a PowerShell script that automatically configures the application settings for usage with the corresponding ControllerBuddy profile.
+
+**Warning:** Use these scripts at your own risk!  
+These scripts modify the application's input settings. Please back up your settings before executing them.
+
+**Notes:**
+- The scripts are not self-contained and must be run from the original directory where they reside.
+- Make sure that your gamepad is connected before running a script.
+- The scripts are compatible with both Windows PowerShell 5.1 and [PowerShell 7+](https://github.com/PowerShell/PowerShell).
+
+**Usage on Linux with Wine:**
+- A working installation of PowerShell 7+ within the corresponding Wine prefix is required.
+- Since the uinput devices created by ControllerBuddy are non-persistent, Local or Client mode must be started before executing a script.
+- To execute a script, run:
+  ```sh
+  WINEDEBUG='-all' wine pwsh Configure.ps1
   ```
 
-  **On Linux**:
-    - Set `joysticktype = 4axis` instead.
-    - Use the `SDL_JOYSTICK_DEVICE` environment variable to ensure DOSBox picks up the correct joystick device.
+#### 📄 Configuration Files
 
-      For example, if the 'ControllerBuddy Joystick' device appears as `/dev/input/js1`, launch DOSBox like this:
-      ```sh
-      SDL_JOYSTICK_DEVICE=/dev/input/js1 dosbox
-      ```
+The provided configuration files typically contain only part(s) of the application's entire configuration, such as the input settings. These parts need to be manually added to the application's actual configuration file(s).
+
+#### 🖼️ Screenshots
+
+The screenshots illustrate the necessary steps for manually configuring the application, such as where to find and modify the input settings. They should be self-explanatory.
+
+### 📺 Usage with DOSBox
+
+For legacy applications running inside **DOSBox**, configure the `[joystick]` section of your `dosbox.conf` as follows:
+```
+[joystick]
+
+joysticktype                = 4axis_2
+timed                       = false
+autofire                    = false
+swap34                      = false
+buttonwrap                  = false
+
+# The following settings apply only for DOSBox Staging
+circularinput               = false
+deadzone                    = 0
+use_joy_calibration_hotkeys = false
+joy_x_calibration           = auto
+joy_y_calibration           = auto
+```
+
+**On Linux**:
+- Set `joysticktype = 4axis` instead.
+- Use the `SDL_JOYSTICK_DEVICE` environment variable to ensure DOSBox picks up the correct joystick device.
+
+  For example, if the 'ControllerBuddy Joystick' device appears as `/dev/input/js1`, launch DOSBox like this:
+  ```sh
+  SDL_JOYSTICK_DEVICE=/dev/input/js1 dosbox
+  ```
 
 ## 🙏 Attribution
 
