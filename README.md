@@ -28,8 +28,34 @@ Please note that these profiles are constantly being updated and may change sign
     WINEDEBUG='-all' wine pwsh Configure.ps1
     ```
   - Since the uinput devices created by ControllerBuddy are not persistent, it is necessary to start Local or Client mode before running a script.
-- If there is no `Configure.ps1` script for the application, you will have to make the necessary settings changes manually.
-- If you are using a controller that is not a DualShock 4 or Dual Sense, you will also need to manually configure the application to ignore all input from your physical controller to prevent possible interference with the input coming from ControllerBuddy and vJoy.
+- If there is **no** `Configure.ps1` script for the application, you will need to apply the required configuration changes manually.  
+Typically, this involves editing the application's configuration files based on the provided reference files.
+- For applications running inside **DOSBox**, configure the `[joystick]` section of your `dosbox.conf` follows:
+  ```
+  [joystick]
+
+  joysticktype                = 4axis_2
+  timed                       = false
+  autofire                    = false
+  swap34                      = false
+  buttonwrap                  = false
+
+  # For DOSBox Staging additionally set:
+  circularinput               = false
+  deadzone                    = 0
+  use_joy_calibration_hotkeys = false
+  joy_x_calibration           = auto
+  joy_y_calibration           = auto
+  ```
+
+  **On Linux**:
+    - Set `joysticktype = 4axis` instead.
+    - Use the `SDL_JOYSTICK_DEVICE` environment variable to ensure DOSBox picks up the correct joystick device.
+
+      For example, if the 'ControllerBuddy Joystick' device appears as `/dev/input/js1`, launch DOSBox like this:
+      ```sh
+      SDL_JOYSTICK_DEVICE=/dev/input/js1 dosbox
+      ```
 
 ## 🙏 Attribution
 
