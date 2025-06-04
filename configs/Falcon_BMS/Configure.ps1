@@ -20627,7 +20627,8 @@ Set-Variable KeyFileExtension -Option Constant -Value '.key'
 Set-Variable BMSFullKeyBasename -Option Constant -Value "${KeyFilePrefix}Full"
 Set-Variable BMSAutoKeyBasename -Option Constant -Value "${KeyFilePrefix}Auto"
 
-Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\2.4.1.19\user.config"
+Set-Variable AlternativeLauncherVersion '2.4.1.19'
+Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\$AlternativeLauncherVersion\user.config"
 
 Set-Variable BMSUserConfigFileLauncherSectionHeadline -Option Constant -Value '// LAUNCHER OVERRIDES BEGIN HERE - DO NOT EDIT OR ADD BELOW THIS LINE'
 Set-Variable BMSUserConfigFileLauncherDisableXInputLine -Option Constant -Value 'set g_bUseXInput 0'
@@ -20646,6 +20647,20 @@ $bmsConfigDir = "$bmsDir\User\Config"
 if (-not (Test-Path $bmsConfigDir -PathType Container)) {
     Write-Output "Error: $BmsFullName config directory '$bmsConfigDir' does not exist"
     Exit 1
+}
+
+$alternativeLauncherExe = "$bmsDir\Launcher\FalconBMS_Alternative_Launcher.exe"
+
+if (-not (Test-Path $alternativeLauncherExe -PathType Leaf)) {
+    Write-Output "Error: Alternative Launcher execeutable '$alternativeLauncherExe' does not exist"
+    Exit 1
+}
+
+$alternativeLauncherActualVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($alternativeLauncherExe).FileVersion
+
+if ($alternativeLauncherActualVersion -ne $AlternativeLauncherVersion) {
+    Write-Output "Error: Alternative Launcher version mismatch: required $AlternativeLauncherVersion but found $alternativeLauncherActualVersion"
+    exit 1
 }
 
 Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
