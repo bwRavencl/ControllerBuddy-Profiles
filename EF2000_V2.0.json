@@ -176,24 +176,6 @@
               "activation": "REPEAT",
               "keystroke": {
                 "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": []
-              },
-              "longPress": false,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0,
-              "description": "Fire weapon"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
-            "data": {
-              "maxAxisValue": 1.0,
-              "minAxisValue": 0.5,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
                   "."
                 ],
                 "modifierCodes": [
@@ -204,6 +186,18 @@
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Right toe brake"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "longPress": false,
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 0,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Fire weapon"
             }
           }
         ]
