@@ -26,13 +26,15 @@ Each subdirectory can contain one of the following:
 
 A `Configure.ps1` file is a PowerShell script that automatically configures the application settings for usage with the corresponding ControllerBuddy profile.
 
-**Warning:** Use these scripts at your own risk!  
-These scripts modify the application's input settings. Please back up your settings before executing them.
+> [!CAUTION]
+> Use these scripts at your own risk!  
+> These scripts modify the application's input settings.  
+> Please back up your settings before executing them.
 
-**Notes:**
-- The scripts are not self-contained and must be run from the original directory where they reside.
-- Make sure that your gamepad is connected before running a script.
-- The scripts are compatible with both Windows PowerShell 5.1 and [PowerShell 7+](https://github.com/PowerShell/PowerShell).
+> [!IMPORTANT]
+> - The scripts are not self-contained and must be run from the original directory where they reside.
+> - Make sure that your gamepad is connected before running a script.
+> - The scripts are compatible with both Windows PowerShell 5.1 and [PowerShell 7+](https://github.com/PowerShell/PowerShell).
 
 **Usage on Linux with Wine:**
 - A working installation of PowerShell 7+ within the corresponding Wine prefix is required.
