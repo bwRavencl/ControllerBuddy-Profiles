@@ -211,7 +211,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "REPEAT",
               "keystroke": {
                 "keyCodes": [
                   "NumEnter"
@@ -221,15 +221,15 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0,
+              "maxActivationInterval": 50,
+              "minActivationInterval": 50,
               "description": "VIEWGEN: Default FOV"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "REPEAT",
               "keystroke": {
                 "keyCodes": [
                   "Num5"
@@ -239,8 +239,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0,
+              "maxActivationInterval": 50,
+              "minActivationInterval": 50,
               "description": "VIEWEXT: Reset View"
             }
           }
