@@ -2,10 +2,11 @@
 
 ## 📖 Description
 
-This repository contains a collection of profiles for the gamepad mapping software [ControllerBuddy](https://controllerbuddy.org).
+This repository hosts a curated collection of profiles for the gamepad mapping software [ControllerBuddy](https://controllerbuddy.org).
 
-All profiles have been created by the author of ControllerBuddy and target a variety of flight simulators.  
-Please note that these profiles are constantly being updated and may change significantly over time.
+All profiles were created by the developer of ControllerBuddy and are designed to support a wide range of flight simulation titles.
+> [!NOTE]
+These profiles are constantly being updated and may change significantly over time.
 
 ## 🗣️ Instructions
 
