@@ -76,10 +76,10 @@ function Get-DcsInstanceGuid {
     $guidParts = $Device.InstanceGuid.ToString() -split '-', 5
 
     for ($i=0; $i -lt $guidParts.Count; $i++) {
-        if ( $i -lt 2) {
-            $guidParts[$i] = $guidParts[$i].ToUpper()
-        } else {
+        if ( $i -eq 2) {
             $guidParts[$i] = $guidParts[$i].ToLower()
+        } else {
+            $guidParts[$i] = $guidParts[$i].ToUpper()
         }
     }
 
