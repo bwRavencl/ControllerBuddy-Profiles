@@ -121,8 +121,7 @@ if (-not (Test-Path $optionsLuaFile -PathType Leaf)) {
 }
 
 $synchronizeControlsLine = Select-String -Path $optionsLuaFile -Pattern '^\s*\["synchronize_controls"\]'
-if ($null -eq $synchronizeControlsLine)
-{
+if ($null -eq $synchronizeControlsLine) {
     Write-Output "Error: file '$optionsLuaFile' is missing the 'synchronize_controls' line"
     Exit 1
 }
