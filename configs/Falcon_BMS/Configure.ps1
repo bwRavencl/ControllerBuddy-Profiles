@@ -20674,15 +20674,17 @@ if ($null -eq $vJoyDevice) {
 
 $gamepadDevices = Get-GamepadDeviceList
 
-while ($gamepadDevices.Count -lt 1) {
-    Add-Type -AssemblyName PresentationCore, PresentationFramework
+if (-not (Test-Path -Path 'HKCU:\Software\Wine')) {
+    while ($gamepadDevices.Count -lt 1) {
+        Add-Type -AssemblyName PresentationCore, PresentationFramework
 
-    if ([System.Windows.MessageBox]::Show("There is currently no controller connected.`nTo retry, please connect your controller now.`n`nRetry?", 'No controller connected', [System.Windows.MessageBoxButton]::YesNo, [System.Windows.MessageBoxImage]::Warning) -ne [System.Windows.MessageBoxResult]::Yes) {
-        Write-Output 'Error: No controller connected'
-        Exit 1
+        if ([System.Windows.MessageBox]::Show("There is currently no controller connected.`nTo retry, please connect your controller now.`n`nRetry?", 'No controller connected', [System.Windows.MessageBoxButton]::YesNo, [System.Windows.MessageBoxImage]::Warning) -ne [System.Windows.MessageBoxResult]::Yes) {
+            Write-Output 'Error: No controller connected'
+            Exit 1
+        }
+
+        $gamepadDevices = Get-GamepadDeviceList
     }
-
-    $gamepadDevices = Get-GamepadDeviceList
 }
 
 function Write-SetupFile {
