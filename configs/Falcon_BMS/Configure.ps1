@@ -1,4 +1,4 @@
-Set-Variable BmsVersion -Option Constant -Value '4.37'
+Set-Variable BmsVersion -Option Constant -Value '4.38'
 Set-Variable BmsFullName -Option Constant -Value "Falcon BMS $BmsVersion"
 
 Write-Output "Configuring $BmsFullName for use with ControllerBuddy-Profiles...`n"
@@ -20627,8 +20627,8 @@ Set-Variable KeyFileExtension -Option Constant -Value '.key'
 Set-Variable BMSFullKeyBasename -Option Constant -Value "${KeyFilePrefix}Full"
 Set-Variable BMSAutoKeyBasename -Option Constant -Value "${KeyFilePrefix}Auto"
 
-Set-Variable AlternativeLauncherVersion '2.4.1.19'
-Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_vo3t4htx5jzneegmhuxck5cwnnk3psjx\$AlternativeLauncherVersion\user.config"
+Set-Variable AlternativeLauncherVersion '2.4.2.0'
+Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_4f1zutskmyxo3pzspfchahuy3wu3tn3r\$AlternativeLauncherVersion\user.config"
 
 Set-Variable BMSUserConfigFileLauncherSectionHeadline -Option Constant -Value '// LAUNCHER OVERRIDES BEGIN HERE - DO NOT EDIT OR ADD BELOW THIS LINE'
 Set-Variable BMSUserConfigFileLauncherDisableXInputLine -Option Constant -Value 'set g_bUseXInput 0'
