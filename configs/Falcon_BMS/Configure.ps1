@@ -20794,33 +20794,40 @@ try {
     Exit 1
 }
 
-Get-ChildItem "$bmsConfigDir" -Filter *.pop | Foreach-Object {
-  $popFile = $_.FullName
+$popFiles = Get-ChildItem "$bmsConfigDir" -Filter *.pop
 
-  try {
-    $oldPopFileBytes = [System.IO.File]::ReadAllBytes($popFile)
-    $newPopFileBytes = $oldPopFileBytes.Clone()
-
-    $newPopFileBytes[0x1A0] = 0x00
-    $newPopFileBytes[0x188] = 0xCD
-    $newPopFileBytes[0x189] = 0xCC
-    $newPopFileBytes[0x18A] = 0x4C
-    $newPopFileBytes[0x18B] = 0x3E
-
-    if (@(Compare-Object $oldPopFileBytes $newPopFileBytes -sync 0).Count -gt 0) {
-      try {
-        [System.IO.File]::WriteAllBytes($popFile, $newPopFileBytes)
-        Write-Output "Wrote file: $popFile"
-      }
-      catch {
-        Write-Output "Error: Could not write file: $popFile"
-      }
-    }
-  }
-  catch {
-    Write-Output "Error: Could not process file: $popFile"
+if ($popFiles.Count -eq 0) {
+    Write-Output "Error: No .pop file found in '$bmsConfigDir' - launch $BmsFullName to generate it, then exit and rerun this script"
     Exit 1
-  }
+}
+
+$popFiles | Foreach-Object {
+    $popFile = $_.FullName
+
+    try {
+        $oldPopFileBytes = [System.IO.File]::ReadAllBytes($popFile)
+        $newPopFileBytes = $oldPopFileBytes.Clone()
+
+        $newPopFileBytes[0x1A0] = 0x00
+        $newPopFileBytes[0x188] = 0xCD
+        $newPopFileBytes[0x189] = 0xCC
+        $newPopFileBytes[0x18A] = 0x4C
+        $newPopFileBytes[0x18B] = 0x3E
+
+        if (@(Compare-Object $oldPopFileBytes $newPopFileBytes -sync 0).Count -gt 0) {
+            try {
+                [System.IO.File]::WriteAllBytes($popFile, $newPopFileBytes)
+                Write-Output "Wrote file: $popFile"
+            }
+            catch {
+                Write-Output "Error: Could not write file: $popFile"
+            }
+        }
+    }
+    catch {
+        Write-Output "Error: Could not process file: $popFile"
+        Exit 1
+    }
 }
 
 Write-Output "`n$BmsFullName is now fully configured!"
