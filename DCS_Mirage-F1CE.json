@@ -363,18 +363,10 @@
         ],
         "14": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  "C"
-                ],
-                "modifierCodes": [
-                  "R Ctrl"
-                ]
-              },
               "longPress": false,
+              "buttonId": 22,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Cannon 300-600m and missile lock/unlock button"
@@ -629,26 +621,32 @@
               "activation": "SINGLE_ON_RELEASE",
               "keystroke": {
                 "keyCodes": [
-                  "T"
+                  "\\"
                 ],
                 "modifierCodes": []
               },
               "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "PTT button"
+              "description": "Communication menu"
             }
           },
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
-              "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "buttonId": 22,
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  "T"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "VoIP PTT button (custom)"
+              "description": "Stick Push-to-talk button (Voice Chat)"
             }
           }
         ]
@@ -672,24 +670,6 @@
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
-            }
-          }
-        ],
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
-                  "\\"
-                ],
-                "modifierCodes": []
-              },
-              "longPress": false,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0,
-              "description": "Communication menu"
             }
           }
         ],
@@ -1462,7 +1442,7 @@
               "buttonId": 5,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Telemeter/zone scanning switch - BPZ"
+              "description": "Telemeter/zone scanning switch - BPZ (BZ)"
             }
           }
         ],
@@ -1474,7 +1454,7 @@
               "buttonId": 16,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Telemeter/zone scanning switch - TEL"
+              "description": "Telemeter/zone scanning switch - TEL (TL)"
             }
           }
         ],
@@ -1486,7 +1466,7 @@
               "buttonId": 17,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Telemeter/zone scanning switch - CENTER"
+              "description": "Telemeter/zone scanning switch - CENTER (OFF)"
             }
           }
         ],

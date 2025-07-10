@@ -140,14 +140,6 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN23",
-				},
-			},
-			["name"] = "Push-to-talk button (VOIP)",
-		},
 		["d3078pnilu3078cd1vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -290,7 +282,7 @@ local diff = {
 					["key"] = "JOY_BTN6",
 				},
 			},
-			["name"] = "Telemeter/zone scanning switch - BPZ",
+			["name"] = "Telemeter/zone scanning switch - BPZ (BZ)",
 		},
 		["d3398pnilunilcd1vd0vpnilvunil"] = {
 			["added"] = {
@@ -298,7 +290,7 @@ local diff = {
 					["key"] = "JOY_BTN18",
 				},
 			},
-			["name"] = "Telemeter/zone scanning switch - CENTER",
+			["name"] = "Telemeter/zone scanning switch - CENTER (OFF)",
 		},
 		["d3398pnilunilcd1vd1vpnilvunil"] = {
 			["added"] = {
@@ -306,7 +298,7 @@ local diff = {
 					["key"] = "JOY_BTN17",
 				},
 			},
-			["name"] = "Telemeter/zone scanning switch - TEL",
+			["name"] = "Telemeter/zone scanning switch - TEL (TL)",
 		},
 		["d3548pnilu3548cd1vd1vpnilvu0"] = {
 			["added"] = {
@@ -323,6 +315,14 @@ local diff = {
 				},
 			},
 			["name"] = "Gun button",
+		},
+		["d3555pnilu3555cd1vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN23",
+				},
+			},
+			["name"] = "Cannon 300-600m and missile lock/unlock button",
 		},
 	},
 }
