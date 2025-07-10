@@ -46,7 +46,10 @@ jobs:
         run: |
           rm -f ControllerBuddy-Pages/profiles/*.html
           xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs &
-          sleep 3
+          while [ ! -f /tmp/ControllerBuddy.lock ]
+          do
+            sleep 1
+          done
           for file in ControllerBuddy-Profiles/*.json
           do
             xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs -profile "$file" -export "ControllerBuddy-Pages/profiles/$(basename "$file" .json).html"
