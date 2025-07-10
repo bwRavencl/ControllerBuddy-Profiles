@@ -40,7 +40,7 @@ jobs:
           java-version: ${{ env.JAVA_VERSION }}
       - name: Install ControllerBuddy
         working-directory: ControllerBuddy
-        run: ./gradlew installDist
+        run: ./gradlew installDist -x check
       - name: Update Visualizations
         timeout-minutes: 7
         run: |
