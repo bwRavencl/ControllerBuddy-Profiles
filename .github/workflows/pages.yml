@@ -42,7 +42,7 @@ jobs:
         working-directory: ControllerBuddy
         run: ./gradlew installDist -x check
       - name: Update Visualizations
-        timeout-minutes: 7
+        timeout-minutes: 3
         run: |
           rm -f ControllerBuddy-Pages/profiles/*.html
           xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs &
