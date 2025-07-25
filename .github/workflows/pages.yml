@@ -61,7 +61,7 @@ jobs:
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git config --local user.name 'github-actions[bot]'
           git add profiles
-          git commit -m 'Updated profile visualizations' || echo 'Nothing to update'
+          git commit -m 'chore: update profile visualizations' || echo 'Nothing to update'
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
