@@ -153,6 +153,14 @@ local diff = {
 			},
 			["name"] = "A-4 Sight Mechanical Caging Lever - ON/OFF",
 		},
+		["d555pnilu555cdnilvd0.5vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Trigger - FIRST DETENT",
+		},
 		["d562pnilu606cdnilvdnilvpnilvunil"] = {
 			["name"] = "Nosewheel Steering Button",
 			["removed"] = {
