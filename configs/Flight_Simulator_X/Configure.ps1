@@ -1,9 +1,9 @@
-Write-Output "Configuring $fsxDirFlight Simulator X for use with ControllerBuddy-Profiles...`n"
+Write-Output "Configuring Flight Simulator X for use with ControllerBuddy-Profiles...`n"
 
 $fsxDir = "$env:APPDATA\Microsoft\FSX"
 
 if (-not (Test-Path $fsxDir -PathType Container)) {
-    Write-Output "Error: $fsxDirFlight Simulator X config directory '$fsxDir' does not exist"
+    Write-Output "Error: Flight Simulator X config directory '$fsxDir' does not exist"
     Exit 1
 }
 
