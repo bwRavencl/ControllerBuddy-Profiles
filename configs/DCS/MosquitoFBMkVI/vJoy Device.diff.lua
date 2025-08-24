@@ -5,9 +5,12 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.35,
 						},
 						["deadzone"] = 0.12,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -95,14 +98,6 @@ local diff = {
 				},
 			},
 			["name"] = "Absolute Camera Vertical View",
-		},
-		["a3028cd3"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_Z",
-				},
-			},
-			["name"] = "Throttle, engine (selected) - axis",
 		},
 		["a3044cd3"] = {
 			["added"] = {
