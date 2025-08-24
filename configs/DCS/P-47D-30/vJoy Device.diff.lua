@@ -136,6 +136,14 @@ local diff = {
 			},
 			["name"] = "COMM Push to talk (VOIP)",
 		},
+		["d3015pnilu3015cd3vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Water Injection Button",
+		},
 		["d3031pnilu3031cd2vd0vpnilvu0.5"] = {
 			["added"] = {
 				[1] = {

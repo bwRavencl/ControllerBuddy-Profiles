@@ -69,13 +69,6 @@
         "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
         "toggle": false
       }
-    ],
-    "11": [
-      {
-        "longPress": false,
-        "modeUuid": "17ba0c9e-d950-4d51-8c06-f11db658524a",
-        "toggle": false
-      }
     ]
   },
   "keyRepeatInterval": 30,
@@ -152,10 +145,10 @@
               "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "buttonId": 1,
+              "buttonId": 7,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Weapon release"
+              "description": "Water Injection Button"
             }
           }
         ],
@@ -233,19 +226,13 @@
         ],
         "11": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  "E"
-                ],
-                "modifierCodes": []
-              },
               "longPress": false,
+              "buttonId": 1,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Water Injection Button"
+              "description": "Weapon release"
             }
           }
         ],
@@ -1244,16 +1231,16 @@
   "showOverlay": true,
   "version": "1.4",
   "virtualAxisToOverlayAxisMap": {
-    "Z": {
-      "color": -16777216,
-      "inverted": false
-    },
     "S1": {
       "color": -16711936,
       "inverted": false
     },
     "S0": {
       "color": -16776961,
+      "inverted": false
+    },
+    "Z": {
+      "color": -16777216,
       "inverted": false
     }
   }

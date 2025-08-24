@@ -233,16 +233,10 @@
         ],
         "11": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  "E"
-                ],
-                "modifierCodes": []
-              },
               "longPress": false,
+              "buttonId": 7,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Water Injection Button"
@@ -1244,16 +1238,16 @@
   "showOverlay": true,
   "version": "1.4",
   "virtualAxisToOverlayAxisMap": {
-    "Z": {
-      "color": -16777216,
-      "inverted": false
-    },
     "S1": {
       "color": -16711936,
       "inverted": false
     },
     "S0": {
       "color": -16776961,
+      "inverted": false
+    },
+    "Z": {
+      "color": -16777216,
       "inverted": false
     }
   }
