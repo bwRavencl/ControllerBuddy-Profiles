@@ -126,7 +126,7 @@ local diff = {
 			},
 			["name"] = "Flight Control Collective",
 		},
-		["a3023cd20"] = {
+		["a3023cd23"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
@@ -147,7 +147,7 @@ local diff = {
 			},
 			["name"] = "Wheel brake Left (analog)",
 		},
-		["a3024cd20"] = {
+		["a3024cd23"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
@@ -186,7 +186,7 @@ local diff = {
 			},
 			["name"] = "INT Button (VOIP)",
 		},
-		["d3163pnilunilcd29vd1vpnilvunil"] = {
+		["d3163pnilunilcd32vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN33",
@@ -194,7 +194,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, SRCH Switch - WHT/IR",
 		},
-		["d3164pnilu3164cd29vd1vpnilvu0"] = {
+		["d3164pnilu3164cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN34",
@@ -202,7 +202,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, SRCH ON/OFF Pushbutton",
 		},
-		["d3165pnilu3165cd29vd-1vpnilvu0"] = {
+		["d3165pnilu3165cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN31",
@@ -210,7 +210,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, SRCH POSITION Hat - depress LEFT ← (LT)",
 		},
-		["d3165pnilu3165cd29vd1vpnilvu0"] = {
+		["d3165pnilu3165cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN32",
@@ -218,7 +218,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, SRCH POSITION Hat - depress RIGHT → (RT)",
 		},
-		["d3166pnilu3166cd29vd-1vpnilvu0"] = {
+		["d3166pnilu3166cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN30",
@@ -226,7 +226,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, SRCH POSITION Hat - depress DOWN ↓ (RETRACT)",
 		},
-		["d3166pnilu3166cd29vd1vpnilvu0"] = {
+		["d3166pnilu3166cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN29",
@@ -234,7 +234,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, SRCH POSITION Hat - depress UP ↑ (EXTEND)",
 		},
-		["d3168pnilu3168cd29vd-1vpnilvu0"] = {
+		["d3168pnilu3168cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN28",
@@ -242,7 +242,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, UP/DN Switch - depress UP ↑",
 		},
-		["d3168pnilu3168cd29vd1vpnilvu0"] = {
+		["d3168pnilu3168cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN27",
@@ -250,7 +250,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, UP/DN Switch - depress DOWN ↓",
 		},
-		["d3169pnilu3169cd29vd1vpnilvu0"] = {
+		["d3169pnilu3169cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN39",
@@ -258,7 +258,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, GO AROUND Pushbutton",
 		},
-		["d3170pnilu3170cd29vd-1vpnilvu0"] = {
+		["d3170pnilu3170cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN37",
@@ -266,7 +266,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, Radio Frq. Hat - depress LEFT ← (R-DN)",
 		},
-		["d3170pnilu3170cd29vd1vpnilvu0"] = {
+		["d3170pnilu3170cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN38",
@@ -274,7 +274,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, Radio Frq. Hat - depress RIGHT → (R-UP)",
 		},
-		["d3171pnilu3171cd29vd-1vpnilvu0"] = {
+		["d3171pnilu3171cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN36",
@@ -282,7 +282,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, Radio Frq. Hat - depress DOWN ↓ (F-DN)",
 		},
-		["d3171pnilu3171cd29vd1vpnilvu0"] = {
+		["d3171pnilu3171cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN35",
@@ -290,7 +290,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, Radio Frq. Hat - depress UP ↑ (F-UP)",
 		},
-		["d3172pnilu3172cd29vd-1vpnilvu0"] = {
+		["d3172pnilu3172cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN25",
@@ -298,7 +298,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, HUD Hat - depress LEFT ← (MODE)",
 		},
-		["d3172pnilu3172cd29vd1vpnilvu0"] = {
+		["d3172pnilu3172cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN26",
@@ -306,7 +306,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, HUD Hat - depress RIGHT → (DCLT)",
 		},
-		["d3173pnilu3173cd29vd-1vpnilvu0"] = {
+		["d3173pnilu3173cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN24",
@@ -314,7 +314,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, HUD Hat - depress BACK/DOWN ↓ (DIM)",
 		},
-		["d3173pnilu3173cd29vd1vpnilvu0"] = {
+		["d3173pnilu3173cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN23",
@@ -322,7 +322,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, HUD Hat - depress FORWARD/UP ↑ (BRT)",
 		},
-		["d3174pnilu3174cd29vd-1vpnilvu0"] = {
+		["d3174pnilu3174cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN21",
@@ -330,7 +330,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, AFCS Mode Hat - depress LEFT ← (PH)",
 		},
-		["d3174pnilu3174cd29vd1vpnilvu0"] = {
+		["d3174pnilu3174cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN22",
@@ -338,7 +338,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, AFCS Mode Hat - depress RIGHT → (IN/RA)",
 		},
-		["d3175pnilu3175cd29vd-1vpnilvu0"] = {
+		["d3175pnilu3175cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN20",
@@ -346,7 +346,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, AFCS Mode Hat - depress DOWN ↓ (TRC)",
 		},
-		["d3175pnilu3175cd29vd1vpnilvu0"] = {
+		["d3175pnilu3175cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN19",
@@ -354,7 +354,7 @@ local diff = {
 			},
 			["name"] = "Thrust Grip, AFCS Mode Hat - depress UP ↑ (ALT)",
 		},
-		["d3176pnilu3176cd29vd0.1vpnilvu0"] = {
+		["d3176pnilu3176cd32vd0.1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN12",
@@ -362,7 +362,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, XMIT/ICS Trigger - depress ICS (HALF)",
 		},
-		["d3176pnilu3176cd29vd1vpnilvu0.9"] = {
+		["d3176pnilu3176cd32vd1vpnilvu0.9"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN11",
@@ -370,7 +370,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, XMIT/ICS Trigger - depress XMIT (FULL)",
 		},
-		["d3177pnilu3177cd29vd1vpnilvu0"] = {
+		["d3177pnilu3177cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN7",
@@ -378,7 +378,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, CRSR ACT Button",
 		},
-		["d3178pnilu3178cd29vd-1vpnilvu0"] = {
+		["d3178pnilu3178cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",
@@ -386,7 +386,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, MFD CRSR Hat - depress LEFT ←",
 		},
-		["d3178pnilu3178cd29vd1vpnilvu0"] = {
+		["d3178pnilu3178cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN6",
@@ -394,7 +394,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, MFD CRSR Hat - depress RIGHT →",
 		},
-		["d3179pnilu3179cd29vd-1vpnilvu0"] = {
+		["d3179pnilu3179cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
@@ -402,7 +402,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, MFD CRSR Hat - depress DOWN ↓",
 		},
-		["d3179pnilu3179cd29vd1vpnilvu0"] = {
+		["d3179pnilu3179cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
@@ -410,7 +410,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, MFD CRSR Hat - depress UP ↑",
 		},
-		["d3180pnilu3180cd29vd-1vpnilvu0"] = {
+		["d3180pnilu3180cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN16",
@@ -418,7 +418,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, AFCS TRIM Hat - depress LEFT ←",
 		},
-		["d3180pnilu3180cd29vd1vpnilvu0"] = {
+		["d3180pnilu3180cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN17",
@@ -426,7 +426,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, AFCS TRIM Hat - depress RIGHT →",
 		},
-		["d3181pnilu3181cd29vd-1vpnilvu0"] = {
+		["d3181pnilu3181cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN15",
@@ -434,7 +434,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, AFCS TRIM Hat - depress DOWN ↓",
 		},
-		["d3181pnilu3181cd29vd1vpnilvu0"] = {
+		["d3181pnilu3181cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN14",
@@ -442,7 +442,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, AFCS TRIM Hat - depress UP ↑",
 		},
-		["d3182pnilu3182cd29vd1vpnilvu0"] = {
+		["d3182pnilu3182cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN18",
@@ -450,7 +450,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, FD CPLR REL Button",
 		},
-		["d3183pnilu3183cd29vd-1vpnilvu0"] = {
+		["d3183pnilu3183cd32vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
@@ -458,7 +458,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, FLARE/CHAFF Dispensing - depress DOWN ↓ (CHAFF)",
 		},
-		["d3183pnilu3183cd29vd1vpnilvu0"] = {
+		["d3183pnilu3183cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -466,7 +466,7 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, FLARE/CHAFF Dispensing - depress UP ↑ (FLARE)",
 		},
-		["d3184pnilu3184cd29vd1vpnilvu0"] = {
+		["d3184pnilu3184cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN8",
@@ -474,16 +474,13 @@ local diff = {
 			},
 			["name"] = "Cyclic Grip, ACK Button",
 		},
-		["d3185pnilu3185cd29vd1vpnilvu0"] = {
+		["d3185pnilu3185cd32vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN13",
 				},
 			},
 			["name"] = "Cyclic Grip, CD REL Button",
-		},
-		["d957pnilu958cdnilvdnilvpnilvunil"] = {
-			["name"] = "Trim Control",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
