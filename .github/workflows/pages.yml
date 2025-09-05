@@ -55,14 +55,14 @@ jobs:
             xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs -profile "$file" -export "ControllerBuddy-Pages/profiles/$(basename "$file" .json).html"
           done
           xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -quit
-      - name: Commit files
+      - name: Commit Files
         working-directory: ControllerBuddy-Pages
         run: |
           git config --local user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git config --local user.name 'github-actions[bot]'
           git add profiles
           git commit -m 'chore: update profile visualizations' || echo 'Nothing to update'
-      - name: Push changes
+      - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
           repository: bwRavencl/ControllerBuddy-Pages

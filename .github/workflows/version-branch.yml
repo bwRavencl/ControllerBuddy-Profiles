@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-      - name: Force push changes to latest version branch
+      - name: Force-Push Changes to Latest Version Branch
         run: |
           branch=$(jq -r '.["version"]' *.json | sort -Vu | tail -n 1 | tr -d '\r,\n')
           git checkout -b "$branch"
