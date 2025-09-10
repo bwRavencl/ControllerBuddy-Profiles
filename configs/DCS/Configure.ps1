@@ -1,6 +1,37 @@
 Write-Output "Configuring DCS World for use with ControllerBuddy-Profiles...`n"
 
-$dcsUserDir = "$env:USERPROFILE\Saved Games\DCS"
+Add-Type @"
+using System;
+using System.Runtime.InteropServices;
+
+public static class KnownFolders {
+    [DllImport("shell32.dll")]
+    public static extern int SHGetKnownFolderPath(
+        [MarshalAs(UnmanagedType.LPStruct)] Guid rfid,
+        uint dwFlags,
+        IntPtr hToken,
+        out IntPtr ppszPath);
+
+    [DllImport("ole32.dll")]
+    private static extern void CoTaskMemFree(IntPtr ptr);
+
+    public static string GetPath(Guid rfid) {
+        IntPtr pPath;
+        int hr = SHGetKnownFolderPath(rfid, 0, IntPtr.Zero, out pPath);
+        if (hr != 0) {
+            Marshal.ThrowExceptionForHR(hr);
+        }
+        string path = Marshal.PtrToStringUni(pPath);
+        CoTaskMemFree(pPath);
+        return path;
+    }
+}
+"@
+
+Set-Variable -Name SavedGamesGuid -Option Constant -Value ([Guid]"4C5C32FF-BB9D-43b0-B5B4-2D72E54EAAA4")
+
+$savedGamesDir = [KnownFolders]::GetPath($savedGamesGuid)
+$dcsUserDir = "$savedGamesDir\DCS"
 
 if (-not (Test-Path $dcsUserDir -PathType Container)) {
     Write-Output "Error: DCS user directory '$dcsUserDir' does not exist"
