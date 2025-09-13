@@ -20721,7 +20721,7 @@ function Copy-FullKeyFile {
         [string]$Suffix
     )
 
-    if ($PSBoundParameters.ContainsKey('Suffix')) {
+    if ($Suffix) {
         $Suffix = "-$Suffix"
     }
 
