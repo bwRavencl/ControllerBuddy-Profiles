@@ -98,6 +98,7 @@ function Copy-DiffLuaFiles {
 
     Write-Output ''
 }
+
 function Get-DcsInstanceGuid {
     param (
         [Parameter(Mandatory = $true)]
