@@ -67,11 +67,11 @@ $inputDir = "$configDir\Input"
 
 function Copy-DiffLuaFiles {
     param (
-        [Parameter(Mandatory = $true, Position = 0)]
+        [Parameter(Mandatory = $true)]
         [string]$SourceDiffLuaFilename,
-        [Parameter(Mandatory = $true, Position = 1)]
+        [Parameter(Mandatory = $true)]
         [string]$TargetDiffLuaFilename,
-        [Parameter(Mandatory = $true, Position = 2)]
+        [Parameter(Mandatory = $true)]
         [string]$DeviceCategory
     )
 

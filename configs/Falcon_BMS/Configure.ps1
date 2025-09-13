@@ -20750,9 +20750,9 @@ if (Test-Path $AlternativeLauncherUserConfigFile -PathType Leaf) {
             [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSReviewUnusedParameter', 'Name', Justification = 'False positive as rule does not scan child scopes')]
             [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSReviewUnusedParameter', 'Value', Justification = 'False positive as rule does not scan child scopes')]
             param (
-                [Parameter(Mandatory = $true, Position = 0)]
+                [Parameter(Mandatory = $true)]
                 [string]$Name,
-                [Parameter(Mandatory = $true, Position = 1)]
+                [Parameter(Mandatory = $true)]
                 [string]$Value
             )
 
