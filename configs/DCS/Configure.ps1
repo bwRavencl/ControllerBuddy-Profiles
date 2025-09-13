@@ -47,9 +47,10 @@ if ($null -eq $vJoyDevice) {
     Exit 1
 }
 
+$isWine = Test-Path -Path 'HKCU:\Software\Wine'
 $gamepadDevices = Get-GamepadDeviceList
 
-if (-not (Test-Path -Path 'HKCU:\Software\Wine')) {
+if (-not $isWine) {
     while ($gamepadDevices.Count -lt 1) {
         Add-Type -AssemblyName PresentationCore, PresentationFramework
 
@@ -99,13 +100,28 @@ function Copy-DiffLuaFiles {
     Write-Output ''
 }
 
-function Get-DcsInstanceGuid {
+function Get-InstanceGuidParts {
     param (
         [Parameter(Mandatory = $true)]
         [object]$Device
     )
 
-    $guidParts = $Device.InstanceGuid.ToString() -split '-', 5
+    $Device.InstanceGuid.ToString() -split '-'
+}
+
+function Get-DcsInstanceGuid {
+    param (
+        [Parameter(Mandatory = $true)]
+        [object]$Device,
+        [Parameter(Mandatory = $false)]
+        [string]$GuidPart0
+    )
+
+    $guidParts = Get-InstanceGuidParts $Device
+
+    if ($GuidPart0) {
+        $guidParts[0] = $GuidPart0
+    }
 
     for ($i=0; $i -lt $guidParts.Count; $i++) {
         if ( $i -eq 2) {
@@ -119,6 +135,19 @@ function Get-DcsInstanceGuid {
 }
 
 Copy-DiffLuaFiles 'vJoy Device.diff.lua' "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice)}.diff.lua" 'joystick'
+
+if ($isWine) {
+    $currentGuidPart0 = [Convert]::ToUint32((Get-InstanceGuidParts $vJoyDevice)[0], 16)
+    $currentOffset = $WineHidJoystickGuidPart0 -bxor $currentGuidPart0
+    $startOffset = [Math]::Max($currentOffset - 5, 0)
+    $endOffset = $currentOffset + 5
+
+    $startOffset..$endOffset | Where-Object { $_ -ne $currentOffset } | ForEach-Object {
+        $guidPart0 = "{0:X8}" -f ($WineHidJoystickGuidPart0 -bxor $_)
+        Copy-DiffLuaFiles 'vJoy Device.diff.lua' "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice $guidPart0)}.diff.lua" 'joystick'
+    }
+}
+
 Copy-DiffLuaFiles 'Keyboard.diff.lua' 'Keyboard.diff.lua' 'keyboard'
 
 $disabledDevicesLuaFile = "$inputDir\disabled.lua"

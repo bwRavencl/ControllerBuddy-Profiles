@@ -20672,9 +20672,10 @@ if ($null -eq $vJoyDevice) {
     Exit 1
 }
 
+$isWine = Test-Path -Path 'HKCU:\Software\Wine'
 $gamepadDevices = Get-GamepadDeviceList
 
-if (-not (Test-Path -Path 'HKCU:\Software\Wine')) {
+if (-not $isWine) {
     while ($gamepadDevices.Count -lt 1) {
         Add-Type -AssemblyName PresentationCore, PresentationFramework
 
@@ -20690,15 +20691,14 @@ if (-not (Test-Path -Path 'HKCU:\Software\Wine')) {
 function Write-SetupFile {
     param (
         [Parameter(Mandatory = $true)]
-        [object]$Device,
+        [string]$ProductFileName,
+        [Parameter(Mandatory = $true)]
+        [string]$InstanceGuid,
         [Parameter(Mandatory = $true)]
         [string]$FileContent
     )
 
-    $productName = $Device.InstanceName -replace '[^A-Za-z0-9\~\`\[\]\{\}\-_\=\''\x20]', ''
-
-    $productFileName = $productName -replace '/', '-'
-    $setupFile = "$bmsConfigDir\Setup.v100.$productFileName {$($Device.InstanceGuid.ToString().ToUpper())}.xml"
+    $setupFile = "$bmsConfigDir\Setup.v100.$productFileName {$($InstanceGuid.ToUpper())}.xml"
 
     try {
         Set-Content -Path $setupFile -Value $FileContent -NoNewline
@@ -20709,10 +20709,40 @@ function Write-SetupFile {
     }
 }
 
-Write-SetupFile $vJoyDevice $VjoySetupFileContent
+function Write-SetupFileForDevice {
+    param (
+        [Parameter(Mandatory = $true)]
+        [object]$Device,
+        [Parameter(Mandatory = $true)]
+        [string]$FileContent
+    )
+
+    $productName = $Device.InstanceName -replace '[^A-Za-z0-9\~\`\[\]\{\}\-_\=\''\x20]', ''
+    $productFileName = $productName -replace '/', '-'
+    $instanceGuid = $Device.InstanceGuid.ToString()
+
+    Write-SetupFile $productFileName $instanceGuid $FileContent
+
+    if ($isWine -and ($Device -eq $vJoyDevice)) {
+        $currentGuidParts = $instanceGuid -split '-'
+        $currentGuidPart0 = [Convert]::ToUint32($currentGuidParts[0], 16)
+        $currentOffset = $WineHidJoystickGuidPart0 -bxor $currentGuidPart0
+        $startOffset = [Math]::Max($currentOffset - 5, 0)
+        $endOffset = $currentOffset + 5
+
+        $startOffset..$endOffset | Where-Object { $_ -ne $currentOffset } | ForEach-Object {
+            $guidPart0 = "{0:X8}" -f ($WineHidJoystickGuidPart0 -bxor $_)
+            $modifiedInstanceGuid = (@($guidPart0) + ($currentGuidParts | Select-Object -Skip 1)) -join '-'
+
+            Write-SetupFile $productFileName $modifiedInstanceGuid $FileContent
+        }
+    }
+}
+
+Write-SetupFileForDevice $vJoyDevice $VjoySetupFileContent
 
 $gamepadDevices | ForEach-Object {
-    Write-SetupFile $_ $GamepadSetupFileContent
+    Write-SetupFileForDevice $_ $GamepadSetupFileContent
 }
 
 function Copy-FullKeyFile {
