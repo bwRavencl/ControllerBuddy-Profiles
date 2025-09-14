@@ -28,6 +28,13 @@
         "toggle": true
       }
     ],
+    "6": [
+      {
+        "longPress": true,
+        "modeUuid": "6e3206cd-381b-4a11-a0e3-315c75374fc0",
+        "toggle": true
+      }
+    ],
     "7": [
       {
         "longPress": false,
@@ -216,7 +223,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "SINGLE_ON_RELEASE",
               "keystroke": {
                 "keyCodes": [
                   "B"
@@ -841,6 +848,53 @@
         ]
       },
       "description": "Radar"
+    },
+    {
+      "uuid": "6e3206cd-381b-4a11-a0e3-315c75374fc0",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "-"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Thrust vector down"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "\u003d"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Thrust vector up"
+            }
+          }
+        ]
+      },
+      "description": "Thrust vector"
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
