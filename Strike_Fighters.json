@@ -208,14 +208,30 @@
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
-                  "F1"
+                  "Num8"
                 ],
                 "modifierCodes": []
               },
               "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Front cockpit view"
+              "description": "Snap view front"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_ON_RELEASE",
+              "keystroke": {
+                "keyCodes": [
+                  "Num8"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 100,
+              "description": "Snap view front"
             }
           }
         ],
@@ -927,14 +943,30 @@
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
-                  "F3"
+                  "F1"
                 ],
                 "modifierCodes": []
               },
               "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Gunsight cockpit view"
+              "description": "Front cockpit view"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "Num8"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 100,
+              "description": "Snap view front"
             }
           }
         ],
@@ -945,14 +977,16 @@
               "activation": "SINGLE_IMMEDIATELY",
               "keystroke": {
                 "keyCodes": [
-                  "F2"
+                  "F5"
                 ],
-                "modifierCodes": []
+                "modifierCodes": [
+                  "L Shift"
+                ]
               },
               "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
-              "description": "Wide cockpit view"
+              "description": "Rear view"
             }
           }
         ],
