@@ -159,6 +159,14 @@ local diff = {
 			},
 			["name"] = "Transmit Switch - VHF (VOIP)",
 		},
+		["d3003pnilunilcd29vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN22",
+				},
+			},
+			["name"] = "Toggle helmet visor",
+		},
 		["d3014pnilu3014cd16vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {

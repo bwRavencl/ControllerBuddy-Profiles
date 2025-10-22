@@ -1501,9 +1501,19 @@
         ],
         "12": [
           {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": true,
+              "buttonId": 21,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Togle helmet visor"
+            }
+          },
+          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "SINGLE_ON_RELEASE",
               "keystroke": {
                 "keyCodes": [
                   "H"
@@ -1556,7 +1566,7 @@
           }
         ]
       },
-      "description": "View / NVG / Eject"
+      "description": "View / Helmet / Eject"
     }
   ],
   "showOverlay": true,
