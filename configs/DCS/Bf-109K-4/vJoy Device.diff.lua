@@ -140,10 +140,18 @@ local diff = {
 		["d1731pnilu1731cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "COMM Push to talk (VOIP)",
+		},
+		["d3055pnilu3055cd1vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "Charge MK 108 (D)",
 		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {

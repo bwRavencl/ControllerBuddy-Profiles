@@ -1,5 +1,12 @@
 {
   "buttonToModeActionsMap": {
+    "1": [
+      {
+        "longPress": false,
+        "modeUuid": "1642a170-f01c-42e2-a48e-677bd734c342",
+        "toggle": true
+      }
+    ],
     "2": [
       {
         "longPress": false,
@@ -12,13 +19,6 @@
         "longPress": false,
         "modeUuid": "27a2002c-35b6-481d-9b99-ed7705dc0253",
         "toggle": false
-      }
-    ],
-    "4": [
-      {
-        "longPress": false,
-        "modeUuid": "1642a170-f01c-42e2-a48e-677bd734c342",
-        "toggle": true
       }
     ],
     "7": [
@@ -149,39 +149,66 @@
       "buttonToActionsMap": {
         "0": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
             "data": {
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        "A"
+                      ],
+                      "modifierCodes": [
+                        "L Shift",
+                        "L Alt"
+                      ]
+                    },
+                    "longPress": false,
+                    "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
+                    "description": "Radiators OPEN"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        "A"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "longPress": false,
+                    "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
+                    "description": "Radiators AUTO"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "SINGLE_IMMEDIATELY",
+                    "keystroke": {
+                      "keyCodes": [
+                        "A"
+                      ],
+                      "modifierCodes": [
+                        "L Ctrl",
+                        "L Alt"
+                      ]
+                    },
+                    "longPress": false,
+                    "maxActivationInterval": 0,
+                    "minActivationInterval": 0,
+                    "description": "Radiators CLOSE"
+                  }
+                }
+              ],
               "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
-                  "T"
-                ],
-                "modifierCodes": [
-                  "R Shift"
-                ]
-              },
-              "longPress": false,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0,
-              "description": "Tail Wheel Lock (toggle)"
-            }
-          }
-        ],
-        "1": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "activation": "SINGLE_IMMEDIATELY",
-              "keystroke": {
-                "keyCodes": [
-                  "M"
-                ],
-                "modifierCodes": []
-              },
-              "longPress": false,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0,
-              "description": "Engine Cut-Off (toggle)"
+              "longPress": false
             }
           }
         ],
@@ -238,6 +265,18 @@
               "maxActivationInterval": 0,
               "minActivationInterval": 50,
               "description": "Reset View"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "longPress": false,
+              "buttonId": 2,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Charge MK 108 (D)"
             }
           }
         ],
@@ -443,8 +482,29 @@
           }
         ]
       },
-      "buttonToActionsMap": {},
-      "description": "Brake"
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  "T"
+                ],
+                "modifierCodes": [
+                  "R Shift"
+                ]
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Tail Wheel Lock (toggle)"
+            }
+          }
+        ]
+      },
+      "description": "Ground"
     },
     {
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
