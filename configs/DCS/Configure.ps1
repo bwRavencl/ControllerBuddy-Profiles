@@ -66,26 +66,26 @@ if (-not $isWine) {
 $configDir = "$dcsUserDir\Config"
 $inputDir = "$configDir\Input"
 
-function Copy-DiffLuaFiles {
+function Copy-DiffLuaFile {
     param (
         [Parameter(Mandatory = $true)]
-        [string]$SourceDiffLuaFilename,
+        [string]$Source,
         [Parameter(Mandatory = $true)]
-        [string]$TargetDiffLuaFilename,
+        [string]$Target,
         [Parameter(Mandatory = $true)]
         [string]$DeviceCategory
     )
 
-    $diffLuaFiles = Get-ChildItem -Path $PSScriptRoot -File -Depth 1 -Filter $SourceDiffLuaFilename
+    $diffLuaFiles = Get-ChildItem -Path $PSScriptRoot -File -Depth 1 -Filter $Source
 
     if ($diffLuaFiles.count -eq 0) {
-        Write-Output "Error: $SourceDiffLuaFilename file(s) are missing"
+        Write-Output "Error: $Source file(s) are missing"
         Exit 1
     }
 
     foreach ($diffLuaFile in $diffLuaFiles) {
         $destinationDir = "$inputDir\$($diffLuaFile.Directory.Name)\$DeviceCategory"
-        $destinationFile = "$destinationDir\$TargetDiffLuaFilename"
+        $destinationFile = "$destinationDir\$Target"
 
         try {
             New-Item $destinationDir -ItemType 'directory' -Force | Out-Null
@@ -100,7 +100,7 @@ function Copy-DiffLuaFiles {
     Write-Output ''
 }
 
-function Get-InstanceGuidParts {
+function Split-InstanceGuid {
     param (
         [Parameter(Mandatory = $true)]
         [object]$Device
@@ -117,7 +117,7 @@ function Get-DcsInstanceGuid {
         [string]$GuidPart0
     )
 
-    $guidParts = Get-InstanceGuidParts $Device
+    $guidParts = Split-InstanceGuid $Device
 
     if ($GuidPart0) {
         $guidParts[0] = $GuidPart0
@@ -134,21 +134,21 @@ function Get-DcsInstanceGuid {
     $guidParts -join '-'
 }
 
-Copy-DiffLuaFiles 'vJoy Device.diff.lua' "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice)}.diff.lua" 'joystick'
+Copy-DiffLuaFile -Source 'vJoy Device.diff.lua' -Target "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice)}.diff.lua" -DeviceCategory 'joystick'
 
 if ($isWine) {
-    $currentGuidPart0 = [Convert]::ToUint32((Get-InstanceGuidParts $vJoyDevice)[0], 16)
+    $currentGuidPart0 = [Convert]::ToUint32((Split-InstanceGuid $vJoyDevice)[0], 16)
     $currentOffset = $WineHidJoystickGuidPart0 -bxor $currentGuidPart0
     $startOffset = [Math]::Max($currentOffset - 5, 0)
     $endOffset = $currentOffset + 5
 
     $startOffset..$endOffset | Where-Object { $_ -ne $currentOffset } | ForEach-Object {
         $guidPart0 = "{0:X8}" -f ($WineHidJoystickGuidPart0 -bxor $_)
-        Copy-DiffLuaFiles 'vJoy Device.diff.lua' "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice $guidPart0)}.diff.lua" 'joystick'
+        Copy-DiffLuaFile -Source 'vJoy Device.diff.lua' -Target "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice $guidPart0)}.diff.lua" -DeviceCategory 'joystick'
     }
 }
 
-Copy-DiffLuaFiles 'Keyboard.diff.lua' 'Keyboard.diff.lua' 'keyboard'
+Copy-DiffLuaFile -Source 'Keyboard.diff.lua' -Target 'Keyboard.diff.lua' -DeviceCategory 'keyboard'
 
 $disabledDevicesLuaFile = "$inputDir\disabled.lua"
 

@@ -545,24 +545,24 @@ Write-Output ''
 function Write-ConfigFile {
     param (
         [Parameter(Mandatory = $true)]
-        [string]$DestinationFile,
+        [string]$Path,
         [Parameter(Mandatory = $true)]
-        [string]$FileContent
+        [string]$Content
     )
 
     try {
-        Set-Content -Path $DestinationFile -Value $FileContent -NoNewline
-        Write-Output "Wrote file: $DestinationFile"
+        Set-Content -Path $Path -Value $Content -NoNewline
+        Write-Output "Wrote file: $Path"
     } catch {
-        Write-Output "Error: Could not write file: $DestinationFile"
+        Write-Output "Error: Could not write file: $Path"
         Exit 1
     }
 }
 
-Write-ConfigFile "$il2InputDir\current.responses" $CurrentResponsesFileContent 
-Write-ConfigFile "$il2InputDir\devices.txt" $devicesTxtContent 
-Write-ConfigFile "$il2InputDir\global.actions" $GlobalActionsFileContent 
-Write-ConfigFile "$il2InputDir\global.pitch" $GlobalPitchFileContent 
+Write-ConfigFile "$il2InputDir\current.responses" $CurrentResponsesFileContent
+Write-ConfigFile "$il2InputDir\devices.txt" $devicesTxtContent
+Write-ConfigFile "$il2InputDir\global.actions" $GlobalActionsFileContent
+Write-ConfigFile "$il2InputDir\global.pitch" $GlobalPitchFileContent
 Write-ConfigFile "$il2DataDir\LuaScripts\snapviews\snaps.cfg" $SnapsCfgFileContent
 
 Write-Output ''

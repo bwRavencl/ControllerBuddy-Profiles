@@ -20691,17 +20691,17 @@ if (-not $isWine) {
 function Write-SetupFile {
     param (
         [Parameter(Mandatory = $true)]
-        [string]$ProductFileName,
+        [string]$Name,
         [Parameter(Mandatory = $true)]
         [string]$InstanceGuid,
         [Parameter(Mandatory = $true)]
-        [string]$FileContent
+        [string]$Content
     )
 
-    $setupFile = "$bmsConfigDir\Setup.v100.$productFileName {$($InstanceGuid.ToUpper())}.xml"
+    $setupFile = "$bmsConfigDir\Setup.v100.$Name {$($InstanceGuid.ToUpper())}.xml"
 
     try {
-        Set-Content -Path $setupFile -Value $FileContent -NoNewline
+        Set-Content -Path $setupFile -Value $Content -NoNewline
         Write-Output "Wrote file: $setupFile"
     } catch {
         Write-Output "Error: Could not write file: $setupFile"
@@ -20714,14 +20714,14 @@ function Write-SetupFileForDevice {
         [Parameter(Mandatory = $true)]
         [object]$Device,
         [Parameter(Mandatory = $true)]
-        [string]$FileContent
+        [string]$Content
     )
 
     $productName = $Device.InstanceName -replace '[^A-Za-z0-9\~\`\[\]\{\}\-_\=\''\x20]', ''
     $productFileName = $productName -replace '/', '-'
     $instanceGuid = $Device.InstanceGuid.ToString()
 
-    Write-SetupFile $productFileName $instanceGuid $FileContent
+    Write-SetupFile -Name $productFileName -InstanceGuid $instanceGuid -Content $Content
 
     if ($isWine -and ($Device -eq $vJoyDevice)) {
         $currentGuidParts = $instanceGuid -split '-'
@@ -20734,7 +20734,7 @@ function Write-SetupFileForDevice {
             $guidPart0 = "{0:X8}" -f ($WineHidJoystickGuidPart0 -bxor $_)
             $modifiedInstanceGuid = (@($guidPart0) + ($currentGuidParts | Select-Object -Skip 1)) -join '-'
 
-            Write-SetupFile $productFileName $modifiedInstanceGuid $FileContent
+            Write-SetupFile -Name $productFileName -InstanceGuid $modifiedInstanceGuid -Content $Content
         }
     }
 }
