@@ -144,7 +144,7 @@ if ($null -eq $vJoyDevice) {
 
 function Get-DeviceHeader {
     param (
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [object]$Device
     )
 

@@ -33,7 +33,7 @@ if (-not (Test-Path -Path 'HKCU:\Software\Wine')) {
 
 function Get-DeviceGuid {
     param (
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [object]$Device
     )
 

@@ -544,9 +544,9 @@ Write-Output ''
 
 function Write-ConfigFile {
     param (
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$Path,
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$Content
     )
 

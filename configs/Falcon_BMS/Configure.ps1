@@ -20690,11 +20690,11 @@ if (-not $isWine) {
 
 function Write-SetupFile {
     param (
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$Name,
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$InstanceGuid,
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$Content
     )
 
@@ -20711,9 +20711,9 @@ function Write-SetupFile {
 
 function Write-SetupFileForDevice {
     param (
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [object]$Device,
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$Content
     )
 
@@ -20780,9 +20780,9 @@ if (Test-Path $AlternativeLauncherUserConfigFile -PathType Leaf) {
             [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSReviewUnusedParameter', 'Name', Justification = 'False positive as rule does not scan child scopes')]
             [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSReviewUnusedParameter', 'Value', Justification = 'False positive as rule does not scan child scopes')]
             param (
-                [Parameter(Mandatory = $true)]
+                [Parameter(Mandatory)]
                 [string]$Name,
-                [Parameter(Mandatory = $true)]
+                [Parameter(Mandatory)]
                 [string]$Value
             )
 

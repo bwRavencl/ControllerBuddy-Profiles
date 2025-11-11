@@ -68,11 +68,11 @@ $inputDir = "$configDir\Input"
 
 function Copy-DiffLuaFile {
     param (
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$Source,
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$Target,
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [string]$DeviceCategory
     )
 
@@ -102,7 +102,7 @@ function Copy-DiffLuaFile {
 
 function Split-InstanceGuid {
     param (
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [object]$Device
     )
 
@@ -111,7 +111,7 @@ function Split-InstanceGuid {
 
 function Get-DcsInstanceGuid {
     param (
-        [Parameter(Mandatory = $true)]
+        [Parameter(Mandatory)]
         [object]$Device,
         [Parameter(Mandatory = $false)]
         [string]$GuidPart0
