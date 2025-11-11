@@ -177,19 +177,19 @@ return disabled
 
 $optionsLuaFile = "$configDir\options.lua"
 if (-not (Test-Path $optionsLuaFile -PathType Leaf)) {
-    Write-Output "Error: file '$optionsLuaFile' does not exist"
+    Write-Output "Error: DCS options file '$optionsLuaFile' does not exist"
     Exit 1
 }
 
 $synchronizeControlsLine = Select-String -Path $optionsLuaFile -Pattern '^\s*\["synchronize_controls"\]'
 if ($null -eq $synchronizeControlsLine) {
-    Write-Output "Error: file '$optionsLuaFile' is missing the 'synchronize_controls' line"
+    Write-Output "Error: DCS options file '$optionsLuaFile' is missing the 'synchronize_controls' line"
     Exit 1
 }
 
 $synchronizeControlsLineParts = $synchronizeControlsLine.Line -split '=', 2
 if ($synchronizeControlsLineParts.Count -ne 2) {
-    Write-Output "Error: file '$optionsLuaFile' contains a malformed 'synchronize_controls' line"
+    Write-Output "Error: DCS options file '$optionsLuaFile' contains a malformed 'synchronize_controls' line"
     Exit 1
 }
 

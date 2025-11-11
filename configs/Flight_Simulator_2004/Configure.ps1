@@ -42,7 +42,7 @@ function Get-DeviceGuid {
 
 $fs9CfgFile = "$fs9Dir\fs9.CFG"
 if (-not (Test-Path $fs9CfgFile -PathType Leaf)) {
-    Write-Output "Error: file '$fs9CfgFile' does not exist"
+    Write-Output "Error: Flight Simulator 2004 config file '$fs9CfgFile' does not exist"
     Exit 1
 }
 

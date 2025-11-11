@@ -570,7 +570,7 @@ Write-Output ''
 $startupCfg = "$il2DataDir\startup.cfg"
 
 if (-not (Test-Path $startupCfg -PathType Leaf)) {
-    Write-Output "Error: file '$startupCfg' does not exist"
+    Write-Output "Error: IL-2 Sturmovik Great Battles config file '$startupCfg' does not exist"
     Exit 1
 }
 

@@ -1456,7 +1456,7 @@ try {
 
 $fsxCfgFile = "$fsxDir\fsx.CFG"
 if (-not (Test-Path $fsxCfgFile -PathType Leaf)) {
-    Write-Output "Error: file '$fsxCfgFile' does not exist"
+    Write-Output "Error: Flight Simulator X config file '$fsxCfgFile' does not exist"
     Exit 1
 }
 
