@@ -334,39 +334,47 @@ try {
     Exit 1
 }
 
-$doeDir = "$il2Dir\Users\doe"
+$usersDir = "$il2Dir\Users"
 
-if (-not (Test-Path $doeDir -PathType Container)) {
-    Write-Output "Error: IL-2 1946 user directory '$doeDir' does not exist"
+if (-not (Test-Path $usersDir -PathType Container)) {
+    Write-Output "Error: IL-2 1946 users directory '$usersDir' does not exist"
     Exit 1
 }
 
-$settingsIniFile = "$doeDir\settings.ini"
-
-if (-not (Test-Path $settingsIniFile -PathType Leaf)) {
-    Write-Output "Error: IL-2 1946 settings file '$settingsIniFile' does not exist"
+$userDirs = Get-ChildItem -Path $usersDir -Directory
+if ($userDirs.Count -eq 0) {
+    Write-Output "Error: IL-2 1946 'Users' directory is empty"
     Exit 1
 }
 
-$settingsIniContent = Get-Content -Raw $settingsIniFile
+$userDirs | ForEach-Object {
+    $settingsIniFile = "$($_.FullName)\settings.ini"
 
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey pilot' -SectionContent $SettingsIniHotKeyPilotSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey gunner' -SectionContent $SettingsIniHotKeyGunnerSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey aircraftView' -SectionContent $SettingsIniHotKeyAircraftViewSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey SnapView' -SectionContent $SettingsIniHotKeySnapViewSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey PanView' -SectionContent $SettingsIniHotKeyPanViewSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey HeadMove' -SectionContent $SettingsIniHotKeyHeadMoveSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey orders' -SectionContent $SettingsIniHotKeyOrdersSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey misc' -SectionContent $SettingsIniHotKeyMiscSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey timeCompression' -SectionContent $SettingsIniHotKeyTimeCompressionSectionContent -AddEmptyLineBetweenSections $false
-$settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey move' -SectionContent $SettingsIniHotKeyMoveSectionContent -AddEmptyLineBetweenSections $false
+    if (-not (Test-Path $settingsIniFile -PathType Leaf)) {
+        Write-Output "Error: IL-2 1946 settings file '$settingsIniFile' does not exist"
+        Exit 1
+    }
 
-try {
-    Set-Content -Path $settingsIniFile -Value $settingsIniContent
-    Write-Output "Wrote file: $settingsIniFile"
-} catch {
-    Write-Output "Error: Could not write file: $settingsIniFile"
-    Exit 1
+    $settingsIniContent = Get-Content -Raw $settingsIniFile
+
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey pilot' -SectionContent $SettingsIniHotKeyPilotSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey gunner' -SectionContent $SettingsIniHotKeyGunnerSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey aircraftView' -SectionContent $SettingsIniHotKeyAircraftViewSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey SnapView' -SectionContent $SettingsIniHotKeySnapViewSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey PanView' -SectionContent $SettingsIniHotKeyPanViewSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey HeadMove' -SectionContent $SettingsIniHotKeyHeadMoveSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey orders' -SectionContent $SettingsIniHotKeyOrdersSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey misc' -SectionContent $SettingsIniHotKeyMiscSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey timeCompression' -SectionContent $SettingsIniHotKeyTimeCompressionSectionContent -AddEmptyLineBetweenSections $false
+    $settingsIniContent = Update-SectionContent -FileContent $settingsIniContent -SectionTitle 'HotKey move' -SectionContent $SettingsIniHotKeyMoveSectionContent -AddEmptyLineBetweenSections $false
+
+    try {
+        Set-Content -Path $settingsIniFile -Value $settingsIniContent
+        Write-Output "Wrote file: $settingsIniFile"
+    } catch {
+        Write-Output "Error: Could not write file: $settingsIniFile"
+        Exit 1
+    }
 }
 
 Write-Output "`nIL-2 1946 is now fully configured!"
