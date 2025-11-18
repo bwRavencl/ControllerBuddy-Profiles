@@ -126,20 +126,12 @@
         ],
         "4": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
+              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "REPEAT",
-              "keystroke": {
-                "keyCodes": [
-                  "Space"
-                ],
-                "modifierCodes": [
-                  "R Alt"
-                ]
-              },
-              "longPress": false,
+              "buttonId": 1,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Weapon release"
@@ -410,7 +402,7 @@
               "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "buttonId": 1,
+              "buttonId": 2,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Wheel Brake Left"
@@ -424,7 +416,7 @@
               "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "buttonId": 2,
+              "buttonId": 3,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Wheel Brake Right"
@@ -521,7 +513,7 @@
               "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "buttonId": 3,
+              "buttonId": 4,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "COMM Push to talk (VOIP)"
