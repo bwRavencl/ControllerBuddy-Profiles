@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout ControllerBuddy-Profiles
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           path: ControllerBuddy-Profiles
           fetch-depth: 0
           persist-credentials: false
       - name: Checkout ControllerBuddy
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: bwRavencl/ControllerBuddy
           path: ControllerBuddy
@@ -28,7 +28,7 @@ jobs:
           persist-credentials: false
           submodules: true
       - name: Checkout ControllerBuddy-Pages
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: bwRavencl/ControllerBuddy-Pages
           path: ControllerBuddy-Pages
