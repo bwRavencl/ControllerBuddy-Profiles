@@ -150,10 +150,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 0,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Release Weapons"
@@ -166,8 +167,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 1,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Pilot Launch Countermeasures"
@@ -718,10 +720,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 2,
+              "activation": "REPEAT",
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Radio trigger - RADIO (VOIP)"
@@ -752,10 +755,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 3,
+              "activation": "REPEAT",
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Radio trigger - ICS (VOIP)"
@@ -1381,7 +1385,7 @@
     }
   ],
   "showOverlay": true,
-  "version": "1.5",
+  "version": "1.6",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,

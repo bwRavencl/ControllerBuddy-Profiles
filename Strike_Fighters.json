@@ -157,10 +157,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 1,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Fire selected weapon"
@@ -171,10 +172,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 0,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Fire primary gun"
@@ -1261,8 +1263,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 2,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Next gunsight mode"
@@ -1364,7 +1367,7 @@
     }
   ],
   "showOverlay": true,
-  "version": "1.5",
+  "version": "1.6",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,

@@ -136,10 +136,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 2,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Weapon Release Button"
@@ -163,10 +164,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": -0.25,
               "buttonId": 0,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Gun Trigger - FIRST DETENT"
@@ -175,10 +177,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 1,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Gun Trigger - SECOND DETENT (Press to shoot)"
@@ -361,8 +364,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 5,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Missile Uncage Switch"
@@ -526,8 +530,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 4,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Flap Lever - Step Down"
@@ -538,8 +543,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 3,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Flap Lever - Step Up"
@@ -671,10 +677,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 6,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "UHF Radio Microphone Button (call radio menu)"
@@ -683,10 +690,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 7,
+              "activation": "REPEAT",
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "UHF Radio Microphone Button (VOIP)"
@@ -1469,7 +1477,7 @@
     }
   ],
   "showOverlay": true,
-  "version": "1.5",
+  "version": "1.6",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,

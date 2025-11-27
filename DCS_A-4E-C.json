@@ -107,10 +107,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 1,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Bomb Release Button"
@@ -134,10 +135,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 0,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Gun-Rocket Trigger"
@@ -163,8 +165,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 2,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Chaff AUTO Pushbutton (ALE-29A Salvo)"
@@ -339,8 +342,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 4,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Flap handle UP else STOP"
@@ -351,8 +355,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 3,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Flap handle DOWN else STOP"
@@ -490,10 +495,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 5,
+              "activation": "REPEAT",
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Radio Microphone Push to Talk VOIP (PTT) - Transmit"
@@ -504,10 +510,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 6,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Radio Microphone Push to Talk VOIP (PTT) - Guard"
@@ -1047,7 +1054,7 @@
     }
   ],
   "showOverlay": true,
-  "version": "1.5",
+  "version": "1.6",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,

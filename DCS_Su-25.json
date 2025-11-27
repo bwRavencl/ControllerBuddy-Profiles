@@ -183,10 +183,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 0,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Weapon Fire"
@@ -199,8 +200,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 1,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Target Unlock"
@@ -818,10 +820,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 2,
+              "activation": "REPEAT",
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "r.1 VoIP PTT"
@@ -832,10 +835,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 3,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "r.2 VoIP PTT"
@@ -1976,7 +1980,7 @@
     }
   ],
   "showOverlay": true,
-  "version": "1.5",
+  "version": "1.6",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,

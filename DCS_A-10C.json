@@ -156,10 +156,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 2,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Weapon release"
@@ -183,10 +184,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": -0.25,
               "buttonId": 0,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Gun Trigger (first stage)"
@@ -195,10 +197,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": false,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 1,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "Gun Trigger"
@@ -951,10 +954,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 3,
+              "activation": "REPEAT",
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "HOTAS MIC Switch Forward (VOIP)"
@@ -985,10 +989,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
             "data": {
-              "longPress": true,
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 4,
+              "activation": "REPEAT",
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "HOTAS MIC Switch Down (VOIP)"
@@ -1061,8 +1066,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": true,
               "buttonId": 5,
+              "activation": "REPEAT",
+              "longPress": true,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "HOTAS MIC Switch Aft (VOIP)"
@@ -1387,8 +1393,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 7,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "HOTAS Boat Switch Center"
@@ -1399,8 +1406,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 8,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "HOTAS Boat Switch Forward"
@@ -1411,8 +1419,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "longPress": false,
               "buttonId": 6,
+              "activation": "REPEAT",
+              "longPress": false,
               "maxActivationInterval": 0,
               "minActivationInterval": 0,
               "description": "HOTAS Boat Switch Aft"
@@ -1857,7 +1866,7 @@
     }
   ],
   "showOverlay": true,
-  "version": "1.5",
+  "version": "1.6",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,
