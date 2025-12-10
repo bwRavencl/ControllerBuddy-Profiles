@@ -1,0 +1,720 @@
+{
+  "buttonToModeActionsMap": {
+    "2": [
+      {
+        "longPress": false,
+        "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
+        "toggle": false
+      }
+    ],
+    "6": [
+      {
+        "longPress": false,
+        "modeUuid": "df025b5e-ba38-4fd9-8437-4a5ab16e40c4",
+        "toggle": true
+      }
+    ],
+    "7": [
+      {
+        "longPress": false,
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+        "toggle": true
+      }
+    ],
+    "8": [
+      {
+        "longPress": false,
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+        "toggle": true
+      }
+    ],
+    "10": [
+      {
+        "longPress": false,
+        "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
+        "toggle": false
+      }
+    ]
+  },
+  "keyRepeatInterval": 30,
+  "modes": [
+    {
+      "uuid": "067e6162-3b6f-4ae2-a171-2470b63dff00",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.25,
+              "exponent": 3.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "RZ",
+              "invert": false,
+              "description": "Yaw Axis"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "detentValue": -0.8,
+              "hapticFeedback": true,
+              "maxRelativeSpeed": 4.0,
+              "deadZone": 0.25,
+              "exponent": 2.0,
+              "initialValue": 1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "Z",
+              "invert": false,
+              "description": "Throttle Axis"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 1.7,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "X",
+              "invert": false,
+              "description": "Roll Axis"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "Y",
+              "invert": false,
+              "description": "Pitch Axis"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Brake Axis"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 0,
+              "activation": "REPEAT",
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Fire"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  ","
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Toggle Slow Motion"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "V"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Next Countermeasure"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "Num5"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Center View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "longPress": false,
+              "on": true,
+              "virtualKeyCode": "Num Lock",
+              "description": "Center View"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "F"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Toggle Flight Assist"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "R"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Toggle Radar"
+            }
+          }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "Return"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Target Select"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "X"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Countermeasures"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Toggle Gear"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "Back"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Target Cancel"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "Tab"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Next Weapon"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": false,
+              "longPress": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": true,
+              "longPress": false
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToReleaseAllOnScreenKeyboardKeysAction",
+            "data": {
+              "longPress": false
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "direction": "UP",
+              "longPress": false
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "direction": "DOWN",
+              "longPress": false
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "direction": "LEFT",
+              "longPress": false
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "direction": "RIGHT",
+              "longPress": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "df025b5e-ba38-4fd9-8437-4a5ab16e40c4",
+      "axisToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "hapticFeedback": true,
+              "maxRelativeSpeed": 2.0,
+              "deadZone": 0.25,
+              "exponent": 2.0,
+              "initialValue": -1.0,
+              "maxValue": 0.0,
+              "minValue": -1.0,
+              "virtualAxis": "S1",
+              "invert": false,
+              "description": "Custom Axis 1"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {},
+      "description": "Custom Axis"
+    },
+    {
+      "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 3.5,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "RX",
+              "invert": false,
+              "description": "Pan View"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 3.5,
+              "initialValue": 0.0,
+              "maxValue": 0.75,
+              "minValue": -0.75,
+              "virtualAxis": "RY",
+              "invert": false,
+              "description": "Tilt View"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 0,
+              "activation": "REPEAT",
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Fire"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "PgDn"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Decrease FoV"
+            }
+          }
+        ],
+        "8": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "PgUp"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Increase FoV"
+            }
+          }
+        ]
+      },
+      "description": "Look"
+    },
+    {
+      "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.5,
+              "cursorSensitivity": 1500,
+              "axis": "X",
+              "invert": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.5,
+              "cursorSensitivity": 1500,
+              "axis": "Y",
+              "invert": false
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 1,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 2,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "REPEAT",
+              "longPress": false,
+              "mouseButton": 3,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": false
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": true
+            }
+          }
+        ]
+      },
+      "description": "Mouse"
+    },
+    {
+      "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "SINGLE_IMMEDIATELY",
+              "keystroke": {
+                "keyCodes": [
+                  "E"
+                ],
+                "modifierCodes": [
+                  "L Ctrl",
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Eject"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Switch View"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Toggle Night Vision"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "T"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Open Chat"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "REPEAT",
+              "keystroke": {
+                "keyCodes": [
+                  "M"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "maxActivationInterval": 0,
+              "minActivationInterval": 0,
+              "description": "Toggle Map"
+            }
+          }
+        ]
+      },
+      "description": "View / NVG/ Chat / Eject"
+    }
+  ],
+  "showOverlay": true,
+  "version": "1.6",
+  "virtualAxisToOverlayAxisMap": {
+    "Z": {
+      "color": -16777216,
+      "inverted": false,
+      "orientation": "VERTICAL",
+      "style": "SOLID"
+    }
+  }
+}
