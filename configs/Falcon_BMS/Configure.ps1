@@ -20627,7 +20627,7 @@ Set-Variable KeyFileExtension -Option Constant -Value '.key'
 Set-Variable BMSFullKeyBasename -Option Constant -Value "${KeyFilePrefix}Full"
 Set-Variable BMSAutoKeyBasename -Option Constant -Value "${KeyFilePrefix}Auto"
 
-Set-Variable AlternativeLauncherVersion '2.4.2.5'
+Set-Variable AlternativeLauncherVersion '2.4.2.6'
 Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_4f1zutskmyxo3pzspfchahuy3wu3tn3r\$AlternativeLauncherVersion\user.config"
 
 Set-Variable BMSUserConfigFileLauncherSectionHeadline -Option Constant -Value '// LAUNCHER OVERRIDES BEGIN HERE - DO NOT EDIT OR ADD BELOW THIS LINE'
