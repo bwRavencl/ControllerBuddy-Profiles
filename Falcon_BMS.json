@@ -159,10 +159,10 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 2,
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: WEAPON RELEASE (Pickle)"
             }
           }
@@ -187,10 +187,10 @@
               "maxAxisValue": 1.0,
               "minAxisValue": -0.25,
               "buttonId": 0,
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: FIRST TRIGGER DETENT"
             }
           },
@@ -200,10 +200,10 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 1,
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: SECOND TRIGGER DETENT"
             }
           }
@@ -214,7 +214,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "NumEnter"
@@ -224,15 +224,15 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 50,
               "minActivationInterval": 50,
+              "maxActivationInterval": 50,
               "description": "VIEWGEN: Default FOV"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Num5"
@@ -242,8 +242,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 50,
               "minActivationInterval": 50,
+              "maxActivationInterval": 50,
               "description": "VIEWEXT: Reset View"
             }
           }
@@ -252,7 +252,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "ON_PRESS",
               "keystroke": {
                 "keyCodes": [
                   "2"
@@ -262,15 +262,15 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "Enable Mouselook"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_ON_RELEASE",
+              "activation": "ON_RELEASE",
               "keystroke": {
                 "keyCodes": [
                   "2"
@@ -280,8 +280,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "Disable Mouselook"
             }
           }
@@ -290,7 +290,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "ON_PRESS",
               "keystroke": {
                 "keyCodes": [
                   "D"
@@ -300,15 +300,15 @@
                 ]
               },
               "longPress": true,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "CKPIT: Drag Chute Deploy"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_ON_RELEASE",
+              "activation": "ON_RELEASE",
               "keystroke": {
                 "keyCodes": [
                   "B"
@@ -316,8 +316,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: SPD BRAKE Switch - Toggle"
             }
           }
@@ -326,7 +326,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "ON_PRESS",
               "keystroke": {
                 "keyCodes": [
                   "G"
@@ -334,8 +334,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "GEAR: LG Handle - Toggle"
             }
           }
@@ -344,7 +344,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "/"
@@ -354,8 +354,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: NWS A/R DISC MSL STEP SWITCH"
             }
           }
@@ -364,7 +364,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "U"
@@ -372,8 +372,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: MAN RANGE Knob - UNCAGE"
             }
           }
@@ -456,7 +456,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Home"
@@ -466,8 +466,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: CMS Up"
             }
           }
@@ -476,7 +476,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "End"
@@ -486,8 +486,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: CMS Down"
             }
           }
@@ -496,7 +496,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Del"
@@ -506,8 +506,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: CMS Left"
             }
           }
@@ -516,7 +516,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "PgDn"
@@ -526,8 +526,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: CMS Right"
             }
           }
@@ -543,7 +543,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Home"
@@ -553,8 +553,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: DMS Up"
             }
           }
@@ -563,7 +563,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "End"
@@ -573,8 +573,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: DMS Down"
             }
           }
@@ -583,7 +583,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Del"
@@ -593,8 +593,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: DMS Left"
             }
           }
@@ -603,7 +603,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "PgDn"
@@ -613,8 +613,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: DMS Right"
             }
           }
@@ -657,7 +657,7 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Home"
@@ -665,8 +665,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: COMMS Switch Up - UHF"
             }
           }
@@ -677,7 +677,7 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "End"
@@ -685,8 +685,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: COMMS Switch Down - VHF"
             }
           }
@@ -697,11 +697,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "longPress": false,
               "mouseButton": 3,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "Translate Head"
             }
           }
@@ -710,7 +710,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Del"
@@ -718,8 +718,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: COMMS Switch Left - IFF OUT"
             }
           }
@@ -728,7 +728,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "PgDn"
@@ -736,8 +736,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: COMMS Switch Right - IFF IN"
             }
           }
@@ -746,7 +746,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "ON_PRESS",
               "keystroke": {
                 "keyCodes": [
                   "L"
@@ -754,8 +754,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "VIEWGEN: Look Closer - Toggle"
             }
           }
@@ -793,7 +793,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "C"
@@ -801,8 +801,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "MRM/DF Cancel"
             }
           }
@@ -811,7 +811,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "D"
@@ -819,8 +819,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "DF Override"
             }
           }
@@ -829,7 +829,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "M"
@@ -837,8 +837,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "MRM Override"
             }
           }
@@ -879,11 +879,11 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "longPress": false,
               "mouseButton": 1,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ],
@@ -893,11 +893,11 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "longPress": false,
               "mouseButton": 2,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ]
@@ -907,11 +907,11 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "longPress": false,
               "mouseButton": 3,
-              "maxActivationInterval": 0,
-              "minActivationInterval": 0
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
             }
           }
         ],
@@ -977,7 +977,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Ins"
@@ -985,8 +985,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: RDR CURSOR - Cursor Enable"
             }
           }
@@ -995,7 +995,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "V"
@@ -1003,8 +1003,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: PINKY SWITCH"
             }
           }
@@ -1013,7 +1013,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "F7"
@@ -1023,8 +1023,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: ANT ELEV Knob - Tilt Up"
             }
           }
@@ -1033,7 +1033,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "F5"
@@ -1043,8 +1043,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: ANT ELEV Knob - Tilt Down"
             }
           }
@@ -1053,7 +1053,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "F3"
@@ -1063,8 +1063,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: MAN RANGE Knob - Down"
             }
           }
@@ -1073,7 +1073,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "F4"
@@ -1083,8 +1083,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TQS: MAN RANGE Knob - Up"
             }
           }
@@ -1100,7 +1100,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Home"
@@ -1110,8 +1110,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: TMS Up"
             }
           }
@@ -1120,7 +1120,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "End"
@@ -1130,8 +1130,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: TMS Down"
             }
           }
@@ -1140,7 +1140,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Del"
@@ -1150,8 +1150,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: TMS Left"
             }
           }
@@ -1160,7 +1160,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "PgDn"
@@ -1170,8 +1170,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: TMS  Right"
             }
           }
@@ -1188,7 +1188,7 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "A"
@@ -1198,8 +1198,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: PADDLE SWITCH"
             }
           }
@@ -1210,7 +1210,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "F10"
@@ -1221,8 +1221,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TRIM: YAW TRIM Knob - R"
             }
           }
@@ -1231,7 +1231,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "F9"
@@ -1242,8 +1242,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "TRIM: YAW TRIM Knob - L"
             }
           }
@@ -1252,7 +1252,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Up Arrow"
@@ -1262,8 +1262,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "Trim Nose Down"
             }
           }
@@ -1272,7 +1272,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Down Arrow"
@@ -1282,8 +1282,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: TRIM Up - Nose Down"
             }
           }
@@ -1292,7 +1292,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Left Arrow"
@@ -1302,8 +1302,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: TRIM Left - Roll Left"
             }
           }
@@ -1312,7 +1312,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "Right Arrow"
@@ -1322,8 +1322,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "STICK: TRIM Right - Roll Right"
             }
           }
@@ -1339,7 +1339,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "E"
@@ -1349,8 +1349,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "SEAT: EJECT Handle - Hold For Eject"
             }
           }
@@ -1359,7 +1359,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "ON_PRESS",
               "keystroke": {
                 "keyCodes": [
                   "3"
@@ -1367,15 +1367,15 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "VIEWINT: Pan (3D) Cockpit"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "REPEAT",
+              "activation": "WHILE_PRESSED",
               "keystroke": {
                 "keyCodes": [
                   "3"
@@ -1383,8 +1383,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "VIEWINT: Pan (3D) Cockpit"
             }
           }
@@ -1393,7 +1393,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "ON_PRESS",
               "keystroke": {
                 "keyCodes": [
                   "N"
@@ -1401,15 +1401,15 @@
                 "modifierCodes": []
               },
               "longPress": true,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "CKPIT: Nightvision - Toggle"
             }
           },
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_ON_RELEASE",
+              "activation": "ON_RELEASE",
               "keystroke": {
                 "keyCodes": [
                   "V"
@@ -1419,8 +1419,8 @@
                 ]
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "CKPIT: Visor - Toggle"
             }
           }
@@ -1429,7 +1429,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "ON_PRESS",
               "keystroke": {
                 "keyCodes": [
                   "0"
@@ -1437,8 +1437,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "VIEWEXT: Orbit Camera"
             }
           }
@@ -1447,7 +1447,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "SINGLE_IMMEDIATELY",
+              "activation": "ON_PRESS",
               "keystroke": {
                 "keyCodes": [
                   "9"
@@ -1455,8 +1455,8 @@
                 "modifierCodes": []
               },
               "longPress": false,
-              "maxActivationInterval": 0,
               "minActivationInterval": 0,
+              "maxActivationInterval": 0,
               "description": "VIEWEXT: Chase Camera"
             }
           }
@@ -1466,7 +1466,7 @@
     }
   ],
   "showOverlay": true,
-  "version": "1.6",
+  "version": "1.7",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,
