@@ -20631,7 +20631,8 @@ Set-Variable AlternativeLauncherVersion '2.4.2.6'
 Set-Variable AlternativeLauncherUserConfigFile -Option Constant -Value "$env:LOCALAPPDATA\Benchmark_Sims\FalconBMS_Alternative_Lau_Url_4f1zutskmyxo3pzspfchahuy3wu3tn3r\$AlternativeLauncherVersion\user.config"
 
 Set-Variable BMSUserConfigFileLauncherSectionHeadline -Option Constant -Value '// LAUNCHER OVERRIDES BEGIN HERE - DO NOT EDIT OR ADD BELOW THIS LINE'
-Set-Variable BMSUserConfigFileLauncherDisableXInputLine -Option Constant -Value 'set g_bUseXInput 0'
+Set-Variable BMSUserConfigFileDisableXInputLine -Option Constant -Value 'set g_bUseXInput 0'
+Set-Variable BMSUserConfigFileEnableMouseButton4Line -Option Constant -Value 'set g_bMouseButton4TogglesClickablePit 1'
 
 $bmsDir = (Get-ItemPropertyValue -Path $BmsRegistryKey -Name $BmsBaseDirRegistryValue -ErrorAction Ignore)
 
@@ -20804,21 +20805,38 @@ if (Test-Path $AlternativeLauncherUserConfigFile -PathType Leaf) {
     }
 }
 
-$bmsUserConfigFile = "$bmsConfigDir\Falcon BMS User.cfg"
-try {
-    $done = $false
+function Add-UserConfigLine {
+    param (
+        [Parameter(Mandatory)]
+        [string]$Line
+    )
 
+    $parts = $Line.Split(' ', [System.StringSplitOptions]::RemoveEmptyEntries)
+    if ($parts.Count -ne 3 -or $parts[0] -ne 'set') {
+        Write-Output "Invalid user config line: $Line"
+        Exit 1
+    }
+    $setVariableRegex = "^\s*set\s$([regex]::Escape($parts[1]))\s"
+
+    $done = $false
     if (Test-Path $bmsUserConfigFile -PathType Leaf) {
-        $bmsUserConfigFileContent = (Get-Content -Path $bmsUserConfigFile | Where-Object { $_ -notmatch '^\s*set g_bUseXInput ' })
+        $bmsUserConfigFileContent = (Get-Content -Path $bmsUserConfigFile | Where-Object { $_ -notmatch $setVariableRegex })
         if ($bmsUserConfigFileContent -match $BMSUserConfigFileLauncherSectionHeadline) {
-            $bmsUserConfigFileContent -replace $BMSUserConfigFileLauncherSectionHeadline, "$BMSUserConfigFileLauncherDisableXInputLine`n$BMSUserConfigFileLauncherSectionHeadline" | Set-Content -Path $bmsUserConfigFile
+            $bmsUserConfigFileContent -replace $BMSUserConfigFileLauncherSectionHeadline, "$Line`n$BMSUserConfigFileLauncherSectionHeadline" | Set-Content -Path $bmsUserConfigFile
             $done = $true
         }
     }
 
     if (-not $done) {
-        Add-Content -Path $bmsUserConfigFile -Value $BMSUserConfigFileLauncherDisableXInputLine
+        Add-Content -Path $bmsUserConfigFile -Value $Line
     }
+}
+
+$bmsUserConfigFile = "$bmsConfigDir\Falcon BMS User.cfg"
+try {
+    Add-UserConfigLine $BMSUserConfigFileDisableXInputLine
+    Add-UserConfigLine $BMSUserConfigFileEnableMouseButton4Line
+    Write-Output "Wrote file: $bmsUserConfigFile"
 } catch {
     Write-Output "Error: Could not process file: $bmsUserConfigFile"
     Exit 1
