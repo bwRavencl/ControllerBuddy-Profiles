@@ -200,6 +200,22 @@ local diff = {
 			},
 			["name"] = "FuelTank Emergency Jettison Button - Depress",
 		},
+		["d3022pnilunilcd15vd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN15",
+				},
+			},
+			["name"] = "Radar Mode Select Knob - cycle(CCW)",
+		},
+		["d3022pnilunilcd15vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN16",
+				},
+			},
+			["name"] = "Radar Mode Select Knob - cycle(CW)",
+		},
 		["d3023pnilunilcd35vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
@@ -219,18 +235,18 @@ local diff = {
 		["d3026pnilunilcd15vd-1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN16",
+					["key"] = "JOY_BTN7",
 				},
 			},
-			["name"] = "Radar Elevation ΔH Select Knob - cycle(CCW/Decrease)",
+			["name"] = "Radar Target Elevation Knob (ΔH) - cycle(CCW/Decrease)",
 		},
 		["d3026pnilunilcd15vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN15",
+					["key"] = "JOY_BTN6",
 				},
 			},
-			["name"] = "Radar Elevation ΔH Select Knob - cycle(CW/Increase)",
+			["name"] = "Radar Target Elevation Knob (ΔH) - cycle(CW/Increase)",
 		},
 		["d3027pnilu3027cd35vd1vpnilvu0"] = {
 			["added"] = {
@@ -239,22 +255,6 @@ local diff = {
 				},
 			},
 			["name"] = "Flare Dispense Button - Depress",
-		},
-		["dnilp3036unilcd35vdnilvp-1vunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "Manual Ranging Control - Aft/Decrease",
-		},
-		["dnilp3036unilcd35vdnilvp1vunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN7",
-				},
-			},
-			["name"] = "Manual Ranging Control - Fwd/Increase",
 		},
 	},
 }
