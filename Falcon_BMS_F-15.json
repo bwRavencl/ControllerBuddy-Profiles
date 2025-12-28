@@ -1,0 +1,1594 @@
+{
+  "buttonToModeActionsMap": {
+    "0": [
+      {
+        "longPress": false,
+        "modeUuid": "d670fe37-358b-4829-b50c-3cd697d8875a",
+        "toggle": false
+      }
+    ],
+    "1": [
+      {
+        "longPress": false,
+        "modeUuid": "0342f9a6-6921-4a7e-8c43-59157c1fab87",
+        "toggle": false
+      }
+    ],
+    "2": [
+      {
+        "longPress": false,
+        "modeUuid": "ce0eb7f7-31a1-4782-ba23-53822a7f708f",
+        "toggle": false
+      }
+    ],
+    "3": [
+      {
+        "longPress": false,
+        "modeUuid": "93913585-1ddb-42a2-ab6b-be221b1a3c47",
+        "toggle": false
+      }
+    ],
+    "4": [
+      {
+        "longPress": false,
+        "modeUuid": "a6977cc6-4288-4dc8-abcb-0e10d4a95c4f",
+        "toggle": true
+      }
+    ],
+    "6": [
+      {
+        "longPress": false,
+        "modeUuid": "e25e1190-0089-47ed-b9fb-fa815e502df0",
+        "toggle": false
+      }
+    ],
+    "7": [
+      {
+        "longPress": false,
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+        "toggle": true
+      }
+    ],
+    "8": [
+      {
+        "longPress": false,
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+        "toggle": true
+      }
+    ],
+    "9": [
+      {
+        "longPress": false,
+        "modeUuid": "7be63c4a-ddbf-4466-be81-d1bad4c04e3a",
+        "toggle": false
+      }
+    ],
+    "10": [
+      {
+        "longPress": false,
+        "modeUuid": "f83e2818-9b48-4243-bcfe-c788556f4e60",
+        "toggle": false
+      }
+    ],
+    "11": [
+      {
+        "longPress": false,
+        "modeUuid": "df106e0f-5c24-4046-aae2-2acdbdaca262",
+        "toggle": false
+      }
+    ],
+    "12": [
+      {
+        "longPress": false,
+        "modeUuid": "de9b53d4-dbba-4755-8571-a4349c6a8620",
+        "toggle": false
+      }
+    ]
+  },
+  "keyRepeatInterval": 30,
+  "modes": [
+    {
+      "uuid": "067e6162-3b6f-4ae2-a171-2470b63dff00",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.25,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "RZ",
+              "invert": false,
+              "description": "Yaw"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "detentValue": -0.5,
+              "hapticFeedback": true,
+              "maxRelativeSpeed": 4.0,
+              "deadZone": 0.25,
+              "exponent": 2.0,
+              "initialValue": 1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "Z",
+              "invert": false,
+              "description": "Throttle"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "X",
+              "invert": false,
+              "description": "Roll"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "Y",
+              "invert": false,
+              "description": "Pitch"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": -1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "S0",
+              "invert": false,
+              "description": "Left Brake"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 2,
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: WEAPON RELEASE Btn. (Pickle)"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": -1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "S1",
+              "invert": false,
+              "description": "Right Brake"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": -0.25,
+              "buttonId": 0,
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: FIRST TRIGGER DETENT"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 1,
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: SECOND TRIGGER DETENT"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "NumEnter"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 50,
+              "maxActivationInterval": 50,
+              "description": "VIEWGEN: Default FOV"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Num5"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 50,
+              "maxActivationInterval": 50,
+              "description": "VIEWEXT: Reset View"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "longPress": false,
+              "mouseButton": 4,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Enable Mouselook"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "ON_RELEASE",
+              "longPress": false,
+              "mouseButton": 4,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Disable Mouselook"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "ON_PRESS",
+                    "keystroke": {
+                      "keyCodes": [
+                        "D"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "longPress": false,
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "HR: WEAPON Switch - Aft (A/A Mode \u0026 GUN)"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "ON_PRESS",
+                    "keystroke": {
+                      "keyCodes": [
+                        "C"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "longPress": false,
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "THR: WEAPON Switch - Ctr (SRM)"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "activation": "ON_PRESS",
+                    "keystroke": {
+                      "keyCodes": [
+                        "M"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "longPress": false,
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "THR: WEAPON Switch - Fwd (MRM)"
+                  }
+                }
+              ],
+              "activation": "ON_PRESS",
+              "longPress": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": false,
+              "longPress": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "lockKey": true,
+              "longPress": false
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToReleaseAllOnScreenKeyboardKeysAction",
+            "data": {
+              "longPress": false
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "direction": "UP",
+              "longPress": false
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "direction": "DOWN",
+              "longPress": false
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "direction": "LEFT",
+              "longPress": false
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "direction": "RIGHT",
+              "longPress": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "uuid": "93913585-1ddb-42a2-ab6b-be221b1a3c47",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Del"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Auto Acquisition Switch - Down"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Auto Acquisition Switch - Fwd"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Auto Acquisition Switch - Aft"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "V"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: BOAT Switch - Aft"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "V"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: BOAT Switch - Fwd"
+            }
+          }
+        ]
+      },
+      "description": "Auto Acqu / Boat"
+    },
+    {
+      "uuid": "0342f9a6-6921-4a7e-8c43-59157c1fab87",
+      "axisToActionsMap": {
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "PgDn"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Castle - Press"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Castle Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Castle Down"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Del"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Castle Left"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "PgDn"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Castle Right"
+            }
+          }
+        ]
+      },
+      "description": "Castle"
+    },
+    {
+      "uuid": "e25e1190-0089-47ed-b9fb-fa815e502df0",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Up Arrow"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: MULTI-FUNCTION Switch - Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Down Arrow"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: MULTI-FUNCTION Switch - Down"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Left Arrow"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: MULTI-FUNCTION Switch - Left"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Right Arrow"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: MULTI-FUNCTION Switch - Right"
+            }
+          }
+        ]
+      },
+      "description": "Coolie"
+    },
+    {
+      "uuid": "d670fe37-358b-4829-b50c-3cd697d8875a",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Del"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: ECM Dispenser Switch - Center (Off)"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: ECM Dispenser Switch - Up (Unused)"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: ECM Dispenser Switch - Down (Manual 2)"
+            }
+          }
+        ]
+      },
+      "description": "ECM"
+    },
+    {
+      "uuid": "de9b53d4-dbba-4755-8571-a4349c6a8620",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "GEAR: LG Handle - Toggle"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "buttonId": 4,
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: Flap Selector Switch - Extend"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "buttonId": 3,
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: Flap Selector Switch - Retract"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "keystroke": {
+                "keyCodes": [
+                  "K"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "HOOK: Switch - Toggle"
+            }
+          }
+        ]
+      },
+      "description": "Gear / Flaps / Hook"
+    },
+    {
+      "uuid": "f83e2818-9b48-4243-bcfe-c788556f4e60",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 3.0,
+              "cursorSensitivity": 1300,
+              "axis": "X",
+              "invert": false,
+              "description": "Look Left/Right / Head Left/Right"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 3.0,
+              "cursorSensitivity": 800,
+              "axis": "Y",
+              "invert": false,
+              "description": "Look Up/Down / Head Forward/Back"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Home"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: MICROPHONE Switch - Fwd (UHF1)"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: MICROPHONE Switch - Aft (UHF2)"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "\\"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 50,
+              "maxActivationInterval": 50,
+              "description": "Ring Comm Menu"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "mouseButton": 3,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Translate Head"
+            }
+          }
+        ],
+        "8": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "VIEWGEN: Look Closer - Toggle"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": false,
+              "description": "Zoom In / Head Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": true,
+              "description": "Zoom Out / Head Down"
+            }
+          }
+        ]
+      },
+      "description": "Look / Comm"
+    },
+    {
+      "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.5,
+              "cursorSensitivity": 1500,
+              "axis": "X",
+              "invert": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.5,
+              "cursorSensitivity": 1500,
+              "axis": "Y",
+              "invert": false
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "mouseButton": 1,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "mouseButton": 2,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "longPress": false,
+              "mouseButton": 3,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": false
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "longPress": false,
+              "clicks": 10,
+              "invert": true
+            }
+          }
+        ]
+      },
+      "description": "Mouse"
+    },
+    {
+      "uuid": "df106e0f-5c24-4046-aae2-2acdbdaca262",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "PgUp"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": true,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: FINGER LIFT Switch - Right Engine"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_RELEASE",
+              "keystroke": {
+                "keyCodes": [
+                  "I"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: SET IDLE DETENT - Right Engine"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Ins"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": true,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: FINGER LIFT Switch - Left Engine"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_RELEASE",
+              "keystroke": {
+                "keyCodes": [
+                  "I"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: SET IDLE DETENT - Left Engine"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "B"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: SPEEDBRAKE Switch - Fwd (Retract)"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "B"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: SPEEDBRAKE Switch - Aft (Extend)"
+            }
+          }
+        ]
+      },
+      "description": "Speedbrake / Throttle"
+    },
+    {
+      "uuid": "a6977cc6-4288-4dc8-abcb-0e10d4a95c4f",
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "RX",
+              "invert": false,
+              "description": "Cursor X"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "RY",
+              "invert": true,
+              "description": "Cursor Y"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "PgDn"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: TARGET DESIGNATOR CONTROL - Press"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "F3"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: ANTENNA ELEVATION Knob - Tilt Up"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "F4"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "THR: ANTENNA ELEVATION Knob - Tilt Down"
+            }
+          }
+        ]
+      },
+      "description": "TDC / Ant Elev"
+    },
+    {
+      "uuid": "7be63c4a-ddbf-4466-be81-d1bad4c04e3a",
+      "axisToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "A"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: PADDLE Switch"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "/"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: Nose Gear Steering Btn."
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Up Arrow"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: TRIM Up - Nose Down"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Down Arrow"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: TRIM Down - Nose Up"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Left Arrow"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: TRIM Left - Roll Left"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "Right Arrow"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "STICK: TRIM Right - Roll Right"
+            }
+          }
+        ]
+      },
+      "description": "Trim / Paddle / NWS"
+    },
+    {
+      "uuid": "ce0eb7f7-31a1-4782-ba23-53822a7f708f",
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "E"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "SEAT: EJECT Handle - Hold For Eject"
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "keystroke": {
+                "keyCodes": [
+                  "3"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "VIEWINT: Pan (3D) Cockpit"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "keystroke": {
+                "keyCodes": [
+                  "3"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "VIEWINT: Pan (3D) Cockpit"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": true,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "CKPIT: Nightvision - Toggle"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_RELEASE",
+              "keystroke": {
+                "keyCodes": [
+                  "V"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "CKPIT: Visor - Toggle"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "keystroke": {
+                "keyCodes": [
+                  "0"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "VIEWEXT: Orbit Camera"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "keystroke": {
+                "keyCodes": [
+                  "9"
+                ],
+                "modifierCodes": []
+              },
+              "longPress": false,
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "VIEWEXT: Chase Camera"
+            }
+          }
+        ]
+      },
+      "description": "View / Helmet / Eject"
+    }
+  ],
+  "showOverlay": true,
+  "version": "1.7",
+  "virtualAxisToOverlayAxisMap": {
+    "Z": {
+      "color": -16777216,
+      "inverted": false,
+      "orientation": "VERTICAL",
+      "style": "SOLID"
+    }
+  }
+}
