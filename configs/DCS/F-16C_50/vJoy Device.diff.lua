@@ -167,6 +167,14 @@ local diff = {
 			},
 			["name"] = "Toggle helmet visor",
 		},
+		["d3011pnilu3011cd32vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN23",
+				},
+			},
+			["name"] = "CHAFF/FLARE Dispense Button",
+		},
 		["d3014pnilu3014cd16vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
