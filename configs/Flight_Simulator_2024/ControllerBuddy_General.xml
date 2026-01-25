@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Version Num="-1"/>
-<FriendlyName PlatformAvailability="15">ControllerBuddy</FriendlyName>
+<FriendlyName PlatformAvailability="1" Locked="true">ControllerBuddy</FriendlyName>
 <Device DeviceName="vJoy Device" GUID="{75BB9150-3AD0-11EF-800E-444553540000}" ProductID="0" CompositeID="0" HWVer="1.0.0.0">
 	<Axes>
 		<Axis AxisName="X" AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
@@ -24,6 +24,7 @@
 		<Action ActionName="KEY_AXIS_XCLOUD_LEFT_Y" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_XCLOUD_RIGHT_X" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_XCLOUD_RIGHT_Y" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_DEBUG_TELEMETRY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_EYE_TRACKING_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_FORCE_SAFE_BOOT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HEAD_TRACKING_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -32,7 +33,6 @@
 		<Action ActionName="KEY_SCREEN_NARRATOR_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_SWITCH_VR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOOLBAR_PANEL_CLOSE_ALL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_VIEW_MODE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_VR_DISPLAY_TOOLTIP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_VR_HORIZONTAL_SCROLL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_VR_LOOK_ASSIST" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -100,6 +100,8 @@
 		<Action ActionName="KEY_COCKPIT_LANDING_VIEW_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_MODE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_MODE_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_COCKPIT_MODE_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_COCKPIT_MODE_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_QUICKVIEW1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_QUICKVIEW2" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_QUICKVIEW3" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -115,13 +117,13 @@
 		<Action ActionName="KEY_COCKPIT_CAMERA_ZOOM_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_CAMERA_ZOOM_AXIS_LOCKABLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_FREELOOK_HRZ_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
-			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="14" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="12" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
 				<KEY Information="Joystick R-Axis X ">770</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_COCKPIT_FREELOOK_VRTC_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4228">
-			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="14" AxisOutDeadZone="25" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="12" AxisOutDeadZone="25" AxisResponseRate="-1"/>
 			<Primary>
 				<KEY Information="Joystick R-Axis Y ">786</KEY>
 			</Primary>
@@ -254,6 +256,7 @@
 		<Action ActionName="DRONE_KEY_RUDDER_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_KEY_RUDDER_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ABORT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_ADD_FUEL_QUANTITY_EX1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ADF_EXTENDED_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ADVENTURE_ACTION" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AILERON_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -415,6 +418,7 @@
 		<Action ActionName="KEY_DEBUG_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_DEBUG_LSHIFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_DEBUG_M" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_DEBUG_MENU" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_DEBUG_N" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_DEBUG_NUMPAD_0" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_DEBUG_NUMPAD_1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -890,6 +894,7 @@
 		<Action ActionName="KEY_TOGGLE_AIRPORT_NAME_DISPLAY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ANTIDETONATION_TANK_VALVE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_DAMAGE_TEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOGGLE_DRONE_CAMERA" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ELECTRICAL_FAILURE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ENEMY_INDICATOR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ENGINE1_FAILURE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1111,7 +1116,6 @@
 		<Action ActionName="DRONE_PLAY_BACKWARD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_PLAY_FORWARD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_RESET_HORIZON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="DRONE_RESET_TARGET_OFFSET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_SET_BOOKMARK_IN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_SET_BOOKMARK_OUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_TARGET_OBJECT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1142,6 +1146,7 @@
 		<Action ActionName="DRONE_MOVE_Y_INCR_LOCKABLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_MOVE_Z_DECR_LOCKABLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_MOVE_Z_INCR_LOCKABLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="DRONE_RESET_TARGET_OFFSET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_ROTATE_BACKWARD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_ROTATE_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_ROTATE_FORWARD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1157,17 +1162,43 @@
 		<Action ActionName="DRONE_ZOOM_IN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="DRONE_ZOOM_OUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
+	<Context ContextName="EFB">
+		<Action ActionName="KEY_EFB_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_NAV_APP_NEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_NAV_APP_PREV" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_NAV_TABS_NEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_NAV_TABS_PREV" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_NOTIFICATIONS_MENU" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_SCROLL_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_SCROLL_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_SCROLL_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_SCROLL_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_SECONDARY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_TERTIARY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_VALID" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_ZOOM_IN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_ZOOM_OUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+	</Context>
+	<Context ContextName="EFB_CORE">
+		<Action ActionName="KEY_EFB_BACK" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_TEXTBOX_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_TEXTBOX_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_TEXTBOX_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_TEXTBOX_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_EFB_VALID_TEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+	</Context>
 	<Context ContextName="EXTERNAL_CAMERA">
 		<Action ActionName="KEY_CAMERACHASE_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_CHASE_FOCUS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_CHASE_FREELOOK_HRZ_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
-			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="14" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="12" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
 				<KEY Information="Joystick R-Axis X ">770</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_CHASE_FREELOOK_VRTC_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
-			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="14" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="12" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
 				<KEY Information="Joystick R-Axis Y ">786</KEY>
 			</Primary>
@@ -1260,6 +1291,10 @@
 		<Action ActionName="KEY_UI_DISPLAY_THERMALS_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_UI_DISPLAY_THERMALS_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_UI_DISPLAY_THERMALS_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_UI_DISPLAY_TOOLTIP_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_UI_DISPLAY_TOOLTIP_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_UI_DISPLAY_TOOLTIP_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_UI_DISPLAY_TOOLTIP_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_UI_FLIGHT_ASSISTANT_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_XCLOUD_ACCELEROMETER_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_XCLOUD_LAYOUT_COCKPIT_INTERACTIONS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1316,6 +1351,7 @@
 		<Action ActionName="KEY_MENU_SR_AIRCRAFT_CONFIG" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_AIRCRAFT_SELECTION" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_ALBUM_FLY_THERE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_ALBUM_SAVE_CONSOLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_BOTTOM_MOVE_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_BOTTOM_MOVE_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_CAREER_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1337,6 +1373,7 @@
 		<Action ActionName="KEY_MENU_SR_HARDWARE_SETTINGS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_LIVERIES" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_MANAGE_FLIGHT_PLAN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_MARKET_OPTIONS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_MARKET_UNINSTALL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_PLANE_STATS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1347,12 +1384,9 @@
 		<Action ActionName="KEY_MENU_SR_SCREEN_NARRATOR_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_SCROLL_AXIS_X" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_SCROLL_AXIS_Y" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_MENU_SR_SCROLL_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_SCROLL_TO_TOP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_MENU_SR_SCROLL_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_SUB_NEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_SUB_PREV" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_MENU_SR_TIPS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_TOP_MOVE_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_TOP_MOVE_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1408,8 +1442,15 @@
 		<Action ActionName="KEY_MENU_SR_MORE_DETAILS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_NEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_PREV" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_SCROLL_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_SCROLL_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_SCROLL_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_SCROLL_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_TEXTBOX_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_TEXTBOX_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_TEXTBOX_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_TEXTBOX_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_TIPS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_TOUCHPOINT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MENU_SR_VALID_TEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
@@ -1439,8 +1480,10 @@
 	<Context ContextName="MISSION_FLOW_TOOLS">
 		<Action ActionName="KEY_COCKPIT_FLASHLIGHT_ONOFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_FLIGHT_PHASE_NEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOOLS_QUICK_PREFLIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
 	<Context ContextName="MODE_INTERACTION">
+		<Action ActionName="KEY_COCKPIT_INTERACTION_GROUP_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_INTERACTION_LOCK" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_INTERACTION_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_INTERACTION_UNLOCK" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1476,7 +1519,6 @@
 		<Action ActionName="KEY_SLEW_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_SLEW_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_COCKPIT_CAMERA" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_DRONE_CAMERA" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_EXTERNAL_CAMERA" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_UNSET_USER_POI" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="TOGGLE_CAMERA_DRONE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1542,13 +1584,13 @@
 		<Action ActionName="KEY_AXIS_PC_FPV_LOCKABLE_ROTATION_X" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_PC_FPV_LOCKABLE_ROTATION_Y" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_PC_FPV_ROTATION_X" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
-			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="5" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
 				<KEY Information="Joystick L-Axis X ">1026</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_AXIS_PC_FPV_ROTATION_Y" ValueEvent="0.000000" Delay="2.000000" Flag="4228">
-			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="5" AxisOutDeadZone="35" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-50" AxisSensitivyMinus="-50" AxisNeutral="0" AxisDeadZone="4" AxisOutDeadZone="35" AxisResponseRate="-1"/>
 			<Primary>
 				<KEY Information="Joystick L-Axis Y ">1042</KEY>
 			</Primary>
@@ -1576,7 +1618,7 @@
 	</Context>
 	<Context ContextName="PLAYER_CHARACTER_MOVEMENT">
 		<Action ActionName="KEY_AXIS_PC_MOVE_X" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
-			<Axis AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="15" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="12" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
 				<KEY Information="Joystick R-Axis Z ">802</KEY>
 			</Primary>
@@ -1729,6 +1771,11 @@
 		<Action ActionName="KEY_TOOLBAR_PANEL_SIZE_VRT_DECR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOOLBAR_PANEL_SIZE_VRT_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
+	<Context ContextName="TOUCHSCREEN_INTERACTIONS">
+		<Action ActionName="KEY_COCKPIT_INTERACTION_TOUCHSCREENS_VALID" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_COCKPIT_INTERACTION_TOUCHSCREENS_ZOOM_IN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_COCKPIT_INTERACTION_TOUCHSCREENS_ZOOM_OUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+	</Context>
 	<Context ContextName="TRUE_COCKPIT">
 		<Action ActionName="KEY_TRUE_COCKPIT_CAMERA_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TRUE_COCKPIT_CAMERA_SAVE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1756,6 +1803,9 @@
 		<Action ActionName="CAMERA_USER_SAVE_7" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="CAMERA_USER_SAVE_8" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="CAMERA_USER_SAVE_9" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+	</Context>
+	<Context ContextName="VIEW_MODE_SWITCHES">
+		<Action ActionName="KEY_VIEW_MODE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
 	<Context ContextName="WORLDMAP_COMMON">
 		<Action ActionName="KEY_MENU_SR_FLIGHT_PLAN_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>

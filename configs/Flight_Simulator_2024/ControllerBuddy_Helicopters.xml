@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Version Num="-1"/>
-<FriendlyName PlatformAvailability="15">ControllerBuddy</FriendlyName>
+<FriendlyName PlatformAvailability="1" Locked="true">ControllerBuddy</FriendlyName>
 <Device DeviceName="vJoy Device" GUID="{75BB9150-3AD0-11EF-800E-444553540000}" ProductID="0" CompositeID="0" HWVer="1.0.0.0">
 	<AircraftInfo CategoryName="HELICOPTER"/>
 	<Axes>
@@ -205,7 +205,7 @@
 		<Action ActionName="KEY_AXIS_FLAPS_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_MIXTURE_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4">
 			<Primary>
-				<KEY Information="Joystick Schieberegler Y ">530</KEY>
+				<KEY Information="Joystick Slider Y ">530</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_AXIS_MIXTURE1_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -919,7 +919,9 @@
 		<Action ActionName="KEY_THROTTLE_80" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE_90" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE_AXIS_SET_EX1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_THROTTLE_CUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE_FULL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_THROTTLE_IDLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE_INCR_SMALL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE_REVERSE_THRUST_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE_REVERSE_THRUST_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -927,6 +929,7 @@
 		<Action ActionName="KEY_THROTTLE1_CUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE1_DECR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE1_FULL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_THROTTLE1_IDLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE1_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE1_INCR_SMALL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE1_REVERSE_THRUST_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -935,6 +938,7 @@
 		<Action ActionName="KEY_THROTTLE2_CUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE2_DECR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE2_FULL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_THROTTLE2_IDLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE2_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE2_INCR_SMALL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE2_REVERSE_THRUST_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -943,6 +947,7 @@
 		<Action ActionName="KEY_THROTTLE3_CUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE3_DECR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE3_FULL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_THROTTLE3_IDLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE3_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE3_INCR_SMALL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE3_REVERSE_THRUST_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -951,6 +956,7 @@
 		<Action ActionName="KEY_THROTTLE4_CUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE4_DECR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE4_FULL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_THROTTLE4_IDLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE4_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE4_INCR_SMALL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE4_REVERSE_THRUST_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1100,6 +1106,15 @@
 		<Action ActionName="KEY_ZULU_MINUTES_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ZULU_YEAR_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
+	<Context ContextName="AIRCRAFT_PC">
+		<Action ActionName="KEY_NIGHT_VISION_DISPLAY_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_NIGHT_VISION_DISPLAY_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_NIGHT_VISION_DISPLAY_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_NIGHT_VISION_DISPLAY_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_NIGHT_VISION_INTENSITY_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_NIGHT_VISION_INTENSITY_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_NIGHT_VISION_INTENSITY_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+	</Context>
 	<Context ContextName="BASIC_CONTROL">
 		<Action ActionName="KEY_AILERON_CENTER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AILERON_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1115,7 +1130,7 @@
 		<Action ActionName="KEY_ELEV_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_QUICK_TRIM" ValueEvent="0.000000" Delay="2.000000" Flag="2">
 			<Primary>
-				<KEY Information="Joystick Taste 9">8</KEY>
+				<KEY Information="Joystick Button 9">8</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_RUDDER_CENTER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1150,14 +1165,10 @@
 		<Action ActionName="KEY_AXIS_COLLECTIVE_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
 			<Axis AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
-				<KEY Information="Joystick L-Achse Z ">1058</KEY>
+				<KEY Information="Joystick L-Axis Z ">1058</KEY>
 			</Primary>
 		</Action>
-		<Action ActionName="KEY_AXIS_HELICOPTER_THROTTLE_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4">
-			<Primary>
-				<KEY Information="Joystick Schieberegler X ">514</KEY>
-			</Primary>
-		</Action>
+		<Action ActionName="KEY_AXIS_HELICOPTER_THROTTLE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_HELICOPTER_THROTTLE1_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_HELICOPTER_THROTTLE2_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_ROTOR_BRAKE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1183,7 +1194,11 @@
 		<Action ActionName="KEY_HELICOPTER_FORCE_TRIM_RELEASE_BUTTON_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HELICOPTER_THROTTLE_CUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HELICOPTER_THROTTLE_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_HELICOPTER_THROTTLE_FULL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_HELICOPTER_THROTTLE_FULL" ValueEvent="0.000000" Delay="2.000000" Flag="8194">
+			<Primary>
+				<KEY Information="Joystick Slider X ">514</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_HELICOPTER_THROTTLE_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HELICOPTER_THROTTLE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HELICOPTER_THROTTLE1_CUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1215,13 +1230,12 @@
 		<Action ActionName="KEY_ROTOR_LONGITUDINAL_TRIM_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ROTOR_TRIM_RESET" ValueEvent="0.000000" Delay="2.000000" Flag="8194">
 			<Primary>
-				<KEY Information="Joystick Taste 6">5</KEY>
+				<KEY Information="Joystick Button 6">5</KEY>
 			</Primary>
 		</Action>
 	</Context>
 	<Context ContextName="INSTRUMENTS_CONTROL">
 		<Action ActionName="KEY_ADD_FUEL_QUANTITY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_ADD_FUEL_QUANTITY_EX1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ADF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ADF_CARD_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ADF_HIGHRANGE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1360,6 +1374,10 @@
 		<Action ActionName="KEY_GRAPPLE_HOOK_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GRAPPLE_HOOK_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GRAPPLE_HOOK_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_HYDRAULIC_ACTUATOR_ACTIVE_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_HYDRAULIC_ACTUATOR_ACTIVE_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_HYDRAULIC_ACTUATOR_ACTIVE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_HYDRAULIC_ACTUATOR_ACTIVE_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_LEAD_POLE_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_LEAD_POLE_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_LEAD_POLE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1390,17 +1408,25 @@
 	</Context>
 	<Context ContextName="SURFACES">
 		<Action ActionName="KEY_AXIS_AILERONS_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
-			<Axis AxisSensitivy="-25" AxisSensitivyMinus="-25" AxisNeutral="0" AxisDeadZone="15" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-25" AxisSensitivyMinus="-25" AxisNeutral="0" AxisDeadZone="12" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
-				<KEY Information="Joystick L-Achse X ">1026</KEY>
+				<KEY Information="Joystick L-Axis X ">1026</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_AXIS_ELEVATOR_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
-			<Axis AxisSensitivy="-25" AxisSensitivyMinus="-25" AxisNeutral="0" AxisDeadZone="15" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-25" AxisSensitivyMinus="-25" AxisNeutral="0" AxisDeadZone="12" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
-				<KEY Information="Joystick L-Achse Y ">1042</KEY>
+				<KEY Information="Joystick L-Axis Y ">1042</KEY>
 			</Primary>
 		</Action>
+		<Action ActionName="KEY_THROTTLE_RELATIVE_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+	</Context>
+	<Context ContextName="SURFACES_GYRO">
+		<Action ActionName="KEY_GYRO_AXIS_AILERONS_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GYRO_AXIS_ELEVATOR_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GYRO_AXIS_RUDDER_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GYRO_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GYRO_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
 	<Context ContextName="SURFACES_HELICOPTER">
 		<Action ActionName="KEY_AXIS_CYCLIC_LATERAL_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1408,7 +1434,7 @@
 		<Action ActionName="KEY_AXIS_TAIL_ROTOR_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
 			<Axis AxisSensitivy="-25" AxisSensitivyMinus="-25" AxisNeutral="0" AxisDeadZone="25" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
-				<KEY Information="Joystick R-Achse Z ">802</KEY>
+				<KEY Information="Joystick R-Axis Z ">802</KEY>
 			</Primary>
 		</Action>
 	</Context>
@@ -1417,7 +1443,6 @@
 		<Action ActionName="KEY_AXIS_BURNER_ROLL_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
 	<Context ContextName="THROTTLE">
-		<Action ActionName="KEY_THROTTLE_CUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE_DECR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_THROTTLE_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
