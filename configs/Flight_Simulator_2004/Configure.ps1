@@ -1,13 +1,13 @@
 Write-Output "Configuring Flight Simulator 2004 for use with ControllerBuddy-Profiles...`n"
 
-$fs9Dir = "$env:APPDATA\Microsoft\FS9"
+$fs9Dir = Join-Path $env:APPDATA Microsoft\FS9
 
 if (-not (Test-Path $fs9Dir -PathType Container)) {
     Write-Output "Error: Flight Simulator 2004 config directory '$fs9Dir' does not exist"
     Exit 1
 }
 
-Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
+Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
 
 $vJoyDevice = Get-VJoyDevice
 
@@ -40,7 +40,7 @@ function Get-DeviceGuid {
     $Device.InstanceGuid.ToString().ToUpper()
 }
 
-$fs9CfgFile = "$fs9Dir\fs9.CFG"
+$fs9CfgFile = Join-Path $fs9Dir fs9.CFG
 if (-not (Test-Path $fs9CfgFile -PathType Leaf)) {
     Write-Output "Error: Flight Simulator 2004 config file '$fs9CfgFile' does not exist"
     Exit 1

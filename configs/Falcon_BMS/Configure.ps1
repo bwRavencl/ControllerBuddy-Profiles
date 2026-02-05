@@ -20643,14 +20643,14 @@ if ($null -eq $bmsDir) {
     $bmsDir = $bmsDir.TrimEnd('\')
 }
 
-$bmsConfigDir = "$bmsDir\User\Config"
+$bmsConfigDir = Join-Path $bmsDir User\Config
 
 if (-not (Test-Path $bmsConfigDir -PathType Container)) {
     Write-Output "Error: $BmsFullName config directory '$bmsConfigDir' does not exist"
     Exit 1
 }
 
-$alternativeLauncherExe = "$bmsDir\Launcher\FalconBMS_Alternative_Launcher.exe"
+$alternativeLauncherExe = Join-Path $bmsDir Launcher\FalconBMS_Alternative_Launcher.exe
 
 if (-not (Test-Path $alternativeLauncherExe -PathType Leaf)) {
     Write-Output "Error: Alternative Launcher execeutable '$alternativeLauncherExe' does not exist"
@@ -20664,7 +20664,7 @@ if ($alternativeLauncherActualVersion -ne $AlternativeLauncherVersion) {
     exit 1
 }
 
-Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
+Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
 
 $vJoyDevice = Get-VJoyDevice
 
@@ -20699,7 +20699,7 @@ function Write-SetupFile {
         [string]$Content
     )
 
-    $setupFile = "$bmsConfigDir\Setup.v100.$Name {$($InstanceGuid.ToUpper())}.xml"
+    $setupFile = Join-Path $bmsConfigDir "Setup.v100.$Name {$($InstanceGuid.ToUpper())}.xml"
 
     try {
         Set-Content -Path $setupFile -Value $Content -NoNewline
@@ -20757,8 +20757,8 @@ function Copy-FullKeyFile {
     }
 
     try {
-        $sourceFile = "$bmsConfigDir\$BMSFullKeyBasename$Suffix$KeyFileExtension"
-        $destinationFile = "$bmsConfigDir\$BMSAutoKeyBasename$Suffix$KeyFileExtension"
+        $sourceFile = Join-Path $bmsConfigDir "$BMSFullKeyBasename$Suffix$KeyFileExtension"
+        $destinationFile = Join-Path $bmsConfigDir "$BMSAutoKeyBasename$Suffix$KeyFileExtension"
         Copy-Item "$sourceFile" $destinationFile -errorAction stop
         Write-Output "Copied '$sourceFile' to: $destinationFile"
     } catch {
@@ -20832,7 +20832,7 @@ function Add-UserConfigLine {
     }
 }
 
-$bmsUserConfigFile = "$bmsConfigDir\Falcon BMS User.cfg"
+$bmsUserConfigFile = Join-Path $bmsConfigDir 'Falcon BMS User.cfg'
 try {
     Add-UserConfigLine $BMSUserConfigFileDisableXInputLine
     Add-UserConfigLine $BMSUserConfigFileEnableMouseButton4Line

@@ -275,7 +275,7 @@ if (-not (Test-Path $il2Dir -PathType Container)) {
     Exit 1
 }
 
-$confIniFile = "$il2Dir\conf.ini"
+$confIniFile = Join-Path $il2Dir conf.ini
 
 if (-not (Test-Path $confIniFile -PathType Leaf)) {
     Write-Output "Error: IL-2 1946 config file '$confIniFile' does not exist"
@@ -334,7 +334,7 @@ try {
     Exit 1
 }
 
-$usersDir = "$il2Dir\Users"
+$usersDir = Join-Path $il2Dir Users
 
 if (-not (Test-Path $usersDir -PathType Container)) {
     Write-Output "Error: IL-2 1946 users directory '$usersDir' does not exist"
@@ -348,7 +348,7 @@ if ($userDirs.Count -eq 0) {
 }
 
 $userDirs | ForEach-Object {
-    $settingsIniFile = "$($_.FullName)\settings.ini"
+    $settingsIniFile = Join-Path $_.FullName settings.ini
 
     if (-not (Test-Path $settingsIniFile -PathType Leaf)) {
         Write-Output "Error: IL-2 1946 settings file '$settingsIniFile' does not exist"

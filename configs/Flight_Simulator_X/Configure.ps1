@@ -1,13 +1,13 @@
 Write-Output "Configuring Flight Simulator X for use with ControllerBuddy-Profiles...`n"
 
-$fsxDir = "$env:APPDATA\Microsoft\FSX"
+$fsxDir = Join-Path $env:APPDATA Microsoft\FSX
 
 if (-not (Test-Path $fsxDir -PathType Container)) {
     Write-Output "Error: Flight Simulator X config directory '$fsxDir' does not exist"
     Exit 1
 }
 
-Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
+Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
 
 $vJoyDevice = Get-VJoyDevice
 
@@ -41,7 +41,7 @@ function Get-DeviceGuid {
 }
 
 try {
-    $standardXmlFile = "$fsxDir\Controls\Standard.XML"
+    $standardXmlFile = Join-Path $fsxDir Controls\Standard.XML
     $vJoyDeviceGuid = Get-DeviceGuid $vJoyDevice
     $standardXmlContent = @"
 <?xml version="1.0" encoding="Windows-1252"?>
@@ -1454,7 +1454,7 @@ try {
     Exit 1
 }
 
-$fsxCfgFile = "$fsxDir\fsx.CFG"
+$fsxCfgFile = Join-Path $fsxDir fsx.CFG
 if (-not (Test-Path $fsxCfgFile -PathType Leaf)) {
     Write-Output "Error: Flight Simulator X config file '$fsxCfgFile' does not exist"
     Exit 1

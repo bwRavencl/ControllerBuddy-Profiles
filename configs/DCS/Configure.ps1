@@ -31,14 +31,14 @@ public static class KnownFolders {
 Set-Variable -Name SavedGamesGuid -Option Constant -Value ([Guid]"4C5C32FF-BB9D-43b0-B5B4-2D72E54EAAA4")
 
 $savedGamesDir = [KnownFolders]::GetPath($savedGamesGuid)
-$dcsUserDir = "$savedGamesDir\DCS"
+$dcsUserDir = Join-Path $savedGamesDir DCS
 
 if (-not (Test-Path $dcsUserDir -PathType Container)) {
     Write-Output "Error: DCS user directory '$dcsUserDir' does not exist"
     Exit 1
 }
 
-Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
+Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
 
 $vJoyDevice = Get-VJoyDevice
 
@@ -63,8 +63,8 @@ if (-not $isWine) {
     }
 }
 
-$configDir = "$dcsUserDir\Config"
-$inputDir = "$configDir\Input"
+$configDir = Join-Path $dcsUserDir Config
+$inputDir = Join-Path $configDir Input
 
 function Copy-DiffLuaFile {
     param (
@@ -84,8 +84,8 @@ function Copy-DiffLuaFile {
     }
 
     foreach ($diffLuaFile in $diffLuaFiles) {
-        $destinationDir = "$inputDir\$($diffLuaFile.Directory.Name)\$DeviceCategory"
-        $destinationFile = "$destinationDir\$Target"
+        $destinationDir = Join-Path $inputDir "$($diffLuaFile.Directory.Name)\$DeviceCategory"
+        $destinationFile = Join-Path $destinationDir $Target
 
         try {
             New-Item $destinationDir -ItemType 'directory' -Force | Out-Null
@@ -150,7 +150,7 @@ if ($isWine) {
 
 Copy-DiffLuaFile -Source 'Keyboard.diff.lua' -Target 'Keyboard.diff.lua' -DeviceCategory 'keyboard'
 
-$disabledDevicesLuaFile = "$inputDir\disabled.lua"
+$disabledDevicesLuaFile = Join-Path $inputDir disabled.lua
 
 try {
     $fileContent = @'
@@ -175,7 +175,7 @@ return disabled
     Exit 1
 }
 
-$optionsLuaFile = "$configDir\options.lua"
+$optionsLuaFile = Join-Path $configDir options.lua
 if (-not (Test-Path $optionsLuaFile -PathType Leaf)) {
     Write-Output "Error: DCS options file '$optionsLuaFile' does not exist"
     Exit 1

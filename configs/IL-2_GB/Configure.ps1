@@ -583,7 +583,7 @@ if (-not (Test-Path $il2InputDir -PathType Container)) {
     Exit 1
 }
 
-Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
+Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
 
 $vJoyDevice = Get-VJoyDevice
 

@@ -113,7 +113,7 @@ StickCenterWithHandOff=1
 VerticalViewCenter=0
 '@
 
-$pilotsDir = "$([Environment]::GetFolderPath("MyDocuments"))\Condor3\Pilots"
+$pilotsDir = Join-Path ([Environment]::GetFolderPath("MyDocuments")) Condor3\Pilots
 
 if (-not (Test-Path $pilotsDir -PathType Container)) {
     Write-Output "Error: Condor 3 'Pilots' directory '$pilotsDir' does not exist"
@@ -126,7 +126,7 @@ if ($pilotDirs.Count -eq 0) {
     Exit 1
 }
 
-Import-Module -Name "$PSScriptRoot\..\.lib\DirectInput"
+Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
 
 $keyboardDevice = Get-KeyboardDevice
 
@@ -152,7 +152,7 @@ function Get-DeviceHeader {
 }
 
 $pilotDirs | ForEach-Object {
-    $controlsFile = "$($_.FullName)\controls.ini"
+    $controlsFile = Join-Path $_.FullName controls.ini
 
     try {
         Set-Content -Path $controlsFile -Value "$(Get-DeviceHeader $keyboardDevice)$ControlsIniKeyboardAssignments`n$(Get-DeviceHeader $vJoyDevice)$ControlsIniVjoyAssignments"
@@ -162,7 +162,7 @@ $pilotDirs | ForEach-Object {
         Exit 1
     }
 
-    $setupFile = "$($_.FullName)\Setup.ini"
+    $setupFile = Join-Path $_.FullName Setup.ini
 
     try {
         if (Test-Path $setupFile -PathType Leaf) {
