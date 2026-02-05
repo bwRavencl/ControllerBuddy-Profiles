@@ -498,17 +498,85 @@ PANFOVInert = 1.000
 Set-Variable UninstallRegistryKey -Option Constant -Value 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{66F649A9-0FA2-487E-BC0D-894BD7E89D5E}_is1'
 Set-Variable InstallLocationRegistryValue -Option Constant -Value InstallLocation
 
-$il2Dir = (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore)
+Set-Variable SteamRegistryKeys -Option Constant -Value @(
+    "HKLM:\SOFTWARE\WOW6432Node\Valve\Steam",
+    "HKLM:\SOFTWARE\Valve\Steam"
+)
 
-if ($null -eq $il2Dir) {
-    Write-Output "Error: IL-2 Sturmovik Great Battles registry value '$UninstallRegistryKey\$InstallLocationRegistryValue' does not exist"
-    Exit 1
-} else {
-    $il2Dir = $il2Dir.TrimEnd('\')
+function Get-SteamGamePath() {
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingEmptyCatchBlock', '', Justification = 'Exceptions are expected when checking multiple registry keys for Steam installation path')]
+    param (
+        [Parameter(Mandatory = $true)]
+        [int]$AppId
+    )
+
+    $steamDir = $null
+    foreach ($steamRegistryKey in $SteamRegistryKeys) {
+        try {
+            $installPath = (Get-ItemProperty -Path $steamRegistryKey -ErrorAction Stop).InstallPath
+            if (Test-Path $installPath) {
+                $steamDir = $installPath
+                break
+            }
+        } catch {}
+    }
+
+    if (-not $steamDir) {
+        return $null
+    }
+
+    $libraryfoldersVdfFile = Join-Path $steamDir steamapps\libraryfolders.vdf
+    if (-not (Test-Path $libraryfoldersVdfFile)) {
+        return $null;
+    }
+
+    $libraryPaths = @(Join-Path $steamDir $steamapps)
+    $libraryfoldersVdfContent = Get-Content $libraryfoldersVdfFile -Raw
+    $paths = [regex]::Matches($libraryfoldersVdfContent, '"path"\s*"([^"]+)"') | Select-Object -Unique
+    foreach ($path in $paths) {
+        $path = $path.Groups[1].Value -replace '\\\\', '\'
+        $potentialLibraryPath = Join-Path $path steamapps
+        if (Test-Path $potentialLibraryPath) {
+            $libraryPaths += $potentialLibraryPath
+        }
+    }
+
+    $appmanifestAcfFile = $null
+    foreach ($libraryPath in $libraryPaths) {
+        $potentialAppmanifestAcfFile = Join-Path $libraryPath "appmanifest_$AppId.acf"
+        if (Test-Path $potentialAppmanifestAcfFile) {
+            $appmanifestAcfFile = $potentialAppmanifestAcfFile
+            break
+        }
+    }
+
+    if (-not $appmanifestAcfFile) {
+        return $null;
+    }
+
+    $installdir = (Select-String -Path $appmanifestAcfFile -Pattern '"installdir"\s*"([^"]+)"').Matches[0].Groups[1].Value
+    $gameDir = Join-Path (Join-Path (Split-Path $appmanifestAcfFile) common) $installdir
+
+    if (Test-Path $gameDir) {
+        return $gameDir;
+    }
+
+    return $null;
 }
 
-$il2DataDir = "$il2Dir\data"
-$il2InputDir = "$il2DataDir\input"
+$il2Dir = (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore)
+
+if (-not ($il2Dir -and (Test-Path $il2Dir))) {
+    $il2Dir = Get-SteamGamePath 307960
+}
+
+if (-not $il2Dir) {
+    Write-Output "Error: IL-2 Sturmovik Great Battles is not installed"
+    Exit 1
+}
+
+$il2DataDir = Join-Path $il2Dir data
+$il2InputDir =  Join-Path $il2DataDir input
 
 if (-not (Test-Path $il2InputDir -PathType Container)) {
     Write-Output "Error: IL-2 Sturmovik Great Battles input directory '$il2InputDir' does not exist"
@@ -559,15 +627,15 @@ function Write-ConfigFile {
     }
 }
 
-Write-ConfigFile "$il2InputDir\current.responses" $CurrentResponsesFileContent
-Write-ConfigFile "$il2InputDir\devices.txt" $devicesTxtContent
-Write-ConfigFile "$il2InputDir\global.actions" $GlobalActionsFileContent
-Write-ConfigFile "$il2InputDir\global.pitch" $GlobalPitchFileContent
-Write-ConfigFile "$il2DataDir\LuaScripts\snapviews\snaps.cfg" $SnapsCfgFileContent
+Write-ConfigFile (Join-Path $il2InputDir current.responses) $CurrentResponsesFileContent
+Write-ConfigFile (Join-Path $il2InputDir devices.txt) $devicesTxtContent
+Write-ConfigFile (Join-Path $il2InputDir global.actions) $GlobalActionsFileContent
+Write-ConfigFile (Join-Path $il2InputDir global.pitch) $GlobalPitchFileContent
+Write-ConfigFile (Join-Path $il2DataDir LuaScripts\snapviews\snaps.cfg) $SnapsCfgFileContent
 
 Write-Output ''
 
-$startupCfg = "$il2DataDir\startup.cfg"
+$startupCfg = Join-Path $il2DataDir startup.cfg
 
 if (-not (Test-Path $startupCfg -PathType Leaf)) {
     Write-Output "Error: IL-2 Sturmovik Great Battles config file '$startupCfg' does not exist"
