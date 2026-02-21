@@ -2,77 +2,77 @@
   "buttonToModeActionsMap": {
     "0": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "2eb772d9-327d-476a-9414-7219b2b8677f",
         "toggle": false
       }
     ],
     "1": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "f8e43e9b-7823-4f40-aae4-858db26d0130",
         "toggle": false
       }
     ],
     "2": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
         "toggle": false
       }
     ],
     "3": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "ac51fde9-2708-4c46-ad1f-d1dffade8be1",
         "toggle": false
       }
     ],
     "6": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "9bb0f2b8-9ca0-4135-9639-7767a7bef728",
         "toggle": true
       }
     ],
     "7": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
         "toggle": true
       }
     ],
     "8": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
         "toggle": true
       }
     ],
     "10": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "242f7006-11a9-4303-8858-d9e2d065c3c8",
         "toggle": false
       }
     ],
     "11": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "aab98429-7aeb-4aae-aaa5-f5a97db02e57",
         "toggle": false
       }
     ],
     "12": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "a8a23ec5-1d4b-49ec-acdd-349621aab62e",
         "toggle": false
       }
     ],
     "14": [
       {
-        "longPress": false,
+        "delay": 0,
         "modeUuid": "8c686da4-5b19-42e5-b78b-6482eadb556c",
         "toggle": true
       }
@@ -182,8 +182,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
             "data": {
               "activation": "WHILE_PRESSED",
+              "delay": 0,
               "fluid": false,
-              "longPress": false,
               "resetValue": 0.0,
               "virtualAxis": "RX",
               "description": "Reset View"
@@ -193,8 +193,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
             "data": {
               "activation": "WHILE_PRESSED",
+              "delay": 0,
               "fluid": false,
-              "longPress": false,
               "resetValue": 0.0,
               "virtualAxis": "RY",
               "description": "Reset View"
@@ -203,14 +203,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num5"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 50,
               "maxActivationInterval": 0,
               "description": "Reset View"
@@ -219,14 +219,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "NumEnter"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 50,
               "maxActivationInterval": 0,
               "description": "Reset View"
@@ -237,7 +237,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 1000,
               "keystroke": {
                 "keyCodes": [
                   "W"
@@ -247,7 +247,7 @@
                   "L Alt"
                 ]
               },
-              "longPress": true,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Wheel brake Parking"
@@ -256,7 +256,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "ON_RELEASE",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "T"
@@ -265,7 +265,7 @@
                   "L Ctrl"
                 ]
               },
-              "longPress": false,
+              "activation": "ON_RELEASE",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Trimmer reset"
@@ -276,14 +276,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "T"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Trim Button - press"
@@ -295,8 +295,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 7,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, ACK Button"
@@ -313,8 +313,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
             "data": {
-              "lockKey": false,
-              "longPress": false
+              "delay": 0,
+              "lockKey": false
             }
           }
         ],
@@ -322,8 +322,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
             "data": {
-              "lockKey": true,
-              "longPress": false
+              "delay": 0,
+              "lockKey": true
             }
           }
         ],
@@ -331,7 +331,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToReleaseAllOnScreenKeyboardKeysAction",
             "data": {
-              "longPress": false
+              "delay": 0
             }
           }
         ],
@@ -339,8 +339,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "direction": "UP",
-              "longPress": false
+              "delay": 0,
+              "direction": "UP"
             }
           }
         ],
@@ -348,8 +348,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "direction": "DOWN",
-              "longPress": false
+              "delay": 0,
+              "direction": "DOWN"
             }
           }
         ],
@@ -357,8 +357,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "direction": "LEFT",
-              "longPress": false
+              "delay": 0,
+              "direction": "LEFT"
             }
           }
         ],
@@ -366,8 +366,8 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
             "data": {
-              "direction": "RIGHT",
-              "longPress": false
+              "delay": 0,
+              "direction": "RIGHT"
             }
           }
         ]
@@ -383,8 +383,8 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 26,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, UP/DN Switch - depress DOWN ↓"
@@ -396,8 +396,8 @@
               "maxAxisValue": -0.5,
               "minAxisValue": -1.0,
               "buttonId": 27,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, UP/DN Switch - depress UP ↑"
@@ -411,8 +411,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 14,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, AFCS TRIM Hat - depress DOWN ↓"
@@ -424,8 +424,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 16,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, AFCS TRIM Hat - depress RIGHT →"
@@ -437,8 +437,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 15,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, AFCS TRIM Hat - depress LEFT ←"
@@ -450,8 +450,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 13,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, AFCS TRIM Hat - depress UP ↑"
@@ -463,8 +463,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 17,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, FD CPLR REL Button"
@@ -476,8 +476,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 38,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, GO AROUND Pushbutton"
@@ -489,8 +489,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 18,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, AFCS Mode Hat - depress UP ↑ (ALT)"
@@ -502,8 +502,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 19,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, AFCS Mode Hat - depress DOWN ↓ (TRC)"
@@ -515,8 +515,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 20,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, AFCS Mode Hat - depress LEFT ← (PH)"
@@ -528,8 +528,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 21,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, AFCS Mode Hat - depress RIGHT → (IN/RA)"
@@ -547,7 +547,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "G"
@@ -556,7 +556,7 @@
                   "L Shift"
                 ]
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Command Engineer to Lower Ramp to Next Stage"
@@ -567,7 +567,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "ON_PRESS",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "G"
@@ -576,7 +576,7 @@
                   "L Ctrl"
                 ]
               },
-              "longPress": false,
+              "activation": "ON_PRESS",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Command Engineer to Raise Ramp to Next Stage"
@@ -588,8 +588,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 12,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, CD REL Button"
@@ -608,8 +608,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 0,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, CHAFF/FLARE Dispensing - depress UP ↑ (FLARE)"
@@ -621,8 +621,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 1,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, CHAFF/FLARE Dispensing - depress DOWN ↓ (CHAFF)"
@@ -641,8 +641,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 22,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, HUD Hat - depress FORWARD/UP ↑ (BRT)"
@@ -654,8 +654,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 23,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, HUD Hat - depress BACK/DOWN ↓ (DIM)"
@@ -667,8 +667,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 24,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, HUD Hat - depress LEFT ← (MODE)"
@@ -680,8 +680,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 25,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, HUD Hat - depress RIGHT → (DCLT)"
@@ -735,8 +735,8 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 8,
+              "delay": 1000,
               "activation": "WHILE_PRESSED",
-              "longPress": true,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Radio Button (VOIP)"
@@ -748,8 +748,8 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 10,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, XMIT/ICS Trigger - depress XMIT (FULL)"
@@ -763,8 +763,8 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 9,
+              "delay": 1000,
               "activation": "WHILE_PRESSED",
-              "longPress": true,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "INT Button (VOIP)"
@@ -776,8 +776,8 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 11,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, XMIT/ICS Trigger - depress ICS (HALF)"
@@ -790,7 +790,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num/"
@@ -800,7 +800,7 @@
                   "R Shift"
                 ]
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cockpit Camera Move Back"
@@ -811,14 +811,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "ON_PRESS",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "\\"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "ON_PRESS",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Communication menu"
@@ -829,7 +829,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num*"
@@ -839,7 +839,7 @@
                   "R Shift"
                 ]
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cockpit Camera Move Forward"
@@ -850,14 +850,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num/"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Zoom out slow"
@@ -868,14 +868,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num*"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Zoom in slow"
@@ -886,7 +886,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num8"
@@ -896,7 +896,7 @@
                   "R Shift"
                 ]
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cockpit Camera Move Up"
@@ -907,7 +907,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num2"
@@ -917,7 +917,7 @@
                   "R Shift"
                 ]
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cockpit Camera Move Down"
@@ -928,7 +928,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num4"
@@ -938,7 +938,7 @@
                   "R Ctrl"
                 ]
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cockpit Camera Move Left"
@@ -949,7 +949,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "WHILE_PRESSED",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "Num6"
@@ -959,7 +959,7 @@
                   "R Shift"
                 ]
               },
-              "longPress": false,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cockpit Camera Move Right"
@@ -978,8 +978,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 6,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, CRSR ACT Button"
@@ -991,8 +991,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 2,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, MFD CRSR Hat - depress UP ↑"
@@ -1004,8 +1004,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 3,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, MFD CRSR Hat - depress DOWN ↓"
@@ -1017,8 +1017,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 4,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, MFD CRSR Hat - depress LEFT ←"
@@ -1030,8 +1030,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 5,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Cyclic Grip, MFD CRSR Hat - depress RIGHT →"
@@ -1074,9 +1074,9 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "WHILE_PRESSED",
-              "longPress": false,
+              "delay": 0,
               "mouseButton": 1,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0
             }
@@ -1088,9 +1088,9 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "activation": "WHILE_PRESSED",
-              "longPress": false,
+              "delay": 0,
               "mouseButton": 2,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0
             }
@@ -1102,9 +1102,9 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
             "data": {
-              "activation": "WHILE_PRESSED",
-              "longPress": false,
+              "delay": 0,
               "mouseButton": 3,
+              "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0
             }
@@ -1114,7 +1114,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
             "data": {
-              "longPress": false,
+              "delay": 0,
               "clicks": 10,
               "invert": false
             }
@@ -1124,7 +1124,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
             "data": {
-              "longPress": false,
+              "delay": 0,
               "clicks": 10,
               "invert": true
             }
@@ -1142,8 +1142,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 35,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, Radio Frq. Hat - depress DOWN ↓ (F-DN)"
@@ -1155,8 +1155,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 37,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, Radio Frq. Hat - depress RIGHT → (R-UP)"
@@ -1168,8 +1168,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 36,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, Radio Frq. Hat - depress LEFT ← (R-DN)"
@@ -1181,8 +1181,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 34,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, Radio Frq. Hat - depress UP ↑ (F-UP)"
@@ -1202,8 +1202,8 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 31,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, SRCH POSITION Hat - depress RIGHT → (RT)"
@@ -1215,8 +1215,8 @@
               "maxAxisValue": -0.5,
               "minAxisValue": -1.0,
               "buttonId": 30,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, SRCH POSITION Hat - depress LEFT ← (LT)"
@@ -1230,8 +1230,8 @@
               "maxAxisValue": -0.5,
               "minAxisValue": -1.0,
               "buttonId": 28,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, SRCH POSITION Hat - depress UP ↑ (EXTEND)"
@@ -1243,8 +1243,8 @@
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
               "buttonId": 29,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, SRCH POSITION Hat - depress DOWN ↓ (RETRACT)"
@@ -1258,8 +1258,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 33,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, SRCH ON/OFF Pushbutton"
@@ -1271,8 +1271,8 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 32,
+              "delay": 0,
               "activation": "WHILE_PRESSED",
-              "longPress": false,
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Thrust Grip, SRCH Switch - WHT/IR"
@@ -1296,14 +1296,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "ON_PRESS",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "F1"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "ON_PRESS",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "F1 Cockpit view"
@@ -1314,7 +1314,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "ON_PRESS",
+              "delay": 1000,
               "keystroke": {
                 "keyCodes": [
                   "H"
@@ -1323,7 +1323,7 @@
                   "R Shift"
                 ]
               },
-              "longPress": true,
+              "activation": "ON_PRESS",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Night Vision Goggles"
@@ -1336,14 +1336,14 @@
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
-                    "activation": "ON_PRESS",
+                    "delay": 0,
                     "keystroke": {
                       "keyCodes": [
                         "2"
                       ],
                       "modifierCodes": []
                     },
-                    "longPress": false,
+                    "activation": "ON_PRESS",
                     "minActivationInterval": 0,
                     "maxActivationInterval": 0,
                     "description": "Occupy Seat 2 (Co-Pilot)"
@@ -1352,14 +1352,14 @@
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
-                    "activation": "ON_PRESS",
+                    "delay": 0,
                     "keystroke": {
                       "keyCodes": [
                         "3"
                       ],
                       "modifierCodes": []
                     },
-                    "longPress": false,
+                    "activation": "ON_PRESS",
                     "minActivationInterval": 0,
                     "maxActivationInterval": 0,
                     "description": "Occupy Seat 3 (Engineer)"
@@ -1368,14 +1368,14 @@
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
-                    "activation": "ON_PRESS",
+                    "delay": 0,
                     "keystroke": {
                       "keyCodes": [
                         "4"
                       ],
                       "modifierCodes": []
                     },
-                    "longPress": false,
+                    "activation": "ON_PRESS",
                     "minActivationInterval": 0,
                     "maxActivationInterval": 0,
                     "description": "Occupy Seat 4 (Port Gunner)"
@@ -1384,14 +1384,14 @@
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
-                    "activation": "ON_PRESS",
+                    "delay": 0,
                     "keystroke": {
                       "keyCodes": [
                         "5"
                       ],
                       "modifierCodes": []
                     },
-                    "longPress": false,
+                    "activation": "ON_PRESS",
                     "minActivationInterval": 0,
                     "maxActivationInterval": 0,
                     "description": "Occupy Seat 5 (Stbd. Gunner)"
@@ -1400,12 +1400,12 @@
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
-                    "activation": "ON_PRESS",
+                    "delay": 0,
                     "keystroke": {
                       "keyCodes": [],
                       "modifierCodes": []
                     },
-                    "longPress": false,
+                    "activation": "ON_PRESS",
                     "minActivationInterval": 0,
                     "maxActivationInterval": 0,
                     "description": "Occupy Seat 6 (Aft Gunner)"
@@ -1414,14 +1414,14 @@
                 {
                   "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
                   "data": {
-                    "activation": "ON_PRESS",
+                    "delay": 0,
                     "keystroke": {
                       "keyCodes": [
                         "1"
                       ],
                       "modifierCodes": []
                     },
-                    "longPress": false,
+                    "activation": "ON_PRESS",
                     "minActivationInterval": 0,
                     "maxActivationInterval": 0,
                     "description": "Occupy Seat 1 (Pilot)"
@@ -1429,7 +1429,7 @@
                 }
               ],
               "activation": "ON_RELEASE",
-              "longPress": false
+              "delay": 0
             }
           }
         ],
@@ -1437,14 +1437,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "ON_PRESS",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "F2"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "ON_PRESS",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "F2 Aircraft view"
@@ -1455,14 +1455,14 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "activation": "ON_PRESS",
+              "delay": 0,
               "keystroke": {
                 "keyCodes": [
                   "F10"
                 ],
                 "modifierCodes": []
               },
-              "longPress": false,
+              "activation": "ON_PRESS",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "F10 Theater map view"
@@ -1474,7 +1474,7 @@
     }
   ],
   "showOverlay": true,
-  "version": "1.7",
+  "version": "1.8",
   "virtualAxisToOverlayAxisMap": {
     "Z": {
       "color": -16777216,
