@@ -498,75 +498,10 @@ PANFOVInert = 1.000
 Set-Variable UninstallRegistryKey -Option Constant -Value 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{66F649A9-0FA2-487E-BC0D-894BD7E89D5E}_is1'
 Set-Variable InstallLocationRegistryValue -Option Constant -Value InstallLocation
 
-Set-Variable SteamRegistryKeys -Option Constant -Value @(
-    "HKLM:\SOFTWARE\WOW6432Node\Valve\Steam",
-    "HKLM:\SOFTWARE\Valve\Steam"
-)
-
-function Get-SteamGamePath() {
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSAvoidUsingEmptyCatchBlock', '', Justification = 'Exceptions are expected when checking multiple registry keys for Steam installation path')]
-    param (
-        [Parameter(Mandatory = $true)]
-        [int]$AppId
-    )
-
-    $steamDir = $null
-    foreach ($steamRegistryKey in $SteamRegistryKeys) {
-        try {
-            $installPath = (Get-ItemProperty -Path $steamRegistryKey -ErrorAction Stop).InstallPath
-            if (Test-Path $installPath) {
-                $steamDir = $installPath
-                break
-            }
-        } catch {}
-    }
-
-    if (-not $steamDir) {
-        return $null
-    }
-
-    $libraryfoldersVdfFile = Join-Path $steamDir steamapps\libraryfolders.vdf
-    if (-not (Test-Path $libraryfoldersVdfFile)) {
-        return $null;
-    }
-
-    $libraryPaths = @(Join-Path $steamDir $steamapps)
-    $libraryfoldersVdfContent = Get-Content $libraryfoldersVdfFile -Raw
-    $paths = [regex]::Matches($libraryfoldersVdfContent, '"path"\s*"([^"]+)"') | Select-Object -Unique
-    foreach ($path in $paths) {
-        $path = $path.Groups[1].Value -replace '\\\\', '\'
-        $potentialLibraryPath = Join-Path $path steamapps
-        if (Test-Path $potentialLibraryPath) {
-            $libraryPaths += $potentialLibraryPath
-        }
-    }
-
-    $appmanifestAcfFile = $null
-    foreach ($libraryPath in $libraryPaths) {
-        $potentialAppmanifestAcfFile = Join-Path $libraryPath "appmanifest_$AppId.acf"
-        if (Test-Path $potentialAppmanifestAcfFile) {
-            $appmanifestAcfFile = $potentialAppmanifestAcfFile
-            break
-        }
-    }
-
-    if (-not $appmanifestAcfFile) {
-        return $null;
-    }
-
-    $installdir = (Select-String -Path $appmanifestAcfFile -Pattern '"installdir"\s*"([^"]+)"').Matches[0].Groups[1].Value
-    $gameDir = Join-Path (Join-Path (Split-Path $appmanifestAcfFile) common) $installdir
-
-    if (Test-Path $gameDir) {
-        return $gameDir;
-    }
-
-    return $null;
-}
-
 $il2Dir = (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore)
 
 if (-not ($il2Dir -and (Test-Path $il2Dir))) {
+    Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\Steam)
     $il2Dir = Get-SteamGamePath 307960
 }
 
