@@ -9,26 +9,14 @@ if (Test-Path -Path 'HKCU:\Software\Wine') {
 
 Unblock-File "$PSScriptRoot\*"
 
-if ($PSVersionTable.PSEdition -eq 'Core') {
-    Add-Type -LiteralPath "$PSScriptRoot\SharpGen.Runtime.dll"
-    Add-Type -LiteralPath "$PSScriptRoot\Vortice.DirectX.dll"
-    Add-Type -LiteralPath "$PSScriptRoot\Vortice.DirectInput.dll"
+Add-Type -LiteralPath "$PSScriptRoot\SharpDX.dll"
+Add-Type -LiteralPath "$PSScriptRoot\SharpDX.DirectInput.dll"
 
-    Set-Variable DirectInput -Option Constant -Value $([Vortice.DirectInput.DInput]::DirectInput8Create())
+Set-Variable DirectInput -Option Constant -Value $(New-Object -TypeName SharpDX.DirectInput.directinput)
 
-    Set-Variable GamepadDeviceType -Option Constant -Value $([Vortice.DirectInput.DeviceType]::Gamepad)
-    Set-Variable KeyboardDeviceType -Option Constant -Value $([Vortice.DirectInput.DeviceType]::Keyboard)
-    Set-Variable GenericGamepadUsageId -Option Constant -Value $([Vortice.Multimedia.UsageId]::GenericGamepad)
-} else {
-    Add-Type -LiteralPath "$PSScriptRoot\SharpDX.dll"
-    Add-Type -LiteralPath "$PSScriptRoot\SharpDX.DirectInput.dll"
-
-    Set-Variable DirectInput -Option Constant -Value $(New-Object -TypeName SharpDX.DirectInput.directinput)
-
-    Set-Variable GamepadDeviceType -Option Constant -Value $([SharpDX.DirectInput.DeviceType]::Gamepad)
-    Set-Variable KeyboardDeviceType -Option Constant -Value $([SharpDX.DirectInput.DeviceType]::Keyboard)
-    Set-Variable GenericGamepadUsageId -Option Constant -Value $([SharpDX.Multimedia.UsageId]::GenericGamepad)
-}
+Set-Variable GamepadDeviceType -Option Constant -Value $([SharpDX.DirectInput.DeviceType]::Gamepad)
+Set-Variable KeyboardDeviceType -Option Constant -Value $([SharpDX.DirectInput.DeviceType]::Keyboard)
+Set-Variable GenericGamepadUsageId -Option Constant -Value $([SharpDX.Multimedia.UsageId]::GenericGamepad)
 
 <#
 .SYNOPSIS
