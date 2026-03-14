@@ -156,14 +156,14 @@
               "delay": 0,
               "keystroke": {
                 "keyCodes": [
-                  "Z"
+                  "H"
                 ],
                 "modifierCodes": []
               },
               "activation": "ON_PRESS",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Autopilot Master Switch"
+              "description": "Toggle Carb Heat"
             }
           }
         ],
@@ -606,27 +606,8 @@
           }
         ]
       },
-      "buttonToActionsMap": {
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "delay": 0,
-              "keystroke": {
-                "keyCodes": [
-                  "H"
-                ],
-                "modifierCodes": []
-              },
-              "activation": "ON_PRESS",
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Toggle Carb Heat"
-            }
-          }
-        ]
-      },
-      "description": "Mixture / Carb Heat"
+      "buttonToActionsMap": {},
+      "description": "Mixture"
     },
     {
       "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
@@ -773,6 +754,24 @@
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9",
       "axisToActionsMap": {},
       "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Z"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Autopilot Master Switch"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -828,7 +827,7 @@
           }
         ]
       },
-      "description": "Trim"
+      "description": "Trim / Autopilot"
     },
     {
       "uuid": "bdcdac57-9f20-4e59-ad7b-47f7bc65f92a",
