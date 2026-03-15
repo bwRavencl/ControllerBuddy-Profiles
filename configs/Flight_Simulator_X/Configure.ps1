@@ -42,6 +42,7 @@ function Get-DeviceGuid {
 
 try {
     $standardXmlFile = Join-Path $fsxDir Controls\Standard.XML
+    $vJoyDeviceName = $vJoyDevice.InstanceName.ToString()
     $vJoyDeviceGuid = Get-DeviceGuid $vJoyDevice
     $standardXmlContent = @"
 <?xml version="1.0" encoding="Windows-1252"?>
@@ -1339,7 +1340,7 @@ try {
         <Name>Xbox 360 Controller SLEW  #1</Name>
     </SimControls.Map>
     <SimControls.Map>
-        <Name>vJoy Device{$vJoyDeviceGuid}</Name>
+        <Name>$vJoyDeviceName{$vJoyDeviceGuid}</Name>
         <Axis>
             <AxName>XAxis</AxName>
             <Index>0</Index>
@@ -1403,7 +1404,7 @@ try {
         </Entry>
     </SimControls.Map>
     <SimControls.Map>
-        <Name>vJoy Device SLEW {$vJoyDeviceGuid}</Name>
+        <Name>$vJoyDeviceName SLEW {$vJoyDeviceGuid}</Name>
         <Axis>
             <AxName>XAxis</AxName>
             <Index>0</Index>
