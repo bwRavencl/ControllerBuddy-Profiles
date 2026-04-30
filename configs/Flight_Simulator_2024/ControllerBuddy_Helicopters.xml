@@ -465,6 +465,7 @@
 		<Action ActionName="KEY_HYDRAULIC_VALVE_CLOSE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HYDRAULIC_VALVE_OPEN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HYDRAULIC_VALVE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_HYDRAULIC_VALVE_SET_EX1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HYDRAULIC_VALVE_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_INC_AUTOBRAKE_CONTROL" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_INC_COWL_FLAPS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -699,6 +700,7 @@
 		<Action ActionName="KEY_PNEUMATICS_VALVE_MODE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_PNEUMATICS_VALVE_OPEN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_PNEUMATICS_VALVE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_PNEUMATICS_VALVE_SET_EX1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_PNEUMATICS_VALVE_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_PRESSURIZATION_CLIMB_RATE_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_PRESSURIZATION_CLIMB_RATE_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1106,6 +1108,17 @@
 		<Action ActionName="KEY_ZULU_MINUTES_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ZULU_YEAR_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
+	<Context ContextName="AIRCRAFT_ACTIVE_INTERACTION">
+		<Action ActionName="KEY_GYRO_AXIS_AILERONS_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GYRO_AXIS_ELEVATOR_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GYRO_AXIS_RUDDER_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GYRO_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GYRO_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MIXTURE_RELATIVE_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_PROPELLER_RELATIVE_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_SPOILERS_RELATIVE_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_THROTTLE_RELATIVE_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+	</Context>
 	<Context ContextName="AIRCRAFT_PC">
 		<Action ActionName="KEY_NIGHT_VISION_DISPLAY_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_NIGHT_VISION_DISPLAY_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1163,7 +1176,7 @@
 		<Action ActionName="KEY_AUTO_HOVER_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AUTO_HOVER_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_COLLECTIVE_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4100">
-			<Axis AxisSensitivy="0" AxisSensitivyMinus="0" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
+			<Axis AxisSensitivy="-25" AxisSensitivyMinus="-25" AxisNeutral="0" AxisDeadZone="0" AxisOutDeadZone="0" AxisResponseRate="-1"/>
 			<Primary>
 				<KEY Information="Joystick L-Axis Z ">1058</KEY>
 			</Primary>
@@ -1230,9 +1243,14 @@
 		<Action ActionName="KEY_ROTOR_LONGITUDINAL_TRIM_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ROTOR_TRIM_RESET" ValueEvent="0.000000" Delay="2.000000" Flag="8194">
 			<Primary>
-				<KEY Information="Joystick Button 6">5</KEY>
+				<KEY Information="Joystick Button 9">8</KEY>
+				<KEY Information="Joystick Button 12">11</KEY>
 			</Primary>
 		</Action>
+	</Context>
+	<Context ContextName="HELICOPTER_ACTIVE_INTERACTION">
+		<Action ActionName="KEY_COLLECTIVE_RELATIVE_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_HELICOPTER_THROTTLE_RELATIVE_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
 	<Context ContextName="INSTRUMENTS_CONTROL">
 		<Action ActionName="KEY_ADD_FUEL_QUANTITY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1280,6 +1298,7 @@
 		<Action ActionName="KEY_COM3_STORED_FREQUENCY_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COM3_VOLUME_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COPILOT_TRANSMITTER_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_COVER_GENERIC_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COVER_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COVER_SET_FLAG" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COWLFLAP1_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1419,14 +1438,6 @@
 				<KEY Information="Joystick L-Axis Y ">1042</KEY>
 			</Primary>
 		</Action>
-		<Action ActionName="KEY_THROTTLE_RELATIVE_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-	</Context>
-	<Context ContextName="SURFACES_GYRO">
-		<Action ActionName="KEY_GYRO_AXIS_AILERONS_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_GYRO_AXIS_ELEVATOR_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_GYRO_AXIS_RUDDER_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_GYRO_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_GYRO_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
 	<Context ContextName="SURFACES_HELICOPTER">
 		<Action ActionName="KEY_AXIS_CYCLIC_LATERAL_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
