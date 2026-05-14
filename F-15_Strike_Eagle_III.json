@@ -1531,7 +1531,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "delay": 0,
+              "delay": 1000,
               "keystroke": {
                 "keyCodes": [
                   "F8"
@@ -1542,6 +1542,22 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Padlock View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "F4"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_RELEASE",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Pilot View"
             }
           }
         ]
