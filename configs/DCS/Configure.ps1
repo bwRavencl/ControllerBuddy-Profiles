@@ -89,7 +89,7 @@ function Copy-DiffLuaFile {
 
         try {
             New-Item $destinationDir -ItemType 'directory' -Force | Out-Null
-            Copy-Item $diffLuaFile.FullName $destinationFile -errorAction stop
+            Copy-Item $diffLuaFile.FullName $destinationFile -ErrorAction Stop
             Write-Output "Copied '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"
         } catch {
             Write-Output "Error: Could not copy '$($diffLuaFile.Directory.Name)' input config to: $destinationFile"

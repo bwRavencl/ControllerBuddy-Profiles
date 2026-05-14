@@ -20759,7 +20759,7 @@ function Copy-FullKeyFile {
     try {
         $sourceFile = Join-Path $bmsConfigDir "$BMSFullKeyBasename$Suffix$KeyFileExtension"
         $destinationFile = Join-Path $bmsConfigDir "$BMSAutoKeyBasename$Suffix$KeyFileExtension"
-        Copy-Item "$sourceFile" $destinationFile -errorAction stop
+        Copy-Item "$sourceFile" $destinationFile -ErrorAction Stop
         Write-Output "Copied '$sourceFile' to: $destinationFile"
     } catch {
         Write-Output "Error: Could not copy '$sourceFile' to: $destinationFile"
