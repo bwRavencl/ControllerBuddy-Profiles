@@ -66,6 +66,27 @@ if (-not $isWine) {
 $configDir = Join-Path $dcsUserDir Config
 $inputDir = Join-Path $configDir Input
 
+function Remove-DeviceCategory {
+    param (
+        [Parameter(Mandatory)]
+        [string]$LayerPath,
+        [Parameter(Mandatory)]
+        [string]$DeviceCategory
+    )
+
+    $categoryPath = Join-Path $LayerPath $DeviceCategory
+    if (Test-Path $categoryPath -PathType Container) {
+        $layerDir = Get-Item $LayerPath
+        try {
+            Remove-Item $categoryPath -Recurse -Force -ErrorAction Stop
+            Write-Output "Removed '$($layerDir.Name)\$DeviceCategory' directory: $categoryPath"
+        } catch {
+            Write-Output "Error: Could not remove '$($layerDir.Name)\$DeviceCategory' directory: $categoryPath"
+            Exit 1
+        }
+    }
+}
+
 function Copy-DiffLuaFile {
     param (
         [Parameter(Mandatory)]
@@ -84,7 +105,12 @@ function Copy-DiffLuaFile {
     }
 
     foreach ($diffLuaFile in $diffLuaFiles) {
-        $destinationDir = Join-Path $inputDir "$($diffLuaFile.Directory.Name)\$DeviceCategory"
+        $layerDir = Join-Path $inputDir "$($diffLuaFile.Directory.Name)"
+
+        Remove-DeviceCategory $layerDir 'keyboard'
+        Remove-DeviceCategory $layerDir 'mouse'
+
+        $destinationDir = Join-Path $layerDir $DeviceCategory
         $destinationFile = Join-Path $destinationDir $Target
 
         try {
@@ -147,6 +173,23 @@ if ($isWine) {
         Copy-DiffLuaFile -Source 'vJoy Device.diff.lua' -Target "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice $guidPart0)}.diff.lua" -DeviceCategory 'joystick'
     }
 }
+
+function Remove-DeviceCategories {
+    param (
+        [Parameter(Mandatory)]
+        [string[]]$Layers
+    )
+
+    foreach ($layer in $Layers) {
+        $layerPath = Join-Path $inputDir $layer
+
+        Remove-DeviceCategory -LayerPath $layerPath -DeviceCategory 'joystick'
+        Remove-DeviceCategory -LayerPath $layerPath -DeviceCategory 'keyboard'
+        Remove-DeviceCategory -LayerPath $layerPath -DeviceCategory 'mouse'
+    }
+}
+
+Remove-DeviceCategories 'CameraFree', 'CameraObject', 'CameraRoom', 'CommandMenu', 'Default', 'NS430', 'UiLayer', 'VoiceChat'
 
 Copy-DiffLuaFile -Source 'Keyboard.diff.lua' -Target 'Keyboard.diff.lua' -DeviceCategory 'keyboard'
 
