@@ -1,7 +1,7 @@
 Set-Variable -Name WineHidJoystickGuidPart0 -Option Constant -Scope Script -Value 0x9E573EDB
 Export-ModuleMember -Variable WineHidJoystickGuidPart0
 
-if (Test-Path -Path 'HKCU:\Software\Wine') {
+if ((Test-Path 'HKCU:\Software\Wine') -and (Test-Path 'HKLM:\System\CurrentControlSet\Services\winebus')) {
     Set-Variable VjoyProductGuid -Option Constant -Value '56781234-0000-0000-0000-504944564944'
 } else {
     Set-Variable VjoyProductGuid -Option Constant -Value 'bead1234-0000-0000-0000-504944564944'
