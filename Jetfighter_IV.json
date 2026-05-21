@@ -485,6 +485,85 @@
         ]
       },
       "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "data": {
+              "actions": [
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "delay": 0,
+                    "keystroke": {
+                      "keyCodes": [
+                        "F6"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "activation": "ON_PRESS",
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "MFD Main Radar"
+                  }
+                },
+                {
+                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+                  "data": {
+                    "delay": 0,
+                    "keystroke": {
+                      "keyCodes": [
+                        "F8"
+                      ],
+                      "modifierCodes": []
+                    },
+                    "activation": "ON_PRESS",
+                    "minActivationInterval": 0,
+                    "maxActivationInterval": 0,
+                    "description": "MFD Stores Display"
+                  }
+                }
+              ],
+              "activation": "ON_PRESS",
+              "delay": 0
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "F7"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "MFD Waypoints/Ground Targets, Airborne Targets"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "F5"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "MFD Flight Info, Landing Info"
+            }
+          }
+        ],
         "7": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -522,7 +601,7 @@
           }
         ]
       },
-      "description": "Look",
+      "description": "Look / MFD",
       "uuid": "e317e3ca-172a-499f-aa94-e3eb8380cf3e"
     },
     {
@@ -911,44 +990,19 @@
         ],
         "12": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToCycleAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "actions": [
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "delay": 0,
-                    "keystroke": {
-                      "keyCodes": [
-                        "F6"
-                      ],
-                      "modifierCodes": []
-                    },
-                    "activation": "ON_PRESS",
-                    "minActivationInterval": 0,
-                    "maxActivationInterval": 0,
-                    "description": "MFD Main Radar"
-                  }
-                },
-                {
-                  "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-                  "data": {
-                    "delay": 0,
-                    "keystroke": {
-                      "keyCodes": [
-                        "F8"
-                      ],
-                      "modifierCodes": []
-                    },
-                    "activation": "ON_PRESS",
-                    "minActivationInterval": 0,
-                    "maxActivationInterval": 0,
-                    "description": "MFD Stores Display"
-                  }
-                }
-              ],
-              "activation": "ON_PRESS",
-              "delay": 0
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "F9"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "View Tactical"
             }
           }
         ],
@@ -959,14 +1013,14 @@
               "delay": 0,
               "keystroke": {
                 "keyCodes": [
-                  "F5"
+                  "F12"
                 ],
                 "modifierCodes": []
               },
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "MFD Flight Info, Landing Info"
+              "description": "View Remote Control"
             }
           }
         ],
@@ -977,14 +1031,14 @@
               "delay": 0,
               "keystroke": {
                 "keyCodes": [
-                  "F7"
+                  "M"
                 ],
                 "modifierCodes": []
               },
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "MFD Waypoints/Ground Targets, Airborne Targets"
+              "description": "Map"
             }
           }
         ]
