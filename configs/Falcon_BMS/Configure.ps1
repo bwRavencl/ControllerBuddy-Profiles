@@ -20777,7 +20777,7 @@ if (Test-Path $AlternativeLauncherUserConfigFile -PathType Leaf) {
         $userConfigXml.Load($AlternativeLauncherUserConfigFile)
 
         function Set-UserConfigSetting {
-            [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '', Justification = 'False positive as function itself does not change system state')]
+            [CmdletBinding(SupportsShouldProcess)]
             [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSReviewUnusedParameter', 'Name', Justification = 'False positive as rule does not scan child scopes')]
             [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSReviewUnusedParameter', 'Value', Justification = 'False positive as rule does not scan child scopes')]
             param (
@@ -20786,8 +20786,12 @@ if (Test-Path $AlternativeLauncherUserConfigFile -PathType Leaf) {
                 [Parameter(Mandatory)]
                 [string]$Value
             )
-
-            $userConfigXml.configuration.userSettings.'FalconBMS.Launcher.Properties.Settings'.setting | Where-Object { ($_.name -eq $Name) -and ($_.value -ne $Value) } | ForEach-Object { $_.value = $Value ; return $true }
+            $userConfigXml.configuration.userSettings.'FalconBMS.Launcher.Properties.Settings'.setting | Where-Object { ($_.name -eq $Name) -and ($_.value -ne $Value) } | ForEach-Object {
+                if ($PSCmdlet.ShouldProcess($Name, "Set value to '$Value'")) {
+                    $_.value = $Value
+                }
+                $true
+            }
         }
 
         if ((Set-UserConfigSetting -Name 'NoOverride' -Value 'False') -bor (Set-UserConfigSetting -Name 'Misc_ExMouseLook' -Value 'True')) {

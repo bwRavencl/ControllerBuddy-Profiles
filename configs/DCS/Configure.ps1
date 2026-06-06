@@ -67,6 +67,7 @@ $configDir = Join-Path $dcsUserDir Config
 $inputDir = Join-Path $configDir Input
 
 function Remove-DeviceCategory {
+    [CmdletBinding(SupportsShouldProcess)]
     param (
         [Parameter(Mandatory)]
         [string]$LayerPath,
@@ -77,12 +78,14 @@ function Remove-DeviceCategory {
     $categoryPath = Join-Path $LayerPath $DeviceCategory
     if (Test-Path $categoryPath -PathType Container) {
         $layerDir = Get-Item $LayerPath
-        try {
-            Remove-Item $categoryPath -Recurse -Force -ErrorAction Stop
-            Write-Output "Removed '$($layerDir.Name)\$DeviceCategory' directory: $categoryPath"
-        } catch {
-            Write-Output "Error: Could not remove '$($layerDir.Name)\$DeviceCategory' directory: $categoryPath"
-            Exit 1
+        if ($PSCmdlet.ShouldProcess($categoryPath, "Remove directory")) {
+            try {
+                Remove-Item $categoryPath -Recurse -Force -ErrorAction Stop
+                Write-Output "Removed '$($layerDir.Name)\$DeviceCategory' directory: $categoryPath"
+            } catch {
+                Write-Output "Error: Could not remove '$($layerDir.Name)\$DeviceCategory' directory: $categoryPath"
+                Exit 1
+            }
         }
     }
 }
@@ -174,22 +177,20 @@ if ($isWine) {
     }
 }
 
-function Remove-DeviceCategories {
+function Clear-Layer {
     param (
-        [Parameter(Mandatory)]
-        [string[]]$Layers
+        [Parameter(Mandatory, ValueFromPipeline)]
+        [string]$Layer
     )
-
-    foreach ($layer in $Layers) {
-        $layerPath = Join-Path $inputDir $layer
-
+    process {
+        $layerPath = Join-Path $inputDir $Layer
         Remove-DeviceCategory -LayerPath $layerPath -DeviceCategory 'joystick'
         Remove-DeviceCategory -LayerPath $layerPath -DeviceCategory 'keyboard'
         Remove-DeviceCategory -LayerPath $layerPath -DeviceCategory 'mouse'
     }
 }
 
-Remove-DeviceCategories 'CameraFree', 'CameraObject', 'CameraRoom', 'CommandMenu', 'Default', 'NS430', 'UiLayer', 'VoiceChat'
+'CameraFree', 'CameraObject', 'CameraRoom', 'CommandMenu', 'Default', 'NS430', 'UiLayer', 'VoiceChat' | Clear-Layer
 
 Copy-DiffLuaFile -Source 'Keyboard.diff.lua' -Target 'Keyboard.diff.lua' -DeviceCategory 'keyboard'
 

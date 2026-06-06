@@ -285,7 +285,7 @@ if (-not (Test-Path $confIniFile -PathType Leaf)) {
 $confIniContent = Get-Content -Raw $confIniFile
 
 function Update-SectionContent {
-    [Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUseShouldProcessForStateChangingFunctions', '', Justification = 'False positive as function itself does not change system state')]
+    [CmdletBinding(SupportsShouldProcess)]
     param(
         [Parameter(Mandatory)]
         [AllowEmptyString()]
@@ -306,8 +306,17 @@ function Update-SectionContent {
         if ($AddEmptyLineBetweenSections) {
             $replacement += "`r`n"
         }
-        $updatedContent = [regex]::Replace($FileContent, $pattern, $replacement)
+
+        if ($PSCmdlet.ShouldProcess($SectionTitle, "Update existing section")) {
+            $updatedContent = [regex]::Replace($FileContent, $pattern, $replacement)
+        } else {
+            return $FileContent
+        }
     } else {
+        if (-not $PSCmdlet.ShouldProcess($SectionTitle, "Add new section")) {
+            return $FileContent
+        }
+
         if ($FileContent -notmatch '\S') {
             $updatedContent = "[$SectionTitle]`r`n$SectionContent`r`n"
         } else {
