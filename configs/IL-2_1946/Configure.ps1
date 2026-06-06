@@ -319,7 +319,7 @@ function Update-SectionContent {
         }
     }
 
-    return $updatedContent.TrimEnd()
+    $updatedContent.TrimEnd()
 }
 
 $confIniContent = Update-SectionContent -FileContent $confIniContent -SectionTitle 'rts' -SectionContent $ConfIniRtsSectionContent -AddEmptyLineBetweenSections $true
