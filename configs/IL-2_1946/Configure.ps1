@@ -286,6 +286,7 @@ $confIniContent = Get-Content -Raw $confIniFile
 
 function Update-SectionContent {
     [CmdletBinding(SupportsShouldProcess)]
+    [OutputType([string])]
     param(
         [Parameter(Mandatory)]
         [AllowEmptyString()]
