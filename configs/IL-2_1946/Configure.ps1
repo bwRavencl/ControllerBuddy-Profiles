@@ -242,13 +242,13 @@ Pause=timeSpeedPause
 '@
 
 Set-Variable SettingsIniHotKeyMoveSectionContent -Option Constant -Value @'
-JoystickDevice0 AXE_RZ=rudder
-JoystickDevice0 AXE_Y=elevator
-JoystickDevice0 AXE_X=aileron
 AXE_RX JoystickDevice0=brakes_left
 AXE_RY JoystickDevice0=brakes_right
+AXE_RZ JoystickDevice0=rudder
 AXE_U JoystickDevice0=-pitch
 AXE_V JoystickDevice0=-mixture
+AXE_X JoystickDevice0=aileron
+AXE_Y JoystickDevice0=elevator
 AXE_Z JoystickDevice0=-power
 '@
 
