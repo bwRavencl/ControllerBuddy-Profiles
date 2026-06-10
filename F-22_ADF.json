@@ -49,6 +49,13 @@
         "toggle": true
       }
     ],
+    "9": [
+      {
+        "delay": 0,
+        "modeUuid": "ce414e1f-0932-46e3-849a-73f3b9331f94",
+        "toggle": false
+      }
+    ],
     "10": [
       {
         "delay": 0,
@@ -235,24 +242,6 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Reset View"
-            }
-          }
-        ],
-        "9": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "delay": 0,
-              "keystroke": {
-                "keyCodes": [
-                  "`"
-                ],
-                "modifierCodes": []
-              },
-              "activation": "WHILE_PRESSED",
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Thrust Vectoring"
             }
           }
         ],
@@ -479,6 +468,108 @@
       },
       "description": "Countermeasure",
       "uuid": "bbc3fbae-4cf1-4f22-9721-5dd12a5c693c"
+    },
+    {
+      "axisToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "`"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Thrust Vectoring"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Z"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Padlock Cycle"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Z"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 50,
+              "description": "Padlock Cycle Group"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "M"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Add Padlocked Target to WM"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "S"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Addd Padlocked Target"
+            }
+          }
+        ]
+      },
+      "description": "Padlock / Vectoring",
+      "uuid": "ce414e1f-0932-46e3-849a-73f3b9331f94"
     },
     {
       "axisToActionsMap": {},
