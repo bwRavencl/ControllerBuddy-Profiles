@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.1,
 						},
 						["deadzone"] = 0.12,
 						["hardwareDetent"] = false,
@@ -171,7 +171,7 @@ local diff = {
 					["key"] = "JOY_BTN15",
 				},
 			},
-			["name"] = "Trigger - Half Action (2-stage trigger)",
+			["name"] = "Flight Stick Trigger (Gun, Missiles) - Half Action (2-stage trigger)",
 		},
 		["d3001pnilu3001cd27vd1vpnilvu0.5"] = {
 			["added"] = {
@@ -179,7 +179,7 @@ local diff = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Trigger - Full Action (2-stage trigger)",
+			["name"] = "Flight Stick Trigger (Gun, Missiles) - Full Action (2-stage trigger)",
 		},
 		["d3002pnilu3002cd27vd1vpnilvu0"] = {
 			["added"] = {
