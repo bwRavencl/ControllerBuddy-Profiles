@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout ControllerBuddy-Profiles
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
           path: ControllerBuddy-Profiles
           fetch-depth: 0
           persist-credentials: false
       - name: Checkout ControllerBuddy
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
           repository: bwRavencl/ControllerBuddy
           path: ControllerBuddy
@@ -28,19 +28,19 @@ jobs:
           persist-credentials: false
           submodules: true
       - name: Checkout ControllerBuddy-Pages
-        uses: actions/checkout@v7
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
           repository: bwRavencl/ControllerBuddy-Pages
           path: ControllerBuddy-Pages
           fetch-depth: 0
           persist-credentials: false
       - name: Install JDK
-        uses: actions/setup-java@v5
+        uses: actions/setup-java@1bcf9fb12cf4aa7d266a90ae39939e61372fe520 # v5
         with:
           distribution: ${{ env.JAVA_DISTRIBUTION }}
           java-version: ${{ env.JAVA_VERSION }}
       - name: Validate Gradle Wrapper
-        uses: gradle/actions/wrapper-validation@v6
+        uses: gradle/actions/wrapper-validation@3f131e8634966bd73d06cc69884922b02e6faf92 # v6
       - name: Install ControllerBuddy
         working-directory: ControllerBuddy
         run: ./gradlew installDist -x check
@@ -66,7 +66,7 @@ jobs:
           git add profiles
           git commit -m 'chore: update profile visualizations' || echo 'Nothing to update'
       - name: Push Changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@881a6320fdb16eb5318c5054f31c218aec2b324c # master @ 2026-07-03
         with:
           repository: bwRavencl/ControllerBuddy-Pages
           directory: ControllerBuddy-Pages
