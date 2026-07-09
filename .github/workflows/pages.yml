@@ -55,7 +55,7 @@ jobs:
           done
           for file in ControllerBuddy-Profiles/*.json
           do
-            xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs -profile "$file" -export "ControllerBuddy-Pages/profiles/$(basename "$file" .json).html"
+            xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs -profile "$file" -export "ControllerBuddy-Pages/profiles/$(basename "$file" .json).html" || exit 1
           done
           xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -quit
       - name: Commit Files
