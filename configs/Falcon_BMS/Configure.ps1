@@ -20692,14 +20692,15 @@ if (-not $isWine) {
 function Write-SetupFile {
     param (
         [Parameter(Mandatory)]
-        [string]$Name,
-        [Parameter(Mandatory)]
-        [string]$InstanceGuid,
+        [object]$Device,
         [Parameter(Mandatory)]
         [string]$Content
     )
 
-    $setupFile = Join-Path $bmsConfigDir "Setup.v100.$Name {$($InstanceGuid.ToUpper())}.xml"
+    $productName = $Device.InstanceName -replace '[^A-Za-z0-9\~\`\[\]\{\}\-_\=\''\x20]', ''
+
+    $productFileName = $productName -replace '/', '-'
+    $setupFile = "$bmsConfigDir\Setup.v100.$productFileName {$($Device.InstanceGuid.ToString().ToUpper())}.xml"
 
     try {
         Set-Content -Path $setupFile -Value $Content -NoNewline
@@ -20710,40 +20711,10 @@ function Write-SetupFile {
     }
 }
 
-function Write-SetupFileForDevice {
-    param (
-        [Parameter(Mandatory)]
-        [object]$Device,
-        [Parameter(Mandatory)]
-        [string]$Content
-    )
-
-    $productName = $Device.InstanceName -replace '[^A-Za-z0-9\~\`\[\]\{\}\-_\=\''\x20]', ''
-    $productFileName = $productName -replace '/', '-'
-    $instanceGuid = $Device.InstanceGuid.ToString()
-
-    Write-SetupFile -Name $productFileName -InstanceGuid $instanceGuid -Content $Content
-
-    if ($isWine -and ($Device -eq $vJoyDevice)) {
-        $currentGuidParts = $instanceGuid -split '-'
-        $currentGuidPart0 = [Convert]::ToUint32($currentGuidParts[0], 16)
-        $currentOffset = $WineHidJoystickGuidPart0 -bxor $currentGuidPart0
-        $startOffset = [Math]::Max($currentOffset - 5, 0)
-        $endOffset = $currentOffset + 5
-
-        $startOffset..$endOffset | Where-Object { $_ -ne $currentOffset } | ForEach-Object {
-            $guidPart0 = "{0:X8}" -f ($WineHidJoystickGuidPart0 -bxor $_)
-            $modifiedInstanceGuid = (@($guidPart0) + ($currentGuidParts | Select-Object -Skip 1)) -join '-'
-
-            Write-SetupFile -Name $productFileName -InstanceGuid $modifiedInstanceGuid -Content $Content
-        }
-    }
-}
-
-Write-SetupFileForDevice $vJoyDevice $VjoySetupFileContent
+Write-SetupFile $vJoyDevice $VjoySetupFileContent
 
 $gamepadDevices | ForEach-Object {
-    Write-SetupFileForDevice $_ $GamepadSetupFileContent
+    Write-SetupFile $_ $GamepadSetupFileContent
 }
 
 function Copy-FullKeyFile {

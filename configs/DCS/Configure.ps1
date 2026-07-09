@@ -141,16 +141,10 @@ function Split-InstanceGuid {
 function Get-DcsInstanceGuid {
     param (
         [Parameter(Mandatory)]
-        [object]$Device,
-        [Parameter(Mandatory = $false)]
-        [string]$GuidPart0
+        [object]$Device
     )
 
     $guidParts = Split-InstanceGuid $Device
-
-    if ($GuidPart0) {
-        $guidParts[0] = $GuidPart0
-    }
 
     for ($i=0; $i -lt $guidParts.Count; $i++) {
         if ( $i -eq 2) {
@@ -164,18 +158,6 @@ function Get-DcsInstanceGuid {
 }
 
 Copy-DiffLuaFile -Source 'vJoy Device.diff.lua' -Target "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice)}.diff.lua" -DeviceCategory 'joystick'
-
-if ($isWine) {
-    $currentGuidPart0 = [Convert]::ToUint32((Split-InstanceGuid $vJoyDevice)[0], 16)
-    $currentOffset = $WineHidJoystickGuidPart0 -bxor $currentGuidPart0
-    $startOffset = [Math]::Max($currentOffset - 5, 0)
-    $endOffset = $currentOffset + 5
-
-    $startOffset..$endOffset | Where-Object { $_ -ne $currentOffset } | ForEach-Object {
-        $guidPart0 = "{0:X8}" -f ($WineHidJoystickGuidPart0 -bxor $_)
-        Copy-DiffLuaFile -Source 'vJoy Device.diff.lua' -Target "$($vJoyDevice.InstanceName) {$(Get-DcsInstanceGuid $vJoyDevice $guidPart0)}.diff.lua" -DeviceCategory 'joystick'
-    }
-}
 
 function Clear-Layer {
     param (
