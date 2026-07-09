@@ -66,7 +66,7 @@ jobs:
           git add profiles
           git commit -m 'chore: update profile visualizations' || echo 'Nothing to update'
       - name: Push Changes
-        uses: ad-m/github-push-action@881a6320fdb16eb5318c5054f31c218aec2b324c # master @ 2026-07-03
+        uses: ad-m/github-push-action@881a6320fdb16eb5318c5054f31c218aec2b324c # v1
         with:
           repository: bwRavencl/ControllerBuddy-Pages
           directory: ControllerBuddy-Pages
