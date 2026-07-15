@@ -16,7 +16,8 @@ Before a profile can be used, it is necessary to configure the application's inp
 
 ### ⚙️ Configuring Applications
 
-Each supported application has its own subdirectory within the `configs` directory. Inside each subdirectory, you will find the necessary files to configure the application for use with ControllerBuddy.
+Each supported application has its own subdirectory within the `configs` directory.
+Inside each subdirectory, you will find the necessary files to configure the application for use with ControllerBuddy.
 
 Each subdirectory can contain one of the following:
 - A PowerShell script (`Configure.ps1`)
@@ -47,11 +48,13 @@ A `Configure.ps1` file is a PowerShell script that automatically configures the 
 
 #### 📄 Configuration Files
 
-The provided configuration files typically contain only part(s) of the application's entire configuration, such as the input settings. These parts need to be manually added to the application's actual configuration file(s).
+The provided configuration files typically contain only part(s) of the application's entire configuration, such as the input settings.
+These parts need to be manually added to the application's actual configuration file(s).
 
 #### 🖼️ Screenshots
 
-The screenshots illustrate the necessary steps for manually configuring the application, such as where to find and modify the input settings. They should be self-explanatory.
+The screenshots illustrate the necessary steps for manually configuring the application, such as where to find and modify the input settings.
+They should be self-explanatory.
 
 ### 📺 Usage with DOSBox
 
