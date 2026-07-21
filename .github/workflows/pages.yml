@@ -4,11 +4,6 @@ on:
       - master
   workflow_dispatch:
 
-env:
-  JAVA_DISTRIBUTION: zulu
-  JAVA_VERSION: 26.0.1+8
-  GRADLE_OPTS: -Dorg.gradle.daemon=false
-
 jobs:
   pages:
     runs-on: ubuntu-latest
@@ -34,30 +29,27 @@ jobs:
           path: ControllerBuddy-Pages
           fetch-depth: 0
           persist-credentials: false
-      - name: Install JDK
-        uses: actions/setup-java@0f481fcb613427c0f801b606911222b5b6f3083a # v5
-        with:
-          distribution: ${{ env.JAVA_DISTRIBUTION }}
-          java-version: ${{ env.JAVA_VERSION }}
-      - name: Validate Gradle Wrapper
-        uses: gradle/actions/wrapper-validation@3f131e8634966bd73d06cc69884922b02e6faf92 # v6
       - name: Install ControllerBuddy
-        working-directory: ControllerBuddy
-        run: ./gradlew installDist -x check
+        uses: bwRavencl/ControllerBuddy/.github/actions/run-gradle-task@master
+        with:
+          task: installDist -x check
+          working-directory: ControllerBuddy
+          upload-artifacts: false
       - name: Update Visualizations
         timeout-minutes: 3
         run: |
+          export PATH="${{ github.workspace }}/ControllerBuddy/build/install/ControllerBuddy/bin:$PATH"
           rm -f ControllerBuddy-Pages/profiles/*.html
-          xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs &
+          xvfb-run -a -s '-screen 0 1024x768x24' ControllerBuddy -skipMessageDialogs &
           while [ ! -f /tmp/ControllerBuddy.lock ]
           do
             sleep 1
           done
           for file in ControllerBuddy-Profiles/*.json
           do
-            xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -skipMessageDialogs -profile "$file" -export "ControllerBuddy-Pages/profiles/$(basename "$file" .json).html" || exit 1
+            xvfb-run -a -s '-screen 0 1024x768x24' ControllerBuddy -skipMessageDialogs -profile "$file" -export "ControllerBuddy-Pages/profiles/$(basename "$file" .json).html" || exit 1
           done
-          xvfb-run -a -s '-screen 0 1024x768x24' ./ControllerBuddy/build/install/ControllerBuddy/bin/ControllerBuddy -quit
+          xvfb-run -a -s '-screen 0 1024x768x24' ControllerBuddy -quit
       - name: Commit Files
         working-directory: ControllerBuddy-Pages
         run: |
