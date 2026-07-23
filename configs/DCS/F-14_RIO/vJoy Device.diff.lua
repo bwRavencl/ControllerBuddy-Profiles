@@ -19,7 +19,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Horizontal View",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -40,7 +40,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Vertical View",
+			["name"] = "Absolute Camera Vertical View",
 		},
 	},
 }

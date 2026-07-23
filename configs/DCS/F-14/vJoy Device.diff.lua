@@ -73,7 +73,7 @@ local diff = {
 					["key"] = "JOY_RX",
 				},
 			},
-			["name"] = "Horizontal View",
+			["name"] = "Absolute Camera Horizontal View",
 		},
 		["a2011cdnil"] = {
 			["added"] = {
@@ -94,7 +94,7 @@ local diff = {
 					["key"] = "JOY_RY",
 				},
 			},
-			["name"] = "Vertical View",
+			["name"] = "Absolute Camera Vertical View",
 		},
 		["a2112cdnil"] = {
 			["added"] = {
@@ -189,7 +189,7 @@ local diff = {
 		["d3086pnilu3086cd22vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN27",
+					["key"] = "JOY_BTN6",
 				},
 			},
 			["name"] = "Autopilot Emergency Disconnect Paddle",
@@ -213,7 +213,7 @@ local diff = {
 		["d3126pnilu3126cd57vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN25",
+					["key"] = "JOY_BTN4",
 				},
 			},
 			["name"] = "CAGE-SEAM button",
@@ -221,7 +221,7 @@ local diff = {
 		["d3127pnilu3127cd57vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN26",
+					["key"] = "JOY_BTN5",
 				},
 			},
 			["name"] = "PLM button",
@@ -237,7 +237,7 @@ local diff = {
 		["d3144pnilu3144cd55vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN23",
+					["key"] = "JOY_BTN13",
 				},
 			},
 			["name"] = "Target designate fwd / PAL",
@@ -261,7 +261,7 @@ local diff = {
 		["d3718pnilu3718cd2vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN30",
+					["key"] = "JOY_BTN9",
 				},
 			},
 			["name"] = "Mic Button ICS - SRS or VoIP Only / No Menu",
@@ -269,7 +269,7 @@ local diff = {
 		["d3719pnilu3719cd2vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN28",
+					["key"] = "JOY_BTN7",
 				},
 			},
 			["name"] = "Mic Button UHF1 (ARC-159) - SRS or VoIP Only / No Menu",
@@ -277,63 +277,15 @@ local diff = {
 		["d3720pnilu3720cd2vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN29",
+					["key"] = "JOY_BTN8",
 				},
 			},
 			["name"] = "Mic Button UHF2 (ARC-182) - SRS or VoIP Only / No Menu",
 		},
-		["dnilp2019u2019cdnilvdnilvp-1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "Trim Pitch Down",
-		},
-		["dnilp2019u2019cdnilvdnilvp1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Trim Pitch Up",
-		},
-		["dnilp2020u2020cdnilvdnilvp-1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "Trim Roll Left Wing Down",
-		},
-		["dnilp2020u2020cdnilvdnilvp1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN7",
-				},
-			},
-			["name"] = "Trim Roll Right Wing Down",
-		},
-		["dnilp2021u2021cdnilvdnilvp-1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN8",
-				},
-			},
-			["name"] = "Trim Rudder Left",
-		},
-		["dnilp2021u2021cdnilvdnilvp1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN9",
-				},
-			},
-			["name"] = "Trim Rudder Right",
-		},
 		["dnilp3083u3083cd57vdnilvp-1vu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN24",
+					["key"] = "JOY_BTN23",
 				},
 			},
 			["name"] = "DLC Thumbwheel Aft",

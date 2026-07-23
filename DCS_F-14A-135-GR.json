@@ -318,7 +318,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "buttonId": 24,
+              "buttonId": 3,
               "delay": 0,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -438,7 +438,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "buttonId": 23,
+              "buttonId": 22,
               "delay": 0,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -458,7 +458,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "buttonId": 25,
+              "buttonId": 4,
               "delay": 0,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -497,7 +497,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "buttonId": 22,
+              "buttonId": 12,
               "delay": 0,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -510,7 +510,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "buttonId": 24,
+              "buttonId": 3,
               "delay": 0,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -659,7 +659,7 @@
               "minValue": -1.0,
               "virtualAxis": "RX",
               "invert": false,
-              "description": "Horizontal View"
+              "description": "Absolute Camera Horizontal View"
             }
           }
         ],
@@ -676,7 +676,7 @@
               "minValue": -1.0,
               "virtualAxis": "RY",
               "invert": false,
-              "description": "Vertical View"
+              "description": "Absolute Camera Vertical View"
             }
           }
         ],
@@ -706,7 +706,7 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "buttonId": 27,
+              "buttonId": 6,
               "delay": 1000,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -741,7 +741,7 @@
             "data": {
               "maxAxisValue": 1.0,
               "minAxisValue": 0.5,
-              "buttonId": 28,
+              "buttonId": 7,
               "delay": 1000,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -773,6 +773,24 @@
             }
           }
         ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "V"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Jester Context Action (short, hold, double click)"
+            }
+          }
+        ],
         "3": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -798,7 +816,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "buttonId": 29,
+              "buttonId": 8,
               "delay": 1000,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -1064,10 +1082,17 @@
       "buttonToActionsMap": {
         "1": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "buttonId": 8,
               "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "X"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
@@ -1077,10 +1102,17 @@
         ],
         "2": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "buttonId": 7,
               "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Z"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
@@ -1092,7 +1124,7 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
-              "buttonId": 26,
+              "buttonId": 5,
               "delay": 0,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
@@ -1121,10 +1153,17 @@
         ],
         "11": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "buttonId": 3,
               "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  ";"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
@@ -1134,10 +1173,17 @@
         ],
         "12": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "buttonId": 4,
               "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "."
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
@@ -1147,27 +1193,41 @@
         ],
         "13": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "buttonId": 5,
               "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  ","
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Trim Roll Left Wing Down "
+              "description": "Trim Roll Left Wing Down"
             }
           }
         ],
         "14": [
           {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
-              "buttonId": 6,
               "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "/"
+                ],
+                "modifierCodes": [
+                  "R Ctrl"
+                ]
+              },
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
-              "description": "Trim Roll Right Wing Down "
+              "description": "Trim Roll Right Wing Down"
             }
           }
         ]
