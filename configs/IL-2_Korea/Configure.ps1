@@ -1269,7 +1269,11 @@ Write-Output ''
 
 try {
     $startupCfg = Join-Path $il2DataDir startup.cfg
-    $startupCfgContent = (Get-Content -Raw $startupCfg) ?? ''
+    $startupCfgContent = ''
+    if (Test-Path $startupCfg) {
+        $content = Get-Content -Raw $startupCfg
+        if ($null -ne $content) { $startupCfgContent = $content }
+    }
 
     foreach ($patch in $StartupCfgSectionPatches) {
         $sectionPattern = "(?ms)^\[KEY = $($patch.Section)\].*?^\[END\]"
