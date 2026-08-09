@@ -495,6 +495,23 @@ PANFOVInert = 1.000
 
 '@
 
+Set-Variable StartupCfgSectionPatches -Option Constant -Value @(
+    @{
+        Section = 'force_feedback'
+        Properties = [ordered]@{ enabled = '0' }
+    },
+    @{
+        Section = 'graphics'
+        Properties = [ordered]@{ fullscreen = '0' }
+    },
+    @{
+        Section = 'input'
+        Properties = [ordered]@{
+            mouse_plane_control = '0'
+        }
+    }
+)
+
 Set-Variable UninstallRegistryKey -Option Constant -Value 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{66F649A9-0FA2-487E-BC0D-894BD7E89D5E}_is1'
 Set-Variable InstallLocationRegistryValue -Option Constant -Value InstallLocation
 
@@ -570,15 +587,37 @@ Write-ConfigFile (Join-Path $il2DataDir LuaScripts\snapviews\snaps.cfg) $SnapsCf
 
 Write-Output ''
 
-$startupCfg = Join-Path $il2DataDir startup.cfg
-
-if (-not (Test-Path $startupCfg -PathType Leaf)) {
-    Write-Output "Error: IL-2 Sturmovik Great Battles config file '$startupCfg' does not exist"
-    Exit 1
-}
-
 try {
-    New-Item $startupCfg -Value ((Get-Content -Raw $startupCfg) -replace 'fullscreen\s*=\s*1', 'fullscreen = 0') -Force | Out-Null
+    $startupCfg = Join-Path $il2DataDir startup.cfg
+    $startupCfgContent = (Get-Content -Raw $startupCfg) ?? ''
+
+    foreach ($patch in $StartupCfgSectionPatches) {
+        $sectionPattern = "(?ms)^\[KEY = $($patch.Section)\].*?^\[END\]"
+
+        $startupCfgContent = if ($startupCfgContent -match $sectionPattern) {
+            [regex]::Replace($startupCfgContent, $sectionPattern, [System.Text.RegularExpressions.MatchEvaluator] {
+                param($match)
+
+                $section = $match.Value
+                foreach ($property in $patch.Properties.GetEnumerator()) {
+                    $propertyPattern = "(?m)^\s*$($property.Key)\s*=\s*[^\r\n]+"
+                    $section = if ($section -match $propertyPattern) {
+                        $section -replace $propertyPattern, "`t$($property.Key) = $($property.Value)"
+                    } else {
+                        $section -replace '(?m)^\[END\]$', "`t$($property.Key) = $($property.Value)`r`n[END]"
+                    }
+                }
+                $section
+            })
+        } else {
+            $propertyLines = ($patch.Properties.GetEnumerator() | ForEach-Object { "`t$($_.Key) = $($_.Value)" }) -join "`r`n"
+            $trimmed = $startupCfgContent.TrimEnd()
+            $separator = if ($trimmed) { "`r`n`r`n" } else { "`r`n" }
+            "$trimmed$separator[KEY = $($patch.Section)]`r`n$propertyLines`r`n[END]`r`n"
+        }
+    }
+
+    New-Item $startupCfg -Value $startupCfgContent -Force | Out-Null
     Write-Output "Updated file: $startupCfg"
 } catch {
     Write-Output "Error: Could not update file: $startupCfg"
