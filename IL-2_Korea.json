@@ -1168,11 +1168,22 @@
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 12,
-              "delay": 0,
+              "delay": 1000,
               "activation": "WHILE_PRESSED",
               "minActivationInterval": 50,
               "maxActivationInterval": 0,
               "description": "Jettison stores"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "buttonId": 26,
+              "delay": 0,
+              "activation": "ON_RELEASE",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Jettison drop tanks"
             }
           }
         ],
@@ -1190,7 +1201,7 @@
           }
         ]
       },
-      "description": "Rocket / Bomb",
+      "description": "Attack / Jettison",
       "uuid": "6488968d-4833-46ab-b924-3cf5aa90d636"
     },
     {
@@ -1232,6 +1243,19 @@
               "minActivationInterval": 50,
               "maxActivationInterval": 0,
               "description": "Rudder manual trim: left"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "buttonId": 25,
+              "delay": 0,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Helper: Autohorizon (Hold level flight)"
             }
           }
         ],
@@ -1288,7 +1312,7 @@
           }
         ]
       },
-      "description": "Trim",
+      "description": "Trim / Autopilot",
       "uuid": "e4948829-9655-4fc1-8a3a-0ad466ece749"
     },
     {

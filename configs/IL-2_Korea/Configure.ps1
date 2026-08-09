@@ -269,7 +269,8 @@ Set-Variable GeneralActionsFileContent -Option Constant -Value @'
     ],
     "jettison_tanks_command": [
       "key_lwin+key_f",
-      "key_rwin+key_f"
+      "key_rwin+key_f",
+      "dev0_b26"
     ],
     "screenshot": [
       "key_sysrq"
@@ -564,7 +565,8 @@ Set-Variable GeneralActionsFileContent -Option Constant -Value @'
       "key_lmenu+key_a"
     ],
     "autolevelflight": [
-      "key_lshift+key_a"
+      "key_lshift+key_a",
+      "dev0_b25"
     ],
     "autoclimbflight": [
       "key_lcontrol+key_a"
