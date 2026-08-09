@@ -1155,7 +1155,7 @@ Set-Variable StartupCfgSectionPatches -Option Constant -Value @(
 Set-Variable UninstallRegistryKey -Option Constant -Value 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{222bc1b4-be6e-4451-9291-ef5aeb7c64a2}_is1'
 Set-Variable InstallLocationRegistryValue -Option Constant -Value InstallLocation
 
-$il2Dir = (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore)
+$il2Dir = Join-Path (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore) game
 
 if (-not ($il2Dir -and (Test-Path $il2Dir))) {
     Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\Steam)
