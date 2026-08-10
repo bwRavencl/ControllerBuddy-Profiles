@@ -1121,15 +1121,15 @@ Set-Variable GeneralPitchFileContent -Option Constant -Value @'
 
 Set-Variable SnapsCfgFileContent -Option Constant -Value @'
 DefaultSnapMode = "PV"
-LineSpeed = 0.714
-RotateSpeed = 77.680
-FOVSpeed = 1.682
+LineSpeed = 1000.000
+RotateSpeed = 1000.000
+FOVSpeed = 1000.000
 LineInert = 1.000
 RotateInert = 1.000
 FOVInert = 1.000
-PANLineSpeed = 0.699
-PANRotateSpeed = 77.680
-PANFOVSpeed = 1.645
+PANLineSpeed = 0.714
+PANRotateSpeed = 76.661
+PANFOVSpeed = 1.682
 PANLineInert = 1.000
 PANRotateInert = 1.000
 PANFOVInert = 1.000
