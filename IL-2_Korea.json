@@ -382,6 +382,81 @@
       "axisToActionsMap": {
         "4": [
           {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 4,
+              "delay": 0,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Bombs drop / Smokes"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 3,
+              "delay": 0,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Rockets launch"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "buttonId": 12,
+              "delay": 1000,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Jettison stores"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "buttonId": 26,
+              "delay": 0,
+              "activation": "ON_RELEASE",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Jettison drop tanks"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
+            "data": {
+              "buttonId": 13,
+              "delay": 0,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Bomb bay: open/close"
+            }
+          }
+        ]
+      },
+      "description": "Attack / Jettison",
+      "uuid": "6488968d-4833-46ab-b924-3cf5aa90d636"
+    },
+    {
+      "axisToActionsMap": {
+        "4": [
+          {
             "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
             "data": {
               "maxAxisValue": 1.0,
@@ -493,6 +568,22 @@
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
             "data": {
+              "delay": 1000,
+              "keystroke": {
+                "keyCodes": [
+                  "J"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Jet boosters: Fire"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
               "delay": 0,
               "keystroke": {
                 "keyCodes": [
@@ -500,7 +591,7 @@
                 ],
                 "modifierCodes": []
               },
-              "activation": "WHILE_PRESSED",
+              "activation": "ON_RELEASE",
               "minActivationInterval": 50,
               "maxActivationInterval": 0,
               "description": "Engine: start/stop sequence"
@@ -695,6 +786,26 @@
               "description": "Pitch cockpit view: down/up (ministick)"
             }
           }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Tab"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Commander\u0027s menu"
+            }
+          }
         ]
       },
       "buttonToActionsMap": {
@@ -843,7 +954,7 @@
           }
         ]
       },
-      "description": "Look",
+      "description": "Look / Comm",
       "uuid": "242f7006-11a9-4303-8858-d9e2d065c3c8"
     },
     {
@@ -1128,81 +1239,6 @@
       },
       "description": "Prop / Boost",
       "uuid": "ca236e7e-a577-4159-9b4d-14be96a0e21a"
-    },
-    {
-      "axisToActionsMap": {
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "maxAxisValue": 1.0,
-              "minAxisValue": 0.5,
-              "buttonId": 4,
-              "delay": 0,
-              "activation": "WHILE_PRESSED",
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Bombs drop / Smokes"
-            }
-          }
-        ],
-        "5": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
-            "data": {
-              "maxAxisValue": 1.0,
-              "minAxisValue": 0.5,
-              "buttonId": 3,
-              "delay": 0,
-              "activation": "WHILE_PRESSED",
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Rockets launch"
-            }
-          }
-        ]
-      },
-      "buttonToActionsMap": {
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "buttonId": 12,
-              "delay": 1000,
-              "activation": "WHILE_PRESSED",
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Jettison stores"
-            }
-          },
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "buttonId": 26,
-              "delay": 0,
-              "activation": "ON_RELEASE",
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Jettison drop tanks"
-            }
-          }
-        ],
-        "12": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
-            "data": {
-              "buttonId": 13,
-              "delay": 0,
-              "activation": "WHILE_PRESSED",
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Bomb bay: open/close"
-            }
-          }
-        ]
-      },
-      "description": "Attack / Jettison",
-      "uuid": "6488968d-4833-46ab-b924-3cf5aa90d636"
     },
     {
       "axisToActionsMap": {},
