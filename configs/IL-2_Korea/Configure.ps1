@@ -1155,7 +1155,12 @@ Set-Variable StartupCfgSectionPatches -Option Constant -Value @(
 Set-Variable UninstallRegistryKey -Option Constant -Value 'HKLM:\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{222bc1b4-be6e-4451-9291-ef5aeb7c64a2}_is1'
 Set-Variable InstallLocationRegistryValue -Option Constant -Value InstallLocation
 
-$il2Dir = Join-Path (Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore) game
+$rootDir = Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore
+
+$il2Dir = $null
+if ($rootDir) {
+    $il2Dir = Join-Path $rootDir game
+}
 
 if (-not ($il2Dir -and (Test-Path $il2Dir))) {
     Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\Steam)
@@ -1168,7 +1173,7 @@ if (-not $il2Dir) {
 }
 
 $il2DataDir = Join-Path $il2Dir data
-$il2InputDir =  Join-Path $il2DataDir input
+$il2InputDir = Join-Path $il2DataDir input
 
 if (-not (Test-Path $il2InputDir -PathType Container)) {
     Write-Output "Error: Korea. IL-2 Series input directory '$il2InputDir' does not exist"
