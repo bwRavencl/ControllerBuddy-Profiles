@@ -13,7 +13,7 @@ Set-Variable SharedResponsesFileContent -Option Constant -Value @'
     "rpc_yaw": {
       "deadZone0": 6,
       "deadZone1": 0,
-      "sensitivity": 50,
+      "sensitivity": 100,
       "harmonization": 0,
       "normalized": 1
     }
@@ -1110,7 +1110,7 @@ Set-Variable GeneralPitchFileContent -Option Constant -Value @'
     "rpc_pitch": {
       "deadZone0": 3,
       "deadZone1": 0,
-      "sensitivity": 75,
+      "sensitivity": 100,
       "offset": 0,
       "harmonization": 0,
       "normalized": 1
