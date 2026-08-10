@@ -612,19 +612,24 @@ Set-Variable GeneralActionsFileContent -Option Constant -Value @'
       "dev0_b14"
     ],
     "rpc_pitch_trim": [
-      "key_rcontrol+key_down/key_rcontrol+key_up"
+      "key_rcontrol+key_down/key_rcontrol+key_up",
+      "dev0_b18/dev0_b17"
     ],
     "rpc_roll_trim": [
-      "key_rcontrol+key_right/key_rcontrol+key_left"
+      "key_rcontrol+key_right/key_rcontrol+key_left",
+      "dev0_b20/dev0_b19"
     ],
     "rpc_yaw_trim": [
-      "key_lcontrol+key_x/key_lcontrol+key_z"
+      "key_lcontrol+key_x/key_lcontrol+key_z",
+      "dev0_b15/dev0_b16"
     ],
     "adjustable_stabilizer_up": [
-      "key_rcontrol+key_down"
+      "key_rcontrol+key_down",
+      "dev0_b18"
     ],
     "adjustable_stabilizer_dn": [
-      "key_rcontrol+key_up"
+      "key_rcontrol+key_up",
+      "dev0_b17"
     ],
     "pitch_trim_switch_up": [
       "key_rcontrol+key_down",
