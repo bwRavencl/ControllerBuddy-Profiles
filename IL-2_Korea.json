@@ -553,11 +553,27 @@
         ],
         "4": [
           {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 1000,
+              "keystroke": {
+                "keyCodes": [
+                  "C"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 50,
+              "maxActivationInterval": 0,
+              "description": "Cockpit canopy: open/close"
+            }
+          },
+          {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToButtonAction",
             "data": {
               "buttonId": 7,
               "delay": 0,
-              "activation": "WHILE_PRESSED",
+              "activation": "ON_RELEASE",
               "minActivationInterval": 50,
               "maxActivationInterval": 0,
               "description": "Parking brakes: on/off"
@@ -595,24 +611,6 @@
               "minActivationInterval": 50,
               "maxActivationInterval": 0,
               "description": "Engine: start/stop sequence"
-            }
-          }
-        ],
-        "11": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "delay": 0,
-              "keystroke": {
-                "keyCodes": [
-                  "C"
-                ],
-                "modifierCodes": []
-              },
-              "activation": "WHILE_PRESSED",
-              "minActivationInterval": 50,
-              "maxActivationInterval": 0,
-              "description": "Cockpit canopy: open/close"
             }
           }
         ]
