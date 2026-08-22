@@ -1,0 +1,1005 @@
+{
+  "buttonToModeActionsMap": {
+    "0": [
+      {
+        "delay": 0,
+        "modeUuid": "475b122c-060f-4aa4-afdf-f78a4c7ff95c",
+        "toggle": false
+      }
+    ],
+    "1": [
+      {
+        "delay": 0,
+        "modeUuid": "d647524a-3bca-43db-84e8-510cef540fde",
+        "toggle": false
+      }
+    ],
+    "2": [
+      {
+        "delay": 0,
+        "modeUuid": "6d40a9be-79fd-4f38-abe4-699d445f067d",
+        "toggle": false
+      }
+    ],
+    "3": [
+      {
+        "delay": 0,
+        "modeUuid": "83f13c2c-67e5-4e6e-9c17-7e8cb74d68b6",
+        "toggle": false
+      }
+    ],
+    "6": [
+      {
+        "delay": 0,
+        "modeUuid": "6ccab19b-37ee-43ef-9ccb-456a6e1413ce",
+        "toggle": false
+      }
+    ],
+    "7": [
+      {
+        "delay": 0,
+        "modeUuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3",
+        "toggle": true
+      }
+    ],
+    "8": [
+      {
+        "delay": 0,
+        "modeUuid": "daf53639-9518-48db-bd63-19cde7bf9a96",
+        "toggle": true
+      }
+    ],
+    "9": [
+      {
+        "delay": 0,
+        "modeUuid": "5aebadd3-99e8-4f64-b5f0-e3e7bd625fd2",
+        "toggle": false
+      }
+    ],
+    "10": [
+      {
+        "delay": 0,
+        "modeUuid": "07ace9e9-94a9-4d0f-8d9c-8bd0ecb815d8",
+        "toggle": false
+      }
+    ],
+    "14": [
+      {
+        "delay": 0,
+        "modeUuid": "18dc9628-4007-4bda-8ffd-4a37584b598d",
+        "toggle": false
+      }
+    ]
+  },
+  "keyRepeatRate": 33,
+  "modes": [
+    {
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.25,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "Z",
+              "invert": false,
+              "description": "Yaw"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToRelativeAxisAction",
+            "data": {
+              "hapticFeedback": true,
+              "maxRelativeSpeed": 3.0,
+              "deadZone": 0.3,
+              "exponent": 2.0,
+              "initialValue": 1.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "RX",
+              "invert": false,
+              "description": "Collective"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 1.5,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "X",
+              "invert": false,
+              "description": "Roll"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 1.5,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "Y",
+              "invert": false,
+              "description": "Pitch"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToKeyAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Back"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Rescan targets"
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "buttonId": 0,
+              "delay": 0,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Fire weapon"
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "End"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Recenter view"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "R"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Transmit Reconnaissance data"
+            }
+          }
+        ],
+        "10": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "B"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Brakes"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "U"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Under-carriage up/down"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "D"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Cargo doors open/close"
+            }
+          }
+        ]
+      },
+      "uuid": "067e6162-3b6f-4ae2-a171-2470b63dff00"
+    },
+    {
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "delay": 0,
+              "lockKey": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToPressOnScreenKeyboardKeyAction",
+            "data": {
+              "delay": 0,
+              "lockKey": true
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToReleaseAllOnScreenKeyboardKeysAction",
+            "data": {
+              "delay": 0
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "delay": 0,
+              "direction": "UP"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "delay": 0,
+              "direction": "DOWN"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "delay": 0,
+              "direction": "LEFT"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToSelectOnScreenKeyboardKeyAction",
+            "data": {
+              "delay": 0,
+              "direction": "RIGHT"
+            }
+          }
+        ]
+      },
+      "uuid": "daf53639-9518-48db-bd63-19cde7bf9a96"
+    },
+    {
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "C"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Auto chaff on/off"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "F"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Auto flare on/off"
+            }
+          }
+        ]
+      },
+      "description": "Countermeasure",
+      "uuid": "475b122c-060f-4aa4-afdf-f78a4c7ff95c"
+    },
+    {
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "I"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "HUD contrast adjust"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "L"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Instrument lights"
+            }
+          }
+        ]
+      },
+      "description": "HUD / Lights",
+      "uuid": "d647524a-3bca-43db-84e8-510cef540fde"
+    },
+    {
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "X",
+              "invert": false,
+              "description": "Rotate view left/right"
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToAxisAction",
+            "data": {
+              "deadZone": 0.0,
+              "exponent": 1.0,
+              "initialValue": 0.0,
+              "maxValue": 1.0,
+              "minValue": -1.0,
+              "virtualAxis": "Y",
+              "invert": false,
+              "description": "Rotate view up/down"
+            }
+          }
+        ],
+        "2": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.NullAction",
+            "data": {}
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Y"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Yes"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "No"
+            }
+          }
+        ],
+        "7": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  ","
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Zoom out"
+            }
+          }
+        ],
+        "8": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "."
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Zoom in"
+            }
+          }
+        ]
+      },
+      "description": "Look",
+      "uuid": "07ace9e9-94a9-4d0f-8d9c-8bd0ecb815d8"
+    },
+    {
+      "axisToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.5,
+              "cursorSensitivity": 1500,
+              "axis": "X",
+              "invert": false
+            }
+          }
+        ],
+        "1": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToCursorAction",
+            "data": {
+              "deadZone": 0.12,
+              "exponent": 2.5,
+              "cursorSensitivity": 1500,
+              "axis": "Y",
+              "invert": false
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "delay": 0,
+              "mouseButton": 1,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ],
+        "5": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.AxisToMouseButtonAction",
+            "data": {
+              "maxAxisValue": 1.0,
+              "minAxisValue": 0.5,
+              "delay": 0,
+              "mouseButton": 2,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ]
+      },
+      "buttonToActionsMap": {
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToMouseButtonAction",
+            "data": {
+              "delay": 0,
+              "mouseButton": 3,
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0
+            }
+          }
+        ],
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "delay": 0,
+              "clicks": 10,
+              "invert": false
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToScrollAction",
+            "data": {
+              "delay": 0,
+              "clicks": 10,
+              "invert": true
+            }
+          }
+        ]
+      },
+      "description": "Mouse",
+      "uuid": "fa3734e0-7a3d-4f23-b53a-020ca21857c3"
+    },
+    {
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "F2"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Pilot front view"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "F3"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "WSO front view"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "F6"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Hind external view"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "V"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Night vision on/off"
+            }
+          }
+        ]
+      },
+      "description": "View",
+      "uuid": "6d40a9be-79fd-4f38-abe4-699d445f067d"
+    },
+    {
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "S"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Silicon WSO on/off"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "T"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Track target"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "G"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Turret optics"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "O"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "FLIR/LLTV optics view"
+            }
+          }
+        ]
+      },
+      "description": "WSO",
+      "uuid": "5aebadd3-99e8-4f64-b5f0-e3e7bd625fd2"
+    },
+    {
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": [
+                  "L Shift"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Select previous waypoint"
+            }
+          }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "N"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Select next waypoint"
+            }
+          }
+        ]
+      },
+      "description": "Waypoint",
+      "uuid": "18dc9628-4007-4bda-8ffd-4a37584b598d"
+    },
+    {
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Return"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Arm and select weapon"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Return"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Unarm weapon"
+            }
+          }
+        ]
+      },
+      "description": "Weapon",
+      "uuid": "83f13c2c-67e5-4e6e-9c17-7e8cb74d68b6"
+    },
+    {
+      "axisToActionsMap": {},
+      "buttonToActionsMap": {
+        "11": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "3"
+                ],
+                "modifierCodes": [
+                  "L Ctrl",
+                  "L Shift"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Attack my target/help me"
+            }
+          }
+        ],
+        "12": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "2"
+                ],
+                "modifierCodes": [
+                  "L Ctrl",
+                  "L Shift"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Follow me"
+            }
+          }
+        ],
+        "13": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "1"
+                ],
+                "modifierCodes": [
+                  "L Ctrl",
+                  "L Shift"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Go home"
+            }
+          }
+        ],
+        "14": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "4"
+                ],
+                "modifierCodes": [
+                  "L Ctrl",
+                  "L Shift"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Resume Flightplan"
+            }
+          }
+        ]
+      },
+      "description": "Wingman",
+      "uuid": "6ccab19b-37ee-43ef-9ccb-456a6e1413ce"
+    }
+  ],
+  "showOverlay": true,
+  "version": "1.9",
+  "virtualAxisToOverlayAxisMap": {
+    "RX": {
+      "color": -16777216,
+      "inverted": false,
+      "orientation": "VERTICAL",
+      "style": "SOLID"
+    }
+  }
+}
