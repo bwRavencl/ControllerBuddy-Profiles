@@ -20,6 +20,7 @@ Each supported application has its own subdirectory within the `configs` directo
 Inside each subdirectory, you will find the necessary files to configure the application for use with ControllerBuddy.
 
 Each subdirectory can contain one of the following:
+
 - A PowerShell script (`Configure.ps1`)
 - Configuration files (e.g., `.ini`, `.cfg`, etc.)
 - Screenshots
@@ -28,20 +29,25 @@ Each subdirectory can contain one of the following:
 
 A `Configure.ps1` file is a PowerShell script that automatically configures the application settings for usage with the corresponding ControllerBuddy profile.
 
+<!-- markdownlint-disable no-blanks-blockquote -->
 > [!CAUTION]
 > Use these scripts at your own risk!  
 > These scripts modify the application's input settings.  
 > Please back up your settings before executing them.
 
 > [!IMPORTANT]
+>
 > - The scripts are not self-contained and must be run from the original directory where they reside.
 > - Make sure that your gamepad is connected before running a script.
 > - The scripts are compatible with both Windows PowerShell 5.1 and [PowerShell 7+](https://github.com/PowerShell/PowerShell).
+<!-- markdownlint-enable no-blanks-blockquote -->
 
 **Usage on Linux with Wine:**
+
 - A working installation of PowerShell 7+ within the corresponding Wine prefix is required.
 - Since the uinput devices created by ControllerBuddy are non-persistent, Local or Client mode must be started before executing a script.
 - To execute a script, run:
+
   ```sh
   WINEDEBUG='-all' wine pwsh Configure.ps1
   ```
@@ -59,7 +65,8 @@ They should be self-explanatory.
 ### 📺 Usage with DOSBox
 
 For legacy applications running inside **DOSBox**, configure the `[joystick]` section of your `dosbox.conf` as follows:
-```
+
+```ini
 [joystick]
 
 joysticktype                = 4axis_2
@@ -77,10 +84,12 @@ joy_y_calibration           = auto
 ```
 
 **On Linux**:
+
 - Set `joysticktype = 4axis` instead.
 - Use the `SDL_JOYSTICK_DEVICE` environment variable to ensure DOSBox picks up the correct joystick device.
 
   For example, if the 'ControllerBuddy Joystick' device appears as `/dev/input/js1`, launch DOSBox like this:
+
   ```sh
   SDL_JOYSTICK_DEVICE=/dev/input/js1 dosbox
   ```
