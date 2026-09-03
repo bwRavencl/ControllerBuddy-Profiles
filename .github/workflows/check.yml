@@ -4,7 +4,7 @@ on:
       - master
 
 jobs:
-  psscriptanalyzer:
+  check:
     runs-on: ubuntu-latest
     permissions:
           security-events: write
@@ -20,3 +20,7 @@ jobs:
         uses: github/codeql-action/upload-sarif@cdf488f595d80d6e07e03d4674febd5ab45fa938 # v4
         with:
           sarif_file: results.sarif
+      - name: Lint Markdown Files
+        uses: DavidAnson/markdownlint-cli2-action@21c1be1b93ad9ed58fa840aacc3f279cde2a72ff #v24
+        with:
+          globs: '**/*.md'
