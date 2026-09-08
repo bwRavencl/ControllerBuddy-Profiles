@@ -1,10 +1,12 @@
+name: Update Version Branch
+
 on:
   push:
     branches:
       - master
 
 jobs:
-  version-branch:
+  update-version-branch:
     runs-on: ubuntu-latest
     permissions:
           contents: write

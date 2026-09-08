@@ -1,10 +1,12 @@
+name: Run Checks
+
 on:
   push:
     branches:
       - master
 
 jobs:
-  check:
+  run-checks:
     runs-on: ubuntu-latest
     permissions:
           security-events: write
