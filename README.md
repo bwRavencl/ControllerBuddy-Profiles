@@ -50,7 +50,7 @@ A `Configure.ps1` file is a PowerShell script that automatically configures the 
 - To execute a script, run:
 
   ```sh
-  WINEDEBUG='-all' wine pwsh Configure.ps1
+  WINEDEBUG=-all wine pwsh Configure.ps1
   ```
 
 #### 📄 Configuration Files
