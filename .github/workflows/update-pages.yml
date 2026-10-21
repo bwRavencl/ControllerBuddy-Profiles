@@ -6,6 +6,13 @@ on:
       - master
   workflow_dispatch:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
 jobs:
   update-pages:
     runs-on: ubuntu-latest
@@ -40,11 +47,17 @@ jobs:
       - name: Update Visualizations
         timeout-minutes: 3
         run: |
-          export PATH="${{ github.workspace }}/ControllerBuddy/build/install/ControllerBuddy/bin:$PATH"
+          export PATH="$GITHUB_WORKSPACE/ControllerBuddy/build/install/ControllerBuddy/bin:$PATH"
           rm -f ControllerBuddy-Pages/profiles/*.html
           xvfb-run -a -s '-screen 0 1024x768x24' ControllerBuddy -skipMessageDialogs &
+          pid=$!
           while [ ! -f /tmp/ControllerBuddy.lock ]
           do
+            if ! kill -0 "$pid" 2> /dev/null
+            then
+              echo "::error::ControllerBuddy exited before creating its lock file"
+              exit 1
+            fi
             sleep 1
           done
           for file in ControllerBuddy-Profiles/*.json
@@ -55,10 +68,15 @@ jobs:
       - name: Commit Files
         working-directory: ControllerBuddy-Pages
         run: |
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git config user.name github-actions[bot]
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name 'github-actions[bot]'
           git add profiles
-          git commit -m 'chore: update profile visualizations' || echo 'Nothing to update'
+          if git diff --cached --quiet
+          then
+            echo 'Nothing to update'
+          else
+            git commit -m 'chore: update profile visualizations'
+          fi
       - name: Push Changes
         uses: ad-m/github-push-action@881a6320fdb16eb5318c5054f31c218aec2b324c # v1
         with:

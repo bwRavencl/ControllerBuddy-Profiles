@@ -5,14 +5,20 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+
 jobs:
   run-checks:
     runs-on: ubuntu-latest
     permissions:
-          security-events: write
+      contents: read
+      security-events: write
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
       - name: Run PSScriptAnalyzer
         uses: microsoft/psscriptanalyzer-action@6b2948b1944407914a58661c49941824d149734f # v1.1
         with:
@@ -23,6 +29,6 @@ jobs:
         with:
           sarif_file: results.sarif
       - name: Lint Markdown Files
-        uses: DavidAnson/markdownlint-cli2-action@21c1be1b93ad9ed58fa840aacc3f279cde2a72ff #v24
+        uses: DavidAnson/markdownlint-cli2-action@21c1be1b93ad9ed58fa840aacc3f279cde2a72ff # v24
         with:
           globs: '**/*.md'
