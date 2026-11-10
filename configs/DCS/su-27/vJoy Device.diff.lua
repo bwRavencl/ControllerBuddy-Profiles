@@ -5,7 +5,7 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.25,
+							[1] = 0.3,
 						},
 						["deadzone"] = 0.12,
 						["hardwareDetent"] = false,
@@ -186,7 +186,7 @@ local diff = {
 			},
 		},
 		["d957pnilu958cdnilvdnilvpnilvunil"] = {
-			["name"] = "Stick to Trimmer Control Mode",
+			["name"] = "Stick to trimmer control mode",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
