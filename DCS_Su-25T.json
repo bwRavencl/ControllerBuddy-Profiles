@@ -1584,9 +1584,69 @@
               "description": "Trim Hat - ROLL RIGHT"
             }
           }
+        ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "9"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Autopilot Disengage"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "4"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Autopilot - Barometric Altitude Hold"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "1"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Autopilot - Attitude Hold"
+            }
+          }
         ]
       },
-      "description": "Trim",
+      "description": "Trim / Autopilot",
       "uuid": "fd2c8ecf-e466-4adf-a217-3a098b3fdde9"
     },
     {
