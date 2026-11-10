@@ -5,9 +5,12 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.1,
+							[1] = 0.3,
 						},
 						["deadzone"] = 0.12,
+						["hardwareDetent"] = false,
+						["hardwareDetentAB"] = 0,
+						["hardwareDetentMax"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -158,6 +161,22 @@ local diff = {
 			},
 			["name"] = "Return To Search",
 		},
+		["d1737pnilu1738cdnilvd0.1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "r.1 VoIP PTT",
+		},
+		["d1737pnilu1738cdnilvd0.2vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "r.2 VoIP PTT",
+		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
 			["name"] = "Weapon Fire",
 			["removed"] = {
@@ -167,7 +186,7 @@ local diff = {
 			},
 		},
 		["d957pnilu958cdnilvdnilvpnilvunil"] = {
-			["name"] = "Stick to Trimmer Control Mode",
+			["name"] = "Stick to trimmer control mode",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
