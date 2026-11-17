@@ -308,13 +308,13 @@ function Update-SectionContent {
             $replacement += "`r`n"
         }
 
-        if ($PSCmdlet.ShouldProcess($SectionTitle, "Update existing section")) {
+        if ($PSCmdlet.ShouldProcess($SectionTitle, 'Update existing section')) {
             $updatedContent = [regex]::Replace($FileContent, $pattern, $replacement)
         } else {
             return $FileContent
         }
     } else {
-        if (-not $PSCmdlet.ShouldProcess($SectionTitle, "Add new section")) {
+        if (-not $PSCmdlet.ShouldProcess($SectionTitle, 'Add new section')) {
             return $FileContent
         }
 

@@ -78,7 +78,7 @@ function Remove-DeviceCategory {
     $categoryPath = Join-Path $LayerPath $DeviceCategory
     if (Test-Path $categoryPath -PathType Container) {
         $layerDir = Get-Item $LayerPath
-        if ($PSCmdlet.ShouldProcess($categoryPath, "Remove directory")) {
+        if ($PSCmdlet.ShouldProcess($categoryPath, 'Remove directory')) {
             try {
                 Remove-Item $categoryPath -Recurse -Force -ErrorAction Stop
                 Write-Output "Removed '$($layerDir.Name)\$DeviceCategory' directory: $categoryPath"
