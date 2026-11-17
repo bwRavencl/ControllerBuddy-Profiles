@@ -45,4 +45,22 @@ function Get-VJoyDevice {
     $DirectInput.GetDevices() | Where-Object { $_.ProductGuid -eq $VjoyProductGuid } | Select-Object -first 1
 }
 
-Export-ModuleMember -Function Get-GamepadDeviceList, Get-KeyboardDevice, Get-VJoyDevice
+<#
+.SYNOPSIS
+
+Get-DeviceCapability returns the capabilities of a DirectInput device.
+#>
+
+function Get-DeviceCapability {
+    param (
+        [Parameter(Mandatory = $true)]
+        [SharpDX.DirectInput.DeviceInstance]$DeviceInstance
+    )
+
+    $device = New-Object SharpDX.DirectInput.Joystick($DirectInput, $DeviceInstance.InstanceGuid)
+    $capabilities = $device.Capabilities
+    $device.Dispose()
+    return $capabilities
+}
+
+Export-ModuleMember -Function Get-GamepadDeviceList, Get-KeyboardDevice, Get-VJoyDevice, Get-DeviceCapability
