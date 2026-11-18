@@ -22,7 +22,13 @@ VIEW_TARGET {{00000000-0000-0000-0000-000000000000}} 00000000
 
 '@
 
-Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\Steam)
+$steamModule = Join-Path $PSScriptRoot ..\.lib\Steam
+try {
+    Import-Module -Name $steamModule -ErrorAction Stop
+} catch {
+    Write-Output "Error: Could not import module '$steamModule'"
+    Exit 1
+}
 
 $f22adfDir = Get-SteamGamePath 3146140
 
@@ -31,7 +37,13 @@ if (-not $f22adfDir) {
     Exit 1
 }
 
-Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
+$directInputModule = Join-Path $PSScriptRoot ..\.lib\DirectInput
+try {
+    Import-Module -Name $directInputModule -ErrorAction Stop
+} catch {
+    Write-Output "Error: Could not import module '$directInputModule'"
+    Exit 1
+}
 
 $vJoyDevice = Get-VJoyDevice
 

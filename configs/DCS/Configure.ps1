@@ -38,7 +38,13 @@ if (-not (Test-Path $dcsUserDir -PathType Container)) {
     Exit 1
 }
 
-Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
+$directInputModule = Join-Path $PSScriptRoot ..\.lib\DirectInput
+try {
+    Import-Module -Name $directInputModule -ErrorAction Stop
+} catch {
+    Write-Output "Error: Could not import module '$directInputModule'"
+    Exit 1
+}
 
 $vJoyDevice = Get-VJoyDevice
 

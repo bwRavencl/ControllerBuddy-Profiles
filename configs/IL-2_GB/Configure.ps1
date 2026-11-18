@@ -518,7 +518,13 @@ Set-Variable InstallLocationRegistryValue -Option Constant -Value InstallLocatio
 $il2Dir = Get-ItemPropertyValue -Path $UninstallRegistryKey -Name $InstallLocationRegistryValue -ErrorAction Ignore
 
 if (-not ($il2Dir -and (Test-Path $il2Dir))) {
-    Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\Steam)
+    $steamModule = Join-Path $PSScriptRoot ..\.lib\Steam
+    try {
+        Import-Module -Name $steamModule -ErrorAction Stop
+    } catch {
+        Write-Output "Error: Could not import module '$steamModule'"
+        Exit 1
+    }
     $il2Dir = Get-SteamGamePath 307960
 }
 
@@ -535,7 +541,13 @@ if (-not (Test-Path $il2InputDir -PathType Container)) {
     Exit 1
 }
 
-Import-Module -Name (Join-Path $PSScriptRoot ..\.lib\DirectInput)
+$directInputModule = Join-Path $PSScriptRoot ..\.lib\DirectInput
+try {
+    Import-Module -Name $directInputModule -ErrorAction Stop
+} catch {
+    Write-Output "Error: Could not import module '$directInputModule'"
+    Exit 1
+}
 
 $vJoyDevice = Get-VJoyDevice
 
