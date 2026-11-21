@@ -684,6 +684,46 @@
             }
           }
         ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "delay": 0,
+              "fluid": false,
+              "resetValue": 0.0,
+              "virtualAxis": "RX",
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "delay": 0,
+              "fluid": false,
+              "resetValue": 0.0,
+              "virtualAxis": "RY",
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Space"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Reset View"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -1181,12 +1221,6 @@
   "showOverlay": true,
   "version": "1.11",
   "virtualAxisToOverlayAxisMap": {
-    "S1": {
-      "color": -65536,
-      "inverted": false,
-      "orientation": "VERTICAL",
-      "style": "SOLID"
-    },
     "Z": {
       "color": -16777216,
       "inverted": false,
@@ -1195,6 +1229,12 @@
     },
     "S0": {
       "color": -16776961,
+      "inverted": false,
+      "orientation": "VERTICAL",
+      "style": "SOLID"
+    },
+    "S1": {
+      "color": -65536,
       "inverted": false,
       "orientation": "VERTICAL",
       "style": "SOLID"

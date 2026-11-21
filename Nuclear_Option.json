@@ -511,6 +511,33 @@
               "description": "Increase FoV"
             }
           }
+        ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Num5"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Center View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToLockKeyAction",
+            "data": {
+              "delay": 0,
+              "on": true,
+              "virtualKeyCode": "Num Lock",
+              "description": "Center View"
+            }
+          }
         ]
       },
       "description": "Look",

@@ -630,6 +630,48 @@
             }
           }
         ],
+        "9": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "activation": "WHILE_PRESSED",
+              "delay": 0,
+              "fluid": false,
+              "resetValue": 0.0,
+              "virtualAxis": "RX",
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToAxisResetAction",
+            "data": {
+              "activation": "ON_PRESS",
+              "delay": 0,
+              "fluid": false,
+              "resetValue": 0.0,
+              "virtualAxis": "RY",
+              "description": "Reset View"
+            }
+          },
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Space"
+                ],
+                "modifierCodes": [
+                  "L Ctrl"
+                ]
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Reset View"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
