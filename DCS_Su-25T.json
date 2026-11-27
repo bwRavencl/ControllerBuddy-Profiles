@@ -1368,6 +1368,24 @@
         ]
       },
       "buttonToActionsMap": {
+        "0": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "Return"
+                ],
+                "modifierCodes": []
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Target Lock"
+            }
+          }
+        ],
         "2": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -1563,6 +1581,66 @@
             }
           }
         ],
+        "3": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "9"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "activation": "WHILE_PRESSED",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Autopilot Disengage"
+            }
+          }
+        ],
+        "4": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "4"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Autopilot - Barometric Altitude Hold"
+            }
+          }
+        ],
+        "6": [
+          {
+            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
+            "data": {
+              "delay": 0,
+              "keystroke": {
+                "keyCodes": [
+                  "1"
+                ],
+                "modifierCodes": [
+                  "L Alt"
+                ]
+              },
+              "activation": "ON_PRESS",
+              "minActivationInterval": 0,
+              "maxActivationInterval": 0,
+              "description": "Autopilot - Attitude Hold"
+            }
+          }
+        ],
         "11": [
           {
             "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
@@ -1640,66 +1718,6 @@
               "minActivationInterval": 0,
               "maxActivationInterval": 0,
               "description": "Trim Hat - ROLL RIGHT"
-            }
-          }
-        ],
-        "3": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "delay": 0,
-              "keystroke": {
-                "keyCodes": [
-                  "9"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              },
-              "activation": "WHILE_PRESSED",
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Autopilot Disengage"
-            }
-          }
-        ],
-        "4": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "delay": 0,
-              "keystroke": {
-                "keyCodes": [
-                  "4"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              },
-              "activation": "ON_PRESS",
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Autopilot - Barometric Altitude Hold"
-            }
-          }
-        ],
-        "6": [
-          {
-            "type": "de.bwravencl.controllerbuddy.input.action.ButtonToKeyAction",
-            "data": {
-              "delay": 0,
-              "keystroke": {
-                "keyCodes": [
-                  "1"
-                ],
-                "modifierCodes": [
-                  "L Alt"
-                ]
-              },
-              "activation": "ON_PRESS",
-              "minActivationInterval": 0,
-              "maxActivationInterval": 0,
-              "description": "Autopilot - Attitude Hold"
             }
           }
         ]
